@@ -1,4 +1,24 @@
-# Sıradaki çalışma
+# İş planı
+
+7 Ekim 2026'da güncellendi. Aşağıdaki sıralama gelecekteki geliştirme planıdır; bu liste güncellemesi uygulama, veri aktarımı veya otomasyon başlatmaz. Ayrıntılı gündem ve delta gereksinimleri aşağıdaki bölümlerde korunur.
+
+## Uygulama sırası
+
+1. **Eksik Metacritic kullanıcı puanları.** Son doğrulanan 1.323 oyunun 901'inde puan vardır; kalan 422 kayıt doğru oyun/sürüm/platform kimlikleriyle incelenir. Bulunabilen puanlar ve güvenilir değerlendirme sayıları kaynak tarihiyle kaydedilir; doğrulanamayan değerler üretilmez.
+2. **Slider kapaklarının kalite sorunu.** Büyük öne çıkan alan için kart görselinden ayrı, yüksek çözünürlüklü ve doğru oyuna ait görsel seçilir. Küçük kapsüller büyütülmez; uygun resmî tanıtım görseli, büyük kapak veya ekran görüntüsü doğrulanır. Kırpma, mobil/masaüstü çözünürlükleri, güvenli alternatif ve önbellek birlikte ele alınır.
+3. **Büyüyen katalog için veri altyapısı.** Kalıcı site/kaynak kimlikleri, benzersiz ve indeksli kayıtlar, veritabanından arama/filtreleme/sayfalama hazırlanır. Her istekte tüm katalog yüklenmez. Canlı veritabanı yedekleme ve geri yükleme yöntemi belirlenir; GitHub kod ve sürüm geçmişini tutar.
+4. **Hesapsız ziyaret geçmişi.** Görülen ve tıklanan oyunlar tarayıcıda sınırlı bir geçmiş olarak tutulur; kullanıcı bu geçmişi temizleyebilir. Başlangıçta cihaz/tarayıcıya özeldir; hesap açıldığında birleştirme davranışı ayrıca belirlenir.
+5. **Değerlendirme sayısına göre güven.** Görünen gerçek puan değiştirilmeden, güvenilir oy sayısı sıralamada hesaba katılır. Tek değerlendirmeyle çok yüksek puan alan oyun, yeterli değerlendirmesi olan oyunların önüne otomatik geçmez. Oy sayısı bilinmiyorsa tahmin üretilmez.
+6. **Yenilenen keşif sıralaması.** Çoğunlukla görülmemiş oyunlar, biraz zevke yakın öneri, yeni eklenen oyunlar ve beklenmedik keşifler dengelenir. Kişisel liste aynı gün sayfalama sırasında kararlı kalır, ertesi gün yenilenir; oyun/tür çeşitliliği korunur. Gündem sinyali sonraki aşamada bu yapıya eklenir.
+7. **Yalnızca yöneticiye açık panel.** Oyun açıklaması, etiket, görsel ve görünürlük yönetimi; kimlik/puan eşleşmesi incelemesi; görev durumları ve hatalar eklenir. Yetki sunucuda doğrulanır. Elle yapılan düzenlemeler otomatik aktarımla ezilmez.
+8. **Delta ile haftalık katalog genişletme.** Yeni PC oyunları kademeli eklenir; yalnızca yeni/değişmiş adaylar işlenir. Son başarılı tarama ve devam imleci tutulur. Yeni oyun ekleme ile mevcut veri güncelleme ayrılır; başarısızlıkta tekrar deneme, yinelenen kayıt koruması ve görev raporları hazırlanır. Yeni oyunların açıklama, kapak, etiket ve benzerlik kapsamı da kontrol edilir.
+9. **Gündemde yükselen oyunları yakalama.** Haftalık ekleme görevinden bağımsız oyuncu/liste hareketleri ve haber taraması kurulur. Oyunun kendi geçmişine göre yükseliş, bağımsız sinyaller ve ilginin devamlılığı birlikte değerlendirilir. Katalog dışındaki adaylar da bulunur; gündem ağırlığı zamanla azalır ve beklenmedik keşiften ayrı tutulur.
+10. **Alan adı ve gerçek yayına hazırlık.** Kendi alan adı bağlanır veya seçilen barındırmaya geçilir. Kullanıcı girişinin ve koleksiyonların bu ortamda çalışması, yönetici erişimi, mobil web görünümü, güvenlik, yedekleme ve görevlerin canlıya veri yazması doğrulanır. Alan adı seçimi/satın alma ve servis tercihleri bu aşamada yapılır.
+11. **Mobil uygulama — her durumda en son.** Önce telefona kurulabilen PWA seçeneği değerlendirilir; ardından gerekirse Android/iOS uygulaması hazırlanır. Web ile ortak API/katalog/koleksiyon altyapısı kullanılır; giriş, dokunmatik gezinme, medya ve mağaza yayını uyarlanır. Önceki web/veri işleri tamamlanmadan mobil geliştirme öne alınmaz.
+
+Her tamamlanan geliştirme uygun kontrollerle doğrulanır, GitHub'a anlamlı bir commit olarak gönderilir. Yeni açıklamalar ve commit mesajları Türkçe yazılır. GitHub kaynak değişikliği ile canlı veritabanı değişikliği ayrı izlenir.
+
+## Eksik puanların ayrıntısı
 
 - [ ] Eksik Metacritic kullanıcı puanlarını tamamla. Son doğrulanan durumda 1.323 oyunun 901'inde puan var; 422 kayıt eksik. Kimliği doğrulanmamış oyunları, puan kaynağında sayısal değer bulunmayanları ve çelişkili ilişkileri ayrı incele. Puan bulunabilen doğru oyun ve PC platformu kayıtlarını kalıcı ID'lerle bağla. Puanı olmayan veya doğrulanamayan oyunlar için değer üretme. Kaynak yaşı ve puan türü ayrı korunsun.
 
