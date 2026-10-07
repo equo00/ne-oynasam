@@ -1,4 +1,4 @@
-# Ne Oynasam? — PC oyun keşfi
+# Ne Oynasam? — Oyun keşfi
 
 Ruh haline ve tercihlerine göre oyun bulmanı sağlayan Türkçe oyun keşif sitesi. Oyunları karşılaştırabilir, kendi koleksiyonuna ekleyebilir, durumlarını ve notlarını kaydedebilirsin.
 
@@ -27,6 +27,8 @@ Ruh haline ve tercihlerine göre oyun bulmanı sağlayan Türkçe oyun keşif si
 - Gerçek oyun ayrıntısı görüntüleme sayıları. Aynı hesap/oyun/UTC günü için tekrarlar tek sayılır.
 
 ## Geliştirme planı
+
+Mevcut katalog PC ile başlar. Hedef kapsam PlayStation, Xbox, Nintendo Switch, Android ve iOS oyunlarını da içerir; platformlara ait puan, çıkış tarihi ve mağaza bilgileri ayrı tutulacaktır. Çok platformlu katalog, mobil uygulamadan ayrı bir geliştirmedir; mobil uygulama en son aşama olarak kalır.
 
 Eksik Metacritic kullanıcı puanlarını tamamlama işi ilk önceliktir. Gündem taraması ve yeni oyun aktarımı [iş listesinde](ROADMAP.md) planlanmıştır; zamanlanmış görevler henüz kurulmamıştır.
 
