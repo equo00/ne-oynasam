@@ -32,6 +32,8 @@ Site yalnızca PC oyunlarının keşfine odaklanacaktır. Konsol ve mobil katalo
 
 Eksik Metacritic kullanıcı puanlarını tamamlama işi ilk önceliktir. Gündem taraması, kademeli katalog büyümesi ve yeni oyun aktarımı [iş listesinde](ROADMAP.md) planlanmıştır; zamanlanmış görevler henüz kurulmamıştır.
 
+Oyun kartlarında kısa video önizlemesi de planlanmıştır: kısa beklemeden sonra sessiz oynatma, karttan ayrılınca durdurma, yalnızca ihtiyaç halinde medya yükleme ve kullanıcıya kapatma seçeneği. Bu özellik henüz uygulanmamıştır.
+
 Uzun vadeli hedef, kaynak kapsamı ve doğrulamalar elverirse 140 bin benzersiz PC oyunudur. Önerilen büyüme basamakları 5 bin, 10 bin, 25 bin, 50 bin, 100 bin ve mümkünse 140 bindir; her basamağa küçük, devam ettirilebilir aktarım gruplarıyla ulaşılır. İlk katalog doldurma ile haftalık delta aktarımı ayrı süreçlerdir. Bu bir hedef olup mevcut kapasite veya ulaşılabilir oyun sayısı garantisi değildir.
 
 Gelecekteki oyun ekleme görevleri delta mantığıyla çalışmalıdır: son başarılı taramadan itibaren yeni ve değişmiş adaylar alınır, kaynak kimlikleri indeksli sorgularla karşılaştırılır, yalnızca gerekli kayıtlar işlenir. Büyük kataloğun tamamını her çalışmada indirmek veya modele okutmak hedeflenen yöntem değildir. Mevcut uygulama 100 bin oyun ölçeği için henüz uyarlanmış değildir; veritabanından sayfalama ve katalog aktarımının yeniden düzenlenmesi gerekir.
