@@ -38,7 +38,7 @@ function relatedIndex(games){
   relatedIndexCache={games,length:games.length,items,rarity,vector};return relatedIndexCache;
 }
 function relatedMatches(g,games=state.games){
-  const target=steamTagsFor(g);if(!target.length)return [];
+  const target=steamTagsFor(g);if(!g.platforms?.includes('PC')||!target.length)return [];
   const index=relatedIndex(games),vector=index.vector(target),ids=new Set(target.map(t=>t.id));
   const targetSpecific=target.filter(t=>!genericSteamTags.has(t.id)).length,matches=[];
   for(const item of index.items){
@@ -58,6 +58,7 @@ function relatedMatches(g,games=state.games){
   return matches.slice(0,relatedLimit);
 }
 function relatedRecommendations(g,games=state.games){
+  if(!g.platforms?.includes('PC'))return [];
   const source=nativeRelated.get(g.id),result=[],seen=new Set([g.id]);
   if(source?.steamAppId===g.steamAppId){
     const bySteam=new Map(games.filter(x=>x.catalogScope!=='archive'&&x.platforms?.includes('PC')).map(x=>[x.steamAppId,x]));
