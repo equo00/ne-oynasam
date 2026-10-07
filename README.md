@@ -30,11 +30,13 @@ Ruh haline ve tercihlerine göre oyun bulmanı sağlayan Türkçe oyun keşif si
 
 Site yalnızca PC oyunlarının keşfine odaklanacaktır. Konsol ve mobil katalogları genişletme hedefi iş planından çıkarılmıştır. Ana keşifteki diğer platform filtresinin kaldırılması ve puan, karşılaştırma, mağaza bağlantıları ile benzer oyunların PC odağında tutarlı tutulması planlanmıştır; mevcut filtre henüz kaldırılmamıştır. Sitenin mobil uygulaması aynı PC kataloğuna erişim sağlayacak ve en son aşama olarak kalacaktır.
 
-Eksik Metacritic kullanıcı puanlarını tamamlama işi ilk önceliktir. Gündem taraması, kademeli katalog büyümesi ve yeni oyun aktarımı [iş listesinde](ROADMAP.md) planlanmıştır; zamanlanmış görevler henüz kurulmamıştır.
+İşler bağımlılık sırasıyla yürütülecektir: önce PC kapsamı ve kalıcı veri/sunucu sorgusu altyapısı, ardından eksik Metacritic kullanıcı puanları ve arayüz geliştirmeleri. Gündem taraması, kademeli katalog büyümesi ve yeni oyun aktarımı [iş listesinde](ROADMAP.md) planlanmıştır; zamanlanmış görevler henüz kurulmamıştır.
 
 Oyun kartlarında kısa video önizlemesi de planlanmıştır: kısa beklemeden sonra sessiz oynatma, karttan ayrılınca durdurma, yalnızca ihtiyaç halinde medya yükleme ve kullanıcıya kapatma seçeneği. Bu özellik henüz uygulanmamıştır.
 
 Uzun vadeli hedef, kaynak kapsamı ve doğrulamalar elverirse 140 bin benzersiz PC oyunudur. Önerilen büyüme basamakları 5 bin, 10 bin, 25 bin, 50 bin, 100 bin ve mümkünse 140 bindir; her basamağa küçük, devam ettirilebilir aktarım gruplarıyla ulaşılır. İlk katalog doldurma ile haftalık delta aktarımı ayrı süreçlerdir. Bu bir hedef olup mevcut kapasite veya ulaşılabilir oyun sayısı garantisi değildir.
+
+Yönetici denetimi ve ortak aktarım/delta akışı, büyük katalog doldurulmadan önce hazırlanacaktır. Gündem sinyalleri ve ziyaret geçmişi, son kişisel keşif sıralamasından önce kurulacaktır. İlk katalog büyüme basamağı doğrulanınca sonraki geliştirmelere geçilir; 140 bin hedefi yayın veya diğer işleri bekleten koşul değildir. Her adımda mevcut kimlikler, koleksiyonlar ve API sözleşmeleri korunur; ilgili geriye dönük davranışlar ve veri geçişinin geri dönüşü kontrol edilir. Bu sıralama değişikliği geliştirme veya aktarım başlatmaz.
 
 Gelecekteki oyun ekleme görevleri delta mantığıyla çalışmalıdır: son başarılı taramadan itibaren yeni ve değişmiş adaylar alınır, kaynak kimlikleri indeksli sorgularla karşılaştırılır, yalnızca gerekli kayıtlar işlenir. Büyük kataloğun tamamını her çalışmada indirmek veya modele okutmak hedeflenen yöntem değildir. Mevcut uygulama 100 bin oyun ölçeği için henüz uyarlanmış değildir; veritabanından sayfalama ve katalog aktarımının yeniden düzenlenmesi gerekir.
 
