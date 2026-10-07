@@ -1,8 +1,11 @@
-import fs from 'node:fs';import path from 'node:path';import {pathToFileURL} from 'node:url';import {DatabaseSync} from 'node:sqlite';import {strict as assert} from 'node:assert';const esbuildPackage=fs.readdirSync('node_modules/.pnpm').find(x=>x.startsWith('esbuild@'));const {build}=await import(pathToFileURL(path.resolve('node_modules/.pnpm',esbuildPackage,'node_modules/esbuild/lib/main.js')).href);
-const sqlite=new DatabaseSync(':memory:');for(const file of fs.readdirSync('drizzle').filter(x=>x.endsWith('.sql')).sort())sqlite.exec(fs.readFileSync('drizzle/'+file,'utf8').replaceAll('--> statement-breakpoint',''));
-class Statement{constructor(sql,args=[]){this.sql=sql;this.args=args}bind(...args){return new Statement(this.sql,args)}async all(){return {results:sqlite.prepare(this.sql).all(...this.args)}}async first(){return sqlite.prepare(this.sql).get(...this.args)||null}async run(){return sqlite.prepare(this.sql).run(...this.args)}}
-globalThis.testDb={prepare:sql=>new Statement(sql),batch:async stmts=>{sqlite.exec('BEGIN');try{const r=[];for(const s of stmts)r.push(await s.run());sqlite.exec('COMMIT');return r}catch(e){sqlite.exec('ROLLBACK');throw e}}};globalThis.testUser={userId:'user-a',email:'a@example.test',displayName:'A'};
-const routeNames=['library','lists','views','library/import','catalog'];const modules={};for(const name of routeNames){const dest='/tmp/neoynasam-api-'+name.replaceAll('/','-')+'.mjs';await build({entryPoints:['app/api/'+name+'/route.ts'],outfile:dest,bundle:true,platform:'node',format:'esm',plugins:[{name:'test-env',setup(b){b.onResolve({filter:/cloudflare:workers/},()=>({path:'cloudflare',namespace:'test'}));b.onLoad({filter:/.*/,namespace:'test'},()=>({contents:'export const env={DB:globalThis.testDb};',loader:'js'}));b.onResolve({filter:/chatgpt-auth$/},()=>({path:'auth',namespace:'mock-auth'}));b.onLoad({filter:/.*/,namespace:'mock-auth'},()=>({contents:'export async function getChatGPTUser(){return globalThis.testUser;}',loader:'js'}));}}]});modules[name]=await import(pathToFileURL(dest).href);}
+import fs from 'node:fs';
+import {strict as assert} from 'node:assert';
+import {createCatalogFixture,moduleFor,readyCatalog} from './catalog-fixture.mjs';
+const fixture=createCatalogFixture(),sqlite=fixture.sqlite;
+globalThis.testUser={userId:'user-a',email:'a@example.test',displayName:'A'};
+const routeNames=['library','lists','views','library/import','catalog','games'];
+const modules={};for(const name of routeNames)modules[name]=await moduleFor('app/api/'+name+'/route.ts',{auth:true});
+await readyCatalog(await moduleFor('lib/catalog-bootstrap.ts'));
 const catalog=JSON.parse(fs.readFileSync('data/catalog.json','utf8'));const id=catalog.find(x=>x.name==='Kenshi').id;const req=(p,b,method='POST',origin='https://test.example')=>new Request('https://test.example/api/'+p,{method,headers:{'Content-Type':'application/json',Origin:origin},body:JSON.stringify(b)});const post=async(m,p,b)=>{const r=await m.POST(req(p,b));return {status:r.status,data:await r.json()}};
 let r=await post(modules.library,'library',{gameId:id,status:'planned',note:'private',rating:4});assert.equal(r.status,200);
 globalThis.testUser={userId:'user-b',email:'b@example.test',displayName:'B'};assert.equal((await (await modules.library.GET()).json()).entries.length,0);let lr=await post(modules.lists,'lists',{action:'create',name:'B list'});const bList=lr.data.id;assert.equal(lr.status,200);
@@ -11,4 +14,25 @@ assert.equal((await modules.library.POST(req('library',{gameId:id,status:'planne
 assert.equal((await post(modules.views,'views',{gameId:id})).data.count,1);assert.equal((await post(modules.views,'views',{gameId:id})).data.count,1);globalThis.testUser={userId:'user-b',email:'b@example.test',displayName:'B'};assert.equal((await post(modules.views,'views',{gameId:id})).data.count,2);
 globalThis.testUser={userId:'user-a',email:'a@example.test',displayName:'A'};await modules.library.DELETE(req('library',{gameId:id},'DELETE'));assert.equal((await (await modules.library.GET()).json()).entries.length,0);assert.equal((await (await modules.lists.GET()).json()).lists[0].games.length,0);globalThis.testUser=null;assert.equal((await modules.library.GET()).status,401);assert.equal((await post(modules.library,'library',{gameId:id,status:'planned',note:'',rating:null})).status,401);assert.equal((await modules.lists.GET()).status,401);
 const importRoute=modules['library/import'];globalThis.testUser={userId:'user-a',email:'a@example.test',displayName:'A'};assert.equal((await post(importRoute,'library/import',{entries:[{gameId:id,status:'playing',note:'Restored private',rating:3}]})).status,200);const restored=await post(importRoute,'library/import',{collectionName:'Restored collection',games:[id]});assert.equal(restored.status,200);const restoredAgain=await post(importRoute,'library/import',{collectionName:'Restored collection',games:[id]});assert.equal(restoredAgain.data.listId,restored.data.listId);globalThis.testUser={userId:'user-b',email:'b@example.test',displayName:'B'};assert.equal((await post(importRoute,'library/import',{collectionName:'Restored collection',games:[id]})).status,400);assert.equal((await (await modules.library.GET()).json()).entries.length,0);assert.equal((await modules.catalog.POST(req('catalog',{ids:[]}))).status,400);assert.equal((await modules.catalog.POST(req('catalog',{ids:[id,id]}))).status,400);globalThis.testUser=null;assert.equal((await post(importRoute,'library/import',{entries:[]})).status,401);
+
+const getReq=query=>new Request('https://test.example/api/catalog'+query);
+let catalogResponse=await modules.catalog.GET(getReq(''));
+assert.equal(catalogResponse.status,200);
+const firstPage=await catalogResponse.json();
+assert.equal(firstPage.apiVersion,2);assert.equal(firstPage.games.length,24);
+assert.equal(firstPage.total,1323);assert.equal(firstPage.catalogStats.scores,901);
+globalThis.testUser={userId:'user-a',email:'a@example.test',displayName:'A'};
+const privatePage=await (await modules.catalog.GET(getReq('?library=1'))).json();
+assert.deepEqual(privatePage.games.map(g=>g.id),[id]);
+assert(!JSON.stringify(firstPage).includes('Restored private'),'Public game payload must not include private notes');
+globalThis.testUser={userId:'user-b',email:'b@example.test',displayName:'B'};
+const otherPage=await (await modules.catalog.GET(getReq('?library=1'))).json();
+assert.equal(otherPage.total,0);
+globalThis.testUser=null;
+assert.equal((await modules.catalog.GET(getReq('?library=1'))).status,401);
+assert.equal((await modules.catalog.GET(getReq('?sort=DROP%20TABLE%20library'))).status,400);
+assert.equal((await modules.games.GET(new Request('https://test.example/api/games?ids='+Array.from({length:61},(_,i)=>'game-'+i).join(',')))).status,400);
+const detailRecords=await (await modules.games.GET(new Request('https://test.example/api/games?ids=kenshi,minecraft'))).json();
+assert.equal(detailRecords.games.length,2);assert.equal(detailRecords.games[1].catalogScope,'archive');
+assert(sqlite.prepare('SELECT note FROM library WHERE user_id=? AND game_id=?').get('user-a',id).note==='Restored private');
 console.log('Passed: authenticated CRUD, user isolation, list ownership, CSRF, validation, transactional dedup views, delete cascade, anonymous denial.');sqlite.close();

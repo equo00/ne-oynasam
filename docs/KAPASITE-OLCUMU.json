@@ -1,0 +1,180 @@
+{
+  "test": "synthetic-140k-indexed-catalog",
+  "games": 140000,
+  "tagRelations": 2800000,
+  "sourceMappings": 280000,
+  "insertMs": 28723,
+  "sqliteBytes": 1321639936,
+  "maxPayloadBytes": 81295,
+  "medianQueryMs": 80.79,
+  "p95QueryMs": 550.55,
+  "timings": [
+    {
+      "label": "first page",
+      "ms": 236.23,
+      "total": 140000
+    },
+    {
+      "label": "first page",
+      "ms": 76.32,
+      "total": 140000
+    },
+    {
+      "label": "first page",
+      "ms": 80.79,
+      "total": 140000
+    },
+    {
+      "label": "deep page",
+      "ms": 106,
+      "total": 140000
+    },
+    {
+      "label": "deep page",
+      "ms": 95.63,
+      "total": 140000
+    },
+    {
+      "label": "deep page",
+      "ms": 97.15,
+      "total": 140000
+    },
+    {
+      "label": "score",
+      "ms": 37.64,
+      "total": 23284
+    },
+    {
+      "label": "score",
+      "ms": 27.78,
+      "total": 23284
+    },
+    {
+      "label": "score",
+      "ms": 26.54,
+      "total": 23284
+    },
+    {
+      "label": "latest",
+      "ms": 69.48,
+      "total": 140000
+    },
+    {
+      "label": "latest",
+      "ms": 68.12,
+      "total": 140000
+    },
+    {
+      "label": "latest",
+      "ms": 75.67,
+      "total": 140000
+    },
+    {
+      "label": "name",
+      "ms": 53.56,
+      "total": 140000
+    },
+    {
+      "label": "name",
+      "ms": 51.75,
+      "total": 140000
+    },
+    {
+      "label": "name",
+      "ms": 57.23,
+      "total": 140000
+    },
+    {
+      "label": "exact prefix",
+      "ms": 296.71,
+      "total": 1
+    },
+    {
+      "label": "exact prefix",
+      "ms": 271.34,
+      "total": 1
+    },
+    {
+      "label": "exact prefix",
+      "ms": 264.16,
+      "total": 1
+    },
+    {
+      "label": "common prefix",
+      "ms": 544.4,
+      "total": 140000
+    },
+    {
+      "label": "common prefix",
+      "ms": 550.55,
+      "total": 140000
+    },
+    {
+      "label": "common prefix",
+      "ms": 625.81,
+      "total": 140000
+    },
+    {
+      "label": "AND genres/tags",
+      "ms": 210.25,
+      "total": 1772
+    },
+    {
+      "label": "AND genres/tags",
+      "ms": 232.26,
+      "total": 1772
+    },
+    {
+      "label": "AND genres/tags",
+      "ms": 230.17,
+      "total": 1772
+    },
+    {
+      "label": "mood",
+      "ms": 18.28,
+      "total": 28000
+    },
+    {
+      "label": "mood",
+      "ms": 18.33,
+      "total": 28000
+    },
+    {
+      "label": "mood",
+      "ms": 18.53,
+      "total": 28000
+    }
+  ],
+  "related": [
+    {
+      "case": "varied-20-tags",
+      "ms": 543.06,
+      "results": 20
+    },
+    {
+      "case": "all-140k-share-two-specific-tags",
+      "ms": 7814.59,
+      "results": 20
+    }
+  ],
+  "plans": {
+    "discovery": [
+      "SEARCH catalog_games USING COVERING INDEX catalog_games_status_order_idx (status=?)"
+    ],
+    "word prefix": [
+      "SEARCH catalog_search_terms USING COVERING INDEX sqlite_autoindex_catalog_search_terms_1 (token>? AND token<?)"
+    ],
+    "tag": [
+      "SEARCH catalog_game_tags USING COVERING INDEX catalog_game_tags_filter_idx (tag_id=?)"
+    ],
+    "identity": [
+      "SEARCH catalog_source_ids USING INDEX sqlite_autoindex_catalog_source_ids_1 (source=? AND external_id=?)"
+    ]
+  },
+  "diagnosticBudgets": {
+    "defaultPagePayloadBytes": 200000,
+    "queryMs": 3000,
+    "broadRelatedMs": 30000
+  },
+  "limits": "Yalnızca yerel SQLite ve sentetik veri ölçümüdür. Canlı gecikmeyi, D1 kotasını/depolamayı, kaynak kapsamını veya 140 bin yayımlanmış oyunu doğrulamaz."
+}

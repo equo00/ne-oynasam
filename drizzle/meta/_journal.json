@@ -15,6 +15,34 @@
       "when": 1791231478700,
       "tag": "0001_worthless_jetstream",
       "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "6",
+      "when": 1791401813590,
+      "tag": "0002_fair_morbius",
+      "breakpoints": true
+    },
+    {
+      "idx": 3,
+      "version": "6",
+      "when": 1791401876537,
+      "tag": "0003_awesome_photon",
+      "breakpoints": true
+    },
+    {
+      "idx": 4,
+      "version": "6",
+      "when": 1791402192842,
+      "tag": "0004_nappy_nextwave",
+      "breakpoints": true
+    },
+    {
+      "idx": 5,
+      "version": "6",
+      "when": 1791402653195,
+      "tag": "0005_dusty_surge",
+      "breakpoints": true
     }
   ]
 }

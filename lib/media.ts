@@ -1,4 +1,4 @@
-import seed from '../data/catalog.json';
+import {gameById} from './catalog-repository';
 import {db} from './db';
 import {steamDetails} from './steam';
 import {validId} from './security';
@@ -26,15 +26,24 @@ export function parseSteamMedia(d:any,appid:number,expectedName:string):GameMedi
  }
  return {steamAppId:appid,name:expectedName,items,sourceUrl:'https://store.steampowered.com/app/'+appid+'/',fetchedAt:new Date().toISOString()};
 }
+async function persistMedia(id:string,media:GameMedia){
+ const database=db();const rows=media.items.map((item,position)=>({...item,mediaId:'steam-media-'+item.id,position}));
+ // Source gallery items have their own IDs; covers and manually registered media
+ // keep their identity when a gallery cache is refreshed.
+ await database.batch([
+ database.prepare("DELETE FROM catalog_media WHERE game_id=? AND source='steam-store-media'").bind(id),
+ database.prepare(`INSERT INTO catalog_media(game_id,media_id,kind,url,position,source,retrieved_at,payload) SELECT ?,json_extract(value,'$.mediaId'),json_extract(value,'$.kind'),json_extract(value,'$.src'),json_extract(value,'$.position'),'steam-store-media',?,value FROM json_each(?) WHERE 1 ON CONFLICT(game_id,media_id) DO UPDATE SET url=excluded.url,position=excluded.position,retrieved_at=excluded.retrieved_at,payload=excluded.payload WHERE catalog_media.source='steam-store-media'`).bind(id,media.fetchedAt,JSON.stringify(rows))
+ ]);
+}
 const pending=new Map<string,Promise<GameMedia>>();
 export async function mediaForGame(id:string):Promise<GameMedia>{
  if(!validId(id))throw new Error('INVALID_GAME');
- let game:any=seed.find(g=>g.id===id);try{const row=await db().prepare('SELECT payload FROM source_games WHERE id=?').bind(id).first<{payload:string}>();if(row)game={...game,...JSON.parse(row.payload)};}catch{}
+ const game=await gameById(id);
  if(!game||!Number.isSafeInteger(game.steamAppId)||!game.platforms?.includes('PC'))throw new Error('INVALID_GAME');
- const key='steam-media-v1:'+game.steamAppId;let cached:GameMedia|null=null;
+ const appid=Number(game.steamAppId);const key='steam-media-v1:'+appid;let cached:GameMedia|null=null;
  try{const row=await db().prepare('SELECT payload FROM catalog_cache WHERE id=?').bind(key).first<{payload:string}>();if(row){const value=JSON.parse(row.payload);if(value.steamAppId===game.steamAppId&&identity(value.name)===identity(game.name)&&Array.isArray(value.items))cached=value;}}catch{}
- if(cached&&Date.now()-Date.parse(cached.fetchedAt)<86400000)return cached;
+ if(cached&&Date.now()-Date.parse(cached.fetchedAt)<86400000){await persistMedia(id,cached);return cached;}
  if(pending.has(key))return pending.get(key)!;
  if(pending.size>=100)throw new Error('Medya kaynağı meşgul.');
- const load=(async()=>{try{const d=await steamDetails(game.steamAppId),media=parseSteamMedia(d,game.steamAppId,game.name);try{await db().prepare('INSERT INTO catalog_cache(id,payload,fetched_at) VALUES(?,?,?) ON CONFLICT(id) DO UPDATE SET payload=excluded.payload,fetched_at=excluded.fetched_at').bind(key,JSON.stringify(media),media.fetchedAt).run();}catch{}return media;}catch(e){if(cached)return {...cached,stale:true};throw e;}finally{pending.delete(key);}})();pending.set(key,load);return load;
+ const load=(async()=>{try{const d=await steamDetails(appid),media=parseSteamMedia(d,appid,game.name);try{await db().prepare('INSERT INTO catalog_cache(id,payload,fetched_at) VALUES(?,?,?) ON CONFLICT(id) DO UPDATE SET payload=excluded.payload,fetched_at=excluded.fetched_at').bind(key,JSON.stringify(media),media.fetchedAt).run();}catch{}await persistMedia(id,media);return media;}catch(e){if(cached)return {...cached,stale:true};throw e;}finally{pending.delete(key);}})();pending.set(key,load);return load;
 }

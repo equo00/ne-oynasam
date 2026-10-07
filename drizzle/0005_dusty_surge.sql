@@ -1,0 +1,1 @@
+ALTER TABLE `catalog_games` ADD `tag_profile_complete` integer;

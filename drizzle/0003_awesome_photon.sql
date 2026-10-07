@@ -1,0 +1,1 @@
+ALTER TABLE `catalog_tags` ADD `game_count` integer DEFAULT 0 NOT NULL;

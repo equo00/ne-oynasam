@@ -1,0 +1,1 @@
+ALTER TABLE `catalog_games` ADD `base_payload` text DEFAULT '{}' NOT NULL;

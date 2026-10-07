@@ -12,6 +12,12 @@ Ruh haline ve tercihlerine göre oyun bulmanı sağlayan Türkçe oyun keşif si
 - Gerektiğinde ikincil kaynak bilgisiyle birlikte 1.216 geliştirici kaydı.
 - Güncel kapağı bulunmayan üç eski kayıt kişisel koleksiyonlarda erişilebilir kalır; katalog sayısına eklenmez. Disco Elysium'un The Final Cut sürümüne taşınması dahil, kişisel listelerde kullanılan oyun kimlikleri korunur.
 
+## Veri altyapısı
+
+Katalog API v2 ile sunucuda aranır, filtrelenir ve sayfalanır; varsayılan yanıt 24 oyundur. Tarayıcı tüm katalog, editoryal metin dosyası veya görüntülenme haritasını indirmez. Ayrıntı, arşiv bağlantıları, karşılaştırma ve benzer oyunlar yalnızca gerekli kayıtları alır. Kalıcı oyun/kaynak/sürüm kimlikleri, puan ve değerlendirme sayısı alanları, tür/etiket indeksleri, medya referansları ve ham kaynak verisinden ayrı manuel düzenleme önceliği eklendi. Mevcut 1.323 oyun, 3 arşiv kimliği ve 901 puan korunur.
+
+Taşıma devam noktalarıyla sürer; eski kaynak ve kişisel tablolar silinmez. Yerel tam SQLite yedeği/geri yükleme araçları ve 140 bin sentetik oyunla kapasite testi bulunur. API sözleşmesi, arama davranışı, gerçek barındırma gereksinimleri, ölçüm sınırları ve geri dönüş yöntemi [veri altyapısı belgesinde](docs/VERI-ALTYAPISI.md) açıklanır. Bu adım yeni oyun taraması veya otomasyon kurmaz.
+
 ## Özellikler
 
 - Oyun arama; ruh hali, tür, PC işletim sistemi, çıkış dönemi, Türkçe arayüz ve birlikte oynama filtreleri.
@@ -30,7 +36,7 @@ Ruh haline ve tercihlerine göre oyun bulmanı sağlayan Türkçe oyun keşif si
 
 Site yalnızca PC oyunlarının keşfine odaklanır. İş planının 1. adımı tamamlandı: diğer platform filtresi kaldırıldı, hızlı öneri formu Windows/macOS/Linux seçimine taşındı. Kartlar, puan eşikleri/sıralama, karşılaştırma, PC mağaza bağlantıları ve benzer oyunlar aynı odağı kullanır. Diğer platformlar yalnızca oyun ayrıntısında yardımcı bilgi olarak kalır. Eski platform parametreli bağlantılar kalan filtreleri koruyarak çalışır. Konsol ve mobil katalogları genişletme hedefi iş planından çıkarılmıştır. Sitenin mobil uygulaması aynı PC kataloğuna erişim sağlayacak ve en son aşama olarak kalacaktır.
 
-İşler bağımlılık sırasıyla yürütülecektir: PC kapsamından sonra kalıcı veri/sunucu sorgusu altyapısı, ardından eksik Metacritic kullanıcı puanları ve arayüz geliştirmeleri. Gündem taraması, kademeli katalog büyümesi ve yeni oyun aktarımı [iş listesinde](ROADMAP.md) planlanmıştır; zamanlanmış görevler henüz kurulmamıştır.
+İşler bağımlılık sırasıyla yürütülecektir: PC kapsamı ve kalıcı veri/sunucu sorgusu altyapısı tamamlandı; sırada eksik Metacritic kullanıcı puanları ve arayüz geliştirmeleri var. Gündem taraması, kademeli katalog büyümesi ve yeni oyun aktarımı [iş listesinde](ROADMAP.md) planlanmıştır; zamanlanmış görevler henüz kurulmamıştır.
 
 Oyun kartlarında kısa video önizlemesi de planlanmıştır: kısa beklemeden sonra sessiz oynatma, karttan ayrılınca durdurma, yalnızca ihtiyaç halinde medya yükleme ve kullanıcıya kapatma seçeneği. Bu özellik henüz uygulanmamıştır.
 
@@ -38,7 +44,7 @@ Uzun vadeli hedef, kaynak kapsamı ve doğrulamalar elverirse 140 bin benzersiz 
 
 Yönetici denetimi ve ortak aktarım/delta akışı, büyük katalog doldurulmadan önce hazırlanacaktır. Gündem sinyalleri ve ziyaret geçmişi, son kişisel keşif sıralamasından önce kurulacaktır. İlk katalog büyüme basamağı doğrulanınca sonraki geliştirmelere geçilir; 140 bin hedefi yayın veya diğer işleri bekleten koşul değildir. Her adımda mevcut kimlikler, koleksiyonlar ve API sözleşmeleri korunur; ilgili geriye dönük davranışlar ve veri geçişinin geri dönüşü kontrol edilir. Bu sıralama değişikliği geliştirme veya aktarım başlatmaz.
 
-Gelecekteki oyun ekleme görevleri delta mantığıyla çalışmalıdır: son başarılı taramadan itibaren yeni ve değişmiş adaylar alınır, kaynak kimlikleri indeksli sorgularla karşılaştırılır, yalnızca gerekli kayıtlar işlenir. Büyük kataloğun tamamını her çalışmada indirmek veya modele okutmak hedeflenen yöntem değildir. Mevcut uygulama 100 bin oyun ölçeği için henüz uyarlanmış değildir; veritabanından sayfalama ve katalog aktarımının yeniden düzenlenmesi gerekir.
+Gelecekteki oyun ekleme görevleri delta mantığıyla çalışmalıdır: son başarılı taramadan itibaren yeni ve değişmiş adaylar alınır, kaynak kimlikleri indeksli sorgularla karşılaştırılır, yalnızca gerekli kayıtlar işlenir. Büyük kataloğun tamamını her çalışmada indirmek veya modele okutmak hedeflenen yöntem değildir. İndeksli veritabanı, sunucuda sayfalama ve parçalı/idempotent yazım altyapısı hazırdır. Gerçek 100 bin oyun için depolama, sorgu maliyeti ve yoğun benzer oyun eşleşmeleri ayrıca ölçülmelidir; sentetik test canlı kapasite garantisi değildir.
 
 GitHub proje açıklamaları, yeni commit mesajları, iş kayıtları ve değişiklik notları Türkçe yazılır. API adları, teknik kimlikler, komutlar ve üçüncü tarafların özgün lisans metinleri korunur.
 
@@ -58,11 +64,17 @@ Reklam hesabı, ücretli abonelik, özel alan adı veya düzenli çalışan gör
 
 Sites/Vinext derleme entegrasyonu, Cloudflare Worker ve `DB` adlı D1 bağlantısı kullanılır. `drizzle/` altındaki mevcut veritabanı geçiş dosyaları korunur. Yenilenen ortak kayıtlar `source_games` tablosunda tutulur; katalog aktarımı kullanıcıya ait tabloları değiştirmez.
 
-Aktarım betikleri `scripts/` klasöründedir. `data/wikidata-seed.json` ilk kimlik eşleştirme verisini içerir. `data/catalog.json`, `data/legacy-catalog.json` ve ayrı lisans kapsamındaki `data/metacritic-users.json` derleme girdileridir.
+Aktarım betikleri `scripts/` klasöründedir. `data/wikidata-seed.json` ilk kimlik eşleştirme verisini içerir. `data/catalog.json`, `data/legacy-catalog.json` ve ayrı lisans kapsamındaki `data/metacritic-users.json` başlangıç taşımasının girdileridir. Taşıma tamamlandıktan sonra bu dosyayı değiştirmek canlı katalog kaydını yenilemez; yeni/verisi değişen oyunlar `ingestGames` üzerinden kalıcı veritabanına yazılmalıdır.
 
-Bu GitHub deposu kaynak kodunu, şemayı, katalog veri kopyalarını ve değişiklik geçmişini içerir. Canlı D1 veritabanının veya kişisel koleksiyonların yedeği değildir. Veritabanı yedekleme ayrıca tasarlanmalıdır.
+Bu GitHub deposu kaynak kodunu, şemayı, katalog veri kopyalarını ve değişiklik geçmişini içerir. Canlı D1 veritabanının veya kişisel koleksiyonların yedeği değildir. Yerel tam yedek/geri yükleme araçları bulunur; canlı tam dışa aktarma, saklama ve geri yükleme erişimi barındırma sağlayıcısında ayrıca doğrulanmalıdır.
 
 ## Doğrulama
+
+- `node tests/catalog-ingest.test.mjs`: Devam noktası/atomik taşıma, tüm eski ID ve puanlar, kaynak/sürüm çakışmaları, ham kaynak ve manuel düzenleme önceliği, tekrar deneme, eski kod uyumu ve tam yedek geri yükleme.
+- `node tests/catalog-query.test.mjs`: Gerçek SQLite üzerinde API v2 sayfalaması, indeksli arama, VE filtreleri, puan/değerlendirme sayısı, arşiv ve koleksiyon yalıtımı.
+- `node tests/frontend-paging.test.cjs` ve `node tests/frontend-catalog-integration.test.mjs`: Sayfa dışındaki ayrıntı/karşılaştırma, sınırlı önbellek, geç gelen yanıtlar, yükleme hatası/yeniden deneme ve gerçek SQL kataloğunun arayüz tüketimi.
+- `node tests/catalog-capacity.test.mjs`: 140 bin sentetik oyun, 2,8 milyon etiket ilişkisi ve 280 bin kaynak eşlemesinde sorgu planı/yanıt boyutu/yerel süre ölçümü. Canlı kapasite garantisi değildir.
+
 
 - `node tests/pc-scope.test.mjs`: Eski platform bağlantıları, PC işletim sistemi formu/filtreleri, mevcut puanların korunması, karşılaştırma, doğru PC mağaza bağlantısı, yardımcı platform bilgisi, benzer oyun kapsamı ve gerçek katalog işleyicisi.
 
