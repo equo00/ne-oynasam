@@ -27,11 +27,15 @@ assert(h.elements.notice.textContent.includes('PC işletim sistemi'));
 
 const score={metric:'user-score',platform:'PC',score:8.6};
 h.ctx.pcFixture={id:'pc-fixture',name:'Fixture',steamAppId:99990001,platforms:['PC','PlayStation'],genres:[],pcSystems:['Windows'],metacriticUser:score};
-for(const platform of [null,'PlayStation','Android']){
+for(const platform of ['PlayStation','Android']){
  h.ctx.pcFixture.metacriticUser={...score,platform};
  assert.equal(vm.runInContext('userScore(pcFixture)',h.ctx),null);
  assert(!vm.runInContext('scoreBadge(pcFixture)',h.ctx).includes('8,6'));
 }
+h.ctx.pcFixture.metacriticUser={...score,platform:null};
+assert.equal(vm.runInContext('scoreText(pcFixture)',h.ctx),'8,6/10');
+assert(vm.runInContext('scoreRecordText(pcFixture)',h.ctx).includes('Platform belirtilmemiş'));
+assert(!vm.runInContext('scoreBadge(pcFixture)',h.ctx).includes('· PC'));
 h.ctx.pcFixture.metacriticUser=score;
 assert.equal(vm.runInContext('scoreText(pcFixture)',h.ctx),'8,6/10');
 assert(!vm.runInContext('card(pcFixture)',h.ctx).includes('PlayStation'));
@@ -41,7 +45,7 @@ assert(h.elements.detailContent.innerHTML.includes('PlayStation'));
 assert(h.elements.detailContent.innerHTML.includes('https://store.steampowered.com/app/99990001/'));
 assert(!h.elements.detailContent.innerHTML.includes('https://store.playstation.com/'));
 vm.runInContext('state.compare=new Set(["pc-fixture","kenshi"]);showCompare()',h.ctx);
-assert(h.elements.compareContent.innerHTML.includes('Metacritic kullanıcı · PC'));
+assert(h.elements.compareContent.innerHTML.includes('Metacritic kullanıcı'));
 assert(!h.elements.compareContent.innerHTML.includes('PlayStation'));
 h.ctx.pcFixture.platforms=['PlayStation'];
 assert.equal(vm.runInContext('userScore(pcFixture)',h.ctx),null);
@@ -59,11 +63,11 @@ const c=await catalog();
 assert.equal(c.games.length,h.source.length);
 assert(c.games.every(g=>g.platforms.includes('PC')));
 const verified=c.games.filter(g=>g.metacriticUser);
-assert(verified.length>0&&verified.length<c.games.length);
-assert(verified.every(g=>g.metacriticUser.platform==='PC'&&g.metacriticUser.metric==='user-score'));
+assert.equal(verified.length,901);
+assert(verified.every(g=>(g.metacriticUser.platform==null||g.metacriticUser.platform==='PC')&&g.metacriticUser.metric==='user-score'));
 const unspecified=h.source.find(g=>h.scoreData[h.scoreIdentities[g.id]?.scoreRecordId]?.platform===null);
 assert(unspecified);
-assert.equal(c.games.find(g=>g.id===unspecified.id).metacriticUser,null);
+assert.equal(c.games.find(g=>g.id===unspecified.id).metacriticUser.score,h.scoreData[h.scoreIdentities[unspecified.id].scoreRecordId].score);
 assert.equal(h.scoreData[h.scoreIdentities[unspecified.id].scoreRecordId].platform,null,'Original source records remain intact');
 vm.runInContext('closeMedia();stopSpotlight();clearTimeout(spotlightRefreshTimer)',h.ctx);
-console.log('Passed: obsolete platform URL compatibility, OS quiz/filter, PC-only score display and comparison, PC store URL, auxiliary platform details, recommendation scope and actual server catalog.');
+console.log('Passed: obsolete platform URL compatibility, OS quiz/filter, preserved source scores and comparison, PC store URL, auxiliary platform details, recommendation scope and actual server catalog.');

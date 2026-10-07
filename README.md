@@ -8,14 +8,14 @@ Ruh haline ve tercihlerine göre oyun bulmanı sağlayan Türkçe oyun keşif si
 
 - Yayımlanmış, benzersiz 1.323 Windows/PC oyunu. Katalog oluşturulurken DLC, paket ve henüz çıkmamış kayıtlar elenir. Önceden doğrulanmış oyunların kalıcı kimlikleri korunur.
 - 1.323 oyunun yayıncıya ait gerçek kapak görseli bağlantısı. İlk aktarımda 905 görselin yanıtı ayrıca doğrulanmıştır. Diğer bağlantılar mağaza kayıtlarından alınmıştır. Kapak yüklenemezse aynı oyunun alternatif mağaza görseli denenir; o da yüklenemezse görselin bulunamadığı belirtilir.
-- Kaynakta oyun kimliğiyle eşleştirilmiş 901 Metacritic kullanıcı puanı korunur. Bunların 20'sinin PC platformu doğrulanmıştır ve sitede yalnızca bu puanlar gösterilir; platformu belirtilmeyen 881 kayıt PC puanı sayılmaz. Bu puanlar eleştirmen puanlarından, mağazadaki olumlu değerlendirme yüzdesinden ve kullanıcının kendi puanından ayrı tutulur. CS2/CS:GO ve yeniden düzenlenmiş sürüm gibi yanlış eşleşmeler kabul edilmez. Puanı olmayan 422 kayıt ile platformu doğrulanmamış 881 kayıt [iş listesinde](ROADMAP.md) ayrıca incelenir; bulunamayan puanlar üretilmez.
+- Kaynakta oyun kimliğiyle eşleştirilmiş 901 Metacritic kullanıcı puanı korunur. Bunların 20'sinin PC platformu doğrulanmıştır ve mevcut 901 puan gösterilir; platformu belirtilmeyen 881 kayıtta platform belirsizliği açıkça korunur. Bu puanlar eleştirmen puanlarından, mağazadaki olumlu değerlendirme yüzdesinden ve kullanıcının kendi puanından ayrı tutulur. CS2/CS:GO ve yeniden düzenlenmiş sürüm gibi yanlış eşleşmeler kabul edilmez. Puanı olmayan 422 kayıt ile platformu doğrulanmamış 881 kayıt [iş listesinde](ROADMAP.md) ayrıca incelenir; bulunamayan puanlar üretilmez.
 - Gerektiğinde ikincil kaynak bilgisiyle birlikte 1.216 geliştirici kaydı.
 - Güncel kapağı bulunmayan üç eski kayıt kişisel koleksiyonlarda erişilebilir kalır; katalog sayısına eklenmez. Disco Elysium'un The Final Cut sürümüne taşınması dahil, kişisel listelerde kullanılan oyun kimlikleri korunur.
 
 ## Özellikler
 
 - Oyun arama; ruh hali, tür, PC işletim sistemi, çıkış dönemi, Türkçe arayüz ve birlikte oynama filtreleri.
-- Yalnızca doğrulanmış PC Metacritic kullanıcı puanına göre eşik ve sıralama; mağazadaki olumlu değerlendirmelere göre ayrı sıralama. Doğrulanmış puanı olmayan kayıtlar boş bırakılır.
+- Mevcut Metacritic kullanıcı puanına göre eşik ve sıralama; mağazadaki olumlu değerlendirmelere göre ayrı sıralama. Doğrulanmış puanı olmayan kayıtlar boş bırakılır.
 - Üç oyunu karşılaştırma. Puanın kaynağı, tarihi, platformu, PC işletim sistemleri, dil ve birlikte oynama bilgileri ayrı gösterilir.
 - Gerçek kapaklar, ihtiyaca göre görsel yükleme, farklı ekranlara uyumlu kartlar, krem/yeşil tasarım, karanlık mod, sayfalama ve doğrudan oyun bağlantıları.
 - Ayrıntılı oyun etiketlerine göre 20 benzer oyun; video ve ekran görüntüsü galerisi; günlük öne çıkan keşif oyunları.
@@ -64,7 +64,7 @@ Bu GitHub deposu kaynak kodunu, şemayı, katalog veri kopyalarını ve değişi
 
 ## Doğrulama
 
-- `node tests/pc-scope.test.mjs`: Eski platform bağlantıları, PC işletim sistemi formu/filtreleri, yalnızca PC puanı, karşılaştırma, doğru PC mağaza bağlantısı, yardımcı platform bilgisi, benzer oyun kapsamı ve gerçek katalog işleyicisi.
+- `node tests/pc-scope.test.mjs`: Eski platform bağlantıları, PC işletim sistemi formu/filtreleri, mevcut puanların korunması, karşılaştırma, doğru PC mağaza bağlantısı, yardımcı platform bilgisi, benzer oyun kapsamı ve gerçek katalog işleyicisi.
 
 - `node tests/data.test.mjs`: En az 1.000 benzersiz PC/Windows oyunu, kapak kaynakları, eski kimliklerin korunması ve puan kimliği/platform/tarih kuralları.
 - `node tests/security.test.mjs`: Alan doğrulama, istek kaynağı kontrolü ve güvenli olmayan URL'lerin reddedilmesi.
@@ -75,3 +75,5 @@ Bu GitHub deposu kaynak kodunu, şemayı, katalog veri kopyalarını ve değişi
 - `node node_modules/typescript/bin/tsc --noEmit`: TypeScript kontrolü. Yayın öncesi Sites derleme yardımcısı da çalıştırılır.
 
 Önceki doğrulamalarda tarayıcı üzerinden görsel/mobil kontrol ve gerçek giriş denemesi yapılamamıştır. Taklit kimlikle çalışan testler, gerçek tarayıcı girişini doğrulamaz. `/api/health` canlı D1 bağlantısını; `?source=steam` gerçek mağaza bilgisi çağrısını; `?source=1` kişisel verilere yazmadan Wikidata çağrısını kontrol eder.
+
+7 Ekim 2026 düzeltmesi: 1. adım sırasında eklenen platformu belirsiz puanları gizleme değişikliği geri alındı. Mevcut 901 puan kartlarda, ayrıntıda, karşılaştırmada ve puan filtreleri/sıralamada kullanılmaya devam eder. PC arayüzü, işletim sistemi filtresi ve mağaza/benzer oyun kapsamı korunur. Platform doğrulaması ile 422 eksik puanı tamamlama 3. adımdadır; yeni puan taraması bu düzeltmenin parçası değildir.

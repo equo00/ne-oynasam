@@ -75,13 +75,13 @@ Bu değişiklik işlerin sırasını ve geçiş ölçütlerini düzenler; uygula
 - [x] Kalıcı oyun ve kaynak kimlikleri korunsun; farklı sürümler yanlışlıkla birleştirilmesin. Veri altyapısı ileride kapsam değiştirmeye elverişli olabilir, fakat bu başka platformları ekleme taahhüdü değildir.
 - [x] Sitenin Android/iOS uygulaması PC oyun kataloğunu keşfetmeye yarar; mobil oyun kataloğu anlamına gelmez. Mobil uygulama her durumda son aşama olarak kalır.
 
-7 Ekim 2026: Kullanıcı yalnızca PC odağında devam etmeye karar verdi. Bu karar, aynı günün önceki çok platformlu genişleme hedefinin yerine geçer. Bu karar 1. adımda uygulandı: keşif ve hızlı öneri formundaki diğer platform seçimi kaldırıldı, Windows/macOS/Linux seçimi korundu. Eski platform URL parametresi temizlenirken diğer seçimler ve bağlantılar korundu. Yalnızca doğrulanmış PC kullanıcı puanları gösterilir; 901 kaynak kaydı korunur (20 PC, 881 belirsiz). Kimlikler, kişisel veriler ve katalogdaki 1.323 oyun korunur.
+7 Ekim 2026: Kullanıcı yalnızca PC odağında devam etmeye karar verdi. Bu karar, aynı günün önceki çok platformlu genişleme hedefinin yerine geçer. Bu karar 1. adımda uygulandı: keşif ve hızlı öneri formundaki diğer platform seçimi kaldırıldı, Windows/macOS/Linux seçimi korundu. Eski platform URL parametresi temizlenirken diğer seçimler ve bağlantılar korundu. Mevcut 901 kullanıcı puanı gösterilir (20 PC, 881 platform belirsiz); belirsiz kayıtlar PC puanı diye etiketlenmez. Kimlikler, kişisel veriler ve katalogdaki 1.323 oyun korunur.
 
 Doğrulama: PC kapsamı, mevcut ön yüz/koleksiyon, API, veri/puan kimliği, benzer oyun, galeri ve günlük seçki kontrolleri ile TypeScript kontrolü geçti. Tarayıcı üzerinden görsel/mobil ve gerçek giriş kontrolü bu ortamda yapılamadı. Sıradaki iş 2. adımdır; otomatik başlatılmaz.
 
 ## Eksik puanların ayrıntısı
 
-- [ ] Eksik Metacritic kullanıcı puanlarını tamamla. Kaynakta 1.323 oyun için 901 puan kaydı var. PC kapsamı uygulanınca yalnızca 20 doğrulanmış PC puanı gösterilir; 422 oyunda kaynak puanı yok, 881 kayıtta platform belirsizdir. Toplam 1.303 doğrulanmış PC puanı eksikliği bu iki gruba ayrılarak incelenir. Kaynak kayıtları silinmez. Kimliği doğrulanmamış oyunları, puan kaynağında sayısal değer bulunmayanları ve çelişkili ilişkileri ayrı incele. Puan bulunabilen doğru oyun ve PC platformu kayıtlarını kalıcı ID'lerle bağla. Puanı olmayan veya doğrulanamayan oyunlar için değer üretme. Kaynak yaşı ve puan türü ayrı korunsun.
+- [ ] Eksik Metacritic kullanıcı puanlarını tamamla. Kaynakta 1.323 oyun için 901 puan kaydı var. Mevcut 901 puan gösterilir; 20 kaydın PC platformu doğrulanmıştır; 422 oyunda kaynak puanı yok, 881 kayıtta platform belirsizdir. Toplam 1.303 doğrulanmış PC puanı eksikliği bu iki gruba ayrılarak incelenir. Kaynak kayıtları silinmez. Kimliği doğrulanmamış oyunları, puan kaynağında sayısal değer bulunmayanları ve çelişkili ilişkileri ayrı incele. Puan bulunabilen doğru oyun ve PC platformu kayıtlarını kalıcı ID'lerle bağla. Puanı olmayan veya doğrulanamayan oyunlar için değer üretme. Kaynak yaşı ve puan türü ayrı korunsun.
 
 Bu iş, kullanıcının 6 Ekim 2026 talebiyle mevcut gezinme ve sabit metin düzeltmelerinden sonraya bırakılmıştı. 7 Ekim 2026 bağımlılık incelemesinde PC kapsamı ve kalıcı veri altyapısından sonra 3. sıraya alındı. Bu plan değişikliği puan verisini değiştirmez.
 
@@ -127,3 +127,5 @@ Kullanıcı iş listesine her yeni madde eklediğinde, güncel listenin tamamı 
 ## Proje dili
 
 GitHub'daki proje açıklamaları, yeni commit mesajları, iş kayıtları ve değişiklik notları Türkçe yazılsın. Teknik kimlikler, API/alan adları, komutlar ve üçüncü tarafların özgün lisans metinleri korunur. Mevcut commit geçmişi yeniden yazılmaz.
+
+7 Ekim 2026 düzeltmesi: 1. adım sırasında eklenen platformu belirsiz puanları gizleme değişikliği geri alındı. Mevcut 901 puan kartlarda, ayrıntıda, karşılaştırmada ve puan filtreleri/sıralamada kullanılmaya devam eder. PC arayüzü, işletim sistemi filtresi ve mağaza/benzer oyun kapsamı korunur. Platform doğrulaması ile 422 eksik puanı tamamlama 3. adımdadır; yeni puan taraması bu düzeltmenin parçası değildir.
