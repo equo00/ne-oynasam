@@ -1,54 +1,89 @@
-# Daily discovery and store media
+# Günlük keşif ve mağaza medyası
 
-Implemented 2026-10-06. The original PC catalog and dated Metacritic score provenance remain unchanged.
+6 Ekim 2026'da uygulandı. Özgün PC kataloğu ve tarihli Metacritic puanlarının kaynak bilgisi değişmedi.
 
-## Daily featured games
+## Günlük öne çıkan oyunlar
 
-`data/spotlight-pool.json` contains 125 individually selected catalog Steam identities and original Turkish editorial captions. The expanded pool adds 100 candidates from the existing catalog across exploration, challenge, story, relaxation and puzzle/strategy experiences. These are editorial discovery recommendations; they are not a measured claim that every title is obscure. No new games, metadata or source scraping were needed for this change.
+`data/spotlight-pool.json`, tek tek seçilmiş 125 Steam katalog kimliği ve özgün Türkçe editoryal açıklama içerir. Genişletilmiş havuza, mevcut katalogdan keşif, mücadele, hikâye, rahatlama ve bulmaca/strateji deneyimleri sunan 100 aday eklenmiştir. Bunlar editoryal keşif önerileridir; her oyunun az bilindiğine ilişkin ölçülmüş bir iddia değildir. Bu değişiklik için yeni oyun, oyun bilgisi veya kaynak taraması gerekmedi.
 
-Five are returned per calendar day in Europe/Istanbul (00:00 / UTC+03). `lib/spotlight-rotation.ts` treats the pool as a shuffled tour: all 125 entries are assigned once across 25 consecutive daily slots before any are reused. Each new tour has a different seeded permutation, so the five-game bundles are not permanently fixed. A boundary adjustment prevents the new tour's first ten games from reusing the previous tour's last ten. Today's already published five games remain the start of the launch tour; later entries are shuffled. Pool membership is frozen in versioned source so imports cannot change a published day's selection.
+Europe/Istanbul saat diliminde her takvim günü (00.00 / UTC+03) beş oyun döndürülür. `lib/spotlight-rotation.ts`, havuzu sırası karıştırılan bir tur olarak ele alır: 125 oyunun tamamı, herhangi biri tekrar kullanılmadan önce, 25 ardışık günlük seçime birer kez atanır.
 
-The sequence uses the server date and a stable per-tour seed. The same date returns the same set to every visitor and on reload. It tracks scheduled daily appearances, not whether a specific visitor actually opened the site: a day that the site was not visited still advances the sequence. A visit after midnight receives the next set even if the site was closed; an open page refreshes at the boundary. No separate cloud task or catalog write is needed.
+Her yeni turun sabit başlangıç değerinden üretilen sırası farklıdır; beşli gruplar kalıcı olarak sabit değildir. Tur sınırındaki düzenleme, yeni turun ilk on oyununun önceki turun son on oyununu tekrar etmesini önler. Başlangıç gününde yayımlanmış beş oyun ilk turun başında kalır; sonraki kayıtların sırası karıştırılır. Havuz üyeliği sürümlenen kaynakta sabittir; aktarımlar yayımlanmış bir günün seçimini değiştiremez.
 
-The picker consumes a continuous sequence of positions; future pools not divisible by five retain their remaining entries and continue into the next shuffled tour, without duplicate cards within a day. Source identity validation rejects a mismatched curated record rather than silently shrinking the pool and skipping its tail. The frontend's 7.5-second automatic rotation, navigation, pause, hidden-tab and reduced-motion behavior remains unchanged.
+Dizi, sunucu tarihini ve tur başına sabit bir başlangıç değerini kullanır. Aynı tarih, her ziyaretçiye ve sayfa yenilemesinde aynı oyun grubunu verir. Sistem, bir kişinin siteyi gerçekten açıp açmadığını değil, takvimde planlanan günlük gösterimleri izler: ziyaret edilmeyen günlerde de dizi ilerler. Gece yarısından sonraki ziyaret, site kapalı olsa bile sonraki grubu getirir; açık sayfa gün sınırında yenilenir. Ayrı bulut görevi veya katalog yazımı gerekmez.
 
+Seçim kesintisiz bir konum dizisini kullanır. Gelecekte havuz sayısı beşe tam bölünmezse kalan kayıtlar korunur ve sonraki karıştırılmış tura devam edilir; aynı gün içinde yinelenen kart oluşmaz. Kaynak kimlik doğrulaması, uyuşmayan seçilmiş kaydı reddeder; havuzu sessizce küçültüp son kayıtlarını atlamaz. Arayüzün 7,5 saniyelik otomatik geçişi, gezinme, duraklatma, gizli sekme ve azaltılmış hareket davranışı korunur.
 
-## Media source and matching
+## Medya kaynağı ve eşleştirme
 
-The backend requests the official Steam Store `https://store.steampowered.com/api/appdetails?appids={appid}&l=english` endpoint only for an existing PC catalog entry. It validates published Windows game type, returned Steam identity and normalized title before showing media. It never fetches a URL supplied by a visitor. `movies` and `screenshots` provide the exact source URLs; URLs are not fabricated. Sources are HTTPS Steam CDN assets. The thumbnail's path may contain a movie identity rather than the game identity; the modern trailer path must match the actual app identity. Screenshots must match the game app path.
+Sunucu, resmî Steam mağaza `https://store.steampowered.com/api/appdetails?appids={appid}&l=english` uç noktasını yalnızca mevcut bir PC katalog kaydı için çağırır. Medyayı göstermeden önce yayımlanmış Windows oyun türünü, döndürülen Steam kimliğini ve normalleştirilmiş başlığı doğrular. Ziyaretçinin verdiği bir URL'yi çağırmaz.
 
-On 2026-10-06, primary responses verified Kenshi (233860, 4 trailers/6 screenshots), Rain World (312520, 2/9) and DREDGE (1562430, 5/12). Modern responses supply `hls_h264`, `dash_h264`, `dash_av1` and `thumbnail`; the tested responses do not have legacy MP4/WebM fields. This implementation uses H.264 HLS, with support for MP4/WebM when supplied by older records. Tested HLS manifests, posters and full screenshots returned HTTP 200 with CORS `*`. Kenshi's first short fragment returned HTTP 206 and decoded as H.264 video. These are HTTP/container checks, not proof of browser playback.
+`movies` ve `screenshots`, tam kaynak URL'lerini sağlar; URL üretilmez. Kaynaklar HTTPS Steam CDN dosyalarıdır. Küçük görselin yolu, oyun kimliği yerine video kimliği içerebilir; modern tanıtım videosu yolu gerçek uygulama kimliğiyle uyuşmalıdır. Ekran görüntüleri oyunun uygulama yoluyla uyuşmalıdır.
 
-The media JSON is cached in D1's existing `catalog_cache` under a separate `steam-media-v1:` namespace for 24 hours. A failed refresh can return the last valid record explicitly marked stale. Concurrent requests for the same app are deduplicated within an isolate. The gallery loads when a game detail is opened; video bytes and the local player bundle load only after play intent. Closing the dialog or choosing another item destroys the HLS player and clears the video source.
+6 Ekim 2026'da birincil yanıtlar Kenshi (233860; 4 video/6 ekran görüntüsü), Rain World (312520; 2/9) ve DREDGE (1562430; 5/12) için doğrulandı. Modern yanıtlar `hls_h264`, `dash_h264`, `dash_av1` ve `thumbnail` sağlar; test edilen yanıtlarda eski MP4/WebM alanları yoktur.
 
-Publisher media stays on Steam CDN. This implementation does not download and host the video or screenshot files. Their rights remain with their owners. Site privacy information explains external asset requests; the separate licenses page retains exact provider attribution and the player license.
+Uygulama H.264 HLS kullanır; eski kayıtlarda sağlandığında MP4/WebM desteği de vardır. Test edilen HLS akış listeleri, video kapakları ve tam ekran görüntüleri HTTP 200 ve CORS `*` yanıtı verdi. Kenshi'nin ilk kısa video parçası HTTP 206 döndürdü ve H.264 video olarak çözümlendi. Bunlar HTTP/video kapsayıcısı kontrolleridir; tarayıcıda oynatma kanıtı değildir.
 
-## Player and icons
+Medya JSON'u, D1'in mevcut `catalog_cache` tablosunda ayrı `steam-media-v1:` alanı altında 24 saat önbelleğe alınır. Yenileme başarısız olduğunda, güncel olmadığı açıkça işaretlenmiş son geçerli kayıt döndürülebilir. Aynı uygulama için eşzamanlı istekler, aynı çalışma birimi içinde birleştirilir.
 
-- Official player repository: https://github.com/video-dev/hls.js
-- Pinned release: https://github.com/video-dev/hls.js/releases/tag/v1.7.3
-- hls.js 1.7.3 local UMD bundle and Apache-2.0 license are retained in `public/vendor/`; `scripts/prepare-media-vendor.mjs` reproduces them from the pinned dependency.
-- HLS.js MediaSource support is preferred; native HLS is a fallback for supporting browsers. Playback and codec support still depend on the actual visitor's browser.
-- The shared SVG outline icons in `public/ui.js` are original source code, with 24px viewboxes, round caps/joins and 1.7px strokes; no OS emoji/icon font or external icon CDN is used.
+Galeri, oyun ayrıntısı açıldığında yüklenir. Video verisi ve yerel oynatıcı paketi yalnızca oynatma isteğinden sonra yüklenir. Ayrıntı penceresi kapatıldığında veya başka içerik seçildiğinde HLS oynatıcısı kapatılır ve video kaynağı temizlenir.
 
-## Validation limits
+Yayıncı medyası Steam CDN üzerinde kalır. Uygulama videoları veya ekran görüntüsü dosyalarını indirip kendi sunucusunda barındırmaz. Hakları sahiplerinde kalır. Gizlilik bilgisi dış dosya isteklerini açıklar; ayrı lisans sayfası sağlayıcı bilgisini ve oynatıcı lisansını korur.
 
-Daily cutoff and rotation, source identity/URL safety, media cache/fallback behavior, gallery selection/play intent/cleanup, discovery filter combination, themes and account/library regressions are checked by the automated source, API and VM DOM tests. Real browser playback, login and mobile visual inspection require the unavailable browser QA capability and have not been claimed as tested.
+## Oynatıcı ve ikonlar
 
-## Related game cards and Steam sources
+- Resmî oynatıcı deposu: https://github.com/video-dev/hls.js
+- Sabitlenmiş sürüm: https://github.com/video-dev/hls.js/releases/tag/v1.7.3
+- hls.js 1.7.3 yerel UMD paketi ve Apache-2.0 lisansı `public/vendor/` altında tutulur. `scripts/prepare-media-vendor.mjs`, bunları sabitlenmiş bağımlılıktan yeniden üretir.
+- Önce HLS.js MediaSource desteği tercih edilir; destekleyen tarayıcılarda tarayıcının kendi HLS desteği alternatif olur. Oynatma ve kodek desteği ziyaretçinin gerçek tarayıcısına bağlıdır.
+- `public/ui.js` içindeki ortak SVG çizgi ikonları özgün kaynak kodudur. 24 piksel görünüm alanı, yuvarlak çizgi uçları/birleşimleri ve 1,7 piksel çizgi kalınlığı kullanırlar. İşletim sistemi emojisi, ikon yazı tipi veya dış ikon CDN'i kullanılmaz.
 
-The section now shows at most 20 games in compact groups of three. `lib/related.ts` fetches the **public, anonymous** Steam `recommended/morelike/app/{appid}/?l=english` page on demand. It validates the header Steam app ID and normalized title, reads only released recommendation capsules with matching official Steam app links, and retains their supplied order. Header/foreign/self/duplicate/upcoming entries are excluded. All candidate Steam IDs are cached independently of catalog membership for one hour in D1, with concurrent request deduplication and an explicitly stale last-valid fallback. A new catalog entry can therefore join an already fetched source list without a deployment or a manually edited per-game map. The client caches source responses for five minutes and ignores late results for a different open game.
+## Doğrulama sınırları
 
-The frontend keeps current PC catalog entries from that Steam list in source order, then fills unoccupied places with detailed tag similarity. It does not transfer the visitor's Steam-owned, ignored or other personal preferences; the public source page's base order can differ from a signed-in user's visible Steam order. This uses Steam's own supplied recommendations wherever available rather than claiming that Valve's undisclosed ranking formula has been reproduced.
+Gün sınırı ve dönüşüm sırası, kaynak kimliği/URL güvenliği, medya önbelleği ve alternatif davranışı, galeri seçimi/oynatma isteği/temizleme, keşif filtrelerinin birlikte kullanımı, temalar ve hesap/koleksiyon işlemleri otomatik kaynak, API ve sanal makine DOM testleriyle kontrol edilir.
 
-`data/steam-tags.json` holds app-ID/title-matched tag profiles. The import report records 1,323 profiles and 24,986 tag observations: 1,102 direct public Store profiles, 135 public SteamSpy profiles, 23 dated leinstay/steamdb profiles, and 63 limited seven-tag Store search profiles. 1,080 profiles contain twenty usable tags; other direct records may legitimately supply fewer. Search-only profiles are marked `complete:false` and shown as limited, not as a fabricated full twenty-tag profile. No catalog expansion, score collection or change to Metacritic score provenance occurred.
+Gerçek tarayıcıda oynatma, giriş ve mobil görsel inceleme için ortamda bulunmayan tarayıcı kalite kontrol yeteneği gerekir. Bunların test edildiği iddia edilmez.
 
-Store `InitAppTagModal` supplies tag IDs, English names and effective counts/weights. The parser validates the exact game identity, deduplicates IDs, drops invalid/unbrowsable values and selects the highest twenty weights. SteamSpy's documented public endpoint supplies tag vote counts; app ID and normalized title must match. Requests respected its maximum one per second within the checkpointed bulk collection. The dated GPL subset supplies ordered tag names but no numerical counts; those remain null rather than inventing source weights. Turkish labels come from Steam's public `tagdata/populartags/turkish`. The GPL subset's source extraction code and license are available on the separate licenses page.
+## Benzer oyun kartları ve Steam kaynakları
 
-The local completion algorithm considers only each profile's first twenty Steam tag IDs. It uses source strength `sqrt(count / maximum_count)` when numerical counts are available, otherwise equal strength, multiplied by tag rarity `1 + log((catalog_profile_count + 1) / (tag_profile_frequency + 1))`. Ranking uses weighted Jaccard overlap (sum of minimum weights / sum of maximum weights). At least two shared tags are normally needed and broad labels alone (Action, Adventure, Indie, Singleplayer, Multiplayer, Casual, Early Access and Free to Play) do not qualify a match. Limited search profiles receive a coverage confidence factor `sqrt(tag_count/20)`. Ties use shared-tag count, then deterministic title/identity. These are explicitly local choices, not published Valve coefficients. Metacritic scores, site view counts and addition dates do not affect ranking. Addition dates only supply a small new-game badge.
+Bölüm, üçlü küçük gruplarda en fazla 20 oyun gösterir. `lib/related.ts`, herkese açık ve anonim Steam `recommended/morelike/app/{appid}/?l=english` sayfasını ihtiyaç anında çağırır. Başlıktaki Steam uygulama kimliğini ve normalleştirilmiş oyun adını doğrular; yalnızca resmî Steam uygulama bağlantısıyla uyuşan, yayımlanmış öneri kartlarını okur ve verilen sırayı korur.
 
-Future Steam imports and store refreshes fetch metadata and the public tag page concurrently. Successful validated tag profiles persist in the existing D1 game payload; a failed tag request does not erase a previous valid profile. The native Steam source path supports newly imported catalog IDs too. Every recommendation render filters against the current catalog, with no static per-game ID mappings.
+Başlık/başka oyun/kendisi/yinelenen kayıt/yakında çıkacak oyun girişleri dışarıda bırakılır. Aday Steam kimliklerinin tamamı katalog üyeliğinden bağımsız olarak D1'de bir saat önbelleğe alınır. Eşzamanlı istekler birleştirilir; son geçerli yanıt alternatif olarak döndürülürse güncel olmadığı açıkça belirtilir. Böylece yeni katalog kaydı, yeniden yayın veya oyun başına elle liste düzenlemesi gerektirmeden önceden alınmış kaynak listesine katılabilir.
 
-Cards retain the existing safe Steam cover helper, dated Metacritic **user** scores (or `Veri yok`), translated common-tag captions, responsive swipe/page navigation and detail switching with old-player cleanup. A collapsible panel presents only the translated gameplay/world tags; source labels, weights and the external similar-items link are removed from game screens. Source/date metadata remains in the data records and licenses page. Native updates only replace the recommendation subtree, preserving the active video and unsaved note fields.
+İstemci kaynak yanıtlarını beş dakika önbelleğe alır; farklı bir oyun açıldıktan sonra gelen eski sonuçları dikkate almaz.
 
-Validation covers native source order/identity/link safety, released-only extraction, D1 caching/dedup/stale behavior, weighted top-twenty tag selection, first-twenty bounds, generic-tag exclusion, new catalog insertions, no forced new-game promotion, score independence, metadata refresh preservation, and VM UI navigation/media regressions. Real browser visual QA remains unavailable.
+Arayüz, Steam listesindeki güncel PC katalog kayıtlarını kaynağın sırasıyla gösterir; boş kalan yerleri ayrıntılı etiket benzerliğiyle tamamlar. Ziyaretçinin Steam'deki sahip olduğu, yok saydığı oyunları veya kişisel tercihlerini aktarmaz. Herkese açık sayfanın temel sırası, giriş yapmış bir kullanıcının gördüğü Steam sırasından farklı olabilir. Valve'ın açıklanmamış sıralama formülünün yeniden üretildiğini iddia etmek yerine, mevcut olduğunda Steam'in verdiği öneriler kullanılır.
+
+`data/steam-tags.json`, uygulama kimliği/başlıkla eşleştirilmiş etiket profillerini tutar. Aktarım raporunda 1.323 profil ve 24.986 etiket gözlemi vardır:
+
+- 1.102 doğrudan herkese açık mağaza profili.
+- 135 herkese açık SteamSpy profili.
+- 23 tarihli leinstay/steamdb profili.
+- Mağaza aramasından alınmış, yedi etiketle sınırlı 63 profil.
+
+1.080 profilde kullanılabilir 20 etiket bulunur; diğer doğrudan kaynaklar doğal olarak daha az etiket sağlayabilir. Yalnızca arama kaynağı olan profiller `complete:false` olarak işaretlenir ve sınırlı gösterilir; tam 20 etiketli profil uydurulmaz. Bu işlem kataloğu genişletmedi, puan toplamadı veya Metacritic kaynak bilgisini değiştirmedi.
+
+Mağazanın `InitAppTagModal` verisi etiket kimliklerini, İngilizce adlarını ve etkin sayıları/ağırlıkları sağlar. Ayrıştırıcı tam oyun kimliğini doğrular, yinelenen kimlikleri temizler, geçersiz/göz atılamayan değerleri eler ve en yüksek 20 ağırlığı seçer.
+
+SteamSpy'ın belgelenmiş herkese açık uç noktası etiket oy sayılarını sağlar; uygulama kimliği ve normalleştirilmiş başlık uyuşmalıdır. Ara kayıtlarla devam edebilen toplu veri toplamada, saniyede en fazla bir istek sınırına uyulmuştur.
+
+Tarihli GPL alt kümesi sıralı etiket adları sağlar; sayısal oy sayıları sağlamaz. Bu alanlar uydurma kaynak ağırlığı yerine null kalır. Türkçe etiketler, Steam'in herkese açık `tagdata/populartags/turkish` verisinden gelir. GPL alt kümesini çıkaran kaynak kodu ve lisans, ayrı lisans sayfasında bulunur.
+
+Yerel tamamlama algoritması, her profilin yalnızca ilk 20 Steam etiket kimliğini kullanır:
+
+- Sayısal değer varsa kaynak gücü `sqrt(count / maximum_count)` olur; yoksa eşit güç kullanılır.
+- Bu güç, etiketin nadirlik değeri `1 + log((catalog_profile_count + 1) / (tag_profile_frequency + 1))` ile çarpılır.
+- Sıralama ağırlıklı Jaccard benzerliğini kullanır: ortak ağırlıkların minimumları toplamının, birleşimdeki maksimum ağırlıklar toplamına oranı.
+- Normalde en az iki ortak etiket gerekir. Yalnızca geniş etiketler eşleşmeye yeterli değildir. Kaynağın özgün adlarıyla bunlar: Action, Adventure, Indie, Singleplayer, Multiplayer, Casual, Early Access ve Free to Play.
+- Sınırlı arama profillerinde `sqrt(tag_count/20)` kapsam güven katsayısı uygulanır.
+- Eşitlikte ortak etiket sayısı, ardından sabit başlık/kimlik sırası kullanılır.
+
+Bunlar açıkça yerel tercihlerdir; Valve'ın yayımladığı katsayılar değildir. Metacritic puanı, site görüntüleme sayısı ve eklenme tarihi sıralamayı etkilemez. Eklenme tarihi yalnızca küçük yeni oyun etiketini sağlar.
+
+Gelecekteki Steam aktarımları ve mağaza yenilemeleri, oyun bilgisini ve herkese açık etiket sayfasını eşzamanlı çağırır. Başarılı ve doğrulanmış etiket profilleri mevcut D1 oyun verisinde kalıcı tutulur. Başarısız etiket isteği önceki geçerli profili silmez. Steam kaynaklı öneri yolu, yeni eklenmiş katalog kimliklerini de destekler. Her öneri gösterimi güncel kataloğa göre filtrelenir; oyun başına sabit kimlik eşleştirme listesi kullanılmaz.
+
+Kartlar mevcut güvenli kapak yardımcısını, tarihli Metacritic kullanıcı puanını (veya `Veri yok`), çevrilmiş ortak etiket açıklamalarını, farklı ekranlara uyumlu kaydırma/sayfa gezinmesini ve eski oynatıcının kapatılmasıyla oyun ayrıntısına geçişi korur.
+
+Açılıp kapanabilen panel yalnızca çevrilmiş oynanış/dünya etiketlerini gösterir. Kaynak adları, ağırlıklar ve dışarıdaki benzer oyun bağlantısı oyun ekranlarından kaldırılmıştır. Kaynak/tarih bilgisi veri kayıtlarında ve lisans sayfasında kalır. Kaynaktan gelen güncellemeler yalnızca öneri alt bölümünü değiştirir; aktif video ve kaydedilmemiş notlar korunur.
+
+Doğrulama; kaynak sırası/kimlik/bağlantı güvenliğini, yalnızca yayımlanmış kayıtların alınmasını, D1 önbelleğini/eşzamanlı istek birleştirmesini/eski yanıt alternatifini, en yüksek 20 etiket seçimini, ilk 20 sınırını, genel etiketlerin elenmesini, yeni katalog eklemelerini, yeni oyunun zorla öne çıkarılmamasını, puan bağımsızlığını, bilgi yenilemesinde mevcut verilerin korunmasını ve sanal makine arayüz/medya işlemlerini kapsar. Gerçek tarayıcıda görsel kalite kontrol hâlâ yapılamamıştır.

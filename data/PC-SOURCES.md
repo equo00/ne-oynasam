@@ -1,37 +1,70 @@
-# PC catalogue source findings — 2026-10-05
+# PC kataloğu kaynak incelemesi — 5 Ekim 2026
 
-## Steam catalogue and artwork
-Unauthenticated official Store `https://store.steampowered.com/api/appdetails?appids=570&l=english` and `https://store.steampowered.com/search/results/?query&start=0&count=100&dynamic_data=&sort_by=_ASC&category1=998&supportedlang=english&snr=1_7_7_230_7&infinite=1` verified HTTP200 with Node24 `--use-env-proxy`.
-Search response returns `results_html`, `total_count`, `start`; entries carry appids, publisher-uploaded image URLs, Steam user positive-review tooltip, supported computer OS.
-Appdetails returns `type`, `steam_appid`, `platforms`, `genres`, `release_date`, official Steam CDN `header_image`, and optional Metacritic critic `score` /100. The latter is NEVER Metacritic user score.
-Official documented IStoreService/GetAppList requires APIkey; this is not needed for public Store endpoints.
-Steam artwork belongs to publishers/platforms and is not CC0. Retain exact provider attribution on the separate licenses page; do not claim blanket public-domain licensing. Steam Web API terms allow personal-use data presentation via applications but reserve rights, affiliation and availability limitations; 100000calls/day documented. Store robots has no general search/API block.
-Primary docs: https://partner.steamgames.com/doc/webapi/IStoreService ; https://partner.steamgames.com/doc/store/assets/standard ; https://steamcommunity.com/dev/apiterms ; https://store.steampowered.com/legal/ ; https://store.steampowered.com/robots.txt
+## Steam kataloğu ve görseller
+
+Giriş gerektirmeyen resmî mağaza uç noktaları `https://store.steampowered.com/api/appdetails?appids=570&l=english` ve `https://store.steampowered.com/search/results/?query&start=0&count=100&dynamic_data=&sort_by=_ASC&category1=998&supportedlang=english&snr=1_7_7_230_7&infinite=1`, Node 24 ve `--use-env-proxy` ile HTTP 200 yanıtı verecek şekilde doğrulandı.
+
+Arama yanıtı `results_html`, `total_count` ve `start` alanlarını içerir. Kayıtlarda uygulama kimlikleri, yayıncının yüklediği görsellerin bağlantıları, olumlu kullanıcı değerlendirmelerine ait bilgi ve desteklenen bilgisayar işletim sistemleri bulunur.
+
+`appdetails` yanıtı `type`, `steam_appid`, `platforms`, `genres`, `release_date`, resmî Steam CDN üzerindeki `header_image` ve varsa 100 üzerinden Metacritic eleştirmen puanı (`score`) sağlar. Bu son değer Metacritic kullanıcı puanı değildir.
+
+Resmî belgelerde açıklanan `IStoreService/GetAppList` bir API anahtarı gerektirir. Herkese açık mağaza uç noktaları bu anahtarı gerektirmez.
+
+Steam görsellerinin hakları yayıncılara/platformlara aittir; görseller CC0 kapsamında değildir. Ayrı lisans sayfasında sağlayıcı açıkça belirtilmeli, tüm içeriklerin kamu malı olduğu iddia edilmemelidir. Steam Web API koşulları, uygulamalar aracılığıyla kişisel kullanım için veri sunumuna izin verirken haklar, resmî bağlantı ve erişilebilirlik konusunda sınırlamalar içerir; belgelerde günlük 100.000 çağrı sınırı yer alır. Mağazanın robots dosyasında arama/API için genel bir engelleme bulunmaz.
+
+Birincil belgeler: https://partner.steamgames.com/doc/webapi/IStoreService ; https://partner.steamgames.com/doc/store/assets/standard ; https://steamcommunity.com/dev/apiterms ; https://store.steampowered.com/legal/ ; https://store.steampowered.com/robots.txt
 
 ## Metacritic
-Official `https://www.metacritic.com/robots.txt` explicitly disallows GPTBot and OAI-SearchBot all paths. No hidden/internal API access or anti-bot bypass attempted. Metascore is distinct from User Score per https://metacritichelp.zendesk.com/hc/en-us/articles/14482674768791-Are-user-votes-included-in-the-METASCORE-calculations .
-Licensing docs https://developer.origin.fabricdata.com/origin/apis-all/metacritic-api-docs require paid approved subscription, data absent free trial; currently docs list Movies/Shows endpoints, so game licensing coverage requires provider confirmation. Do not promise this is ready for games.
 
-## Wikidata CC0 safe narrow score facts
-`wikidata-verified-pc-user-scores.json` contains five facts matched by Steamappid, P444 score, explicit `/user-reviews/` and `platform=pc` or `/game/pc/` reference URL, PC platform qualifier. All historical, score date unknown for OneShot. No live Metacritic validation occurred. `wikidata-pc-user-scores-entities.json` holds full source entities; `wikidata-metacritic-ref10.json` query and result. Q16338 = personal computer; Q1406 = Microsoft Windows. `/10` alone not proof of user score. Source P459 Q108403540 is RottenTomatoes mean, not a reliable user-rating selector. Console Hogwarts scores and SteamDeck hardware critic scores excluded.
-Wikidata structured metadata CC0 per property footer https://www.wikidata.org/wiki/Property:P444 .
+Resmî `https://www.metacritic.com/robots.txt` dosyası, GPTBot ve OAI-SearchBot için tüm yolları açıkça engeller. Gizli/dahili API erişimi veya bot engelini aşma girişimi yapılmadı. Metascore ile kullanıcı puanı farklı ölçülerdir: https://metacritichelp.zendesk.com/hc/en-us/articles/14482674768791-Are-user-votes-included-in-the-METASCORE-calculations .
 
-## Secondary GPL score supplement
-Publisher repository https://github.com/leinstay/steamdb publishes daily GameGauntlets merged dump under GPL3.0, while reserving owners’ game names/art/prose/source rights.
-Stable snapshot URL https://github.com/leinstay/steamdb/releases/download/2026-10-04/steamdb.min.json.gz, 56037578bytes, downloaded locally as steamdb-2026-10-04.min.json.gz.
-`steamdb-user-score-facts.json` extracts ONLY appid, name, numeric Metacritic user score, reference URL, row update time and OS fields. No prose/art imported. Declared user score integer0..100 converted /10; 12296nonmissing, observedrange2..100, zero0, null177497. Dataset total189793rows.
-Critical limitations: `updated_at` measures whole game row, not score collection date; snapshot date must not be called verified score date. `platforms` is computer OS availability, not Metacritic score platform. Most URLs lack platform query => platform UNKNOWN. CS2appid730 has historic CS:GO URL and must exclude mismatch. Witcher3appid292030 row called Remastered but generic originalgameURL; edition must not be inferred. Unknown user review counts absent.
-Examples: CounterStrikeoriginal7.9, Portal8.8, Dota2=6.5, Kenshi8.2, Hades8.5, Cyberpunk2077=7.3. These are secondary dataset values, not freshly verified Metacritic values.
-Preserve `steamdb-GPL-3.0-LICENSE.txt`, repository attribution, release URL/date, and licence compatibility for redistributed subset. Never label this CC0 or claim rights holder licensing independently verified.
+https://developer.origin.fabricdata.com/origin/apis-all/metacritic-api-docs adresindeki lisanslama belgeleri, ücretli ve onaylanmış abonelik gerektirir; ücretsiz denemede bu veri bulunmaz. İncelenen belgelerde film/dizi uç noktaları listelenir. Oyun verilerinin lisans kapsamı sağlayıcıdan doğrulanmalıdır; oyunlar için hazır bir çözüm olduğu vaat edilmemelidir.
 
-## Detailed tag and native recommendation additions — 2026-10-06
+## Wikidata: CC0 kapsamındaki sınırlı kullanıcı puanı verileri
 
-See `STEAM-TAGS-REPORT.json` for per-profile completeness and source counts, and `DISCOVERY-MEDIA-SOURCES.md` for the exact local completion formula and native Steam source workflow. Public Steam Store pages supply the source tag weights; SteamSpy supplies public tag vote facts using its documented one-request-per-second limit. Store pages behind age verification were not bypassed. Historical and limited source identities remain distinguishable in the data records and credits. A limited tag profile receives a neutral completeness note in the game detail UI. The public anonymous similar-items source is `https://store.steampowered.com/recommended/morelike/app/{appid}/?l=english`; sampled Kenshi, Valheim and Portal 2 sources were checked with the production parser. No personal Steam session or credentials are accessed.
+`wikidata-verified-pc-user-scores.json`, Steam uygulama kimliği, P444 puanı, açık bir `/user-reviews/` bağlantısı, `platform=pc` veya `/game/pc/` kaynak URL'si ve PC platform niteleyicisiyle eşleştirilmiş beş kayıt içerir. Hepsi tarihsel kayıtlardır; OneShot puanının tarihi bilinmez. Canlı Metacritic doğrulaması yapılmadı.
 
-## ID-based score migration — 2026-10-06
+`wikidata-pc-user-scores-entities.json` tam kaynak varlıklarını, `wikidata-metacritic-ref10.json` ise sorguyu ve sonucunu saklar. Q16338 kişisel bilgisayarı, Q1406 Microsoft Windows'u temsil eder. Tek başına `/10` ifadesi kullanıcı puanı kanıtı değildir. P459 Q108403540, Rotten Tomatoes ortalamasıdır; güvenilir bir kullanıcı puanı seçicisi değildir. Hogwarts'ın konsol puanları ve Steam Deck donanımının eleştirmen puanları dışarıda bırakıldı.
 
-See `METACRITIC-SOURCES.md` and `METACRITIC-REPORT.json` for the full-catalog audit and score coverage. Current scores use the 2026-10-05 numerical subset, persisted game/store/Metacritic/source-record IDs, optional immutable Metacritic numeric IDs, and explicit edition checks. Legacy title matching is no longer used for score lookup or import. Snapshot and actual score dates remain distinct, and unknown score platforms remain unknown. The older 2026-10-04 tag and game metadata subsets retain their own attribution.
+Wikidata yapılandırılmış verileri, https://www.wikidata.org/wiki/Property:P444 sayfasının alt bilgisinde belirtilen CC0 kapsamındadır.
 
-## Primary score coverage supplement — 2026-10-06
+## GPL lisanslı ikincil puan desteği
 
-The ID crosswalk now also accepts reviewed PC averages from `metacritic-reviewed-facts.json`. This adds 18 source-backed observations, including the user-supplied Mortal Shell II capture, and brings score coverage to 901 of 1,323 games. Primary source age, platform and method are retained independently of the licensed secondary subset. Missing imported facts do not establish absence of Metacritic scores. This reviewed import is not an automated live feed; see `METACRITIC-SOURCES.md` for validation and remaining coverage gaps.
+https://github.com/leinstay/steamdb deposu, birleştirilmiş GameGauntlets veri kopyasını günlük olarak GPL-3.0 altında yayımlar. Oyun adları, görselleri, açıklama metinleri ve kaynaklar üzerindeki sahiplerin haklarını saklı tutar.
+
+Sabit veri kopyası: https://github.com/leinstay/steamdb/releases/download/2026-10-04/steamdb.min.json.gz . Dosya 56.037.578 bayttır ve yerelde `steamdb-2026-10-04.min.json.gz` adıyla indirilmiştir.
+
+`steamdb-user-score-facts.json` yalnızca uygulama kimliği, ad, sayısal Metacritic kullanıcı puanı, kaynak bağlantısı, kayıt güncelleme zamanı ve işletim sistemi alanlarını çıkarır. Açıklama veya görsel aktarılmaz. Kaynakta 0–100 aralığında tanımlanan tamsayı puanlar, 10'a bölünerek dönüştürülür. Eksik olmayan 12.296 puan vardır; gözlenen aralık 2–100'dür, sıfır değer yoktur, 177.497 puan null'dır. Veri kümesinde toplam 189.793 kayıt bulunur.
+
+Önemli sınırlamalar:
+
+- `updated_at` tüm oyun kaydının güncellenmesini gösterir; puanın toplandığı tarih değildir. Veri kopyası tarihi, puanın doğrulandığı tarih olarak sunulmamalıdır.
+- `platforms` bilgisayar işletim sistemi uygunluğunu gösterir; Metacritic puanının platformunu göstermez.
+- Bağlantıların çoğunda platform parametresi bulunmadığından puan platformu bilinmez.
+- CS2 uygulama kimliği 730, tarihsel CS:GO bağlantısına sahiptir; bu yanlış eşleşme dışarıda bırakılmalıdır.
+- Witcher 3 uygulama kimliği 292030 olan kayıt Remastered adı taşırken genel özgün oyun URL'sine bağlanır; sürüm çıkarımı yapılmamalıdır.
+- Kullanıcı değerlendirme sayıları mevcut değildir.
+
+Örnekler: özgün Counter-Strike 7,9; Portal 8,8; Dota 2 6,5; Kenshi 8,2; Hades 8,5; Cyberpunk 2077 7,3. Bunlar ikincil veri kümesinin değerleridir; güncel olarak doğrulanmış Metacritic değerleri değildir.
+
+Yeniden dağıtılan alt kümede `steamdb-GPL-3.0-LICENSE.txt`, kaynak depo bilgisi, sürüm URL'si/tarihi ve lisans uyumluluğu korunmalıdır. Bu veri CC0 olarak etiketlenmemeli veya hak sahiplerinden lisans izninin ayrıca doğrulandığı iddia edilmemelidir.
+
+## Ayrıntılı etiketler ve kaynağın kendi önerileri — 6 Ekim 2026
+
+Profil kapsamı ve kaynak sayıları için `STEAM-TAGS-REPORT.json` dosyasına; yerel tamamlama formülü ve Steam önerilerinin alınma yöntemi için `DISCOVERY-MEDIA-SOURCES.md` dosyasına bak.
+
+Herkese açık Steam mağaza sayfaları etiket ağırlıklarını sağlar. SteamSpy, belgelerinde belirtilen saniyede bir istek sınırıyla herkese açık etiket oy bilgilerini sağlar. Yaş doğrulama ekranları aşılmadı. Tarihsel ve sınırlı kaynaklar, veri kayıtlarında ve kaynak bilgilerinde ayrı tutulur. Sınırlı bir etiket profili, oyun ayrıntısında tarafsız bir kapsam notuyla gösterilir.
+
+Herkese açık, anonim benzer oyun kaynağı `https://store.steampowered.com/recommended/morelike/app/{appid}/?l=english` adresidir. Kenshi, Valheim ve Portal 2 örnekleri, uygulamada kullanılan ayrıştırıcıyla kontrol edildi. Kişisel Steam oturumuna veya giriş bilgilerine erişilmez.
+
+## Kimlik temelli puan geçişi — 6 Ekim 2026
+
+Tüm katalog incelemesi ve puan kapsamı için `METACRITIC-SOURCES.md` ve `METACRITIC-REPORT.json` dosyalarına bak.
+
+Mevcut puanlar, 5 Ekim 2026 sayısal alt kümesini; kalıcı oyun/mağaza/Metacritic/kaynak kayıt kimliklerini; varsa değişmez sayısal Metacritic kimliklerini ve açık sürüm kontrollerini kullanır. Eski başlık eşleştirmesi artık puan aramasında veya aktarımında kullanılmaz. Veri kopyası tarihi ile gerçek puan tarihi ayrıdır; bilinmeyen puan platformları bilinmeyen olarak kalır. 4 Ekim 2026 tarihli eski etiket ve oyun bilgisi alt kümeleri kendi kaynak bilgilerini korur.
+
+## Birincil puan kapsamının tamamlanması — 6 Ekim 2026
+
+Kimlik eşleştirme tablosu, `metacritic-reviewed-facts.json` dosyasındaki incelenmiş PC ortalamalarını da kabul eder. Kullanıcının sağladığı Mortal Shell II görüntüsü dahil 18 kaynağa dayalı gözlem eklenmiş, kapsam 1.323 oyunun 901'ine ulaşmıştır.
+
+Birincil kaynağın yaşı, platformu ve yöntemi, lisanslı ikincil alt kümeden bağımsız tutulur. Aktarılan veride puan bulunmaması, Metacritic'te puan olmadığı anlamına gelmez. Bu incelenmiş aktarım, otomatik bir canlı veri akışı değildir. Doğrulama ve kalan eksikler için `METACRITIC-SOURCES.md` dosyasına bak.
