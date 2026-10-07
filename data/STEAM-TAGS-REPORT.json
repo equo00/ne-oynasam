@@ -1,0 +1,1719 @@
+{
+  "generatedAt": "2026-10-06T08:38:16.799Z",
+  "games": 1323,
+  "profiles": 1323,
+  "sources": {
+    "steam-store": 1102,
+    "steamspy": 135,
+    "steamdb-snapshot": 23,
+    "steam-search": 63,
+    "missing": 0
+  },
+  "twentyTags": 1080,
+  "shortProfiles": [
+    {
+      "steamAppId": 20920,
+      "name": "The Witcher 2: Assassins of Kings Enhanced Edition",
+      "tags": 18,
+      "sourceKind": "steamspy",
+      "complete": true
+    },
+    {
+      "steamAppId": 22370,
+      "name": "Fallout 3: Game of the Year Edition",
+      "tags": 19,
+      "sourceKind": "steamspy",
+      "complete": true
+    },
+    {
+      "steamAppId": 47810,
+      "name": "Dragon Age: Origins - Ultimate Edition",
+      "tags": 18,
+      "sourceKind": "steamspy",
+      "complete": true
+    },
+    {
+      "steamAppId": 204100,
+      "name": "Max Payne 3",
+      "tags": 19,
+      "sourceKind": "steamspy",
+      "complete": true
+    },
+    {
+      "steamAppId": 205100,
+      "name": "Dishonored",
+      "tags": 19,
+      "sourceKind": "steamspy",
+      "complete": true
+    },
+    {
+      "steamAppId": 207610,
+      "name": "The Walking Dead",
+      "tags": 18,
+      "sourceKind": "steamspy",
+      "complete": true
+    },
+    {
+      "steamAppId": 208650,
+      "name": "Batman™: Arkham Knight",
+      "tags": 19,
+      "sourceKind": "steamdb-snapshot",
+      "complete": true
+    },
+    {
+      "steamAppId": 209000,
+      "name": "Batman™: Arkham Origins",
+      "tags": 19,
+      "sourceKind": "steamdb-snapshot",
+      "complete": true
+    },
+    {
+      "steamAppId": 250320,
+      "name": "The Wolf Among Us",
+      "tags": 18,
+      "sourceKind": "steamspy",
+      "complete": true
+    },
+    {
+      "steamAppId": 266410,
+      "name": "iRacing",
+      "tags": 17,
+      "sourceKind": "steam-store",
+      "complete": true
+    },
+    {
+      "steamAppId": 282140,
+      "name": "SOMA",
+      "tags": 19,
+      "sourceKind": "steamspy",
+      "complete": true
+    },
+    {
+      "steamAppId": 292030,
+      "name": "The Witcher 3: Wild Hunt — Remastered",
+      "tags": 19,
+      "sourceKind": "steamspy",
+      "complete": true
+    },
+    {
+      "steamAppId": 301300,
+      "name": "Chicken Invaders 4",
+      "tags": 8,
+      "sourceKind": "steam-store",
+      "complete": true
+    },
+    {
+      "steamAppId": 304240,
+      "name": "Resident Evil",
+      "tags": 19,
+      "sourceKind": "steamspy",
+      "complete": true
+    },
+    {
+      "steamAppId": 311210,
+      "name": "Call of Duty®: Black Ops III",
+      "tags": 19,
+      "sourceKind": "steamspy",
+      "complete": true
+    },
+    {
+      "steamAppId": 315810,
+      "name": "eden*",
+      "tags": 18,
+      "sourceKind": "steamspy",
+      "complete": true
+    },
+    {
+      "steamAppId": 367580,
+      "name": "Hook",
+      "tags": 16,
+      "sourceKind": "steam-store",
+      "complete": true
+    },
+    {
+      "steamAppId": 371660,
+      "name": "Far Cry® Primal",
+      "tags": 19,
+      "sourceKind": "steamspy",
+      "complete": true
+    },
+    {
+      "steamAppId": 379430,
+      "name": "Kingdom Come: Deliverance",
+      "tags": 18,
+      "sourceKind": "steamspy",
+      "complete": true
+    },
+    {
+      "steamAppId": 379720,
+      "name": "DOOM",
+      "tags": 19,
+      "sourceKind": "steamspy",
+      "complete": true
+    },
+    {
+      "steamAppId": 381210,
+      "name": "Dead by Daylight",
+      "tags": 18,
+      "sourceKind": "steamspy",
+      "complete": true
+    },
+    {
+      "steamAppId": 434170,
+      "name": "The Jackbox Party Pack 3",
+      "tags": 16,
+      "sourceKind": "steam-store",
+      "complete": true
+    },
+    {
+      "steamAppId": 439490,
+      "name": "BLUE REVOLVER",
+      "tags": 15,
+      "sourceKind": "steam-store",
+      "complete": true
+    },
+    {
+      "steamAppId": 447040,
+      "name": "Watch_Dogs® 2",
+      "tags": 18,
+      "sourceKind": "steamspy",
+      "complete": true
+    },
+    {
+      "steamAppId": 460790,
+      "name": "Bayonetta",
+      "tags": 19,
+      "sourceKind": "steamspy",
+      "complete": true
+    },
+    {
+      "steamAppId": 488790,
+      "name": "South Park™: The Fractured But Whole™",
+      "tags": 18,
+      "sourceKind": "steamdb-snapshot",
+      "complete": true
+    },
+    {
+      "steamAppId": 552520,
+      "name": "Far Cry® 5",
+      "tags": 19,
+      "sourceKind": "steamspy",
+      "complete": true
+    },
+    {
+      "steamAppId": 558990,
+      "name": "Opus Magnum",
+      "tags": 17,
+      "sourceKind": "steam-store",
+      "complete": true
+    },
+    {
+      "steamAppId": 578540,
+      "name": "Perfect Gold - Yuri Visual Novel",
+      "tags": 10,
+      "sourceKind": "steam-store",
+      "complete": true
+    },
+    {
+      "steamAppId": 582160,
+      "name": "Assassin's Creed® Origins",
+      "tags": 19,
+      "sourceKind": "steamspy",
+      "complete": true
+    },
+    {
+      "steamAppId": 611790,
+      "name": "House Party",
+      "tags": 17,
+      "sourceKind": "steamspy",
+      "complete": true
+    },
+    {
+      "steamAppId": 623080,
+      "name": "planetarian HD",
+      "tags": 13,
+      "sourceKind": "steam-store",
+      "complete": true
+    },
+    {
+      "steamAppId": 668350,
+      "name": "Higurashi When They Cry Hou - Ch.6 Tsumihoroboshi",
+      "tags": 17,
+      "sourceKind": "steam-store",
+      "complete": true
+    },
+    {
+      "steamAppId": 782330,
+      "name": "DOOM Eternal",
+      "tags": 18,
+      "sourceKind": "steamspy",
+      "complete": true
+    },
+    {
+      "steamAppId": 812140,
+      "name": "Assassin's Creed® Odyssey",
+      "tags": 19,
+      "sourceKind": "steamspy",
+      "complete": true
+    },
+    {
+      "steamAppId": 814380,
+      "name": "Sekiro™: Shadows Die Twice - GOTY Edition",
+      "tags": 19,
+      "sourceKind": "steamdb-snapshot",
+      "complete": true
+    },
+    {
+      "steamAppId": 824270,
+      "name": "KovaaK's",
+      "tags": 13,
+      "sourceKind": "steam-store",
+      "complete": true
+    },
+    {
+      "steamAppId": 844930,
+      "name": "Fox Hime Zero",
+      "tags": 14,
+      "sourceKind": "steam-store",
+      "complete": true
+    },
+    {
+      "steamAppId": 897220,
+      "name": "Summer Pockets",
+      "tags": 17,
+      "sourceKind": "steam-store",
+      "complete": true
+    },
+    {
+      "steamAppId": 924970,
+      "name": "Back 4 Blood",
+      "tags": 19,
+      "sourceKind": "steamspy",
+      "complete": true
+    },
+    {
+      "steamAppId": 976310,
+      "name": "Mortal Kombat 11",
+      "tags": 18,
+      "sourceKind": "steamspy",
+      "complete": true
+    },
+    {
+      "steamAppId": 1035990,
+      "name": "Dialtown: Phone Dating Sim",
+      "tags": 17,
+      "sourceKind": "steam-store",
+      "complete": true
+    },
+    {
+      "steamAppId": 1067310,
+      "name": "Gravitas",
+      "tags": 18,
+      "sourceKind": "steam-store",
+      "complete": true
+    },
+    {
+      "steamAppId": 1070550,
+      "name": "Don't Escape Trilogy",
+      "tags": 15,
+      "sourceKind": "steam-store",
+      "complete": true
+    },
+    {
+      "steamAppId": 1086940,
+      "name": "Baldur's Gate 3",
+      "tags": 19,
+      "sourceKind": "steamspy",
+      "complete": true
+    },
+    {
+      "steamAppId": 1091500,
+      "name": "Cyberpunk 2077",
+      "tags": 19,
+      "sourceKind": "steamspy",
+      "complete": true
+    },
+    {
+      "steamAppId": 1093910,
+      "name": "Tales of the Black Forest",
+      "tags": 15,
+      "sourceKind": "steam-store",
+      "complete": true
+    },
+    {
+      "steamAppId": 1109410,
+      "name": "Perspective",
+      "tags": 9,
+      "sourceKind": "steam-store",
+      "complete": true
+    },
+    {
+      "steamAppId": 1113560,
+      "name": "NieR Replicant™ ver.1.22474487139...",
+      "tags": 19,
+      "sourceKind": "steamdb-snapshot",
+      "complete": true
+    },
+    {
+      "steamAppId": 1126320,
+      "name": "Being a DIK - Season 1",
+      "tags": 2,
+      "sourceKind": "steamdb-snapshot",
+      "complete": true
+    },
+    {
+      "steamAppId": 1148350,
+      "name": "The Powder Toy",
+      "tags": 14,
+      "sourceKind": "steam-store",
+      "complete": true
+    },
+    {
+      "steamAppId": 1161870,
+      "name": "Epiphyllum in Love",
+      "tags": 9,
+      "sourceKind": "steam-store",
+      "complete": true
+    },
+    {
+      "steamAppId": 1172710,
+      "name": "Dune: Awakening",
+      "tags": 7,
+      "sourceKind": "steam-search",
+      "complete": false
+    },
+    {
+      "steamAppId": 1174180,
+      "name": "Red Dead Redemption 2",
+      "tags": 19,
+      "sourceKind": "steamspy",
+      "complete": true
+    },
+    {
+      "steamAppId": 1190600,
+      "name": "Captain Hardcore",
+      "tags": 7,
+      "sourceKind": "steam-search",
+      "complete": false
+    },
+    {
+      "steamAppId": 1202540,
+      "name": "Marco & The Galaxy Dragon",
+      "tags": 15,
+      "sourceKind": "steam-store",
+      "complete": true
+    },
+    {
+      "steamAppId": 1203190,
+      "name": "Wreckfest 2",
+      "tags": 18,
+      "sourceKind": "steam-store",
+      "complete": true
+    },
+    {
+      "steamAppId": 1222140,
+      "name": "Detroit: Become Human",
+      "tags": 19,
+      "sourceKind": "steamspy",
+      "complete": true
+    },
+    {
+      "steamAppId": 1238730,
+      "name": "Flowers -Le volume sur automne-",
+      "tags": 12,
+      "sourceKind": "steam-store",
+      "complete": true
+    },
+    {
+      "steamAppId": 1238840,
+      "name": "Battlefield™ 1",
+      "tags": 19,
+      "sourceKind": "steamdb-snapshot",
+      "complete": true
+    },
+    {
+      "steamAppId": 1260520,
+      "name": "Patrick's Parabox",
+      "tags": 13,
+      "sourceKind": "steam-store",
+      "complete": true
+    },
+    {
+      "steamAppId": 1265920,
+      "name": "Life is Strange Remastered",
+      "tags": 18,
+      "sourceKind": "steamspy",
+      "complete": true
+    },
+    {
+      "steamAppId": 1272080,
+      "name": "PAYDAY 3",
+      "tags": 19,
+      "sourceKind": "steamspy",
+      "complete": true
+    },
+    {
+      "steamAppId": 1281800,
+      "name": "Samsara Room",
+      "tags": 18,
+      "sourceKind": "steam-store",
+      "complete": true
+    },
+    {
+      "steamAppId": 1285190,
+      "name": "Borderlands 4",
+      "tags": 7,
+      "sourceKind": "steam-search",
+      "complete": false
+    },
+    {
+      "steamAppId": 1286220,
+      "name": "Sea Power : Naval Combat in the Missile Age",
+      "tags": 19,
+      "sourceKind": "steam-store",
+      "complete": true
+    },
+    {
+      "steamAppId": 1295320,
+      "name": "Can of Wormholes",
+      "tags": 12,
+      "sourceKind": "steam-store",
+      "complete": true
+    },
+    {
+      "steamAppId": 1295500,
+      "name": "Warhammer 40,000: Battlesector",
+      "tags": 18,
+      "sourceKind": "steam-store",
+      "complete": true
+    },
+    {
+      "steamAppId": 1340130,
+      "name": "Aokana - Four Rhythms Across the Blue - EXTRA1",
+      "tags": 9,
+      "sourceKind": "steam-store",
+      "complete": true
+    },
+    {
+      "steamAppId": 1361320,
+      "name": "The Room 4: Old Sins",
+      "tags": 19,
+      "sourceKind": "steam-store",
+      "complete": true
+    },
+    {
+      "steamAppId": 1384160,
+      "name": "GUILTY GEAR -STRIVE-",
+      "tags": 19,
+      "sourceKind": "steamspy",
+      "complete": true
+    },
+    {
+      "steamAppId": 1407420,
+      "name": "Milo and the Magpies",
+      "tags": 14,
+      "sourceKind": "steam-store",
+      "complete": true
+    },
+    {
+      "steamAppId": 1449690,
+      "name": "The Walking Dead: The Telltale Definitive Series",
+      "tags": 18,
+      "sourceKind": "steamspy",
+      "complete": true
+    },
+    {
+      "steamAppId": 1495320,
+      "name": "Carnal Instinct",
+      "tags": 7,
+      "sourceKind": "steam-search",
+      "complete": false
+    },
+    {
+      "steamAppId": 1508460,
+      "name": "Annalynn",
+      "tags": 14,
+      "sourceKind": "steam-store",
+      "complete": true
+    },
+    {
+      "steamAppId": 1547000,
+      "name": "Grand Theft Auto: San Andreas – The Definitive Edition",
+      "tags": 19,
+      "sourceKind": "steamspy",
+      "complete": true
+    },
+    {
+      "steamAppId": 1577120,
+      "name": "The Quarry",
+      "tags": 19,
+      "sourceKind": "steamspy",
+      "complete": true
+    },
+    {
+      "steamAppId": 1583230,
+      "name": "High On Life",
+      "tags": 19,
+      "sourceKind": "steamspy",
+      "complete": true
+    },
+    {
+      "steamAppId": 1619750,
+      "name": "Karryn's Prison",
+      "tags": 7,
+      "sourceKind": "steam-search",
+      "complete": false
+    },
+    {
+      "steamAppId": 1620730,
+      "name": "Hell is Us",
+      "tags": 7,
+      "sourceKind": "steam-search",
+      "complete": false
+    },
+    {
+      "steamAppId": 1636440,
+      "name": "SILENT HILL: Townfall",
+      "tags": 7,
+      "sourceKind": "steam-search",
+      "complete": false
+    },
+    {
+      "steamAppId": 1649240,
+      "name": "Returnal™",
+      "tags": 18,
+      "sourceKind": "steamdb-snapshot",
+      "complete": true
+    },
+    {
+      "steamAppId": 1659040,
+      "name": "HITMAN World of Assassination",
+      "tags": 19,
+      "sourceKind": "steamspy",
+      "complete": true
+    },
+    {
+      "steamAppId": 1668520,
+      "name": "The Legend of Heroes: Trails to Azure",
+      "tags": 8,
+      "sourceKind": "steam-store",
+      "complete": true
+    },
+    {
+      "steamAppId": 1669000,
+      "name": "Age of Wonders 4",
+      "tags": 19,
+      "sourceKind": "steamspy",
+      "complete": true
+    },
+    {
+      "steamAppId": 1684410,
+      "name": "Seal World",
+      "tags": 18,
+      "sourceKind": "steam-store",
+      "complete": true
+    },
+    {
+      "steamAppId": 1689620,
+      "name": "BLEACH Rebirth of Souls",
+      "tags": 17,
+      "sourceKind": "steam-store",
+      "complete": true
+    },
+    {
+      "steamAppId": 1693980,
+      "name": "Dead Space",
+      "tags": 19,
+      "sourceKind": "steamspy",
+      "complete": true
+    },
+    {
+      "steamAppId": 1771300,
+      "name": "Kingdom Come: Deliverance II",
+      "tags": 19,
+      "sourceKind": "steamspy",
+      "complete": true
+    },
+    {
+      "steamAppId": 1806040,
+      "name": "Snake Force",
+      "tags": 17,
+      "sourceKind": "steam-store",
+      "complete": true
+    },
+    {
+      "steamAppId": 1888010,
+      "name": "Towards Future",
+      "tags": 18,
+      "sourceKind": "steam-store",
+      "complete": true
+    },
+    {
+      "steamAppId": 1888930,
+      "name": "The Last of Us™ Part I",
+      "tags": 19,
+      "sourceKind": "steamdb-snapshot",
+      "complete": true
+    },
+    {
+      "steamAppId": 1903340,
+      "name": "Clair Obscur: Expedition 33",
+      "tags": 19,
+      "sourceKind": "steamspy",
+      "complete": true
+    },
+    {
+      "steamAppId": 1923790,
+      "name": "Linelith",
+      "tags": 18,
+      "sourceKind": "steam-store",
+      "complete": true
+    },
+    {
+      "steamAppId": 1938090,
+      "name": "Call of Duty®",
+      "tags": 19,
+      "sourceKind": "steamdb-snapshot",
+      "complete": true
+    },
+    {
+      "steamAppId": 1941540,
+      "name": "Mafia: The Old Country",
+      "tags": 7,
+      "sourceKind": "steam-search",
+      "complete": false
+    },
+    {
+      "steamAppId": 1943730,
+      "name": "Wicked Island",
+      "tags": 7,
+      "sourceKind": "steam-search",
+      "complete": false
+    },
+    {
+      "steamAppId": 1962663,
+      "name": "Call of Duty®: Warzone™",
+      "tags": 7,
+      "sourceKind": "steam-search",
+      "complete": false
+    },
+    {
+      "steamAppId": 1967430,
+      "name": "Ghost Trick: Phantom Detective",
+      "tags": 19,
+      "sourceKind": "steam-store",
+      "complete": true
+    },
+    {
+      "steamAppId": 1971870,
+      "name": "Mortal Kombat 1",
+      "tags": 18,
+      "sourceKind": "steamspy",
+      "complete": true
+    },
+    {
+      "steamAppId": 1988540,
+      "name": "The Zachtronics Solitaire Collection",
+      "tags": 9,
+      "sourceKind": "steam-store",
+      "complete": true
+    },
+    {
+      "steamAppId": 1998530,
+      "name": "Yoiyami Dancers: Twilight Danmaku Dancers",
+      "tags": 14,
+      "sourceKind": "steam-store",
+      "complete": true
+    },
+    {
+      "steamAppId": 2052410,
+      "name": "WITCH ON THE HOLY NIGHT",
+      "tags": 16,
+      "sourceKind": "steam-store",
+      "complete": true
+    },
+    {
+      "steamAppId": 2069250,
+      "name": "High On Life 2",
+      "tags": 7,
+      "sourceKind": "steam-search",
+      "complete": false
+    },
+    {
+      "steamAppId": 2074920,
+      "name": "The First Descendant",
+      "tags": 7,
+      "sourceKind": "steam-search",
+      "complete": false
+    },
+    {
+      "steamAppId": 2075720,
+      "name": "9 Days",
+      "tags": 17,
+      "sourceKind": "steam-store",
+      "complete": true
+    },
+    {
+      "steamAppId": 2112520,
+      "name": "her tears were my light",
+      "tags": 17,
+      "sourceKind": "steam-store",
+      "complete": true
+    },
+    {
+      "steamAppId": 2128270,
+      "name": "Path of Achra",
+      "tags": 17,
+      "sourceKind": "steam-store",
+      "complete": true
+    },
+    {
+      "steamAppId": 2129530,
+      "name": "REANIMAL",
+      "tags": 7,
+      "sourceKind": "steam-search",
+      "complete": false
+    },
+    {
+      "steamAppId": 2138710,
+      "name": "Sifu",
+      "tags": 19,
+      "sourceKind": "steamspy",
+      "complete": true
+    },
+    {
+      "steamAppId": 2141910,
+      "name": "Magic: The Gathering Arena",
+      "tags": 18,
+      "sourceKind": "steam-store",
+      "complete": true
+    },
+    {
+      "steamAppId": 2147950,
+      "name": "4D Golf",
+      "tags": 17,
+      "sourceKind": "steam-store",
+      "complete": true
+    },
+    {
+      "steamAppId": 2157830,
+      "name": "John Carpenter's Toxic Commando",
+      "tags": 7,
+      "sourceKind": "steam-search",
+      "complete": false
+    },
+    {
+      "steamAppId": 2169200,
+      "name": "Sniper Elite: Resistance",
+      "tags": 18,
+      "sourceKind": "steam-store",
+      "complete": true
+    },
+    {
+      "steamAppId": 2171440,
+      "name": "Fear & Hunger 2: Termina",
+      "tags": 7,
+      "sourceKind": "steam-search",
+      "complete": false
+    },
+    {
+      "steamAppId": 2171690,
+      "name": "Handshakes",
+      "tags": 16,
+      "sourceKind": "steam-store",
+      "complete": true
+    },
+    {
+      "steamAppId": 2172010,
+      "name": "Until Dawn™",
+      "tags": 7,
+      "sourceKind": "steam-search",
+      "complete": false
+    },
+    {
+      "steamAppId": 2183900,
+      "name": "Warhammer 40,000: Space Marine 2",
+      "tags": 18,
+      "sourceKind": "steamspy",
+      "complete": true
+    },
+    {
+      "steamAppId": 2191190,
+      "name": "FIND ALL 4: Magic",
+      "tags": 13,
+      "sourceKind": "steam-store",
+      "complete": true
+    },
+    {
+      "steamAppId": 2207440,
+      "name": "LOK Digital",
+      "tags": 15,
+      "sourceKind": "steam-store",
+      "complete": true
+    },
+    {
+      "steamAppId": 2208920,
+      "name": "Assassin's Creed Valhalla",
+      "tags": 19,
+      "sourceKind": "steamspy",
+      "complete": true
+    },
+    {
+      "steamAppId": 2236060,
+      "name": "Anthro Heat",
+      "tags": 7,
+      "sourceKind": "steam-search",
+      "complete": false
+    },
+    {
+      "steamAppId": 2291850,
+      "name": "Underground Blossom",
+      "tags": 10,
+      "sourceKind": "steam-store",
+      "complete": true
+    },
+    {
+      "steamAppId": 2314820,
+      "name": "Hira Hira Hihiru",
+      "tags": 13,
+      "sourceKind": "steam-store",
+      "complete": true
+    },
+    {
+      "steamAppId": 2322010,
+      "name": "God of War Ragnarök",
+      "tags": 19,
+      "sourceKind": "steamspy",
+      "complete": true
+    },
+    {
+      "steamAppId": 2346660,
+      "name": "DFHack - Dwarf Fortress Modding Engine",
+      "tags": 19,
+      "sourceKind": "steam-store",
+      "complete": true
+    },
+    {
+      "steamAppId": 2358720,
+      "name": "Black Myth: Wukong",
+      "tags": 19,
+      "sourceKind": "steamspy",
+      "complete": true
+    },
+    {
+      "steamAppId": 2381620,
+      "name": "Steam Engine Simulator",
+      "tags": 15,
+      "sourceKind": "steam-store",
+      "complete": true
+    },
+    {
+      "steamAppId": 2385530,
+      "name": "PGA TOUR 2K25",
+      "tags": 13,
+      "sourceKind": "steam-store",
+      "complete": true
+    },
+    {
+      "steamAppId": 2417610,
+      "name": "METAL GEAR SOLID Δ: SNAKE EATER",
+      "tags": 7,
+      "sourceKind": "steam-search",
+      "complete": false
+    },
+    {
+      "steamAppId": 2429640,
+      "name": "Throne and Liberty",
+      "tags": 7,
+      "sourceKind": "steam-search",
+      "complete": false
+    },
+    {
+      "steamAppId": 2442020,
+      "name": "Dangeresque: The Roomisode Triungulate",
+      "tags": 13,
+      "sourceKind": "steam-store",
+      "complete": true
+    },
+    {
+      "steamAppId": 2443360,
+      "name": "Zortch",
+      "tags": 16,
+      "sourceKind": "steam-store",
+      "complete": true
+    },
+    {
+      "steamAppId": 2458860,
+      "name": "Summer Clover",
+      "tags": 7,
+      "sourceKind": "steam-search",
+      "complete": false
+    },
+    {
+      "steamAppId": 2492670,
+      "name": "METAL GEAR SOLID 4: Guns of the Patriots - Master Collection Version",
+      "tags": 7,
+      "sourceKind": "steam-search",
+      "complete": false
+    },
+    {
+      "steamAppId": 2505570,
+      "name": "Burger Shop 3",
+      "tags": 14,
+      "sourceKind": "steam-store",
+      "complete": true
+    },
+    {
+      "steamAppId": 2515070,
+      "name": "AQUARIUM",
+      "tags": 11,
+      "sourceKind": "steam-store",
+      "complete": true
+    },
+    {
+      "steamAppId": 2523720,
+      "name": "Gears of War: Reloaded",
+      "tags": 7,
+      "sourceKind": "steam-search",
+      "complete": false
+    },
+    {
+      "steamAppId": 2531310,
+      "name": "The Last of Us™ Part II Remastered",
+      "tags": 7,
+      "sourceKind": "steam-search",
+      "complete": false
+    },
+    {
+      "steamAppId": 2539960,
+      "name": "Orbo's Odyssey",
+      "tags": 18,
+      "sourceKind": "steam-store",
+      "complete": true
+    },
+    {
+      "steamAppId": 2561580,
+      "name": "Horizon Zero Dawn™ Remastered",
+      "tags": 7,
+      "sourceKind": "steam-search",
+      "complete": false
+    },
+    {
+      "steamAppId": 2569760,
+      "name": "The Mound: Omen of Cthulhu",
+      "tags": 7,
+      "sourceKind": "steam-search",
+      "complete": false
+    },
+    {
+      "steamAppId": 2570630,
+      "name": "20 Small Mazes",
+      "tags": 13,
+      "sourceKind": "steam-store",
+      "complete": true
+    },
+    {
+      "steamAppId": 2584270,
+      "name": "Mortal Shell II",
+      "tags": 7,
+      "sourceKind": "steam-search",
+      "complete": false
+    },
+    {
+      "steamAppId": 2600140,
+      "name": "Please, Touch The Artwork 2",
+      "tags": 18,
+      "sourceKind": "steam-store",
+      "complete": true
+    },
+    {
+      "steamAppId": 2623190,
+      "name": "The Elder Scrolls IV: Oblivion Remastered",
+      "tags": 19,
+      "sourceKind": "steamspy",
+      "complete": true
+    },
+    {
+      "steamAppId": 2624870,
+      "name": "Life is Strange: Reunion",
+      "tags": 7,
+      "sourceKind": "steam-search",
+      "complete": false
+    },
+    {
+      "steamAppId": 2627260,
+      "name": "NINJA GAIDEN 4",
+      "tags": 7,
+      "sourceKind": "steam-search",
+      "complete": false
+    },
+    {
+      "steamAppId": 2634890,
+      "name": "MARVEL vs. CAPCOM Fighting Collection: Arcade Classics",
+      "tags": 19,
+      "sourceKind": "steam-store",
+      "complete": true
+    },
+    {
+      "steamAppId": 2634950,
+      "name": "Tokyo Xtreme Racer",
+      "tags": 16,
+      "sourceKind": "steam-store",
+      "complete": true
+    },
+    {
+      "steamAppId": 2638890,
+      "name": "Onimusha: Way of the Sword",
+      "tags": 7,
+      "sourceKind": "steam-search",
+      "complete": false
+    },
+    {
+      "steamAppId": 2654860,
+      "name": "Mizi NO!",
+      "tags": 19,
+      "sourceKind": "steam-store",
+      "complete": true
+    },
+    {
+      "steamAppId": 2658450,
+      "name": "LOLLIPOP CHAINSAW RePOP",
+      "tags": 19,
+      "sourceKind": "steamspy",
+      "complete": true
+    },
+    {
+      "steamAppId": 2668510,
+      "name": "Red Dead Redemption",
+      "tags": 18,
+      "sourceKind": "steamspy",
+      "complete": true
+    },
+    {
+      "steamAppId": 2688950,
+      "name": "Planet Coaster 2",
+      "tags": 19,
+      "sourceKind": "steam-store",
+      "complete": true
+    },
+    {
+      "steamAppId": 2692440,
+      "name": "LoveCraft",
+      "tags": 7,
+      "sourceKind": "steam-search",
+      "complete": false
+    },
+    {
+      "steamAppId": 2702170,
+      "name": "Strange Jigsaws",
+      "tags": 12,
+      "sourceKind": "steam-store",
+      "complete": true
+    },
+    {
+      "steamAppId": 2704110,
+      "name": "Aliya: Timelink",
+      "tags": 19,
+      "sourceKind": "steam-store",
+      "complete": true
+    },
+    {
+      "steamAppId": 2807960,
+      "name": "Battlefield™ 6",
+      "tags": 7,
+      "sourceKind": "steam-search",
+      "complete": false
+    },
+    {
+      "steamAppId": 2808930,
+      "name": "Lust Goddess",
+      "tags": 7,
+      "sourceKind": "steam-search",
+      "complete": false
+    },
+    {
+      "steamAppId": 2832330,
+      "name": "Aeons Echo",
+      "tags": 7,
+      "sourceKind": "steam-search",
+      "complete": false
+    },
+    {
+      "steamAppId": 2878600,
+      "name": "Harry Potter: Quidditch Champions",
+      "tags": 19,
+      "sourceKind": "steam-store",
+      "complete": true
+    },
+    {
+      "steamAppId": 2899050,
+      "name": "Desert Stalker",
+      "tags": 7,
+      "sourceKind": "steam-search",
+      "complete": false
+    },
+    {
+      "steamAppId": 2900640,
+      "name": "TOEM 2",
+      "tags": 17,
+      "sourceKind": "steam-store",
+      "complete": true
+    },
+    {
+      "steamAppId": 2909400,
+      "name": "FINAL FANTASY VII REBIRTH",
+      "tags": 19,
+      "sourceKind": "steamspy",
+      "complete": true
+    },
+    {
+      "steamAppId": 2928600,
+      "name": "Demon Slayer -Kimetsu no Yaiba- The Hinokami Chronicles 2",
+      "tags": 7,
+      "sourceKind": "steam-search",
+      "complete": false
+    },
+    {
+      "steamAppId": 2950340,
+      "name": "LEGO® Harry Potter™ Collection",
+      "tags": 16,
+      "sourceKind": "steam-store",
+      "complete": true
+    },
+    {
+      "steamAppId": 2986260,
+      "name": "Dreamlike Love with Seira",
+      "tags": 19,
+      "sourceKind": "steam-store",
+      "complete": true
+    },
+    {
+      "steamAppId": 2988580,
+      "name": "Yakuza 0 Director's Cut",
+      "tags": 7,
+      "sourceKind": "steam-search",
+      "complete": false
+    },
+    {
+      "steamAppId": 3017860,
+      "name": "DOOM: The Dark Ages",
+      "tags": 18,
+      "sourceKind": "steamspy",
+      "complete": true
+    },
+    {
+      "steamAppId": 3028330,
+      "name": "Battlefield™ REDSEC",
+      "tags": 7,
+      "sourceKind": "steam-search",
+      "complete": false
+    },
+    {
+      "steamAppId": 3030210,
+      "name": "Slash/Jump",
+      "tags": 16,
+      "sourceKind": "steam-store",
+      "complete": true
+    },
+    {
+      "steamAppId": 3035120,
+      "name": "Is This Seat Taken?",
+      "tags": 15,
+      "sourceKind": "steam-store",
+      "complete": true
+    },
+    {
+      "steamAppId": 3035570,
+      "name": "Assassin's Creed Mirage",
+      "tags": 14,
+      "sourceKind": "steamspy",
+      "complete": true
+    },
+    {
+      "steamAppId": 3059520,
+      "name": "F1® 25",
+      "tags": 17,
+      "sourceKind": "steam-store",
+      "complete": true
+    },
+    {
+      "steamAppId": 3061570,
+      "name": "Persona5: The Phantom X",
+      "tags": 7,
+      "sourceKind": "steam-search",
+      "complete": false
+    },
+    {
+      "steamAppId": 3061810,
+      "name": "Like a Dragon: Pirate Yakuza in Hawaii",
+      "tags": 19,
+      "sourceKind": "steamspy",
+      "complete": true
+    },
+    {
+      "steamAppId": 3081840,
+      "name": "Chrono Gear: Warden of Time",
+      "tags": 18,
+      "sourceKind": "steam-store",
+      "complete": true
+    },
+    {
+      "steamAppId": 3112280,
+      "name": "Reclaiming the Lost",
+      "tags": 7,
+      "sourceKind": "steam-search",
+      "complete": false
+    },
+    {
+      "steamAppId": 3159330,
+      "name": "Assassin’s Creed Shadows",
+      "tags": 7,
+      "sourceKind": "steam-search",
+      "complete": false
+    },
+    {
+      "steamAppId": 3173560,
+      "name": "Anomalous Coffee Machine",
+      "tags": 7,
+      "sourceKind": "steam-search",
+      "complete": false
+    },
+    {
+      "steamAppId": 3189340,
+      "name": "Dungeons of Eternity",
+      "tags": 18,
+      "sourceKind": "steam-store",
+      "complete": true
+    },
+    {
+      "steamAppId": 3219630,
+      "name": "Halloween: The Game",
+      "tags": 7,
+      "sourceKind": "steam-search",
+      "complete": false
+    },
+    {
+      "steamAppId": 3236900,
+      "name": "Rebirth Pub",
+      "tags": 7,
+      "sourceKind": "steam-search",
+      "complete": false
+    },
+    {
+      "steamAppId": 3240220,
+      "name": "Grand Theft Auto V Enhanced",
+      "tags": 19,
+      "sourceKind": "steamspy",
+      "complete": true
+    },
+    {
+      "steamAppId": 3259470,
+      "name": "Papa's Pizzeria Deluxe",
+      "tags": 17,
+      "sourceKind": "steam-store",
+      "complete": true
+    },
+    {
+      "steamAppId": 3279780,
+      "name": "Horizon Walker",
+      "tags": 7,
+      "sourceKind": "steam-search",
+      "complete": false
+    },
+    {
+      "steamAppId": 3280350,
+      "name": "DEATH STRANDING 2: ON THE BEACH",
+      "tags": 7,
+      "sourceKind": "steam-search",
+      "complete": false
+    },
+    {
+      "steamAppId": 3393110,
+      "name": "AION 2",
+      "tags": 7,
+      "sourceKind": "steam-search",
+      "complete": false
+    },
+    {
+      "steamAppId": 3400350,
+      "name": "Third Crisis: Neon Nights",
+      "tags": 7,
+      "sourceKind": "steam-search",
+      "complete": false
+    },
+    {
+      "steamAppId": 3445580,
+      "name": "Ambidextro",
+      "tags": 17,
+      "sourceKind": "steam-store",
+      "complete": true
+    },
+    {
+      "steamAppId": 3472550,
+      "name": "The Mr. Rabbit Magic Show",
+      "tags": 9,
+      "sourceKind": "steam-store",
+      "complete": true
+    },
+    {
+      "steamAppId": 3483510,
+      "name": "The Adventures of Elliot: The Millennium Tales",
+      "tags": 19,
+      "sourceKind": "steam-store",
+      "complete": true
+    },
+    {
+      "steamAppId": 3489700,
+      "name": "Stellar Blade™",
+      "tags": 7,
+      "sourceKind": "steam-search",
+      "complete": false
+    },
+    {
+      "steamAppId": 3510740,
+      "name": "Normal Golf Game",
+      "tags": 13,
+      "sourceKind": "steam-store",
+      "complete": true
+    },
+    {
+      "steamAppId": 3515380,
+      "name": "YKMET: Strade",
+      "tags": 7,
+      "sourceKind": "steam-search",
+      "complete": false
+    },
+    {
+      "steamAppId": 3551190,
+      "name": "The Last Salvage Squad",
+      "tags": 17,
+      "sourceKind": "steam-store",
+      "complete": true
+    },
+    {
+      "steamAppId": 3576350,
+      "name": "Sex, Secrets & Used Tech",
+      "tags": 7,
+      "sourceKind": "steam-search",
+      "complete": false
+    },
+    {
+      "steamAppId": 3595270,
+      "name": "Call of Duty®: Modern Warfare® III",
+      "tags": 7,
+      "sourceKind": "steam-search",
+      "complete": false
+    },
+    {
+      "steamAppId": 3602290,
+      "name": "FEMBOY FUTA HOUSE",
+      "tags": 7,
+      "sourceKind": "steam-search",
+      "complete": false
+    },
+    {
+      "steamAppId": 3606480,
+      "name": "Call of Duty®: Black Ops 7",
+      "tags": 7,
+      "sourceKind": "steam-search",
+      "complete": false
+    },
+    {
+      "steamAppId": 3634190,
+      "name": "MXGP 26 - The Official Game",
+      "tags": 9,
+      "sourceKind": "steam-store",
+      "complete": true
+    },
+    {
+      "steamAppId": 3636770,
+      "name": "Servant of the Lake",
+      "tags": 16,
+      "sourceKind": "steam-store",
+      "complete": true
+    },
+    {
+      "steamAppId": 3640200,
+      "name": "Dawson Oaks Trailer Park",
+      "tags": 16,
+      "sourceKind": "steam-store",
+      "complete": true
+    },
+    {
+      "steamAppId": 3641000,
+      "name": "The Incident at Galley House",
+      "tags": 18,
+      "sourceKind": "steam-store",
+      "complete": true
+    },
+    {
+      "steamAppId": 3681010,
+      "name": "Nioh 3",
+      "tags": 7,
+      "sourceKind": "steam-search",
+      "complete": false
+    },
+    {
+      "steamAppId": 3711590,
+      "name": "Train45",
+      "tags": 7,
+      "sourceKind": "steam-search",
+      "complete": false
+    },
+    {
+      "steamAppId": 3717070,
+      "name": "WWE 2K26",
+      "tags": 9,
+      "sourceKind": "steam-store",
+      "complete": true
+    },
+    {
+      "steamAppId": 3739190,
+      "name": "Heavy Spoilers RPG: The true identity of the final enemy is the hero's father",
+      "tags": 13,
+      "sourceKind": "steam-store",
+      "complete": true
+    },
+    {
+      "steamAppId": 3751260,
+      "name": "The Blood of Dawnwalker",
+      "tags": 7,
+      "sourceKind": "steam-search",
+      "complete": false
+    },
+    {
+      "steamAppId": 3751950,
+      "name": "Assassin's Creed Black Flag Resynced",
+      "tags": 7,
+      "sourceKind": "steam-search",
+      "complete": false
+    },
+    {
+      "steamAppId": 3764200,
+      "name": "Resident Evil Requiem",
+      "tags": 7,
+      "sourceKind": "steam-search",
+      "complete": false
+    },
+    {
+      "steamAppId": 3768760,
+      "name": "007 First Light",
+      "tags": 7,
+      "sourceKind": "steam-search",
+      "complete": false
+    },
+    {
+      "steamAppId": 3850550,
+      "name": "Isekai: Waifu Overlord",
+      "tags": 7,
+      "sourceKind": "steam-search",
+      "complete": false
+    },
+    {
+      "steamAppId": 3859630,
+      "name": "METAL GEAR SOLID: MASTER COLLECTION Vol.2",
+      "tags": 7,
+      "sourceKind": "steam-search",
+      "complete": false
+    },
+    {
+      "steamAppId": 3867170,
+      "name": "Sengoku Rance",
+      "tags": 14,
+      "sourceKind": "steam-store",
+      "complete": true
+    },
+    {
+      "steamAppId": 3920610,
+      "name": "FATAL FRAME II: Crimson Butterfly REMAKE",
+      "tags": 7,
+      "sourceKind": "steam-search",
+      "complete": false
+    },
+    {
+      "steamAppId": 3936270,
+      "name": "It's Fine",
+      "tags": 8,
+      "sourceKind": "steam-store",
+      "complete": true
+    },
+    {
+      "steamAppId": 3940610,
+      "name": "EA SPORTS™ Madden NFL 27",
+      "tags": 13,
+      "sourceKind": "steam-store",
+      "complete": true
+    },
+    {
+      "steamAppId": 3950130,
+      "name": "Database Detective: Minor Crimes Division",
+      "tags": 15,
+      "sourceKind": "steam-store",
+      "complete": true
+    },
+    {
+      "steamAppId": 3969080,
+      "name": "MapleStory M",
+      "tags": 13,
+      "sourceKind": "steam-store",
+      "complete": true
+    },
+    {
+      "steamAppId": 4032350,
+      "name": "EA SPORTS™ College Football 27",
+      "tags": 16,
+      "sourceKind": "steam-store",
+      "complete": true
+    },
+    {
+      "steamAppId": 4051150,
+      "name": "Chronigma",
+      "tags": 14,
+      "sourceKind": "steam-store",
+      "complete": true
+    },
+    {
+      "steamAppId": 4080030,
+      "name": "The Message from Deep Space",
+      "tags": 16,
+      "sourceKind": "steam-store",
+      "complete": true
+    },
+    {
+      "steamAppId": 4080220,
+      "name": "EA SPORTS FC™ 27",
+      "tags": 16,
+      "sourceKind": "steam-store",
+      "complete": true
+    },
+    {
+      "steamAppId": 4258770,
+      "name": "Dread Fields",
+      "tags": 15,
+      "sourceKind": "steam-store",
+      "complete": true
+    },
+    {
+      "steamAppId": 4259190,
+      "name": "Kingdom Rush 6: Genesis TD",
+      "tags": 19,
+      "sourceKind": "steam-store",
+      "complete": true
+    },
+    {
+      "steamAppId": 4261980,
+      "name": "女神的贴身男仆",
+      "tags": 17,
+      "sourceKind": "steam-store",
+      "complete": true
+    },
+    {
+      "steamAppId": 4285320,
+      "name": "Aurora Hills: Chapter 2",
+      "tags": 18,
+      "sourceKind": "steam-store",
+      "complete": true
+    },
+    {
+      "steamAppId": 4364730,
+      "name": "IGTAP: an Incremental Game That's Also a Platformer",
+      "tags": 16,
+      "sourceKind": "steam-store",
+      "complete": true
+    },
+    {
+      "steamAppId": 4384550,
+      "name": "Call of Duty®: Black Ops 6",
+      "tags": 18,
+      "sourceKind": "steam-store",
+      "complete": true
+    },
+    {
+      "steamAppId": 4412320,
+      "name": "Dumb Ways to Build",
+      "tags": 15,
+      "sourceKind": "steam-store",
+      "complete": true
+    },
+    {
+      "steamAppId": 4428890,
+      "name": "20 More, Somehow Even Smaller, Mazes",
+      "tags": 8,
+      "sourceKind": "steam-store",
+      "complete": true
+    },
+    {
+      "steamAppId": 4521340,
+      "name": "Gaming Burnout Treatment Center",
+      "tags": 19,
+      "sourceKind": "steam-store",
+      "complete": true
+    },
+    {
+      "steamAppId": 4584110,
+      "name": "Soul Land: Awakening World",
+      "tags": 19,
+      "sourceKind": "steam-store",
+      "complete": true
+    },
+    {
+      "steamAppId": 4585340,
+      "name": "Horse Magnifier: The Full Horse",
+      "tags": 19,
+      "sourceKind": "steam-store",
+      "complete": true
+    },
+    {
+      "steamAppId": 4643090,
+      "name": "The NOexistenceN of Lilith",
+      "tags": 11,
+      "sourceKind": "steam-store",
+      "complete": true
+    },
+    {
+      "steamAppId": 4739660,
+      "name": "Drag'n Wash",
+      "tags": 7,
+      "sourceKind": "steam-search",
+      "complete": false
+    },
+    {
+      "steamAppId": 4778540,
+      "name": "Lucid Cats",
+      "tags": 12,
+      "sourceKind": "steam-store",
+      "complete": true
+    },
+    {
+      "steamAppId": 4883590,
+      "name": "iRacing® Studios NASCAR 26",
+      "tags": 15,
+      "sourceKind": "steam-store",
+      "complete": true
+    },
+    {
+      "steamAppId": 5053820,
+      "name": "Mimic Party",
+      "tags": 16,
+      "sourceKind": "steam-store",
+      "complete": true
+    },
+    {
+      "steamAppId": 5158320,
+      "name": "Deer Hunting - The Season 2",
+      "tags": 14,
+      "sourceKind": "steam-store",
+      "complete": true
+    },
+    {
+      "steamAppId": 5212940,
+      "name": "Bunker Tidy Up",
+      "tags": 18,
+      "sourceKind": "steam-store",
+      "complete": true
+    }
+  ],
+  "allTags": 24986,
+  "recommendationStrategy": "Public Steam similar-items source order first; local top-20-tag completion; at most twenty games",
+  "algorithm": "Weighted Jaccard tag completion; Valve coefficients are not reproduced"
+}

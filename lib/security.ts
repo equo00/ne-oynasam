@@ -1,0 +1,8 @@
+export const statuses=['planned','playing','completed','paused'] as const;
+export function normalize(s:string){return s.toLocaleLowerCase('tr').replace(/ı/g,'i').normalize('NFD').replace(/[\u0300-\u036f]/g,'');}
+export function validId(s:unknown):s is string{return typeof s==='string'&&/^[a-z0-9][a-z0-9-]{0,99}$/.test(s);}
+export function safeUrl(s:unknown):string|null{if(typeof s!=='string')return null;try{const u=new URL(s);if(['http:','https:'].includes(u.protocol)&&!u.username&&!u.password)return u.href;}catch{}return null;}
+export function checkOrigin(req:Request){try{const o=req.headers.get('origin');const url=new URL(req.url);if(o&&new URL(o).host!==url.host)return false;return req.headers.get('sec-fetch-site')!=='cross-site';}catch{return false;}}
+export async function readBody(req:Request,maxBytes=12000){if(Number(req.headers.get('content-length')||0)>maxBytes)throw new Error('İstek çok büyük.');const text=await req.text();if(text.length>maxBytes)throw new Error('İstek çok büyük.');return JSON.parse(text);}
+export function validateLibrary(b:any){if(!validId(b.gameId))throw new Error('Geçersiz oyun.');if(!statuses.includes(b.status))throw new Error('Geçersiz durum.');if(typeof b.note!=='string'||b.note.length>1200)throw new Error('Not en fazla 1200 karakter olabilir.');if(b.rating!==null&&(!Number.isInteger(b.rating)||b.rating<1||b.rating>5))throw new Error('Puan 1–5 arasında olmalı.');return {gameId:b.gameId,status:b.status,note:b.note,rating:b.rating};}
+export function json(data:unknown,status=200){return Response.json(data,{status,headers:{'Cache-Control':'no-store','X-Content-Type-Options':'nosniff'}});}

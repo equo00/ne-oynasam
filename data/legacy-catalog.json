@@ -1,0 +1,149 @@
+[
+  {
+    "id": "minecraft",
+    "qid": "Q49740",
+    "name": "Minecraft",
+    "year": 2011,
+    "genres": [
+      "Aksiyon",
+      "Macera",
+      "Hayatta kalma",
+      "Simülasyon",
+      "Strateji",
+      "Açık dünya"
+    ],
+    "platforms": [
+      "PC",
+      "PlayStation",
+      "Xbox",
+      "Switch",
+      "Android",
+      "iOS"
+    ],
+    "studio": "Mojang Studios",
+    "url": "https://minecraft.net",
+    "sourceUrl": "https://www.wikidata.org/wiki/Q49740",
+    "sourceRetrievedAt": "2026-10-05",
+    "sourceGenreValues": [
+      "action-adventure game",
+      "survival game",
+      "construction and management simulation",
+      "sandbox game"
+    ],
+    "sourcePlatformValues": [
+      "Microsoft Windows",
+      "Linux",
+      "macOS",
+      "PlayStation 3",
+      "PlayStation 4",
+      "PlayStation 5",
+      "PlayStation Vita",
+      "Xbox 360",
+      "Xbox One",
+      "Xbox Series X and Series S",
+      "Nintendo Switch",
+      "Nintendo Switch 2",
+      "Android",
+      "iOS"
+    ],
+    "yearSource": "Wikidata item description",
+    "genresRaw": [
+      "action-adventure game",
+      "survival game",
+      "construction and management simulation",
+      "sandbox game"
+    ],
+    "platformsRaw": [
+      "Microsoft Windows",
+      "Linux",
+      "macOS",
+      "PlayStation 3",
+      "PlayStation 4",
+      "PlayStation 5",
+      "PlayStation Vita",
+      "Xbox 360",
+      "Xbox One",
+      "Xbox Series X and Series S",
+      "Nintendo Switch",
+      "Nintendo Switch 2",
+      "Android",
+      "iOS"
+    ],
+    "metacriticUser": null,
+    "catalogScope": "archive"
+  },
+  {
+    "id": "deus-ex-human-revolution",
+    "qid": "Q642107",
+    "name": "Deus Ex: Human Revolution",
+    "year": 2011,
+    "genres": [
+      "Aksiyon",
+      "RPG",
+      "Bilimkurgu"
+    ],
+    "platforms": [
+      "PC",
+      "PlayStation",
+      "Xbox"
+    ],
+    "studio": "Eidos Montreal",
+    "url": "https://www.eidosmontreal.com/games/deus-ex-human-revolution/",
+    "sourceUrl": "https://www.wikidata.org/wiki/Q642107",
+    "sourceRetrievedAt": "2026-10-05",
+    "sourceGenreValues": [
+      "action role-playing game",
+      "cyberpunk video game"
+    ],
+    "sourcePlatformValues": [
+      "Microsoft Windows",
+      "macOS",
+      "PlayStation 3",
+      "Xbox 360"
+    ],
+    "yearSource": "Wikidata item description",
+    "genresRaw": [
+      "action role-playing game",
+      "cyberpunk video game"
+    ],
+    "platformsRaw": [
+      "Microsoft Windows",
+      "macOS",
+      "PlayStation 3",
+      "Xbox 360"
+    ],
+    "metacriticUser": null,
+    "catalogScope": "archive"
+  },
+  {
+    "id": "age-of-empires-ii-the-age-of-kings",
+    "qid": "Q34852",
+    "name": "Age of Empires II: The Age of Kings",
+    "year": 1999,
+    "genres": [
+      "Strateji"
+    ],
+    "platforms": [
+      "PC"
+    ],
+    "studio": "Ensemble Studios",
+    "url": "http://www.microsoft.com/games/age2/",
+    "sourceUrl": "https://www.wikidata.org/wiki/Q34852",
+    "sourceRetrievedAt": "2026-10-05",
+    "sourceGenreValues": [
+      "real-time strategy"
+    ],
+    "sourcePlatformValues": [
+      "Microsoft Windows"
+    ],
+    "yearSource": "Wikidata item description",
+    "genresRaw": [
+      "real-time strategy"
+    ],
+    "platformsRaw": [
+      "Microsoft Windows"
+    ],
+    "metacriticUser": null,
+    "catalogScope": "archive"
+  }
+]

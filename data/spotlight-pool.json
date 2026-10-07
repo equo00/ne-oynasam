@@ -1,0 +1,877 @@
+[
+  {
+    "steamAppId": 233860,
+    "gameId": "kenshi",
+    "name": "Kenshi",
+    "kicker": "KENDİ HİKÂYENİ YAZ",
+    "reason": "Bir kahramanı takip etmek yerine kendi topluluğunu kur."
+  },
+  {
+    "steamAppId": 312520,
+    "gameId": "steam-312520",
+    "name": "Rain World",
+    "kicker": "EKOSİSTEMİN BİR PARÇASI OL",
+    "reason": "Sana göre kurulmamış bir dünyada hayatta kalmayı öğren."
+  },
+  {
+    "steamAppId": 653530,
+    "gameId": "return-of-the-obra-dinn",
+    "name": "Return of the Obra Dinn",
+    "kicker": "İPUÇLARININ PEŞİNDEN GİT",
+    "reason": "Bir geminin geçmişini tek tek açığa çıkar."
+  },
+  {
+    "steamAppId": 1055540,
+    "gameId": "a-short-hike",
+    "name": "A Short Hike",
+    "kicker": "KÜÇÜK BİR KAÇAMAK",
+    "reason": "Bir adayı kendi hızında keşfet; zirve acele etmiyor."
+  },
+  {
+    "steamAppId": 365360,
+    "gameId": "steam-365360",
+    "name": "Battle Brothers",
+    "kicker": "HER KARARIN BİR BEDELİ VAR",
+    "reason": "Paralı asker ekibini zorlu yolculuklara hazırla."
+  },
+  {
+    "steamAppId": 333640,
+    "gameId": "steam-333640",
+    "name": "Caves of Qud",
+    "kicker": "TUHAF BİR DÜNYAYA ADIM AT",
+    "reason": "Alışılmadık bir evrende kendi yolunu çiz."
+  },
+  {
+    "steamAppId": 881100,
+    "gameId": "steam-881100",
+    "name": "Noita",
+    "kicker": "BİR DENEY DAHA",
+    "reason": "Büyülerini birleştir; küçük değişimler büyük sonuçlar doğursun."
+  },
+  {
+    "steamAppId": 1931770,
+    "gameId": "steam-1931770",
+    "name": "Chants of Sennaar",
+    "kicker": "DİLLERİ ÇÖZ, DÜNYAYI ANLA",
+    "reason": "Anlamadığın işaretleri birer keşfe dönüştür."
+  },
+  {
+    "steamAppId": 1135690,
+    "gameId": "unpacking",
+    "name": "Unpacking",
+    "kicker": "KUTULARIN ARASINDA BİR HAYAT",
+    "reason": "Eşyaları yerleştirirken bir hikâyenin izlerini bul."
+  },
+  {
+    "steamAppId": 590380,
+    "gameId": "into-the-breach",
+    "name": "Into the Breach",
+    "kicker": "BİR HAMLE SONRASINI DÜŞÜN",
+    "reason": "Küçük bir haritada her hareketin hesabını yap."
+  },
+  {
+    "steamAppId": 1562430,
+    "gameId": "dredge",
+    "name": "DREDGE",
+    "kicker": "UFUKTA BİR TUHAFLIK VAR",
+    "reason": "Balıkçılık yolculuğunda denizin karanlık yüzünü keşfet."
+  },
+  {
+    "steamAppId": 1458140,
+    "gameId": "steam-1458140",
+    "name": "Pacific Drive",
+    "kicker": "YOLA GÜVENME, ARABANA BAK",
+    "reason": "Garajına dönmek de keşfin bir parçası olsun."
+  },
+  {
+    "steamAppId": 1677770,
+    "gameId": "steam-1677770",
+    "name": "The Case of the Golden Idol",
+    "kicker": "BİR OLAY, PEK ÇOK ŞÜPHELİ",
+    "reason": "Sahnelerdeki küçük ayrıntıları birbirine bağla."
+  },
+  {
+    "steamAppId": 599140,
+    "gameId": "graveyard-keeper",
+    "name": "Graveyard Keeper",
+    "kicker": "KASABANIN TUHAF MESAİSİ",
+    "reason": "Gündelik işlerin ve karanlık mizahın farklı bir karışımı."
+  },
+  {
+    "steamAppId": 558990,
+    "gameId": "steam-558990",
+    "name": "Opus Magnum",
+    "kicker": "BİR ÇÖZÜM YETMEZ",
+    "reason": "Bir düzeneği kur, sonra daha zarif bir yol ara."
+  },
+  {
+    "steamAppId": 1527950,
+    "gameId": "steam-1527950",
+    "name": "Wartales",
+    "kicker": "YOL ARKADAŞLARINI SEÇ",
+    "reason": "Birlikte ilerleyen bir ekibin hikâyesini şekillendir."
+  },
+  {
+    "steamAppId": 1092790,
+    "gameId": "inscryption",
+    "name": "Inscryption",
+    "kicker": "MASADAKİ SIRRI AÇ",
+    "reason": "Kart oyununun ardındaki tuhaf hikâyeye yaklaş."
+  },
+  {
+    "steamAppId": 553420,
+    "gameId": "tunic",
+    "name": "TUNIC",
+    "kicker": "HER SAYFA BİR İPUCU",
+    "reason": "Küçük bir maceranın gizli dilini keşfet."
+  },
+  {
+    "steamAppId": 1162750,
+    "gameId": "steam-1162750",
+    "name": "Songs of Syx",
+    "kicker": "BİR YERLEŞİMDEN BİR DÜNYAYA",
+    "reason": "Üretim, toplum ve şehir yönetimini birlikte düşün."
+  },
+  {
+    "steamAppId": 212680,
+    "gameId": "ftl-faster-than-light",
+    "name": "FTL: Faster Than Light",
+    "kicker": "BİR SIÇRAMA DAHA",
+    "reason": "Uzay gemindeki kısıtlı kaynaklarla zor kararlar ver."
+  },
+  {
+    "steamAppId": 975370,
+    "gameId": "steam-975370",
+    "name": "Dwarf Fortress",
+    "kicker": "KÜÇÜK BİR KOLONİ, BÜYÜK HİKÂYELER",
+    "reason": "Bir yerleşimin beklenmedik olaylarına alan aç."
+  },
+  {
+    "steamAppId": 1336490,
+    "gameId": "steam-1336490",
+    "name": "Against the Storm",
+    "kicker": "FIRTINAYA RAĞMEN KUR",
+    "reason": "Her yeni yerleşimde üretim planını yeniden düşün."
+  },
+  {
+    "steamAppId": 736260,
+    "gameId": "steam-736260",
+    "name": "Baba Is You",
+    "kicker": "KURALLARI SEN DEĞİŞTİR",
+    "reason": "Bulmacanın kelimelerini hareket ettirerek başka bir yol bul."
+  },
+  {
+    "steamAppId": 457140,
+    "gameId": "oxygen-not-included",
+    "name": "Oxygen Not Included",
+    "kicker": "HER SİSTEM BİRBİRİNE BAĞLI",
+    "reason": "Bir koloniyi ayakta tutarken kaynak döngülerini öğren."
+  },
+  {
+    "steamAppId": 420530,
+    "gameId": "steam-420530",
+    "name": "OneShot",
+    "kicker": "KÜÇÜK BİR DÜNYAYI KURTAR",
+    "reason": "Alışılmadık bir yolculukta bir çocuğa eşlik et."
+  },
+  {
+    "steamAppId": 1621690,
+    "gameId": "steam-1621690",
+    "name": "Core Keeper",
+    "kicker": "TOPRAĞIN ALTINA BAK",
+    "reason": "Keşif, hayatta kalma ve üretim etrafında farklı bir yolculuk."
+  },
+  {
+    "steamAppId": 1169040,
+    "gameId": "steam-1169040",
+    "name": "Necesse",
+    "kicker": "KENDİ YERİNİ KUR",
+    "reason": "Açık dünya ve üretim odaklı bir maceraya alan aç."
+  },
+  {
+    "steamAppId": 361420,
+    "gameId": "astroneer",
+    "name": "ASTRONEER",
+    "kicker": "BAŞKA BİR UFKA GİT",
+    "reason": "Uzay, keşif ve hayatta kalma temalarını birlikte dene."
+  },
+  {
+    "steamAppId": 427410,
+    "gameId": "steam-427410",
+    "name": "Abiotic Factor",
+    "kicker": "ALIŞILMADIK BİR YERDE TUTUN",
+    "reason": "Bilimkurgu ortamında üretim ve hayatta kalmayı keşfet."
+  },
+  {
+    "steamAppId": 1284190,
+    "gameId": "steam-1284190",
+    "name": "The Planet Crafter",
+    "kicker": "DÜNYAYI DEĞİŞTİR",
+    "reason": "Üs kurma ve kaynak toplama odaklı bir keşif seçeneği."
+  },
+  {
+    "steamAppId": 1203620,
+    "gameId": "steam-1203620",
+    "name": "Enshrouded",
+    "kicker": "UFUKTAKİ YOLU SEÇ",
+    "reason": "Keşif, hayatta kalma ve RPG etiketlerinin kesişiminde ilerle."
+  },
+  {
+    "steamAppId": 926990,
+    "gameId": "steam-926990",
+    "name": "WolfQuest: Anniversary Edition",
+    "kicker": "DOĞAYA BAŞKA GÖZLE BAK",
+    "reason": "Doğa ve hayatta kalma odaklı farklı bir simülasyon dene."
+  },
+  {
+    "steamAppId": 951240,
+    "gameId": "steam-951240",
+    "name": "Obenseuer",
+    "kicker": "TUHAF BİR YERDE YAŞA",
+    "reason": "Hayatta kalma ve yaşam simülasyonu karışımına bir şans ver."
+  },
+  {
+    "steamAppId": 813230,
+    "gameId": "animal-well",
+    "name": "ANIMAL WELL",
+    "kicker": "GÖRDÜĞÜNLE YETİNME",
+    "reason": "Keşif ve bulmacaya odaklanan bir platform macerası."
+  },
+  {
+    "steamAppId": 674140,
+    "gameId": "steam-674140",
+    "name": "Bugsnax",
+    "kicker": "MERAKINI TAKİP ET",
+    "reason": "Yaratık toplama ve macerayı bir araya getiren renkli bir seçenek."
+  },
+  {
+    "steamAppId": 1740300,
+    "gameId": "steam-1740300",
+    "name": "Smushi Come Home",
+    "kicker": "KÜÇÜK BİR KEŞFE ÇIK",
+    "reason": "Doğa ve keşif odaklı sakin bir maceraya uğra."
+  },
+  {
+    "steamAppId": 1586800,
+    "gameId": "steam-1586800",
+    "name": "Lil Gator Game",
+    "kicker": "OYUNA YER AÇ",
+    "reason": "Rahatlatıcı ve sevimli bir macera arıyorsan bir göz at."
+  },
+  {
+    "steamAppId": 1337010,
+    "gameId": "steam-1337010",
+    "name": "Alba: A Wildlife Adventure",
+    "kicker": "DOĞAYI YAKINDAN İNCELE",
+    "reason": "Doğa temalı, sakin bir macera için farklı bir durak."
+  },
+  {
+    "steamAppId": 852090,
+    "gameId": "steam-852090",
+    "name": "Penko Park",
+    "kicker": "BİLİNMEYENİ YAKINDAN İNCELE",
+    "reason": "Doğa, keşif ve yaratık toplama etiketlerini birlikte keşfet."
+  },
+  {
+    "steamAppId": 2240530,
+    "gameId": "steam-2240530",
+    "name": "BABBDI",
+    "kicker": "TUHAF SOKAKLARA SAP",
+    "reason": "Sürreal bir atmosferde serbestçe keşfetmeyi dene."
+  },
+  {
+    "steamAppId": 746850,
+    "gameId": "steam-746850",
+    "name": "Cloudpunk",
+    "kicker": "ŞEHRİN BAŞKA YÜZÜNÜ BUL",
+    "reason": "Siberpunk atmosferi ve hikâye odaklı keşfi birleştir."
+  },
+  {
+    "steamAppId": 1129920,
+    "gameId": "steam-1129920",
+    "name": "Tales From Off-Peak City Vol. 1",
+    "kicker": "ALIŞILMADIK BİR MAHALLE",
+    "reason": "Sürreal atmosferli bir keşif macerasına uğra."
+  },
+  {
+    "steamAppId": 2134320,
+    "gameId": "steam-2134320",
+    "name": "ENA: Dream BBQ",
+    "kicker": "DÜNYA NORMAL OLMAK ZORUNDA DEĞİL",
+    "reason": "Sürreal tasarım ve keşif odaklı bir macera dene."
+  },
+  {
+    "steamAppId": 1540570,
+    "gameId": "steam-1540570",
+    "name": "Fractal Block World",
+    "kicker": "TANIDIK ŞEKİLLERİ UNUT",
+    "reason": "Sürreal açık dünya ve keşif etiketlerine bir şans ver."
+  },
+  {
+    "steamAppId": 1275670,
+    "gameId": "steam-1275670",
+    "name": "Outcore: Desktop Adventure",
+    "kicker": "MACERAYA BAŞKA YERDEN GİR",
+    "reason": "Komedi ve keşfi birleştiren alışılmadık bir macera seçeneği."
+  },
+  {
+    "steamAppId": 519860,
+    "gameId": "steam-519860",
+    "name": "DUSK",
+    "kicker": "TEMPOYU YÜKSELT",
+    "reason": "Retro görsellik ve hızlı FPS aksiyonu arayanlara."
+  },
+  {
+    "steamAppId": 1684930,
+    "gameId": "steam-1684930",
+    "name": "CULTIC",
+    "kicker": "ESKİ USUL AKSİYONA DÖN",
+    "reason": "Retro nişancı ve korku etiketlerinin kesişiminde bir meydan okuma."
+  },
+  {
+    "steamAppId": 1285670,
+    "gameId": "steam-1285670",
+    "name": "Post Void",
+    "kicker": "DURMADAN İLERLE",
+    "reason": "Hızlı FPS ve roguelike etiketlerine odaklanan yoğun bir seçenek."
+  },
+  {
+    "steamAppId": 221640,
+    "gameId": "steam-221640",
+    "name": "Super Hexagon",
+    "kicker": "BİR DENEME DAHA",
+    "reason": "Hız, ritim ve zorluk etrafında şekillenen bir arcade molası."
+  },
+  {
+    "steamAppId": 1533420,
+    "gameId": "steam-1533420",
+    "name": "Neon White",
+    "kicker": "HIZINI SINAMAYA HAZIR MISIN",
+    "reason": "Parkur ve hızlı FPS aksiyonunu birlikte dene."
+  },
+  {
+    "steamAppId": 1876590,
+    "gameId": "steam-1876590",
+    "name": "I Am Your Beast",
+    "kicker": "HIZLI KARAR VER",
+    "reason": "Hızlı FPS ve tek oyunculu aksiyon isteyenlere."
+  },
+  {
+    "steamAppId": 2111190,
+    "gameId": "steam-2111190",
+    "name": "MULLET MADJACK",
+    "kicker": "RETRO GELECEĞE KOŞ",
+    "reason": "Siberpunk görsellik ve hızlı nişancı aksiyonu bir arada."
+  },
+  {
+    "steamAppId": 2882440,
+    "gameId": "steam-2882440",
+    "name": "DEVIL BLADE REBOOT",
+    "kicker": "SKORUNU ZORLA",
+    "reason": "Skor odaklı nişancı ve retro görsellik sevenlere."
+  },
+  {
+    "steamAppId": 439490,
+    "gameId": "steam-439490",
+    "name": "BLUE REVOLVER",
+    "kicker": "BİR SONRAKİ DALGAYI GEÇ",
+    "reason": "Mermi cehennemi ve arcade nişancı etiketlerini keşfet."
+  },
+  {
+    "steamAppId": 264200,
+    "gameId": "steam-264200",
+    "name": "One Finger Death Punch",
+    "kicker": "RİTMİNİ KORU",
+    "reason": "Hızlı iki boyutlu dövüş aksiyonuna bir şans ver."
+  },
+  {
+    "steamAppId": 790060,
+    "gameId": "steam-790060",
+    "name": "The Void Rains Upon Her Heart",
+    "kicker": "KAOSUN İÇİNDE YOL BUL",
+    "reason": "Mermi cehennemi ve roguelike aksiyonunu birlikte dene."
+  },
+  {
+    "steamAppId": 2088840,
+    "gameId": "steam-2088840",
+    "name": "Picayune Dreams",
+    "kicker": "TUHAF BİR RİTME KAPIL",
+    "reason": "Sürreal görsellik ve yoğun roguelike aksiyonu arayanlara."
+  },
+  {
+    "steamAppId": 1634860,
+    "gameId": "steam-1634860",
+    "name": "Minishoot' Adventures",
+    "kicker": "KEŞFİ AKSİYONLA BİRLEŞTİR",
+    "reason": "Keşif odaklı nişancı ve metroidvania etiketlerinin karışımı."
+  },
+  {
+    "steamAppId": 1390350,
+    "gameId": "steam-1390350",
+    "name": "Webbed",
+    "kicker": "HAREKETİ YENİDEN DÜŞÜN",
+    "reason": "Fizik ve keşif etiketleriyle farklı bir platform macerası."
+  },
+  {
+    "steamAppId": 3445580,
+    "gameId": "steam-3445580",
+    "name": "Ambidextro",
+    "kicker": "İKİ TARAFA DA DİKKAT ET",
+    "reason": "Hassas platform hareketleri ve aksiyon odaklı bir meydan okuma."
+  },
+  {
+    "steamAppId": 2166050,
+    "gameId": "steam-2166050",
+    "name": "Moonleap",
+    "kicker": "KÜÇÜK BİR HAMLE, YENİ BİR YOL",
+    "reason": "Bulmaca ve platform hareketlerini birlikte dene."
+  },
+  {
+    "steamAppId": 2231450,
+    "gameId": "steam-2231450",
+    "name": "Pizza Tower",
+    "kicker": "HIZIN PEŞİNDEN GİT",
+    "reason": "Hızlı iki boyutlu platform aksiyonu için enerjik bir seçenek."
+  },
+  {
+    "steamAppId": 1147860,
+    "gameId": "steam-1147860",
+    "name": "UFO 50",
+    "kicker": "BAŞKA BİR OYUN DİLİ",
+    "reason": "Retro görsellik ve farklı aksiyon fikirleri isteyenlere."
+  },
+  {
+    "steamAppId": 531510,
+    "gameId": "steam-531510",
+    "name": "Just Shapes & Beats",
+    "kicker": "RİTMİN İÇİNDE KAL",
+    "reason": "Müzik, ritim ve mermi cehennemi etiketlerini birleştir."
+  },
+  {
+    "steamAppId": 774801,
+    "gameId": "steam-774801",
+    "name": "Crab Champions",
+    "kicker": "HER TURU YENİDEN DENE",
+    "reason": "Arcade ve roguelike nişancı aksiyonuna bir şans ver."
+  },
+  {
+    "steamAppId": 481510,
+    "gameId": "steam-481510",
+    "name": "Night in the Woods",
+    "kicker": "KASABAYA KULAK VER",
+    "reason": "Atmosfer ve hikâye odaklı bir macera arayanlara."
+  },
+  {
+    "steamAppId": 1082430,
+    "gameId": "steam-1082430",
+    "name": "Before Your Eyes",
+    "kicker": "HİKÂYEYE BİR AN AYIR",
+    "reason": "Duygusal anlatı ve tek oyunculu deneyim isteyenlere."
+  },
+  {
+    "steamAppId": 337340,
+    "gameId": "steam-337340",
+    "name": "Finding Paradise",
+    "kicker": "ANILARIN İZİNİ SÜR",
+    "reason": "Duygusal anlatı ve piksel görselliği bir araya getiren bir macera."
+  },
+  {
+    "steamAppId": 1201270,
+    "gameId": "steam-1201270",
+    "name": "A Space for the Unbound",
+    "kicker": "GÜNDELİK HAYATIN ÖTESİNE BAK",
+    "reason": "Duygusal hikâye ve keşif etiketlerinin kesişiminde bir seçenek."
+  },
+  {
+    "steamAppId": 362680,
+    "gameId": "steam-362680",
+    "name": "Fran Bow",
+    "kicker": "KARANLIK BİR HİKÂYEYİ AÇ",
+    "reason": "Psikolojik korku ve bulmacayla ilerleyen bir macera dene."
+  },
+  {
+    "steamAppId": 1150690,
+    "gameId": "steam-1150690",
+    "name": "OMORI",
+    "kicker": "GÖRÜNENİN ARKASINI MERAK ET",
+    "reason": "Psikolojik korku ve hikâye odaklı piksel bir deneyim."
+  },
+  {
+    "steamAppId": 1677310,
+    "gameId": "steam-1677310",
+    "name": "In Stars And Time",
+    "kicker": "BİR HİKÂYEDE KAYBOL",
+    "reason": "Duygusal anlatı ve RPG etiketlerini birlikte keşfet."
+  },
+  {
+    "steamAppId": 397740,
+    "gameId": "steam-397740",
+    "name": "Hylics",
+    "kicker": "TUHAF BİR ANLATIYA GİR",
+    "reason": "Sürreal görsellik ve RPG etiketleriyle farklı bir seçenek."
+  },
+  {
+    "steamAppId": 2299900,
+    "gameId": "steam-2299900",
+    "name": "Felvidek",
+    "kicker": "TANIDIK FANTEZİDEN UZAKLAŞ",
+    "reason": "Ortaçağ ve karanlık fantezi temalı piksel bir RPG dene."
+  },
+  {
+    "steamAppId": 1901370,
+    "gameId": "steam-1901370",
+    "name": "Ib",
+    "kicker": "KÜÇÜK AYRINTILARA BAK",
+    "reason": "Hikâye ve psikolojik korku odaklı bir piksel macerası."
+  },
+  {
+    "steamAppId": 1328840,
+    "gameId": "steam-1328840",
+    "name": "Lost in Play",
+    "kicker": "HAYAL GÜCÜNE ALAN AÇ",
+    "reason": "Bulmaca, komedi ve el çizimi görselliğe bir şans ver."
+  },
+  {
+    "steamAppId": 1018850,
+    "gameId": "steam-1018850",
+    "name": "Smile For Me",
+    "kicker": "TUHAF İNSANLARA UĞRA",
+    "reason": "Birinci şahıs bulmaca ve macera etiketleriyle farklı bir deneyim."
+  },
+  {
+    "steamAppId": 3180070,
+    "gameId": "steam-3180070",
+    "name": "No, I'm not a Human",
+    "kicker": "HER SEÇİME DİKKAT ET",
+    "reason": "Seçimler ve psikolojik korku odaklı bir deneyim arayanlara."
+  },
+  {
+    "steamAppId": 3373660,
+    "gameId": "steam-3373660",
+    "name": "Look Outside",
+    "kicker": "KARANLIKTA BİR HİKÂYE",
+    "reason": "Piksel RPG ile hayatta kalma korkusunu birlikte dene."
+  },
+  {
+    "steamAppId": 1996010,
+    "gameId": "steam-1996010",
+    "name": "Crow Country",
+    "kicker": "MERAKININ PEŞİNDEN GİT",
+    "reason": "Keşif ve retro hayatta kalma korkusuna odaklanan bir seçenek."
+  },
+  {
+    "steamAppId": 1262350,
+    "gameId": "steam-1262350",
+    "name": "SIGNALIS",
+    "kicker": "BİLİMKURGUNUN KARANLIK YÜZÜ",
+    "reason": "Psikolojik korku ve bilimkurgu atmosferini birlikte keşfet."
+  },
+  {
+    "steamAppId": 990630,
+    "gameId": "steam-990630",
+    "name": "The Last Campfire",
+    "kicker": "ATEŞİN BAŞINDA BİR MOLA",
+    "reason": "Duygusal atmosferi olan bir bulmaca macerası dene."
+  },
+  {
+    "steamAppId": 541570,
+    "gameId": "steam-541570",
+    "name": "Sally Face - Episode One",
+    "kicker": "GÖRÜNENİN ÖTESİNİ SOR",
+    "reason": "Hikâye, korku ve bulmaca etiketleriyle ilerleyen bir deneyim."
+  },
+  {
+    "steamAppId": 1562700,
+    "gameId": "steam-1562700",
+    "name": "SANABI",
+    "kicker": "HİKÂYEYİ HAREKETLE TAKİP ET",
+    "reason": "Siberpunk atmosferi ve hikâye odaklı platform aksiyonu bir arada."
+  },
+  {
+    "steamAppId": 460950,
+    "gameId": "steam-460950",
+    "name": "Katana ZERO",
+    "kicker": "AKSİYONUN ARDINDAKİ HİKÂYE",
+    "reason": "Piksel aksiyon ve siberpunk anlatı arayanlara."
+  },
+  {
+    "steamAppId": 2198150,
+    "gameId": "steam-2198150",
+    "name": "Tiny Glade",
+    "kicker": "KENDİ KÖŞENİ TASARLA",
+    "reason": "Sakin tasarım ve yapı kurma etiketleriyle bir mola."
+  },
+  {
+    "steamAppId": 2133760,
+    "gameId": "steam-2133760",
+    "name": "Tiny Bookshop",
+    "kicker": "KÜÇÜK BİR DÜZEN KUR",
+    "reason": "Rahatlatıcı yönetim ve yaşam simülasyonu arayanlara."
+  },
+  {
+    "steamAppId": 2678990,
+    "gameId": "steam-2678990",
+    "name": "Minami Lane",
+    "kicker": "GÜNÜN TEMPOSUNU AZALT",
+    "reason": "Sevimli görsellik ve sakin yönetim etiketlerini birlikte dene."
+  },
+  {
+    "steamAppId": 1644940,
+    "gameId": "steam-1644940",
+    "name": "Loddlenaut",
+    "kicker": "SUYUN ALTINDA BİR MOLA",
+    "reason": "Sualtı keşfi ve rahatlatıcı atmosfer isteyenlere."
+  },
+  {
+    "steamAppId": 1307580,
+    "gameId": "steam-1307580",
+    "name": "TOEM: A Photo Adventure",
+    "kicker": "GÖRMEYE ZAMAN AYIR",
+    "reason": "Sakin keşif ve bulmaca etiketlerini birleştiren bir macera."
+  },
+  {
+    "steamAppId": 1177980,
+    "gameId": "steam-1177980",
+    "name": "Little Kitty, Big City",
+    "kicker": "KÜÇÜK BİR MERAKIN PEŞİNDEN",
+    "reason": "Sevimli görsellik ve rahat keşif arayanlara."
+  },
+  {
+    "steamAppId": 3035120,
+    "gameId": "steam-3035120",
+    "name": "Is This Seat Taken?",
+    "kicker": "HER ŞEYE BİR YER BUL",
+    "reason": "Mantık bulmacası ve rahatlatıcı atmosferi birlikte dene."
+  },
+  {
+    "steamAppId": 1629520,
+    "gameId": "steam-1629520",
+    "name": "A Little to the Left",
+    "kicker": "KÜÇÜK BİR DÜZENLEME",
+    "reason": "Düzenleme ve sakin bulmaca etiketleriyle bir mola."
+  },
+  {
+    "steamAppId": 435400,
+    "gameId": "steam-435400",
+    "name": "Hidden Folks",
+    "kicker": "KALABALIĞIN İÇİNDE ARA",
+    "reason": "El çizimi görsellik ve gizli nesne bulmacalarını keşfet."
+  },
+  {
+    "steamAppId": 1999360,
+    "gameId": "steam-1999360",
+    "name": "Placid Plastic Duck Simulator",
+    "kicker": "SÜZÜLMEYE ZAMAN AYIR",
+    "reason": "Sevimli ve rahatlatıcı bir simülasyon molası isteyenlere."
+  },
+  {
+    "steamAppId": 1424330,
+    "gameId": "steam-1424330",
+    "name": "Wobbledogs",
+    "kicker": "TUHAF AMA SEVİMLİ",
+    "reason": "Renkli görsellik ve sandbox simülasyonuna bir şans ver."
+  },
+  {
+    "steamAppId": 3361470,
+    "gameId": "steam-3361470",
+    "name": "Digseum",
+    "kicker": "KÜÇÜK İLERLEMELERİ İZLE",
+    "reason": "Sakin yönetim ve artımlı ilerleme etiketlerini dene."
+  },
+  {
+    "steamAppId": 3107330,
+    "gameId": "steam-3107330",
+    "name": "Nodebuster",
+    "kicker": "YAVAŞ YAVAŞ GELİŞTİR",
+    "reason": "Artımlı ilerleme ve strateji etiketleriyle küçük bir mola."
+  },
+  {
+    "steamAppId": 3483740,
+    "gameId": "steam-3483740",
+    "name": "Cast n Chill",
+    "kicker": "SAKİN BİR KIYIYA GEÇ",
+    "reason": "Piksel görsellik ve rahatlatıcı balıkçılık atmosferi isteyenlere."
+  },
+  {
+    "steamAppId": 3376990,
+    "gameId": "steam-3376990",
+    "name": "Kabuto Park",
+    "kicker": "KÜÇÜK KEŞİFLER TOPLA",
+    "reason": "Doğa, yaratık toplama ve sakin atmosfer bir arada."
+  },
+  {
+    "steamAppId": 2291760,
+    "gameId": "steam-2291760",
+    "name": "Papa's Freezeria Deluxe",
+    "kicker": "KENDİ TEMPONU BUL",
+    "reason": "Yemek hazırlama ve zaman yönetimini gündelik bir deneyimde dene."
+  },
+  {
+    "steamAppId": 1684410,
+    "gameId": "steam-1684410",
+    "name": "Seal World",
+    "kicker": "ACELE ETMEDEN DOLAŞ",
+    "reason": "Sevimli ve kısa bir keşif molası arayanlara."
+  },
+  {
+    "steamAppId": 1927720,
+    "gameId": "steam-1927720",
+    "name": "Monument Valley",
+    "kicker": "BAŞKA BİR AÇIDAN BAK",
+    "reason": "Rahatlatıcı atmosfer ve görsel bulmacalara bir şans ver."
+  },
+  {
+    "steamAppId": 367580,
+    "gameId": "steam-367580",
+    "name": "Hook",
+    "kicker": "BASİT BİR ŞEYİ ÇÖZ",
+    "reason": "Minimalist tasarım ve sakin bulmaca isteyenlere."
+  },
+  {
+    "steamAppId": 1290000,
+    "gameId": "steam-1290000",
+    "name": "PowerWash Simulator",
+    "kicker": "KÜÇÜK İŞLERİ TAMAMLA",
+    "reason": "Temizlik simülasyonu ve rahatlatıcı bir mola arayanlara."
+  },
+  {
+    "steamAppId": 1260520,
+    "gameId": "steam-1260520",
+    "name": "Patrick's Parabox",
+    "kicker": "KUTUNUN DIŞINDA DÜŞÜN",
+    "reason": "Mantık ve minimalist bulmaca etiketlerini birlikte keşfet."
+  },
+  {
+    "steamAppId": 1444480,
+    "gameId": "steam-1444480",
+    "name": "Turing Complete",
+    "kicker": "MANTIĞI ADIM ADIM KUR",
+    "reason": "Donanım, mantık ve otomasyon meraklılarına farklı bir seçenek."
+  },
+  {
+    "steamAppId": 1366540,
+    "gameId": "steam-1366540",
+    "name": "Dyson Sphere Program",
+    "kicker": "SİSTEMİ BİRLİKTE DÜŞÜN",
+    "reason": "Uzay, otomasyon ve kaynak yönetimini bir araya getir."
+  },
+  {
+    "steamAppId": 257510,
+    "gameId": "steam-257510",
+    "name": "The Talos Principle",
+    "kicker": "CEVAPTAN ÖNCE SORUYU DÜŞÜN",
+    "reason": "Felsefi bilimkurgu ve bulmaca etiketlerinin kesişiminde bir deneyim."
+  },
+  {
+    "steamAppId": 557600,
+    "gameId": "steam-557600",
+    "name": "Gorogoa",
+    "kicker": "GÖRSELLERİ BİRBİRİNE BAĞLA",
+    "reason": "El çizimi görsellik ve bulmaca odaklı bir mola."
+  },
+  {
+    "steamAppId": 288160,
+    "gameId": "steam-288160",
+    "name": "The Room",
+    "kicker": "AYRINTIYI ATLAMA",
+    "reason": "Gizem ve atmosfer odaklı bulmaca isteyenlere."
+  },
+  {
+    "steamAppId": 206190,
+    "gameId": "steam-206190",
+    "name": "Gunpoint",
+    "kicker": "BAŞKA BİR YOL BUL",
+    "reason": "Gizlilik ve iki boyutlu bulmacayı birlikte dene."
+  },
+  {
+    "steamAppId": 1240210,
+    "gameId": "steam-1240210",
+    "name": "There Is No Game: Wrong Dimension",
+    "kicker": "OYUNUN MANTIĞINI SORGULA",
+    "reason": "Komedi ve bulmaca odaklı bir maceraya uğra."
+  },
+  {
+    "steamAppId": 2239150,
+    "gameId": "steam-2239150",
+    "name": "Thronefall",
+    "kicker": "AZ ŞEYLE ÇOK ŞEY YAP",
+    "reason": "Minimalist tasarım ve savunma stratejisini birlikte düşün."
+  },
+  {
+    "steamAppId": 780310,
+    "gameId": "steam-780310",
+    "name": "The Riftbreaker",
+    "kicker": "KURDUĞUNU KORU",
+    "reason": "Üs kurma ve savunma etiketleriyle stratejik bir seçenek."
+  },
+  {
+    "steamAppId": 1043810,
+    "gameId": "steam-1043810",
+    "name": "Tactical Breach Wizards",
+    "kicker": "BİR HAMLE SONRASINI GÖR",
+    "reason": "Sıra tabanlı taktikler ve bulmacayı bir araya getir."
+  },
+  {
+    "steamAppId": 2060160,
+    "gameId": "steam-2060160",
+    "name": "The Farmer Was Replaced",
+    "kicker": "ÇÖZÜMÜ KENDİN KUR",
+    "reason": "Programlama ve otomasyon etiketlerine odaklanan farklı bir deneyim."
+  },
+  {
+    "steamAppId": 1569580,
+    "gameId": "steam-1569580",
+    "name": "Blue Prince",
+    "kicker": "GİZEME BİR YOL AÇ",
+    "reason": "Keşif ve araştırma odaklı bulmaca arayanlara."
+  },
+  {
+    "steamAppId": 2754380,
+    "gameId": "steam-2754380",
+    "name": "The Roottrees are Dead",
+    "kicker": "PARÇALARI BİR ARAYA GETİR",
+    "reason": "Dedektiflik ve gizem etiketleriyle bir bulmaca deneyimi."
+  },
+  {
+    "steamAppId": 341800,
+    "gameId": "steam-341800",
+    "name": "Keep Talking and Nobody Explodes",
+    "kicker": "BİRLİKTE DÜŞÜN",
+    "reason": "İşbirliği ve bulmacaya odaklanan farklı bir seçenek."
+  },
+  {
+    "steamAppId": 3191030,
+    "gameId": "steam-3191030",
+    "name": "Nubby's Number Factory",
+    "kicker": "SAYILARLA BAŞKA TÜRLÜ OYNA",
+    "reason": "Sürreal görsellik ve roguelike strateji isteyenlere."
+  },
+  {
+    "steamAppId": 2128270,
+    "gameId": "steam-2128270",
+    "name": "Path of Achra",
+    "kicker": "KARARLARINI SINAMAYA ÇIK",
+    "reason": "Karakter oluşturma ve sıra tabanlı roguelike etiketlerini dene."
+  },
+  {
+    "steamAppId": 2735620,
+    "gameId": "steam-2735620",
+    "name": "BoardLand",
+    "kicker": "HER HAMLEYE BİR PLAN",
+    "reason": "Masa oyunu ve sıra tabanlı stratejiyi birlikte düşün."
+  },
+  {
+    "steamAppId": 1054490,
+    "gameId": "steam-1054490",
+    "name": "Wingspan",
+    "kicker": "SAKİN BİR STRATEJİ",
+    "reason": "Kart oyunu ve rahatlatıcı atmosferin kesişiminde bir seçenek."
+  },
+  {
+    "steamAppId": 965580,
+    "gameId": "steam-965580",
+    "name": "Root",
+    "kicker": "MASADA FARKLI BİR YOL",
+    "reason": "Masa oyunu ve strateji etiketlerini birlikte keşfet."
+  }
+]

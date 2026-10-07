@@ -1,0 +1,1 @@
+import type {Metadata} from 'next';export const metadata:Metadata={title:'Ne Oynasam? — Bir sonraki dünyanı bul.',description:'Gerçek oyun verileriyle keşfet, karşılaştır ve kendi oyun koleksiyonunu oluştur.'};export default function Layout({children}:{children:React.ReactNode}){return <html lang="tr"><body>{children}</body></html>}

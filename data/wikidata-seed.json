@@ -1,0 +1,3561 @@
+[
+  {
+    "id": "outer-wilds",
+    "qid": "Q19631660",
+    "name": "Outer Wilds",
+    "year": 2019,
+    "genres": [
+      "Aksiyon",
+      "Macera",
+      "Bilimkurgu"
+    ],
+    "platforms": [
+      "PC",
+      "PlayStation",
+      "Xbox",
+      "Switch"
+    ],
+    "studio": "Mobius Digital",
+    "url": "http://outerwilds.com",
+    "sourceUrl": "https://www.wikidata.org/wiki/Q19631660",
+    "sourceRetrievedAt": "2026-10-05",
+    "sourceGenreValues": [
+      "action-adventure game",
+      "science fiction video game"
+    ],
+    "sourcePlatformValues": [
+      "Microsoft Windows",
+      "macOS",
+      "PlayStation 4",
+      "Xbox One",
+      "Xbox Series X and Series S",
+      "Nintendo Switch"
+    ],
+    "yearSource": "Wikidata item description",
+    "genresRaw": [
+      "action-adventure game",
+      "science fiction video game"
+    ],
+    "platformsRaw": [
+      "Microsoft Windows",
+      "macOS",
+      "PlayStation 4",
+      "Xbox One",
+      "Xbox Series X and Series S",
+      "Nintendo Switch"
+    ]
+  },
+  {
+    "id": "kenshi",
+    "qid": "Q60770258",
+    "name": "Kenshi",
+    "year": 2018,
+    "genres": [
+      "RPG",
+      "Bilimkurgu",
+      "Kıyamet Sonrası"
+    ],
+    "platforms": [
+      "PC"
+    ],
+    "studio": "Lo-Fi Games",
+    "url": "https://lofigames.com",
+    "sourceUrl": "https://www.wikidata.org/wiki/Q60770258",
+    "sourceRetrievedAt": "2026-10-05",
+    "sourceGenreValues": [
+      "role-playing video game",
+      "science fiction video game",
+      "post-apocalyptic video game"
+    ],
+    "sourcePlatformValues": [
+      "Microsoft Windows"
+    ],
+    "yearSource": "Wikidata item description",
+    "genresRaw": [
+      "role-playing video game",
+      "science fiction video game",
+      "post-apocalyptic video game"
+    ],
+    "platformsRaw": [
+      "Microsoft Windows"
+    ]
+  },
+  {
+    "id": "subnautica",
+    "qid": "Q21039915",
+    "name": "Subnautica",
+    "year": 2018,
+    "genres": [
+      "Aksiyon",
+      "Macera",
+      "Hayatta kalma"
+    ],
+    "platforms": [
+      "PC",
+      "PlayStation",
+      "Xbox",
+      "Switch",
+      "Android",
+      "iOS"
+    ],
+    "studio": "Unknown Worlds Entertainment",
+    "url": "https://unknownworlds.com/subnautica",
+    "sourceUrl": "https://www.wikidata.org/wiki/Q21039915",
+    "sourceRetrievedAt": "2026-10-05",
+    "sourceGenreValues": [
+      "action-adventure game",
+      "survival game",
+      "adventure video game"
+    ],
+    "sourcePlatformValues": [
+      "Microsoft Windows",
+      "macOS",
+      "PlayStation 4",
+      "PlayStation 5",
+      "Xbox One",
+      "Xbox Series X and Series S",
+      "Nintendo Switch",
+      "Android",
+      "iOS"
+    ],
+    "yearSource": "Wikidata item description",
+    "genresRaw": [
+      "action-adventure game",
+      "survival game",
+      "adventure video game"
+    ],
+    "platformsRaw": [
+      "Microsoft Windows",
+      "macOS",
+      "PlayStation 4",
+      "PlayStation 5",
+      "Xbox One",
+      "Xbox Series X and Series S",
+      "Nintendo Switch",
+      "Android",
+      "iOS"
+    ]
+  },
+  {
+    "id": "slay-the-spire",
+    "qid": "Q48078440",
+    "name": "Slay the Spire",
+    "year": 2019,
+    "genres": [
+      "Roguelike",
+      "Kart"
+    ],
+    "platforms": [
+      "PC",
+      "PlayStation",
+      "Xbox",
+      "Switch",
+      "Android",
+      "iOS"
+    ],
+    "studio": "Mega Crit",
+    "url": "https://www.megacrit.com/",
+    "sourceUrl": "https://www.wikidata.org/wiki/Q48078440",
+    "sourceRetrievedAt": "2026-10-05",
+    "sourceGenreValues": [
+      "roguelite",
+      "roguelike deck-building game"
+    ],
+    "sourcePlatformValues": [
+      "Microsoft Windows",
+      "Linux",
+      "macOS",
+      "PlayStation 4",
+      "Xbox One",
+      "Nintendo Switch",
+      "Android",
+      "iOS"
+    ],
+    "yearSource": "Wikidata item description",
+    "genresRaw": [
+      "roguelite",
+      "roguelike deck-building game"
+    ],
+    "platformsRaw": [
+      "Microsoft Windows",
+      "Linux",
+      "macOS",
+      "PlayStation 4",
+      "Xbox One",
+      "Nintendo Switch",
+      "Android",
+      "iOS"
+    ]
+  },
+  {
+    "id": "baldur-s-gate-3",
+    "qid": "Q64441774",
+    "name": "Baldur's Gate 3",
+    "year": 2023,
+    "genres": [
+      "RPG"
+    ],
+    "platforms": [
+      "PC",
+      "PlayStation",
+      "Xbox"
+    ],
+    "studio": "Larian Studios",
+    "url": "https://baldursgate3.game",
+    "sourceUrl": "https://www.wikidata.org/wiki/Q64441774",
+    "sourceRetrievedAt": "2026-10-05",
+    "sourceGenreValues": [
+      "role-playing video game"
+    ],
+    "sourcePlatformValues": [
+      "Microsoft Windows",
+      "Linux",
+      "macOS",
+      "PlayStation 5",
+      "Xbox Series X and Series S"
+    ],
+    "yearSource": "Wikidata item description",
+    "genresRaw": [
+      "role-playing video game"
+    ],
+    "platformsRaw": [
+      "Microsoft Windows",
+      "Linux",
+      "macOS",
+      "PlayStation 5",
+      "Xbox Series X and Series S"
+    ]
+  },
+  {
+    "id": "the-witcher-3-wild-hunt",
+    "qid": "Q4267401",
+    "name": "The Witcher 3: Wild Hunt",
+    "year": 2015,
+    "genres": [
+      "Aksiyon",
+      "RPG",
+      "Fantastik"
+    ],
+    "platforms": [
+      "PC",
+      "PlayStation",
+      "Xbox",
+      "Switch"
+    ],
+    "studio": "CD Projekt RED",
+    "url": "http://www.thewitcher.com",
+    "sourceUrl": "https://www.wikidata.org/wiki/Q4267401",
+    "sourceRetrievedAt": "2026-10-05",
+    "sourceGenreValues": [
+      "action role-playing game",
+      "fantasy video game"
+    ],
+    "sourcePlatformValues": [
+      "Microsoft Windows",
+      "PlayStation 4",
+      "PlayStation 5",
+      "Xbox One",
+      "Xbox Series X and Series S",
+      "Nintendo Switch"
+    ],
+    "yearSource": "Wikidata item description",
+    "genresRaw": [
+      "action role-playing game",
+      "fantasy video game"
+    ],
+    "platformsRaw": [
+      "Microsoft Windows",
+      "PlayStation 4",
+      "PlayStation 5",
+      "Xbox One",
+      "Xbox Series X and Series S",
+      "Nintendo Switch"
+    ]
+  },
+  {
+    "id": "red-dead-redemption-2",
+    "qid": "Q27438121",
+    "name": "Red Dead Redemption 2",
+    "year": 2018,
+    "genres": [
+      "Aksiyon",
+      "Macera"
+    ],
+    "platforms": [
+      "PC",
+      "PlayStation",
+      "Xbox"
+    ],
+    "studio": "Rockstar San Diego",
+    "url": "https://www.rockstargames.com/reddeadredemption2/",
+    "sourceUrl": "https://www.wikidata.org/wiki/Q27438121",
+    "sourceRetrievedAt": "2026-10-05",
+    "sourceGenreValues": [
+      "action-adventure game"
+    ],
+    "sourcePlatformValues": [
+      "Microsoft Windows",
+      "PlayStation 4",
+      "Xbox One"
+    ],
+    "yearSource": "Wikidata item description",
+    "genresRaw": [
+      "action-adventure game"
+    ],
+    "platformsRaw": [
+      "Microsoft Windows",
+      "PlayStation 4",
+      "Xbox One"
+    ]
+  },
+  {
+    "id": "no-man-s-sky",
+    "qid": "Q15297043",
+    "name": "No Man's Sky",
+    "year": 2016,
+    "genres": [
+      "Aksiyon",
+      "Macera",
+      "Hayatta kalma",
+      "Bilimkurgu"
+    ],
+    "platforms": [
+      "PC",
+      "PlayStation",
+      "Xbox",
+      "Switch"
+    ],
+    "studio": "Hello Games",
+    "url": "https://www.nomanssky.com/",
+    "sourceUrl": "https://www.wikidata.org/wiki/Q15297043",
+    "sourceRetrievedAt": "2026-10-05",
+    "sourceGenreValues": [
+      "action-adventure game",
+      "survival game",
+      "science fiction video game"
+    ],
+    "sourcePlatformValues": [
+      "Microsoft Windows",
+      "macOS",
+      "PlayStation 4",
+      "PlayStation 5",
+      "Xbox One",
+      "Xbox Series X and Series S",
+      "Nintendo Switch",
+      "Nintendo Switch 2"
+    ],
+    "yearSource": "Wikidata item description",
+    "genresRaw": [
+      "action-adventure game",
+      "survival game",
+      "science fiction video game"
+    ],
+    "platformsRaw": [
+      "Microsoft Windows",
+      "macOS",
+      "PlayStation 4",
+      "PlayStation 5",
+      "Xbox One",
+      "Xbox Series X and Series S",
+      "Nintendo Switch",
+      "Nintendo Switch 2"
+    ]
+  },
+  {
+    "id": "minecraft",
+    "qid": "Q49740",
+    "name": "Minecraft",
+    "year": 2011,
+    "genres": [
+      "Aksiyon",
+      "Macera",
+      "Hayatta kalma",
+      "Simülasyon",
+      "Strateji",
+      "Açık dünya"
+    ],
+    "platforms": [
+      "PC",
+      "PlayStation",
+      "Xbox",
+      "Switch",
+      "Android",
+      "iOS"
+    ],
+    "studio": "Mojang Studios",
+    "url": "https://minecraft.net",
+    "sourceUrl": "https://www.wikidata.org/wiki/Q49740",
+    "sourceRetrievedAt": "2026-10-05",
+    "sourceGenreValues": [
+      "action-adventure game",
+      "survival game",
+      "construction and management simulation",
+      "sandbox game"
+    ],
+    "sourcePlatformValues": [
+      "Microsoft Windows",
+      "Linux",
+      "macOS",
+      "PlayStation 3",
+      "PlayStation 4",
+      "PlayStation 5",
+      "PlayStation Vita",
+      "Xbox 360",
+      "Xbox One",
+      "Xbox Series X and Series S",
+      "Nintendo Switch",
+      "Nintendo Switch 2",
+      "Android",
+      "iOS"
+    ],
+    "yearSource": "Wikidata item description",
+    "genresRaw": [
+      "action-adventure game",
+      "survival game",
+      "construction and management simulation",
+      "sandbox game"
+    ],
+    "platformsRaw": [
+      "Microsoft Windows",
+      "Linux",
+      "macOS",
+      "PlayStation 3",
+      "PlayStation 4",
+      "PlayStation 5",
+      "PlayStation Vita",
+      "Xbox 360",
+      "Xbox One",
+      "Xbox Series X and Series S",
+      "Nintendo Switch",
+      "Nintendo Switch 2",
+      "Android",
+      "iOS"
+    ]
+  },
+  {
+    "id": "rimworld",
+    "qid": "Q19581568",
+    "name": "RimWorld",
+    "year": 2018,
+    "genres": [
+      "Simülasyon",
+      "Strateji",
+      "Bilimkurgu"
+    ],
+    "platforms": [
+      "PC"
+    ],
+    "studio": "Ludeon Studios",
+    "url": "https://rimworldgame.com/",
+    "sourceUrl": "https://www.wikidata.org/wiki/Q19581568",
+    "sourceRetrievedAt": "2026-10-05",
+    "sourceGenreValues": [
+      "construction and management simulation",
+      "science fiction video game"
+    ],
+    "sourcePlatformValues": [
+      "Microsoft Windows",
+      "Linux",
+      "macOS"
+    ],
+    "yearSource": "Wikidata publication date: 17 October 2018 (version 1.0 release; earlier deprecated date excluded)",
+    "genresRaw": [
+      "construction and management simulation",
+      "science fiction video game"
+    ],
+    "platformsRaw": [
+      "Microsoft Windows",
+      "Linux",
+      "macOS"
+    ]
+  },
+  {
+    "id": "factorio",
+    "qid": "Q16972008",
+    "name": "Factorio",
+    "year": 2020,
+    "genres": [
+      "Hayatta kalma",
+      "Simülasyon",
+      "Strateji",
+      "Aksiyon",
+      "Açık dünya",
+      "Bilimkurgu"
+    ],
+    "platforms": [
+      "PC",
+      "Switch"
+    ],
+    "studio": "Wube software",
+    "url": "https://www.factorio.com/",
+    "sourceUrl": "https://www.wikidata.org/wiki/Q16972008",
+    "sourceRetrievedAt": "2026-10-05",
+    "sourceGenreValues": [
+      "survival game",
+      "construction and management simulation",
+      "real-time strategy",
+      "action game",
+      "sandbox game",
+      "science fiction video game"
+    ],
+    "sourcePlatformValues": [
+      "Microsoft Windows",
+      "Linux",
+      "macOS",
+      "Nintendo Switch"
+    ],
+    "yearSource": "Wikidata item description",
+    "genresRaw": [
+      "survival game",
+      "construction and management simulation",
+      "real-time strategy",
+      "action game",
+      "sandbox game",
+      "science fiction video game"
+    ],
+    "platformsRaw": [
+      "Microsoft Windows",
+      "Linux",
+      "macOS",
+      "Nintendo Switch"
+    ]
+  },
+  {
+    "id": "frostpunk",
+    "qid": "Q50356175",
+    "name": "Frostpunk",
+    "year": 2018,
+    "genres": [
+      "Hayatta kalma",
+      "Simülasyon",
+      "Strateji",
+      "Kıyamet Sonrası"
+    ],
+    "platforms": [
+      "PC",
+      "PlayStation",
+      "Xbox",
+      "Switch"
+    ],
+    "studio": "11 Bit Studios",
+    "url": "https://www.frostpunkgame.com/",
+    "sourceUrl": "https://www.wikidata.org/wiki/Q50356175",
+    "sourceRetrievedAt": "2026-10-05",
+    "sourceGenreValues": [
+      "survival game",
+      "city-building game",
+      "post-apocalyptic video game"
+    ],
+    "sourcePlatformValues": [
+      "Microsoft Windows",
+      "macOS",
+      "PlayStation 4",
+      "Xbox One",
+      "Nintendo Switch"
+    ],
+    "yearSource": "Wikidata item description",
+    "genresRaw": [
+      "survival game",
+      "city-building game",
+      "post-apocalyptic video game"
+    ],
+    "platformsRaw": [
+      "Microsoft Windows",
+      "macOS",
+      "PlayStation 4",
+      "Xbox One",
+      "Nintendo Switch"
+    ]
+  },
+  {
+    "id": "civilization-vi",
+    "qid": "Q24050047",
+    "name": "Civilization VI",
+    "year": 2016,
+    "genres": [
+      "Strateji"
+    ],
+    "platforms": [
+      "PC",
+      "PlayStation",
+      "Xbox",
+      "Switch",
+      "Android",
+      "iOS"
+    ],
+    "studio": "Firaxis Games",
+    "url": "https://civilization.com",
+    "sourceUrl": "https://www.wikidata.org/wiki/Q24050047",
+    "sourceRetrievedAt": "2026-10-05",
+    "sourceGenreValues": [
+      "turn-based strategy video game",
+      "4X"
+    ],
+    "sourcePlatformValues": [
+      "Microsoft Windows",
+      "Linux",
+      "macOS",
+      "PlayStation 4",
+      "Xbox One",
+      "Nintendo Switch",
+      "Android",
+      "iOS"
+    ],
+    "yearSource": "Wikidata item description",
+    "genresRaw": [
+      "turn-based strategy video game",
+      "4X"
+    ],
+    "platformsRaw": [
+      "Microsoft Windows",
+      "Linux",
+      "macOS",
+      "PlayStation 4",
+      "Xbox One",
+      "Nintendo Switch",
+      "Android",
+      "iOS"
+    ]
+  },
+  {
+    "id": "into-the-breach",
+    "qid": "Q30591391",
+    "name": "Into the Breach",
+    "year": 2018,
+    "genres": [
+      "Strateji"
+    ],
+    "platforms": [
+      "PC",
+      "Switch"
+    ],
+    "studio": "Subset Games",
+    "url": "http://subsetgames.com/itb.html",
+    "sourceUrl": "https://www.wikidata.org/wiki/Q30591391",
+    "sourceRetrievedAt": "2026-10-05",
+    "sourceGenreValues": [
+      "turn-based strategy video game"
+    ],
+    "sourcePlatformValues": [
+      "Microsoft Windows",
+      "Linux",
+      "macOS",
+      "Nintendo Switch"
+    ],
+    "yearSource": "Wikidata item description",
+    "genresRaw": [
+      "turn-based strategy video game"
+    ],
+    "platformsRaw": [
+      "Microsoft Windows",
+      "Linux",
+      "macOS",
+      "Nintendo Switch"
+    ]
+  },
+  {
+    "id": "ftl-faster-than-light",
+    "qid": "Q4308783",
+    "name": "FTL: Faster Than Light",
+    "year": 2012,
+    "genres": [
+      "Roguelike",
+      "Strateji",
+      "Bilimkurgu"
+    ],
+    "platforms": [
+      "PC",
+      "iOS"
+    ],
+    "studio": "Subset Games",
+    "url": "https://subsetgames.com/ftl.html",
+    "sourceUrl": "https://www.wikidata.org/wiki/Q4308783",
+    "sourceRetrievedAt": "2026-10-05",
+    "sourceGenreValues": [
+      "roguelike",
+      "roguelite",
+      "strategy video game",
+      "science fiction video game"
+    ],
+    "sourcePlatformValues": [
+      "Microsoft Windows",
+      "Linux",
+      "macOS",
+      "iOS"
+    ],
+    "yearSource": "Wikidata item description",
+    "genresRaw": [
+      "roguelike",
+      "roguelite",
+      "strategy video game",
+      "science fiction video game"
+    ],
+    "platformsRaw": [
+      "Microsoft Windows",
+      "Linux",
+      "macOS",
+      "iOS"
+    ]
+  },
+  {
+    "id": "dead-cells",
+    "qid": "Q30639210",
+    "name": "Dead Cells",
+    "year": 2018,
+    "genres": [
+      "Platform",
+      "Macera",
+      "Roguelike"
+    ],
+    "platforms": [
+      "PC",
+      "PlayStation",
+      "Xbox",
+      "Switch",
+      "Android",
+      "iOS"
+    ],
+    "studio": "Motion Twin",
+    "url": "https://dead-cells.com/",
+    "sourceUrl": "https://www.wikidata.org/wiki/Q30639210",
+    "sourceRetrievedAt": "2026-10-05",
+    "sourceGenreValues": [
+      "Metroidvania",
+      "roguelike"
+    ],
+    "sourcePlatformValues": [
+      "Microsoft Windows",
+      "Linux",
+      "macOS",
+      "PlayStation 4",
+      "Xbox One",
+      "Nintendo Switch",
+      "Android",
+      "iOS"
+    ],
+    "yearSource": "Wikidata item description",
+    "genresRaw": [
+      "Metroidvania",
+      "roguelike"
+    ],
+    "platformsRaw": [
+      "Microsoft Windows",
+      "Linux",
+      "macOS",
+      "PlayStation 4",
+      "Xbox One",
+      "Nintendo Switch",
+      "Android",
+      "iOS"
+    ]
+  },
+  {
+    "id": "the-binding-of-isaac-rebirth",
+    "qid": "Q16267631",
+    "name": "The Binding of Isaac: Rebirth",
+    "year": 2014,
+    "genres": [
+      "Aksiyon",
+      "Macera",
+      "Roguelike"
+    ],
+    "platforms": [
+      "PC",
+      "PlayStation",
+      "Xbox",
+      "Switch",
+      "iOS"
+    ],
+    "studio": "Nicalis",
+    "url": "http://bindingofisaac.com/",
+    "sourceUrl": "https://www.wikidata.org/wiki/Q16267631",
+    "sourceRetrievedAt": "2026-10-05",
+    "sourceGenreValues": [
+      "action-adventure game",
+      "roguelite"
+    ],
+    "sourcePlatformValues": [
+      "Microsoft Windows",
+      "Linux",
+      "macOS",
+      "PlayStation 4",
+      "PlayStation 5",
+      "PlayStation Vita",
+      "Xbox One",
+      "Xbox Series X and Series S",
+      "Nintendo Switch",
+      "Nintendo Switch 2",
+      "iOS"
+    ],
+    "yearSource": "Wikidata item description",
+    "genresRaw": [
+      "action-adventure game",
+      "roguelite"
+    ],
+    "platformsRaw": [
+      "Microsoft Windows",
+      "Linux",
+      "macOS",
+      "PlayStation 4",
+      "PlayStation 5",
+      "PlayStation Vita",
+      "Xbox One",
+      "Xbox Series X and Series S",
+      "Nintendo Switch",
+      "Nintendo Switch 2",
+      "iOS"
+    ]
+  },
+  {
+    "id": "inscryption",
+    "qid": "Q109051201",
+    "name": "Inscryption",
+    "year": 2021,
+    "genres": [
+      "Roguelike",
+      "Kart"
+    ],
+    "platforms": [
+      "PC",
+      "PlayStation",
+      "Xbox",
+      "Switch"
+    ],
+    "studio": "Daniel Mullins Games",
+    "url": "https://www.inscryption.com",
+    "sourceUrl": "https://www.wikidata.org/wiki/Q109051201",
+    "sourceRetrievedAt": "2026-10-05",
+    "sourceGenreValues": [
+      "roguelike deck-building game"
+    ],
+    "sourcePlatformValues": [
+      "Microsoft Windows",
+      "Linux",
+      "macOS",
+      "PlayStation 4",
+      "PlayStation 5",
+      "Xbox One",
+      "Xbox Series X and Series S",
+      "Nintendo Switch"
+    ],
+    "yearSource": "Wikidata item description",
+    "genresRaw": [
+      "roguelike deck-building game"
+    ],
+    "platformsRaw": [
+      "Microsoft Windows",
+      "Linux",
+      "macOS",
+      "PlayStation 4",
+      "PlayStation 5",
+      "Xbox One",
+      "Xbox Series X and Series S",
+      "Nintendo Switch"
+    ]
+  },
+  {
+    "id": "papers-please",
+    "qid": "Q14565978",
+    "name": "Papers, Please",
+    "year": 2013,
+    "genres": [
+      "Macera",
+      "Simülasyon"
+    ],
+    "platforms": [
+      "PC",
+      "PlayStation",
+      "iOS"
+    ],
+    "studio": "Lucas Pope",
+    "url": "https://papersplea.se/",
+    "sourceUrl": "https://www.wikidata.org/wiki/Q14565978",
+    "sourceRetrievedAt": "2026-10-05",
+    "sourceGenreValues": [
+      "adventure video game",
+      "simulation video game"
+    ],
+    "sourcePlatformValues": [
+      "Microsoft Windows",
+      "Linux",
+      "macOS",
+      "PlayStation Vita",
+      "iOS"
+    ],
+    "yearSource": "Wikidata item description",
+    "genresRaw": [
+      "adventure video game",
+      "simulation video game"
+    ],
+    "platformsRaw": [
+      "Microsoft Windows",
+      "Linux",
+      "macOS",
+      "PlayStation Vita",
+      "iOS"
+    ]
+  },
+  {
+    "id": "what-remains-of-edith-finch",
+    "qid": "Q28451186",
+    "name": "What Remains of Edith Finch",
+    "year": 2017,
+    "genres": [
+      "Macera"
+    ],
+    "platforms": [
+      "PC",
+      "PlayStation",
+      "Xbox",
+      "Switch",
+      "iOS"
+    ],
+    "studio": "Giant Sparrow",
+    "url": "http://edithfinch.com/",
+    "sourceUrl": "https://www.wikidata.org/wiki/Q28451186",
+    "sourceRetrievedAt": "2026-10-05",
+    "sourceGenreValues": [
+      "adventure video game",
+      "walking simulator"
+    ],
+    "sourcePlatformValues": [
+      "Microsoft Windows",
+      "PlayStation 4",
+      "Xbox One",
+      "Nintendo Switch",
+      "iOS"
+    ],
+    "yearSource": "Wikidata item description",
+    "genresRaw": [
+      "adventure video game",
+      "walking simulator"
+    ],
+    "platformsRaw": [
+      "Microsoft Windows",
+      "PlayStation 4",
+      "Xbox One",
+      "Nintendo Switch",
+      "iOS"
+    ]
+  },
+  {
+    "id": "journey",
+    "qid": "Q677274",
+    "name": "Journey",
+    "year": 2012,
+    "genres": [
+      "Aksiyon",
+      "Macera"
+    ],
+    "platforms": [
+      "PC",
+      "PlayStation",
+      "iOS"
+    ],
+    "studio": "thatgamecompany",
+    "url": "http://thatgamecompany.com/journey/",
+    "sourceUrl": "https://www.wikidata.org/wiki/Q677274",
+    "sourceRetrievedAt": "2026-10-05",
+    "sourceGenreValues": [
+      "action-adventure game",
+      "walking simulator"
+    ],
+    "sourcePlatformValues": [
+      "Microsoft Windows",
+      "PlayStation 3",
+      "PlayStation 4",
+      "iOS"
+    ],
+    "yearSource": "Wikidata item description",
+    "genresRaw": [
+      "action-adventure game",
+      "walking simulator"
+    ],
+    "platformsRaw": [
+      "Microsoft Windows",
+      "PlayStation 3",
+      "PlayStation 4",
+      "iOS"
+    ]
+  },
+  {
+    "id": "gris",
+    "qid": "Q59769284",
+    "name": "Gris",
+    "year": 2018,
+    "genres": [
+      "Platform",
+      "Macera"
+    ],
+    "platforms": [
+      "PC",
+      "PlayStation",
+      "Xbox",
+      "Switch",
+      "Android",
+      "iOS"
+    ],
+    "studio": "Nomada Studio",
+    "url": "https://nomada.studio/gris-game/",
+    "sourceUrl": "https://www.wikidata.org/wiki/Q59769284",
+    "sourceRetrievedAt": "2026-10-05",
+    "sourceGenreValues": [
+      "platformer",
+      "adventure video game"
+    ],
+    "sourcePlatformValues": [
+      "Microsoft Windows",
+      "macOS",
+      "PlayStation 4",
+      "Xbox One",
+      "Xbox Series X and Series S",
+      "Nintendo Switch",
+      "Android",
+      "iOS"
+    ],
+    "yearSource": "Wikidata item description",
+    "genresRaw": [
+      "platformer",
+      "adventure video game"
+    ],
+    "platformsRaw": [
+      "Microsoft Windows",
+      "macOS",
+      "PlayStation 4",
+      "Xbox One",
+      "Xbox Series X and Series S",
+      "Nintendo Switch",
+      "Android",
+      "iOS"
+    ]
+  },
+  {
+    "id": "a-short-hike",
+    "qid": "Q66035140",
+    "name": "A Short Hike",
+    "year": 2019,
+    "genres": [
+      "Macera"
+    ],
+    "platforms": [
+      "PC",
+      "PlayStation",
+      "Xbox",
+      "Switch"
+    ],
+    "studio": "Adam Robinson-Yu",
+    "url": "https://ashorthike.com/",
+    "sourceUrl": "https://www.wikidata.org/wiki/Q66035140",
+    "sourceRetrievedAt": "2026-10-05",
+    "sourceGenreValues": [
+      "adventure video game"
+    ],
+    "sourcePlatformValues": [
+      "Microsoft Windows",
+      "Linux",
+      "macOS",
+      "PlayStation 4",
+      "Xbox One",
+      "Xbox Series X and Series S",
+      "Nintendo Switch"
+    ],
+    "yearSource": "Wikidata item description",
+    "genresRaw": [
+      "adventure video game"
+    ],
+    "platformsRaw": [
+      "Microsoft Windows",
+      "Linux",
+      "macOS",
+      "PlayStation 4",
+      "Xbox One",
+      "Xbox Series X and Series S",
+      "Nintendo Switch"
+    ]
+  },
+  {
+    "id": "spiritfarer",
+    "qid": "Q80533334",
+    "name": "Spiritfarer",
+    "year": 2020,
+    "genres": [
+      "Platform",
+      "Simülasyon",
+      "Strateji"
+    ],
+    "platforms": [
+      "PC",
+      "PlayStation",
+      "Xbox",
+      "Switch"
+    ],
+    "studio": "Thunder Lotus Games",
+    "url": "https://thunderlotusgames.com/spiritfarer/",
+    "sourceUrl": "https://www.wikidata.org/wiki/Q80533334",
+    "sourceRetrievedAt": "2026-10-05",
+    "sourceGenreValues": [
+      "platformer",
+      "construction and management simulation"
+    ],
+    "sourcePlatformValues": [
+      "Microsoft Windows",
+      "Linux",
+      "macOS",
+      "PlayStation 4",
+      "Xbox One",
+      "Nintendo Switch"
+    ],
+    "yearSource": "Wikidata item description",
+    "genresRaw": [
+      "platformer",
+      "construction and management simulation"
+    ],
+    "platformsRaw": [
+      "Microsoft Windows",
+      "Linux",
+      "macOS",
+      "PlayStation 4",
+      "Xbox One",
+      "Nintendo Switch"
+    ]
+  },
+  {
+    "id": "unpacking",
+    "qid": "Q105063670",
+    "name": "Unpacking",
+    "year": 2021,
+    "genres": [
+      "Bulmaca",
+      "Simülasyon"
+    ],
+    "platforms": [
+      "PC",
+      "Xbox",
+      "Switch",
+      "Android",
+      "iOS"
+    ],
+    "studio": "Witch Beam",
+    "url": "https://www.unpackinggame.com",
+    "sourceUrl": "https://www.wikidata.org/wiki/Q105063670",
+    "sourceRetrievedAt": "2026-10-05",
+    "sourceGenreValues": [
+      "puzzle video game",
+      "simulation video game"
+    ],
+    "sourcePlatformValues": [
+      "Microsoft Windows",
+      "Linux",
+      "macOS",
+      "Xbox One",
+      "Xbox Series X and Series S",
+      "Nintendo Switch",
+      "Android",
+      "iOS"
+    ],
+    "yearSource": "Wikidata item description",
+    "genresRaw": [
+      "puzzle video game",
+      "simulation video game"
+    ],
+    "platformsRaw": [
+      "Microsoft Windows",
+      "Linux",
+      "macOS",
+      "Xbox One",
+      "Xbox Series X and Series S",
+      "Nintendo Switch",
+      "Android",
+      "iOS"
+    ]
+  },
+  {
+    "id": "cult-of-the-lamb",
+    "qid": "Q108273566",
+    "name": "Cult of the Lamb",
+    "year": 2022,
+    "genres": [
+      "Aksiyon",
+      "Macera",
+      "Roguelike",
+      "Simülasyon",
+      "Strateji"
+    ],
+    "platforms": [
+      "PC",
+      "PlayStation",
+      "Xbox",
+      "Switch"
+    ],
+    "studio": "Massive Monster",
+    "url": "https://www.cultofthelamb.com",
+    "sourceUrl": "https://www.wikidata.org/wiki/Q108273566",
+    "sourceRetrievedAt": "2026-10-05",
+    "sourceGenreValues": [
+      "action-adventure game",
+      "roguelike",
+      "simulation video game",
+      "construction and management simulation"
+    ],
+    "sourcePlatformValues": [
+      "Microsoft Windows",
+      "macOS",
+      "PlayStation 4",
+      "PlayStation 5",
+      "Xbox One",
+      "Xbox Series X and Series S",
+      "Nintendo Switch"
+    ],
+    "yearSource": "Wikidata item description",
+    "genresRaw": [
+      "action-adventure game",
+      "roguelike",
+      "simulation video game",
+      "construction and management simulation"
+    ],
+    "platformsRaw": [
+      "Microsoft Windows",
+      "macOS",
+      "PlayStation 4",
+      "PlayStation 5",
+      "Xbox One",
+      "Xbox Series X and Series S",
+      "Nintendo Switch"
+    ]
+  },
+  {
+    "id": "don-t-starve",
+    "qid": "Q3208174",
+    "name": "Don't Starve",
+    "year": 2013,
+    "genres": [
+      "Aksiyon",
+      "Macera",
+      "Hayatta kalma",
+      "Roguelike"
+    ],
+    "platforms": [
+      "PC",
+      "PlayStation",
+      "Xbox",
+      "Switch",
+      "Android",
+      "iOS"
+    ],
+    "studio": "Klei Entertainment",
+    "url": "http://www.dontstarvegame.com/",
+    "sourceUrl": "https://www.wikidata.org/wiki/Q3208174",
+    "sourceRetrievedAt": "2026-10-05",
+    "sourceGenreValues": [
+      "action-adventure game",
+      "survival game",
+      "roguelike"
+    ],
+    "sourcePlatformValues": [
+      "Microsoft Windows",
+      "Linux",
+      "macOS",
+      "PlayStation 3",
+      "PlayStation 4",
+      "PlayStation Vita",
+      "Xbox One",
+      "Nintendo Switch",
+      "Android",
+      "iOS"
+    ],
+    "yearSource": "Wikidata item description",
+    "genresRaw": [
+      "action-adventure game",
+      "survival game",
+      "roguelike"
+    ],
+    "platformsRaw": [
+      "Microsoft Windows",
+      "Linux",
+      "macOS",
+      "PlayStation 3",
+      "PlayStation 4",
+      "PlayStation Vita",
+      "Xbox One",
+      "Nintendo Switch",
+      "Android",
+      "iOS"
+    ]
+  },
+  {
+    "id": "oxygen-not-included",
+    "qid": "Q28232693",
+    "name": "Oxygen Not Included",
+    "year": 2017,
+    "genres": [
+      "Hayatta kalma"
+    ],
+    "platforms": [
+      "PC"
+    ],
+    "studio": "Klei Entertainment",
+    "url": "https://www.kleientertainment.com/games/oxygen-not-included",
+    "sourceUrl": "https://www.wikidata.org/wiki/Q28232693",
+    "sourceRetrievedAt": "2026-10-05",
+    "sourceGenreValues": [
+      "survival game"
+    ],
+    "sourcePlatformValues": [
+      "Linux"
+    ],
+    "yearSource": "Wikidata item description",
+    "genresRaw": [
+      "survival game"
+    ],
+    "platformsRaw": [
+      "Linux"
+    ]
+  },
+  {
+    "id": "astroneer",
+    "qid": "Q28044889",
+    "name": "Astroneer",
+    "year": 2016,
+    "genres": [
+      "Macera",
+      "Açık dünya",
+      "Bilimkurgu"
+    ],
+    "platforms": [
+      "PC",
+      "PlayStation",
+      "Xbox",
+      "Switch"
+    ],
+    "studio": "System Era Softworks",
+    "url": "https://astroneer.space",
+    "sourceUrl": "https://www.wikidata.org/wiki/Q28044889",
+    "sourceRetrievedAt": "2026-10-05",
+    "sourceGenreValues": [
+      "adventure video game",
+      "sandbox game",
+      "science fiction video game"
+    ],
+    "sourcePlatformValues": [
+      "Microsoft Windows",
+      "PlayStation 4",
+      "PlayStation 5",
+      "Xbox One",
+      "Nintendo Switch"
+    ],
+    "yearSource": "Wikidata item description",
+    "genresRaw": [
+      "adventure video game",
+      "sandbox game",
+      "science fiction video game"
+    ],
+    "platformsRaw": [
+      "Microsoft Windows",
+      "PlayStation 4",
+      "PlayStation 5",
+      "Xbox One",
+      "Nintendo Switch"
+    ]
+  },
+  {
+    "id": "raft",
+    "qid": "Q55084497",
+    "name": "Raft",
+    "year": 2022,
+    "genres": [
+      "Hayatta kalma",
+      "Macera",
+      "Simülasyon"
+    ],
+    "platforms": [
+      "PC",
+      "PlayStation",
+      "Xbox"
+    ],
+    "studio": "Redbeet Interactive",
+    "url": "https://raft-game.com/",
+    "sourceUrl": "https://www.wikidata.org/wiki/Q55084497",
+    "sourceRetrievedAt": "2026-10-05",
+    "sourceGenreValues": [
+      "survival game",
+      "adventure video game",
+      "simulation video game"
+    ],
+    "sourcePlatformValues": [
+      "Microsoft Windows",
+      "PlayStation 5",
+      "Xbox Series X and Series S"
+    ],
+    "yearSource": "Wikidata item description",
+    "genresRaw": [
+      "survival game",
+      "adventure video game",
+      "simulation video game"
+    ],
+    "platformsRaw": [
+      "Microsoft Windows",
+      "PlayStation 5",
+      "Xbox Series X and Series S"
+    ]
+  },
+  {
+    "id": "subnautica-below-zero",
+    "qid": "Q56432842",
+    "name": "Subnautica: Below Zero",
+    "year": 2021,
+    "genres": [
+      "Hayatta kalma"
+    ],
+    "platforms": [
+      "PC",
+      "PlayStation",
+      "Xbox",
+      "Switch",
+      "Android"
+    ],
+    "studio": "Unknown Worlds Entertainment",
+    "url": "https://unknownworlds.com/subnautica/subnautica-below-zero",
+    "sourceUrl": "https://www.wikidata.org/wiki/Q56432842",
+    "sourceRetrievedAt": "2026-10-05",
+    "sourceGenreValues": [
+      "survival game"
+    ],
+    "sourcePlatformValues": [
+      "Microsoft Windows",
+      "macOS",
+      "PlayStation 4",
+      "PlayStation 5",
+      "Xbox One",
+      "Xbox Series X and Series S",
+      "Nintendo Switch",
+      "Android"
+    ],
+    "yearSource": "Wikidata item description",
+    "genresRaw": [
+      "survival game"
+    ],
+    "platformsRaw": [
+      "Microsoft Windows",
+      "macOS",
+      "PlayStation 4",
+      "PlayStation 5",
+      "Xbox One",
+      "Xbox Series X and Series S",
+      "Nintendo Switch",
+      "Android"
+    ]
+  },
+  {
+    "id": "prey",
+    "qid": "Q4047343",
+    "name": "Prey",
+    "year": 2017,
+    "genres": [
+      "FPS",
+      "Aksiyon",
+      "Bilimkurgu"
+    ],
+    "platforms": [
+      "PC",
+      "PlayStation",
+      "Xbox"
+    ],
+    "studio": "Arkane Studios",
+    "url": "https://bethesda.net/en/game/prey",
+    "sourceUrl": "https://www.wikidata.org/wiki/Q4047343",
+    "sourceRetrievedAt": "2026-10-05",
+    "sourceGenreValues": [
+      "first-person shooter",
+      "science fiction video game"
+    ],
+    "sourcePlatformValues": [
+      "Microsoft Windows",
+      "PlayStation 4",
+      "Xbox 360",
+      "Xbox One"
+    ],
+    "yearSource": "Wikidata item description",
+    "genresRaw": [
+      "first-person shooter",
+      "science fiction video game"
+    ],
+    "platformsRaw": [
+      "Microsoft Windows",
+      "PlayStation 4",
+      "Xbox 360",
+      "Xbox One"
+    ]
+  },
+  {
+    "id": "deus-ex-human-revolution",
+    "qid": "Q642107",
+    "name": "Deus Ex: Human Revolution",
+    "year": 2011,
+    "genres": [
+      "Aksiyon",
+      "RPG",
+      "Bilimkurgu"
+    ],
+    "platforms": [
+      "PC",
+      "PlayStation",
+      "Xbox"
+    ],
+    "studio": "Eidos Montreal",
+    "url": "https://www.eidosmontreal.com/games/deus-ex-human-revolution/",
+    "sourceUrl": "https://www.wikidata.org/wiki/Q642107",
+    "sourceRetrievedAt": "2026-10-05",
+    "sourceGenreValues": [
+      "action role-playing game",
+      "cyberpunk video game"
+    ],
+    "sourcePlatformValues": [
+      "Microsoft Windows",
+      "macOS",
+      "PlayStation 3",
+      "Xbox 360"
+    ],
+    "yearSource": "Wikidata item description",
+    "genresRaw": [
+      "action role-playing game",
+      "cyberpunk video game"
+    ],
+    "platformsRaw": [
+      "Microsoft Windows",
+      "macOS",
+      "PlayStation 3",
+      "Xbox 360"
+    ]
+  },
+  {
+    "id": "mass-effect",
+    "qid": "Q275960",
+    "name": "Mass Effect",
+    "year": 2007,
+    "genres": [
+      "Aksiyon",
+      "RPG",
+      "Bilimkurgu"
+    ],
+    "platforms": [
+      "PC",
+      "PlayStation",
+      "Xbox"
+    ],
+    "studio": "BioWare",
+    "url": "http://masseffect.bioware.com/me1",
+    "sourceUrl": "https://www.wikidata.org/wiki/Q275960",
+    "sourceRetrievedAt": "2026-10-05",
+    "sourceGenreValues": [
+      "action role-playing game",
+      "role-playing video game",
+      "third-person shooter",
+      "science fiction video game",
+      "space opera video game"
+    ],
+    "sourcePlatformValues": [
+      "Microsoft Windows",
+      "PlayStation 3",
+      "PlayStation 4",
+      "Xbox 360",
+      "Xbox One"
+    ],
+    "yearSource": "Wikidata item description",
+    "genresRaw": [
+      "action role-playing game",
+      "role-playing video game",
+      "third-person shooter",
+      "science fiction video game",
+      "space opera video game"
+    ],
+    "platformsRaw": [
+      "Microsoft Windows",
+      "PlayStation 3",
+      "PlayStation 4",
+      "Xbox 360",
+      "Xbox One"
+    ]
+  },
+  {
+    "id": "the-elder-scrolls-v-skyrim",
+    "qid": "Q323862",
+    "name": "The Elder Scrolls V: Skyrim",
+    "year": 2011,
+    "genres": [
+      "Aksiyon",
+      "Macera",
+      "RPG",
+      "Fantastik"
+    ],
+    "platforms": [
+      "PC",
+      "PlayStation",
+      "Xbox",
+      "Switch"
+    ],
+    "studio": "Bethesda Game Studios",
+    "url": "https://elderscrolls.bethesda.net/en/skyrim",
+    "sourceUrl": "https://www.wikidata.org/wiki/Q323862",
+    "sourceRetrievedAt": "2026-10-05",
+    "sourceGenreValues": [
+      "action-adventure game",
+      "action role-playing game",
+      "role-playing video game",
+      "fantasy video game"
+    ],
+    "sourcePlatformValues": [
+      "Microsoft Windows",
+      "PlayStation 3",
+      "PlayStation 4",
+      "PlayStation 5",
+      "Xbox 360",
+      "Xbox One",
+      "Xbox Series X and Series S",
+      "Nintendo Switch"
+    ],
+    "yearSource": "Wikidata item description",
+    "genresRaw": [
+      "action-adventure game",
+      "action role-playing game",
+      "role-playing video game",
+      "fantasy video game"
+    ],
+    "platformsRaw": [
+      "Microsoft Windows",
+      "PlayStation 3",
+      "PlayStation 4",
+      "PlayStation 5",
+      "Xbox 360",
+      "Xbox One",
+      "Xbox Series X and Series S",
+      "Nintendo Switch"
+    ]
+  },
+  {
+    "id": "divinity-original-sin-2",
+    "qid": "Q20899735",
+    "name": "Divinity: Original Sin 2",
+    "year": 2017,
+    "genres": [
+      "RPG"
+    ],
+    "platforms": [
+      "PC",
+      "PlayStation",
+      "Xbox",
+      "Switch"
+    ],
+    "studio": "Larian Studios",
+    "url": "http://divinity.game/",
+    "sourceUrl": "https://www.wikidata.org/wiki/Q20899735",
+    "sourceRetrievedAt": "2026-10-05",
+    "sourceGenreValues": [
+      "role-playing video game"
+    ],
+    "sourcePlatformValues": [
+      "Microsoft Windows",
+      "macOS",
+      "PlayStation 4",
+      "Xbox One",
+      "Nintendo Switch"
+    ],
+    "yearSource": "Wikidata item description",
+    "genresRaw": [
+      "role-playing video game"
+    ],
+    "platformsRaw": [
+      "Microsoft Windows",
+      "macOS",
+      "PlayStation 4",
+      "Xbox One",
+      "Nintendo Switch"
+    ]
+  },
+  {
+    "id": "dragon-age-origins",
+    "qid": "Q735926",
+    "name": "Dragon Age: Origins",
+    "year": 2009,
+    "genres": [
+      "RPG",
+      "Fantastik"
+    ],
+    "platforms": [
+      "PC",
+      "PlayStation",
+      "Xbox"
+    ],
+    "studio": "BioWare",
+    "url": "http://dragonage.bioware.com/agegate",
+    "sourceUrl": "https://www.wikidata.org/wiki/Q735926",
+    "sourceRetrievedAt": "2026-10-05",
+    "sourceGenreValues": [
+      "role-playing video game",
+      "dark fantasy video game"
+    ],
+    "sourcePlatformValues": [
+      "Microsoft Windows",
+      "macOS",
+      "PlayStation 3",
+      "Xbox 360"
+    ],
+    "yearSource": "Wikidata item description",
+    "genresRaw": [
+      "role-playing video game",
+      "dark fantasy video game"
+    ],
+    "platformsRaw": [
+      "Microsoft Windows",
+      "macOS",
+      "PlayStation 3",
+      "Xbox 360"
+    ]
+  },
+  {
+    "id": "mount-blade-ii-bannerlord",
+    "qid": "Q18361009",
+    "name": "Mount & Blade II: Bannerlord",
+    "year": 2022,
+    "genres": [
+      "Aksiyon",
+      "RPG",
+      "Strateji"
+    ],
+    "platforms": [
+      "PC",
+      "PlayStation",
+      "Xbox"
+    ],
+    "studio": "TaleWorlds",
+    "url": "https://www.taleworlds.com/en/Games/Bannerlord",
+    "sourceUrl": "https://www.wikidata.org/wiki/Q18361009",
+    "sourceRetrievedAt": "2026-10-05",
+    "sourceGenreValues": [
+      "action role-playing game",
+      "strategy video game"
+    ],
+    "sourcePlatformValues": [
+      "Microsoft Windows",
+      "PlayStation 4",
+      "PlayStation 5",
+      "Xbox One",
+      "Xbox Series X and Series S"
+    ],
+    "yearSource": "Wikidata item description",
+    "genresRaw": [
+      "action role-playing game",
+      "strategy video game"
+    ],
+    "platformsRaw": [
+      "Microsoft Windows",
+      "PlayStation 4",
+      "PlayStation 5",
+      "Xbox One",
+      "Xbox Series X and Series S"
+    ]
+  },
+  {
+    "id": "kingdom-come-deliverance",
+    "qid": "Q15408545",
+    "name": "Kingdom Come: Deliverance",
+    "year": 2018,
+    "genres": [
+      "Aksiyon",
+      "RPG"
+    ],
+    "platforms": [
+      "PC",
+      "PlayStation",
+      "Xbox",
+      "Switch"
+    ],
+    "studio": "Warhorse Studios",
+    "url": "https://www.kingdomcomerpg.com/",
+    "sourceUrl": "https://www.wikidata.org/wiki/Q15408545",
+    "sourceRetrievedAt": "2026-10-05",
+    "sourceGenreValues": [
+      "action role-playing game",
+      "role-playing video game"
+    ],
+    "sourcePlatformValues": [
+      "Microsoft Windows",
+      "PlayStation 4",
+      "PlayStation 5",
+      "Xbox One",
+      "Xbox Series X and Series S",
+      "Nintendo Switch"
+    ],
+    "yearSource": "Wikidata item description",
+    "genresRaw": [
+      "action role-playing game",
+      "role-playing video game"
+    ],
+    "platformsRaw": [
+      "Microsoft Windows",
+      "PlayStation 4",
+      "PlayStation 5",
+      "Xbox One",
+      "Xbox Series X and Series S",
+      "Nintendo Switch"
+    ]
+  },
+  {
+    "id": "sekiro-shadows-die-twice",
+    "qid": "Q54906424",
+    "name": "Sekiro: Shadows Die Twice",
+    "year": 2019,
+    "genres": [
+      "Aksiyon",
+      "Macera",
+      "RPG",
+      "Fantastik"
+    ],
+    "platforms": [
+      "PC",
+      "PlayStation",
+      "Xbox"
+    ],
+    "studio": "FromSoftware",
+    "url": "http://www.sekirothegame.com",
+    "sourceUrl": "https://www.wikidata.org/wiki/Q54906424",
+    "sourceRetrievedAt": "2026-10-05",
+    "sourceGenreValues": [
+      "action-adventure game",
+      "soulslike",
+      "dark fantasy video game"
+    ],
+    "sourcePlatformValues": [
+      "Microsoft Windows",
+      "PlayStation 4",
+      "Xbox One"
+    ],
+    "yearSource": "Wikidata item description",
+    "genresRaw": [
+      "action-adventure game",
+      "soulslike",
+      "dark fantasy video game"
+    ],
+    "platformsRaw": [
+      "Microsoft Windows",
+      "PlayStation 4",
+      "Xbox One"
+    ]
+  },
+  {
+    "id": "death-stranding",
+    "qid": "Q24666782",
+    "name": "Death Stranding",
+    "year": 2019,
+    "genres": [
+      "Aksiyon",
+      "Macera",
+      "Bilimkurgu",
+      "Kıyamet Sonrası"
+    ],
+    "platforms": [
+      "PC",
+      "PlayStation"
+    ],
+    "studio": "Kojima Productions",
+    "url": "https://www.kojimaproductions.jp",
+    "sourceUrl": "https://www.wikidata.org/wiki/Q24666782",
+    "sourceRetrievedAt": "2026-10-05",
+    "sourceGenreValues": [
+      "action-adventure game",
+      "action game",
+      "science fiction video game",
+      "post-apocalyptic video game"
+    ],
+    "sourcePlatformValues": [
+      "Microsoft Windows",
+      "PlayStation 4"
+    ],
+    "yearSource": "Wikidata item description",
+    "genresRaw": [
+      "action-adventure game",
+      "action game",
+      "science fiction video game",
+      "post-apocalyptic video game"
+    ],
+    "platformsRaw": [
+      "Microsoft Windows",
+      "PlayStation 4"
+    ]
+  },
+  {
+    "id": "nier-automata",
+    "qid": "Q21078985",
+    "name": "NieR: Automata",
+    "year": 2017,
+    "genres": [
+      "Aksiyon",
+      "RPG",
+      "Kıyamet Sonrası"
+    ],
+    "platforms": [
+      "PC",
+      "PlayStation",
+      "Xbox",
+      "Switch"
+    ],
+    "studio": "PlatinumGames",
+    "url": "https://www.jp.square-enix.com/nierautomata/",
+    "sourceUrl": "https://www.wikidata.org/wiki/Q21078985",
+    "sourceRetrievedAt": "2026-10-05",
+    "sourceGenreValues": [
+      "action role-playing game",
+      "hack and slash",
+      "post-apocalyptic video game"
+    ],
+    "sourcePlatformValues": [
+      "Microsoft Windows",
+      "PlayStation 4",
+      "Xbox One",
+      "Nintendo Switch"
+    ],
+    "yearSource": "Wikidata item description",
+    "genresRaw": [
+      "action role-playing game",
+      "hack and slash",
+      "post-apocalyptic video game"
+    ],
+    "platformsRaw": [
+      "Microsoft Windows",
+      "PlayStation 4",
+      "Xbox One",
+      "Nintendo Switch"
+    ]
+  },
+  {
+    "id": "ori-and-the-will-of-the-wisps",
+    "qid": "Q30325568",
+    "name": "Ori and the Will of the Wisps",
+    "year": 2020,
+    "genres": [
+      "Aksiyon",
+      "Macera",
+      "Platform"
+    ],
+    "platforms": [
+      "PC",
+      "Xbox",
+      "Switch"
+    ],
+    "studio": "Moon Studios",
+    "url": "https://www.orithegame.com",
+    "sourceUrl": "https://www.wikidata.org/wiki/Q30325568",
+    "sourceRetrievedAt": "2026-10-05",
+    "sourceGenreValues": [
+      "action-adventure game",
+      "platformer",
+      "Metroidvania"
+    ],
+    "sourcePlatformValues": [
+      "Microsoft Windows",
+      "Xbox One",
+      "Xbox Series X and Series S",
+      "Nintendo Switch"
+    ],
+    "yearSource": "Wikidata item description",
+    "genresRaw": [
+      "action-adventure game",
+      "platformer",
+      "Metroidvania"
+    ],
+    "platformsRaw": [
+      "Microsoft Windows",
+      "Xbox One",
+      "Xbox Series X and Series S",
+      "Nintendo Switch"
+    ]
+  },
+  {
+    "id": "psychonauts-2",
+    "qid": "Q22019734",
+    "name": "Psychonauts 2",
+    "year": 2021,
+    "genres": [
+      "Platform"
+    ],
+    "platforms": [
+      "PC",
+      "PlayStation",
+      "Xbox"
+    ],
+    "studio": "Double Fine",
+    "url": "https://www.doublefine.com/games/psychonauts-2",
+    "sourceUrl": "https://www.wikidata.org/wiki/Q22019734",
+    "sourceRetrievedAt": "2026-10-05",
+    "sourceGenreValues": [
+      "platform game"
+    ],
+    "sourcePlatformValues": [
+      "Microsoft Windows",
+      "Linux",
+      "macOS",
+      "PlayStation 4",
+      "Xbox One",
+      "Xbox Series X and Series S"
+    ],
+    "yearSource": "Wikidata item description",
+    "genresRaw": [
+      "platform game"
+    ],
+    "platformsRaw": [
+      "Microsoft Windows",
+      "Linux",
+      "macOS",
+      "PlayStation 4",
+      "Xbox One",
+      "Xbox Series X and Series S"
+    ]
+  },
+  {
+    "id": "it-takes-two",
+    "qid": "Q105038239",
+    "name": "It Takes Two",
+    "year": 2021,
+    "genres": [
+      "Aksiyon",
+      "Macera",
+      "Platform"
+    ],
+    "platforms": [
+      "PC",
+      "PlayStation",
+      "Xbox",
+      "Switch"
+    ],
+    "studio": "Hazelight Studios",
+    "url": "https://www.ea.com/games/it-takes-two",
+    "sourceUrl": "https://www.wikidata.org/wiki/Q105038239",
+    "sourceRetrievedAt": "2026-10-05",
+    "sourceGenreValues": [
+      "action-adventure game",
+      "platformer"
+    ],
+    "sourcePlatformValues": [
+      "Microsoft Windows",
+      "PlayStation 4",
+      "PlayStation 5",
+      "Xbox One",
+      "Xbox Series X and Series S",
+      "Nintendo Switch",
+      "Nintendo Switch 2"
+    ],
+    "yearSource": "Wikidata item description",
+    "genresRaw": [
+      "action-adventure game",
+      "platformer"
+    ],
+    "platformsRaw": [
+      "Microsoft Windows",
+      "PlayStation 4",
+      "PlayStation 5",
+      "Xbox One",
+      "Xbox Series X and Series S",
+      "Nintendo Switch",
+      "Nintendo Switch 2"
+    ]
+  },
+  {
+    "id": "hollow-knight-silksong",
+    "qid": "Q63294487",
+    "name": "Hollow Knight: Silksong",
+    "year": 2025,
+    "genres": [
+      "Aksiyon",
+      "Macera",
+      "Platform",
+      "RPG"
+    ],
+    "platforms": [
+      "PC",
+      "PlayStation",
+      "Xbox",
+      "Switch"
+    ],
+    "studio": "Team Cherry",
+    "url": "https://www.hollowknightsilksong.com",
+    "sourceUrl": "https://www.wikidata.org/wiki/Q63294487",
+    "sourceRetrievedAt": "2026-10-05",
+    "sourceGenreValues": [
+      "action-adventure game",
+      "2D platform game",
+      "Metroidvania",
+      "soulsvania"
+    ],
+    "sourcePlatformValues": [
+      "Microsoft Windows",
+      "Linux",
+      "macOS",
+      "PlayStation 4",
+      "PlayStation 5",
+      "Xbox One",
+      "Xbox Series X and Series S",
+      "Nintendo Switch",
+      "Nintendo Switch 2"
+    ],
+    "yearSource": "Wikidata item description",
+    "genresRaw": [
+      "action-adventure game",
+      "2D platform game",
+      "Metroidvania",
+      "soulsvania"
+    ],
+    "platformsRaw": [
+      "Microsoft Windows",
+      "Linux",
+      "macOS",
+      "PlayStation 4",
+      "PlayStation 5",
+      "Xbox One",
+      "Xbox Series X and Series S",
+      "Nintendo Switch",
+      "Nintendo Switch 2"
+    ]
+  },
+  {
+    "id": "hades-ii",
+    "qid": "Q115641620",
+    "name": "Hades II",
+    "year": 2024,
+    "genres": [
+      "Roguelike"
+    ],
+    "platforms": [
+      "PC",
+      "PlayStation",
+      "Xbox",
+      "Switch"
+    ],
+    "studio": "Supergiant Games",
+    "url": "https://www.supergiantgames.com/games/hades-ii",
+    "sourceUrl": "https://www.wikidata.org/wiki/Q115641620",
+    "sourceRetrievedAt": "2026-10-05",
+    "sourceGenreValues": [
+      "roguelike"
+    ],
+    "sourcePlatformValues": [
+      "Microsoft Windows",
+      "PlayStation 5",
+      "Xbox Series X and Series S",
+      "Nintendo Switch",
+      "Nintendo Switch 2"
+    ],
+    "yearSource": "Wikidata item description",
+    "genresRaw": [
+      "roguelike"
+    ],
+    "platformsRaw": [
+      "Microsoft Windows",
+      "PlayStation 5",
+      "Xbox Series X and Series S",
+      "Nintendo Switch",
+      "Nintendo Switch 2"
+    ]
+  },
+  {
+    "id": "tunic",
+    "qid": "Q55636303",
+    "name": "Tunic",
+    "year": 2022,
+    "genres": [
+      "Aksiyon",
+      "Macera",
+      "Kıyamet Sonrası"
+    ],
+    "platforms": [
+      "PC",
+      "PlayStation",
+      "Xbox",
+      "Switch"
+    ],
+    "studio": "Isometricorp Games",
+    "url": "https://tunicgame.com",
+    "sourceUrl": "https://www.wikidata.org/wiki/Q55636303",
+    "sourceRetrievedAt": "2026-10-05",
+    "sourceGenreValues": [
+      "action-adventure game",
+      "post-apocalyptic video game"
+    ],
+    "sourcePlatformValues": [
+      "Microsoft Windows",
+      "macOS",
+      "PlayStation 4",
+      "PlayStation 5",
+      "Xbox One",
+      "Xbox Series X and Series S",
+      "Nintendo Switch"
+    ],
+    "yearSource": "Wikidata item description",
+    "genresRaw": [
+      "action-adventure game",
+      "post-apocalyptic video game"
+    ],
+    "platformsRaw": [
+      "Microsoft Windows",
+      "macOS",
+      "PlayStation 4",
+      "PlayStation 5",
+      "Xbox One",
+      "Xbox Series X and Series S",
+      "Nintendo Switch"
+    ]
+  },
+  {
+    "id": "animal-well",
+    "qid": "Q130721560",
+    "name": "Animal Well",
+    "year": 2024,
+    "genres": [
+      "Platform",
+      "Macera",
+      "Bulmaca"
+    ],
+    "platforms": [
+      "PC",
+      "PlayStation",
+      "Xbox",
+      "Switch"
+    ],
+    "studio": "Billy Basso",
+    "url": "https://www.animalwell.net",
+    "sourceUrl": "https://www.wikidata.org/wiki/Q130721560",
+    "sourceRetrievedAt": "2026-10-05",
+    "sourceGenreValues": [
+      "2D platform game",
+      "Metroidvania",
+      "puzzle video game"
+    ],
+    "sourcePlatformValues": [
+      "Microsoft Windows",
+      "PlayStation 5",
+      "Xbox Series X and Series S",
+      "Nintendo Switch"
+    ],
+    "yearSource": "Wikidata item description",
+    "genresRaw": [
+      "2D platform game",
+      "Metroidvania",
+      "puzzle video game"
+    ],
+    "platformsRaw": [
+      "Microsoft Windows",
+      "PlayStation 5",
+      "Xbox Series X and Series S",
+      "Nintendo Switch"
+    ]
+  },
+  {
+    "id": "graveyard-keeper",
+    "qid": "Q56278431",
+    "name": "Graveyard Keeper",
+    "year": 2018,
+    "genres": [
+      "RPG",
+      "Simülasyon",
+      "Strateji"
+    ],
+    "platforms": [
+      "PC",
+      "PlayStation",
+      "Xbox",
+      "Switch",
+      "Android",
+      "iOS"
+    ],
+    "studio": "Lazy Bear Games",
+    "url": "https://www.graveyardkeeper.com/",
+    "sourceUrl": "https://www.wikidata.org/wiki/Q56278431",
+    "sourceRetrievedAt": "2026-10-05",
+    "sourceGenreValues": [
+      "role-playing video game",
+      "simulation video game",
+      "construction and management simulation"
+    ],
+    "sourcePlatformValues": [
+      "Microsoft Windows",
+      "Linux",
+      "macOS",
+      "PlayStation 4",
+      "Xbox One",
+      "Nintendo Switch",
+      "Android",
+      "iOS"
+    ],
+    "yearSource": "Wikidata item description",
+    "genresRaw": [
+      "role-playing video game",
+      "simulation video game",
+      "construction and management simulation"
+    ],
+    "platformsRaw": [
+      "Microsoft Windows",
+      "Linux",
+      "macOS",
+      "PlayStation 4",
+      "Xbox One",
+      "Nintendo Switch",
+      "Android",
+      "iOS"
+    ]
+  },
+  {
+    "id": "streets-of-rage-4",
+    "qid": "Q56616859",
+    "name": "Streets of Rage 4",
+    "year": 2020,
+    "genres": [
+      "Aksiyon"
+    ],
+    "platforms": [
+      "PC",
+      "PlayStation",
+      "Xbox",
+      "Switch"
+    ],
+    "studio": "Lizardcube",
+    "url": "https://www.streets4rage.com",
+    "sourceUrl": "https://www.wikidata.org/wiki/Q56616859",
+    "sourceRetrievedAt": "2026-10-05",
+    "sourceGenreValues": [
+      "beat 'em up",
+      "action game"
+    ],
+    "sourcePlatformValues": [
+      "Microsoft Windows",
+      "Linux",
+      "macOS",
+      "PlayStation 4",
+      "Xbox One",
+      "Nintendo Switch"
+    ],
+    "yearSource": "Wikidata item description",
+    "genresRaw": [
+      "beat 'em up",
+      "action game"
+    ],
+    "platformsRaw": [
+      "Microsoft Windows",
+      "Linux",
+      "macOS",
+      "PlayStation 4",
+      "Xbox One",
+      "Nintendo Switch"
+    ]
+  },
+  {
+    "id": "total-war-warhammer-iii",
+    "qid": "Q105427208",
+    "name": "Total War: Warhammer III",
+    "year": 2022,
+    "genres": [
+      "Strateji"
+    ],
+    "platforms": [
+      "PC"
+    ],
+    "studio": "Creative Assembly",
+    "url": "https://warhammer3.totalwar.com",
+    "sourceUrl": "https://www.wikidata.org/wiki/Q105427208",
+    "sourceRetrievedAt": "2026-10-05",
+    "sourceGenreValues": [
+      "turn-based strategy video game",
+      "real-time strategy",
+      "real-time tactics"
+    ],
+    "sourcePlatformValues": [
+      "Microsoft Windows",
+      "Linux",
+      "macOS"
+    ],
+    "yearSource": "Wikidata item description",
+    "genresRaw": [
+      "turn-based strategy video game",
+      "real-time strategy",
+      "real-time tactics"
+    ],
+    "platformsRaw": [
+      "Microsoft Windows",
+      "Linux",
+      "macOS"
+    ]
+  },
+  {
+    "id": "crusader-kings-iii",
+    "qid": "Q71701894",
+    "name": "Crusader Kings III",
+    "year": 2020,
+    "genres": [
+      "RPG",
+      "Strateji"
+    ],
+    "platforms": [
+      "PC",
+      "PlayStation"
+    ],
+    "studio": "Development Studio",
+    "url": "https://www.crusaderkings.com",
+    "sourceUrl": "https://www.wikidata.org/wiki/Q71701894",
+    "sourceRetrievedAt": "2026-10-05",
+    "sourceGenreValues": [
+      "role-playing video game",
+      "real-time strategy",
+      "grand strategy wargame"
+    ],
+    "sourcePlatformValues": [
+      "Microsoft Windows",
+      "Linux",
+      "macOS",
+      "PlayStation 5"
+    ],
+    "yearSource": "Wikidata item description",
+    "genresRaw": [
+      "role-playing video game",
+      "real-time strategy",
+      "grand strategy wargame"
+    ],
+    "platformsRaw": [
+      "Microsoft Windows",
+      "Linux",
+      "macOS",
+      "PlayStation 5"
+    ]
+  },
+  {
+    "id": "stellaris",
+    "qid": "Q20829312",
+    "name": "Stellaris",
+    "year": 2016,
+    "genres": [
+      "Strateji",
+      "Bilimkurgu"
+    ],
+    "platforms": [
+      "PC",
+      "PlayStation"
+    ],
+    "studio": "Development Studio",
+    "url": "http://www.stellarisgame.com/",
+    "sourceUrl": "https://www.wikidata.org/wiki/Q20829312",
+    "sourceRetrievedAt": "2026-10-05",
+    "sourceGenreValues": [
+      "real-time strategy",
+      "grand strategy wargame",
+      "4X",
+      "science fiction video game",
+      "space opera video game"
+    ],
+    "sourcePlatformValues": [
+      "Microsoft Windows",
+      "Linux",
+      "macOS",
+      "PlayStation 4"
+    ],
+    "yearSource": "Wikidata item description",
+    "genresRaw": [
+      "real-time strategy",
+      "grand strategy wargame",
+      "4X",
+      "science fiction video game",
+      "space opera video game"
+    ],
+    "platformsRaw": [
+      "Microsoft Windows",
+      "Linux",
+      "macOS",
+      "PlayStation 4"
+    ]
+  },
+  {
+    "id": "planet-zoo",
+    "qid": "Q63339904",
+    "name": "Planet Zoo",
+    "year": 2019,
+    "genres": [
+      "Simülasyon",
+      "Strateji"
+    ],
+    "platforms": [
+      "PC"
+    ],
+    "studio": "Frontier Developments",
+    "url": "https://www.planetzoogame.com/",
+    "sourceUrl": "https://www.wikidata.org/wiki/Q63339904",
+    "sourceRetrievedAt": "2026-10-05",
+    "sourceGenreValues": [
+      "construction and management simulation"
+    ],
+    "sourcePlatformValues": [
+      "Microsoft Windows"
+    ],
+    "yearSource": "Wikidata item description",
+    "genresRaw": [
+      "construction and management simulation"
+    ],
+    "platformsRaw": [
+      "Microsoft Windows"
+    ]
+  },
+  {
+    "id": "two-point-hospital",
+    "qid": "Q47474030",
+    "name": "Two Point Hospital",
+    "year": 2018,
+    "genres": [
+      "Simülasyon",
+      "Strateji"
+    ],
+    "platforms": [
+      "PC",
+      "PlayStation",
+      "Xbox",
+      "Switch"
+    ],
+    "studio": "Two Point Studios",
+    "url": "https://www.twopointstudios.com/en/games/two-point-hospital",
+    "sourceUrl": "https://www.wikidata.org/wiki/Q47474030",
+    "sourceRetrievedAt": "2026-10-05",
+    "sourceGenreValues": [
+      "business simulation game"
+    ],
+    "sourcePlatformValues": [
+      "Microsoft Windows",
+      "Linux",
+      "macOS",
+      "PlayStation 4",
+      "Xbox One",
+      "Nintendo Switch"
+    ],
+    "yearSource": "Wikidata item description",
+    "genresRaw": [
+      "business simulation game"
+    ],
+    "platformsRaw": [
+      "Microsoft Windows",
+      "Linux",
+      "macOS",
+      "PlayStation 4",
+      "Xbox One",
+      "Nintendo Switch"
+    ]
+  },
+  {
+    "id": "euro-truck-simulator-2",
+    "qid": "Q2632206",
+    "name": "Euro Truck Simulator 2",
+    "year": 2012,
+    "genres": [
+      "Simülasyon",
+      "Strateji"
+    ],
+    "platforms": [
+      "PC",
+      "PlayStation"
+    ],
+    "studio": "SCS Software",
+    "url": "http://www.eurotrucksimulator2.com/",
+    "sourceUrl": "https://www.wikidata.org/wiki/Q2632206",
+    "sourceRetrievedAt": "2026-10-05",
+    "sourceGenreValues": [
+      "business simulation game"
+    ],
+    "sourcePlatformValues": [
+      "Microsoft Windows",
+      "Linux",
+      "macOS",
+      "PlayStation 5"
+    ],
+    "yearSource": "Wikidata item description",
+    "genresRaw": [
+      "business simulation game"
+    ],
+    "platformsRaw": [
+      "Microsoft Windows",
+      "Linux",
+      "macOS",
+      "PlayStation 5"
+    ]
+  },
+  {
+    "id": "forza-horizon-5",
+    "qid": "Q107214683",
+    "name": "Forza Horizon 5",
+    "year": 2021,
+    "genres": [
+      "Yarış"
+    ],
+    "platforms": [
+      "PC",
+      "PlayStation",
+      "Xbox"
+    ],
+    "studio": "Playground Games",
+    "url": "https://www.xbox.com/en-US/games/forza-horizon-5",
+    "sourceUrl": "https://www.wikidata.org/wiki/Q107214683",
+    "sourceRetrievedAt": "2026-10-05",
+    "sourceGenreValues": [
+      "racing video game"
+    ],
+    "sourcePlatformValues": [
+      "Microsoft Windows",
+      "PlayStation 5",
+      "Xbox One",
+      "Xbox Series X and Series S"
+    ],
+    "yearSource": "Wikidata item description",
+    "genresRaw": [
+      "racing video game"
+    ],
+    "platformsRaw": [
+      "Microsoft Windows",
+      "PlayStation 5",
+      "Xbox One",
+      "Xbox Series X and Series S"
+    ]
+  },
+  {
+    "id": "stardew-valley",
+    "qid": "Q23013817",
+    "name": "Stardew Valley",
+    "year": 2016,
+    "genres": [
+      "RPG",
+      "Simülasyon",
+      "Rahatlatıcı"
+    ],
+    "platforms": [
+      "PC",
+      "PlayStation",
+      "Xbox",
+      "Switch",
+      "Android",
+      "iOS"
+    ],
+    "studio": "ConcernedApe LLC",
+    "url": "https://www.stardewvalley.net/",
+    "sourceUrl": "https://www.wikidata.org/wiki/Q23013817",
+    "sourceRetrievedAt": "2026-10-05",
+    "sourceGenreValues": [
+      "role-playing video game",
+      "simulation video game",
+      "farm life sim",
+      "life simulation game"
+    ],
+    "sourcePlatformValues": [
+      "Microsoft Windows",
+      "Linux",
+      "macOS",
+      "PlayStation 4",
+      "PlayStation Vita",
+      "Xbox One",
+      "Nintendo Switch",
+      "Nintendo Switch 2",
+      "Android",
+      "iOS"
+    ],
+    "yearSource": "Wikidata item description",
+    "genresRaw": [
+      "role-playing video game",
+      "simulation video game",
+      "farm life sim",
+      "life simulation game"
+    ],
+    "platformsRaw": [
+      "Microsoft Windows",
+      "Linux",
+      "macOS",
+      "PlayStation 4",
+      "PlayStation Vita",
+      "Xbox One",
+      "Nintendo Switch",
+      "Nintendo Switch 2",
+      "Android",
+      "iOS"
+    ]
+  },
+  {
+    "id": "hollow-knight",
+    "qid": "Q29300592",
+    "name": "Hollow Knight",
+    "year": 2017,
+    "genres": [
+      "Platform",
+      "Macera",
+      "RPG"
+    ],
+    "platforms": [
+      "PC",
+      "PlayStation",
+      "Xbox",
+      "Switch"
+    ],
+    "studio": "Team Cherry",
+    "url": "https://hollowknight.com",
+    "sourceUrl": "https://www.wikidata.org/wiki/Q29300592",
+    "sourceRetrievedAt": "2026-10-05",
+    "sourceGenreValues": [
+      "2D platform game",
+      "Metroidvania",
+      "soulsvania"
+    ],
+    "sourcePlatformValues": [
+      "Microsoft Windows",
+      "Linux",
+      "macOS",
+      "PlayStation 4",
+      "PlayStation 5",
+      "Xbox One",
+      "Xbox Series X and Series S",
+      "Nintendo Switch",
+      "Nintendo Switch 2"
+    ],
+    "yearSource": "Wikidata item description",
+    "genresRaw": [
+      "2D platform game",
+      "Metroidvania",
+      "soulsvania"
+    ],
+    "platformsRaw": [
+      "Microsoft Windows",
+      "Linux",
+      "macOS",
+      "PlayStation 4",
+      "PlayStation 5",
+      "Xbox One",
+      "Xbox Series X and Series S",
+      "Nintendo Switch",
+      "Nintendo Switch 2"
+    ]
+  },
+  {
+    "id": "celeste",
+    "qid": "Q28451532",
+    "name": "Celeste",
+    "year": 2018,
+    "genres": [
+      "Platform"
+    ],
+    "platforms": [
+      "PC",
+      "PlayStation",
+      "Xbox",
+      "Switch"
+    ],
+    "studio": "Maddy Makes Games",
+    "url": "https://www.celestegame.com",
+    "sourceUrl": "https://www.wikidata.org/wiki/Q28451532",
+    "sourceRetrievedAt": "2026-10-05",
+    "sourceGenreValues": [
+      "platformer"
+    ],
+    "sourcePlatformValues": [
+      "Microsoft Windows",
+      "Linux",
+      "macOS",
+      "PlayStation 4",
+      "Xbox One",
+      "Nintendo Switch"
+    ],
+    "yearSource": "Wikidata item description",
+    "genresRaw": [
+      "platformer"
+    ],
+    "platformsRaw": [
+      "Microsoft Windows",
+      "Linux",
+      "macOS",
+      "PlayStation 4",
+      "Xbox One",
+      "Nintendo Switch"
+    ]
+  },
+  {
+    "id": "disco-elysium",
+    "qid": "Q71693825",
+    "name": "Disco Elysium",
+    "year": 2019,
+    "genres": [
+      "RPG"
+    ],
+    "platforms": [
+      "PC",
+      "PlayStation",
+      "Xbox",
+      "Switch",
+      "Android"
+    ],
+    "studio": "ZA/UM",
+    "url": "https://discoelysium.com/",
+    "sourceUrl": "https://www.wikidata.org/wiki/Q71693825",
+    "sourceRetrievedAt": "2026-10-05",
+    "sourceGenreValues": [
+      "role-playing video game"
+    ],
+    "sourcePlatformValues": [
+      "Microsoft Windows",
+      "macOS",
+      "PlayStation 4",
+      "PlayStation 5",
+      "Xbox One",
+      "Xbox Series X and Series S",
+      "Nintendo Switch",
+      "Android"
+    ],
+    "yearSource": "Wikidata item description",
+    "genresRaw": [
+      "role-playing video game"
+    ],
+    "platformsRaw": [
+      "Microsoft Windows",
+      "macOS",
+      "PlayStation 4",
+      "PlayStation 5",
+      "Xbox One",
+      "Xbox Series X and Series S",
+      "Nintendo Switch",
+      "Android"
+    ]
+  },
+  {
+    "id": "elden-ring",
+    "qid": "Q64826862",
+    "name": "Elden Ring",
+    "year": 2022,
+    "genres": [
+      "Aksiyon",
+      "RPG",
+      "Fantastik"
+    ],
+    "platforms": [
+      "PC",
+      "PlayStation",
+      "Xbox",
+      "Switch"
+    ],
+    "studio": "FromSoftware",
+    "url": "https://www.eldenring.com",
+    "sourceUrl": "https://www.wikidata.org/wiki/Q64826862",
+    "sourceRetrievedAt": "2026-10-05",
+    "sourceGenreValues": [
+      "action role-playing game",
+      "soulslike",
+      "dark fantasy video game"
+    ],
+    "sourcePlatformValues": [
+      "Microsoft Windows",
+      "PlayStation 4",
+      "PlayStation 5",
+      "Xbox One",
+      "Xbox Series X and Series S",
+      "Nintendo Switch 2"
+    ],
+    "yearSource": "Wikidata item description",
+    "genresRaw": [
+      "action role-playing game",
+      "soulslike",
+      "dark fantasy video game"
+    ],
+    "platformsRaw": [
+      "Microsoft Windows",
+      "PlayStation 4",
+      "PlayStation 5",
+      "Xbox One",
+      "Xbox Series X and Series S",
+      "Nintendo Switch 2"
+    ]
+  },
+  {
+    "id": "cyberpunk-2077",
+    "qid": "Q3182559",
+    "name": "Cyberpunk 2077",
+    "year": 2020,
+    "genres": [
+      "Aksiyon",
+      "RPG",
+      "Bilimkurgu"
+    ],
+    "platforms": [
+      "PC",
+      "PlayStation",
+      "Xbox",
+      "Switch"
+    ],
+    "studio": "CD Projekt RED",
+    "url": "https://www.cyberpunk.net",
+    "sourceUrl": "https://www.wikidata.org/wiki/Q3182559",
+    "sourceRetrievedAt": "2026-10-05",
+    "sourceGenreValues": [
+      "action role-playing game",
+      "science fiction video game",
+      "cyberpunk video game"
+    ],
+    "sourcePlatformValues": [
+      "Microsoft Windows",
+      "PlayStation 4",
+      "PlayStation 5",
+      "Xbox One",
+      "Xbox Series X and Series S",
+      "Nintendo Switch 2"
+    ],
+    "yearSource": "Wikidata item description",
+    "genresRaw": [
+      "action role-playing game",
+      "science fiction video game",
+      "cyberpunk video game"
+    ],
+    "platformsRaw": [
+      "Microsoft Windows",
+      "PlayStation 4",
+      "PlayStation 5",
+      "Xbox One",
+      "Xbox Series X and Series S",
+      "Nintendo Switch 2"
+    ]
+  },
+  {
+    "id": "valheim",
+    "qid": "Q105100327",
+    "name": "Valheim",
+    "year": 2026,
+    "genres": [
+      "Hayatta kalma"
+    ],
+    "platforms": [
+      "PC",
+      "PlayStation",
+      "Xbox",
+      "Switch"
+    ],
+    "studio": "Iron Gate Studio",
+    "url": "https://www.valheimgame.com",
+    "sourceUrl": "https://www.wikidata.org/wiki/Q105100327",
+    "sourceRetrievedAt": "2026-10-05",
+    "sourceGenreValues": [
+      "survival game"
+    ],
+    "sourcePlatformValues": [
+      "Microsoft Windows",
+      "Linux",
+      "macOS",
+      "PlayStation 5",
+      "Xbox One",
+      "Xbox Series X and Series S",
+      "Nintendo Switch 2"
+    ],
+    "yearSource": "Wikidata item description",
+    "genresRaw": [
+      "survival game"
+    ],
+    "platformsRaw": [
+      "Microsoft Windows",
+      "Linux",
+      "macOS",
+      "PlayStation 5",
+      "Xbox One",
+      "Xbox Series X and Series S",
+      "Nintendo Switch 2"
+    ]
+  },
+  {
+    "id": "return-of-the-obra-dinn",
+    "qid": "Q48987695",
+    "name": "Return of the Obra Dinn",
+    "year": 2018,
+    "genres": [
+      "Bulmaca",
+      "Macera"
+    ],
+    "platforms": [
+      "PC",
+      "PlayStation",
+      "Xbox",
+      "Switch"
+    ],
+    "studio": "Lucas Pope",
+    "url": "https://obradinn.com/",
+    "sourceUrl": "https://www.wikidata.org/wiki/Q48987695",
+    "sourceRetrievedAt": "2026-10-05",
+    "sourceGenreValues": [
+      "puzzle video game",
+      "adventure video game",
+      "mystery video game"
+    ],
+    "sourcePlatformValues": [
+      "Microsoft Windows",
+      "macOS",
+      "PlayStation 4",
+      "Xbox One",
+      "Nintendo Switch"
+    ],
+    "yearSource": "Wikidata item description",
+    "genresRaw": [
+      "puzzle video game",
+      "adventure video game",
+      "mystery video game"
+    ],
+    "platformsRaw": [
+      "Microsoft Windows",
+      "macOS",
+      "PlayStation 4",
+      "Xbox One",
+      "Nintendo Switch"
+    ]
+  },
+  {
+    "id": "dredge",
+    "qid": "Q113647971",
+    "name": "Dredge",
+    "year": 2023,
+    "genres": [
+      "Korku",
+      "Macera",
+      "Simülasyon"
+    ],
+    "platforms": [
+      "PC",
+      "PlayStation",
+      "Xbox",
+      "Switch",
+      "iOS"
+    ],
+    "studio": "Black Salt Games",
+    "url": "https://www.dredge.game",
+    "sourceUrl": "https://www.wikidata.org/wiki/Q113647971",
+    "sourceRetrievedAt": "2026-10-05",
+    "sourceGenreValues": [
+      "horror video game",
+      "adventure video game",
+      "fishing video game"
+    ],
+    "sourcePlatformValues": [
+      "Microsoft Windows",
+      "macOS",
+      "PlayStation 4",
+      "PlayStation 5",
+      "Xbox One",
+      "Xbox Series X and Series S",
+      "Nintendo Switch",
+      "iOS"
+    ],
+    "yearSource": "Wikidata item description",
+    "genresRaw": [
+      "horror video game",
+      "adventure video game",
+      "fishing video game"
+    ],
+    "platformsRaw": [
+      "Microsoft Windows",
+      "macOS",
+      "PlayStation 4",
+      "PlayStation 5",
+      "Xbox One",
+      "Xbox Series X and Series S",
+      "Nintendo Switch",
+      "iOS"
+    ]
+  },
+  {
+    "id": "portal-2",
+    "qid": "Q279446",
+    "name": "Portal 2",
+    "year": 2011,
+    "genres": [
+      "Bulmaca",
+      "FPS",
+      "Aksiyon",
+      "Bilimkurgu",
+      "Kıyamet Sonrası"
+    ],
+    "platforms": [
+      "PC",
+      "PlayStation",
+      "Xbox"
+    ],
+    "studio": "Valve Corporation",
+    "url": "http://www.thinkwithportals.com",
+    "sourceUrl": "https://www.wikidata.org/wiki/Q279446",
+    "sourceRetrievedAt": "2026-10-05",
+    "sourceGenreValues": [
+      "puzzle video game",
+      "first-person shooter",
+      "science fiction video game",
+      "post-apocalyptic video game"
+    ],
+    "sourcePlatformValues": [
+      "Microsoft Windows",
+      "Linux",
+      "macOS",
+      "PlayStation 3",
+      "Xbox 360"
+    ],
+    "yearSource": "Wikidata item description",
+    "genresRaw": [
+      "puzzle video game",
+      "first-person shooter",
+      "science fiction video game",
+      "post-apocalyptic video game"
+    ],
+    "platformsRaw": [
+      "Microsoft Windows",
+      "Linux",
+      "macOS",
+      "PlayStation 3",
+      "Xbox 360"
+    ]
+  },
+  {
+    "id": "half-life-2",
+    "qid": "Q193581",
+    "name": "Half-Life 2",
+    "year": 2004,
+    "genres": [
+      "FPS",
+      "Aksiyon",
+      "Bilimkurgu",
+      "Kıyamet Sonrası"
+    ],
+    "platforms": [
+      "PC",
+      "PlayStation",
+      "Xbox",
+      "Android"
+    ],
+    "studio": "Valve Corporation",
+    "url": "https://www.half-life.com/en/halflife2",
+    "sourceUrl": "https://www.wikidata.org/wiki/Q193581",
+    "sourceRetrievedAt": "2026-10-05",
+    "sourceGenreValues": [
+      "first-person shooter",
+      "science fiction video game",
+      "post-apocalyptic video game"
+    ],
+    "sourcePlatformValues": [
+      "Microsoft Windows",
+      "Linux",
+      "macOS",
+      "PlayStation 3",
+      "Xbox",
+      "Xbox 360",
+      "Android"
+    ],
+    "yearSource": "Wikidata item description",
+    "genresRaw": [
+      "first-person shooter",
+      "science fiction video game",
+      "post-apocalyptic video game"
+    ],
+    "platformsRaw": [
+      "Microsoft Windows",
+      "Linux",
+      "macOS",
+      "PlayStation 3",
+      "Xbox",
+      "Xbox 360",
+      "Android"
+    ]
+  },
+  {
+    "id": "control",
+    "qid": "Q54935655",
+    "name": "Control",
+    "year": 2019,
+    "genres": [
+      "Aksiyon",
+      "Macera",
+      "Bilimkurgu"
+    ],
+    "platforms": [
+      "PC",
+      "PlayStation",
+      "Xbox",
+      "Switch"
+    ],
+    "studio": "Remedy Entertainment",
+    "url": "https://controlgame.com",
+    "sourceUrl": "https://www.wikidata.org/wiki/Q54935655",
+    "sourceRetrievedAt": "2026-10-05",
+    "sourceGenreValues": [
+      "action-adventure game",
+      "third-person shooter",
+      "science fiction video game"
+    ],
+    "sourcePlatformValues": [
+      "Microsoft Windows",
+      "PlayStation 4",
+      "PlayStation 5",
+      "Xbox One",
+      "Xbox Series X and Series S",
+      "Nintendo Switch"
+    ],
+    "yearSource": "Wikidata item description",
+    "genresRaw": [
+      "action-adventure game",
+      "third-person shooter",
+      "science fiction video game"
+    ],
+    "platformsRaw": [
+      "Microsoft Windows",
+      "PlayStation 4",
+      "PlayStation 5",
+      "Xbox One",
+      "Xbox Series X and Series S",
+      "Nintendo Switch"
+    ]
+  },
+  {
+    "id": "dark-souls-iii",
+    "qid": "Q20112508",
+    "name": "Dark Souls III",
+    "year": 2016,
+    "genres": [
+      "Aksiyon",
+      "RPG",
+      "Fantastik"
+    ],
+    "platforms": [
+      "PC",
+      "PlayStation",
+      "Xbox"
+    ],
+    "studio": "FromSoftware",
+    "url": "https://www.bandainamcoent.com/games/dark-souls-iii",
+    "sourceUrl": "https://www.wikidata.org/wiki/Q20112508",
+    "sourceRetrievedAt": "2026-10-05",
+    "sourceGenreValues": [
+      "action role-playing game",
+      "soulslike",
+      "dark fantasy video game"
+    ],
+    "sourcePlatformValues": [
+      "Microsoft Windows",
+      "PlayStation 4",
+      "Xbox One"
+    ],
+    "yearSource": "Wikidata item description",
+    "genresRaw": [
+      "action role-playing game",
+      "soulslike",
+      "dark fantasy video game"
+    ],
+    "platformsRaw": [
+      "Microsoft Windows",
+      "PlayStation 4",
+      "Xbox One"
+    ]
+  },
+  {
+    "id": "cuphead",
+    "qid": "Q18149495",
+    "name": "Cuphead",
+    "year": 2017,
+    "genres": [
+      "Platform",
+      "Aksiyon"
+    ],
+    "platforms": [
+      "PC",
+      "PlayStation",
+      "Xbox",
+      "Switch"
+    ],
+    "studio": "Studio MDHR",
+    "url": "https://cupheadgame.com",
+    "sourceUrl": "https://www.wikidata.org/wiki/Q18149495",
+    "sourceRetrievedAt": "2026-10-05",
+    "sourceGenreValues": [
+      "platformer",
+      "run and gun"
+    ],
+    "sourcePlatformValues": [
+      "Microsoft Windows",
+      "macOS",
+      "PlayStation 4",
+      "Xbox One",
+      "Nintendo Switch"
+    ],
+    "yearSource": "Wikidata item description",
+    "genresRaw": [
+      "platformer",
+      "run and gun"
+    ],
+    "platformsRaw": [
+      "Microsoft Windows",
+      "macOS",
+      "PlayStation 4",
+      "Xbox One",
+      "Nintendo Switch"
+    ]
+  },
+  {
+    "id": "age-of-empires-ii-the-age-of-kings",
+    "qid": "Q34852",
+    "name": "Age of Empires II: The Age of Kings",
+    "year": 1999,
+    "genres": [
+      "Strateji"
+    ],
+    "platforms": [
+      "PC"
+    ],
+    "studio": "Ensemble Studios",
+    "url": "http://www.microsoft.com/games/age2/",
+    "sourceUrl": "https://www.wikidata.org/wiki/Q34852",
+    "sourceRetrievedAt": "2026-10-05",
+    "sourceGenreValues": [
+      "real-time strategy"
+    ],
+    "sourcePlatformValues": [
+      "Microsoft Windows"
+    ],
+    "yearSource": "Wikidata item description",
+    "genresRaw": [
+      "real-time strategy"
+    ],
+    "platformsRaw": [
+      "Microsoft Windows"
+    ]
+  },
+  {
+    "id": "terraria",
+    "qid": "Q332697",
+    "name": "Terraria",
+    "year": 2011,
+    "genres": [
+      "Aksiyon",
+      "Macera",
+      "RPG",
+      "Açık dünya"
+    ],
+    "platforms": [
+      "PC",
+      "PlayStation",
+      "Xbox",
+      "Switch",
+      "Android",
+      "iOS"
+    ],
+    "studio": "Engine Software",
+    "url": "https://terraria.org/",
+    "sourceUrl": "https://www.wikidata.org/wiki/Q332697",
+    "sourceRetrievedAt": "2026-10-05",
+    "sourceGenreValues": [
+      "action-adventure game",
+      "role-playing video game",
+      "sandbox game"
+    ],
+    "sourcePlatformValues": [
+      "Microsoft Windows",
+      "Linux",
+      "macOS",
+      "PlayStation 3",
+      "PlayStation 4",
+      "PlayStation 5",
+      "PlayStation Vita",
+      "Xbox 360",
+      "Xbox One",
+      "Nintendo Switch",
+      "Android",
+      "iOS"
+    ],
+    "yearSource": "Wikidata item description",
+    "genresRaw": [
+      "action-adventure game",
+      "role-playing video game",
+      "sandbox game"
+    ],
+    "platformsRaw": [
+      "Microsoft Windows",
+      "Linux",
+      "macOS",
+      "PlayStation 3",
+      "PlayStation 4",
+      "PlayStation 5",
+      "PlayStation Vita",
+      "Xbox 360",
+      "Xbox One",
+      "Nintendo Switch",
+      "Android",
+      "iOS"
+    ]
+  },
+  {
+    "id": "project-zomboid",
+    "qid": "Q3603390",
+    "name": "Project Zomboid",
+    "year": 2013,
+    "genres": [
+      "RPG",
+      "Hayatta kalma",
+      "Korku"
+    ],
+    "platforms": [
+      "PC"
+    ],
+    "studio": "The Indie Stone",
+    "url": "https://projectzomboid.com/",
+    "sourceUrl": "https://www.wikidata.org/wiki/Q3603390",
+    "sourceRetrievedAt": "2026-10-05",
+    "sourceGenreValues": [
+      "role-playing video game",
+      "survival horror"
+    ],
+    "sourcePlatformValues": [
+      "Microsoft Windows",
+      "Linux",
+      "macOS"
+    ],
+    "yearSource": "Wikidata item description",
+    "genresRaw": [
+      "role-playing video game",
+      "survival horror"
+    ],
+    "platformsRaw": [
+      "Microsoft Windows",
+      "Linux",
+      "macOS"
+    ]
+  },
+  {
+    "id": "hades",
+    "qid": "Q59756366",
+    "name": "Hades",
+    "year": 2020,
+    "genres": [
+      "Aksiyon",
+      "RPG",
+      "Roguelike"
+    ],
+    "platforms": [
+      "PC",
+      "PlayStation",
+      "Xbox",
+      "Switch"
+    ],
+    "studio": "Supergiant Games",
+    "url": "https://www.supergiantgames.com/games/hades",
+    "sourceUrl": "https://www.wikidata.org/wiki/Q59756366",
+    "sourceRetrievedAt": "2026-10-05",
+    "sourceGenreValues": [
+      "action role-playing game",
+      "roguelike",
+      "roguelite"
+    ],
+    "sourcePlatformValues": [
+      "Microsoft Windows",
+      "macOS",
+      "PlayStation 4",
+      "PlayStation 5",
+      "Xbox One",
+      "Xbox Series X and Series S",
+      "Nintendo Switch"
+    ],
+    "yearSource": "Wikidata item description",
+    "genresRaw": [
+      "action role-playing game",
+      "roguelike",
+      "roguelite"
+    ],
+    "platformsRaw": [
+      "Microsoft Windows",
+      "macOS",
+      "PlayStation 4",
+      "PlayStation 5",
+      "Xbox One",
+      "Xbox Series X and Series S",
+      "Nintendo Switch"
+    ]
+  },
+  {
+    "id": "abzu",
+    "qid": "Q20899382",
+    "name": "Abzû",
+    "year": 2016,
+    "genres": [
+      "Macera",
+      "Simülasyon"
+    ],
+    "platforms": [
+      "PC",
+      "PlayStation",
+      "Xbox",
+      "Switch"
+    ],
+    "studio": "Giant Squid",
+    "url": "http://www.abzugame.com/",
+    "sourceUrl": "https://www.wikidata.org/wiki/Q20899382",
+    "sourceRetrievedAt": "2026-10-05",
+    "sourceGenreValues": [
+      "adventure video game",
+      "simulation video game"
+    ],
+    "sourcePlatformValues": [
+      "Microsoft Windows",
+      "PlayStation 4",
+      "Xbox One",
+      "Nintendo Switch"
+    ],
+    "yearSource": "Wikidata item description",
+    "genresRaw": [
+      "adventure video game",
+      "simulation video game"
+    ],
+    "platformsRaw": [
+      "Microsoft Windows",
+      "PlayStation 4",
+      "Xbox One",
+      "Nintendo Switch"
+    ]
+  },
+  {
+    "id": "dave-the-diver",
+    "qid": "Q114995908",
+    "name": "Dave the Diver",
+    "year": 2023,
+    "genres": [
+      "Macera"
+    ],
+    "platforms": [
+      "PC",
+      "PlayStation",
+      "Xbox",
+      "Switch",
+      "Android",
+      "iOS"
+    ],
+    "studio": "Mintrocket",
+    "url": "https://mintrocketgames.com/en/DaveTheDiver",
+    "sourceUrl": "https://www.wikidata.org/wiki/Q114995908",
+    "sourceRetrievedAt": "2026-10-05",
+    "sourceGenreValues": [
+      "adventure video game"
+    ],
+    "sourcePlatformValues": [
+      "Microsoft Windows",
+      "macOS",
+      "PlayStation 4",
+      "PlayStation 5",
+      "Xbox Series X and Series S",
+      "Nintendo Switch",
+      "Nintendo Switch 2",
+      "Android",
+      "iOS"
+    ],
+    "yearSource": "Wikidata item description",
+    "genresRaw": [
+      "adventure video game"
+    ],
+    "platformsRaw": [
+      "Microsoft Windows",
+      "macOS",
+      "PlayStation 4",
+      "PlayStation 5",
+      "Xbox Series X and Series S",
+      "Nintendo Switch",
+      "Nintendo Switch 2",
+      "Android",
+      "iOS"
+    ]
+  }
+]
