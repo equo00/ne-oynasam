@@ -1,0 +1,132 @@
+{
+  "checkedAt": "2026-10-08T12:41:55.777Z",
+  "counts": {
+    "games": 1323,
+    "scores": 962,
+    "pc": 708,
+    "other": 2,
+    "unknown": 252,
+    "missing": 361
+  },
+  "preservedScores": 958,
+  "newScores": 4,
+  "preservedGameContent": 1323,
+  "archives": [
+    "age-of-empires-ii-the-age-of-kings",
+    "deus-ex-human-revolution",
+    "minecraft"
+  ],
+  "health": {
+    "ok": true,
+    "apiVersion": 2,
+    "catalogSize": 1323,
+    "storage": "ready",
+    "catalog": {
+      "ready": true,
+      "stage": "done",
+      "phase": "done",
+      "cursor": "valheim",
+      "processed": 1350
+    },
+    "scoreImport": {
+      "ready": true,
+      "processed": 690,
+      "total": 690,
+      "stage": "done"
+    },
+    "source": null
+  },
+  "searchAndOtherPlatformFilter": true,
+  "assets": [
+    {
+      "name": "app.js",
+      "sha256": "a542b6da2d43efa4abe26c4b0c3712e123152825d5f3e643cd2ff92c2adda49b"
+    },
+    {
+      "name": "metacritic-users.json",
+      "sha256": "6f5541e6e2d079a911fbb81c704551657e15f7df547d8609bda248acf8869a99"
+    },
+    {
+      "name": "game-identities.json",
+      "sha256": "dab5b33aff2d05a49fb175d24e9e203f49736696627518075bd8b0e7333c76a7"
+    },
+    {
+      "name": "score-data-source.tar.gz",
+      "sha256": "e1824d49ad9a36426ca636c34348f22b532d9b819a7eb4e354caa06ed25a7cab"
+    }
+  ],
+  "newGames": [
+    {
+      "id": "steam-3393110",
+      "name": "AION 2",
+      "score": 6.5,
+      "platform": "PC",
+      "userRatings": 13
+    },
+    {
+      "id": "steam-3940610",
+      "name": "EA SPORTS™ Madden NFL 27",
+      "score": 6.2,
+      "platform": "PlayStation 5",
+      "userRatings": 19
+    },
+    {
+      "id": "steam-2215200",
+      "name": "LEGO® Batman™: Legacy of the Dark Knight",
+      "score": 8.4,
+      "platform": "PlayStation 5",
+      "userRatings": 635
+    },
+    {
+      "id": "steam-2357570",
+      "name": "Overwatch®",
+      "score": 2,
+      "platform": "PC",
+      "userRatings": 5129
+    }
+  ],
+  "browserVisualQA": false,
+  "tests": {
+    "testFiles": 20,
+    "failures": 0,
+    "typeScript": true,
+    "productionBuild": true
+  },
+  "history": {
+    "rows": 1591,
+    "preservedHistoricalRecords": 901,
+    "newHistoryRecords": 4,
+    "pages": 144,
+    "checked": true,
+    "longNewPayloadPages": 1,
+    "newCompletePayloadsVerifiedViaCatalogAPI": true
+  },
+  "preservedPersonalTables": [
+    {
+      "table": "library",
+      "rows": 3
+    },
+    {
+      "table": "lists",
+      "rows": 0
+    },
+    {
+      "table": "list_games",
+      "rows": 0
+    },
+    {
+      "table": "catalog_overrides",
+      "rows": 0
+    }
+  ],
+  "publication": {
+    "version": 30,
+    "versionId": "appgprj_6ac3ff5839848191921b1e98dda4014c~appgver_224bf4128cdc81919c3168592cee6fef",
+    "deploymentId": "appgdep_6ac78efd4ab48191b4d2fe100fd40751",
+    "status": "succeeded",
+    "applicationSourceCommit": "d3072d5c9f82eef3f5a8d3b09487ff1624fef50d",
+    "githubApplicationCommit": "6e65fe60452a1b32ebc8c92ad808f28594447b6c",
+    "commonTree": "4759a6b871c48a95d0bb78d200dec639dbc260bc",
+    "url": "https://ne-oynasam-samet.sameteskibag-se.chatgpt.site"
+  }
+}

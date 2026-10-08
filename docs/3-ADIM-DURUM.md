@@ -54,4 +54,18 @@ Yerel kabul edilen toplam 962 puan: 708 PC, iki PlayStation 5, 252 platform beli
 
 Bu grubun sekiz oyununda yalnızca önbellekte tbd, üç oyununda erişim engeli, iki oyununda kimlik belirsizliği/bulunamaması vardır. Bunlar güncel Metacritic'te puan olmadığı anlamına gelmez. Araştırma, kimlik kanıtı ve kaynak yaşı `data/metacritic-direct-batches/2026-10-08-01.json` ve `data/METACRITIC-DIRECT-REPORT.json` içinde saklanır. 3. adım bütünüyle tamamlanmış değildir.
 
-Bu kaynak checkpoint'inde GitHub ana dal aktarımı, yayın ve canlı veri kontrolü henüz tamamlanmış sayılmaz; sonuçları doğrulamadan tamamlandı olarak işaretlenmez.
+### İlk grubun ayrı doğrulama sonuçları
+
+| Aşama | Doğrulanan sonuç |
+| --- | --- |
+| Test | 17 MJS ve üç CJS test dosyası, TypeScript kontrolü ve üretim derlemesi geçti. Arama, diğer platform puanı, gerçek SQL, kişisel veri ve puan geçmişi korunması ayrıca sınandı. |
+| GitHub | Ana dal `6e65fe60452a1b32ebc8c92ad808f28594447b6c` commit'ine güncellendi. İlk deneme eski PC zorunluluğunu sınayan testler nedeniyle otomatik incelemede durdu; testler yeni onaylı kurala göre düzeltildikten ve bütün kontroller geçtikten sonra yeni doğrulanmış commit başarıyla kaydedildi. |
+| Sites kaynak | Yayımlanan uygulama commit'i `d3072d5c9f82eef3f5a8d3b09487ff1624fef50d`. GitHub'la ortak ağaç: `4759a6b871c48a95d0bb78d200dec639dbc260bc`. |
+| Canlı yayın | 30. sürüm başarıyla yayımlandı; sürüm `appgprj_6ac3ff5839848191921b1e98dda4014c~appgver_224bf4128cdc81919c3168592cee6fef`, yayın `appgdep_6ac78efd4ab48191b4d2fe100fd40751`. |
+| Canlı aktarım | Eski 686 kayıtlık görev `done` kaldı. Yeni `metacritic-direct-4839ce716d9cb32598f92e61` görevi dört kaydı atomik işledi, `done`, kilit boş. Sağlık yanıtı 690/690 hazır. |
+| Canlı katalog | 23 sayfanın tamamında 1.323 oyun, 962 puan, 708 PC, iki PlayStation 5, 252 platform belirsiz ve 361 puansız oyun doğrulandı. Dört yeni puan kaynak kaydıyla birebir aynı; önceki 958 seçili puan değişmedi. |
+| Veri korunması | 1.323 oyunun puan dışı alanları birebir aynı; görüntülenme sayıları ziyaretlerle değişebildiğinden bu karşılaştırmanın dışında tutuldu. Üç arşiv kimliği erişilebilir. Kişisel library/listeler/liste oyunları ve manuel düzenleme tablosu yayın öncesiyle aynı. |
+| Canlı puan geçmişi | 1.591 kayıt, 144 sınırlı sayfada okundu. Önceki 901 tarihsel kaydın tam puan içeriği kaynak geçmişiyle birebir aynı; dört yeni kaydın sayısal alanları ayrıca doğru. Bir yeni uzun payload araçta kısaltıldığı için yeni dört tam içerik ayrıca canlı katalog API'siyle doğrulandı. |
+| Canlı davranış | AION araması yeni puanı buldu. LEGO + en az 8 puan filtresi PlayStation 5 puanını sonuçlara kattı. app.js, kimlikler, puan verisi ve kaynak arşivinin yayımlanan SHA-256 değerleri yerel paketle aynı. |
+
+Makine tarafından okunabilir kanıt [data/METACRITIC-LIVE-VERIFICATION.json](../data/METACRITIC-LIVE-VERIFICATION.json) dosyasındadır. Tarayıcı üzerinden görsel/mobil ve gerçek giriş etkileşimi bu ortamda doğrulanmadı; VM arayüz, gerçek SQL ve canlı HTTP/API kontrolleri geçti. Bu son doğrulama checkpoint'i uygulama dosyalarını değiştirmez; uygulama yayınının commit'i yukarıda ayrı belirtilmiştir.
