@@ -3,20 +3,9 @@
   "games": 1323,
   "verifiedCovers": 905,
   "sourceProvidedCovers": 1323,
-  "userScores": 901,
+  "userScores": 958,
   "verifiedHistoricalPcScores": 2,
   "excludedScoreMappings": [
-    {
-      "gameId": "steam-730",
-      "steamAppId": 730,
-      "name": "Counter-Strike 2",
-      "status": "missing_score",
-      "metacriticId": "counter-strike-2",
-      "reason": "No verified user-score fact for the approved Metacritic resource",
-      "sourceHadScore": true,
-      "sourceGap": "unusable_source_association",
-      "metacriticScoreAvailability": "not_established"
-    },
     {
       "gameId": "the-witcher-3-wild-hunt",
       "steamAppId": 292030,
@@ -24,17 +13,6 @@
       "status": "identity_conflict",
       "metacriticId": null,
       "reason": "Current Steam identity is The Witcher 3: Wild Hunt — Remastered; primary Steam news says new remaster launched 2026-09-29 under same app ID. Old generic resource needs edition-specific score evidence.",
-      "sourceHadScore": true,
-      "sourceGap": "unusable_source_association",
-      "metacriticScoreAvailability": "not_established"
-    },
-    {
-      "gameId": "steam-594650",
-      "steamAppId": 594650,
-      "name": "Hunt: Showdown 1896",
-      "status": "missing_score",
-      "metacriticId": "hunt-showdown-1896",
-      "reason": "No verified user-score fact for the approved Metacritic resource",
       "sourceHadScore": true,
       "sourceGap": "unusable_source_association",
       "metacriticScoreAvailability": "not_established"
@@ -51,45 +29,12 @@
       "metacriticScoreAvailability": "not_established"
     },
     {
-      "gameId": "steam-239140",
-      "steamAppId": 239140,
-      "name": "Dying Light",
-      "status": "missing_score",
-      "metacriticId": "dying-light",
-      "reason": "No verified user-score fact for the approved Metacritic resource",
-      "sourceHadScore": true,
-      "sourceGap": "unusable_source_association",
-      "metacriticScoreAvailability": "not_established"
-    },
-    {
-      "gameId": "steam-1547000",
-      "steamAppId": 1547000,
-      "name": "Grand Theft Auto: San Andreas – The Definitive Edition",
-      "status": "missing_score",
-      "metacriticId": "grand-theft-auto-san-andreas-the-definitive",
-      "reason": "No verified user-score fact for the approved Metacritic resource",
-      "sourceHadScore": true,
-      "sourceGap": "unusable_source_association",
-      "metacriticScoreAvailability": "not_established"
-    },
-    {
       "gameId": "steam-1938090",
       "steamAppId": 1938090,
       "name": "Call of Duty®",
       "status": "identity_conflict",
       "metacriticId": null,
       "reason": "Steam product is the Call of Duty hub supporting multiple current games and Warzone. One Modern Warfare II game score is not a score for this multi-game launcher.",
-      "sourceHadScore": true,
-      "sourceGap": "unusable_source_association",
-      "metacriticScoreAvailability": "not_established"
-    },
-    {
-      "gameId": "disco-elysium",
-      "steamAppId": 632470,
-      "name": "Disco Elysium - The Final Cut",
-      "status": "missing_score",
-      "metacriticId": "disco-elysium-the-final-cut",
-      "reason": "No verified user-score fact for the approved Metacritic resource",
       "sourceHadScore": true,
       "sourceGap": "unusable_source_association",
       "metacriticScoreAvailability": "not_established"
@@ -117,34 +62,12 @@
       "metacriticScoreAvailability": "not_established"
     },
     {
-      "gameId": "steam-32440",
-      "steamAppId": 32440,
-      "name": "LEGO® Star Wars™ - The Complete Saga",
-      "status": "missing_score",
-      "metacriticId": "lego-star-wars-the-complete-saga",
-      "reason": "No verified user-score fact for the approved Metacritic resource",
-      "sourceHadScore": true,
-      "sourceGap": "unusable_source_association",
-      "metacriticScoreAvailability": "not_established"
-    },
-    {
       "gameId": "steam-221680",
       "steamAppId": 221680,
       "name": "Rocksmith® 2014 Edition REMASTERED LEARN & PLAY",
       "status": "identity_conflict",
       "metacriticId": null,
       "reason": "Hold: current publisher identifies Learn & Play as a new 2024 edition with a changed music catalog. It states previous Remastered owners cannot download Learn & Play to protect their original licensed music. The source resource scores the older Remastered edition, and Wikidata identifies earlier Rocksmith 2014 Edition; neither establishes this new edition user score.",
-      "sourceHadScore": true,
-      "sourceGap": "unusable_source_association",
-      "metacriticScoreAvailability": "not_established"
-    },
-    {
-      "gameId": "steam-207610",
-      "steamAppId": 207610,
-      "name": "The Walking Dead",
-      "status": "missing_score",
-      "metacriticId": "the-walking-dead-a-telltale-games-series",
-      "reason": "No verified user-score fact for the approved Metacritic resource",
       "sourceHadScore": true,
       "sourceGap": "unusable_source_association",
       "metacriticScoreAvailability": "not_established"
@@ -199,5 +122,5 @@
   ],
   "developers": 1216,
   "scoreIdentityReport": "METACRITIC-REPORT.json",
-  "reviewedPrimaryPcScores": 18
+  "reviewedPrimaryPcScores": 704
 }

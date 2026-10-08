@@ -8,9 +8,13 @@ Ruh haline ve tercihlerine göre oyun bulmanı sağlayan Türkçe oyun keşif si
 
 - Yayımlanmış, benzersiz 1.323 Windows/PC oyunu. Katalog oluşturulurken DLC, paket ve henüz çıkmamış kayıtlar elenir. Önceden doğrulanmış oyunların kalıcı kimlikleri korunur.
 - 1.323 oyunun yayıncıya ait gerçek kapak görseli bağlantısı. İlk aktarımda 905 görselin yanıtı ayrıca doğrulanmıştır. Diğer bağlantılar mağaza kayıtlarından alınmıştır. Kapak yüklenemezse aynı oyunun alternatif mağaza görseli denenir; o da yüklenemezse görselin bulunamadığı belirtilir.
-- Kaynakta oyun kimliğiyle eşleştirilmiş 901 Metacritic kullanıcı puanı korunur. Bunların 20'sinin PC platformu doğrulanmıştır ve mevcut 901 puan gösterilir; platformu belirtilmeyen 881 kayıtta platform belirsizliği açıkça korunur. Bu puanlar eleştirmen puanlarından, mağazadaki olumlu değerlendirme yüzdesinden ve kullanıcının kendi puanından ayrı tutulur. CS2/CS:GO ve yeniden düzenlenmiş sürüm gibi yanlış eşleşmeler kabul edilmez. Puanı olmayan 422 kayıt ile platformu doğrulanmamış 881 kayıt [iş listesinde](ROADMAP.md) ayrıca incelenir; bulunamayan puanlar üretilmez.
+- Oyun kimliğiyle eşleştirilmiş 958 Metacritic kullanıcı puanı gösterilir: 706 doğrulanmış PC puanı, 252 platformu belirsiz kayıt. Önceki 901 kayıt puan geçmişinde korunur. Bu puanlar eleştirmen puanlarından, mağazadaki olumlu değerlendirme yüzdesinden ve kullanıcının kendi puanından ayrı tutulur. CS2/CS:GO ve yeniden düzenlenmiş sürüm gibi yanlış eşleşmeler kabul edilmez. Puanı olmayan 365 kayıt ile platformu doğrulanmamış 252 kayıt [iş listesinde](ROADMAP.md) ayrıca incelenir; bulunamayan puanlar üretilmez.
 - Gerektiğinde ikincil kaynak bilgisiyle birlikte 1.216 geliştirici kaydı.
 - Güncel kapağı bulunmayan üç eski kayıt kişisel koleksiyonlarda erişilebilir kalır; katalog sayısına eklenmez. Disco Elysium'un The Final Cut sürümüne taşınması dahil, kişisel listelerde kullanılan oyun kimlikleri korunur.
+
+## Kullanıcı puanlarının durumu
+
+8 Ekim 2026 incelemesinde 57 eksik puan tamamlandı, 629 platformu belirsiz kayıt PC olarak doğrulandı. Katalogda 958 kullanıcı puanı bulunur: 706 doğrulanmış PC, 252 platform belirsiz. Puanı henüz doğrulanamayan 365 oyun ayrı inceleme kuyruğunda tutulur; değer üretilmez. Önceki 901 tam sayısal kayıt puan geçmişinde korunur. Kaynak önbellek gözlemleri canlı puan değildir. [Kaynak ve aktarım ayrıntıları](data/METACRITIC-SOURCES.md), [inceleme raporu](data/METACRITIC-STEP3-REPORT.json).
 
 ## Veri altyapısı
 
