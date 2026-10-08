@@ -7,17 +7,47 @@
   "sourceCoverage": {
     "secondaryDatasetScores": 252,
     "historicalWikidataScores": 2,
-    "reviewedPrimaryScores": 704,
+    "reviewedPrimaryScores": 708,
     "missingByStatus": {
-      "unverified_identity": 291,
-      "missing_score": 67,
+      "unverified_identity": 289,
+      "missing_score": 65,
       "identity_conflict": 7
     },
-    "missingWithoutSecondaryFact": 356,
+    "missingWithoutSecondaryFact": 352,
     "missingWithUnusableSecondaryFact": 9,
     "notice": "Missing from imported sources does not establish absence of a Metacritic user score. Primary cached observations retain their crawl-age labels; retrieval is not a live measurement."
   },
   "scores": {
+    "mc-user:reviewed:3393110:PC:2026-10-08:direct01": {
+      "recordId": "mc-user:reviewed:3393110:PC:2026-10-08:direct01",
+      "gameId": "steam-3393110",
+      "steamAppId": 3393110,
+      "metacriticId": "aion-2",
+      "metacriticNumericId": null,
+      "metric": "user-score",
+      "platform": "PC",
+      "score": 6.5,
+      "userRatings": 13,
+      "sourceUrl": "https://www.metacritic.com/game/aion-2/",
+      "retrievedAt": "2026-10-08T11:42:40Z",
+      "snapshotDate": "2026-10-08",
+      "scoreDate": null,
+      "provenance": {
+        "method": "user-supplied-capture",
+        "metricLabel": "User score",
+        "platformLabel": "PC",
+        "captureSha256": "48e03cc98964a125ceb4ae5b8d95793fdfdb90f3ad6faa30cd5ff748ff06f6af",
+        "evidenceSummary": "Kullanıcının 8 Ekim Metacritic görüntüsünde AION 2, PC, User Score 6.5 ve Based on 13 User Ratings açık. Görüntü yeniden yayımlanmaz. Eski arama önbelleğindeki tbd güncel puan yokluğu kanıtı değildir."
+      },
+      "url": "https://www.metacritic.com/game/aion-2/?platform=pc",
+      "sourceFactUrl": "https://www.metacritic.com/game/aion-2/",
+      "sourceSteamAppIds": [
+        3393110
+      ],
+      "sourceLabel": "Metacritic (PC kullanıcı puanı)",
+      "license": "Source rights retained",
+      "verification": "Reviewed primary numerical average, explicit PC platform, joined by persisted catalog / store / Metacritic IDs. Retrieval date is not the score measurement date; cached observations are not live scores."
+    },
     "mc-user:reviewed:730:PC:2026-10-08": {
       "recordId": "mc-user:reviewed:730:PC:2026-10-08",
       "gameId": "steam-730",
@@ -699,6 +729,53 @@
       "license": "GPL-3.0",
       "verification": "Stored game ID / Steam app ID / Metacritic resource ID crosswalk; source row ID joins the user-score fact. No live score or platform verification."
     },
+    "mc-user:reviewed:3940610:PS5:2026-10-08:direct01": {
+      "recordId": "mc-user:reviewed:3940610:PS5:2026-10-08:direct01",
+      "gameId": "steam-3940610",
+      "steamAppId": 3940610,
+      "metacriticId": "madden-nfl-27",
+      "metacriticNumericId": null,
+      "metric": "user-score",
+      "platform": "PlayStation 5",
+      "score": 6.2,
+      "userRatings": 19,
+      "sourceUrl": "https://www.metacritic.com/game/madden-nfl-27/",
+      "retrievedAt": "2026-10-08T12:11:20.564544Z",
+      "snapshotDate": "2026-10-08",
+      "scoreDate": null,
+      "provenance": {
+        "method": "public-primary-cache",
+        "metricLabel": "User score",
+        "platformLabel": "PlayStation 5",
+        "pageHeading": "Game overview",
+        "sourceCrawlLabel": "last month",
+        "retrievalReference": "turn24view1",
+        "evidenceSummary": "İncelenen birincil sayfada açık kullanıcı puanı ve kaynak platformu; önbellek yaşı korunur, ölçüm tarihi bilinmiyor.",
+        "ratingBuckets": [
+          "10",
+          "4",
+          "5"
+        ],
+        "platformEvidenceUrl": "https://www.metacritic.com/game/madden-nfl-27/user-reviews/?platform=playstation-5",
+        "platformEvidenceReference": "turn24view1",
+        "selectionReason": "PC kullanıcı puanı erişilebilir kaynaktan doğrulanamadı (turn25view1); PS5 bağlantısıyla işaretlenmiş aynı NFL 27 sürümü kabul edildi. Arcade Edition dışlandı.",
+        "conflictingCachedObservation": {
+          "score": 6.4,
+          "userRatings": 16,
+          "retrievalReference": "turn21search4",
+          "kind": "search-snippet",
+          "notice": "Arama özeti ile açılan sayfa farklı değerler verdi; seçilen tek gözlem 6.2/19, kesin ölçüm tarihi ve hangi önbelleğin güncel olduğu bilinmiyor."
+        }
+      },
+      "url": "https://www.metacritic.com/game/madden-nfl-27/?platform=playstation-5",
+      "sourceFactUrl": "https://www.metacritic.com/game/madden-nfl-27/",
+      "sourceSteamAppIds": [
+        3940610
+      ],
+      "sourceLabel": "Metacritic (PlayStation 5 kullanıcı puanı)",
+      "license": "Source rights retained",
+      "verification": "Reviewed primary numerical average, explicit PlayStation 5 platform, joined by persisted catalog / store / Metacritic IDs. Retrieval date is not the score measurement date; cached observations are not live scores."
+    },
     "mc-user:reviewed:3764200:PC:2026-10-08": {
       "recordId": "mc-user:reviewed:3764200:PC:2026-10-08",
       "gameId": "steam-3764200",
@@ -1313,6 +1390,83 @@
       "platform": null,
       "license": "GPL-3.0",
       "verification": "Stored game ID / Steam app ID / Metacritic resource ID crosswalk; source row ID joins the user-score fact. No live score or platform verification."
+    },
+    "mc-user:reviewed:2215200:PS5:2026-10-08:direct01": {
+      "recordId": "mc-user:reviewed:2215200:PS5:2026-10-08:direct01",
+      "gameId": "steam-2215200",
+      "steamAppId": 2215200,
+      "metacriticId": "lego-batman-legacy-of-the-dark-knight",
+      "metacriticNumericId": "1300699296",
+      "metric": "user-score",
+      "platform": "PlayStation 5",
+      "score": 8.4,
+      "userRatings": 635,
+      "sourceUrl": "https://www.metacritic.com/game/lego-batman-legacy-of-the-dark-knight/user-reviews/",
+      "retrievedAt": "2026-10-08T12:11:20.564544Z",
+      "snapshotDate": "2026-10-08",
+      "scoreDate": null,
+      "provenance": {
+        "method": "public-primary-cache",
+        "metricLabel": "User score",
+        "platformLabel": "PlayStation 5",
+        "pageHeading": "PlayStation 5 User Reviews",
+        "sourceCrawlLabel": "last month",
+        "retrievalReference": "turn23view0",
+        "evidenceSummary": "İncelenen birincil sayfada açık kullanıcı puanı ve kaynak platformu; önbellek yaşı korunur, ölçüm tarihi bilinmiyor.",
+        "ratingBuckets": [
+          "525",
+          "63",
+          "47"
+        ],
+        "selectionReason": "PC sayfasına erişim engelli (turn25view0); aynı Legacy sürümünün erişilebilir PS5 gözlemi tercih edildi."
+      },
+      "url": "https://www.metacritic.com/game/lego-batman-legacy-of-the-dark-knight/user-reviews/?platform=playstation-5",
+      "sourceFactUrl": "https://www.metacritic.com/game/lego-batman-legacy-of-the-dark-knight/user-reviews/",
+      "sourceSteamAppIds": [
+        2215200
+      ],
+      "sourceLabel": "Metacritic (PlayStation 5 kullanıcı puanı)",
+      "license": "Source rights retained",
+      "verification": "Reviewed primary numerical average, explicit PlayStation 5 platform, joined by persisted catalog / store / Metacritic IDs. Retrieval date is not the score measurement date; cached observations are not live scores."
+    },
+    "mc-user:reviewed:2357570:PC:2026-10-08:direct01": {
+      "recordId": "mc-user:reviewed:2357570:PC:2026-10-08:direct01",
+      "gameId": "steam-2357570",
+      "steamAppId": 2357570,
+      "metacriticId": "overwatch",
+      "metacriticNumericId": "1300508698",
+      "metric": "user-score",
+      "platform": "PC",
+      "score": 2,
+      "userRatings": 5129,
+      "sourceUrl": "https://www.metacritic.com/game/overwatch/",
+      "retrievedAt": "2026-10-08T12:11:20.564544Z",
+      "snapshotDate": "2026-10-08",
+      "scoreDate": null,
+      "provenance": {
+        "method": "public-primary-cache",
+        "metricLabel": "User score",
+        "platformLabel": "PC",
+        "pageHeading": "Game overview",
+        "sourceCrawlLabel": "last month",
+        "retrievalReference": "turn24view2",
+        "evidenceSummary": "Aynı birincil özet sayfasında User score 2.0, 5129 User Ratings ve tam 618+465+4046 oy grubu. Bağlı kullanıcı sayfasında PC başlığı var; 2510 yazılı yorum oy sayısı olarak alınmadı. Açıklama Overwatch 2, çıkış 10 Ağustos 2023; 2016 eseri ayrı tutuldu.",
+        "ratingBuckets": [
+          "618",
+          "465",
+          "4046"
+        ],
+        "platformEvidenceUrl": "https://www.metacritic.com/game/overwatch/user-reviews/?platform=pc",
+        "platformEvidenceReference": "turn24view0"
+      },
+      "url": "https://www.metacritic.com/game/overwatch/?platform=pc",
+      "sourceFactUrl": "https://www.metacritic.com/game/overwatch/",
+      "sourceSteamAppIds": [
+        2357570
+      ],
+      "sourceLabel": "Metacritic (PC kullanıcı puanı)",
+      "license": "Source rights retained",
+      "verification": "Reviewed primary numerical average, explicit PC platform, joined by persisted catalog / store / Metacritic IDs. Retrieval date is not the score measurement date; cached observations are not live scores."
     },
     "mc-user:reviewed:1808500:PC:2026-10-06": {
       "recordId": "mc-user:reviewed:1808500:PC:2026-10-06",

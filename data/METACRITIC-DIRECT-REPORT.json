@@ -1,0 +1,220 @@
+{
+  "schemaVersion": 1,
+  "policy": "metacritic-primary-pc-preferred-platform-fallback",
+  "baselineScores": 958,
+  "baselineSha256": "b4dfd8a4b89f59783e3808af54abb82521361044010f8a41d44dffecb5eef9d8",
+  "batches": [
+    {
+      "batchId": "direct-2026-10-08-01",
+      "checkedAt": "2026-10-08T12:11:20.564544Z",
+      "inputPath": "data/metacritic-direct-batches/2026-10-08-01.json",
+      "added": [
+        {
+          "gameId": "steam-3393110",
+          "recordId": "mc-user:reviewed:3393110:PC:2026-10-08:direct01",
+          "score": 6.5,
+          "platform": "PC",
+          "userRatings": 13
+        },
+        {
+          "gameId": "steam-3940610",
+          "recordId": "mc-user:reviewed:3940610:PS5:2026-10-08:direct01",
+          "score": 6.2,
+          "platform": "PlayStation 5",
+          "userRatings": 19
+        },
+        {
+          "gameId": "steam-2215200",
+          "recordId": "mc-user:reviewed:2215200:PS5:2026-10-08:direct01",
+          "score": 8.4,
+          "platform": "PlayStation 5",
+          "userRatings": 635
+        },
+        {
+          "gameId": "steam-2357570",
+          "recordId": "mc-user:reviewed:2357570:PC:2026-10-08:direct01",
+          "score": 2,
+          "platform": "PC",
+          "userRatings": 5129
+        }
+      ],
+      "investigations": [
+        {
+          "gameId": "steam-3393110",
+          "steamAppId": 3393110,
+          "name": "AION 2",
+          "status": "accepted",
+          "sourceUrl": "https://www.metacritic.com/game/aion-2/",
+          "retrievalReference": "turn1search0",
+          "summary": "Kullanıcı görüntüsü 6.5/13; eski tbd önbelleği kullanılmadı.",
+          "freshness": "Erişilen kaynak önbelleği veya kullanıcı görüntüsü; canlı puan ölçümü değil."
+        },
+        {
+          "gameId": "steam-1867240",
+          "steamAppId": 1867240,
+          "name": "WARDOGS",
+          "status": "cached_tbd",
+          "sourceUrl": "https://www.metacritic.com/game/wardogs/",
+          "retrievalReference": "turn8view0",
+          "summary": "BULKHEAD/PC doğrulandı; erişilen önbellekte tbd ve0 oy. WarDogs Red’s Return dışlandı.",
+          "freshness": "Erişilen kaynak önbelleği veya kullanıcı görüntüsü; canlı puan ölçümü değil."
+        },
+        {
+          "gameId": "steam-4019220",
+          "steamAppId": 4019220,
+          "name": "Dressmaker",
+          "status": "cached_tbd",
+          "sourceUrl": "https://www.metacritic.com/game/dressmaker/",
+          "retrievalReference": "turn4view0",
+          "summary": "Mevcut kimlik sayfası; erişilen eski önbellekte tbd, puan yokluğu sonucu çıkarılmadı.",
+          "freshness": "Erişilen kaynak önbelleği veya kullanıcı görüntüsü; canlı puan ölçümü değil."
+        },
+        {
+          "gameId": "steam-2288340",
+          "steamAppId": 2288340,
+          "name": "ACE COMBAT 8: WINGS OF THEVE",
+          "status": "access_blocked",
+          "sourceUrl": "https://www.metacritic.com/game/ace-combat-8-wings-of-theve/",
+          "retrievalReference": "turn14view0",
+          "summary": "Bandai Namco Aces ve doğru8 sürümü; kullanıcı puanı içeriğine erişim engelli.",
+          "freshness": "Erişilen kaynak önbelleği veya kullanıcı görüntüsü; canlı puan ölçümü değil."
+        },
+        {
+          "gameId": "steam-4080220",
+          "steamAppId": 4080220,
+          "name": "EA SPORTS FC™ 27",
+          "status": "access_blocked",
+          "sourceUrl": "https://www.metacritic.com/game/ea-sports-fc-27/",
+          "retrievalReference": "turn14view1",
+          "summary": "Doğru27 sayfa bağlantısı bulundu; sayısal kullanıcı puanı erişilemedi.",
+          "freshness": "Erişilen kaynak önbelleği veya kullanıcı görüntüsü; canlı puan ölçümü değil."
+        },
+        {
+          "gameId": "steam-2406770",
+          "steamAppId": 2406770,
+          "name": "Bodycam",
+          "status": "cached_tbd",
+          "sourceUrl": "https://www.metacritic.com/game/bodycam/",
+          "retrievalReference": "turn6view0",
+          "summary": "Reissad Studio doğru Bodycam; tbd/0 oy önbelleği, benzer isimler dışlandı.",
+          "freshness": "Erişilen kaynak önbelleği veya kullanıcı görüntüsü; canlı puan ölçümü değil."
+        },
+        {
+          "gameId": "steam-1912410",
+          "steamAppId": 1912410,
+          "name": "Minecraft Dungeons II",
+          "status": "access_blocked",
+          "sourceUrl": "https://www.metacritic.com/game/minecraft-dungeons-ii/",
+          "retrievalReference": "turn19view0",
+          "summary": "II devam oyununun sayfa bağlantısı bulundu; puan içeriği erişilemedi. İlk oyunun puanı kullanılmadı.",
+          "freshness": "Erişilen kaynak önbelleği veya kullanıcı görüntüsü; canlı puan ölçümü değil."
+        },
+        {
+          "gameId": "steam-3940610",
+          "steamAppId": 3940610,
+          "name": "EA SPORTS™ Madden NFL 27",
+          "status": "accepted_cached_conflict",
+          "sourceUrl": "https://www.metacritic.com/game/madden-nfl-27/",
+          "retrievalReference": "turn24view1",
+          "summary": "PS5 tek gözlem6.2/19; arama özeti6.4/16 farklı. Güncellik belirsizliği saklandı.",
+          "freshness": "Erişilen kaynak önbelleği veya kullanıcı görüntüsü; canlı puan ölçümü değil."
+        },
+        {
+          "gameId": "steam-2887580",
+          "steamAppId": 2887580,
+          "name": "Active Matter",
+          "status": "cached_tbd",
+          "sourceUrl": "https://www.metacritic.com/game/active-matter/",
+          "retrievalReference": "turn6view2",
+          "summary": "Matter Team/Gaijin/PC; tbd ve0 oy.",
+          "freshness": "Erişilen kaynak önbelleği veya kullanıcı görüntüsü; canlı puan ölçümü değil."
+        },
+        {
+          "gameId": "steam-2215200",
+          "steamAppId": 2215200,
+          "name": "LEGO® Batman™: Legacy of the Dark Knight",
+          "status": "accepted",
+          "sourceUrl": "https://www.metacritic.com/game/lego-batman-legacy-of-the-dark-knight/",
+          "retrievalReference": "turn23view0",
+          "summary": "PS5 8.4/635; PC sayfa erişimi engelli, platform yedeği.",
+          "freshness": "Erişilen kaynak önbelleği veya kullanıcı görüntüsü; canlı puan ölçümü değil."
+        },
+        {
+          "gameId": "steam-2357570",
+          "steamAppId": 2357570,
+          "name": "Overwatch®",
+          "status": "accepted",
+          "sourceUrl": "https://www.metacritic.com/game/overwatch/",
+          "retrievalReference": "turn24view2",
+          "summary": "PC2.0/5129; 2023 Overwatch2 açıklaması ve Steam2357570, 2016 ayrı.",
+          "freshness": "Erişilen kaynak önbelleği veya kullanıcı görüntüsü; canlı puan ölçümü değil."
+        },
+        {
+          "gameId": "steam-1488490",
+          "steamAppId": 1488490,
+          "name": "Nivalis Nights",
+          "status": "cached_tbd",
+          "sourceUrl": "https://www.metacritic.com/game/nivalis-nights/",
+          "retrievalReference": "turn12view2",
+          "summary": "ION LANDS ve29 Eylül2026; tbd/0 oy.",
+          "freshness": "Erişilen kaynak önbelleği veya kullanıcı görüntüsü; canlı puan ölçümü değil."
+        },
+        {
+          "gameId": "steam-3164500",
+          "steamAppId": 3164500,
+          "name": "Schedule I",
+          "status": "cached_tbd",
+          "sourceUrl": "https://www.metacritic.com/game/schedule-i/",
+          "retrievalReference": "turn10view5",
+          "summary": "TVGS/Hyland Point doğru oyun; tbd/0 oy, başka geliştiricili benzer adlar dışlandı.",
+          "freshness": "Erişilen kaynak önbelleği veya kullanıcı görüntüsü; canlı puan ölçümü değil."
+        },
+        {
+          "gameId": "steam-3124540",
+          "steamAppId": 3124540,
+          "name": "Far Far West",
+          "status": "cached_tbd",
+          "sourceUrl": "https://www.metacritic.com/game/far-far-west/",
+          "retrievalReference": "turn10view0",
+          "summary": "Evil Raptor vePC co-op robot kovboy oyunu; tbd/0 oy.",
+          "freshness": "Erişilen kaynak önbelleği veya kullanıcı görüntüsü; canlı puan ölçümü değil."
+        },
+        {
+          "gameId": "steam-3173560",
+          "steamAppId": 3173560,
+          "name": "Anomalous Coffee Machine",
+          "status": "identity_not_found",
+          "sourceUrl": null,
+          "retrievalReference": "turn15search1",
+          "summary": "Yalnızca Anomalous Coffee Machine2 bulundu; ilk oyuna atanmadı.",
+          "freshness": "Erişilen kaynak önbelleği veya kullanıcı görüntüsü; canlı puan ölçümü değil."
+        },
+        {
+          "gameId": "steam-1118520",
+          "steamAppId": 1118520,
+          "name": "Paralives",
+          "status": "cached_tbd",
+          "sourceUrl": "https://www.metacritic.com/game/paralives/",
+          "retrievalReference": "turn17view1",
+          "summary": "PC/Alex Masse; kullanıcı puanı tbd/0 oy, critic skoru kullanılmadı.",
+          "freshness": "Erişilen kaynak önbelleği veya kullanıcı görüntüsü; canlı puan ölçümü değil."
+        },
+        {
+          "gameId": "steam-376210",
+          "steamAppId": 376210,
+          "name": "The Isle",
+          "status": "identity_ambiguous",
+          "sourceUrl": "https://www.metacritic.com/game/the-isle/",
+          "retrievalReference": "turn17view2",
+          "summary": "Dinozor/PC adayı tbd; The Isle Development Team ile Afterthought LLC ilişkisi ayrı kimlik kanıtı gerektiriyor.",
+          "freshness": "Erişilen kaynak önbelleği veya kullanıcı görüntüsü; canlı puan ölçümü değil."
+        }
+      ]
+    }
+  ],
+  "scores": 962,
+  "remainingMissing": 361,
+  "verifiedPcScores": 708,
+  "verifiedOtherPlatformScores": 2,
+  "platformUnknown": 252
+}

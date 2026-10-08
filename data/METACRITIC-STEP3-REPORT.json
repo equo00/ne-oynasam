@@ -1,18 +1,18 @@
 {
   "schemaVersion": 1,
-  "checkedAt": "2026-10-08T08:26:08.087Z",
+  "checkedAt": "2026-10-08T12:11:20.564544Z",
   "catalogGames": 1323,
   "baselineScores": 901,
-  "scores": 958,
+  "scores": 962,
   "previouslyMissing": 422,
-  "recoveredMissing": 57,
+  "recoveredMissing": 61,
   "verifiedUnknownPlatform": 629,
-  "verifiedPcScores": 706,
+  "verifiedPcScores": 708,
   "platformUnknown": 252,
-  "remainingMissing": 365,
+  "remainingMissing": 361,
   "checkedGames": 1303,
   "attemptCount": 473,
-  "sourceLimitation": "Doğrudan Metacritic erişimi engellendi; erişilebilir birincil önbellekler ve mağaza kimlik kanıtları incelendi. Önbellek gözlemleri canlı puan değildir.",
+  "sourceLimitation": "Metacritic birincil sayfaları bağımsız aranır. Erişilebilir önbellek yaşı ve kullanıcı görüntüsü kanıtı korunur; tbd, erişim engeli ve kimlik belirsizliği ayrı raporlanır. Bu kayıtlar canlı ölçüm değildir.",
   "changedGames": [
     {
       "gameId": "steam-730",
@@ -5505,29 +5505,6 @@
   ],
   "remaining": [
     {
-      "gameId": "steam-3393110",
-      "steamAppId": 3393110,
-      "name": "AION 2",
-      "status": "unverified_identity",
-      "metacritic": null,
-      "investigation": "Erişilebilir kaynaklarda bu oyun/PC sürümü için kabul edilebilir kimlik ve sayısal puan birlikte doğrulanamadı. Metacritic puanı olmadığı sonucuna varılmaz.",
-      "attempts": [
-        {
-          "engine": "system2",
-          "games": [
-            "steam-3393110",
-            "steam-1867240",
-            "steam-2288340",
-            "steam-1912410"
-          ],
-          "kind": "identity-discovery",
-          "found": [
-            "battlefield-6"
-          ]
-        }
-      ]
-    },
-    {
       "gameId": "steam-1867240",
       "steamAppId": 1867240,
       "name": "WARDOGS",
@@ -5548,7 +5525,22 @@
             "battlefield-6"
           ]
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established",
+      "directInvestigation": {
+        "gameId": "steam-1867240",
+        "steamAppId": 1867240,
+        "name": "WARDOGS",
+        "status": "cached_tbd",
+        "sourceUrl": "https://www.metacritic.com/game/wardogs/",
+        "retrievalReference": "turn8view0",
+        "summary": "BULKHEAD/PC doğrulandı; erişilen önbellekte tbd ve0 oy. WarDogs Red’s Return dışlandı.",
+        "freshness": "Erişilen kaynak önbelleği veya kullanıcı görüntüsü; canlı puan ölçümü değil."
+      }
     },
     {
       "gameId": "steam-4019220",
@@ -5631,7 +5623,22 @@
           "kind": "explicit-pc-page",
           "found": []
         }
-      ]
+      ],
+      "metacriticId": "dressmaker",
+      "reason": "No verified user-score fact for the approved Metacritic resource",
+      "sourceHadScore": false,
+      "sourceGap": "approved_identity_without_score_fact",
+      "metacriticScoreAvailability": "not_established",
+      "directInvestigation": {
+        "gameId": "steam-4019220",
+        "steamAppId": 4019220,
+        "name": "Dressmaker",
+        "status": "cached_tbd",
+        "sourceUrl": "https://www.metacritic.com/game/dressmaker/",
+        "retrievalReference": "turn4view0",
+        "summary": "Mevcut kimlik sayfası; erişilen eski önbellekte tbd, puan yokluğu sonucu çıkarılmadı.",
+        "freshness": "Erişilen kaynak önbelleği veya kullanıcı görüntüsü; canlı puan ölçümü değil."
+      }
     },
     {
       "gameId": "steam-2288340",
@@ -5654,7 +5661,22 @@
             "battlefield-6"
           ]
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established",
+      "directInvestigation": {
+        "gameId": "steam-2288340",
+        "steamAppId": 2288340,
+        "name": "ACE COMBAT 8: WINGS OF THEVE",
+        "status": "access_blocked",
+        "sourceUrl": "https://www.metacritic.com/game/ace-combat-8-wings-of-theve/",
+        "retrievalReference": "turn14view0",
+        "summary": "Bandai Namco Aces ve doğru8 sürümü; kullanıcı puanı içeriğine erişim engelli.",
+        "freshness": "Erişilen kaynak önbelleği veya kullanıcı görüntüsü; canlı puan ölçümü değil."
+      }
     },
     {
       "gameId": "steam-4080220",
@@ -5737,7 +5759,22 @@
           "kind": "explicit-pc-page",
           "found": []
         }
-      ]
+      ],
+      "metacriticId": "ea-sports-fc-27",
+      "reason": "No verified user-score fact for the approved Metacritic resource",
+      "sourceHadScore": false,
+      "sourceGap": "approved_identity_without_score_fact",
+      "metacriticScoreAvailability": "not_established",
+      "directInvestigation": {
+        "gameId": "steam-4080220",
+        "steamAppId": 4080220,
+        "name": "EA SPORTS FC™ 27",
+        "status": "access_blocked",
+        "sourceUrl": "https://www.metacritic.com/game/ea-sports-fc-27/",
+        "retrievalReference": "turn14view1",
+        "summary": "Doğru27 sayfa bağlantısı bulundu; sayısal kullanıcı puanı erişilemedi.",
+        "freshness": "Erişilen kaynak önbelleği veya kullanıcı görüntüsü; canlı puan ölçümü değil."
+      }
     },
     {
       "gameId": "steam-2406770",
@@ -5820,7 +5857,22 @@
           "kind": "explicit-pc-page",
           "found": []
         }
-      ]
+      ],
+      "metacriticId": "bodycam",
+      "reason": "No verified user-score fact for the approved Metacritic resource",
+      "sourceHadScore": false,
+      "sourceGap": "approved_identity_without_score_fact",
+      "metacriticScoreAvailability": "not_established",
+      "directInvestigation": {
+        "gameId": "steam-2406770",
+        "steamAppId": 2406770,
+        "name": "Bodycam",
+        "status": "cached_tbd",
+        "sourceUrl": "https://www.metacritic.com/game/bodycam/",
+        "retrievalReference": "turn6view0",
+        "summary": "Reissad Studio doğru Bodycam; tbd/0 oy önbelleği, benzer isimler dışlandı.",
+        "freshness": "Erişilen kaynak önbelleği veya kullanıcı görüntüsü; canlı puan ölçümü değil."
+      }
     },
     {
       "gameId": "steam-1912410",
@@ -5843,28 +5895,22 @@
             "battlefield-6"
           ]
         }
-      ]
-    },
-    {
-      "gameId": "steam-3940610",
-      "steamAppId": 3940610,
-      "name": "EA SPORTS™ Madden NFL 27",
-      "status": "unverified_identity",
-      "metacritic": null,
-      "investigation": "Erişilebilir kaynaklarda bu oyun/PC sürümü için kabul edilebilir kimlik ve sayısal puan birlikte doğrulanamadı. Metacritic puanı olmadığı sonucuna varılmaz.",
-      "attempts": [
-        {
-          "engine": "system2",
-          "games": [
-            "steam-3940610",
-            "steam-2887580",
-            "the-witcher-3-wild-hunt",
-            "steam-1488490"
-          ],
-          "kind": "identity-discovery",
-          "found": []
-        }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established",
+      "directInvestigation": {
+        "gameId": "steam-1912410",
+        "steamAppId": 1912410,
+        "name": "Minecraft Dungeons II",
+        "status": "access_blocked",
+        "sourceUrl": "https://www.metacritic.com/game/minecraft-dungeons-ii/",
+        "retrievalReference": "turn19view0",
+        "summary": "II devam oyununun sayfa bağlantısı bulundu; puan içeriği erişilemedi. İlk oyunun puanı kullanılmadı.",
+        "freshness": "Erişilen kaynak önbelleği veya kullanıcı görüntüsü; canlı puan ölçümü değil."
+      }
     },
     {
       "gameId": "steam-2887580",
@@ -5885,150 +5931,22 @@
           "kind": "identity-discovery",
           "found": []
         }
-      ]
-    },
-    {
-      "gameId": "steam-2215200",
-      "steamAppId": 2215200,
-      "name": "LEGO® Batman™: Legacy of the Dark Knight",
-      "status": "missing_score",
-      "metacritic": {
-        "resourceId": "lego-batman-legacy-of-the-dark-knight",
-        "numericId": "1300699296",
-        "url": "https://www.metacritic.com/game/lego-batman-legacy-of-the-dark-knight/",
-        "editionScope": "Reviewed store product / Metacritic work relationship",
-        "evidence": [
-          {
-            "kind": "store-app-id-crosslink",
-            "steamAppId": 2215200,
-            "url": "https://store.steampowered.com/api/appdetails?appids=2215200&l=english",
-            "referenceUrl": "https://www.metacritic.com/game/pc/lego-batman-legacy-of-the-dark-knight?ftag=MCD-06-10aaa1f",
-            "retrievedAt": "2026-10-06T11:24:35.934Z"
-          },
-          {
-            "kind": "wikidata-external-ids",
-            "qid": "Q135909032",
-            "steamAppId": 2215200,
-            "metacriticId": "lego-batman-legacy-of-the-dark-knight",
-            "numericId": "1300699296",
-            "url": "http://www.wikidata.org/entity/Q135909032",
-            "retrievedAt": "2026-10-06T11:25:12.834Z"
-          }
-        ]
-      },
-      "investigation": "Erişilebilir kaynaklarda bu oyun/PC sürümü için kabul edilebilir kimlik ve sayısal puan birlikte doğrulanamadı. Metacritic puanı olmadığı sonucuna varılmaz.",
-      "attempts": [
-        {
-          "engine": "system2",
-          "resources": [
-            "forza-horizon-6",
-            "lego-batman-legacy-of-the-dark-knight",
-            "overwatch-2",
-            "battlefield-6"
-          ],
-          "found": [
-            "battlefield-6",
-            "forza-horizon-6",
-            "overwatch"
-          ]
-        },
-        {
-          "engine": "system1",
-          "games": [
-            "steam-4019220",
-            "steam-4080220",
-            "steam-2406770",
-            "steam-2215200"
-          ],
-          "resources": [
-            "dressmaker",
-            "ea-sports-fc-27",
-            "bodycam",
-            "lego-batman-legacy-of-the-dark-knight"
-          ],
-          "kind": "coverage-verification",
-          "found": []
-        },
-        {
-          "engine": "open",
-          "resources": [
-            "dressmaker",
-            "ea-sports-fc-27",
-            "bodycam",
-            "lego-batman-legacy-of-the-dark-knight"
-          ],
-          "kind": "explicit-pc-page",
-          "found": []
-        }
-      ]
-    },
-    {
-      "gameId": "steam-2357570",
-      "steamAppId": 2357570,
-      "name": "Overwatch®",
-      "status": "missing_score",
-      "metacritic": {
-        "resourceId": "overwatch-2",
-        "numericId": "1300508698",
-        "url": "https://www.metacritic.com/game/overwatch-2/",
-        "editionScope": "Reviewed store product / Metacritic work relationship",
-        "evidence": [
-          {
-            "kind": "wikidata-external-ids",
-            "qid": "Q73163646",
-            "steamAppId": 2357570,
-            "metacriticId": "overwatch-2",
-            "numericId": "1300508698",
-            "url": "http://www.wikidata.org/entity/Q73163646",
-            "retrievedAt": "2026-10-06T11:25:12.834Z"
-          }
-        ]
-      },
-      "investigation": "Erişilebilir kaynaklarda bu oyun/PC sürümü için kabul edilebilir kimlik ve sayısal puan birlikte doğrulanamadı. Metacritic puanı olmadığı sonucuna varılmaz.",
-      "attempts": [
-        {
-          "engine": "system2",
-          "resources": [
-            "forza-horizon-6",
-            "lego-batman-legacy-of-the-dark-knight",
-            "overwatch-2",
-            "battlefield-6"
-          ],
-          "found": [
-            "battlefield-6",
-            "forza-horizon-6",
-            "overwatch"
-          ]
-        },
-        {
-          "engine": "system1",
-          "games": [
-            "steam-2357570",
-            "steam-1118520",
-            "steam-2075800",
-            "steam-2868840"
-          ],
-          "resources": [
-            "overwatch-2",
-            "paralives",
-            "star-wars-zero-company",
-            "slay-the-spire-2"
-          ],
-          "kind": "coverage-verification",
-          "found": []
-        },
-        {
-          "engine": "open",
-          "resources": [
-            "overwatch-2",
-            "paralives",
-            "star-wars-zero-company",
-            "slay-the-spire-2"
-          ],
-          "kind": "explicit-pc-page",
-          "found": []
-        }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established",
+      "directInvestigation": {
+        "gameId": "steam-2887580",
+        "steamAppId": 2887580,
+        "name": "Active Matter",
+        "status": "cached_tbd",
+        "sourceUrl": "https://www.metacritic.com/game/active-matter/",
+        "retrievalReference": "turn6view2",
+        "summary": "Matter Team/Gaijin/PC; tbd ve0 oy.",
+        "freshness": "Erişilen kaynak önbelleği veya kullanıcı görüntüsü; canlı puan ölçümü değil."
+      }
     },
     {
       "gameId": "the-witcher-3-wild-hunt",
@@ -6049,7 +5967,12 @@
           "kind": "identity-discovery",
           "found": []
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "Current Steam identity is The Witcher 3: Wild Hunt — Remastered; primary Steam news says new remaster launched 2026-09-29 under same app ID. Old generic resource needs edition-specific score evidence.",
+      "sourceHadScore": true,
+      "sourceGap": "unusable_source_association",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-1488490",
@@ -6070,7 +5993,22 @@
           "kind": "identity-discovery",
           "found": []
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established",
+      "directInvestigation": {
+        "gameId": "steam-1488490",
+        "steamAppId": 1488490,
+        "name": "Nivalis Nights",
+        "status": "cached_tbd",
+        "sourceUrl": "https://www.metacritic.com/game/nivalis-nights/",
+        "retrievalReference": "turn12view2",
+        "summary": "ION LANDS ve29 Eylül2026; tbd/0 oy.",
+        "freshness": "Erişilen kaynak önbelleği veya kullanıcı görüntüsü; canlı puan ölçümü değil."
+      }
     },
     {
       "gameId": "steam-3164500",
@@ -6098,7 +6036,22 @@
             "risen-3-titan-lords"
           ]
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established",
+      "directInvestigation": {
+        "gameId": "steam-3164500",
+        "steamAppId": 3164500,
+        "name": "Schedule I",
+        "status": "cached_tbd",
+        "sourceUrl": "https://www.metacritic.com/game/schedule-i/",
+        "retrievalReference": "turn10view5",
+        "summary": "TVGS/Hyland Point doğru oyun; tbd/0 oy, başka geliştiricili benzer adlar dışlandı.",
+        "freshness": "Erişilen kaynak önbelleği veya kullanıcı görüntüsü; canlı puan ölçümü değil."
+      }
     },
     {
       "gameId": "steam-3124540",
@@ -6126,7 +6079,22 @@
             "risen-3-titan-lords"
           ]
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established",
+      "directInvestigation": {
+        "gameId": "steam-3124540",
+        "steamAppId": 3124540,
+        "name": "Far Far West",
+        "status": "cached_tbd",
+        "sourceUrl": "https://www.metacritic.com/game/far-far-west/",
+        "retrievalReference": "turn10view0",
+        "summary": "Evil Raptor vePC co-op robot kovboy oyunu; tbd/0 oy.",
+        "freshness": "Erişilen kaynak önbelleği veya kullanıcı görüntüsü; canlı puan ölçümü değil."
+      }
     },
     {
       "gameId": "steam-3173560",
@@ -6154,7 +6122,22 @@
             "risen-3-titan-lords"
           ]
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established",
+      "directInvestigation": {
+        "gameId": "steam-3173560",
+        "steamAppId": 3173560,
+        "name": "Anomalous Coffee Machine",
+        "status": "identity_not_found",
+        "sourceUrl": null,
+        "retrievalReference": "turn15search1",
+        "summary": "Yalnızca Anomalous Coffee Machine2 bulundu; ilk oyuna atanmadı.",
+        "freshness": "Erişilen kaynak önbelleği veya kullanıcı görüntüsü; canlı puan ölçümü değil."
+      }
     },
     {
       "gameId": "steam-1118520",
@@ -6222,7 +6205,22 @@
           "kind": "explicit-pc-page",
           "found": []
         }
-      ]
+      ],
+      "metacriticId": "paralives",
+      "reason": "No verified user-score fact for the approved Metacritic resource",
+      "sourceHadScore": false,
+      "sourceGap": "approved_identity_without_score_fact",
+      "metacriticScoreAvailability": "not_established",
+      "directInvestigation": {
+        "gameId": "steam-1118520",
+        "steamAppId": 1118520,
+        "name": "Paralives",
+        "status": "cached_tbd",
+        "sourceUrl": "https://www.metacritic.com/game/paralives/",
+        "retrievalReference": "turn17view1",
+        "summary": "PC/Alex Masse; kullanıcı puanı tbd/0 oy, critic skoru kullanılmadı.",
+        "freshness": "Erişilen kaynak önbelleği veya kullanıcı görüntüsü; canlı puan ölçümü değil."
+      }
     },
     {
       "gameId": "steam-376210",
@@ -6250,7 +6248,22 @@
             "risen-3-titan-lords"
           ]
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established",
+      "directInvestigation": {
+        "gameId": "steam-376210",
+        "steamAppId": 376210,
+        "name": "The Isle",
+        "status": "identity_ambiguous",
+        "sourceUrl": "https://www.metacritic.com/game/the-isle/",
+        "retrievalReference": "turn17view2",
+        "summary": "Dinozor/PC adayı tbd; The Isle Development Team ile Afterthought LLC ilişkisi ayrı kimlik kanıtı gerektiriyor.",
+        "freshness": "Erişilen kaynak önbelleği veya kullanıcı görüntüsü; canlı puan ölçümü değil."
+      }
     },
     {
       "gameId": "steam-4705510",
@@ -6281,7 +6294,12 @@
             "evolve"
           ]
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-3797340",
@@ -6312,7 +6330,12 @@
             "evolve"
           ]
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-2543830",
@@ -6343,7 +6366,12 @@
             "evolve"
           ]
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-3841510",
@@ -6374,7 +6402,12 @@
             "evolve"
           ]
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-2075800",
@@ -6442,7 +6475,12 @@
           "kind": "explicit-pc-page",
           "found": []
         }
-      ]
+      ],
+      "metacriticId": "star-wars-zero-company",
+      "reason": "No verified user-score fact for the approved Metacritic resource",
+      "sourceHadScore": false,
+      "sourceGap": "approved_identity_without_score_fact",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-2868840",
@@ -6511,7 +6549,12 @@
           "kind": "explicit-pc-page",
           "found": []
         }
-      ]
+      ],
+      "metacriticId": "slay-the-spire-2",
+      "reason": "No verified user-score fact for the approved Metacritic resource",
+      "sourceHadScore": false,
+      "sourceGap": "approved_identity_without_score_fact",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-2694490",
@@ -6582,7 +6625,12 @@
           "kind": "explicit-pc-page",
           "found": []
         }
-      ]
+      ],
+      "metacriticId": "path-of-exile-2",
+      "reason": "No verified user-score fact for the approved Metacritic resource",
+      "sourceHadScore": false,
+      "sourceGap": "approved_identity_without_score_fact",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-739630",
@@ -6653,7 +6701,12 @@
           "kind": "explicit-pc-page",
           "found": []
         }
-      ]
+      ],
+      "metacriticId": "phasmophobia",
+      "reason": "No verified user-score fact for the approved Metacritic resource",
+      "sourceHadScore": false,
+      "sourceGap": "approved_identity_without_score_fact",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-1289670",
@@ -6678,7 +6731,12 @@
             "gothic-1-remake"
           ]
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-2638890",
@@ -6747,7 +6805,12 @@
           "kind": "explicit-pc-page",
           "found": []
         }
-      ]
+      ],
+      "metacriticId": "onimusha-way-of-the-sword",
+      "reason": "No verified user-score fact for the approved Metacritic resource",
+      "sourceHadScore": false,
+      "sourceGap": "approved_identity_without_score_fact",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-2661300",
@@ -6772,7 +6835,12 @@
             "gothic-1-remake"
           ]
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-3241660",
@@ -6841,7 +6909,12 @@
           "kind": "explicit-pc-page",
           "found": []
         }
-      ]
+      ],
+      "metacriticId": "repo",
+      "reason": "No verified user-score fact for the approved Metacritic resource",
+      "sourceHadScore": false,
+      "sourceGap": "approved_identity_without_score_fact",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-3404260",
@@ -6864,7 +6937,12 @@
             "half-sword"
           ]
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-2479810",
@@ -6933,7 +7011,12 @@
           "kind": "explicit-pc-page",
           "found": []
         }
-      ]
+      ],
+      "metacriticId": "gray-zone-warfare",
+      "reason": "No verified user-score fact for the approved Metacritic resource",
+      "sourceHadScore": false,
+      "sourceGap": "approved_identity_without_score_fact",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-1636440",
@@ -7002,7 +7085,12 @@
           "kind": "explicit-pc-page",
           "found": []
         }
-      ]
+      ],
+      "metacriticId": "silent-hill-townfall",
+      "reason": "No verified user-score fact for the approved Metacritic resource",
+      "sourceHadScore": false,
+      "sourceGap": "approved_identity_without_score_fact",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-3712080",
@@ -7025,7 +7113,12 @@
             "half-sword"
           ]
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-1962663",
@@ -7094,7 +7187,12 @@
           "kind": "explicit-pc-page",
           "found": []
         }
-      ]
+      ],
+      "metacriticId": "call-of-duty-warzone-20",
+      "reason": "No verified user-score fact for the approved Metacritic resource",
+      "sourceHadScore": false,
+      "sourceGap": "approved_identity_without_score_fact",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-1913120",
@@ -7117,7 +7215,12 @@
             "half-sword"
           ]
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-2456740",
@@ -7189,7 +7292,12 @@
           "kind": "explicit-pc-page",
           "found": []
         }
-      ]
+      ],
+      "metacriticId": "inzoi",
+      "reason": "No verified user-score fact for the approved Metacritic resource",
+      "sourceHadScore": false,
+      "sourceGap": "approved_identity_without_score_fact",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-1962700",
@@ -7263,7 +7371,12 @@
             "halo-campaign-evolved"
           ]
         }
-      ]
+      ],
+      "metacriticId": "subnautica-2",
+      "reason": "No verified user-score fact for the approved Metacritic resource",
+      "sourceHadScore": false,
+      "sourceGap": "approved_identity_without_score_fact",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-3105440",
@@ -7286,7 +7399,12 @@
             "might-and-magic-heroes-vii"
           ]
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-1203620",
@@ -7358,7 +7476,12 @@
             "halo-campaign-evolved"
           ]
         }
-      ]
+      ],
+      "metacriticId": "enshrouded",
+      "reason": "No verified user-score fact for the approved Metacritic resource",
+      "sourceHadScore": false,
+      "sourceGap": "approved_identity_without_score_fact",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-4108000",
@@ -7381,7 +7504,12 @@
             "might-and-magic-heroes-vii"
           ]
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-3850550",
@@ -7404,7 +7532,12 @@
             "might-and-magic-heroes-vii"
           ]
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-2057760",
@@ -7427,7 +7560,12 @@
             "might-and-magic-heroes-vii"
           ]
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-3079210",
@@ -7451,7 +7589,12 @@
             "powerwash-simulator"
           ]
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-1384160",
@@ -7517,7 +7660,12 @@
           "kind": "explicit-pc-page",
           "found": []
         }
-      ]
+      ],
+      "metacriticId": "guilty-gear--strive-",
+      "reason": "No verified user-score fact for the approved Metacritic resource",
+      "sourceHadScore": false,
+      "sourceGap": "approved_identity_without_score_fact",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-3917700",
@@ -7541,7 +7689,12 @@
             "powerwash-simulator"
           ]
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-2059170",
@@ -7565,7 +7718,12 @@
             "powerwash-simulator"
           ]
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-1363080",
@@ -7633,7 +7791,12 @@
           "kind": "explicit-pc-page",
           "found": []
         }
-      ]
+      ],
+      "metacriticId": "manor-lords",
+      "reason": "No verified user-score fact for the approved Metacritic resource",
+      "sourceHadScore": false,
+      "sourceGap": "approved_identity_without_score_fact",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-3070070",
@@ -7654,7 +7817,12 @@
           "kind": "identity-discovery",
           "found": []
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-1371980",
@@ -7722,7 +7890,12 @@
           "kind": "explicit-pc-page",
           "found": []
         }
-      ]
+      ],
+      "metacriticId": "no-rest-for-the-wicked",
+      "reason": "No verified user-score fact for the approved Metacritic resource",
+      "sourceHadScore": false,
+      "sourceGap": "approved_identity_without_score_fact",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-3041230",
@@ -7789,7 +7962,12 @@
           "kind": "explicit-pc-page",
           "found": []
         }
-      ]
+      ],
+      "metacriticId": "windrose",
+      "reason": "No verified user-score fact for the approved Metacritic resource",
+      "sourceHadScore": false,
+      "sourceGap": "approved_identity_without_score_fact",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-4739660",
@@ -7810,7 +7988,12 @@
           "kind": "identity-discovery",
           "found": []
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-4883590",
@@ -7831,7 +8014,12 @@
           "kind": "identity-discovery",
           "found": []
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-4557380",
@@ -7852,7 +8040,12 @@
           "kind": "identity-discovery",
           "found": []
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-4406280",
@@ -7875,7 +8068,12 @@
             "avatar-legends-the-fighting-game"
           ]
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-2975950",
@@ -7945,7 +8143,12 @@
             "grand-theft-auto-san-andreas-the-definitive"
           ]
         }
-      ]
+      ],
+      "metacriticId": "solasta-ii",
+      "reason": "No verified user-score fact for the approved Metacritic resource",
+      "sourceHadScore": false,
+      "sourceGap": "approved_identity_without_score_fact",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-2067820",
@@ -7968,7 +8171,12 @@
             "avatar-legends-the-fighting-game"
           ]
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-3576350",
@@ -7991,7 +8199,12 @@
             "avatar-legends-the-fighting-game"
           ]
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-1913370",
@@ -8020,7 +8233,12 @@
             "her-story"
           ]
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-1665460",
@@ -8049,7 +8267,12 @@
             "her-story"
           ]
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "Current continuously updated eFootball product versus annual 2023 resource. Do not describe a yearly edition score as the current game score without explicit metric scope.",
+      "sourceHadScore": true,
+      "sourceGap": "unusable_source_association",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-3808690",
@@ -8078,7 +8301,12 @@
             "her-story"
           ]
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-3844970",
@@ -8107,7 +8335,12 @@
             "her-story"
           ]
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-1857950",
@@ -8138,7 +8371,12 @@
             "rise-of-nations-2003"
           ]
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-2863680",
@@ -8169,7 +8407,12 @@
             "rise-of-nations-2003"
           ]
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-3293260",
@@ -8200,7 +8443,12 @@
             "rise-of-nations-2003"
           ]
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-2764460",
@@ -8231,7 +8479,12 @@
             "rise-of-nations-2003"
           ]
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-1706510",
@@ -8252,7 +8505,12 @@
           "kind": "identity-discovery",
           "found": []
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-2964090",
@@ -8273,7 +8531,12 @@
           "kind": "identity-discovery",
           "found": []
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-3156770",
@@ -8294,7 +8557,12 @@
           "kind": "identity-discovery",
           "found": []
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-2679100",
@@ -8315,7 +8583,12 @@
           "kind": "identity-discovery",
           "found": []
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-2825860",
@@ -8346,7 +8619,12 @@
             "moons-of-madness"
           ]
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-2692440",
@@ -8377,7 +8655,12 @@
             "moons-of-madness"
           ]
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-2244210",
@@ -8408,7 +8691,12 @@
             "moons-of-madness"
           ]
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-1805110",
@@ -8439,7 +8727,12 @@
             "moons-of-madness"
           ]
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-3640200",
@@ -8460,7 +8753,12 @@
           "kind": "identity-discovery",
           "found": []
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-1963610",
@@ -8481,7 +8779,12 @@
           "kind": "identity-discovery",
           "found": []
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-1067360",
@@ -8502,7 +8805,12 @@
           "kind": "identity-discovery",
           "found": []
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-2689120",
@@ -8523,7 +8831,12 @@
           "kind": "identity-discovery",
           "found": []
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-895870",
@@ -8608,7 +8921,12 @@
             "grand-theft-auto-san-andreas-the-definitive"
           ]
         }
-      ]
+      ],
+      "metacriticId": "project-wingman",
+      "reason": "No verified user-score fact for the approved Metacritic resource",
+      "sourceHadScore": false,
+      "sourceGap": "approved_identity_without_score_fact",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-4075620",
@@ -8639,7 +8957,12 @@
             "call-of-duty-infinite-warfare"
           ]
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-1938090",
@@ -8670,7 +8993,12 @@
             "call-of-duty-infinite-warfare"
           ]
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "Steam product is the Call of Duty hub supporting multiple current games and Warzone. One Modern Warfare II game score is not a score for this multi-game launcher.",
+      "sourceHadScore": true,
+      "sourceGap": "unusable_source_association",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-2569760",
@@ -8736,7 +9064,12 @@
           "kind": "explicit-pc-page",
           "found": []
         }
-      ]
+      ],
+      "metacriticId": "the-mound-omen-of-cthulhu",
+      "reason": "No verified user-score fact for the approved Metacritic resource",
+      "sourceHadScore": false,
+      "sourceGap": "approved_identity_without_score_fact",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-3832490",
@@ -8767,7 +9100,12 @@
             "call-of-duty-infinite-warfare"
           ]
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-3849000",
@@ -8793,7 +9131,12 @@
             "out-of-the-park-baseball-15"
           ]
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-1966720",
@@ -8859,7 +9202,12 @@
           "kind": "explicit-pc-page",
           "found": []
         }
-      ]
+      ],
+      "metacriticId": "lethal-company",
+      "reason": "No verified user-score fact for the approved Metacritic resource",
+      "sourceHadScore": false,
+      "sourceGap": "approved_identity_without_score_fact",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-2432860",
@@ -8929,7 +9277,12 @@
           "kind": "explicit-pc-page",
           "found": []
         }
-      ]
+      ],
+      "metacriticId": "menace",
+      "reason": "No verified user-score fact for the approved Metacritic resource",
+      "sourceHadScore": false,
+      "sourceGap": "approved_identity_without_score_fact",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-3867170",
@@ -8955,7 +9308,12 @@
             "out-of-the-park-baseball-15"
           ]
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-4045750",
@@ -8981,7 +9339,12 @@
             "out-of-the-park-baseball-15"
           ]
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-1805320",
@@ -9007,7 +9370,12 @@
             "out-of-the-park-baseball-15"
           ]
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-2141730",
@@ -9028,7 +9396,12 @@
           "kind": "identity-discovery",
           "found": []
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-2209900",
@@ -9049,7 +9422,12 @@
           "kind": "identity-discovery",
           "found": []
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-1757300",
@@ -9119,7 +9497,12 @@
           "kind": "explicit-pc-page",
           "found": []
         }
-      ]
+      ],
+      "metacriticId": "jump-space",
+      "reason": "No verified user-score fact for the approved Metacritic resource",
+      "sourceHadScore": false,
+      "sourceGap": "approved_identity_without_score_fact",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-4584110",
@@ -9140,7 +9523,12 @@
           "kind": "identity-discovery",
           "found": []
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-2402680",
@@ -9161,7 +9549,12 @@
           "kind": "identity-discovery",
           "found": []
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-1783560",
@@ -9185,7 +9578,12 @@
             "resident-evil-2"
           ]
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-4072240",
@@ -9209,7 +9607,12 @@
             "resident-evil-2"
           ]
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-339340",
@@ -9233,7 +9636,12 @@
             "resident-evil-2"
           ]
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-1331550",
@@ -9303,7 +9711,12 @@
           "kind": "explicit-pc-page",
           "found": []
         }
-      ]
+      ],
+      "metacriticId": "big-ambitions",
+      "reason": "No verified user-score fact for the approved Metacritic resource",
+      "sourceHadScore": false,
+      "sourceGap": "approved_identity_without_score_fact",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-3634190",
@@ -9327,7 +9740,12 @@
             "resident-evil-2"
           ]
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-4364730",
@@ -9348,7 +9766,12 @@
           "kind": "identity-discovery",
           "found": []
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-3271280",
@@ -9369,7 +9792,12 @@
           "kind": "identity-discovery",
           "found": []
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-2236060",
@@ -9390,7 +9818,12 @@
           "kind": "identity-discovery",
           "found": []
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-3510740",
@@ -9411,7 +9844,12 @@
           "kind": "identity-discovery",
           "found": []
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-4833450",
@@ -9434,7 +9872,12 @@
             "battlefield-1"
           ]
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-2350790",
@@ -9501,7 +9944,12 @@
           "kind": "explicit-pc-page",
           "found": []
         }
-      ]
+      ],
+      "metacriticId": "moonlighter-2-the-endless-vault",
+      "reason": "No verified user-score fact for the approved Metacritic resource",
+      "sourceHadScore": false,
+      "sourceGap": "approved_identity_without_score_fact",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-2527160",
@@ -9568,7 +10016,12 @@
           "kind": "explicit-pc-page",
           "found": []
         }
-      ]
+      ],
+      "metacriticId": "desktop-explorer",
+      "reason": "No verified user-score fact for the approved Metacritic resource",
+      "sourceHadScore": false,
+      "sourceGap": "approved_identity_without_score_fact",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-3195790",
@@ -9635,7 +10088,12 @@
           "kind": "explicit-pc-page",
           "found": []
         }
-      ]
+      ],
+      "metacriticId": "white-knuckle",
+      "reason": "No verified user-score fact for the approved Metacritic resource",
+      "sourceHadScore": false,
+      "sourceGap": "approved_identity_without_score_fact",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-2950340",
@@ -9658,7 +10116,12 @@
             "battlefield-1"
           ]
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-3065940",
@@ -9681,7 +10144,12 @@
             "battlefield-1"
           ]
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-4594150",
@@ -9704,7 +10172,12 @@
             "battlefield-1"
           ]
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-4259190",
@@ -9725,7 +10198,12 @@
           "kind": "identity-discovery",
           "found": []
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-4173620",
@@ -9746,7 +10224,12 @@
           "kind": "identity-discovery",
           "found": []
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-5064340",
@@ -9767,7 +10250,12 @@
           "kind": "identity-discovery",
           "found": []
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-4210580",
@@ -9788,7 +10276,12 @@
           "kind": "identity-discovery",
           "found": []
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-3354750",
@@ -9818,7 +10311,12 @@
             "tony-hawks-underground-2"
           ]
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-3969080",
@@ -9885,7 +10383,12 @@
           "kind": "explicit-pc-page",
           "found": []
         }
-      ]
+      ],
+      "metacriticId": "maplestory-m",
+      "reason": "No verified user-score fact for the approved Metacritic resource",
+      "sourceHadScore": false,
+      "sourceGap": "approved_identity_without_score_fact",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-4146760",
@@ -9915,7 +10418,12 @@
             "tony-hawks-underground-2"
           ]
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-1476970",
@@ -9945,7 +10453,12 @@
             "tony-hawks-underground-2"
           ]
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-4468030",
@@ -9975,7 +10488,12 @@
             "tony-hawks-underground-2"
           ]
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-2421750",
@@ -9996,7 +10514,12 @@
           "kind": "identity-discovery",
           "found": []
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-4678800",
@@ -10017,7 +10540,12 @@
           "kind": "identity-discovery",
           "found": []
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-293760",
@@ -10038,7 +10566,12 @@
           "kind": "identity-discovery",
           "found": []
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-4294490",
@@ -10105,7 +10638,12 @@
           "kind": "explicit-pc-page",
           "found": []
         }
-      ]
+      ],
+      "metacriticId": "kotamon-my-sis-found-a-super-rare-card-in-her",
+      "reason": "No verified user-score fact for the approved Metacritic resource",
+      "sourceHadScore": false,
+      "sourceGap": "approved_identity_without_score_fact",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-2412960",
@@ -10126,7 +10664,12 @@
           "kind": "identity-discovery",
           "found": []
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-3905450",
@@ -10147,7 +10690,12 @@
           "kind": "identity-discovery",
           "found": []
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-3711590",
@@ -10168,7 +10716,12 @@
           "kind": "identity-discovery",
           "found": []
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-926990",
@@ -10189,7 +10742,12 @@
           "kind": "identity-discovery",
           "found": []
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-4450620",
@@ -10210,7 +10768,12 @@
           "kind": "identity-discovery",
           "found": []
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-1133870",
@@ -10231,7 +10794,12 @@
           "kind": "identity-discovery",
           "found": []
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-2552450",
@@ -10298,7 +10866,12 @@
           "kind": "explicit-pc-page",
           "found": []
         }
-      ]
+      ],
+      "metacriticId": "kingdom-hearts-iii",
+      "reason": "No verified user-score fact for the approved Metacritic resource",
+      "sourceHadScore": true,
+      "sourceGap": "unusable_source_association",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-3061570",
@@ -10319,7 +10892,12 @@
           "kind": "identity-discovery",
           "found": []
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-1495320",
@@ -10340,7 +10918,12 @@
           "kind": "identity-discovery",
           "found": []
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-4981570",
@@ -10361,7 +10944,12 @@
           "kind": "identity-discovery",
           "found": []
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-3314070",
@@ -10385,7 +10973,12 @@
             "the-sims-2"
           ]
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "2025 Steam Legacy Collection contains base The Sims 2 and many packs; its publisher critic crosslink still references the original base game with 90 Metascore. That does not prove the user score is for this collection.",
+      "sourceHadScore": true,
+      "sourceGap": "unusable_source_association",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-4992070",
@@ -10409,7 +11002,12 @@
             "the-sims-2"
           ]
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-1162750",
@@ -10476,7 +11074,12 @@
           "kind": "explicit-pc-page",
           "found": []
         }
-      ]
+      ],
+      "metacriticId": "songs-of-syx",
+      "reason": "No verified user-score fact for the approved Metacritic resource",
+      "sourceHadScore": false,
+      "sourceGap": "approved_identity_without_score_fact",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-3558600",
@@ -10500,7 +11103,12 @@
             "the-sims-2"
           ]
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-3326230",
@@ -10524,7 +11132,12 @@
             "the-adventures-of-elliot-the-millennium-tales"
           ]
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-2819520",
@@ -10548,7 +11161,12 @@
             "the-adventures-of-elliot-the-millennium-tales"
           ]
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-2004680",
@@ -10572,7 +11190,12 @@
             "the-adventures-of-elliot-the-millennium-tales"
           ]
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-2523770",
@@ -10593,7 +11216,12 @@
           "kind": "identity-discovery",
           "found": []
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-3222640",
@@ -10614,7 +11242,12 @@
           "kind": "identity-discovery",
           "found": []
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-3643170",
@@ -10635,7 +11268,12 @@
           "kind": "identity-discovery",
           "found": []
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-3315060",
@@ -10656,7 +11294,12 @@
           "kind": "identity-discovery",
           "found": []
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-3624140",
@@ -10677,7 +11320,12 @@
           "kind": "identity-discovery",
           "found": []
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-2893570",
@@ -10698,7 +11346,12 @@
           "kind": "identity-discovery",
           "found": []
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-2928600",
@@ -10765,7 +11418,12 @@
           "kind": "explicit-pc-page",
           "found": []
         }
-      ]
+      ],
+      "metacriticId": "demon-slayer-kimetsu-no-yaiba-the-hinokami-2",
+      "reason": "No verified user-score fact for the approved Metacritic resource",
+      "sourceHadScore": false,
+      "sourceGap": "approved_identity_without_score_fact",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-2747330",
@@ -10786,7 +11444,12 @@
           "kind": "identity-discovery",
           "found": []
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-3831210",
@@ -10807,7 +11470,12 @@
           "kind": "identity-discovery",
           "found": []
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-2168680",
@@ -10828,7 +11496,12 @@
           "kind": "identity-discovery",
           "found": []
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-2605790",
@@ -10849,7 +11522,12 @@
           "kind": "identity-discovery",
           "found": []
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-2808930",
@@ -10870,7 +11548,12 @@
           "kind": "identity-discovery",
           "found": []
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-4614210",
@@ -10891,7 +11574,12 @@
           "kind": "identity-discovery",
           "found": []
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-1286220",
@@ -10925,7 +11613,12 @@
             "x4-foundations"
           ]
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-4094660",
@@ -10959,7 +11652,12 @@
             "x4-foundations"
           ]
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-3124340",
@@ -11028,7 +11726,12 @@
           "kind": "explicit-pc-page",
           "found": []
         }
-      ]
+      ],
+      "metacriticId": "demeo-x-dungeons-dragons-battlemarked",
+      "reason": "No verified user-score fact for the approved Metacritic resource",
+      "sourceHadScore": false,
+      "sourceGap": "approved_identity_without_score_fact",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-3279780",
@@ -11062,7 +11765,12 @@
             "x4-foundations"
           ]
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-2900640",
@@ -11138,7 +11846,12 @@
           "kind": "explicit-pc-page",
           "found": []
         }
-      ]
+      ],
+      "metacriticId": "toem-2",
+      "reason": "No verified user-score fact for the approved Metacritic resource",
+      "sourceHadScore": false,
+      "sourceGap": "approved_identity_without_score_fact",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-2956680",
@@ -11172,7 +11885,12 @@
             "x4-foundations"
           ]
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-2253100",
@@ -11193,7 +11911,12 @@
           "kind": "identity-discovery",
           "found": []
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-611790",
@@ -11264,7 +11987,12 @@
             "unbeatable"
           ]
         }
-      ]
+      ],
+      "metacriticId": "house-party",
+      "reason": "No verified user-score fact for the approved Metacritic resource",
+      "sourceHadScore": false,
+      "sourceGap": "approved_identity_without_score_fact",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-314650",
@@ -11285,7 +12013,12 @@
           "kind": "identity-discovery",
           "found": []
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-3364070",
@@ -11306,7 +12039,12 @@
           "kind": "identity-discovery",
           "found": []
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-3400350",
@@ -11327,7 +12065,12 @@
           "kind": "identity-discovery",
           "found": []
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-2124120",
@@ -11351,7 +12094,12 @@
             "minecraft"
           ]
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-2784470",
@@ -11375,7 +12123,12 @@
             "minecraft"
           ]
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-4125930",
@@ -11399,7 +12152,12 @@
             "minecraft"
           ]
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-247970",
@@ -11422,7 +12180,12 @@
             "dragon-quest-vii-reimagined"
           ]
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-1943730",
@@ -11445,7 +12208,12 @@
             "dragon-quest-vii-reimagined"
           ]
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-3602290",
@@ -11468,7 +12236,12 @@
             "dragon-quest-vii-reimagined"
           ]
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-3393280",
@@ -11491,7 +12264,12 @@
             "john-carpenters-toxic-commando"
           ]
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-1605850",
@@ -11514,7 +12292,12 @@
             "john-carpenters-toxic-commando"
           ]
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-2162800",
@@ -11583,7 +12366,12 @@
             "unbeatable"
           ]
         }
-      ]
+      ],
+      "metacriticId": "shapez-2---factory",
+      "reason": "No verified user-score fact for the approved Metacritic resource",
+      "sourceHadScore": false,
+      "sourceGap": "approved_identity_without_score_fact",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-3556750",
@@ -11606,7 +12394,12 @@
             "john-carpenters-toxic-commando"
           ]
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-4285110",
@@ -11627,7 +12420,12 @@
           "kind": "identity-discovery",
           "found": []
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-2832330",
@@ -11648,7 +12446,12 @@
           "kind": "identity-discovery",
           "found": []
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-1761390",
@@ -11718,7 +12521,12 @@
             "unbeatable"
           ]
         }
-      ]
+      ],
+      "metacriticId": "hatsune-miku-project-diva-megamix-plus",
+      "reason": "No verified user-score fact for the approved Metacritic resource",
+      "sourceHadScore": false,
+      "sourceGap": "approved_identity_without_score_fact",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-2634890",
@@ -11784,7 +12592,12 @@
           "kind": "explicit-pc-page",
           "found": []
         }
-      ]
+      ],
+      "metacriticId": "marvel-vs-capcom-fighting-collection-arcade-classics",
+      "reason": "No verified user-score fact for the approved Metacritic resource",
+      "sourceHadScore": false,
+      "sourceGap": "approved_identity_without_score_fact",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-2899050",
@@ -11805,7 +12618,12 @@
           "kind": "identity-discovery",
           "found": []
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-3373500",
@@ -11826,7 +12644,12 @@
           "kind": "identity-discovery",
           "found": []
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-1533390",
@@ -11858,7 +12681,12 @@
             "soma"
           ]
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-3048060",
@@ -11890,7 +12718,12 @@
             "soma"
           ]
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-4412320",
@@ -11922,7 +12755,12 @@
             "soma"
           ]
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-4778540",
@@ -11950,7 +12788,12 @@
             "the-vanishing-of-ethan-carter"
           ]
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-4026250",
@@ -11978,7 +12821,12 @@
             "the-vanishing-of-ethan-carter"
           ]
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-2186990",
@@ -12006,7 +12854,12 @@
             "the-vanishing-of-ethan-carter"
           ]
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-5085740",
@@ -12034,7 +12887,12 @@
             "the-vanishing-of-ethan-carter"
           ]
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-2163330",
@@ -12057,7 +12915,12 @@
             "winter-burrow"
           ]
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-1190600",
@@ -12080,7 +12943,12 @@
             "winter-burrow"
           ]
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-3236900",
@@ -12103,7 +12971,12 @@
             "winter-burrow"
           ]
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-1203190",
@@ -12130,7 +13003,12 @@
             "the-crew-2"
           ]
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-5212940",
@@ -12157,7 +13035,12 @@
             "the-crew-2"
           ]
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-951240",
@@ -12225,7 +13108,12 @@
           "kind": "explicit-pc-page",
           "found": []
         }
-      ]
+      ],
+      "metacriticId": "obenseuer",
+      "reason": "No verified user-score fact for the approved Metacritic resource",
+      "sourceHadScore": false,
+      "sourceGap": "approved_identity_without_score_fact",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-4282500",
@@ -12252,7 +13140,12 @@
             "the-crew-2"
           ]
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-2307350",
@@ -12322,7 +13215,12 @@
           "kind": "explicit-pc-page",
           "found": []
         }
-      ]
+      ],
+      "metacriticId": "into-the-radius-2",
+      "reason": "No verified user-score fact for the approved Metacritic resource",
+      "sourceHadScore": false,
+      "sourceGap": "approved_identity_without_score_fact",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-4260270",
@@ -12349,7 +13247,12 @@
             "the-crew-2"
           ]
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-1845250",
@@ -12372,7 +13275,12 @@
             "space-run-2014"
           ]
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-4369130",
@@ -12395,7 +13303,12 @@
             "space-run-2014"
           ]
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-2396980",
@@ -12466,7 +13379,12 @@
           "kind": "explicit-pc-page",
           "found": []
         }
-      ]
+      ],
+      "metacriticId": "fatestay-night-remastered",
+      "reason": "No verified user-score fact for the approved Metacritic resource",
+      "sourceHadScore": false,
+      "sourceGap": "approved_identity_without_score_fact",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-2426530",
@@ -12489,7 +13407,12 @@
             "space-run-2014"
           ]
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-3618030",
@@ -12512,7 +13435,12 @@
             "space-run-2014"
           ]
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-1107320",
@@ -12533,7 +13461,12 @@
           "kind": "identity-discovery",
           "found": []
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-2347080",
@@ -12554,7 +13487,12 @@
           "kind": "identity-discovery",
           "found": []
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-1619750",
@@ -12575,7 +13513,12 @@
           "kind": "identity-discovery",
           "found": []
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-1645820",
@@ -12596,7 +13539,12 @@
           "kind": "identity-discovery",
           "found": []
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-2492670",
@@ -12617,7 +13565,12 @@
           "kind": "identity-discovery",
           "found": []
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-2085540",
@@ -12638,7 +13591,12 @@
           "kind": "identity-discovery",
           "found": []
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-3195580",
@@ -12659,7 +13617,12 @@
           "kind": "identity-discovery",
           "found": []
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-2904000",
@@ -12680,7 +13643,12 @@
           "kind": "identity-discovery",
           "found": []
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-3097300",
@@ -12704,7 +13672,12 @@
             "five-hearts-under-one-roof"
           ]
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-3578070",
@@ -12728,7 +13701,12 @@
             "five-hearts-under-one-roof"
           ]
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-3950130",
@@ -12804,7 +13782,12 @@
             "lego-star-wars-the-complete-saga"
           ]
         }
-      ]
+      ],
+      "metacriticId": "database-detective-minor-crimes-division",
+      "reason": "No verified user-score fact for the approved Metacritic resource",
+      "sourceHadScore": false,
+      "sourceGap": "approved_identity_without_score_fact",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-590830",
@@ -12828,7 +13811,12 @@
             "five-hearts-under-one-roof"
           ]
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-2780980",
@@ -12904,7 +13892,12 @@
             "lego-star-wars-the-complete-saga"
           ]
         }
-      ]
+      ],
+      "metacriticId": "lockdown-protocol",
+      "reason": "No verified user-score fact for the approved Metacritic resource",
+      "sourceHadScore": false,
+      "sourceGap": "approved_identity_without_score_fact",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-2713000",
@@ -12984,7 +13977,12 @@
             "lego-star-wars-the-complete-saga"
           ]
         }
-      ]
+      ],
+      "metacriticId": "resonance-a-plague-tale-legacy",
+      "reason": "No verified user-score fact for the approved Metacritic resource",
+      "sourceHadScore": false,
+      "sourceGap": "approved_identity_without_score_fact",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-3615160",
@@ -13016,7 +14014,12 @@
             "tainted-grail-the-fall-of-avalon"
           ]
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-2881610",
@@ -13048,7 +14051,12 @@
             "tainted-grail-the-fall-of-avalon"
           ]
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-3936270",
@@ -13080,7 +14088,12 @@
             "tainted-grail-the-fall-of-avalon"
           ]
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-436780",
@@ -13112,7 +14125,12 @@
             "tainted-grail-the-fall-of-avalon"
           ]
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-2489330",
@@ -13136,7 +14154,12 @@
             "replaced"
           ]
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-4560660",
@@ -13160,7 +14183,12 @@
             "replaced"
           ]
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-3438850",
@@ -13184,7 +14212,12 @@
             "replaced"
           ]
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-1663850",
@@ -13208,7 +14241,12 @@
             "replaced"
           ]
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-5158320",
@@ -13231,7 +14269,12 @@
             "vampire-crawlers-the-turbo-wildcard-from-vampire"
           ]
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-974480",
@@ -13254,7 +14297,12 @@
             "vampire-crawlers-the-turbo-wildcard-from-vampire"
           ]
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-221680",
@@ -13277,7 +14325,12 @@
             "vampire-crawlers-the-turbo-wildcard-from-vampire"
           ]
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "Hold: current publisher identifies Learn & Play as a new 2024 edition with a changed music catalog. It states previous Remastered owners cannot download Learn & Play to protect their original licensed music. The source resource scores the older Remastered edition, and Wikidata identifies earlier Rocksmith 2014 Edition; neither establishes this new edition user score.",
+      "sourceHadScore": true,
+      "sourceGap": "unusable_source_association",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-3618850",
@@ -13348,7 +14401,12 @@
           "kind": "explicit-pc-page",
           "found": []
         }
-      ]
+      ],
+      "metacriticId": "pronoun-palace",
+      "reason": "No verified user-score fact for the approved Metacritic resource",
+      "sourceHadScore": false,
+      "sourceGap": "approved_identity_without_score_fact",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-3112280",
@@ -13373,7 +14431,12 @@
             "the-outbound-ghost"
           ]
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-3817250",
@@ -13398,7 +14461,12 @@
             "the-outbound-ghost"
           ]
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-824270",
@@ -13423,7 +14491,12 @@
             "the-outbound-ghost"
           ]
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-2948190",
@@ -13446,7 +14519,12 @@
             "marvel-cosmic-invasion"
           ]
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-2254890",
@@ -13469,7 +14547,12 @@
             "marvel-cosmic-invasion"
           ]
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-4659620",
@@ -13492,7 +14575,12 @@
             "marvel-cosmic-invasion"
           ]
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-2721890",
@@ -13524,7 +14612,12 @@
             "spiral-knights"
           ]
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-1698960",
@@ -13556,7 +14649,12 @@
             "spiral-knights"
           ]
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-2179170",
@@ -13588,7 +14686,12 @@
             "spiral-knights"
           ]
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-3715020",
@@ -13620,7 +14723,12 @@
             "spiral-knights"
           ]
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-4428890",
@@ -13641,7 +14749,12 @@
           "kind": "identity-discovery",
           "found": []
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-1035990",
@@ -13662,7 +14775,12 @@
           "kind": "identity-discovery",
           "found": []
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-790060",
@@ -13683,7 +14801,12 @@
           "kind": "identity-discovery",
           "found": []
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-2443110",
@@ -13753,7 +14876,12 @@
           "kind": "explicit-pc-page",
           "found": []
         }
-      ]
+      ],
+      "metacriticId": "south-scrimshaw-part-one",
+      "reason": "No verified user-score fact for the approved Metacritic resource",
+      "sourceHadScore": false,
+      "sourceGap": "approved_identity_without_score_fact",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-4585340",
@@ -13774,7 +14902,12 @@
           "kind": "identity-discovery",
           "found": []
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-2206340",
@@ -13795,7 +14928,12 @@
           "kind": "identity-discovery",
           "found": []
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-3793580",
@@ -13816,7 +14954,12 @@
           "kind": "identity-discovery",
           "found": []
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-3534790",
@@ -13837,7 +14980,12 @@
           "kind": "identity-discovery",
           "found": []
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-858940",
@@ -13858,7 +15006,12 @@
           "kind": "identity-discovery",
           "found": []
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-3515380",
@@ -13879,7 +15032,12 @@
           "kind": "identity-discovery",
           "found": []
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-2346660",
@@ -13900,7 +15058,12 @@
           "kind": "identity-discovery",
           "found": []
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-2233770",
@@ -13921,7 +15084,12 @@
           "kind": "identity-discovery",
           "found": []
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-2933200",
@@ -13989,7 +15157,12 @@
           "kind": "explicit-pc-page",
           "found": []
         }
-      ]
+      ],
+      "metacriticId": "tukoni-forest-keepers",
+      "reason": "No verified user-score fact for the approved Metacritic resource",
+      "sourceHadScore": false,
+      "sourceGap": "approved_identity_without_score_fact",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-2112520",
@@ -14010,7 +15183,12 @@
           "kind": "identity-discovery",
           "found": []
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-2393760",
@@ -14033,7 +15211,12 @@
             "bloodstained-ritual-of-the-night"
           ]
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-3030210",
@@ -14056,7 +15239,12 @@
             "bloodstained-ritual-of-the-night"
           ]
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-4051150",
@@ -14079,7 +15267,12 @@
             "bloodstained-ritual-of-the-night"
           ]
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-2505570",
@@ -14102,7 +15295,12 @@
             "bloodstained-ritual-of-the-night"
           ]
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-1295320",
@@ -14131,7 +15329,12 @@
             "shin-megami-tensei-v-vengeance"
           ]
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-1374860",
@@ -14160,7 +15363,12 @@
             "shin-megami-tensei-v-vengeance"
           ]
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-2207440",
@@ -14189,7 +15397,12 @@
             "shin-megami-tensei-v-vengeance"
           ]
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-1920960",
@@ -14259,7 +15472,12 @@
           "kind": "explicit-pc-page",
           "found": []
         }
-      ]
+      ],
+      "metacriticId": "vpet",
+      "reason": "No verified user-score fact for the approved Metacritic resource",
+      "sourceHadScore": false,
+      "sourceGap": "approved_identity_without_score_fact",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-1230140",
@@ -14334,7 +15552,12 @@
           "kind": "explicit-pc-page",
           "found": []
         }
-      ]
+      ],
+      "metacriticId": "atri-my-dear-moments-",
+      "reason": "No verified user-score fact for the approved Metacritic resource",
+      "sourceHadScore": false,
+      "sourceGap": "approved_identity_without_score_fact",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-667970",
@@ -14363,7 +15586,12 @@
             "shin-megami-tensei-v-vengeance"
           ]
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-1424330",
@@ -14445,7 +15673,12 @@
           "kind": "explicit-pc-page",
           "found": []
         }
-      ]
+      ],
+      "metacriticId": "wobbledogs",
+      "reason": "No verified user-score fact for the approved Metacritic resource",
+      "sourceHadScore": false,
+      "sourceGap": "approved_identity_without_score_fact",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-3370870",
@@ -14469,7 +15702,12 @@
             "cloverpit"
           ]
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-3084280",
@@ -14544,7 +15782,12 @@
           "kind": "explicit-pc-page",
           "found": []
         }
-      ]
+      ],
+      "metacriticId": "threefold-recital",
+      "reason": "No verified user-score fact for the approved Metacritic resource",
+      "sourceHadScore": false,
+      "sourceGap": "approved_identity_without_score_fact",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-623080",
@@ -14568,7 +15811,12 @@
             "cloverpit"
           ]
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-2612680",
@@ -14643,7 +15891,12 @@
           "kind": "explicit-pc-page",
           "found": []
         }
-      ]
+      ],
+      "metacriticId": "cureocity",
+      "reason": "No verified user-score fact for the approved Metacritic resource",
+      "sourceHadScore": false,
+      "sourceGap": "approved_identity_without_score_fact",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-2128270",
@@ -14667,7 +15920,12 @@
             "cloverpit"
           ]
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-2654860",
@@ -14688,7 +15946,12 @@
           "kind": "identity-discovery",
           "found": []
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-1148350",
@@ -14709,7 +15972,12 @@
           "kind": "identity-discovery",
           "found": []
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-1665190",
@@ -14730,7 +15998,12 @@
           "kind": "identity-discovery",
           "found": []
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-2614070",
@@ -14801,7 +16074,12 @@
           "kind": "explicit-pc-page",
           "found": []
         }
-      ]
+      ],
+      "metacriticId": "nukitashi-2",
+      "reason": "No verified user-score fact for the approved Metacritic resource",
+      "sourceHadScore": false,
+      "sourceGap": "approved_identity_without_score_fact",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-2719060",
@@ -14822,7 +16100,12 @@
           "kind": "identity-discovery",
           "found": []
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-4643090",
@@ -14848,7 +16131,12 @@
             "va-11-hall-a-cyberpunk-bartender-action"
           ]
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-1161870",
@@ -14874,7 +16162,12 @@
             "va-11-hall-a-cyberpunk-bartender-action"
           ]
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-3569430",
@@ -14900,7 +16193,12 @@
             "va-11-hall-a-cyberpunk-bartender-action"
           ]
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-2871440",
@@ -14926,7 +16224,12 @@
             "va-11-hall-a-cyberpunk-bartender-action"
           ]
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-1033420",
@@ -14947,7 +16250,12 @@
           "kind": "identity-discovery",
           "found": []
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-2434340",
@@ -14968,7 +16276,12 @@
           "kind": "identity-discovery",
           "found": []
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-2672090",
@@ -14989,7 +16302,12 @@
           "kind": "identity-discovery",
           "found": []
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-2262610",
@@ -15010,7 +16328,12 @@
           "kind": "identity-discovery",
           "found": []
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-2901140",
@@ -15031,7 +16354,12 @@
           "kind": "identity-discovery",
           "found": []
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-1725640",
@@ -15052,7 +16380,12 @@
           "kind": "identity-discovery",
           "found": []
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-1405500",
@@ -15073,7 +16406,12 @@
           "kind": "identity-discovery",
           "found": []
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-2423320",
@@ -15094,7 +16432,12 @@
           "kind": "identity-discovery",
           "found": []
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-2701720",
@@ -15115,7 +16458,12 @@
           "kind": "identity-discovery",
           "found": []
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-2624280",
@@ -15136,7 +16484,12 @@
           "kind": "identity-discovery",
           "found": []
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-1540570",
@@ -15157,7 +16510,12 @@
           "kind": "identity-discovery",
           "found": []
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-2986260",
@@ -15178,7 +16536,12 @@
           "kind": "identity-discovery",
           "found": []
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-2356500",
@@ -15199,7 +16562,12 @@
           "kind": "identity-discovery",
           "found": []
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-2073910",
@@ -15220,7 +16588,12 @@
           "kind": "identity-discovery",
           "found": []
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-1500740",
@@ -15241,7 +16614,12 @@
           "kind": "identity-discovery",
           "found": []
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-1817000",
@@ -15262,7 +16640,12 @@
           "kind": "identity-discovery",
           "found": []
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-2443360",
@@ -15283,7 +16666,12 @@
           "kind": "identity-discovery",
           "found": []
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-1340130",
@@ -15304,7 +16692,12 @@
           "kind": "identity-discovery",
           "found": []
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-1708150",
@@ -15325,7 +16718,12 @@
           "kind": "identity-discovery",
           "found": []
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-2144590",
@@ -15346,7 +16744,12 @@
           "kind": "identity-discovery",
           "found": []
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-3464370",
@@ -15367,7 +16770,12 @@
           "kind": "identity-discovery",
           "found": []
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-2572040",
@@ -15438,7 +16846,12 @@
           "kind": "explicit-pc-page",
           "found": []
         }
-      ]
+      ],
+      "metacriticId": "woodo",
+      "reason": "No verified user-score fact for the approved Metacritic resource",
+      "sourceHadScore": false,
+      "sourceGap": "approved_identity_without_score_fact",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-4887360",
@@ -15509,7 +16922,12 @@
           "kind": "explicit-pc-page",
           "found": []
         }
-      ]
+      ],
+      "metacriticId": "erdetspill",
+      "reason": "No verified user-score fact for the approved Metacritic resource",
+      "sourceHadScore": false,
+      "sourceGap": "approved_identity_without_score_fact",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-577480",
@@ -15530,7 +16948,12 @@
           "kind": "identity-discovery",
           "found": []
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-2629230",
@@ -15551,7 +16974,12 @@
           "kind": "identity-discovery",
           "found": []
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-2608040",
@@ -15572,7 +17000,12 @@
           "kind": "identity-discovery",
           "found": []
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-578540",
@@ -15593,7 +17026,12 @@
           "kind": "identity-discovery",
           "found": []
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-3547270",
@@ -15614,7 +17052,12 @@
           "kind": "identity-discovery",
           "found": []
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-668350",
@@ -15635,7 +17078,12 @@
           "kind": "identity-discovery",
           "found": []
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-2735620",
@@ -15656,7 +17104,12 @@
           "kind": "identity-discovery",
           "found": []
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-2693730",
@@ -15680,7 +17133,12 @@
             "beyond-a-steel-sky"
           ]
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-1988540",
@@ -15704,7 +17162,12 @@
             "beyond-a-steel-sky"
           ]
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-1545990",
@@ -15728,7 +17191,12 @@
             "beyond-a-steel-sky"
           ]
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-398000",
@@ -15752,7 +17220,12 @@
             "beyond-a-steel-sky"
           ]
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-2882440",
@@ -15775,7 +17248,12 @@
             "duet-night-abyss"
           ]
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-2314820",
@@ -15846,7 +17324,12 @@
           "kind": "explicit-pc-page",
           "found": []
         }
-      ]
+      ],
+      "metacriticId": "hira-hira-hihiru",
+      "reason": "No verified user-score fact for the approved Metacritic resource",
+      "sourceHadScore": false,
+      "sourceGap": "approved_identity_without_score_fact",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-1888010",
@@ -15869,7 +17352,12 @@
             "duet-night-abyss"
           ]
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-3394250",
@@ -15892,7 +17380,12 @@
             "duet-night-abyss"
           ]
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-2147950",
@@ -15915,7 +17408,12 @@
             "duet-night-abyss"
           ]
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-2226870",
@@ -15938,7 +17436,12 @@
             "cleo-a-pirates-tale"
           ]
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-1340140",
@@ -16008,7 +17511,12 @@
           "kind": "explicit-pc-page",
           "found": []
         }
-      ]
+      ],
+      "metacriticId": "dracu-riot",
+      "reason": "No verified user-score fact for the approved Metacritic resource",
+      "sourceHadScore": false,
+      "sourceGap": "approved_identity_without_score_fact",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-2624670",
@@ -16031,7 +17539,12 @@
             "cleo-a-pirates-tale"
           ]
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-1238730",
@@ -16054,7 +17567,12 @@
             "cleo-a-pirates-tale"
           ]
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-2349550",
@@ -16087,7 +17605,12 @@
             "windforge"
           ]
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-4241920",
@@ -16120,7 +17643,12 @@
             "windforge"
           ]
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-3634430",
@@ -16153,7 +17681,12 @@
             "windforge"
           ]
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-2983250",
@@ -16186,7 +17719,12 @@
             "windforge"
           ]
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-1998530",
@@ -16207,7 +17745,12 @@
           "kind": "identity-discovery",
           "found": []
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-1657740",
@@ -16228,7 +17771,12 @@
           "kind": "identity-discovery",
           "found": []
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-3212530",
@@ -16298,7 +17846,12 @@
           "kind": "explicit-pc-page",
           "found": []
         }
-      ]
+      ],
+      "metacriticId": "anthology-of-the-killer",
+      "reason": "No verified user-score fact for the approved Metacritic resource",
+      "sourceHadScore": false,
+      "sourceGap": "approved_identity_without_score_fact",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-3575980",
@@ -16319,7 +17872,12 @@
           "kind": "identity-discovery",
           "found": []
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-852090",
@@ -16389,7 +17947,12 @@
           "kind": "explicit-pc-page",
           "found": []
         }
-      ]
+      ],
+      "metacriticId": "penko-park",
+      "reason": "No verified user-score fact for the approved Metacritic resource",
+      "sourceHadScore": false,
+      "sourceGap": "approved_identity_without_score_fact",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-1292020",
@@ -16410,7 +17973,12 @@
           "kind": "identity-discovery",
           "found": []
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-3390880",
@@ -16431,7 +17999,12 @@
           "kind": "identity-discovery",
           "found": []
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-2442020",
@@ -16452,7 +18025,12 @@
           "kind": "identity-discovery",
           "found": []
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-2191190",
@@ -16473,7 +18051,12 @@
           "kind": "identity-discovery",
           "found": []
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-4285320",
@@ -16494,7 +18077,12 @@
           "kind": "identity-discovery",
           "found": []
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-1264520",
@@ -16515,7 +18103,12 @@
           "kind": "identity-discovery",
           "found": []
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-4261980",
@@ -16536,7 +18129,12 @@
           "kind": "identity-discovery",
           "found": []
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-3584920",
@@ -16557,7 +18155,12 @@
           "kind": "identity-discovery",
           "found": []
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-3739190",
@@ -16578,7 +18181,12 @@
           "kind": "identity-discovery",
           "found": []
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-4022300",
@@ -16599,7 +18207,12 @@
           "kind": "identity-discovery",
           "found": []
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-2753620",
@@ -16620,7 +18233,12 @@
           "kind": "identity-discovery",
           "found": []
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-3551190",
@@ -16641,7 +18259,12 @@
           "kind": "identity-discovery",
           "found": []
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-3380950",
@@ -16662,7 +18285,12 @@
           "kind": "identity-discovery",
           "found": []
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-2516920",
@@ -16689,7 +18317,12 @@
             "jurassic-world-evolution-2"
           ]
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-4521340",
@@ -16716,7 +18349,12 @@
             "jurassic-world-evolution-2"
           ]
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-3275880",
@@ -16743,7 +18381,12 @@
             "jurassic-world-evolution-2"
           ]
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-2515070",
@@ -16770,7 +18413,12 @@
             "jurassic-world-evolution-2"
           ]
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-1321120",
@@ -16796,7 +18444,12 @@
             "the-wolf-among-us-episode-4-in-sheeps-clothing"
           ]
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-1366540",
@@ -16866,7 +18519,12 @@
           "kind": "explicit-pc-page",
           "found": []
         }
-      ]
+      ],
+      "metacriticId": "dyson-sphere-program",
+      "reason": "No verified user-score fact for the approved Metacritic resource",
+      "sourceHadScore": false,
+      "sourceGap": "approved_identity_without_score_fact",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-250320",
@@ -16892,7 +18550,12 @@
             "the-wolf-among-us-episode-4-in-sheeps-clothing"
           ]
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "Steam primary description explicitly lists all five episodes as one season; one episode resource is not the whole season score.",
+      "sourceHadScore": true,
+      "sourceGap": "unusable_source_association",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-541570",
@@ -16918,7 +18581,12 @@
             "the-wolf-among-us-episode-4-in-sheeps-clothing"
           ]
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "Steam individual product is Episode One. COMPLETE GAME is a separate bundle of Episode One plus Season Pass. Generic Sally Face score may represent the whole game; need episode-specific evidence before assignment.",
+      "sourceHadScore": true,
+      "sourceGap": "unusable_source_association",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-774801",
@@ -16944,7 +18612,12 @@
             "the-wolf-among-us-episode-4-in-sheeps-clothing"
           ]
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-312990",
@@ -16965,7 +18638,12 @@
           "kind": "identity-discovery",
           "found": []
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": true,
+      "sourceGap": "unusable_source_association",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-2171440",
@@ -16986,7 +18664,12 @@
           "kind": "identity-discovery",
           "found": []
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-2495450",
@@ -17055,7 +18738,12 @@
           "kind": "explicit-pc-page",
           "found": []
         }
-      ]
+      ],
+      "metacriticId": "winter-memories",
+      "reason": "No verified user-score fact for the approved Metacritic resource",
+      "sourceHadScore": false,
+      "sourceGap": "approved_identity_without_score_fact",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-2458860",
@@ -17076,7 +18764,12 @@
           "kind": "identity-discovery",
           "found": []
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-2704110",
@@ -17145,7 +18838,12 @@
           "kind": "explicit-pc-page",
           "found": []
         }
-      ]
+      ],
+      "metacriticId": "aliya",
+      "reason": "No verified user-score fact for the approved Metacritic resource",
+      "sourceHadScore": false,
+      "sourceGap": "approved_identity_without_score_fact",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-1740100",
@@ -17166,7 +18864,12 @@
           "kind": "identity-discovery",
           "found": []
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-1955830",
@@ -17194,7 +18897,12 @@
             "1300577900"
           ]
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-1067310",
@@ -17222,7 +18930,12 @@
             "1300577900"
           ]
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-2056220",
@@ -17250,7 +18963,12 @@
             "1300577900"
           ]
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-1282200",
@@ -17271,7 +18989,12 @@
           "kind": "identity-discovery",
           "found": []
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-1277930",
@@ -17292,7 +19015,12 @@
           "kind": "identity-discovery",
           "found": []
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-1806040",
@@ -17313,7 +19041,12 @@
           "kind": "identity-discovery",
           "found": []
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-1377360",
@@ -17334,7 +19067,12 @@
           "kind": "identity-discovery",
           "found": []
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-1829980",
@@ -17353,7 +19091,12 @@
           "kind": "identity-discovery",
           "found": []
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     },
     {
       "gameId": "steam-1428310",
@@ -17372,7 +19115,16 @@
           "kind": "identity-discovery",
           "found": []
         }
-      ]
+      ],
+      "metacriticId": null,
+      "reason": "No approved ID crosslink available",
+      "sourceHadScore": false,
+      "sourceGap": "identity_and_score_fact_unavailable",
+      "metacriticScoreAvailability": "not_established"
     }
-  ]
+  ],
+  "policy": "metacritic-primary-pc-preferred-platform-fallback",
+  "verifiedOtherPlatformScores": 2,
+  "directAdded": 4,
+  "platformUnknownBlocksScoreDisplay": false
 }

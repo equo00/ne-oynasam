@@ -17,7 +17,7 @@ const seed=JSON.parse(fs.readFileSync('data/catalog.json','utf8')),ed=JSON.parse
 const h=harness.createHarness({user:null,search:'?q=kens',requestHook:catalogHook});
 // Wait for the actual SQL response; fixed sleeps fail under concurrent test load.
 for(let attempt=0;attempt<200&&!run(h,'state.loaded');attempt++)await pause(10);
-assert.equal(run(h,'state.loaded'),true);assert.equal(run(h,'state.catalogStats.games'),1323);assert.equal(run(h,'state.catalogStats.scores'),958);
+assert.equal(run(h,'state.loaded'),true);assert.equal(run(h,'state.catalogStats.games'),1323);assert.equal(run(h,'state.catalogStats.scores'),JSON.parse(fs.readFileSync('data/METACRITIC-STEP3-REPORT.json','utf8')).scores);
 assert(run(h,'state.games.some(g=>g.id==="kenshi")'),'The browser uses real SQL prefix results');
 assert.equal(run(h,'nameGame("kenshi").desc'),ed.Kenshi.desc,'Server enrichment preserves authored discovery hooks');
 assert.equal(run(h,'nameGame("kenshi").long'),ed.Kenshi.long);
@@ -27,6 +27,12 @@ h.elements.rating.value='8';h.elements.system.value='Windows';await run(h,'state
 const helldivers=seed.find(g=>g.steamAppId===553850),mortal=seed.find(g=>g.steamAppId===2584270);
 await run(h,`openGame(${JSON.stringify(helldivers.id)})`);assert(h.elements.detailContent.innerHTML.includes('7,5'));
 assert.equal(run(h,'state.current.metacriticUser.platform'),null,'Historical platform-unknown scores remain visible');
+for(const [app,score,platform,count] of [[3393110,6.5,'PC',13],[2215200,8.4,'PlayStation 5',635],[2357570,2,'PC',5129],[3940610,6.2,'PlayStation 5',19]]){
+ const g=seed.find(g=>g.steamAppId===app);await run(h,`openGame(${JSON.stringify(g.id)})`);
+ assert.equal(run(h,'state.current.metacriticUser.score'),score);assert.equal(run(h,'state.current.metacriticUser.platform'),platform);assert.equal(run(h,'state.current.metacriticUser.userRatings'),count);
+ assert(h.elements.detailContent.innerHTML.includes(platform));
+}
+assert(h.elements.detailContent.innerHTML.includes('Kaynak önbellekleri farklı; güncellik belirsiz'));
 await run(h,`state.compare=new Set(${JSON.stringify([helldivers.id,mortal.id])});showCompare()`);assert(h.elements.compareContent.innerHTML.includes('7,5/10'));assert(h.elements.compareContent.innerHTML.includes('7,8/10'));
 const cs2=seed.find(g=>g.steamAppId===730);
 await run(h,`openGame(${JSON.stringify(cs2.id)})`);assert(h.elements.detailContent.innerHTML.includes('5,5'));assert.equal(run(h,'state.current.metacriticUser.platform'),'PC');assert.equal(run(h,'state.current.metacriticUser.metacriticId'),'counter-strike-2');

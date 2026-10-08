@@ -28,8 +28,9 @@ const score={metric:'user-score',platform:'PC',score:8.6};
 h.ctx.pcFixture={id:'pc-fixture',name:'Fixture',steamAppId:99990001,platforms:['PC','PlayStation'],genres:[],pcSystems:['Windows'],metacriticUser:score};
 for(const platform of ['PlayStation','Android']){
  h.ctx.pcFixture.metacriticUser={...score,platform};
- assert.equal(vm.runInContext('userScore(pcFixture)',h.ctx),null);
- assert(!vm.runInContext('scoreBadge(pcFixture)',h.ctx).includes('8,6'));
+ assert.equal(vm.runInContext('userScore(pcFixture).score',h.ctx),8.6);
+ assert(vm.runInContext('scoreBadge(pcFixture)',h.ctx).includes('8,6'));
+ assert(vm.runInContext('scoreRecordText(pcFixture)',h.ctx).includes(platform));
 }
 h.ctx.pcFixture.metacriticUser={...score,platform:null};
 assert.equal(vm.runInContext('scoreText(pcFixture)',h.ctx),'8,6/10');
@@ -71,7 +72,7 @@ const counts=fixture.sqlite.prepare(`SELECT COUNT(*) AS scores,
  FROM catalog_games WHERE status='published' AND score_value IS NOT NULL`).get();
 assert.equal(counts.scores,coverage.scores,'All historical source score rows survive normalization');
 assert.equal(counts.unspecified,coverage.platformUnknown);
-assert.equal(counts.foreign_platform,0);
+assert.equal(counts.foreign_platform,coverage.verifiedOtherPlatformScores||0,'Other-platform source scores remain visible in the PC catalog');
 assert.equal(counts.user_scores,coverage.scores);
 assert.equal(fixture.sqlite.prepare(`SELECT COUNT(*) AS n FROM catalog_games g
  WHERE g.status='published' AND NOT EXISTS(SELECT 1 FROM catalog_game_platforms p WHERE p.game_id=g.id AND p.platform='PC')`).get().n,0,'Every published game belongs to PC scope');

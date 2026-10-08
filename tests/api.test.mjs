@@ -20,7 +20,7 @@ let catalogResponse=await modules.catalog.GET(getReq(''));
 assert.equal(catalogResponse.status,200);
 const firstPage=await catalogResponse.json();
 assert.equal(firstPage.apiVersion,2);assert.equal(firstPage.games.length,24);
-assert.equal(firstPage.total,1323);assert.equal(firstPage.catalogStats.scores,958);
+assert.equal(firstPage.total,1323);assert.equal(firstPage.catalogStats.scores,JSON.parse(fs.readFileSync('data/METACRITIC-STEP3-REPORT.json','utf8')).scores);
 globalThis.testUser={userId:'user-a',email:'a@example.test',displayName:'A'};
 const privatePage=await (await modules.catalog.GET(getReq('?library=1'))).json();
 assert.deepEqual(privatePage.games.map(g=>g.id),[id]);

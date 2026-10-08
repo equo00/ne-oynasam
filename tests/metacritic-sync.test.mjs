@@ -4,7 +4,7 @@ import {createCatalogFixture,moduleFor,readyCatalog} from './catalog-fixture.mjs
 import {parseMetacriticObservations,validateObservation} from '../lib/metacritic-observation.mjs';
 
 const read=p=>JSON.parse(fs.readFileSync(p,'utf8'));
-const baseline=read('data/metacritic-score-history.json'),report=read('data/METACRITIC-STEP3-REPORT.json'),updates=read('data/metacritic-score-updates.json');
+const baseline=read('data/metacritic-score-history.json'),report=read('data/METACRITIC-STEP3-REPORT.json'),updates=read('data/metacritic-score-updates.json'),direct=read('data/metacritic-direct-score-updates.json');
 const fixture=createCatalogFixture(),{sqlite,database}=fixture;
 await readyCatalog(await moduleFor('lib/catalog-bootstrap.ts'));
 const {ingestGames}=await moduleFor('lib/catalog-ingest.ts');
@@ -36,7 +36,7 @@ database.batch=goodBatch;
 const initial=await scoreSync.ensureMetacriticScores(database);assert.equal(initial.processed,10);assert.equal(initial.ready,false);
 let state=initial;
 for(let i=0;i<150&&!state.ready;i++)state=await scoreSync.ensureMetacriticScores(database);
-assert(state.ready);assert.equal(state.total,updates.changes.length);
+assert(state.ready);assert.equal(state.total,updates.changes.length+direct.changes.length);
 assert.equal(sqlite.prepare("SELECT COUNT(score_value) n FROM catalog_games WHERE status='published'").get().n,report.scores);
 assert.equal(sqlite.prepare("SELECT COUNT(score_value) n FROM catalog_games WHERE status='published' AND score_platform='PC'").get().n,report.verifiedPcScores);
 for(const [table,rows] of relationsBefore)assert.deepEqual(sqlite.prepare('SELECT * FROM '+table+' ORDER BY rowid').all(),rows,'Score-only import changed relation/media table: '+table);
@@ -47,7 +47,7 @@ for(const row of before){const after=sqlite.prepare('SELECT payload,base_payload
  assert.equal(after.source_priority,row.source_priority);assert.equal(after.sort_order,row.sort_order);
  const old=baseline.records[baseline.identities[row.id]?.scoreRecordId];if(old)assert.equal(sqlite.prepare('SELECT payload FROM catalog_scores WHERE record_id=?').get(old.recordId).payload,JSON.stringify(old),'Historical score was removed');
 }
-for(const change of updates.changes){const after=JSON.parse(sqlite.prepare('SELECT payload FROM catalog_games WHERE id=?').get(change.gameId).payload);assert.deepEqual(after.metacriticUser,change.score);}
+for(const change of [...updates.changes,...direct.changes]){const after=JSON.parse(sqlite.prepare('SELECT payload FROM catalog_games WHERE id=?').get(change.gameId).payload);assert.deepEqual(after.metacriticUser,change.score);}
 const revision=sqlite.prepare("SELECT value FROM catalog_meta WHERE id='revision'").get().value;
 await Promise.all([scoreSync.ensureMetacriticScores(database),scoreSync.ensureMetacriticScores(database)]);
 assert.equal(sqlite.prepare("SELECT value FROM catalog_meta WHERE id='revision'").get().value,revision,'Completed import must be idempotent');

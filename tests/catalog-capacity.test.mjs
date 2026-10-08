@@ -13,6 +13,11 @@ const fixture=createCatalogFixture(filename);
 try{
  const bootstrap=await moduleFor('lib/catalog-bootstrap.ts');
  await readyCatalog(bootstrap);
+ // Finish the real catalog's score migration before replacing its identities
+ // with synthetic ones; source updates must never target synthetic games.
+ const scores=await moduleFor('lib/metacritic-sync.ts');
+ let scoreState;
+ do{scoreState=await scores.ensureMetacriticScores(fixture.database);}while(!scoreState.ready);
  const count=140000,sqlite=fixture.sqlite,start=performance.now();
  sqlite.exec('PRAGMA journal_mode=OFF; PRAGMA synchronous=OFF; BEGIN;');
  for(const table of ['catalog_game_tags','catalog_game_genres','catalog_game_systems','catalog_game_platforms','catalog_search_terms','catalog_source_ids','catalog_editions','catalog_scores','catalog_media','catalog_overrides','catalog_games','catalog_tags','catalog_genres'])sqlite.exec('DELETE FROM '+table);

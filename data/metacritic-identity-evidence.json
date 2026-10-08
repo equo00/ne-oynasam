@@ -31658,6 +31658,86 @@
         "metacriticRelease": "Jun 30, 2021",
         "retrievalReference": "turn953search6"
       }
+    },
+    {
+      "steamAppId": 3393110,
+      "status": "approved",
+      "metacriticId": "aion-2",
+      "numericId": null,
+      "approvedResourceAliases": [],
+      "evidenceURLs": [
+        "https://store.steampowered.com/app/3393110/",
+        "https://www.metacritic.com/game/aion-2/",
+        "https://aion2.plaync.com/en-us/conts/teaser"
+      ],
+      "reviewedAt": "2026-10-08",
+      "rationale": "Steam 3393110 kaydı NC geliştiricisi ve resmî aion2.plaync.com sitesine bağlıdır. Bağımsız Metacritic aion-2 sayfası NC/PC; kullanıcı görüntüsündeki aynı AION 2 kapak, NC ve 5 Ekim 2026 çıkışı bu kaynak/sürüm kimliğini doğrular. Steam Metacritic bağlantısı gerekmemiştir.",
+      "reviewedMetadata": {
+        "storeProductId": 3393110,
+        "storeName": "AION 2",
+        "storeDevelopers": [
+          "NC"
+        ],
+        "storeRelease": {
+          "coming_soon": false,
+          "date": "Oct 5, 2026"
+        },
+        "retrievalReference": "turn1search0"
+      }
+    },
+    {
+      "steamAppId": 2357570,
+      "status": "approved",
+      "metacriticId": "overwatch",
+      "numericId": "1300508698",
+      "approvedResourceAliases": [
+        "overwatch-2"
+      ],
+      "evidenceURLs": [
+        "https://store.steampowered.com/app/2357570/",
+        "https://www.metacritic.com/game/overwatch/",
+        "https://overwatch.blizzard.com/"
+      ],
+      "reviewedAt": "2026-10-08",
+      "rationale": "Metacritic yeni overwatch kaynak sayfası açıkça Overwatch 2 açıklaması, Blizzard ve 10 Ağustos 2023 Steam çıkışını gösterir; saklanan Steam2357570 ile eşleşir. Önceki onaylı overwatch-2 kaynak kimliğine yalnızca bu oyun için açık alias eklenir; overwatch-2016 ayrı eserdir.",
+      "reviewedMetadata": {
+        "storeProductId": 2357570,
+        "storeName": "Overwatch®",
+        "storeDevelopers": [
+          "Blizzard Entertainment, Inc."
+        ],
+        "storeRelease": {
+          "coming_soon": false,
+          "date": "Aug 10, 2023"
+        },
+        "retrievalReference": "turn24view2"
+      }
+    },
+    {
+      "steamAppId": 3940610,
+      "status": "approved",
+      "metacriticId": "madden-nfl-27",
+      "numericId": null,
+      "approvedResourceAliases": [],
+      "evidenceURLs": [
+        "https://store.steampowered.com/app/3940610/",
+        "https://www.metacritic.com/game/madden-nfl-27/",
+        "https://www.ea.com/games/madden-nfl/madden-nfl-27"
+      ],
+      "reviewedAt": "2026-10-08",
+      "rationale": "Metacritic Madden NFL27 sayfası EA Tiburon ve 13 Ağustos 2026 çıkışını; Steam3940610 aynı NFL27 ürünü, Tiburon ve aynı günü gösterir. PS5 sayısal kullanıcı kaydı platform bağlantısıyla doğrulanır; Arcade Edition ve NFL26 dışlanır.",
+      "reviewedMetadata": {
+        "storeProductId": 3940610,
+        "storeName": "EA SPORTS™ Madden NFL 27",
+        "storeDevelopers": [
+          "Tiburon"
+        ],
+        "storeRelease": {
+          "coming_soon": false,
+          "date": "Aug 13, 2026"
+        },
+        "retrievalReference": "turn24view1"
+      }
     }
   ],
   "editionAudit": [

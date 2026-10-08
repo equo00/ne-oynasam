@@ -1,3 +1,5 @@
+import fs from 'node:fs';
+import {createHash} from 'node:crypto';
 import assert from 'node:assert/strict';
 import {createCatalogFixture,moduleFor} from './catalog-fixture.mjs';
 
@@ -6,6 +8,7 @@ import {createCatalogFixture,moduleFor} from './catalog-fixture.mjs';
 async function check(file,method,id,processed){
  const fixture=createCatalogFixture(),database=fixture.database;
  fixture.sqlite.prepare("INSERT INTO catalog_bootstrap(id,stage,cursor,processed,updated_at) VALUES(?,'done',?,?,?)").run(id,String(processed),processed,'2026-10-08');
+ if(method==='ensureMetacriticScores'){const input=JSON.parse(fs.readFileSync('data/metacritic-direct-score-updates.json','utf8')),count=input.changes.length;if(count)fixture.sqlite.prepare("INSERT INTO catalog_bootstrap(id,stage,cursor,processed,updated_at) VALUES(?,'done',?,?,?)").run('metacritic-direct-'+createHash('sha256').update(JSON.stringify(input)).digest('hex').slice(0,24),String(count),count,'2026-10-08');processed+=count;}
  const module=await moduleFor(file),prepare=database.prepare;
  let release,entered,held=false;
  const blocked=new Promise(resolve=>release=resolve),started=new Promise(resolve=>entered=resolve);

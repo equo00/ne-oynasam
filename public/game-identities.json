@@ -4,11 +4,35 @@
     "gameId": "steam-3393110",
     "steamAppId": 3393110,
     "revision": 1,
-    "status": "unverified_identity",
-    "metacritic": null,
-    "scoreRecordId": null,
-    "scorePlatform": null,
-    "reason": "No approved ID crosslink available"
+    "status": "ready",
+    "metacritic": {
+      "resourceId": "aion-2",
+      "numericId": null,
+      "url": "https://www.metacritic.com/game/aion-2/",
+      "editionScope": "Reviewed store product / Metacritic work relationship",
+      "evidence": [
+        {
+          "kind": "reviewed-id-crosswalk",
+          "urls": [
+            "https://store.steampowered.com/app/3393110/",
+            "https://www.metacritic.com/game/aion-2/",
+            "https://aion2.plaync.com/en-us/conts/teaser"
+          ],
+          "reviewedAt": "2026-10-08",
+          "rationale": "Steam 3393110 kaydı NC geliştiricisi ve resmî aion2.plaync.com sitesine bağlıdır. Bağımsız Metacritic aion-2 sayfası NC/PC; kullanıcı görüntüsündeki aynı AION 2 kapak, NC ve 5 Ekim 2026 çıkışı bu kaynak/sürüm kimliğini doğrular. Steam Metacritic bağlantısı gerekmemiştir.",
+          "approvedResourceAliases": []
+        },
+        {
+          "kind": "reviewed-primary-score",
+          "recordId": "mc-user:reviewed:3393110:PC:2026-10-08:direct01",
+          "url": "https://www.metacritic.com/game/aion-2/",
+          "retrievedAt": "2026-10-08T11:42:40Z",
+          "method": "user-supplied-capture"
+        }
+      ]
+    },
+    "scoreRecordId": "mc-user:reviewed:3393110:PC:2026-10-08:direct01",
+    "scorePlatform": "PC"
   },
   "steam-730": {
     "schemaVersion": 1,
@@ -987,11 +1011,35 @@
     "gameId": "steam-3940610",
     "steamAppId": 3940610,
     "revision": 1,
-    "status": "unverified_identity",
-    "metacritic": null,
-    "scoreRecordId": null,
-    "scorePlatform": null,
-    "reason": "No approved ID crosslink available"
+    "status": "ready",
+    "metacritic": {
+      "resourceId": "madden-nfl-27",
+      "numericId": null,
+      "url": "https://www.metacritic.com/game/madden-nfl-27/",
+      "editionScope": "Reviewed store product / Metacritic work relationship",
+      "evidence": [
+        {
+          "kind": "reviewed-id-crosswalk",
+          "urls": [
+            "https://store.steampowered.com/app/3940610/",
+            "https://www.metacritic.com/game/madden-nfl-27/",
+            "https://www.ea.com/games/madden-nfl/madden-nfl-27"
+          ],
+          "reviewedAt": "2026-10-08",
+          "rationale": "Metacritic Madden NFL27 sayfası EA Tiburon ve 13 Ağustos 2026 çıkışını; Steam3940610 aynı NFL27 ürünü, Tiburon ve aynı günü gösterir. PS5 sayısal kullanıcı kaydı platform bağlantısıyla doğrulanır; Arcade Edition ve NFL26 dışlanır.",
+          "approvedResourceAliases": []
+        },
+        {
+          "kind": "reviewed-primary-score",
+          "recordId": "mc-user:reviewed:3940610:PS5:2026-10-08:direct01",
+          "url": "https://www.metacritic.com/game/madden-nfl-27/",
+          "retrievedAt": "2026-10-08T12:11:20.564544Z",
+          "method": "public-primary-cache"
+        }
+      ]
+    },
+    "scoreRecordId": "mc-user:reviewed:3940610:PS5:2026-10-08:direct01",
+    "scorePlatform": "PlayStation 5"
   },
   "steam-3764200": {
     "schemaVersion": 1,
@@ -1644,7 +1692,7 @@
     "gameId": "steam-2215200",
     "steamAppId": 2215200,
     "revision": 1,
-    "status": "missing_score",
+    "status": "ready",
     "metacritic": {
       "resourceId": "lego-batman-legacy-of-the-dark-knight",
       "numericId": "1300699296",
@@ -1666,25 +1714,44 @@
           "numericId": "1300699296",
           "url": "http://www.wikidata.org/entity/Q135909032",
           "retrievedAt": "2026-10-06T11:25:12.834Z"
+        },
+        {
+          "kind": "reviewed-primary-score",
+          "recordId": "mc-user:reviewed:2215200:PS5:2026-10-08:direct01",
+          "url": "https://www.metacritic.com/game/lego-batman-legacy-of-the-dark-knight/user-reviews/",
+          "retrievedAt": "2026-10-08T12:11:20.564544Z",
+          "method": "public-primary-cache"
         }
       ]
     },
-    "scoreRecordId": null,
-    "scorePlatform": null,
-    "reason": "No verified user-score fact for the approved Metacritic resource"
+    "scoreRecordId": "mc-user:reviewed:2215200:PS5:2026-10-08:direct01",
+    "scorePlatform": "PlayStation 5"
   },
   "steam-2357570": {
     "schemaVersion": 1,
     "gameId": "steam-2357570",
     "steamAppId": 2357570,
     "revision": 1,
-    "status": "missing_score",
+    "status": "ready",
     "metacritic": {
-      "resourceId": "overwatch-2",
+      "resourceId": "overwatch",
       "numericId": "1300508698",
-      "url": "https://www.metacritic.com/game/overwatch-2/",
+      "url": "https://www.metacritic.com/game/overwatch/",
       "editionScope": "Reviewed store product / Metacritic work relationship",
       "evidence": [
+        {
+          "kind": "reviewed-id-crosswalk",
+          "urls": [
+            "https://store.steampowered.com/app/2357570/",
+            "https://www.metacritic.com/game/overwatch/",
+            "https://overwatch.blizzard.com/"
+          ],
+          "reviewedAt": "2026-10-08",
+          "rationale": "Metacritic yeni overwatch kaynak sayfası açıkça Overwatch 2 açıklaması, Blizzard ve 10 Ağustos 2023 Steam çıkışını gösterir; saklanan Steam2357570 ile eşleşir. Önceki onaylı overwatch-2 kaynak kimliğine yalnızca bu oyun için açık alias eklenir; overwatch-2016 ayrı eserdir.",
+          "approvedResourceAliases": [
+            "overwatch-2"
+          ]
+        },
         {
           "kind": "wikidata-external-ids",
           "qid": "Q73163646",
@@ -1693,12 +1760,18 @@
           "numericId": "1300508698",
           "url": "http://www.wikidata.org/entity/Q73163646",
           "retrievedAt": "2026-10-06T11:25:12.834Z"
+        },
+        {
+          "kind": "reviewed-primary-score",
+          "recordId": "mc-user:reviewed:2357570:PC:2026-10-08:direct01",
+          "url": "https://www.metacritic.com/game/overwatch/",
+          "retrievedAt": "2026-10-08T12:11:20.564544Z",
+          "method": "public-primary-cache"
         }
       ]
     },
-    "scoreRecordId": null,
-    "scorePlatform": null,
-    "reason": "No verified user-score fact for the approved Metacritic resource"
+    "scoreRecordId": "mc-user:reviewed:2357570:PC:2026-10-08:direct01",
+    "scorePlatform": "PC"
   },
   "steam-1808500": {
     "schemaVersion": 1,

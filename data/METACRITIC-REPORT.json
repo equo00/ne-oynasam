@@ -2,30 +2,37 @@
   "schemaVersion": 2,
   "catalogGames": 1323,
   "previousUserScores": 777,
-  "userScores": 958,
-  "distinctScoreRecords": 958,
+  "userScores": 962,
+  "distinctScoreRecords": 962,
   "initiallyMissing": 546,
   "initiallyMissingAudited": 546,
-  "recoveredUserScores": 181,
+  "recoveredUserScores": 185,
   "removedInvalidMappings": 0,
-  "remainingMissing": 365,
+  "remainingMissing": 361,
   "numericIdMappings": 681,
   "sourceSnapshotDate": "2026-10-05",
-  "reviewedPrimaryScores": 704,
+  "reviewedPrimaryScores": 708,
   "sourceCoverage": {
     "secondaryDatasetScores": 252,
     "historicalWikidataScores": 2,
-    "reviewedPrimaryScores": 704,
+    "reviewedPrimaryScores": 708,
     "missingByStatus": {
-      "unverified_identity": 291,
-      "missing_score": 67,
+      "unverified_identity": 289,
+      "missing_score": 65,
       "identity_conflict": 7
     },
-    "missingWithoutSecondaryFact": 356,
+    "missingWithoutSecondaryFact": 352,
     "missingWithUnusableSecondaryFact": 9,
     "notice": "Missing from imported sources does not establish absence of a Metacritic user score. Primary cached observations retain their crawl-age labels; retrieval is not a live measurement."
   },
   "recovered": [
+    {
+      "gameId": "steam-3393110",
+      "steamAppId": 3393110,
+      "name": "AION 2",
+      "metacriticId": "aion-2",
+      "score": 6.5
+    },
     {
       "gameId": "steam-730",
       "steamAppId": 730,
@@ -55,6 +62,13 @@
       "score": 5.9
     },
     {
+      "gameId": "steam-3940610",
+      "steamAppId": 3940610,
+      "name": "EA SPORTS™ Madden NFL 27",
+      "metacriticId": "madden-nfl-27",
+      "score": 6.2
+    },
+    {
       "gameId": "steam-4032350",
       "steamAppId": 4032350,
       "name": "EA SPORTS™ College Football 27",
@@ -67,6 +81,20 @@
       "name": "Forza Horizon 6",
       "metacriticId": "forza-horizon-6",
       "score": 7.4
+    },
+    {
+      "gameId": "steam-2215200",
+      "steamAppId": 2215200,
+      "name": "LEGO® Batman™: Legacy of the Dark Knight",
+      "metacriticId": "lego-batman-legacy-of-the-dark-knight",
+      "score": 8.4
+    },
+    {
+      "gameId": "steam-2357570",
+      "steamAppId": 2357570,
+      "name": "Overwatch®",
+      "metacriticId": "overwatch",
+      "score": 2
     },
     {
       "gameId": "steam-1808500",
@@ -1297,17 +1325,6 @@
   "removed": [],
   "missing": [
     {
-      "gameId": "steam-3393110",
-      "steamAppId": 3393110,
-      "name": "AION 2",
-      "status": "unverified_identity",
-      "metacriticId": null,
-      "reason": "No approved ID crosslink available",
-      "sourceHadScore": false,
-      "sourceGap": "identity_and_score_fact_unavailable",
-      "metacriticScoreAvailability": "not_established"
-    },
-    {
       "gameId": "steam-1867240",
       "steamAppId": 1867240,
       "name": "WARDOGS",
@@ -1374,17 +1391,6 @@
       "metacriticScoreAvailability": "not_established"
     },
     {
-      "gameId": "steam-3940610",
-      "steamAppId": 3940610,
-      "name": "EA SPORTS™ Madden NFL 27",
-      "status": "unverified_identity",
-      "metacriticId": null,
-      "reason": "No approved ID crosslink available",
-      "sourceHadScore": false,
-      "sourceGap": "identity_and_score_fact_unavailable",
-      "metacriticScoreAvailability": "not_established"
-    },
-    {
       "gameId": "steam-2887580",
       "steamAppId": 2887580,
       "name": "Active Matter",
@@ -1393,28 +1399,6 @@
       "reason": "No approved ID crosslink available",
       "sourceHadScore": false,
       "sourceGap": "identity_and_score_fact_unavailable",
-      "metacriticScoreAvailability": "not_established"
-    },
-    {
-      "gameId": "steam-2215200",
-      "steamAppId": 2215200,
-      "name": "LEGO® Batman™: Legacy of the Dark Knight",
-      "status": "missing_score",
-      "metacriticId": "lego-batman-legacy-of-the-dark-knight",
-      "reason": "No verified user-score fact for the approved Metacritic resource",
-      "sourceHadScore": false,
-      "sourceGap": "approved_identity_without_score_fact",
-      "metacriticScoreAvailability": "not_established"
-    },
-    {
-      "gameId": "steam-2357570",
-      "steamAppId": 2357570,
-      "name": "Overwatch®",
-      "status": "missing_score",
-      "metacriticId": "overwatch-2",
-      "reason": "No verified user-score fact for the approved Metacritic resource",
-      "sourceHadScore": false,
-      "sourceGap": "approved_identity_without_score_fact",
       "metacriticScoreAvailability": "not_established"
     },
     {

@@ -27,10 +27,31 @@ Canlı site: https://ne-oynasam-samet.sameteskibag-se.chatgpt.site
 
 Tarayıcı üzerinden görsel/mobil ve gerçek giriş etkileşimi bu ortamda doğrulanmadı. API, gerçek SQL ve yerel arayüz testleri bu sınırdan ayrı raporlanır. Canlı kişisel içerik veya erişim anahtarı bu belgeye ve GitHub'a yazılmadı. Bu belge uygulama dosyalarını değiştirmeyen doğrulama kaydıdır; yayımlanmış uygulamanın kaynak commit'i yukarıda ayrı belirtilmiştir.
 
-## Açık kalan işler
+## 28. sürümde açık kalan işler (tarihsel kayıt)
 
 3. adım tamamen bitmedi: **365 puansız oyun + 252 platformu belirsiz puan = 617 açık inceleme kaydı**. 365 puansız oyun; 291 doğrulanmamış kimlik, 67 onaylı kimlikte erişilebilir sayısal PC olgusu eksikliği ve 7 kimlik çatışmasına ayrılır. Ayrıntılı kuyruk `data/METACRITIC-STEP3-REPORT.json` içindedir.
 
 Bu devam çalışmasında üç onaylı kaynak için ayrıca açık birincil PC sayfası arandı: `overwatch-2`, `bodycam`, `lego-batman-legacy-of-the-dark-knight`. Arama hizmeti bu Metacritic kullanıcı değerlendirmesi yollarının robots.txt ile engellendiğini bildirdi. Bu denemelerden yeni puan alınmadı; engel aşılmadı. Metacritic'te puan bulunmadığı sonucuna varılmadı.
 
 Kabul edilen yeni puanlar önceki çalışmanın kaydedilmiş ve test edilmiş önbellek gözlemleridir. Canlı sitede görünmeleri, puanların bugün Metacritic'ten ölçüldüğü anlamına gelmez. Kaynak yaşı, alınma zamanı ve bilinmeyen ölçüm tarihi korunur. Platformu belirsiz puanlar gösterilmeye devam eder. Kod geri alma işlemi canlı veritabanını geri almaz.
+
+## Doğrudan Metacritic kaynağı: ilk grup
+
+Kullanıcının 8 Ekim 2026 tarihli onayıyla Metacritic birincil kaynak olarak Steam bağlantısından bağımsız aranır. Aynı oyun/sürüm için PC puanı tercih edilir; erişilebilir başka platform puanı kaynak platformuyla kabul edilir. Belirsiz platform mevcut puanı gizlemez ve artık 3. adımı kapatmak için zorunlu ayrı bir engel değildir.
+
+17 oyun incelendi; dört eksik puan kabul edildi:
+
+| Oyun | Kullanıcı puanı | Kaynak platform | Değerlendirme sayısı | Kanıt |
+| --- | --- | --- | --- | --- |
+| AION 2 | 6,5 | PC | 13 | Kullanıcının sağladığı Metacritic görüntüsü; kaynak kimliği ayrıca incelendi. |
+| LEGO Batman: Legacy of the Dark Knight | 8,4 | PlayStation 5 | 635 | Metacritic kullanıcı değerlendirmesi önbelleği. |
+| Overwatch | 2,0 | PC | 5.129 | Metacritic oyun sayfasındaki tam oy sayısı; 2016 sürümü dışlandı. |
+| Madden NFL 27 | 6,2 | PlayStation 5 | 19 | Tek oyun sayfası gözlemi; başka önbellekte 6,4/16 görüldüğünden güncellik belirsizliği kaydedildi. |
+
+Puanlar bugün canlı Metacritic'ten ölçülmüş olarak sunulmaz. Madden'in farklı önbellek gözlemleri birleştirilmez; arayüz güncellik belirsizliğini gösterir. Yazılı yorum sayısı oy sayısı olarak kullanılmaz.
+
+Yerel kabul edilen toplam 962 puan: 708 PC, iki PlayStation 5, 252 platform belirsiz; 361 oyun puansızdır. Önceki 958 seçili puan birebir korunmuştur. Eski 686 kayıtlık aktarım paketi değiştirilmedi; yeni dört kayıt ayrı ve tekrar çalıştırılabilir atomik delta ile uygulanır. İkinci çalıştırma sıfır yeni kayıt üretmiştir.
+
+Bu grubun sekiz oyununda yalnızca önbellekte tbd, üç oyununda erişim engeli, iki oyununda kimlik belirsizliği/bulunamaması vardır. Bunlar güncel Metacritic'te puan olmadığı anlamına gelmez. Araştırma, kimlik kanıtı ve kaynak yaşı `data/metacritic-direct-batches/2026-10-08-01.json` ve `data/METACRITIC-DIRECT-REPORT.json` içinde saklanır. 3. adım bütünüyle tamamlanmış değildir.
+
+Bu kaynak checkpoint'inde GitHub ana dal aktarımı, yayın ve canlı veri kontrolü henüz tamamlanmış sayılmaz; sonuçları doğrulamadan tamamlandı olarak işaretlenmez.

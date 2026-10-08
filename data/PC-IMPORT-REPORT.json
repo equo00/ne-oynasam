@@ -3,7 +3,7 @@
   "games": 1323,
   "verifiedCovers": 905,
   "sourceProvidedCovers": 1323,
-  "userScores": 958,
+  "userScores": 962,
   "verifiedHistoricalPcScores": 2,
   "excludedScoreMappings": [
     {
@@ -122,5 +122,5 @@
   ],
   "developers": 1216,
   "scoreIdentityReport": "METACRITIC-REPORT.json",
-  "reviewedPrimaryPcScores": 704
+  "reviewedPrimaryPcScores": 706
 }
