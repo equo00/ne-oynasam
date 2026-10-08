@@ -19,15 +19,14 @@ async function bundle(){
   return {id:'metacritic-pc-'+(await contentHash(input)).slice(0,24),changes:input.changes as ScoreChange[]};
  })();return bundled;
 }
-const active=new WeakMap<object,Promise<ScoreImportState>>();
 const completed=new WeakMap<object,ScoreImportState>();
 
 /** One bounded trusted chunk per request. No remote scraping or user-supplied writes. */
 export async function ensureMetacriticScores(database:D1Database):Promise<ScoreImportState>{
  const done=completed.get(database);if(done)return done;
- const pending=active.get(database);if(pending)return pending;
- const task=run(database);active.set(database,task);
- try{const result=await task;if(result.ready)completed.set(database,result);return result;}finally{active.delete(database);}
+ // Only settled values may cross requests; pending D1 I/O belongs to its
+ // original invocation. Concurrent chunks remain guarded by the DB lease.
+ const result=await run(database);if(result.ready)completed.set(database,result);return result;
 }
 async function run(database:D1Database):Promise<ScoreImportState>{
  const data=await bundle(),stamp=new Date().toISOString();

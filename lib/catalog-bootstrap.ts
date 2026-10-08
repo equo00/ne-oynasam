@@ -6,12 +6,14 @@ export const CATALOG_BOOTSTRAP_ID='catalog-v2-seed-20261007';
 export type CatalogReadiness={ready:boolean;stage:string;phase:string;cursor:string;processed:number};
 let seedPromise:Promise<{games:CatalogGame[];labels:Record<string,string>;identities:any;scores:any;profiles:any}>|null=null;
 async function seedData(){if(!seedPromise)seedPromise=(async()=>{const [seed,archived,scores,identities,profiles,labels,editorial]=await Promise.all([import('../data/catalog.json'),import('../data/legacy-catalog.json'),import('../data/metacritic-users.json'),import('../data/game-identities.json'),import('../data/steam-tags.json'),import('../data/steam-tag-labels.json'),import('../public/editorial.json')]);const byAppId=new Map(Object.values(editorial.default).filter((e:any)=>Number.isSafeInteger(e.steamAppId)).map((e:any)=>[e.steamAppId,e]));const attach=(g:any)=>{const e=byAppId.get(g.steamAppId),profile=(profiles.default as any)[String(g.steamAppId)];return {...g,...(e?{editorial:e,...e}:{}),id:g.id,name:g.name,steamAppId:g.steamAppId,...(profile?{steamTags:profile}:{}),metacriticUser:metacriticScoreForGame(g,identities.default,scores.default)};};return {games:[...seed.default.map(attach),...archived.default.map(g=>attach({...g,catalogScope:'archive'}))] as CatalogGame[],labels:labels.default,identities:identities.default,scores:scores.default,profiles:profiles.default};})();return seedPromise;}
-const running=new WeakMap<object,Promise<CatalogReadiness>>();
 function readiness(row:any):CatalogReadiness{return {ready:row.stage==='done',stage:row.stage,phase:row.stage,cursor:row.cursor,processed:row.processed};}
-export async function ensureCatalogReady(database:D1Database=db(),options:{maxBatches?:number;batchSize?:number}={}):Promise<CatalogReadiness>{const current=running.get(database);if(current)return current;const task=run(database,options);running.set(database,task);try{return await task;}finally{running.delete(database);}}
+// Share immutable seed data, never pending request-owned D1 operations. The
+// persisted lease below serializes chunks even when an earlier request aborts.
+export async function ensureCatalogReady(database:D1Database=db(),options:{maxBatches?:number;batchSize?:number}={}):Promise<CatalogReadiness>{return run(database,options);}
 async function run(database:D1Database,options:{maxBatches?:number;batchSize?:number}){
+ let row:any=await database.prepare('SELECT * FROM catalog_bootstrap WHERE id=?').bind(CATALOG_BOOTSTRAP_ID).first();if(row?.stage==='done')return readiness(row);
  const stamp=new Date().toISOString();await database.prepare("INSERT INTO catalog_bootstrap(id,stage,cursor,processed,updated_at) VALUES(?,'seed','0',0,?) ON CONFLICT(id) DO NOTHING").bind(CATALOG_BOOTSTRAP_ID,stamp).run();
- let row:any=await database.prepare('SELECT * FROM catalog_bootstrap WHERE id=?').bind(CATALOG_BOOTSTRAP_ID).first();if(row.stage==='done')return readiness(row);
+ row=await database.prepare('SELECT * FROM catalog_bootstrap WHERE id=?').bind(CATALOG_BOOTSTRAP_ID).first();if(row.stage==='done')return readiness(row);
  // Each public invocation performs one bounded atomic chunk. No open transaction spans requests.
  const size=Math.max(1,Math.min(50,options.batchSize??20)),max=Math.max(1,Math.min(1,options.maxBatches??1));
  for(let batch=0;batch<max;batch++){
