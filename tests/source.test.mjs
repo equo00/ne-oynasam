@@ -18,7 +18,7 @@ globalThis.fetch=async url=>{
 const {metadataForQids}=await moduleFor('lib/catalog.ts');
 const {gamesBySteamIds}=await moduleFor('lib/catalog-repository.ts');
 const [liveHelldivers,cs,mortal]=await gamesBySteamIds([553850,730,2584270]);
-assert.equal(liveHelldivers.metacriticUser.score,7.5);assert.equal(liveHelldivers.metacriticUser.metacriticNumericId,'1300595968');assert.equal(cs.metacriticUser,null);assert.equal(fixture.sqlite.prepare("SELECT COUNT(score_value) AS n FROM catalog_games WHERE status='published'").get().n,JSON.parse(fs.readFileSync('data/METACRITIC-REPORT.json','utf8')).userScores);
+assert.equal(liveHelldivers.metacriticUser.score,7.5);assert.equal(liveHelldivers.metacriticUser.metacriticNumericId,'1300595968');assert.equal(cs.metacriticUser.score,5.5);assert.equal(cs.metacriticUser.platform,'PC');assert.equal(cs.metacriticUser.metacriticId,'counter-strike-2');assert.equal(fixture.sqlite.prepare("SELECT COUNT(score_value) AS n FROM catalog_games WHERE status='published'").get().n,JSON.parse(fs.readFileSync('data/METACRITIC-REPORT.json','utf8')).userScores);
 assert.equal(mortal.metacriticUser.score,7.8);assert.equal(mortal.metacriticUser.platform,'PC');assert.equal(mortal.metacriticUser.userRatings,507);assert.equal(mortal.metacriticUser.metacriticNumericId,'1300689309');
 const games=await metadataForQids(['Q60770258','Q123']);
 assert.equal(games.length,1);assert.equal(games[0].name,'Kenshi');assert.equal(games[0].year,2018);assert.deepEqual(games[0].genres,['RPG']);assert.deepEqual(games[0].platforms,['PC']);assert.equal(games[0].url,'https://lofigames.com/');

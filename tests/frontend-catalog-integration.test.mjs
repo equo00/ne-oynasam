@@ -14,8 +14,10 @@ const catalogHook=async({url,response,data})=>{
  return response(data);
 };
 const seed=JSON.parse(fs.readFileSync('data/catalog.json','utf8')),ed=JSON.parse(fs.readFileSync('public/editorial.json','utf8'));
-const h=harness.createHarness({user:null,search:'?q=kens',requestHook:catalogHook});await pause(40);
-assert.equal(run(h,'state.loaded'),true);assert.equal(run(h,'state.catalogStats.games'),1323);assert.equal(run(h,'state.catalogStats.scores'),901);
+const h=harness.createHarness({user:null,search:'?q=kens',requestHook:catalogHook});
+// Wait for the actual SQL response; fixed sleeps fail under concurrent test load.
+for(let attempt=0;attempt<200&&!run(h,'state.loaded');attempt++)await pause(10);
+assert.equal(run(h,'state.loaded'),true);assert.equal(run(h,'state.catalogStats.games'),1323);assert.equal(run(h,'state.catalogStats.scores'),958);
 assert(run(h,'state.games.some(g=>g.id==="kenshi")'),'The browser uses real SQL prefix results');
 assert.equal(run(h,'nameGame("kenshi").desc'),ed.Kenshi.desc,'Server enrichment preserves authored discovery hooks');
 assert.equal(run(h,'nameGame("kenshi").long'),ed.Kenshi.long);
@@ -26,6 +28,9 @@ const helldivers=seed.find(g=>g.steamAppId===553850),mortal=seed.find(g=>g.steam
 await run(h,`openGame(${JSON.stringify(helldivers.id)})`);assert(h.elements.detailContent.innerHTML.includes('7,5'));
 assert.equal(run(h,'state.current.metacriticUser.platform'),null,'Historical platform-unknown scores remain visible');
 await run(h,`state.compare=new Set(${JSON.stringify([helldivers.id,mortal.id])});showCompare()`);assert(h.elements.compareContent.innerHTML.includes('7,5/10'));assert(h.elements.compareContent.innerHTML.includes('7,8/10'));
+const cs2=seed.find(g=>g.steamAppId===730);
+await run(h,`openGame(${JSON.stringify(cs2.id)})`);assert(h.elements.detailContent.innerHTML.includes('5,5'));assert.equal(run(h,'state.current.metacriticUser.platform'),'PC');assert.equal(run(h,'state.current.metacriticUser.metacriticId'),'counter-strike-2');
+await run(h,`state.compare=new Set(${JSON.stringify([cs2.id,mortal.id])});showCompare()`);assert(h.elements.compareContent.innerHTML.includes('5,5/10'));assert(h.elements.compareContent.innerHTML.includes('7,8/10'));
 assert(!h.requests.some(r=>r.path==='/api/catalog'||r.path.startsWith('/editorial.json')||(r.path==='/api/views'&&r.method==='GET')));
 stop(h);fixture.close();
 console.log('Passed: frontend consumes real migrated SQL catalog, prefix search, authored descriptions, stable pages, server score/system filters, and retained platform-unknown scores in detail and off-page comparison.');

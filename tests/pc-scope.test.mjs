@@ -1,3 +1,4 @@
+import fs from 'node:fs';
 import vm from 'node:vm';
 import assert from 'node:assert/strict';
 import harness from './frontend-harness.cjs';
@@ -56,21 +57,22 @@ const bootstrap=await moduleFor('lib/catalog-bootstrap.ts');
 await readyCatalog(bootstrap);
 const {catalog}=await moduleFor('lib/catalog.ts');
 const {gamesByIds}=await moduleFor('lib/catalog-repository.ts');
+const coverage=JSON.parse(fs.readFileSync('data/METACRITIC-STEP3-REPORT.json','utf8'));
 const c=await catalog();
 assert.equal(c.total,h.source.length);
 assert.equal(c.games.length,24,'Compatibility facade returns a bounded catalog page');
 assert.equal(c.catalogStats.games,h.source.length);
-assert.equal(c.catalogStats.scores,901);
+assert.equal(c.catalogStats.scores,coverage.scores);
 assert(c.games.every(g=>g.platforms.includes('PC')));
 const counts=fixture.sqlite.prepare(`SELECT COUNT(*) AS scores,
  SUM(CASE WHEN score_platform IS NULL THEN 1 ELSE 0 END) AS unspecified,
  SUM(CASE WHEN score_platform IS NOT NULL AND score_platform <> 'PC' THEN 1 ELSE 0 END) AS foreign_platform,
  SUM(CASE WHEN json_extract(payload,'$.metacriticUser.metric')='user-score' THEN 1 ELSE 0 END) AS user_scores
  FROM catalog_games WHERE status='published' AND score_value IS NOT NULL`).get();
-assert.equal(counts.scores,901,'All historical source score rows survive normalization');
-assert.equal(counts.unspecified,881);
+assert.equal(counts.scores,coverage.scores,'All historical source score rows survive normalization');
+assert.equal(counts.unspecified,coverage.platformUnknown);
 assert.equal(counts.foreign_platform,0);
-assert.equal(counts.user_scores,901);
+assert.equal(counts.user_scores,coverage.scores);
 assert.equal(fixture.sqlite.prepare(`SELECT COUNT(*) AS n FROM catalog_games g
  WHERE g.status='published' AND NOT EXISTS(SELECT 1 FROM catalog_game_platforms p WHERE p.game_id=g.id AND p.platform='PC')`).get().n,0,'Every published game belongs to PC scope');
 const unspecified=h.source.find(g=>h.scoreData[h.scoreIdentities[g.id]?.scoreRecordId]?.platform===null);

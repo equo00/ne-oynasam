@@ -13,6 +13,6 @@ for(const [id,r]of Object.entries(scores)){assert.equal(r.recordId,id);assert.eq
 assert.equal(Object.keys(identities).length,games.length);
 for(const g of games){const identity=identities[g.id];assert.equal(identity.gameId,g.id);assert.equal(identity.steamAppId,g.steamAppId);if(identity.status==='ready'){const r=metacriticScoreForGame(g,identities,scores);assert(r,'Broken ID relationship for '+g.id);assert.equal(r.metacriticId,identity.metacritic.resourceId);}else{assert.equal(metacriticScoreForGame(g,identities,scores),null);assert(identity.reason);}}
 const scoreForId=appid=>metacriticScoreForGame(games.find(g=>g.steamAppId===appid),identities,scores);
-assert(!scoreForId(730),'CS2 must not receive old CS:GO user score');assert(!scoreForId(292030),'Remastered edition must not inherit an unverified original-edition score');
+assert.equal(scoreForId(730).metacriticId,'counter-strike-2','CS2 must not receive the old CS:GO resource');assert.equal(scoreForId(730).score,5.5);assert.equal(scoreForId(730).platform,'PC');assert(!scoreForId(292030),'Remastered edition must not inherit an unverified original-edition score');
 assert.equal(scoreForId(553850).score,7.5,'Helldivers 2 user-score regression');
 console.log('Passed: '+games.length+' unique released Windows games with source-provided cover URLs; all old personal-list IDs retained; ID-based user scores, identity/platform/date safeguards.');

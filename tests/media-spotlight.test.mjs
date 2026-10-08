@@ -26,6 +26,11 @@ const oddPool=spotlightPool.slice(0,103),stream=[];for(let d=0;d<Math.ceil(oddPo
 for(let tour=0;tour<3;tour++)assert.equal(new Set(stream.slice(tour*103,(tour+1)*103)).size,103);
 assert.deepEqual(idsAt(41),idsAt(41),'Reloads and different visitors share a stable daily set');assert.throws(()=>spotlightSequence(spotlightPool,NaN));assert.throws(()=>spotlightSequence([...spotlightPool,spotlightPool[0]],0));
 console.log('Passed: 125 source-matched curated PC games, Istanbul midnight, 750 daily sets without repeats before full-pool coverage, changing tour order/combinations, protected tour boundaries and non-multiple-of-five pools.');
+// Finish the bounded score import before measuring spotlight-only read queries.
+const {ensureMetacriticScores}=await moduleFor('lib/metacritic-sync.ts');
+let scoreImportReady=false;
+for(let attempt=0;attempt<100;attempt++){if((await ensureMetacriticScores(fixture.database)).ready){scoreImportReady=true;break;}}
+assert(scoreImportReady,'Bounded score import must finish before spotlight query checks');
 fixture.clearQueries();
 const resolved=await resolvedDailySpotlight(new Date('2026-10-06T12:00:00Z'));
 assert.equal(resolved.games.length,5);assert(resolved.games.every(item=>item.game.id===item.gameId&&item.game.platforms.includes('PC')));

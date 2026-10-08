@@ -1,5 +1,6 @@
 import {db} from './db';
 import {ensureCatalogReady} from './catalog-bootstrap';
+import {ensureMetacriticScores} from './metacritic-sync';
 import {normalize,validId,statuses} from './security';
 import type {Game} from './catalog';
 
@@ -10,7 +11,7 @@ export class CatalogNotReady extends Error {
  constructor(public state:{ready:boolean;stage:string;cursor:string|null;processed:number}){super('Katalog hazırlanıyor. Birkaç saniye sonra yeniden dene.');}
 }
 export class CatalogQueryError extends Error {}
-export async function catalogDatabase(){const database=db();const state=await ensureCatalogReady(database);if(!state.ready)throw new CatalogNotReady(state);return database;}
+export async function catalogDatabase(){const database=db();const state=await ensureCatalogReady(database);if(!state.ready)throw new CatalogNotReady(state);await ensureMetacriticScores(database);return database;}
 export function pendingCatalogResponse(e:unknown):Response|null{if(!(e instanceof CatalogNotReady))return null;return Response.json({apiVersion:2,ready:false,error:e.message,stage:e.state.stage,retryAfter:1},{status:202,headers:{'Cache-Control':'no-store','Retry-After':'1','X-Content-Type-Options':'nosniff'}});}
 const one=(p:URLSearchParams,k:string)=>p.get(k)||'';
 function integer(p:URLSearchParams,k:string,fallback:number,min:number,max:number){const v=one(p,k);if(!v)return fallback;if(!/^\d+$/.test(v)||Number(v)<min||Number(v)>max)throw new CatalogQueryError(`${k} geçersiz.`);return Number(v);}

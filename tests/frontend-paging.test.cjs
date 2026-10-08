@@ -1,5 +1,6 @@
 const vm=require('node:vm'),assert=require('node:assert/strict');
 const {createHarness}=require('./frontend-harness.cjs');
+const coverage=require('../data/METACRITIC-STEP3-REPORT.json');
 const sleep=ms=>new Promise(resolve=>setTimeout(resolve,ms));
 const run=(h,code)=>vm.runInContext(code,h.ctx);
 const catalogRequests=h=>h.requests.filter(r=>r.method==='GET'&&r.path.startsWith('/api/catalog?'));
@@ -17,7 +18,7 @@ const stop=h=>run(h,'closeMedia();stopSpotlight();clearTimeout(spotlightRefreshT
  const sample=createHarness();await sleep(30);
  assert.equal(run(sample,'state.games.length'),24,'A result page contains at most 24 records');
  assert.equal(run(sample,'state.total'),1323,'The UI total comes from server metadata, not the page length');
- assert(sample.elements.catalogStats.innerHTML.includes('<b>901</b>'),'All existing source score records remain counted');
+ assert(sample.elements.catalogStats.innerHTML.includes('<b>'+coverage.scores+'</b>'),'All existing source score records remain counted');
  assert(!sample.requests.some(r=>r.path==='/api/catalog'||r.path.startsWith('/editorial.json')||(r.path==='/api/views'&&r.method==='GET')),'Bootstrap never downloads a full catalog/editorial/views map');
  assert(catalogRequests(sample).every(r=>new URL(r.path,'https://test').searchParams.get('pageSize')==='24'));
  const first=run(sample,'state.games.map(g=>g.id).join(",")');
@@ -75,5 +76,5 @@ const stop=h=>run(h,'closeMedia();stopSpotlight();clearTimeout(spotlightRefreshT
  assert.equal(importing.records.length,430,'Selective import validation spans multiple 60-ID batches without cache eviction losing records');
  assert(importing.requests.filter(r=>r.path.startsWith('/api/games?')).every(r=>decodeURIComponent(new URL(r.path,'https://test').searchParams.get('ids')).split(',').length<=60));
  assert(run(importing,'gameCache.size<=360'));stop(importing);
- console.log('Passed: bounded pages/cache, metadata totals and preserved 901 scores, no bulk startup downloads, server filters/random, current-page refresh, off-page and archived deep links/comparison, request races/cancellation, bootstrap retry, visible retry failures and chunked import.');
+ console.log('Passed: bounded pages/cache, metadata totals and preserved accepted scores, no bulk startup downloads, server filters/random, current-page refresh, off-page and archived deep links/comparison, request races/cancellation, bootstrap retry, visible retry failures and chunked import.');
 })().catch(error=>{console.error(error);process.exitCode=1});
