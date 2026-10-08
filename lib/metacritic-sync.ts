@@ -1,7 +1,9 @@
 import {contentHash,type CatalogGame} from './catalog-normalize';
 import {ingestGames,type BootstrapGate} from './catalog-ingest';
 import {metacriticResource} from './metacritic-identity.mjs';
+import {validatePrimaryScoreFact} from './metacritic-platform.mjs';
 
+type ScoreBundle={id:string;changes:ScoreChange[];fillOnly?:boolean};
 type ScoreChange={gameId:string;steamAppId:number;previousRecordId:string|null;score:any};
 export type ScoreImportState={ready:boolean;processed:number;total:number;stage:string};
 let bundled:Promise<{id:string;changes:ScoreChange[]}>|null=null;
@@ -10,7 +12,7 @@ async function bundle(){
   const {default:input}=await import('../data/metacritic-score-updates.json');
   if(input.schemaVersion!==1||!Array.isArray(input.changes))throw new Error('Puan aktarım paketi geçersiz.');
   const ids=new Set<string>();
-  for(const change of input.changes){const score=change.score,resource=metacriticResource(score.url);
+  for(const change of input.changes as ScoreChange[]){const score=change.score,resource=metacriticResource(score.url);
    if(ids.has(change.gameId)||score.gameId!==change.gameId||score.steamAppId!==change.steamAppId||score.platform!=='PC'||score.metric!=='user-score'||resource?.id!==score.metacriticId||
      !Number.isFinite(score.score)||score.score<0||score.score>10||score.provenance?.platformLabel!=='PC'||score.provenance?.metricLabel!=='User score'||score.provenance?.pageHeading!=='PC User Reviews'||
      new URL(score.url).searchParams.getAll('platform').some(p=>p!=='pc'))throw new Error('Aktarımda oyun/PC kullanıcı puanı kimliği geçersiz.');
@@ -19,17 +21,34 @@ async function bundle(){
   return {id:'metacritic-pc-'+(await contentHash(input)).slice(0,24),changes:input.changes as ScoreChange[]};
  })();return bundled;
 }
-const completed=new WeakMap<object,ScoreImportState>();
+let directBundled:Promise<ScoreBundle>|null=null;
+async function directBundle(){
+ if(!directBundled)directBundled=(async()=>{
+  const {default:input}=await import('../data/metacritic-direct-score-updates.json');
+  if(input.schemaVersion!==1||input.policy!=='metacritic-primary-pc-preferred-platform-fallback'||!Array.isArray(input.changes))throw Error('Doğrudan Metacritic paketi geçersiz.');
+  const ids=new Set<string>();
+  for(const change of input.changes as ScoreChange[]){const score=change.score,resource=metacriticResource(score.url);
+   if(ids.has(change.gameId)||score.gameId!==change.gameId||score.steamAppId!==change.steamAppId||resource?.id!==score.metacriticId||change.previousRecordId!==null)throw Error('Doğrudan puan oyun/sürüm kimliği geçersiz.');
+   validatePrimaryScoreFact(score);ids.add(change.gameId);
+  }
+  return {id:'metacritic-direct-'+(await contentHash(input)).slice(0,24),changes:input.changes as ScoreChange[],fillOnly:true};
+ })();return directBundled;
+}
+const completed=new WeakMap<object,Map<string,ScoreImportState>>();
 
 /** One bounded trusted chunk per request. No remote scraping or user-supplied writes. */
 export async function ensureMetacriticScores(database:D1Database):Promise<ScoreImportState>{
- const done=completed.get(database);if(done)return done;
- // Only settled values may cross requests; pending D1 I/O belongs to its
- // original invocation. Concurrent chunks remain guarded by the DB lease.
- const result=await run(database);if(result.ready)completed.set(database,result);return result;
+ const bundles=await Promise.all([bundle(),directBundle()]),total=bundles.reduce((sum,b)=>sum+b.changes.length,0);
+ let processed=0;const saved=completed.get(database)||new Map<string,ScoreImportState>();completed.set(database,saved);
+ // Share only completed values, never request-owned pending D1 operations.
+ for(const data of bundles){const result=saved.get(data.id)||await run(database,data);processed+=result.processed;
+  if(!result.ready)return {...result,processed,total};saved.set(data.id,result);
+ }
+ return {ready:true,processed,total,stage:'done'};
 }
-async function run(database:D1Database):Promise<ScoreImportState>{
- const data=await bundle(),stamp=new Date().toISOString();
+async function run(database:D1Database,data:ScoreBundle):Promise<ScoreImportState>{
+ if(!data.changes.length)return {ready:true,processed:0,total:0,stage:'done'};
+ const stamp=new Date().toISOString();
  await database.prepare("INSERT INTO catalog_bootstrap(id,stage,cursor,processed,updated_at) VALUES(?,'scores','0',0,?) ON CONFLICT(id) DO NOTHING").bind(data.id,stamp).run();
  const state=(row:any):ScoreImportState=>({ready:row.stage==='done',processed:row.processed,total:data.changes.length,stage:row.stage});
  let row:any=await database.prepare('SELECT * FROM catalog_bootstrap WHERE id=?').bind(data.id).first();
@@ -45,7 +64,7 @@ async function run(database:D1Database):Promise<ScoreImportState>{
   for(const change of changes){const saved=byId.get(change.gameId);if(!saved||saved.steam_app_id!==change.steamAppId)throw new Error('Canlı oyun kimliği puan paketiyle uyuşmuyor: '+change.gameId);
    const base=JSON.parse(saved.base_payload||saved.payload),current=base.metacriticUser;
    // An existing verified PC observation, including later/manual work, wins.
-   if(current?.platform==='PC'){accepted.push({gameId:change.gameId,recordId:current.recordId});continue;}
+   if(current&&(data.fillOnly||current.platform==='PC')){accepted.push({gameId:change.gameId,recordId:current.recordId});continue;}
    if(current&&current.recordId!==change.previousRecordId)throw new Error('Canlı puan değişmiş; yeni kimlik incelemesi gerekli: '+change.gameId);
    patches.push({id:base.id,name:base.name,steamAppId:base.steamAppId,genres:base.genres,platforms:base.platforms,metacriticUser:change.score});
    accepted.push({gameId:change.gameId,recordId:change.score.recordId});

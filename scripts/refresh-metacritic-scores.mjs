@@ -3,6 +3,7 @@
 import fs from 'node:fs';
 import {fileURLToPath} from 'node:url';
 import {metacriticResource} from '../lib/metacritic-identity.mjs';
+import {validatePrimaryScoreFact,scorePlatformSlugs} from '../lib/metacritic-platform.mjs';
 
 function reviewedFactIndex(games, reviewed) {
   if (reviewed.schemaVersion !== 1 || !Array.isArray(reviewed.facts)) throw Error('Invalid reviewed score input');
@@ -11,18 +12,19 @@ function reviewedFactIndex(games, reviewed) {
     const game = gameById.get(fact.gameId), proof = fact.provenance;
     const fail = reason => { throw Error(`Invalid reviewed score fact ${fact.recordId || '(no ID)'}: ${reason}`); };
     if (!game || game.steamAppId !== fact.steamAppId) fail('catalog game / store app ID mismatch');
-    if (!/^mc-user:reviewed:[a-zA-Z0-9:-]{1,150}$/.test(fact.recordId || '') || recordIds.has(fact.recordId) || byGame.has(fact.gameId)) fail('duplicate or invalid stable fact ID');
-    if (fact.metric !== 'user-score' || fact.platform !== 'PC' || typeof fact.score !== 'number' || !Number.isFinite(fact.score) || fact.score < 0 || fact.score > 10) fail('metric, PC platform, or 0–10 average');
+    if (!/^mc-user:reviewed:[a-zA-Z0-9:-]{1,150}$/.test(fact.recordId || '') || recordIds.has(fact.recordId)) fail('duplicate or invalid stable fact ID');
+    if (fact.metric !== 'user-score' || !scorePlatformSlugs(fact.platform) || typeof fact.score !== 'number' || !Number.isFinite(fact.score) || fact.score < 0 || fact.score > 10) fail('metric, source platform, or 0–10 average');
     const resource = metacriticResource(fact.sourceUrl);
     if (!resource || resource.id !== fact.metacriticId) fail('primary source resource ID mismatch');
     const url = new URL(fact.sourceUrl);
-    if (url.protocol !== 'https:' || url.searchParams.getAll('platform').some(platform=>platform!=='pc') || /^\/game\/(?:playstation|xbox|switch|nintendo|ios|android)/.test(url.pathname)) fail('source URL contradicts PC platform');
-    if (!proof || proof.metricLabel !== 'User score' || proof.platformLabel !== 'PC' || !['user-supplied-capture','public-primary-cache'].includes(proof.method)) fail('missing explicit primary metric/platform evidence');
+    if(url.protocol!=='https:')fail('primary source requires HTTPS');
+    try{validatePrimaryScoreFact(fact);}catch(error){fail(error.message);}
+    if (!proof || proof.metricLabel !== 'User score' || proof.platformLabel !== fact.platform || !['user-supplied-capture','public-primary-cache'].includes(proof.method)) fail('missing explicit primary metric/platform evidence');
     if (proof.method === 'user-supplied-capture' && !/^[a-f0-9]{64}$/.test(proof.captureSha256 || '')) fail('missing capture fingerprint');
-    if (proof.method === 'public-primary-cache' && (proof.pageHeading !== 'PC User Reviews' || !proof.sourceCrawlLabel || !proof.retrievalReference)) fail('missing cached page evidence / age');
+    if (proof.method === 'public-primary-cache' && (!proof.sourceCrawlLabel || !proof.retrievalReference)) fail('missing cached page evidence / age');
     if (!/^\d{4}-\d{2}-\d{2}$/.test(fact.snapshotDate || '') || !Number.isFinite(Date.parse(fact.retrievedAt)) || fact.retrievedAt.slice(0,10) !== fact.snapshotDate || fact.scoreDate !== null) fail('invalid retrieval date or invented score measurement date');
     if (fact.userRatings !== null && (!Number.isSafeInteger(fact.userRatings) || fact.userRatings < 1)) fail('invalid ratings count');
-    recordIds.add(fact.recordId); byGame.set(fact.gameId,fact);
+    recordIds.add(fact.recordId);const preferred=byGame.get(fact.gameId);if(!preferred||preferred.platform!=='PC'&&fact.platform==='PC')byGame.set(fact.gameId,fact);
   }
   return byGame;
 }
@@ -124,8 +126,8 @@ export function buildScoreCatalog(games, input, evidence, reviewed = {schemaVers
     const primaryFact = reviewedByGame.get(g.id);
     if (primaryFact) {
       if (!identity.metacritic || canonical(primaryFact.metacriticId) !== resourceId || primaryFact.metacriticNumericId !== numericId) throw Error('Reviewed score lacks the approved external ID relationship: '+g.id);
-      const primaryLink = new URL(primaryFact.sourceUrl); primaryLink.searchParams.set('platform','pc');
-      selected = {...primaryFact,metacriticId:resourceId,url:primaryLink.toString(),sourceFactUrl:primaryFact.sourceUrl,sourceSteamAppIds:[appid],sourceLabel:'Metacritic (PC kullanıcı puanı)',license:'Source rights retained',verification:'Reviewed primary numerical average, explicit PC platform, joined by persisted catalog / store / Metacritic IDs. Retrieval date is not the score measurement date; cached observations are not live scores.'};
+      const primaryLink = new URL(primaryFact.sourceUrl); if(!primaryLink.searchParams.has('platform'))primaryLink.searchParams.set('platform',scorePlatformSlugs(primaryFact.platform)[0]);
+      selected = {...primaryFact,metacriticId:resourceId,url:primaryLink.toString(),sourceFactUrl:primaryFact.sourceUrl,sourceSteamAppIds:[appid],sourceLabel:'Metacritic ('+primaryFact.platform+' kullanıcı puanı)',license:'Source rights retained',verification:'Reviewed primary numerical average, explicit '+primaryFact.platform+' platform, joined by persisted catalog / store / Metacritic IDs. Retrieval date is not the score measurement date; cached observations are not live scores.'};
       identity.metacritic.evidence.push({kind:'reviewed-primary-score',recordId:primaryFact.recordId,url:primaryFact.sourceUrl,retrievedAt:primaryFact.retrievedAt,method:primaryFact.provenance.method});
     } else if (historical) {
       const recordId = `mc-user:wikidata:${resourceId}:PC`;
@@ -168,7 +170,7 @@ export function refreshScoreFiles() {
   write('public/game-identities.json',result.identities);
   const report = read('data/PC-IMPORT-REPORT.json');
   report.userScores = result.report.userScores; report.verifiedHistoricalPcScores = Object.values(result.records).filter(r=>r.license==='CC0 1.0' && r.platform==='PC').length;
-  report.reviewedPrimaryPcScores = result.report.reviewedPrimaryScores;
+  report.reviewedPrimaryPcScores = Object.values(result.records).filter(r=>r.provenance&&r.platform==='PC').length;
   report.excludedScoreMappings = result.report.missing.filter(r=>r.sourceHadScore); report.scoreIdentityReport = 'METACRITIC-REPORT.json';
   write('data/PC-IMPORT-REPORT.json',report);
   console.log(JSON.stringify({...result.report,recovered:undefined,removed:undefined,missing:undefined}));
