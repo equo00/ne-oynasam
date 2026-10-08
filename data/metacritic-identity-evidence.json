@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "auditedAt": "2026-10-06",
+  "auditedAt": "2026-10-08",
   "previousApproved": {
     "220": {
       "identityTitle": "Half-Life 2",
@@ -30990,6 +30990,674 @@
         "https://www.metacritic.com/game/stalker-2-heart-of-chornobyl/user-reviews/?platform=pc"
       ],
       "rationale": "Explicit reviewed work URL rename. Existing Wikidata entity Q10865101 joins Steam app 1643320 to Metacritic numeric ID 1300083333 and its old chernobyl resource. The current primary Metacritic PC resource uses chornobyl; its details identify GSC Game World and the 2024-11-20 release, corroborating the checked store app product. This reviewed alias is retained as evidence; it is not an automatic transliteration or title-matching rule."
+    },
+    {
+      "steamAppId": 1297900,
+      "status": "approved",
+      "metacriticId": "gothic-1-remake",
+      "numericId": null,
+      "approvedResourceAliases": [],
+      "evidenceURLs": [
+        "https://store.steampowered.com/api/appdetails?appids=1297900&l=english",
+        "https://store.steampowered.com/app/1297900/",
+        "https://www.metacritic.com/game/gothic-1-remake/",
+        "https://www.metacritic.com/game/gothic-1-remake/user-reviews/"
+      ],
+      "reviewedAt": "2026-10-08",
+      "rationale": "Ayrı bir devam oyunu, bölüm veya remaster yerine bu mağaza ürününün eser kimliği elle incelendi. Tam kaynak ürün adları, PC kullanıcı sayfası, geliştirici/yayıncı ve çıkış bilgileri birlikte kontrol edildi; çalışma zamanında başlık eşleştirmesi yapılmaz.",
+      "reviewedMetadata": {
+        "storeProductId": 1297900,
+        "storeName": "Gothic 1 Remake",
+        "storeDevelopers": [
+          "Alkimia Interactive"
+        ],
+        "storePublishers": null,
+        "storeRelease": "Jun 5, 2026",
+        "metacriticCompany": "Alkimia Interactive",
+        "metacriticCompanyRole": "Developer",
+        "metacriticInitialRelease": "Jun 5, 2026",
+        "retrievalReference": "turn860search0",
+        "sourceCrawlLabel": "2 months ago"
+      }
+    },
+    {
+      "steamAppId": 2684630,
+      "status": "approved",
+      "metacriticId": "endacopia",
+      "numericId": null,
+      "approvedResourceAliases": [],
+      "evidenceURLs": [
+        "https://store.steampowered.com/api/appdetails?appids=2684630&l=english",
+        "https://store.steampowered.com/app/2684630/",
+        "https://www.metacritic.com/game/endacopia/",
+        "https://www.metacritic.com/game/endacopia/user-reviews/"
+      ],
+      "reviewedAt": "2026-10-08",
+      "rationale": "Ayrı bir devam oyunu, bölüm veya remaster yerine bu mağaza ürününün eser kimliği elle incelendi. Tam kaynak ürün adları, PC kullanıcı sayfası, geliştirici/yayıncı ve çıkış bilgileri birlikte kontrol edildi; çalışma zamanında başlık eşleştirmesi yapılmaz.",
+      "reviewedMetadata": {
+        "storeProductId": 2684630,
+        "storeName": "Endacopia",
+        "storeDevelopers": [
+          "Andyland"
+        ],
+        "storePublishers": null,
+        "storeRelease": "Jul 27, 2026",
+        "metacriticCompany": "Andyland",
+        "metacriticCompanyRole": "Developer",
+        "metacriticInitialRelease": "Jul 27, 2026",
+        "retrievalReference": "turn860search3",
+        "sourceCrawlLabel": "last month"
+      }
+    },
+    {
+      "steamAppId": 2397300,
+      "status": "approved",
+      "metacriticId": "half-sword",
+      "numericId": null,
+      "approvedResourceAliases": [],
+      "evidenceURLs": [
+        "https://store.steampowered.com/api/appdetails?appids=2397300&l=english",
+        "https://store.steampowered.com/app/2397300/",
+        "https://www.metacritic.com/game/half-sword/",
+        "https://www.metacritic.com/game/half-sword/user-reviews/"
+      ],
+      "reviewedAt": "2026-10-08",
+      "rationale": "Ayrı bir devam oyunu, bölüm veya remaster yerine bu mağaza ürününün eser kimliği elle incelendi. Tam kaynak ürün adları, PC kullanıcı sayfası, geliştirici/yayıncı ve çıkış bilgileri birlikte kontrol edildi; çalışma zamanında başlık eşleştirmesi yapılmaz.",
+      "reviewedMetadata": {
+        "storeProductId": 2397300,
+        "storeName": "Half Sword",
+        "storeDevelopers": [
+          "Half Sword Games"
+        ],
+        "storePublishers": null,
+        "storeRelease": "Jan 30, 2026",
+        "metacriticCompany": "Half Sword Games",
+        "metacriticCompanyRole": "Developer",
+        "metacriticInitialRelease": "Jan 30, 2026",
+        "retrievalReference": "turn860search2",
+        "sourceCrawlLabel": "2 months ago"
+      }
+    },
+    {
+      "steamAppId": 2968420,
+      "status": "approved",
+      "metacriticId": "powerwash-simulator-2",
+      "numericId": null,
+      "approvedResourceAliases": [],
+      "evidenceURLs": [
+        "https://store.steampowered.com/api/appdetails?appids=2968420&l=english",
+        "https://store.steampowered.com/app/2968420/",
+        "https://www.metacritic.com/game/powerwash-simulator-2/details/",
+        "https://www.metacritic.com/game/powerwash-simulator-2/user-reviews/?platform=pc"
+      ],
+      "reviewedAt": "2026-10-08",
+      "rationale": "Ayrı bir devam oyunu, bölüm veya remaster yerine bu mağaza ürününün eser kimliği elle incelendi. Tam kaynak ürün adları, PC kullanıcı sayfası, geliştirici/yayıncı ve çıkış bilgileri birlikte kontrol edildi; çalışma zamanında başlık eşleştirmesi yapılmaz.",
+      "reviewedMetadata": {
+        "storeProductId": 2968420,
+        "storeName": "PowerWash Simulator 2",
+        "storeDevelopers": [
+          "FuturLab"
+        ],
+        "storePublishers": null,
+        "storeRelease": "Oct 23, 2025",
+        "metacriticCompany": "FuturLab",
+        "metacriticCompanyRole": "Publisher",
+        "metacriticInitialRelease": "Oct 23, 2025",
+        "retrievalReference": "turn865view0",
+        "sourceCrawlLabel": "2 months ago"
+      }
+    },
+    {
+      "steamAppId": 2424420,
+      "status": "approved",
+      "metacriticId": "avatar-legends-the-fighting-game",
+      "numericId": null,
+      "approvedResourceAliases": [],
+      "evidenceURLs": [
+        "https://store.steampowered.com/api/appdetails?appids=2424420&l=english",
+        "https://store.steampowered.com/app/2424420/",
+        "https://www.metacritic.com/game/avatar-legends-the-fighting-game/",
+        "https://www.metacritic.com/game/avatar-legends-the-fighting-game/user-reviews/?platform=pc"
+      ],
+      "reviewedAt": "2026-10-08",
+      "rationale": "Ayrı bir devam oyunu, bölüm veya remaster yerine bu mağaza ürününün eser kimliği elle incelendi. Tam kaynak ürün adları, PC kullanıcı sayfası, geliştirici/yayıncı ve çıkış bilgileri birlikte kontrol edildi; çalışma zamanında başlık eşleştirmesi yapılmaz.",
+      "reviewedMetadata": {
+        "storeProductId": 2424420,
+        "storeName": "Avatar Legends: The Fighting Game",
+        "storeDevelopers": [
+          "Gameplay Group International"
+        ],
+        "storePublishers": null,
+        "storeRelease": "23 Jul, 2026",
+        "metacriticCompany": "Gameplay Group",
+        "metacriticCompanyRole": "Developer",
+        "metacriticInitialRelease": "Jul 23, 2026",
+        "retrievalReference": "turn861search1",
+        "sourceCrawlLabel": "2 months ago"
+      }
+    },
+    {
+      "steamAppId": 2062430,
+      "status": "approved",
+      "metacriticId": "ball-x-pit",
+      "numericId": null,
+      "approvedResourceAliases": [],
+      "evidenceURLs": [
+        "https://store.steampowered.com/api/appdetails?appids=2062430&l=english",
+        "https://store.steampowered.com/app/2062430/",
+        "https://www.metacritic.com/game/ball-x-pit/",
+        "https://www.metacritic.com/game/ball-x-pit/user-reviews/"
+      ],
+      "reviewedAt": "2026-10-08",
+      "rationale": "Ayrı bir devam oyunu, bölüm veya remaster yerine bu mağaza ürününün eser kimliği elle incelendi. Tam kaynak ürün adları, PC kullanıcı sayfası, geliştirici/yayıncı ve çıkış bilgileri birlikte kontrol edildi; çalışma zamanında başlık eşleştirmesi yapılmaz.",
+      "reviewedMetadata": {
+        "storeProductId": 2062430,
+        "storeName": "BALL x PIT",
+        "storeDevelopers": [
+          "Kenny Sun and Friends"
+        ],
+        "storePublishers": null,
+        "storeRelease": "Oct 15, 2025",
+        "metacriticCompany": "Kenny Sun",
+        "metacriticCompanyRole": "Developer",
+        "metacriticInitialRelease": "Oct 15, 2025",
+        "retrievalReference": "turn861search0",
+        "sourceCrawlLabel": "2 months ago"
+      }
+    },
+    {
+      "steamAppId": 1588550,
+      "status": "approved",
+      "metacriticId": "cairn",
+      "numericId": null,
+      "approvedResourceAliases": [],
+      "evidenceURLs": [
+        "https://store.steampowered.com/api/appdetails?appids=1588550&l=english",
+        "https://store.steampowered.com/app/1588550/",
+        "https://www.metacritic.com/company/the-game-bakers/",
+        "https://www.metacritic.com/game/cairn/user-reviews/"
+      ],
+      "reviewedAt": "2026-10-08",
+      "rationale": "Ayrı bir devam oyunu, bölüm veya remaster yerine bu mağaza ürününün eser kimliği elle incelendi. Tam kaynak ürün adları, PC kullanıcı sayfası, geliştirici/yayıncı ve çıkış bilgileri birlikte kontrol edildi; çalışma zamanında başlık eşleştirmesi yapılmaz.",
+      "reviewedMetadata": {
+        "storeProductId": 1588550,
+        "storeName": "Cairn",
+        "storeDevelopers": [
+          "The Game Bakers"
+        ],
+        "storePublishers": null,
+        "storeRelease": "Jan 29, 2026",
+        "metacriticCompany": "The Game Bakers",
+        "metacriticCompanyRole": "Developer",
+        "metacriticInitialRelease": "Jan 29, 2026",
+        "retrievalReference": "turn859search3",
+        "sourceCrawlLabel": "2 months ago"
+      }
+    },
+    {
+      "steamAppId": 3014320,
+      "status": "approved",
+      "metacriticId": "octopath-traveler-0",
+      "numericId": null,
+      "approvedResourceAliases": [],
+      "evidenceURLs": [
+        "https://store.steampowered.com/api/appdetails?appids=3014320&l=english",
+        "https://store.steampowered.com/app/3014320/",
+        "https://www.metacritic.com/game/octopath-traveler-0/?ftag=MCD-06-10aaa1c",
+        "https://www.metacritic.com/game/octopath-traveler-0/user-reviews/?platform=pc"
+      ],
+      "reviewedAt": "2026-10-08",
+      "rationale": "Ayrı bir devam oyunu, bölüm veya remaster yerine bu mağaza ürününün eser kimliği elle incelendi. Tam kaynak ürün adları, PC kullanıcı sayfası, geliştirici/yayıncı ve çıkış bilgileri birlikte kontrol edildi; çalışma zamanında başlık eşleştirmesi yapılmaz.",
+      "reviewedMetadata": {
+        "storeProductId": 3014320,
+        "storeName": "OCTOPATH TRAVELER 0",
+        "storeDevelopers": [
+          "Square Enix",
+          "DOKIDOKI GROOVE WORKS"
+        ],
+        "storePublishers": null,
+        "storeRelease": "Dec 4, 2025",
+        "metacriticCompany": "DokiDoki Groove Works",
+        "metacriticCompanyRole": "Developer",
+        "metacriticInitialRelease": "Dec 4, 2025",
+        "retrievalReference": "turn866search8",
+        "sourceCrawlLabel": "last month"
+      }
+    },
+    {
+      "steamAppId": 2624870,
+      "status": "approved",
+      "metacriticId": "life-is-strange-reunion",
+      "numericId": null,
+      "approvedResourceAliases": [],
+      "evidenceURLs": [
+        "https://store.steampowered.com/api/appdetails?appids=2624870&l=english",
+        "https://store.steampowered.com/app/2624870/",
+        "https://www.metacritic.com/game/life-is-strange-reunion/",
+        "https://www.metacritic.com/game/life-is-strange-reunion/user-reviews/?platform=pc"
+      ],
+      "reviewedAt": "2026-10-08",
+      "rationale": "Ayrı bir devam oyunu, bölüm veya remaster yerine bu mağaza ürününün eser kimliği elle incelendi. Tam kaynak ürün adları, PC kullanıcı sayfası, geliştirici/yayıncı ve çıkış bilgileri birlikte kontrol edildi; çalışma zamanında başlık eşleştirmesi yapılmaz.",
+      "reviewedMetadata": {
+        "storeProductId": 2624870,
+        "storeName": "Life is Strange: Reunion",
+        "storeDevelopers": [
+          "Deck Nine Games"
+        ],
+        "storePublishers": null,
+        "storeRelease": "Mar 26, 2026",
+        "metacriticCompany": "Deck Nine Games",
+        "metacriticCompanyRole": "Developer",
+        "metacriticInitialRelease": "Mar 26, 2026",
+        "retrievalReference": "turn866search1",
+        "sourceCrawlLabel": "3 months ago"
+      }
+    },
+    {
+      "steamAppId": 2499860,
+      "status": "approved",
+      "metacriticId": "dragon-quest-vii-reimagined",
+      "numericId": null,
+      "approvedResourceAliases": [],
+      "evidenceURLs": [
+        "https://store.steampowered.com/api/appdetails?appids=2499860&l=english",
+        "https://store.steampowered.com/app/2499860/",
+        "https://www.metacritic.com/game/dragon-quest-vii-reimagined/?ftag=MCD-06-10aaa1c",
+        "https://www.metacritic.com/game/dragon-quest-vii-reimagined/user-reviews/?platform=pc"
+      ],
+      "reviewedAt": "2026-10-08",
+      "rationale": "Ayrı bir devam oyunu, bölüm veya remaster yerine bu mağaza ürününün eser kimliği elle incelendi. Tam kaynak ürün adları, PC kullanıcı sayfası, geliştirici/yayıncı ve çıkış bilgileri birlikte kontrol edildi; çalışma zamanında başlık eşleştirmesi yapılmaz.",
+      "reviewedMetadata": {
+        "storeProductId": 2499860,
+        "storeName": "DRAGON QUEST VII Reimagined",
+        "storeDevelopers": [
+          "Square Enix",
+          "HEXADRIVE Inc."
+        ],
+        "storePublishers": null,
+        "storeRelease": "Feb 5, 2026",
+        "metacriticCompany": "HexaDrive",
+        "metacriticCompanyRole": "Developer",
+        "metacriticInitialRelease": "Feb 5, 2026",
+        "retrievalReference": "turn862search4",
+        "sourceCrawlLabel": "last month"
+      }
+    },
+    {
+      "steamAppId": 2157830,
+      "status": "approved",
+      "metacriticId": "john-carpenters-toxic-commando",
+      "numericId": null,
+      "approvedResourceAliases": [],
+      "evidenceURLs": [
+        "https://store.steampowered.com/api/appdetails?appids=2157830&l=english",
+        "https://store.steampowered.com/app/2157830/",
+        "https://www.metacritic.com/game/john-carpenters-toxic-commando/",
+        "https://www.metacritic.com/game/john-carpenters-toxic-commando/user-reviews/"
+      ],
+      "reviewedAt": "2026-10-08",
+      "rationale": "Ayrı bir devam oyunu, bölüm veya remaster yerine bu mağaza ürününün eser kimliği elle incelendi. Tam kaynak ürün adları, PC kullanıcı sayfası, geliştirici/yayıncı ve çıkış bilgileri birlikte kontrol edildi; çalışma zamanında başlık eşleştirmesi yapılmaz.",
+      "reviewedMetadata": {
+        "storeProductId": 2157830,
+        "storeName": "John Carpenter's Toxic Commando",
+        "storeDevelopers": [
+          "Saber Interactive"
+        ],
+        "storePublishers": null,
+        "storeRelease": "Mar 12, 2026",
+        "metacriticCompany": "Saber Interactive",
+        "metacriticCompanyRole": "Developer",
+        "metacriticInitialRelease": "Mar 12, 2026",
+        "retrievalReference": "turn862search1",
+        "sourceCrawlLabel": "last month"
+      }
+    },
+    {
+      "steamAppId": 2119830,
+      "status": "approved",
+      "metacriticId": "misery",
+      "numericId": null,
+      "approvedResourceAliases": [],
+      "evidenceURLs": [
+        "https://store.steampowered.com/api/appdetails?appids=2119830&l=english",
+        "https://store.steampowered.com/app/2119830/",
+        "https://www.metacritic.com/game/misery/details/",
+        "https://www.metacritic.com/game/misery/user-reviews/?platform=pc"
+      ],
+      "reviewedAt": "2026-10-08",
+      "rationale": "Ayrı bir devam oyunu, bölüm veya remaster yerine bu mağaza ürününün eser kimliği elle incelendi. Tam kaynak ürün adları, PC kullanıcı sayfası, geliştirici/yayıncı ve çıkış bilgileri birlikte kontrol edildi; çalışma zamanında başlık eşleştirmesi yapılmaz.",
+      "reviewedMetadata": {
+        "storeProductId": 2119830,
+        "storeName": "MISERY",
+        "storeDevelopers": [
+          "Platypus Entertainment"
+        ],
+        "storePublishers": null,
+        "storeRelease": "Oct 23, 2025",
+        "metacriticCompany": "Platypus Entertainment",
+        "metacriticCompanyRole": "Developer",
+        "metacriticInitialRelease": "Oct 23, 2025",
+        "retrievalReference": "turn866search6",
+        "sourceCrawlLabel": "2 months ago"
+      }
+    },
+    {
+      "steamAppId": 3008740,
+      "status": "approved",
+      "metacriticId": "winter-burrow",
+      "numericId": null,
+      "approvedResourceAliases": [],
+      "evidenceURLs": [
+        "https://store.steampowered.com/api/appdetails?appids=3008740&l=english",
+        "https://store.steampowered.com/app/3008740/",
+        "https://www.metacritic.com/game/winter-burrow/",
+        "https://www.metacritic.com/game/winter-burrow/user-reviews/"
+      ],
+      "reviewedAt": "2026-10-08",
+      "rationale": "Ayrı bir devam oyunu, bölüm veya remaster yerine bu mağaza ürününün eser kimliği elle incelendi. Tam kaynak ürün adları, PC kullanıcı sayfası, geliştirici/yayıncı ve çıkış bilgileri birlikte kontrol edildi; çalışma zamanında başlık eşleştirmesi yapılmaz.",
+      "reviewedMetadata": {
+        "storeProductId": 3008740,
+        "storeName": "Winter Burrow",
+        "storeDevelopers": [
+          "Pine Creek Games"
+        ],
+        "storePublishers": null,
+        "storeRelease": "Nov 12, 2025",
+        "metacriticCompany": "Pine Creek Games",
+        "metacriticCompanyRole": "Developer",
+        "metacriticInitialRelease": "Nov 12, 2025",
+        "retrievalReference": "turn863search2",
+        "sourceCrawlLabel": "2 months ago"
+      }
+    },
+    {
+      "steamAppId": 3731020,
+      "status": "approved",
+      "metacriticId": "five-hearts-under-one-roof-season-2",
+      "numericId": null,
+      "approvedResourceAliases": [],
+      "evidenceURLs": [
+        "https://store.steampowered.com/api/appdetails?appids=3731020&l=english",
+        "https://store.steampowered.com/app/3731020/",
+        "https://www.metacritic.com/game/five-hearts-under-one-roof-season-2/",
+        "https://www.metacritic.com/game/five-hearts-under-one-roof-season-2/user-reviews/"
+      ],
+      "reviewedAt": "2026-10-08",
+      "rationale": "Ayrı bir devam oyunu, bölüm veya remaster yerine bu mağaza ürününün eser kimliği elle incelendi. Tam kaynak ürün adları, PC kullanıcı sayfası, geliştirici/yayıncı ve çıkış bilgileri birlikte kontrol edildi; çalışma zamanında başlık eşleştirmesi yapılmaz.",
+      "reviewedMetadata": {
+        "storeProductId": 3731020,
+        "storeName": "Five Hearts Under One Roof season2",
+        "storeDevelopers": [
+          "Storytaco"
+        ],
+        "storePublishers": null,
+        "storeRelease": "Nov 18, 2025",
+        "metacriticCompany": "Storytaco",
+        "metacriticCompanyRole": "Developer",
+        "metacriticInitialRelease": "Nov 18, 2025",
+        "retrievalReference": "turn863search3",
+        "sourceCrawlLabel": "last month"
+      }
+    },
+    {
+      "steamAppId": 3265700,
+      "status": "approved",
+      "metacriticId": "vampire-crawlers-the-turbo-wildcard-from-vampire",
+      "numericId": null,
+      "approvedResourceAliases": [],
+      "evidenceURLs": [
+        "https://store.steampowered.com/api/appdetails?appids=3265700&l=english",
+        "https://store.steampowered.com/app/3265700/",
+        "https://www.metacritic.com/game/vampire-crawlers-the-turbo-wildcard-from-vampire/",
+        "https://www.metacritic.com/game/vampire-crawlers-the-turbo-wildcard-from-vampire/user-reviews/?platform=pc"
+      ],
+      "reviewedAt": "2026-10-08",
+      "rationale": "Ayrı bir devam oyunu, bölüm veya remaster yerine bu mağaza ürününün eser kimliği elle incelendi. Tam kaynak ürün adları, PC kullanıcı sayfası, geliştirici/yayıncı ve çıkış bilgileri birlikte kontrol edildi; çalışma zamanında başlık eşleştirmesi yapılmaz.",
+      "reviewedMetadata": {
+        "storeProductId": 3265700,
+        "storeName": "Vampire Crawlers: The Turbo Wildcard from Vampire Survivors",
+        "storeDevelopers": [
+          "poncle",
+          "Nosebleed Interactive"
+        ],
+        "storePublishers": null,
+        "storeRelease": "Apr 21, 2026",
+        "metacriticCompany": "poncle",
+        "metacriticCompanyRole": "Developer",
+        "metacriticInitialRelease": "Apr 21, 2026",
+        "retrievalReference": "turn863search1",
+        "sourceCrawlLabel": "2 months ago"
+      }
+    },
+    {
+      "steamAppId": 2681030,
+      "status": "approved",
+      "metacriticId": "outbound",
+      "numericId": null,
+      "approvedResourceAliases": [],
+      "evidenceURLs": [
+        "https://store.steampowered.com/api/appdetails?appids=2681030&l=english",
+        "https://store.steampowered.com/app/2681030/",
+        "https://www.metacritic.com/game/outbound/",
+        "https://www.metacritic.com/game/outbound/user-reviews/"
+      ],
+      "reviewedAt": "2026-10-08",
+      "rationale": "Ayrı bir devam oyunu, bölüm veya remaster yerine bu mağaza ürününün eser kimliği elle incelendi. Tam kaynak ürün adları, PC kullanıcı sayfası, geliştirici/yayıncı ve çıkış bilgileri birlikte kontrol edildi; çalışma zamanında başlık eşleştirmesi yapılmaz.",
+      "reviewedMetadata": {
+        "storeProductId": 2681030,
+        "storeName": "Outbound",
+        "storeDevelopers": [
+          "Square Glade Games"
+        ],
+        "storePublishers": null,
+        "storeRelease": "11 May, 2026",
+        "metacriticCompany": "Square Glade Games",
+        "metacriticCompanyRole": "Developer",
+        "metacriticInitialRelease": "May 11, 2026",
+        "retrievalReference": "turn863search0",
+        "sourceCrawlLabel": "last month"
+      }
+    },
+    {
+      "steamAppId": 2753970,
+      "status": "approved",
+      "metacriticId": "marvel-cosmic-invasion",
+      "numericId": null,
+      "approvedResourceAliases": [],
+      "evidenceURLs": [
+        "https://store.steampowered.com/api/appdetails?appids=2753970&l=english",
+        "https://store.steampowered.com/app/2753970/",
+        "https://www.metacritic.com/game/marvel-cosmic-invasion/",
+        "https://www.metacritic.com/game/marvel-cosmic-invasion/user-reviews/"
+      ],
+      "reviewedAt": "2026-10-08",
+      "rationale": "Ayrı bir devam oyunu, bölüm veya remaster yerine bu mağaza ürününün eser kimliği elle incelendi. Tam kaynak ürün adları, PC kullanıcı sayfası, geliştirici/yayıncı ve çıkış bilgileri birlikte kontrol edildi; çalışma zamanında başlık eşleştirmesi yapılmaz.",
+      "reviewedMetadata": {
+        "storeProductId": 2753970,
+        "storeName": "MARVEL Cosmic Invasion",
+        "storeDevelopers": [
+          "Tribute Games Inc."
+        ],
+        "storePublishers": null,
+        "storeRelease": "Dec 1, 2025",
+        "metacriticCompany": "Tribute Games",
+        "metacriticCompanyRole": "Developer",
+        "metacriticInitialRelease": "Dec 1, 2025",
+        "retrievalReference": "turn864search4",
+        "sourceCrawlLabel": "last month"
+      }
+    },
+    {
+      "steamAppId": 1407420,
+      "status": "approved",
+      "metacriticId": "milo-and-the-magpies",
+      "numericId": null,
+      "approvedResourceAliases": [],
+      "evidenceURLs": [
+        "https://store.steampowered.com/api/appdetails?appids=1407420&l=english",
+        "https://store.steampowered.com/app/1407420/",
+        "https://www.metacritic.com/game/milo-and-the-magpies/",
+        "https://www.metacritic.com/game/milo-and-the-magpies/user-reviews/?platform=pc"
+      ],
+      "reviewedAt": "2026-10-08",
+      "rationale": "Ayrı bir devam oyunu, bölüm veya remaster yerine bu mağaza ürününün eser kimliği elle incelendi. Tam kaynak ürün adları, PC kullanıcı sayfası, geliştirici/yayıncı ve çıkış bilgileri birlikte kontrol edildi; çalışma zamanında başlık eşleştirmesi yapılmaz. Metacritic genel ayrıntı tarihinin mobil/konsol çıkışı olabildiği kaydedildi; bu tarih PC puan platformu kanıtı sayılmadı. Sayısal gözlem açık PC User Reviews başlığından gelir.",
+      "reviewedMetadata": {
+        "storeProductId": 1407420,
+        "storeName": "Milo and the Magpies",
+        "storeDevelopers": [
+          "Johan Scherft"
+        ],
+        "storePublishers": [
+          "Second Maze"
+        ],
+        "storeRelease": "Sep 7, 2021",
+        "metacriticCompany": "Second Maze",
+        "metacriticCompanyRole": "Developer / Publisher",
+        "metacriticInitialRelease": "Jan 26, 2022",
+        "retrievalReference": "turn866search3",
+        "sourceCrawlLabel": "3 months ago"
+      }
+    },
+    {
+      "steamAppId": 1361230,
+      "status": "approved",
+      "metacriticId": "cleo-a-pirates-tale",
+      "numericId": null,
+      "approvedResourceAliases": [],
+      "evidenceURLs": [
+        "https://store.steampowered.com/api/appdetails?appids=1361230&l=english",
+        "https://store.steampowered.com/app/1361230/",
+        "https://www.metacritic.com/game/cleo-a-pirates-tale/details/",
+        "https://www.metacritic.com/game/cleo-a-pirates-tale/user-reviews/?platform=pc"
+      ],
+      "reviewedAt": "2026-10-08",
+      "rationale": "Ayrı bir devam oyunu, bölüm veya remaster yerine bu mağaza ürününün eser kimliği elle incelendi. Tam kaynak ürün adları, PC kullanıcı sayfası, geliştirici/yayıncı ve çıkış bilgileri birlikte kontrol edildi; çalışma zamanında başlık eşleştirmesi yapılmaz. Metacritic genel ayrıntı tarihinin mobil/konsol çıkışı olabildiği kaydedildi; bu tarih PC puan platformu kanıtı sayılmadı. Sayısal gözlem açık PC User Reviews başlığından gelir.",
+      "reviewedMetadata": {
+        "storeProductId": 1361230,
+        "storeName": "Cleo - a pirate's tale",
+        "storeDevelopers": [
+          "Christoph Schultz"
+        ],
+        "storePublishers": [
+          "Christoph Schultz"
+        ],
+        "storeRelease": "Dec 12, 2021",
+        "metacriticCompany": "Christoph Schultz",
+        "metacriticCompanyRole": "Developer",
+        "metacriticInitialRelease": "Aug 10, 2022",
+        "retrievalReference": "turn859search2",
+        "sourceCrawlLabel": "3 months ago"
+      }
+    },
+    {
+      "steamAppId": 3191050,
+      "status": "approved",
+      "metacriticId": "brazilian-drug-dealer-3-i-opened-a-portal-to-hell",
+      "numericId": null,
+      "approvedResourceAliases": [],
+      "evidenceURLs": [
+        "https://store.steampowered.com/api/appdetails?appids=3191050&l=english",
+        "https://store.steampowered.com/app/3191050/",
+        "https://www.metacritic.com/game/brazilian-drug-dealer-3-i-opened-a-portal-to-hell/",
+        "https://www.metacritic.com/game/brazilian-drug-dealer-3-i-opened-a-portal-to-hell/user-reviews/"
+      ],
+      "reviewedAt": "2026-10-08",
+      "rationale": "Ayrı bir devam oyunu, bölüm veya remaster yerine bu mağaza ürününün eser kimliği elle incelendi. Tam kaynak ürün adları, PC kullanıcı sayfası, geliştirici/yayıncı ve çıkış bilgileri birlikte kontrol edildi; çalışma zamanında başlık eşleştirmesi yapılmaz.",
+      "reviewedMetadata": {
+        "storeProductId": 3191050,
+        "storeName": "BRAZILIAN DRUG DEALER 3: I OPENED A PORTAL TO HELL IN THE FAVELA TRYING TO REVIVE MIT AIA I NEED TO CLOSE IT",
+        "storeDevelopers": [
+          "Joeveno"
+        ],
+        "storePublishers": null,
+        "storeRelease": "Sep 17, 2025",
+        "metacriticCompany": "Joeveno",
+        "metacriticCompanyRole": "Developer",
+        "metacriticInitialRelease": "Sep 17, 2025",
+        "retrievalReference": "turn864search0",
+        "sourceCrawlLabel": "2 months ago"
+      }
+    },
+    {
+      "steamAppId": 1790600,
+      "status": "approved",
+      "metacriticId": "dragon-ball-sparking-zero",
+      "numericId": null,
+      "approvedResourceAliases": [
+        "dragon-ball-sparking!-zero"
+      ],
+      "evidenceURLs": [
+        "https://store.steampowered.com/api/appdetails?appids=1790600&l=english",
+        "https://www.metacritic.com/game/pc/dragon-ball-sparking!-zero?ftag=MCD-06-10aaa1f",
+        "https://www.metacritic.com/game/dragon-ball-sparking-zero/"
+      ],
+      "reviewedAt": "2026-10-08",
+      "rationale": "Mağaza uygulama kimliği ve resmî eski Metacritic bağlantısı; güncel eser sayfasındaki sürüm, geliştirici ve çıkış bilgileriyle birlikte incelendi. Yalnızca bu iki kaynak kimliği için açık alias kaydedildi; genel karakter veya ad dönüştürmesi yapılmadı.",
+      "reviewedMetadata": {
+        "storeProductId": 1790600,
+        "storeName": "DRAGON BALL: Sparking! ZERO",
+        "storeDevelopers": [
+          "Spike Chunsoft Co., Ltd."
+        ],
+        "storeRelease": "Oct 10, 2024",
+        "metacriticDeveloper": "Spike Chunsoft",
+        "metacriticRelease": "Oct 11, 2024",
+        "retrievalReference": "turn953search4"
+      }
+    },
+    {
+      "steamAppId": 2524850,
+      "status": "approved",
+      "metacriticId": "denshattack",
+      "numericId": null,
+      "approvedResourceAliases": [
+        "denshattack!"
+      ],
+      "evidenceURLs": [
+        "https://store.steampowered.com/api/appdetails?appids=2524850&l=english",
+        "https://www.metacritic.com/game/pc/denshattack!?ftag=MCD-06-10aaa1f",
+        "https://www.metacritic.com/game/denshattack/"
+      ],
+      "reviewedAt": "2026-10-08",
+      "rationale": "Mağaza uygulama kimliği ve resmî eski Metacritic bağlantısı; güncel eser sayfasındaki sürüm, geliştirici ve çıkış bilgileriyle birlikte incelendi. Yalnızca bu iki kaynak kimliği için açık alias kaydedildi; genel karakter veya ad dönüştürmesi yapılmadı.",
+      "reviewedMetadata": {
+        "storeProductId": 2524850,
+        "storeName": "Denshattack!",
+        "storeDevelopers": [
+          "Undercoders"
+        ],
+        "storeRelease": "Jul 15, 2026",
+        "metacriticDeveloper": "Undercoders",
+        "metacriticRelease": "Jul 15, 2026",
+        "retrievalReference": "turn953search0"
+      }
+    },
+    {
+      "steamAppId": 1388880,
+      "status": "approved",
+      "metacriticId": "doki-doki-literature-club-plus",
+      "numericId": null,
+      "approvedResourceAliases": [
+        "doki-doki-literature-club-plus!"
+      ],
+      "evidenceURLs": [
+        "https://store.steampowered.com/api/appdetails?appids=1388880&l=english",
+        "https://www.metacritic.com/game/pc/doki-doki-literature-club-plus!?ftag=MCD-06-10aaa1f",
+        "https://www.metacritic.com/game/doki-doki-literature-club-plus/"
+      ],
+      "reviewedAt": "2026-10-08",
+      "rationale": "Mağaza uygulama kimliği ve resmî eski Metacritic bağlantısı; güncel eser sayfasındaki sürüm, geliştirici ve çıkış bilgileriyle birlikte incelendi. Yalnızca bu iki kaynak kimliği için açık alias kaydedildi; genel karakter veya ad dönüştürmesi yapılmadı.",
+      "reviewedMetadata": {
+        "storeProductId": 1388880,
+        "storeName": "Doki Doki Literature Club Plus!",
+        "storeDevelopers": [
+          "Team Salvato"
+        ],
+        "storeRelease": "Jun 30, 2021",
+        "metacriticDeveloper": "Team Salvato",
+        "metacriticRelease": "Jun 30, 2021",
+        "retrievalReference": "turn953search6"
+      }
     }
   ],
   "editionAudit": [
