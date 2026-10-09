@@ -79,6 +79,36 @@ assert.deepEqual(parsed.genres,['Aksiyon','Korku']);
 assert.deepEqual(parsed.tags,[19,1667]);
 assert.equal(parsed.pageSize,60);
 
+// Inclusive bounds work over the whole SQL catalog, including unknown/null source counts.
+const mcRange=await queryCatalog({rating:7,ratingMax:8.5,pageSize:60});
+assert(mcRange.total>60);assert(mcRange.games.every(g=>g.metacriticUser.score>=7&&g.metacriticUser.score<=8.5));
+const steamRange=await queryCatalog({steamMin:13,steamMax:78,pageSize:60});
+assert(steamRange.total>0);assert(steamRange.games.every(g=>g.steamReview.positivePercent>=13&&g.steamReview.positivePercent<=78));
+assert.equal(steamRange.total,fixture.sqlite.prepare("SELECT COUNT(*) AS n FROM catalog_games WHERE status='published' AND steam_positive_percent BETWEEN 13 AND 78").get().n);
+assert((await queryCatalog({ratingMax:3})).games.every(g=>g.metacriticUser.score<=3));
+const exact=await queryCatalog({mcCountMin:507,mcCountMax:507});
+assert(exact.games.some(g=>g.id===mortal.id));assert(exact.games.every(g=>g.metacriticUser.userRatings===507));
+const knownCounts=await queryCatalog({mcCountMin:0,pageSize:60});
+assert(knownCounts.total>0&&knownCounts.total<1001);assert(!knownCounts.games.some(g=>g.id==='steam-990080'),'Legacy reviewCount is not assumed to be a user vote count');assert(knownCounts.games.every(g=>Number.isSafeInteger(g.metacriticUser.userRatings)));
+const highCounts=await queryCatalog({steamCountMin:100000,steamCountMax:500000,pageSize:60});
+assert(highCounts.total>0);assert(highCounts.games.every(g=>g.steamReview.total>=100000&&g.steamReview.total<=500000));
+const combined=await queryCatalog({rating:5,ratingMax:9,steamMin:50,steamMax:100,mcCountMin:10,mcCountMax:10000,steamCountMin:1000,steamCountMax:1000000,system:'Windows',pageSize:60});
+assert(combined.total>0);assert(combined.games.every(g=>g.metacriticUser.score>=5&&g.metacriticUser.score<=9&&g.steamReview.positivePercent>=50&&g.steamReview.positivePercent<=100&&g.metacriticUser.userRatings>=10&&g.metacriticUser.userRatings<=10000&&g.steamReview.total>=1000&&g.steamReview.total<=1000000&&g.pcSystems.includes('Windows')));
+const nextRange=await queryCatalog({rating:7,ratingMax:8.5,page:2,pageSize:60});
+assert.equal(nextRange.total,mcRange.total);assert(!nextRange.games.some(g=>mcRange.games.some(a=>a.id===g.id)));
+const randomRange=await queryCatalog({steamMin:13,steamMax:78,steamCountMin:1000,random:true});
+assert.equal(randomRange.games.length,1);assert(randomRange.games[0].steamReview.total>=1000&&randomRange.games[0].steamReview.positivePercent<=78);
+assert.equal(parseCatalogQuery(new URLSearchParams('rating=7&ratingMax=8,5')).ratingMax,8.5);
+assert.equal(parseCatalogQuery(new URLSearchParams('steamMin=0')).steamMin,0);
+for(const invalid of ['rating=9&ratingMax=8','steamMin=101','steamMin=78&steamMax=13','mcCountMin=1.5','mcCountMax=-1','steamCountMin=9007199254740992','steamCountMin=100&steamCountMax=99','rating=1e1','steamMax=abc'])assert.throws(()=>parseCatalogQuery(new URLSearchParams(invalid)),invalid);
+await assert.rejects(()=>queryCatalog({rating:9,ratingMax:8}));
+// A real zero is kept distinct from missing counts in both sources.
+const original=fixture.sqlite.prepare('SELECT score_value,score_count,steam_positive_percent,payload FROM catalog_games WHERE id=?').get(mortal.id);
+const zero=JSON.parse(original.payload);zero.metacriticUser.score=0;zero.metacriticUser.userRatings=0;zero.steamReview={...zero.steamReview,positivePercent:0,total:0};
+fixture.sqlite.prepare('UPDATE catalog_games SET score_value=0,score_count=0,steam_positive_percent=0,payload=? WHERE id=?').run(JSON.stringify(zero),mortal.id);
+assert.deepEqual((await queryCatalog({rating:0,ratingMax:0,steamMin:0,steamMax:0,mcCountMin:0,mcCountMax:0,steamCountMin:0,steamCountMax:0})).games.map(g=>g.id),[mortal.id]);
+fixture.sqlite.prepare('UPDATE catalog_games SET score_value=?,score_count=?,steam_positive_percent=?,payload=? WHERE id=?').run(original.score_value,original.score_count,original.steam_positive_percent,original.payload,mortal.id);
+
 fixture.clearQueries();
 await queryCatalog({page:2});
 await gamesByIds([kenshi.id]);

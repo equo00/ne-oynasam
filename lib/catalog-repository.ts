@@ -6,7 +6,7 @@ import type {Game} from './catalog';
 
 export const CATALOG_API_VERSION=2;
 export const MAX_GAME_LOOKUP=60;
-export type CatalogQuery={q?:string;genres?:string[];tags?:number[];system?:string;features?:string;era?:string;mood?:string;rating?:number|null;sort?:string;page?:number;pageSize?:number;library?:boolean;status?:string;collection?:string;random?:boolean};
+export type CatalogQuery={q?:string;genres?:string[];tags?:number[];system?:string;features?:string;era?:string;mood?:string;rating?:number|null;ratingMax?:number|null;steamMin?:number|null;steamMax?:number|null;mcCountMin?:number|null;mcCountMax?:number|null;steamCountMin?:number|null;steamCountMax?:number|null;sort?:string;page?:number;pageSize?:number;library?:boolean;status?:string;collection?:string;random?:boolean};
 export class CatalogNotReady extends Error {
  constructor(public state:{ready:boolean;stage:string;cursor:string|null;processed:number}){super('Katalog hazırlanıyor. Birkaç saniye sonra yeniden dene.');}
 }
@@ -15,6 +15,15 @@ export async function catalogDatabase(){const database=db();const state=await en
 export function pendingCatalogResponse(e:unknown):Response|null{if(!(e instanceof CatalogNotReady))return null;return Response.json({apiVersion:2,ready:false,error:e.message,stage:e.state.stage,retryAfter:1},{status:202,headers:{'Cache-Control':'no-store','Retry-After':'1','X-Content-Type-Options':'nosniff'}});}
 const one=(p:URLSearchParams,k:string)=>p.get(k)||'';
 function integer(p:URLSearchParams,k:string,fallback:number,min:number,max:number){const v=one(p,k);if(!v)return fallback;if(!/^\d+$/.test(v)||Number(v)<min||Number(v)>max)throw new CatalogQueryError(`${k} geçersiz.`);return Number(v);}
+const ranges=[
+ ['rating','ratingMax','Metacritic kullanıcı puanı',10,false,'g.score_value'],
+ ['steamMin','steamMax','Steam olumlu değerlendirme oranı',100,false,'g.steam_positive_percent'],
+ // Kartlarda gösterilen oy sayısını kullan; eski reviewCount alanını oy sayısı varsayma.
+ ['mcCountMin','mcCountMax','Metacritic değerlendirme sayısı',Number.MAX_SAFE_INTEGER,true,"CASE WHEN json_type(g.payload,'$.metacriticUser.userRatings')='integer' AND json_extract(g.payload,'$.metacriticUser.userRatings')>=0 THEN json_extract(g.payload,'$.metacriticUser.userRatings') END"],
+ ['steamCountMin','steamCountMax','Steam değerlendirme sayısı',Number.MAX_SAFE_INTEGER,true,"CASE WHEN json_type(g.payload,'$.steamReview.total')='integer' AND json_extract(g.payload,'$.steamReview.total')>=0 THEN json_extract(g.payload,'$.steamReview.total') END"]
+] as const;
+function validateRanges(query:CatalogQuery){for(const [minKey,maxKey,label,max,count] of ranges){const lower=query[minKey],upper=query[maxKey];for(const n of [lower,upper])if(n!=null&&(!Number.isFinite(n)||n<0||n>max||(count&&!Number.isSafeInteger(n))))throw new CatalogQueryError(`${label}: ${count?'sıfır veya pozitif bir tam sayı':`0–${max} arasında bir sayı`} gir.`);if(lower!=null&&upper!=null&&lower>upper)throw new CatalogQueryError(`${label}: en az değeri en fazla değerinden büyük olamaz.`);}}
+function parseRanges(p:URLSearchParams):CatalogQuery{const result:CatalogQuery={};for(const [minKey,maxKey,label,,count] of ranges)for(const key of [minKey,maxKey]){const raw=one(p,key).trim();if(!raw){result[key]=null;continue;}if(!(count?/^\d+$/:/^\d+(?:[.,]\d+)?$/).test(raw))throw new CatalogQueryError(`${label}: geçerli ${count?'bir tam sayı':'bir sayı'} gir.`);result[key]=Number(raw.replace(',','.'));}validateRanges(result);return result;}
 export function parseCatalogQuery(p:URLSearchParams):CatalogQuery{
  const q=one(p,'q').trim();if(q.length>160)throw new CatalogQueryError('Arama en fazla 160 karakter olabilir.');if(searchTokens(q).length>12)throw new CatalogQueryError('Arama en fazla 12 sözcük olabilir.');
  const genres=[...new Set(p.getAll('genre').filter(Boolean))];if(genres.length>12||genres.some(x=>x.length>80))throw new CatalogQueryError('Tür seçimi geçersiz.');
@@ -27,15 +36,16 @@ export function parseCatalogQuery(p:URLSearchParams):CatalogQuery{
  if(!['editor','new','old','name','rating','steam','views'].includes(sort))throw new CatalogQueryError('Sıralama geçersiz.');
  if(status&&!statuses.includes(status as typeof statuses[number]))throw new CatalogQueryError('Koleksiyon durumu geçersiz.');
  if(collection.length>100)throw new CatalogQueryError('Koleksiyon geçersiz.');
- const ratingRaw=one(p,'rating'),rating=ratingRaw?Number(ratingRaw):null;if(ratingRaw&&(!Number.isFinite(rating)||rating!<0||rating!>10))throw new CatalogQueryError('Puan filtresi geçersiz.');
+ const scoreRanges=parseRanges(p);
  const library=one(p,'library');if(library&&!['0','1'].includes(library))throw new CatalogQueryError('Koleksiyon seçimi geçersiz.');
  const random=one(p,'random');if(random&&!['0','1'].includes(random))throw new CatalogQueryError('Keşif seçimi geçersiz.');
- return {q,genres,tags:rawTags.map(Number),system,features,era,mood,rating,sort,page:integer(p,'page',1,1,1000000),pageSize:integer(p,'pageSize',24,1,60),library:library==='1',status,collection,random:random==='1'};
+ return {q,genres,tags:rawTags.map(Number),system,features,era,mood,...scoreRanges,sort,page:integer(p,'page',1,1,1000000),pageSize:integer(p,'pageSize',24,1,60),library:library==='1',status,collection,random:random==='1'};
 }
 export function searchTokens(value:string){return [...new Set(normalize(value).normalize('NFKD').replace(/[\u0300-\u036f]/g,'').split(/[^\p{L}\p{N}]+/u).filter(Boolean))];}
 const marks=(n:number)=>Array(n).fill('?').join(',');
 function parsedGame(row:{payload:string;view_count?:number}):Game{const game=JSON.parse(row.payload) as Game;return {...game,viewCount:Number(row.view_count||0)};}
 export function buildCatalogWhere(query:CatalogQuery,userId?:string|null){
+ validateRanges(query);
  const args:unknown[]=[],where:string[]=[];
  if(query.library){if(!userId)throw new CatalogQueryError('Koleksiyonunu görmek için giriş yap.');where.push('EXISTS (SELECT 1 FROM library l WHERE l.user_id=? AND l.game_id=g.id)');args.push(userId);}else where.push("g.status='published'");
  // Archived PC entries remain resolvable in saved collections and direct links.
@@ -48,7 +58,7 @@ export function buildCatalogWhere(query:CatalogQuery,userId?:string|null){
  if(query.features==='turkish')where.push('g.has_turkish=1');if(query.features==='coop')where.push('g.has_coop=1');
  if(query.era==='2020')where.push('g.year>=2020');if(query.era==='2010')where.push('g.year BETWEEN 2010 AND 2019');if(query.era==='classic')where.push('g.year<=2009');
  if(query.mood){where.push('g.mood=?');args.push(query.mood);}
- if(query.rating!=null){where.push('g.score_value>=?');args.push(query.rating);}
+ for(const [minKey,maxKey,,,,column] of ranges){if(query[minKey]!=null){where.push(`${column}>=?`);args.push(query[minKey]);}if(query[maxKey]!=null){where.push(`${column}<=?`);args.push(query[maxKey]);}}
  for(const token of searchTokens(query.q||'')){where.push('g.id IN (SELECT st.game_id FROM catalog_search_terms st WHERE st.token>=? AND st.token<?)');args.push(token,token+'\uffff');}
  return {sql:where.join(' AND '),args};
 }

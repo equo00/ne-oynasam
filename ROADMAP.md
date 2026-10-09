@@ -41,6 +41,7 @@ Bu değişiklik işlerin sırasını ve geçiş ölçütlerini düzenler; uygula
 
 ## Planlanan çoklu filtreler ve oynanış
 
+- [x] 9 Ekim 2026: Kullanıcının onayladığı Metacritic kullanıcı puanı, Steam olumlu değerlendirme oranı ve iki kaynağın değerlendirme sayısı için serbest “En az / En fazla” aralıkları eklendi. Sınırlar dahil, boş alan kısıtlamasız; sayı alanları açılır bölümde, etkin seçimler kaldırılabilir rozetlerde. Arama, sayfalama, koleksiyon ve Beni şaşırt aynı sunucu filtrelerini kullanır. Bilinmeyen sayılar üretilmez, eski `reviewCount` oy sayısı kabul edilmez. Bu ekleme aşağıdaki çoklu tür/etiket/oynanış çalışmalarını tamamlamaz veya başlatmaz.
 - [ ] Tür seçimi tekli açılır kutudan çoklu seçime taşınsın. Aksiyon ve Korku seçildiğinde iki türe de uyan oyunlar gelsin; seçimler VE mantığıyla birleşsin. Bir oyunun tek tür alanına bağlı kalınmasın; çoklu tür verisi ve detaylı etiketlerle ilişkisi doğrulansın.
 - [ ] Oyunun ayrıntısında görünen etiketler ana filtre barındaki aranabilir "Detaylı etiketler" alanından seçilebilsin. Bu etiketler tek bir türün zorunlu alt öğeleri olarak kabul edilmesin; Açık Dünya veya Hayatta Kalma gibi özellikler birden fazla türle ilişkili olabilir. Kimlikler ve Türkçe gösterim adları ayrı tutulsun.
 - [ ] Tür, detaylı etiket, oynanış ve mevcut diğer filtreler birlikte uygulansın. Her seçili tür, etiket ve açık oynanış koşulu karşılanmalı; seçimsiz alan kısıtlama getirmesin. PC kapsamı korunsun. Seçimler birbirini sıfırlamasın ve sıralama filtrelenmiş adaylarda çalışsın.
