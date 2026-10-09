@@ -41,6 +41,8 @@ Bu değişiklik işlerin sırasını ve geçiş ölçütlerini düzenler; uygula
 
 ## Planlanan çoklu filtreler ve oynanış
 
+- 9 Ekim 2026: Puan ve değerlendirme sayısı kaynaklarında dil/ülke kısıtı kullanılmaz. Steam tüm diller, tüm satın alma türleri ve olumlu/olumsuz değerlendirmeler için aynı toplamdan hesaplanır; eski İngilizce kapsamlı kayıtlar geçmişte korunur. Metacritic kullanıcı puanı ve gerçek oy sayısı ayrı kaynak olarak kalır. Bu düzeltme yeni katalog büyütme veya zamanlanmış görev başlatmaz.
+
 - [x] 9 Ekim 2026: Kullanıcının onayladığı Metacritic kullanıcı puanı, Steam olumlu değerlendirme oranı ve iki kaynağın değerlendirme sayısı için serbest “En az / En fazla” aralıkları eklendi. Sınırlar dahil, boş alan kısıtlamasız; puan ve sayı alanları her kaynağın kendi başlığı altında sürekli görünür, etkin seçimler kaldırılabilir rozetlerde. Mobilde kaynaklar alt alta, masaüstünde yan yana; ayrı açılır bölüm kaldırıldı. Arama, sayfalama, koleksiyon ve Beni şaşırt aynı sunucu filtrelerini kullanır. Bilinmeyen sayılar üretilmez, eski `reviewCount` oy sayısı kabul edilmez. Bu ekleme aşağıdaki çoklu tür/etiket/oynanış çalışmalarını tamamlamaz veya başlatmaz.
 - [ ] Tür seçimi tekli açılır kutudan çoklu seçime taşınsın. Aksiyon ve Korku seçildiğinde iki türe de uyan oyunlar gelsin; seçimler VE mantığıyla birleşsin. Bir oyunun tek tür alanına bağlı kalınmasın; çoklu tür verisi ve detaylı etiketlerle ilişkisi doğrulansın.
 - [ ] Oyunun ayrıntısında görünen etiketler ana filtre barındaki aranabilir "Detaylı etiketler" alanından seçilebilsin. Bu etiketler tek bir türün zorunlu alt öğeleri olarak kabul edilmesin; Açık Dünya veya Hayatta Kalma gibi özellikler birden fazla türle ilişkili olabilir. Kimlikler ve Türkçe gösterim adları ayrı tutulsun.

@@ -1,5 +1,6 @@
 import fs from 'node:fs';
 import path from 'node:path';
+import {steamReviewUrl,steamReviewSummary} from '../lib/steam-reviews.mjs';
 
 const checkpoint='/workspace/scratch/194b75ede87c/pc-import';
 fs.mkdirSync(checkpoint,{recursive:true});
@@ -34,11 +35,9 @@ function parse(html){
   const rawTags=JSON.parse(row.match(/data-ds-tagids="([^\"]+)"/)?.[1]||'[]').map(id=>tagMap.get(id)).filter(Boolean);
   const genres=[...new Set(rawTags.map(t=>translations[t]).filter(Boolean))];
   const legacy=aliases.get(appid);
-  const tooltip=decode(row.match(/data-tooltip-html="([^\"]+)"/)?.[1]||'');
-  const review=tooltip.match(/(\d+)% of the ([\d,]+) user reviews/);
   const capsule=decode(row.match(/<img src="([^\"]+)"/)?.[1]||'');
   const systems=['Windows',...(/platform_img mac/.test(row)?['macOS']:[]),...(/platform_img linux/.test(row)?['Linux']:[])];
-  const game={...(legacy||{}),id:legacy?.id||'steam-'+appid,name,steamAppId:appid,year:dt.getUTCFullYear(),releaseDate:rawDate,yearSource:'Steam store release date; may reflect full release or rerelease',genres:genres.length?genres:legacy?.genres||[],platforms:[...new Set(['PC',...(legacy?.platforms||[])])],pcSystems:systems,studio:legacy?.studio||'',url:'https://store.steampowered.com/app/'+appid+'/',sourceKind:'steam',sourceUrl:'https://store.steampowered.com/app/'+appid+'/',sourceRetrievedAt:stamp,sourceGenreValues:rawTags,sourcePlatformValues:systems,genresRaw:rawTags,platformsRaw:systems,tagsRaw:rawTags,coverUrl:'https://cdn.akamai.steamstatic.com/steam/apps/'+appid+'/header.jpg',coverFallbackUrl:capsule,coverSource:'Steam publisher store artwork',coverSourceUrl:'https://store.steampowered.com/app/'+appid+'/',steamReview:review?{positivePercent:Number(review[1]),total:Number(review[2].replaceAll(',','')),scope:'English-language Steam store search',retrievedAt:stamp,url:'https://store.steampowered.com/app/'+appid+'/#app_reviews_hash'}:null,metacriticUser:null};
+  const game={...(legacy||{}),id:legacy?.id||'steam-'+appid,name,steamAppId:appid,year:dt.getUTCFullYear(),releaseDate:rawDate,yearSource:'Steam store release date; may reflect full release or rerelease',genres:genres.length?genres:legacy?.genres||[],platforms:[...new Set(['PC',...(legacy?.platforms||[])])],pcSystems:systems,studio:legacy?.studio||'',url:'https://store.steampowered.com/app/'+appid+'/',sourceKind:'steam',sourceUrl:'https://store.steampowered.com/app/'+appid+'/',sourceRetrievedAt:stamp,sourceGenreValues:rawTags,sourcePlatformValues:systems,genresRaw:rawTags,platformsRaw:systems,tagsRaw:rawTags,coverUrl:'https://cdn.akamai.steamstatic.com/steam/apps/'+appid+'/header.jpg',coverFallbackUrl:capsule,coverSource:'Steam publisher store artwork',coverSourceUrl:'https://store.steampowered.com/app/'+appid+'/',steamReview:null,metacriticUser:null};
   games.set(appid,game);
  }
 }
@@ -67,7 +66,10 @@ for(const [appid,legacy] of aliases){
 }
 const byId=new Map([...games.values()].map(g=>[g.id,g]));
 for(const old of original){if(!byId.has(old.id)&&old.platforms.includes('PC'))byId.set(old.id,{...old,metacriticUser:null});}
-const all=[...byId.values()];if(all.filter(g=>g.platforms.includes('PC')&&g.steamAppId).length<1000)throw Error('Insufficient verified PC games');
+const all=[...byId.values()];
+// Mağaza arama ipucundaki dil kapsamını puan verisi olarak kullanma.
+for(const game of all){if(!game.steamAppId)continue;try{const url=steamReviewUrl(game.steamAppId);game.steamReview=steamReviewSummary(await get(url),game.steamAppId,new Date().toISOString(),url);}catch{console.log('Tüm dil değerlendirmesi alınamadı:',game.steamAppId);game.steamReview=null;}await wait(250);}
+if(all.filter(g=>g.platforms.includes('PC')&&g.steamAppId).length<1000)throw Error('Insufficient verified PC games');
 fs.writeFileSync(path.join(checkpoint,'catalog-raw.json'),JSON.stringify(all,null,2));
 fs.writeFileSync(path.join(checkpoint,'legacy-archive.json'),JSON.stringify(original.filter(g=>!g.platforms.includes('PC')),null,2));
 console.log(JSON.stringify({games:all.length,pc:all.filter(g=>g.platforms.includes('PC')).length,steam:all.filter(g=>g.steamAppId).length,archive:original.filter(g=>!g.platforms.includes('PC')).length,checkpoint}));

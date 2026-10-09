@@ -61,5 +61,8 @@ const cs2=seed.find(g=>g.steamAppId===730);
 await run(h,`openGame(${JSON.stringify(cs2.id)})`);assert(h.elements.detailContent.innerHTML.includes('5,5'));assert.equal(run(h,'state.current.metacriticUser.platform'),'PC');assert.equal(run(h,'state.current.metacriticUser.metacriticId'),'counter-strike-2');
 await run(h,`state.compare=new Set(${JSON.stringify([cs2.id,mortal.id])});showCompare()`);assert(h.elements.compareContent.innerHTML.includes('5,5/10'));assert(h.elements.compareContent.innerHTML.includes('7,8/10'));
 assert(!h.requests.some(r=>r.path==='/api/catalog'||r.path.startsWith('/editorial.json')||(r.path==='/api/views'&&r.method==='GET')));
+assert(h.elements.compareContent.innerHTML.includes('Tüm diller · Ülke filtresi yok'));
+assert(!h.elements.compareContent.innerHTML.includes('İngilizce yorumlar'));
+const zero=run(h,`sourceScore({steamAppId:730,steamReview:{positivePercent:null,total:0,scope:'all-languages'}},'steam')`);assert(zero.includes('0 değerlendirme'));assert(zero.includes('Tüm diller'));assert(!zero.includes('0%'));
 stop(h);fixture.close();
 console.log('Passed: frontend consumes real migrated SQL catalog, prefix search, authored descriptions, stable pages, server score/system filters, and retained platform-unknown scores in detail and off-page comparison.');
