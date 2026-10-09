@@ -3710,11 +3710,35 @@
     "gameId": "steam-4705510",
     "steamAppId": 4705510,
     "revision": 1,
-    "status": "unverified_identity",
-    "metacritic": null,
-    "scoreRecordId": null,
-    "scorePlatform": null,
-    "reason": "No approved ID crosslink available"
+    "status": "ready",
+    "metacritic": {
+      "resourceId": "happy-wheels",
+      "numericId": null,
+      "url": "https://www.metacritic.com/game/happy-wheels/",
+      "editionScope": "Reviewed store product / Metacritic work relationship",
+      "evidence": [
+        {
+          "kind": "reviewed-id-crosswalk",
+          "urls": [
+            "https://store.steampowered.com/app/4705510/",
+            "https://www.metacritic.com/game/happy-wheels/",
+            "https://store.steampowered.com/api/appdetails?appids=4705510&l=english"
+          ],
+          "reviewedAt": "2026-10-09T17:48:10.772813Z",
+          "rationale": "Jim Bonacci/Fancy Force aynı temel oyunun Steam portunu tanımlıyor; puan iOS kaydından. PC puanının yokluğu kesinleşmedi. Kalıcı Steam uygulama ID’si; geliştirici, çıkış dönemi ve temel eser kapsamı incelendi. Yama/port ayrı oyun sayılmadı; farklı pazarlanan remake/remasterlar birleştirilmedi.",
+          "approvedResourceAliases": []
+        },
+        {
+          "kind": "reviewed-primary-score",
+          "recordId": "mc-user:reviewed:4705510:iOS:2026-10-09:research361",
+          "url": "https://www.metacritic.com/game/happy-wheels/user-reviews/",
+          "retrievedAt": "2026-10-09T17:48:10.772813Z",
+          "method": "public-primary-cache"
+        }
+      ]
+    },
+    "scoreRecordId": "mc-user:reviewed:4705510:iOS:2026-10-09:research361",
+    "scorePlatform": "iOS"
   },
   "steam-1973530": {
     "schemaVersion": 1,
@@ -7311,27 +7335,35 @@
     "gameId": "steam-1962663",
     "steamAppId": 1962663,
     "revision": 1,
-    "status": "missing_score",
+    "status": "ready",
     "metacritic": {
-      "resourceId": "call-of-duty-warzone-20",
-      "numericId": "1300578554",
-      "url": "https://www.metacritic.com/game/call-of-duty-warzone-20/",
+      "resourceId": "call-of-duty-warzone",
+      "numericId": null,
+      "url": "https://www.metacritic.com/game/call-of-duty-warzone/",
       "editionScope": "Reviewed store product / Metacritic work relationship",
       "evidence": [
         {
-          "kind": "wikidata-external-ids",
-          "qid": "Q113991290",
-          "steamAppId": 1962663,
-          "metacriticId": "call-of-duty-warzone-20",
-          "numericId": "1300578554",
-          "url": "http://www.wikidata.org/entity/Q113991290",
-          "retrievedAt": "2026-10-06T11:25:17.745Z"
+          "kind": "reviewed-id-crosswalk",
+          "urls": [
+            "https://store.steampowered.com/app/1962663/",
+            "https://www.metacritic.com/game/call-of-duty-warzone/",
+            "https://store.steampowered.com/api/appdetails?appids=1962663&l=english"
+          ],
+          "reviewedAt": "2026-10-09T17:48:10.772813Z",
+          "rationale": "MC kökü 2022 Warzone 2.0’ı kapsıyor. PC için 2025-10-07 tarihî 2,6 kaydı ayrıldı; kök sayfanın 4,2 puanının platformu doğrulanamadı. Kalıcı Steam uygulama ID’si; geliştirici, çıkış dönemi ve temel eser kapsamı incelendi. Yama/port ayrı oyun sayılmadı; farklı pazarlanan remake/remasterlar birleştirilmedi.",
+          "approvedResourceAliases": []
+        },
+        {
+          "kind": "reviewed-primary-score",
+          "recordId": "mc-user:reviewed:1962663:PC:2026-10-09:research361",
+          "url": "https://www.metacritic.com/game/call-of-duty-warzone/",
+          "retrievedAt": "2026-10-09T17:48:10.772813Z",
+          "method": "public-historical-dataset"
         }
       ]
     },
-    "scoreRecordId": null,
-    "scorePlatform": null,
-    "reason": "No verified user-score fact for the approved Metacritic resource"
+    "scoreRecordId": "mc-user:reviewed:1962663:PC:2026-10-09:research361",
+    "scorePlatform": "PC"
   },
   "steam-1913120": {
     "schemaVersion": 1,
@@ -8922,11 +8954,35 @@
     "gameId": "steam-2057760",
     "steamAppId": 2057760,
     "revision": 1,
-    "status": "unverified_identity",
-    "metacritic": null,
-    "scoreRecordId": null,
-    "scorePlatform": null,
-    "reason": "No approved ID crosslink available"
+    "status": "ready",
+    "metacritic": {
+      "resourceId": "esoteric-ebb",
+      "numericId": null,
+      "url": "https://www.metacritic.com/game/esoteric-ebb/",
+      "editionScope": "Reviewed store product / Metacritic work relationship",
+      "evidence": [
+        {
+          "kind": "reviewed-id-crosswalk",
+          "urls": [
+            "https://store.steampowered.com/app/2057760/",
+            "https://www.metacritic.com/game/esoteric-ebb/",
+            "https://store.steampowered.com/api/appdetails?appids=2057760&l=english"
+          ],
+          "reviewedAt": "2026-10-09T17:48:10.772813Z",
+          "rationale": "Sayısal kullanıcı puanı var; seçilen platform doğrulanamadı. Kalıcı Steam uygulama ID’si; geliştirici, çıkış dönemi ve temel eser kapsamı incelendi. Yama/port ayrı oyun sayılmadı; farklı pazarlanan remake/remasterlar birleştirilmedi.",
+          "approvedResourceAliases": []
+        },
+        {
+          "kind": "reviewed-primary-score",
+          "recordId": "mc-user:reviewed:2057760:unknown:2026-10-09:research361",
+          "url": "https://www.metacritic.com/game/esoteric-ebb/",
+          "retrievedAt": "2026-10-09T17:48:10.772813Z",
+          "method": "public-primary-cache"
+        }
+      ]
+    },
+    "scoreRecordId": "mc-user:reviewed:2057760:unknown:2026-10-09:research361",
+    "scorePlatform": null
   },
   "steam-364360": {
     "schemaVersion": 1,
@@ -9423,11 +9479,35 @@
     "gameId": "steam-3079210",
     "steamAppId": 3079210,
     "revision": 1,
-    "status": "unverified_identity",
-    "metacritic": null,
-    "scoreRecordId": null,
-    "scorePlatform": null,
-    "reason": "No approved ID crosslink available"
+    "status": "ready",
+    "metacritic": {
+      "resourceId": "hell-let-loose-vietnam",
+      "numericId": null,
+      "url": "https://www.metacritic.com/game/hell-let-loose-vietnam/",
+      "editionScope": "Reviewed store product / Metacritic work relationship",
+      "evidence": [
+        {
+          "kind": "reviewed-id-crosswalk",
+          "urls": [
+            "https://store.steampowered.com/app/3079210/",
+            "https://www.metacritic.com/game/hell-let-loose-vietnam/",
+            "https://store.steampowered.com/api/appdetails?appids=3079210&l=english"
+          ],
+          "reviewedAt": "2026-10-09T17:48:10.772813Z",
+          "rationale": "Sayısal kullanıcı puanı var; seçilen platform doğrulanamadı. Kalıcı Steam uygulama ID’si; geliştirici, çıkış dönemi ve temel eser kapsamı incelendi. Yama/port ayrı oyun sayılmadı; farklı pazarlanan remake/remasterlar birleştirilmedi.",
+          "approvedResourceAliases": []
+        },
+        {
+          "kind": "reviewed-primary-score",
+          "recordId": "mc-user:reviewed:3079210:unknown:2026-10-09:research361",
+          "url": "https://www.metacritic.com/game/hell-let-loose-vietnam/",
+          "retrievedAt": "2026-10-09T17:48:10.772813Z",
+          "method": "public-primary-cache"
+        }
+      ]
+    },
+    "scoreRecordId": "mc-user:reviewed:3079210:unknown:2026-10-09:research361",
+    "scorePlatform": null
   },
   "steam-1284210": {
     "schemaVersion": 1,
@@ -9512,7 +9592,7 @@
     "gameId": "steam-1384160",
     "steamAppId": 1384160,
     "revision": 1,
-    "status": "missing_score",
+    "status": "ready",
     "metacritic": {
       "resourceId": "guilty-gear--strive-",
       "numericId": null,
@@ -9520,17 +9600,34 @@
       "editionScope": "Reviewed store product / Metacritic work relationship",
       "evidence": [
         {
+          "kind": "reviewed-id-crosswalk",
+          "urls": [
+            "https://store.steampowered.com/app/1384160/",
+            "https://www.metacritic.com/game/guilty-gear--strive-/",
+            "https://store.steampowered.com/api/appdetails?appids=1384160&l=english"
+          ],
+          "reviewedAt": "2026-10-09T17:48:10.772813Z",
+          "rationale": "Raw veri kümesinde PC 7,4; Arc System Works/2021 eşleşiyor. Bugünkü PC puanı olarak doğrulanmadı. Kalıcı Steam uygulama ID’si; geliştirici, çıkış dönemi ve temel eser kapsamı incelendi. Yama/port ayrı oyun sayılmadı; farklı pazarlanan remake/remasterlar birleştirilmedi.",
+          "approvedResourceAliases": []
+        },
+        {
           "kind": "store-app-id-crosslink",
           "steamAppId": 1384160,
           "url": "https://store.steampowered.com/api/appdetails?appids=1384160&l=english",
           "referenceUrl": "https://www.metacritic.com/game/pc/guilty-gear--strive-?ftag=MCD-06-10aaa1f",
           "retrievedAt": "2026-10-06T11:24:55.736Z"
+        },
+        {
+          "kind": "reviewed-primary-score",
+          "recordId": "mc-user:reviewed:1384160:PC:2026-10-09:research361",
+          "url": "https://www.metacritic.com/game/guilty-gear--strive-/",
+          "retrievedAt": "2026-10-09T17:48:10.772813Z",
+          "method": "public-historical-dataset"
         }
       ]
     },
-    "scoreRecordId": null,
-    "scorePlatform": null,
-    "reason": "No verified user-score fact for the approved Metacritic resource"
+    "scoreRecordId": "mc-user:reviewed:1384160:PC:2026-10-09:research361",
+    "scorePlatform": "PC"
   },
   "steam-1237970": {
     "schemaVersion": 1,
@@ -11575,11 +11672,35 @@
     "gameId": "steam-1665460",
     "steamAppId": 1665460,
     "revision": 1,
-    "status": "identity_conflict",
-    "metacritic": null,
-    "scoreRecordId": null,
-    "scorePlatform": null,
-    "reason": "Current continuously updated eFootball product versus annual 2023 resource. Do not describe a yearly edition score as the current game score without explicit metric scope."
+    "status": "ready",
+    "metacritic": {
+      "resourceId": "efootball-2026",
+      "numericId": null,
+      "url": "https://www.metacritic.com/game/efootball-2026/",
+      "editionScope": "Reviewed store product / Metacritic work relationship",
+      "evidence": [
+        {
+          "kind": "reviewed-id-crosswalk",
+          "urls": [
+            "https://store.steampowered.com/app/1665460/",
+            "https://www.metacritic.com/game/efootball-2026/",
+            "https://store.steampowered.com/api/appdetails?appids=1665460&l=english"
+          ],
+          "reviewedAt": "2026-10-09T17:48:10.772813Z",
+          "rationale": "Konami arşivi 2026/v5.0’ın aynı oyunun sezon güncellemesi olduğunu doğruluyor. Bulgu 2026 dönemine ait; yeni sezonun güncel puanı diye sunulamaz. Kalıcı Steam uygulama ID’si; geliştirici, çıkış dönemi ve temel eser kapsamı incelendi. Yama/port ayrı oyun sayılmadı; farklı pazarlanan remake/remasterlar birleştirilmedi.",
+          "approvedResourceAliases": []
+        },
+        {
+          "kind": "reviewed-primary-score",
+          "recordId": "mc-user:reviewed:1665460:XboxSeriesX:2026-10-09:research361",
+          "url": "https://www.metacritic.com/game/efootball-2026/user-reviews/",
+          "retrievedAt": "2026-10-09T17:48:10.772813Z",
+          "method": "public-primary-cache"
+        }
+      ]
+    },
+    "scoreRecordId": "mc-user:reviewed:1665460:XboxSeriesX:2026-10-09:research361",
+    "scorePlatform": "Xbox Series X"
   },
   "steam-1895880": {
     "schemaVersion": 1,
@@ -12028,11 +12149,35 @@
     "gameId": "steam-2863680",
     "steamAppId": 2863680,
     "revision": 1,
-    "status": "unverified_identity",
-    "metacritic": null,
-    "scoreRecordId": null,
-    "scorePlatform": null,
-    "reason": "No approved ID crosslink available"
+    "status": "ready",
+    "metacritic": {
+      "resourceId": "zero-parades-for-dead-spies",
+      "numericId": null,
+      "url": "https://www.metacritic.com/game/zero-parades-for-dead-spies/",
+      "editionScope": "Reviewed store product / Metacritic work relationship",
+      "evidence": [
+        {
+          "kind": "reviewed-id-crosswalk",
+          "urls": [
+            "https://store.steampowered.com/app/2863680/",
+            "https://www.metacritic.com/game/zero-parades-for-dead-spies/",
+            "https://store.steampowered.com/api/appdetails?appids=2863680&l=english"
+          ],
+          "reviewedAt": "2026-10-09T17:48:10.772813Z",
+          "rationale": "Steam açıklaması Director’s Cut’ın mevcut sahipler için ücretsiz güncelleme olduğunu doğruluyor. Kalıcı Steam uygulama ID’si; geliştirici, çıkış dönemi ve temel eser kapsamı incelendi. Yama/port ayrı oyun sayılmadı; farklı pazarlanan remake/remasterlar birleştirilmedi.",
+          "approvedResourceAliases": []
+        },
+        {
+          "kind": "reviewed-primary-score",
+          "recordId": "mc-user:reviewed:2863680:PC:2026-10-09:research361",
+          "url": "https://www.metacritic.com/game/zero-parades-for-dead-spies/user-reviews/?platform=pc",
+          "retrievedAt": "2026-10-09T17:48:10.772813Z",
+          "method": "public-primary-cache"
+        }
+      ]
+    },
+    "scoreRecordId": "mc-user:reviewed:2863680:PC:2026-10-09:research361",
+    "scorePlatform": "PC"
   },
   "steam-2677660": {
     "schemaVersion": 1,
@@ -12449,11 +12594,35 @@
     "gameId": "steam-2964090",
     "steamAppId": 2964090,
     "revision": 1,
-    "status": "unverified_identity",
-    "metacritic": null,
-    "scoreRecordId": null,
-    "scorePlatform": null,
-    "reason": "No approved ID crosslink available"
+    "status": "ready",
+    "metacritic": {
+      "resourceId": "world-of-warships-legends",
+      "numericId": null,
+      "url": "https://www.metacritic.com/game/world-of-warships-legends/",
+      "editionScope": "Reviewed store product / Metacritic work relationship",
+      "evidence": [
+        {
+          "kind": "reviewed-id-crosswalk",
+          "urls": [
+            "https://store.steampowered.com/app/2964090/",
+            "https://www.metacritic.com/game/world-of-warships-legends/",
+            "https://store.steampowered.com/api/appdetails?appids=2964090&l=english"
+          ],
+          "reviewedAt": "2026-10-09T17:48:10.772813Z",
+          "rationale": "Sayısal kullanıcı puanı var; seçilen platform doğrulanamadı. Kalıcı Steam uygulama ID’si; geliştirici, çıkış dönemi ve temel eser kapsamı incelendi. Yama/port ayrı oyun sayılmadı; farklı pazarlanan remake/remasterlar birleştirilmedi.",
+          "approvedResourceAliases": []
+        },
+        {
+          "kind": "reviewed-primary-score",
+          "recordId": "mc-user:reviewed:2964090:unknown:2026-10-09:research361",
+          "url": "https://www.metacritic.com/game/world-of-warships-legends/",
+          "retrievedAt": "2026-10-09T17:48:10.772813Z",
+          "method": "public-primary-cache"
+        }
+      ]
+    },
+    "scoreRecordId": "mc-user:reviewed:2964090:unknown:2026-10-09:research361",
+    "scorePlatform": null
   },
   "planet-zoo": {
     "schemaVersion": 1,
@@ -13074,11 +13243,35 @@
     "gameId": "steam-2244210",
     "steamAppId": 2244210,
     "revision": 1,
-    "status": "unverified_identity",
-    "metacritic": null,
-    "scoreRecordId": null,
-    "scorePlatform": null,
-    "reason": "No approved ID crosslink available"
+    "status": "ready",
+    "metacritic": {
+      "resourceId": "echoes-of-aincrad",
+      "numericId": null,
+      "url": "https://www.metacritic.com/game/echoes-of-aincrad/",
+      "editionScope": "Reviewed store product / Metacritic work relationship",
+      "evidence": [
+        {
+          "kind": "reviewed-id-crosswalk",
+          "urls": [
+            "https://store.steampowered.com/app/2244210/",
+            "https://www.metacritic.com/game/echoes-of-aincrad/",
+            "https://store.steampowered.com/api/appdetails?appids=2244210&l=english"
+          ],
+          "reviewedAt": "2026-10-09T17:48:10.772813Z",
+          "rationale": "Sayısal kullanıcı puanı var; seçilen platform doğrulanamadı. Kalıcı Steam uygulama ID’si; geliştirici, çıkış dönemi ve temel eser kapsamı incelendi. Yama/port ayrı oyun sayılmadı; farklı pazarlanan remake/remasterlar birleştirilmedi.",
+          "approvedResourceAliases": []
+        },
+        {
+          "kind": "reviewed-primary-score",
+          "recordId": "mc-user:reviewed:2244210:unknown:2026-10-09:research361",
+          "url": "https://www.metacritic.com/game/echoes-of-aincrad/",
+          "retrievedAt": "2026-10-09T17:48:10.772813Z",
+          "method": "public-primary-cache"
+        }
+      ]
+    },
+    "scoreRecordId": "mc-user:reviewed:2244210:unknown:2026-10-09:research361",
+    "scorePlatform": null
   },
   "tunic": {
     "schemaVersion": 1,
@@ -13186,11 +13379,35 @@
     "gameId": "steam-1805110",
     "steamAppId": 1805110,
     "revision": 1,
-    "status": "unverified_identity",
-    "metacritic": null,
-    "scoreRecordId": null,
-    "scorePlatform": null,
-    "reason": "No approved ID crosslink available"
+    "status": "ready",
+    "metacritic": {
+      "resourceId": "solarpunk",
+      "numericId": null,
+      "url": "https://www.metacritic.com/game/solarpunk/",
+      "editionScope": "Reviewed store product / Metacritic work relationship",
+      "evidence": [
+        {
+          "kind": "reviewed-id-crosswalk",
+          "urls": [
+            "https://store.steampowered.com/app/1805110/",
+            "https://www.metacritic.com/game/solarpunk/",
+            "https://store.steampowered.com/api/appdetails?appids=1805110&l=english"
+          ],
+          "reviewedAt": "2026-10-09T17:48:10.772813Z",
+          "rationale": "Sayısal kullanıcı puanı var; seçilen platform doğrulanamadı. Kalıcı Steam uygulama ID’si; geliştirici, çıkış dönemi ve temel eser kapsamı incelendi. Yama/port ayrı oyun sayılmadı; farklı pazarlanan remake/remasterlar birleştirilmedi.",
+          "approvedResourceAliases": []
+        },
+        {
+          "kind": "reviewed-primary-score",
+          "recordId": "mc-user:reviewed:1805110:unknown:2026-10-09:research361",
+          "url": "https://www.metacritic.com/game/solarpunk/",
+          "retrievedAt": "2026-10-09T17:48:10.772813Z",
+          "method": "public-primary-cache"
+        }
+      ]
+    },
+    "scoreRecordId": "mc-user:reviewed:1805110:unknown:2026-10-09:research361",
+    "scorePlatform": null
   },
   "steam-3640200": {
     "schemaVersion": 1,
@@ -15067,13 +15284,24 @@
     "gameId": "steam-2569760",
     "steamAppId": 2569760,
     "revision": 1,
-    "status": "missing_score",
+    "status": "ready",
     "metacritic": {
       "resourceId": "the-mound-omen-of-cthulhu",
       "numericId": "1300674575",
       "url": "https://www.metacritic.com/game/the-mound-omen-of-cthulhu/",
       "editionScope": "Reviewed store product / Metacritic work relationship",
       "evidence": [
+        {
+          "kind": "reviewed-id-crosswalk",
+          "urls": [
+            "https://store.steampowered.com/app/2569760/",
+            "https://www.metacritic.com/game/the-mound-omen-of-cthulhu/",
+            "https://store.steampowered.com/api/appdetails?appids=2569760&l=english"
+          ],
+          "reviewedAt": "2026-10-09T17:48:10.772813Z",
+          "rationale": "Sayısal kullanıcı puanı var; seçilen platform doğrulanamadı. Kalıcı Steam uygulama ID’si; geliştirici, çıkış dönemi ve temel eser kapsamı incelendi. Yama/port ayrı oyun sayılmadı; farklı pazarlanan remake/remasterlar birleştirilmedi.",
+          "approvedResourceAliases": []
+        },
         {
           "kind": "wikidata-external-ids",
           "qid": "Q133100756",
@@ -15082,12 +15310,18 @@
           "numericId": "1300674575",
           "url": "http://www.wikidata.org/entity/Q133100756",
           "retrievedAt": "2026-10-06T11:25:20.847Z"
+        },
+        {
+          "kind": "reviewed-primary-score",
+          "recordId": "mc-user:reviewed:2569760:unknown:2026-10-09:research361",
+          "url": "https://www.metacritic.com/game/the-mound-omen-of-cthulhu/",
+          "retrievedAt": "2026-10-09T17:48:10.772813Z",
+          "method": "public-primary-cache"
         }
       ]
     },
-    "scoreRecordId": null,
-    "scorePlatform": null,
-    "reason": "No verified user-score fact for the approved Metacritic resource"
+    "scoreRecordId": "mc-user:reviewed:2569760:unknown:2026-10-09:research361",
+    "scorePlatform": null
   },
   "steam-945360": {
     "schemaVersion": 1,
@@ -15634,11 +15868,35 @@
     "gameId": "steam-2209900",
     "steamAppId": 2209900,
     "revision": 1,
-    "status": "unverified_identity",
-    "metacritic": null,
-    "scoreRecordId": null,
-    "scorePlatform": null,
-    "reason": "No approved ID crosslink available"
+    "status": "ready",
+    "metacritic": {
+      "resourceId": "moonlight-peaks",
+      "numericId": null,
+      "url": "https://www.metacritic.com/game/moonlight-peaks/",
+      "editionScope": "Reviewed store product / Metacritic work relationship",
+      "evidence": [
+        {
+          "kind": "reviewed-id-crosswalk",
+          "urls": [
+            "https://store.steampowered.com/app/2209900/",
+            "https://www.metacritic.com/game/moonlight-peaks/",
+            "https://store.steampowered.com/api/appdetails?appids=2209900&l=english"
+          ],
+          "reviewedAt": "2026-10-09T17:48:10.772813Z",
+          "rationale": "Sayısal kullanıcı puanı var; seçilen platform doğrulanamadı. Kalıcı Steam uygulama ID’si; geliştirici, çıkış dönemi ve temel eser kapsamı incelendi. Yama/port ayrı oyun sayılmadı; farklı pazarlanan remake/remasterlar birleştirilmedi.",
+          "approvedResourceAliases": []
+        },
+        {
+          "kind": "reviewed-primary-score",
+          "recordId": "mc-user:reviewed:2209900:unknown:2026-10-09:research361",
+          "url": "https://www.metacritic.com/game/moonlight-peaks/",
+          "retrievedAt": "2026-10-09T17:48:10.772813Z",
+          "method": "public-primary-cache"
+        }
+      ]
+    },
+    "scoreRecordId": "mc-user:reviewed:2209900:unknown:2026-10-09:research361",
+    "scorePlatform": null
   },
   "steam-1757300": {
     "schemaVersion": 1,
@@ -16021,11 +16279,53 @@
     "gameId": "steam-339340",
     "steamAppId": 339340,
     "revision": 1,
-    "status": "unverified_identity",
-    "metacritic": null,
-    "scoreRecordId": null,
-    "scorePlatform": null,
-    "reason": "No approved ID crosslink available"
+    "status": "ready",
+    "metacritic": {
+      "resourceId": "resident-evil-0-hd-remaster",
+      "numericId": null,
+      "url": "https://www.metacritic.com/game/resident-evil-0-hd-remaster/",
+      "editionScope": "Reviewed store product / Metacritic work relationship",
+      "evidence": [
+        {
+          "kind": "reviewed-id-crosswalk",
+          "urls": [
+            "https://store.steampowered.com/app/339340/",
+            "https://www.metacritic.com/game/resident-evil-0-hd-remaster/",
+            "https://store.steampowered.com/api/appdetails?appids=339340&l=english"
+          ],
+          "reviewedAt": "2026-10-09T17:48:10.772813Z",
+          "rationale": "Steam 339340/2016, HD Remaster kaydıyla eşleşiyor. 2002 GameCube puanı dışlandı. Kalıcı Steam uygulama ID’si; geliştirici, çıkış dönemi ve temel eser kapsamı incelendi. Yama/port ayrı oyun sayılmadı; farklı pazarlanan remake/remasterlar birleştirilmedi.",
+          "approvedResourceAliases": []
+        },
+        {
+          "kind": "wikidata-external-ids",
+          "qid": "Q1056069",
+          "steamAppId": 339340,
+          "metacriticId": "resident-evil-0-hd-remaster",
+          "numericId": "1300436729",
+          "url": "http://www.wikidata.org/entity/Q1056069",
+          "retrievedAt": "2026-10-06T11:25:21.701Z"
+        },
+        {
+          "kind": "wikidata-external-ids",
+          "qid": "Q1056069",
+          "steamAppId": 339340,
+          "metacriticId": "resident-evil-0-hd-remaster",
+          "numericId": "1300001748",
+          "url": "http://www.wikidata.org/entity/Q1056069",
+          "retrievedAt": "2026-10-06T11:25:21.701Z"
+        },
+        {
+          "kind": "reviewed-primary-score",
+          "recordId": "mc-user:reviewed:339340:PC:2026-10-09:research361",
+          "url": "https://www.metacritic.com/game/resident-evil-0-hd-remaster/user-reviews/?platform=pc",
+          "retrievedAt": "2026-10-09T17:48:10.772813Z",
+          "method": "public-primary-cache"
+        }
+      ]
+    },
+    "scoreRecordId": "mc-user:reviewed:339340:PC:2026-10-09:research361",
+    "scorePlatform": "PC"
   },
   "steam-1331550": {
     "schemaVersion": 1,
@@ -17011,7 +17311,7 @@
     "gameId": "steam-2527160",
     "steamAppId": 2527160,
     "revision": 1,
-    "status": "missing_score",
+    "status": "ready",
     "metacritic": {
       "resourceId": "desktop-explorer",
       "numericId": null,
@@ -17019,17 +17319,34 @@
       "editionScope": "Reviewed store product / Metacritic work relationship",
       "evidence": [
         {
+          "kind": "reviewed-id-crosswalk",
+          "urls": [
+            "https://store.steampowered.com/app/2527160/",
+            "https://www.metacritic.com/game/desktop-explorer/",
+            "https://store.steampowered.com/api/appdetails?appids=2527160&l=english"
+          ],
+          "reviewedAt": "2026-10-09T17:48:10.772813Z",
+          "rationale": "PC puanı bulgusu. Kalıcı Steam uygulama ID’si; geliştirici, çıkış dönemi ve temel eser kapsamı incelendi. Yama/port ayrı oyun sayılmadı; farklı pazarlanan remake/remasterlar birleştirilmedi.",
+          "approvedResourceAliases": []
+        },
+        {
           "kind": "store-app-id-crosslink",
           "steamAppId": 2527160,
           "url": "https://store.steampowered.com/api/appdetails?appids=2527160&l=english",
           "referenceUrl": "https://www.metacritic.com/game/pc/desktop-explorer?ftag=MCD-06-10aaa1f",
           "retrievedAt": "2026-10-06T11:25:17.948Z"
+        },
+        {
+          "kind": "reviewed-primary-score",
+          "recordId": "mc-user:reviewed:2527160:PC:2026-10-09:research361",
+          "url": "https://www.metacritic.com/game/desktop-explorer/",
+          "retrievedAt": "2026-10-09T17:48:10.772813Z",
+          "method": "public-primary-cache"
         }
       ]
     },
-    "scoreRecordId": null,
-    "scorePlatform": null,
-    "reason": "No verified user-score fact for the approved Metacritic resource"
+    "scoreRecordId": "mc-user:reviewed:2527160:PC:2026-10-09:research361",
+    "scorePlatform": "PC"
   },
   "steam-285900": {
     "schemaVersion": 1,
@@ -18573,11 +18890,35 @@
     "gameId": "steam-293760",
     "steamAppId": 293760,
     "revision": 1,
-    "status": "unverified_identity",
-    "metacritic": null,
-    "scoreRecordId": null,
-    "scorePlatform": null,
-    "reason": "No approved ID crosslink available"
+    "status": "ready",
+    "metacritic": {
+      "resourceId": "automation",
+      "numericId": null,
+      "url": "https://www.metacritic.com/game/automation/",
+      "editionScope": "Reviewed store product / Metacritic work relationship",
+      "evidence": [
+        {
+          "kind": "reviewed-id-crosswalk",
+          "urls": [
+            "https://store.steampowered.com/app/293760/",
+            "https://www.metacritic.com/game/automation/",
+            "https://store.steampowered.com/api/appdetails?appids=293760&l=english"
+          ],
+          "reviewedAt": "2026-10-09T17:48:10.772813Z",
+          "rationale": "PC puanı bulgusu. Kalıcı Steam uygulama ID’si; geliştirici, çıkış dönemi ve temel eser kapsamı incelendi. Yama/port ayrı oyun sayılmadı; farklı pazarlanan remake/remasterlar birleştirilmedi.",
+          "approvedResourceAliases": []
+        },
+        {
+          "kind": "reviewed-primary-score",
+          "recordId": "mc-user:reviewed:293760:PC:2026-10-09:research361",
+          "url": "https://www.metacritic.com/game/automation/",
+          "retrievedAt": "2026-10-09T17:48:10.772813Z",
+          "method": "public-primary-cache"
+        }
+      ]
+    },
+    "scoreRecordId": "mc-user:reviewed:293760:PC:2026-10-09:research361",
+    "scorePlatform": "PC"
   },
   "steam-4294490": {
     "schemaVersion": 1,
@@ -19364,27 +19705,35 @@
     "gameId": "steam-2552450",
     "steamAppId": 2552450,
     "revision": 1,
-    "status": "missing_score",
+    "status": "ready",
     "metacritic": {
-      "resourceId": "kingdom-hearts-iii",
-      "numericId": "1300185807",
-      "url": "https://www.metacritic.com/game/kingdom-hearts-iii/",
+      "resourceId": "kingdom-hearts-iii-plus-re-mind",
+      "numericId": null,
+      "url": "https://www.metacritic.com/game/kingdom-hearts-iii-plus-re-mind/",
       "editionScope": "Reviewed store product / Metacritic work relationship",
       "evidence": [
         {
-          "kind": "wikidata-external-ids",
-          "qid": "Q3265748",
-          "steamAppId": 2552450,
-          "metacriticId": "kingdom-hearts-iii",
-          "numericId": "1300185807",
-          "url": "http://www.wikidata.org/entity/Q3265748",
-          "retrievedAt": "2026-10-06T11:25:22.498Z"
+          "kind": "reviewed-id-crosswalk",
+          "urls": [
+            "https://store.steampowered.com/app/2552450/",
+            "https://www.metacritic.com/game/kingdom-hearts-iii-plus-re-mind/",
+            "https://store.steampowered.com/api/appdetails?appids=2552450&l=english"
+          ],
+          "reviewedAt": "2026-10-09T17:48:10.772813Z",
+          "rationale": "PC + Re Mind puanı seçildi; temel KHIII PS4 puanı seçilmedi. Kalıcı Steam uygulama ID’si; geliştirici, çıkış dönemi ve temel eser kapsamı incelendi. Yama/port ayrı oyun sayılmadı; farklı pazarlanan remake/remasterlar birleştirilmedi.",
+          "approvedResourceAliases": []
+        },
+        {
+          "kind": "reviewed-primary-score",
+          "recordId": "mc-user:reviewed:2552450:PC:2026-10-09:research361",
+          "url": "https://www.metacritic.com/game/kingdom-hearts-iii-plus-re-mind/user-reviews/?platform=pc",
+          "retrievedAt": "2026-10-09T17:48:10.772813Z",
+          "method": "public-primary-cache"
         }
       ]
     },
-    "scoreRecordId": null,
-    "scorePlatform": null,
-    "reason": "No verified user-score fact for the approved Metacritic resource"
+    "scoreRecordId": "mc-user:reviewed:2552450:PC:2026-10-09:research361",
+    "scorePlatform": "PC"
   },
   "steam-1328670": {
     "schemaVersion": 1,
@@ -19424,11 +19773,35 @@
     "gameId": "steam-3061570",
     "steamAppId": 3061570,
     "revision": 1,
-    "status": "unverified_identity",
-    "metacritic": null,
-    "scoreRecordId": null,
-    "scorePlatform": null,
-    "reason": "No approved ID crosslink available"
+    "status": "ready",
+    "metacritic": {
+      "resourceId": "persona-5-the-phantom-x",
+      "numericId": null,
+      "url": "https://www.metacritic.com/game/persona-5-the-phantom-x/",
+      "editionScope": "Reviewed store product / Metacritic work relationship",
+      "evidence": [
+        {
+          "kind": "reviewed-id-crosswalk",
+          "urls": [
+            "https://store.steampowered.com/app/3061570/",
+            "https://www.metacritic.com/game/persona-5-the-phantom-x/",
+            "https://store.steampowered.com/api/appdetails?appids=3061570&l=english"
+          ],
+          "reviewedAt": "2026-10-09T17:48:10.772813Z",
+          "rationale": "PC puanı bulgusu. Kalıcı Steam uygulama ID’si; geliştirici, çıkış dönemi ve temel eser kapsamı incelendi. Yama/port ayrı oyun sayılmadı; farklı pazarlanan remake/remasterlar birleştirilmedi.",
+          "approvedResourceAliases": []
+        },
+        {
+          "kind": "reviewed-primary-score",
+          "recordId": "mc-user:reviewed:3061570:PC:2026-10-09:research361",
+          "url": "https://www.metacritic.com/game/persona-5-the-phantom-x/user-reviews/",
+          "retrievedAt": "2026-10-09T17:48:10.772813Z",
+          "method": "public-primary-cache"
+        }
+      ]
+    },
+    "scoreRecordId": "mc-user:reviewed:3061570:PC:2026-10-09:research361",
+    "scorePlatform": "PC"
   },
   "steam-1158160": {
     "schemaVersion": 1,
@@ -20088,11 +20461,35 @@
     "gameId": "steam-3326230",
     "steamAppId": 3326230,
     "revision": 1,
-    "status": "unverified_identity",
-    "metacritic": null,
-    "scoreRecordId": null,
-    "scorePlatform": null,
-    "reason": "No approved ID crosslink available"
+    "status": "ready",
+    "metacritic": {
+      "resourceId": "hozy",
+      "numericId": null,
+      "url": "https://www.metacritic.com/game/hozy/",
+      "editionScope": "Reviewed store product / Metacritic work relationship",
+      "evidence": [
+        {
+          "kind": "reviewed-id-crosswalk",
+          "urls": [
+            "https://store.steampowered.com/app/3326230/",
+            "https://www.metacritic.com/game/hozy/",
+            "https://store.steampowered.com/api/appdetails?appids=3326230&l=english"
+          ],
+          "reviewedAt": "2026-10-09T17:48:10.772813Z",
+          "rationale": "PC puanı bulgusu. Kalıcı Steam uygulama ID’si; geliştirici, çıkış dönemi ve temel eser kapsamı incelendi. Yama/port ayrı oyun sayılmadı; farklı pazarlanan remake/remasterlar birleştirilmedi.",
+          "approvedResourceAliases": []
+        },
+        {
+          "kind": "reviewed-primary-score",
+          "recordId": "mc-user:reviewed:3326230:PC:2026-10-09:research361",
+          "url": "https://www.metacritic.com/game/hozy/",
+          "retrievedAt": "2026-10-09T17:48:10.772813Z",
+          "method": "public-primary-cache"
+        }
+      ]
+    },
+    "scoreRecordId": "mc-user:reviewed:3326230:PC:2026-10-09:research361",
+    "scorePlatform": "PC"
   },
   "steam-2819520": {
     "schemaVersion": 1,
@@ -20218,11 +20615,35 @@
     "gameId": "steam-2004680",
     "steamAppId": 2004680,
     "revision": 1,
-    "status": "unverified_identity",
-    "metacritic": null,
-    "scoreRecordId": null,
-    "scorePlatform": null,
-    "reason": "No approved ID crosslink available"
+    "status": "ready",
+    "metacritic": {
+      "resourceId": "voidling-bound",
+      "numericId": null,
+      "url": "https://www.metacritic.com/game/voidling-bound/",
+      "editionScope": "Reviewed store product / Metacritic work relationship",
+      "evidence": [
+        {
+          "kind": "reviewed-id-crosswalk",
+          "urls": [
+            "https://store.steampowered.com/app/2004680/",
+            "https://www.metacritic.com/game/voidling-bound/",
+            "https://store.steampowered.com/api/appdetails?appids=2004680&l=english"
+          ],
+          "reviewedAt": "2026-10-09T17:48:10.772813Z",
+          "rationale": "Sayısal kullanıcı puanı var; seçilen platform doğrulanamadı. Kalıcı Steam uygulama ID’si; geliştirici, çıkış dönemi ve temel eser kapsamı incelendi. Yama/port ayrı oyun sayılmadı; farklı pazarlanan remake/remasterlar birleştirilmedi.",
+          "approvedResourceAliases": []
+        },
+        {
+          "kind": "reviewed-primary-score",
+          "recordId": "mc-user:reviewed:2004680:unknown:2026-10-09:research361",
+          "url": "https://www.metacritic.com/game/voidling-bound/",
+          "retrievedAt": "2026-10-09T17:48:10.772813Z",
+          "method": "public-primary-cache"
+        }
+      ]
+    },
+    "scoreRecordId": "mc-user:reviewed:2004680:unknown:2026-10-09:research361",
+    "scorePlatform": null
   },
   "steam-1206560": {
     "schemaVersion": 1,
@@ -20789,24 +21210,59 @@
     "gameId": "steam-2893570",
     "steamAppId": 2893570,
     "revision": 1,
-    "status": "unverified_identity",
-    "metacritic": null,
-    "scoreRecordId": null,
-    "scorePlatform": null,
-    "reason": "No approved ID crosslink available"
+    "status": "ready",
+    "metacritic": {
+      "resourceId": "dragon-quest-i-and-ii-hd-2d-remake",
+      "numericId": null,
+      "url": "https://www.metacritic.com/game/dragon-quest-i-and-ii-hd-2d-remake/",
+      "editionScope": "Reviewed store product / Metacritic work relationship",
+      "evidence": [
+        {
+          "kind": "reviewed-id-crosswalk",
+          "urls": [
+            "https://store.steampowered.com/app/2893570/",
+            "https://www.metacritic.com/game/dragon-quest-i-and-ii-hd-2d-remake/",
+            "https://store.steampowered.com/api/appdetails?appids=2893570&l=english"
+          ],
+          "reviewedAt": "2026-10-09T17:48:10.772813Z",
+          "rationale": "Başka platform puanı var; güncel PC puanının yokluğu kesinleşmedi. Kalıcı Steam uygulama ID’si; geliştirici, çıkış dönemi ve temel eser kapsamı incelendi. Yama/port ayrı oyun sayılmadı; farklı pazarlanan remake/remasterlar birleştirilmedi.",
+          "approvedResourceAliases": []
+        },
+        {
+          "kind": "reviewed-primary-score",
+          "recordId": "mc-user:reviewed:2893570:PlayStation5:2026-10-09:research361",
+          "url": "https://www.metacritic.com/game/dragon-quest-i-and-ii-hd-2d-remake/user-reviews/",
+          "retrievedAt": "2026-10-09T17:48:10.772813Z",
+          "method": "public-primary-cache"
+        }
+      ]
+    },
+    "scoreRecordId": "mc-user:reviewed:2893570:PlayStation5:2026-10-09:research361",
+    "scorePlatform": "PlayStation 5"
   },
   "steam-2928600": {
     "schemaVersion": 1,
     "gameId": "steam-2928600",
     "steamAppId": 2928600,
     "revision": 1,
-    "status": "missing_score",
+    "status": "ready",
     "metacritic": {
       "resourceId": "demon-slayer-kimetsu-no-yaiba-the-hinokami-2",
       "numericId": "1300661468",
       "url": "https://www.metacritic.com/game/demon-slayer-kimetsu-no-yaiba-the-hinokami-2/",
       "editionScope": "Reviewed store product / Metacritic work relationship",
       "evidence": [
+        {
+          "kind": "reviewed-id-crosswalk",
+          "urls": [
+            "https://store.steampowered.com/app/2928600/",
+            "https://www.metacritic.com/game/demon-slayer-kimetsu-no-yaiba-the-hinokami-2/",
+            "https://store.steampowered.com/api/appdetails?appids=2928600&l=english"
+          ],
+          "reviewedAt": "2026-10-09T17:48:10.772813Z",
+          "rationale": "Başka platform puanı var; güncel PC puanının yokluğu kesinleşmedi. Kalıcı Steam uygulama ID’si; geliştirici, çıkış dönemi ve temel eser kapsamı incelendi. Yama/port ayrı oyun sayılmadı; farklı pazarlanan remake/remasterlar birleştirilmedi.",
+          "approvedResourceAliases": []
+        },
         {
           "kind": "wikidata-external-ids",
           "qid": "Q131391938",
@@ -20815,12 +21271,18 @@
           "numericId": "1300661468",
           "url": "http://www.wikidata.org/entity/Q131391938",
           "retrievedAt": "2026-10-06T11:25:23.541Z"
+        },
+        {
+          "kind": "reviewed-primary-score",
+          "recordId": "mc-user:reviewed:2928600:PlayStation5:2026-10-09:research361",
+          "url": "https://www.metacritic.com/game/demon-slayer-kimetsu-no-yaiba-the-hinokami-2/user-reviews/",
+          "retrievedAt": "2026-10-09T17:48:10.772813Z",
+          "method": "public-primary-cache"
         }
       ]
     },
-    "scoreRecordId": null,
-    "scorePlatform": null,
-    "reason": "No verified user-score fact for the approved Metacritic resource"
+    "scoreRecordId": "mc-user:reviewed:2928600:PlayStation5:2026-10-09:research361",
+    "scorePlatform": "PlayStation 5"
   },
   "steam-2747330": {
     "schemaVersion": 1,
@@ -21603,25 +22065,35 @@
     "gameId": "steam-3124340",
     "steamAppId": 3124340,
     "revision": 1,
-    "status": "missing_score",
+    "status": "ready",
     "metacritic": {
-      "resourceId": "demeo-x-dungeons-dragons-battlemarked",
+      "resourceId": "demeo-x-dungeons-and-dragons-battlemarked",
       "numericId": null,
-      "url": "https://www.metacritic.com/game/demeo-x-dungeons-dragons-battlemarked/",
+      "url": "https://www.metacritic.com/game/demeo-x-dungeons-and-dragons-battlemarked/",
       "editionScope": "Reviewed store product / Metacritic work relationship",
       "evidence": [
         {
-          "kind": "store-app-id-crosslink",
-          "steamAppId": 3124340,
-          "url": "https://store.steampowered.com/api/appdetails?appids=3124340&l=english",
-          "referenceUrl": "https://www.metacritic.com/game/pc/demeo-x-dungeons-dragons-battlemarked?ftag=MCD-06-10aaa1f",
-          "retrievedAt": "2026-10-06T11:30:31.689Z"
+          "kind": "reviewed-id-crosswalk",
+          "urls": [
+            "https://store.steampowered.com/app/3124340/",
+            "https://www.metacritic.com/game/demeo-x-dungeons-and-dragons-battlemarked/",
+            "https://store.steampowered.com/api/appdetails?appids=3124340&l=english"
+          ],
+          "reviewedAt": "2026-10-09T17:48:10.772813Z",
+          "rationale": "PC puanı bulgusu. Kalıcı Steam uygulama ID’si; geliştirici, çıkış dönemi ve temel eser kapsamı incelendi. Yama/port ayrı oyun sayılmadı; farklı pazarlanan remake/remasterlar birleştirilmedi.",
+          "approvedResourceAliases": []
+        },
+        {
+          "kind": "reviewed-primary-score",
+          "recordId": "mc-user:reviewed:3124340:PC:2026-10-09:research361",
+          "url": "https://www.metacritic.com/game/demeo-x-dungeons-and-dragons-battlemarked/user-reviews/?platform=pc",
+          "retrievedAt": "2026-10-09T17:48:10.772813Z",
+          "method": "public-primary-cache"
         }
       ]
     },
-    "scoreRecordId": null,
-    "scorePlatform": null,
-    "reason": "No verified user-score fact for the approved Metacritic resource"
+    "scoreRecordId": "mc-user:reviewed:3124340:PC:2026-10-09:research361",
+    "scorePlatform": "PC"
   },
   "steam-3035570": {
     "schemaVersion": 1,
@@ -22110,27 +22582,35 @@
     "gameId": "steam-611790",
     "steamAppId": 611790,
     "revision": 1,
-    "status": "missing_score",
+    "status": "ready",
     "metacritic": {
-      "resourceId": "house-party",
-      "numericId": "1300694872",
-      "url": "https://www.metacritic.com/game/house-party/",
+      "resourceId": "house-party-2017",
+      "numericId": null,
+      "url": "https://www.metacritic.com/game/house-party-2017/",
       "editionScope": "Reviewed store product / Metacritic work relationship",
       "evidence": [
         {
-          "kind": "wikidata-external-ids",
-          "qid": "Q60565953",
-          "steamAppId": 611790,
-          "metacriticId": "house-party",
-          "numericId": "1300694872",
-          "url": "http://www.wikidata.org/entity/Q60565953",
-          "retrievedAt": "2026-10-06T11:25:25.527Z"
+          "kind": "reviewed-id-crosswalk",
+          "urls": [
+            "https://store.steampowered.com/app/611790/",
+            "https://www.metacritic.com/game/house-party-2017/",
+            "https://store.steampowered.com/api/appdetails?appids=611790&l=english"
+          ],
+          "reviewedAt": "2026-10-09T17:48:10.772813Z",
+          "rationale": "House Party (2017) adı, Eek! Games aynı oyun. Erken erişim/tam çıkış tarih farkı ayrı oyun sayılmadı. Kalıcı Steam uygulama ID’si; geliştirici, çıkış dönemi ve temel eser kapsamı incelendi. Yama/port ayrı oyun sayılmadı; farklı pazarlanan remake/remasterlar birleştirilmedi.",
+          "approvedResourceAliases": []
+        },
+        {
+          "kind": "reviewed-primary-score",
+          "recordId": "mc-user:reviewed:611790:PC:2026-10-09:research361",
+          "url": "https://www.metacritic.com/game/house-party-2017/",
+          "retrievedAt": "2026-10-09T17:48:10.772813Z",
+          "method": "public-primary-cache"
         }
       ]
     },
-    "scoreRecordId": null,
-    "scorePlatform": null,
-    "reason": "No verified user-score fact for the approved Metacritic resource"
+    "scoreRecordId": "mc-user:reviewed:611790:PC:2026-10-09:research361",
+    "scorePlatform": "PC"
   },
   "steam-314650": {
     "schemaVersion": 1,
@@ -22818,11 +23298,35 @@
     "gameId": "steam-4125930",
     "steamAppId": 4125930,
     "revision": 1,
-    "status": "unverified_identity",
-    "metacritic": null,
-    "scoreRecordId": null,
-    "scorePlatform": null,
-    "reason": "No approved ID crosslink available"
+    "status": "ready",
+    "metacritic": {
+      "resourceId": "punishing-gray-raven",
+      "numericId": null,
+      "url": "https://www.metacritic.com/game/punishing-gray-raven/",
+      "editionScope": "Reviewed store product / Metacritic work relationship",
+      "evidence": [
+        {
+          "kind": "reviewed-id-crosswalk",
+          "urls": [
+            "https://store.steampowered.com/app/4125930/",
+            "https://www.metacritic.com/game/punishing-gray-raven/",
+            "https://store.steampowered.com/api/appdetails?appids=4125930&l=english"
+          ],
+          "reviewedAt": "2026-10-09T17:48:10.772813Z",
+          "rationale": "Başka platform puanı var; güncel PC puanının yokluğu kesinleşmedi. Kalıcı Steam uygulama ID’si; geliştirici, çıkış dönemi ve temel eser kapsamı incelendi. Yama/port ayrı oyun sayılmadı; farklı pazarlanan remake/remasterlar birleştirilmedi.",
+          "approvedResourceAliases": []
+        },
+        {
+          "kind": "reviewed-primary-score",
+          "recordId": "mc-user:reviewed:4125930:iOS:2026-10-09:research361",
+          "url": "https://www.metacritic.com/game/punishing-gray-raven/user-reviews/",
+          "retrievedAt": "2026-10-09T17:48:10.772813Z",
+          "method": "public-primary-cache"
+        }
+      ]
+    },
+    "scoreRecordId": "mc-user:reviewed:4125930:iOS:2026-10-09:research361",
+    "scorePlatform": "iOS"
   },
   "steam-3215050": {
     "schemaVersion": 1,
@@ -23748,25 +24252,35 @@
     "gameId": "steam-2162800",
     "steamAppId": 2162800,
     "revision": 1,
-    "status": "missing_score",
+    "status": "ready",
     "metacritic": {
-      "resourceId": "shapez-2---factory",
+      "resourceId": "shapez-2-factory",
       "numericId": null,
-      "url": "https://www.metacritic.com/game/shapez-2---factory/",
+      "url": "https://www.metacritic.com/game/shapez-2-factory/",
       "editionScope": "Reviewed store product / Metacritic work relationship",
       "evidence": [
         {
-          "kind": "store-app-id-crosslink",
-          "steamAppId": 2162800,
-          "url": "https://store.steampowered.com/api/appdetails?appids=2162800&l=english",
-          "referenceUrl": "https://www.metacritic.com/game/pc/shapez-2---factory?ftag=MCD-06-10aaa1f",
-          "retrievedAt": "2026-10-06T11:31:02.354Z"
+          "kind": "reviewed-id-crosswalk",
+          "urls": [
+            "https://store.steampowered.com/app/2162800/",
+            "https://www.metacritic.com/game/shapez-2-factory/",
+            "https://store.steampowered.com/api/appdetails?appids=2162800&l=english"
+          ],
+          "reviewedAt": "2026-10-09T17:48:10.772813Z",
+          "rationale": "PC puanı bulgusu. Kalıcı Steam uygulama ID’si; geliştirici, çıkış dönemi ve temel eser kapsamı incelendi. Yama/port ayrı oyun sayılmadı; farklı pazarlanan remake/remasterlar birleştirilmedi.",
+          "approvedResourceAliases": []
+        },
+        {
+          "kind": "reviewed-primary-score",
+          "recordId": "mc-user:reviewed:2162800:PC:2026-10-09:research361",
+          "url": "https://www.metacritic.com/game/shapez-2-factory/",
+          "retrievedAt": "2026-10-09T17:48:10.772813Z",
+          "method": "public-primary-cache"
         }
       ]
     },
-    "scoreRecordId": null,
-    "scorePlatform": null,
-    "reason": "No verified user-score fact for the approved Metacritic resource"
+    "scoreRecordId": "mc-user:reviewed:2162800:PC:2026-10-09:research361",
+    "scorePlatform": "PC"
   },
   "steam-975370": {
     "schemaVersion": 1,
@@ -23803,11 +24317,35 @@
     "gameId": "steam-3556750",
     "steamAppId": 3556750,
     "revision": 1,
-    "status": "unverified_identity",
-    "metacritic": null,
-    "scoreRecordId": null,
-    "scorePlatform": null,
-    "reason": "No approved ID crosslink available"
+    "status": "ready",
+    "metacritic": {
+      "resourceId": "warhammer-40000-dawn-of-war-definitive-edition",
+      "numericId": null,
+      "url": "https://www.metacritic.com/game/warhammer-40000-dawn-of-war-definitive-edition/",
+      "editionScope": "Reviewed store product / Metacritic work relationship",
+      "evidence": [
+        {
+          "kind": "reviewed-id-crosswalk",
+          "urls": [
+            "https://store.steampowered.com/app/3556750/",
+            "https://www.metacritic.com/game/warhammer-40000-dawn-of-war-definitive-edition/",
+            "https://store.steampowered.com/api/appdetails?appids=3556750&l=english"
+          ],
+          "reviewedAt": "2026-10-09T17:48:10.772813Z",
+          "rationale": "PC puanı bulgusu. Kalıcı Steam uygulama ID’si; geliştirici, çıkış dönemi ve temel eser kapsamı incelendi. Yama/port ayrı oyun sayılmadı; farklı pazarlanan remake/remasterlar birleştirilmedi.",
+          "approvedResourceAliases": []
+        },
+        {
+          "kind": "reviewed-primary-score",
+          "recordId": "mc-user:reviewed:3556750:PC:2026-10-09:research361",
+          "url": "https://www.metacritic.com/game/warhammer-40000-dawn-of-war-definitive-edition/",
+          "retrievedAt": "2026-10-09T17:48:10.772813Z",
+          "method": "public-primary-cache"
+        }
+      ]
+    },
+    "scoreRecordId": "mc-user:reviewed:3556750:PC:2026-10-09:research361",
+    "scorePlatform": "PC"
   },
   "subnautica-below-zero": {
     "schemaVersion": 1,
@@ -23997,13 +24535,24 @@
     "gameId": "steam-1761390",
     "steamAppId": 1761390,
     "revision": 1,
-    "status": "missing_score",
+    "status": "ready",
     "metacritic": {
       "resourceId": "hatsune-miku-project-diva-megamix-plus",
       "numericId": "1300623103",
       "url": "https://www.metacritic.com/game/hatsune-miku-project-diva-megamix-plus/",
       "editionScope": "Reviewed store product / Metacritic work relationship",
       "evidence": [
+        {
+          "kind": "reviewed-id-crosswalk",
+          "urls": [
+            "https://store.steampowered.com/app/1761390/",
+            "https://www.metacritic.com/game/hatsune-miku-project-diva-megamix-plus/",
+            "https://store.steampowered.com/api/appdetails?appids=1761390&l=english"
+          ],
+          "reviewedAt": "2026-10-09T17:48:10.772813Z",
+          "rationale": "PC puanı bulgusu. Kalıcı Steam uygulama ID’si; geliştirici, çıkış dönemi ve temel eser kapsamı incelendi. Yama/port ayrı oyun sayılmadı; farklı pazarlanan remake/remasterlar birleştirilmedi.",
+          "approvedResourceAliases": []
+        },
         {
           "kind": "wikidata-external-ids",
           "qid": "Q112135602",
@@ -24012,37 +24561,53 @@
           "numericId": "1300623103",
           "url": "http://www.wikidata.org/entity/Q112135602",
           "retrievedAt": "2026-10-06T11:25:26.482Z"
+        },
+        {
+          "kind": "reviewed-primary-score",
+          "recordId": "mc-user:reviewed:1761390:PC:2026-10-09:research361",
+          "url": "https://www.metacritic.com/game/hatsune-miku-project-diva-megamix-plus/",
+          "retrievedAt": "2026-10-09T17:48:10.772813Z",
+          "method": "public-primary-cache"
         }
       ]
     },
-    "scoreRecordId": null,
-    "scorePlatform": null,
-    "reason": "No verified user-score fact for the approved Metacritic resource"
+    "scoreRecordId": "mc-user:reviewed:1761390:PC:2026-10-09:research361",
+    "scorePlatform": "PC"
   },
   "steam-2634890": {
     "schemaVersion": 1,
     "gameId": "steam-2634890",
     "steamAppId": 2634890,
     "revision": 1,
-    "status": "missing_score",
+    "status": "ready",
     "metacritic": {
-      "resourceId": "marvel-vs-capcom-fighting-collection-arcade-classics",
+      "resourceId": "marvel-vs-capcom-fighting-collection-arcade",
       "numericId": null,
-      "url": "https://www.metacritic.com/game/marvel-vs-capcom-fighting-collection-arcade-classics/",
+      "url": "https://www.metacritic.com/game/marvel-vs-capcom-fighting-collection-arcade/",
       "editionScope": "Reviewed store product / Metacritic work relationship",
       "evidence": [
         {
-          "kind": "store-app-id-crosslink",
-          "steamAppId": 2634890,
-          "url": "https://store.steampowered.com/api/appdetails?appids=2634890&l=english",
-          "referenceUrl": "https://www.metacritic.com/game/pc/marvel-vs-capcom-fighting-collection-arcade-classics?ftag=MCD-06-10aaa1f",
-          "retrievedAt": "2026-10-06T11:31:09.560Z"
+          "kind": "reviewed-id-crosswalk",
+          "urls": [
+            "https://store.steampowered.com/app/2634890/",
+            "https://www.metacritic.com/game/marvel-vs-capcom-fighting-collection-arcade/",
+            "https://store.steampowered.com/api/appdetails?appids=2634890&l=english"
+          ],
+          "reviewedAt": "2026-10-09T17:48:10.772813Z",
+          "rationale": "Başka platform puanı var; güncel PC puanının yokluğu kesinleşmedi. Kalıcı Steam uygulama ID’si; geliştirici, çıkış dönemi ve temel eser kapsamı incelendi. Yama/port ayrı oyun sayılmadı; farklı pazarlanan remake/remasterlar birleştirilmedi.",
+          "approvedResourceAliases": []
+        },
+        {
+          "kind": "reviewed-primary-score",
+          "recordId": "mc-user:reviewed:2634890:PlayStation4:2026-10-09:research361",
+          "url": "https://www.metacritic.com/game/marvel-vs-capcom-fighting-collection-arcade/user-reviews/",
+          "retrievedAt": "2026-10-09T17:48:10.772813Z",
+          "method": "public-primary-cache"
         }
       ]
     },
-    "scoreRecordId": null,
-    "scorePlatform": null,
-    "reason": "No verified user-score fact for the approved Metacritic resource"
+    "scoreRecordId": "mc-user:reviewed:2634890:PlayStation4:2026-10-09:research361",
+    "scorePlatform": "PlayStation 4"
   },
   "steam-2899050": {
     "schemaVersion": 1,
@@ -25983,11 +26548,35 @@
     "gameId": "steam-1845250",
     "steamAppId": 1845250,
     "revision": 1,
-    "status": "unverified_identity",
-    "metacritic": null,
-    "scoreRecordId": null,
-    "scorePlatform": null,
-    "reason": "No approved ID crosslink available"
+    "status": "ready",
+    "metacritic": {
+      "resourceId": "rubinite",
+      "numericId": null,
+      "url": "https://www.metacritic.com/game/rubinite/",
+      "editionScope": "Reviewed store product / Metacritic work relationship",
+      "evidence": [
+        {
+          "kind": "reviewed-id-crosswalk",
+          "urls": [
+            "https://store.steampowered.com/app/1845250/",
+            "https://www.metacritic.com/game/rubinite/",
+            "https://store.steampowered.com/api/appdetails?appids=1845250&l=english"
+          ],
+          "reviewedAt": "2026-10-09T17:48:10.772813Z",
+          "rationale": "PC puanı bulgusu. Kalıcı Steam uygulama ID’si; geliştirici, çıkış dönemi ve temel eser kapsamı incelendi. Yama/port ayrı oyun sayılmadı; farklı pazarlanan remake/remasterlar birleştirilmedi.",
+          "approvedResourceAliases": []
+        },
+        {
+          "kind": "reviewed-primary-score",
+          "recordId": "mc-user:reviewed:1845250:PC:2026-10-09:research361",
+          "url": "https://www.metacritic.com/game/rubinite/",
+          "retrievedAt": "2026-10-09T17:48:10.772813Z",
+          "method": "public-primary-cache"
+        }
+      ]
+    },
+    "scoreRecordId": "mc-user:reviewed:1845250:PC:2026-10-09:research361",
+    "scorePlatform": "PC"
   },
   "steam-3061810": {
     "schemaVersion": 1,
@@ -26303,25 +26892,35 @@
     "gameId": "steam-2396980",
     "steamAppId": 2396980,
     "revision": 1,
-    "status": "missing_score",
+    "status": "ready",
     "metacritic": {
-      "resourceId": "fatestay-night-remastered",
+      "resourceId": "fate-stay-night-remastered",
       "numericId": null,
-      "url": "https://www.metacritic.com/game/fatestay-night-remastered/",
+      "url": "https://www.metacritic.com/game/fate-stay-night-remastered/",
       "editionScope": "Reviewed store product / Metacritic work relationship",
       "evidence": [
         {
-          "kind": "store-app-id-crosslink",
-          "steamAppId": 2396980,
-          "url": "https://store.steampowered.com/api/appdetails?appids=2396980&l=english",
-          "referenceUrl": "https://www.metacritic.com/game/pc/fatestay-night-remastered?ftag=MCD-06-10aaa1f",
-          "retrievedAt": "2026-10-06T11:31:48.588Z"
+          "kind": "reviewed-id-crosswalk",
+          "urls": [
+            "https://store.steampowered.com/app/2396980/",
+            "https://www.metacritic.com/game/fate-stay-night-remastered/",
+            "https://store.steampowered.com/api/appdetails?appids=2396980&l=english"
+          ],
+          "reviewedAt": "2026-10-09T17:48:10.772813Z",
+          "rationale": "PC puanı bulgusu. Kalıcı Steam uygulama ID’si; geliştirici, çıkış dönemi ve temel eser kapsamı incelendi. Yama/port ayrı oyun sayılmadı; farklı pazarlanan remake/remasterlar birleştirilmedi.",
+          "approvedResourceAliases": []
+        },
+        {
+          "kind": "reviewed-primary-score",
+          "recordId": "mc-user:reviewed:2396980:PC:2026-10-09:research361",
+          "url": "https://www.metacritic.com/game/fate-stay-night-remastered/user-reviews/?platform=pc",
+          "retrievedAt": "2026-10-09T17:48:10.772813Z",
+          "method": "public-primary-cache"
         }
       ]
     },
-    "scoreRecordId": null,
-    "scorePlatform": null,
-    "reason": "No verified user-score fact for the approved Metacritic resource"
+    "scoreRecordId": "mc-user:reviewed:2396980:PC:2026-10-09:research361",
+    "scorePlatform": "PC"
   },
   "steam-2426530": {
     "schemaVersion": 1,
@@ -27728,11 +28327,35 @@
     "gameId": "steam-3097300",
     "steamAppId": 3097300,
     "revision": 1,
-    "status": "unverified_identity",
-    "metacritic": null,
-    "scoreRecordId": null,
-    "scorePlatform": null,
-    "reason": "No approved ID crosslink available"
+    "status": "ready",
+    "metacritic": {
+      "resourceId": "creature-kitchen",
+      "numericId": null,
+      "url": "https://www.metacritic.com/game/creature-kitchen/",
+      "editionScope": "Reviewed store product / Metacritic work relationship",
+      "evidence": [
+        {
+          "kind": "reviewed-id-crosswalk",
+          "urls": [
+            "https://store.steampowered.com/app/3097300/",
+            "https://www.metacritic.com/game/creature-kitchen/",
+            "https://store.steampowered.com/api/appdetails?appids=3097300&l=english"
+          ],
+          "reviewedAt": "2026-10-09T17:48:10.772813Z",
+          "rationale": "PC puanı bulgusu. Kalıcı Steam uygulama ID’si; geliştirici, çıkış dönemi ve temel eser kapsamı incelendi. Yama/port ayrı oyun sayılmadı; farklı pazarlanan remake/remasterlar birleştirilmedi.",
+          "approvedResourceAliases": []
+        },
+        {
+          "kind": "reviewed-primary-score",
+          "recordId": "mc-user:reviewed:3097300:PC:2026-10-09:research361",
+          "url": "https://www.metacritic.com/game/creature-kitchen/user-reviews/?platform=pc",
+          "retrievedAt": "2026-10-09T17:48:10.772813Z",
+          "method": "public-primary-cache"
+        }
+      ]
+    },
+    "scoreRecordId": "mc-user:reviewed:3097300:PC:2026-10-09:research361",
+    "scorePlatform": "PC"
   },
   "steam-1341290": {
     "schemaVersion": 1,
@@ -28645,11 +29268,35 @@
     "gameId": "steam-1663850",
     "steamAppId": 1663850,
     "revision": 1,
-    "status": "unverified_identity",
-    "metacritic": null,
-    "scoreRecordId": null,
-    "scorePlatform": null,
-    "reason": "No approved ID crosslink available"
+    "status": "ready",
+    "metacritic": {
+      "resourceId": "replaced",
+      "numericId": null,
+      "url": "https://www.metacritic.com/game/replaced/",
+      "editionScope": "Reviewed store product / Metacritic work relationship",
+      "evidence": [
+        {
+          "kind": "reviewed-id-crosswalk",
+          "urls": [
+            "https://store.steampowered.com/app/1663850/",
+            "https://www.metacritic.com/game/replaced/",
+            "https://store.steampowered.com/api/appdetails?appids=1663850&l=english"
+          ],
+          "reviewedAt": "2026-10-09T17:48:10.772813Z",
+          "rationale": "PC puanı bulgusu. Kalıcı Steam uygulama ID’si; geliştirici, çıkış dönemi ve temel eser kapsamı incelendi. Yama/port ayrı oyun sayılmadı; farklı pazarlanan remake/remasterlar birleştirilmedi.",
+          "approvedResourceAliases": []
+        },
+        {
+          "kind": "reviewed-primary-score",
+          "recordId": "mc-user:reviewed:1663850:PC:2026-10-09:research361",
+          "url": "https://www.metacritic.com/game/replaced/user-reviews/?platform=pc",
+          "retrievedAt": "2026-10-09T17:48:10.772813Z",
+          "method": "public-primary-cache"
+        }
+      ]
+    },
+    "scoreRecordId": "mc-user:reviewed:1663850:PC:2026-10-09:research361",
+    "scorePlatform": "PC"
   },
   "steam-362890": {
     "schemaVersion": 1,
@@ -30961,13 +31608,24 @@
     "gameId": "steam-1230140",
     "steamAppId": 1230140,
     "revision": 1,
-    "status": "missing_score",
+    "status": "ready",
     "metacritic": {
       "resourceId": "atri-my-dear-moments-",
       "numericId": "1300513401",
       "url": "https://www.metacritic.com/game/atri-my-dear-moments-/",
       "editionScope": "Reviewed store product / Metacritic work relationship",
       "evidence": [
+        {
+          "kind": "reviewed-id-crosswalk",
+          "urls": [
+            "https://store.steampowered.com/app/1230140/",
+            "https://www.metacritic.com/game/atri-my-dear-moments-/",
+            "https://store.steampowered.com/api/appdetails?appids=1230140&l=english"
+          ],
+          "reviewedAt": "2026-10-09T17:48:10.772813Z",
+          "rationale": "Sayısal kullanıcı puanı var; seçilen platform doğrulanamadı. Kalıcı Steam uygulama ID’si; geliştirici, çıkış dönemi ve temel eser kapsamı incelendi. Yama/port ayrı oyun sayılmadı; farklı pazarlanan remake/remasterlar birleştirilmedi.",
+          "approvedResourceAliases": []
+        },
         {
           "kind": "wikidata-external-ids",
           "qid": "Q97275837",
@@ -30976,12 +31634,18 @@
           "numericId": "1300513401",
           "url": "http://www.wikidata.org/entity/Q97275837",
           "retrievedAt": "2026-10-06T11:26:01.062Z"
+        },
+        {
+          "kind": "reviewed-primary-score",
+          "recordId": "mc-user:reviewed:1230140:unknown:2026-10-09:research361",
+          "url": "https://www.metacritic.com/game/atri-my-dear-moments-/",
+          "retrievedAt": "2026-10-09T17:48:10.772813Z",
+          "method": "public-primary-cache"
         }
       ]
     },
-    "scoreRecordId": null,
-    "scorePlatform": null,
-    "reason": "No verified user-score fact for the approved Metacritic resource"
+    "scoreRecordId": "mc-user:reviewed:1230140:unknown:2026-10-09:research361",
+    "scorePlatform": null
   },
   "steam-667970": {
     "schemaVersion": 1,
@@ -31454,11 +32118,35 @@
     "gameId": "steam-3370870",
     "steamAppId": 3370870,
     "revision": 1,
-    "status": "unverified_identity",
-    "metacritic": null,
-    "scoreRecordId": null,
-    "scorePlatform": null,
-    "reason": "No approved ID crosslink available"
+    "status": "ready",
+    "metacritic": {
+      "resourceId": "berry-bury-berry",
+      "numericId": null,
+      "url": "https://www.metacritic.com/game/berry-bury-berry/",
+      "editionScope": "Reviewed store product / Metacritic work relationship",
+      "evidence": [
+        {
+          "kind": "reviewed-id-crosswalk",
+          "urls": [
+            "https://store.steampowered.com/app/3370870/",
+            "https://www.metacritic.com/game/berry-bury-berry/",
+            "https://store.steampowered.com/api/appdetails?appids=3370870&l=english"
+          ],
+          "reviewedAt": "2026-10-09T17:48:10.772813Z",
+          "rationale": "PC puanı bulgusu. Kalıcı Steam uygulama ID’si; geliştirici, çıkış dönemi ve temel eser kapsamı incelendi. Yama/port ayrı oyun sayılmadı; farklı pazarlanan remake/remasterlar birleştirilmedi.",
+          "approvedResourceAliases": []
+        },
+        {
+          "kind": "reviewed-primary-score",
+          "recordId": "mc-user:reviewed:3370870:PC:2026-10-09:research361",
+          "url": "https://www.metacritic.com/game/berry-bury-berry/",
+          "retrievedAt": "2026-10-09T17:48:10.772813Z",
+          "method": "public-primary-cache"
+        }
+      ]
+    },
+    "scoreRecordId": "mc-user:reviewed:3370870:PC:2026-10-09:research361",
+    "scorePlatform": "PC"
   },
   "steam-2905170": {
     "schemaVersion": 1,
@@ -33356,11 +34044,35 @@
     "gameId": "steam-577480",
     "steamAppId": 577480,
     "revision": 1,
-    "status": "unverified_identity",
-    "metacritic": null,
-    "scoreRecordId": null,
-    "scorePlatform": null,
-    "reason": "No approved ID crosslink available"
+    "status": "ready",
+    "metacritic": {
+      "resourceId": "higurashi-when-they-cry-kai-chapter-5-meakashi",
+      "numericId": null,
+      "url": "https://www.metacritic.com/game/higurashi-when-they-cry-kai-chapter-5-meakashi/",
+      "editionScope": "Reviewed store product / Metacritic work relationship",
+      "evidence": [
+        {
+          "kind": "reviewed-id-crosswalk",
+          "urls": [
+            "https://store.steampowered.com/app/577480/",
+            "https://www.metacritic.com/game/higurashi-when-they-cry-kai-chapter-5-meakashi/",
+            "https://store.steampowered.com/api/appdetails?appids=577480&l=english"
+          ],
+          "reviewedAt": "2026-10-09T17:48:10.772813Z",
+          "rationale": "Chapter 5/2017/07th Expansion; Steam 577480 ile bölüm ve çıkış tarihi eşleşiyor. Kalıcı Steam uygulama ID’si; geliştirici, çıkış dönemi ve temel eser kapsamı incelendi. Yama/port ayrı oyun sayılmadı; farklı pazarlanan remake/remasterlar birleştirilmedi.",
+          "approvedResourceAliases": []
+        },
+        {
+          "kind": "reviewed-primary-score",
+          "recordId": "mc-user:reviewed:577480:PC:2026-10-09:research361",
+          "url": "https://www.metacritic.com/game/higurashi-when-they-cry-kai-chapter-5-meakashi/user-reviews/",
+          "retrievedAt": "2026-10-09T17:48:10.772813Z",
+          "method": "public-primary-cache"
+        }
+      ]
+    },
+    "scoreRecordId": "mc-user:reviewed:577480:PC:2026-10-09:research361",
+    "scorePlatform": "PC"
   },
   "steam-2629230": {
     "schemaVersion": 1,
@@ -33450,11 +34162,35 @@
     "gameId": "steam-668350",
     "steamAppId": 668350,
     "revision": 1,
-    "status": "unverified_identity",
-    "metacritic": null,
-    "scoreRecordId": null,
-    "scorePlatform": null,
-    "reason": "No approved ID crosslink available"
+    "status": "ready",
+    "metacritic": {
+      "resourceId": "higurashi-when-they-cry-hou-chapter-6",
+      "numericId": null,
+      "url": "https://www.metacritic.com/game/higurashi-when-they-cry-hou-chapter-6/",
+      "editionScope": "Reviewed store product / Metacritic work relationship",
+      "evidence": [
+        {
+          "kind": "reviewed-id-crosswalk",
+          "urls": [
+            "https://store.steampowered.com/app/668350/",
+            "https://www.metacritic.com/game/higurashi-when-they-cry-hou-chapter-6/",
+            "https://store.steampowered.com/api/appdetails?appids=668350&l=english"
+          ],
+          "reviewedAt": "2026-10-09T17:48:10.772813Z",
+          "rationale": "Chapter 6/2018/07th Expansion; Steam 668350 ile bölüm ve çıkış tarihi eşleşiyor. Kalıcı Steam uygulama ID’si; geliştirici, çıkış dönemi ve temel eser kapsamı incelendi. Yama/port ayrı oyun sayılmadı; farklı pazarlanan remake/remasterlar birleştirilmedi.",
+          "approvedResourceAliases": []
+        },
+        {
+          "kind": "reviewed-primary-score",
+          "recordId": "mc-user:reviewed:668350:PC:2026-10-09:research361",
+          "url": "https://www.metacritic.com/game/higurashi-when-they-cry-hou-chapter-6/",
+          "retrievedAt": "2026-10-09T17:48:10.772813Z",
+          "method": "public-primary-cache"
+        }
+      ]
+    },
+    "scoreRecordId": "mc-user:reviewed:668350:PC:2026-10-09:research361",
+    "scorePlatform": "PC"
   },
   "steam-3081840": {
     "schemaVersion": 1,
@@ -33883,11 +34619,35 @@
     "gameId": "steam-1657740",
     "steamAppId": 1657740,
     "revision": 1,
-    "status": "unverified_identity",
-    "metacritic": null,
-    "scoreRecordId": null,
-    "scorePlatform": null,
-    "reason": "No approved ID crosslink available"
+    "status": "ready",
+    "metacritic": {
+      "resourceId": "mr-sleepy-man",
+      "numericId": null,
+      "url": "https://www.metacritic.com/game/mr-sleepy-man/",
+      "editionScope": "Reviewed store product / Metacritic work relationship",
+      "evidence": [
+        {
+          "kind": "reviewed-id-crosswalk",
+          "urls": [
+            "https://store.steampowered.com/app/1657740/",
+            "https://www.metacritic.com/game/mr-sleepy-man/",
+            "https://store.steampowered.com/api/appdetails?appids=1657740&l=english"
+          ],
+          "reviewedAt": "2026-10-09T17:48:10.772813Z",
+          "rationale": "Sayısal kullanıcı puanı var; seçilen platform doğrulanamadı. Kalıcı Steam uygulama ID’si; geliştirici, çıkış dönemi ve temel eser kapsamı incelendi. Yama/port ayrı oyun sayılmadı; farklı pazarlanan remake/remasterlar birleştirilmedi.",
+          "approvedResourceAliases": []
+        },
+        {
+          "kind": "reviewed-primary-score",
+          "recordId": "mc-user:reviewed:1657740:unknown:2026-10-09:research361",
+          "url": "https://www.metacritic.com/game/mr-sleepy-man/",
+          "retrievedAt": "2026-10-09T17:48:10.772813Z",
+          "method": "public-primary-cache"
+        }
+      ]
+    },
+    "scoreRecordId": "mc-user:reviewed:1657740:unknown:2026-10-09:research361",
+    "scorePlatform": null
   },
   "steam-3212530": {
     "schemaVersion": 1,
@@ -34976,11 +35736,53 @@
     "gameId": "steam-250320",
     "steamAppId": 250320,
     "revision": 1,
-    "status": "identity_conflict",
-    "metacritic": null,
-    "scoreRecordId": null,
-    "scorePlatform": null,
-    "reason": "Steam primary description explicitly lists all five episodes as one season; one episode resource is not the whole season score."
+    "status": "ready",
+    "metacritic": {
+      "resourceId": "the-wolf-among-us",
+      "numericId": null,
+      "url": "https://www.metacritic.com/game/the-wolf-among-us/",
+      "editionScope": "Reviewed store product / Metacritic work relationship",
+      "evidence": [
+        {
+          "kind": "reviewed-id-crosswalk",
+          "urls": [
+            "https://store.steampowered.com/app/250320/",
+            "https://www.metacritic.com/game/the-wolf-among-us/",
+            "https://store.steampowered.com/api/appdetails?appids=250320&l=english"
+          ],
+          "reviewedAt": "2026-10-09T17:48:10.772813Z",
+          "rationale": "Telltale’in beş bölümlük tam oyunu. Episode 3 dışlandı. Yuvarlatılmış 1,3k bilgisi kesin oy sayısına çevrilmedi. Kalıcı Steam uygulama ID’si; geliştirici, çıkış dönemi ve temel eser kapsamı incelendi. Yama/port ayrı oyun sayılmadı; farklı pazarlanan remake/remasterlar birleştirilmedi.",
+          "approvedResourceAliases": []
+        },
+        {
+          "kind": "wikidata-external-ids",
+          "qid": "Q5427938",
+          "steamAppId": 250320,
+          "metacriticId": "the-wolf-among-us",
+          "numericId": "1300177251",
+          "url": "http://www.wikidata.org/entity/Q5427938",
+          "retrievedAt": "2026-10-06T11:26:03.804Z"
+        },
+        {
+          "kind": "wikidata-external-ids",
+          "qid": "Q5427938",
+          "steamAppId": 250320,
+          "metacriticId": "the-wolf-among-us",
+          "numericId": "1300223273",
+          "url": "http://www.wikidata.org/entity/Q5427938",
+          "retrievedAt": "2026-10-06T11:26:03.804Z"
+        },
+        {
+          "kind": "reviewed-primary-score",
+          "recordId": "mc-user:reviewed:250320:PC:2026-10-09:research361",
+          "url": "https://www.metacritic.com/game/the-wolf-among-us/user-reviews/?platform=pc",
+          "retrievedAt": "2026-10-09T17:48:10.772813Z",
+          "method": "public-primary-cache"
+        }
+      ]
+    },
+    "scoreRecordId": "mc-user:reviewed:250320:PC:2026-10-09:research361",
+    "scorePlatform": "PC"
   },
   "steam-288160": {
     "schemaVersion": 1,
@@ -35750,11 +36552,35 @@
     "gameId": "steam-312990",
     "steamAppId": 312990,
     "revision": 1,
-    "status": "unverified_identity",
-    "metacritic": null,
-    "scoreRecordId": null,
-    "scorePlatform": null,
-    "reason": "No approved ID crosslink available"
+    "status": "ready",
+    "metacritic": {
+      "resourceId": "the-expendabros-broforce-the-expendables-missions",
+      "numericId": null,
+      "url": "https://www.metacritic.com/game/the-expendabros-broforce-the-expendables-missions/",
+      "editionScope": "Reviewed store product / Metacritic work relationship",
+      "evidence": [
+        {
+          "kind": "reviewed-id-crosswalk",
+          "urls": [
+            "https://store.steampowered.com/app/312990/",
+            "https://www.metacritic.com/game/the-expendabros-broforce-the-expendables-missions/",
+            "https://store.steampowered.com/api/appdetails?appids=312990&l=english"
+          ],
+          "reviewedAt": "2026-10-09T17:48:10.772813Z",
+          "rationale": "Broforce: The Expendables Missions uzun başlığı aynı Free Lives/2014 oyununu kapsıyor. Kalıcı Steam uygulama ID’si; geliştirici, çıkış dönemi ve temel eser kapsamı incelendi. Yama/port ayrı oyun sayılmadı; farklı pazarlanan remake/remasterlar birleştirilmedi.",
+          "approvedResourceAliases": []
+        },
+        {
+          "kind": "reviewed-primary-score",
+          "recordId": "mc-user:reviewed:312990:PC:2026-10-09:research361",
+          "url": "https://www.metacritic.com/game/the-expendabros-broforce-the-expendables-missions/",
+          "retrievedAt": "2026-10-09T17:48:10.772813Z",
+          "method": "public-primary-cache"
+        }
+      ]
+    },
+    "scoreRecordId": "mc-user:reviewed:312990:PC:2026-10-09:research361",
+    "scorePlatform": "PC"
   },
   "steam-1999360": {
     "schemaVersion": 1,

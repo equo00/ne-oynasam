@@ -13,13 +13,13 @@ function reviewedFactIndex(games, reviewed) {
     const fail = reason => { throw Error(`Invalid reviewed score fact ${fact.recordId || '(no ID)'}: ${reason}`); };
     if (!game || game.steamAppId !== fact.steamAppId) fail('catalog game / store app ID mismatch');
     if (!/^mc-user:reviewed:[a-zA-Z0-9:-]{1,150}$/.test(fact.recordId || '') || recordIds.has(fact.recordId)) fail('duplicate or invalid stable fact ID');
-    if (fact.metric !== 'user-score' || !scorePlatformSlugs(fact.platform) || typeof fact.score !== 'number' || !Number.isFinite(fact.score) || fact.score < 0 || fact.score > 10) fail('metric, source platform, or 0–10 average');
+    if (fact.metric !== 'user-score' || (fact.platform!==null&&!scorePlatformSlugs(fact.platform)) || typeof fact.score !== 'number' || !Number.isFinite(fact.score) || fact.score < 0 || fact.score > 10) fail('metric, source platform, or 0–10 average');
     const resource = metacriticResource(fact.sourceUrl);
     if (!resource || resource.id !== fact.metacriticId) fail('primary source resource ID mismatch');
     const url = new URL(fact.sourceUrl);
     if(url.protocol!=='https:')fail('primary source requires HTTPS');
     try{validatePrimaryScoreFact(fact);}catch(error){fail(error.message);}
-    if (!proof || proof.metricLabel !== 'User score' || proof.platformLabel !== fact.platform || !['user-supplied-capture','public-primary-cache'].includes(proof.method)) fail('missing explicit primary metric/platform evidence');
+    if (!proof || proof.metricLabel !== 'User score' || proof.platformLabel !== fact.platform || !['user-supplied-capture','public-primary-cache','public-historical-dataset'].includes(proof.method)) fail('missing explicit primary metric/platform evidence');
     if (proof.method === 'user-supplied-capture' && !/^[a-f0-9]{64}$/.test(proof.captureSha256 || '')) fail('missing capture fingerprint');
     if (proof.method === 'public-primary-cache' && (!proof.sourceCrawlLabel || !proof.retrievalReference)) fail('missing cached page evidence / age');
     if (!/^\d{4}-\d{2}-\d{2}$/.test(fact.snapshotDate || '') || !Number.isFinite(Date.parse(fact.retrievedAt)) || fact.retrievedAt.slice(0,10) !== fact.snapshotDate || fact.scoreDate !== null) fail('invalid retrieval date or invented score measurement date');
@@ -126,8 +126,10 @@ export function buildScoreCatalog(games, input, evidence, reviewed = {schemaVers
     const primaryFact = reviewedByGame.get(g.id);
     if (primaryFact) {
       if (!identity.metacritic || canonical(primaryFact.metacriticId) !== resourceId || primaryFact.metacriticNumericId !== numericId) throw Error('Reviewed score lacks the approved external ID relationship: '+g.id);
-      const primaryLink = new URL(primaryFact.sourceUrl); if(!primaryLink.searchParams.has('platform'))primaryLink.searchParams.set('platform',scorePlatformSlugs(primaryFact.platform)[0]);
-      selected = {...primaryFact,metacriticId:resourceId,url:primaryLink.toString(),sourceFactUrl:primaryFact.sourceUrl,sourceSteamAppIds:[appid],sourceLabel:'Metacritic ('+primaryFact.platform+' kullanıcı puanı)',license:'Source rights retained',verification:'Reviewed primary numerical average, explicit '+primaryFact.platform+' platform, joined by persisted catalog / store / Metacritic IDs. Retrieval date is not the score measurement date; cached observations are not live scores.'};
+      const primaryLink = new URL(primaryFact.sourceUrl); if(primaryFact.platform!==null&&!primaryLink.searchParams.has('platform'))primaryLink.searchParams.set('platform',scorePlatformSlugs(primaryFact.platform)[0]);
+      selected = {...primaryFact,metacriticId:resourceId,url:primaryLink.toString(),sourceFactUrl:primaryFact.sourceUrl,sourceSteamAppIds:[appid],sourceLabel:'Metacritic ('+(primaryFact.platform||'platform belirtilmemiş')+' kullanıcı puanı)',license:'Source rights retained',verification:'Reviewed primary numerical average, explicit '+primaryFact.platform+' platform, joined by persisted catalog / store / Metacritic IDs. Retrieval date is not the score measurement date; cached observations are not live scores.'};
+      if(primaryFact.provenance.method==='public-historical-dataset'){selected.sourceLabel='Metacritic (tarihî PC veri kümesi)';selected.verification='Historical raw dataset numerical fact; explicit PC row and reviewed persistent game/source IDs. Dataset collection date is preserved; not a live score.';}
+      if(primaryFact.platform===null)selected.verification='Reviewed numerical user average and persistent game/source IDs; source platform unverified, score remains visible. Cached observation is not a live score.';
       identity.metacritic.evidence.push({kind:'reviewed-primary-score',recordId:primaryFact.recordId,url:primaryFact.sourceUrl,retrievedAt:primaryFact.retrievedAt,method:primaryFact.provenance.method});
     } else if (historical) {
       const recordId = `mc-user:wikidata:${resourceId}:PC`;

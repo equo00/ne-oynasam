@@ -18,7 +18,7 @@ const stop=h=>run(h,'closeMedia();stopSpotlight();clearTimeout(spotlightRefreshT
  const sample=createHarness();await sleep(30);
  assert.equal(run(sample,'state.games.length'),24,'A result page contains at most 24 records');
  assert.equal(run(sample,'state.total'),1323,'The UI total comes from server metadata, not the page length');
- assert(sample.elements.catalogStats.innerHTML.includes('<b>'+coverage.scores+'</b>'),'All existing source score records remain counted');
+ assert(sample.elements.catalogStats.innerHTML.includes('<b>'+coverage.scores.toLocaleString('tr')+'</b>'),'All existing source score records remain counted');
  assert(!sample.requests.some(r=>r.path==='/api/catalog'||r.path.startsWith('/editorial.json')||(r.path==='/api/views'&&r.method==='GET')),'Bootstrap never downloads a full catalog/editorial/views map');
  assert(catalogRequests(sample).every(r=>new URL(r.path,'https://test').searchParams.get('pageSize')==='24'));
  const first=run(sample,'state.games.map(g=>g.id).join(",")');

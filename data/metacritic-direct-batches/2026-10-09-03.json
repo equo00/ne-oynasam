@@ -1,0 +1,742 @@
+{
+  "schemaVersion": 1,
+  "batchId": "direct-2026-10-09-03",
+  "checkedAt": "2026-10-09T17:48:10.772813Z",
+  "facts": [
+    {
+      "recordId": "mc-user:reviewed:2569760:unknown:2026-10-09:research361",
+      "gameId": "steam-2569760",
+      "steamAppId": 2569760,
+      "metacriticId": "the-mound-omen-of-cthulhu",
+      "metacriticNumericId": "1300674575",
+      "metric": "user-score",
+      "platform": null,
+      "score": 7.3,
+      "userRatings": 8,
+      "sourceUrl": "https://www.metacritic.com/game/the-mound-omen-of-cthulhu/",
+      "retrievedAt": "2026-10-09T17:48:10.772813Z",
+      "snapshotDate": "2026-10-09",
+      "scoreDate": null,
+      "provenance": {
+        "method": "public-primary-cache",
+        "metricLabel": "User score",
+        "platformLabel": null,
+        "sourceCrawlLabel": "last month",
+        "retrievalReference": "turn207view1",
+        "originalResearchDate": "2026-10-08",
+        "liveScoreVerified": false,
+        "pageHeading": "Game overview",
+        "platformUnverified": true
+      }
+    },
+    {
+      "recordId": "mc-user:reviewed:2209900:unknown:2026-10-09:research361",
+      "gameId": "steam-2209900",
+      "steamAppId": 2209900,
+      "metacriticId": "moonlight-peaks",
+      "metacriticNumericId": null,
+      "metric": "user-score",
+      "platform": null,
+      "score": 8,
+      "userRatings": 18,
+      "sourceUrl": "https://www.metacritic.com/game/moonlight-peaks/",
+      "retrievedAt": "2026-10-09T17:48:10.772813Z",
+      "snapshotDate": "2026-10-09",
+      "scoreDate": null,
+      "provenance": {
+        "method": "public-primary-cache",
+        "metricLabel": "User score",
+        "platformLabel": null,
+        "sourceCrawlLabel": "last month",
+        "retrievalReference": "turn213view1",
+        "originalResearchDate": "2026-10-08",
+        "liveScoreVerified": false,
+        "pageHeading": "Game overview",
+        "platformUnverified": true
+      }
+    },
+    {
+      "recordId": "mc-user:reviewed:339340:PC:2026-10-09:research361",
+      "gameId": "steam-339340",
+      "steamAppId": 339340,
+      "metacriticId": "resident-evil-0-hd-remaster",
+      "metacriticNumericId": null,
+      "metric": "user-score",
+      "platform": "PC",
+      "score": 7.5,
+      "userRatings": 253,
+      "sourceUrl": "https://www.metacritic.com/game/resident-evil-0-hd-remaster/user-reviews/?platform=pc",
+      "retrievedAt": "2026-10-09T17:48:10.772813Z",
+      "snapshotDate": "2026-10-09",
+      "scoreDate": null,
+      "provenance": {
+        "method": "public-primary-cache",
+        "metricLabel": "User score",
+        "platformLabel": "PC",
+        "sourceCrawlLabel": "last month",
+        "retrievalReference": "turn284view0",
+        "originalResearchDate": "2026-10-08",
+        "liveScoreVerified": false,
+        "pageHeading": "PC User Reviews"
+      }
+    },
+    {
+      "recordId": "mc-user:reviewed:2527160:PC:2026-10-09:research361",
+      "gameId": "steam-2527160",
+      "steamAppId": 2527160,
+      "metacriticId": "desktop-explorer",
+      "metacriticNumericId": null,
+      "metric": "user-score",
+      "platform": "PC",
+      "score": 7.3,
+      "userRatings": 7,
+      "sourceUrl": "https://www.metacritic.com/game/desktop-explorer/",
+      "retrievedAt": "2026-10-09T17:48:10.772813Z",
+      "snapshotDate": "2026-10-09",
+      "scoreDate": null,
+      "provenance": {
+        "method": "public-primary-cache",
+        "metricLabel": "User score",
+        "platformLabel": "PC",
+        "sourceCrawlLabel": "last month",
+        "retrievalReference": "turn214view2",
+        "originalResearchDate": "2026-10-08",
+        "liveScoreVerified": false,
+        "pageHeading": "Game overview",
+        "platformEvidenceKind": "single-platform",
+        "platformEvidencePlatforms": [
+          "PC"
+        ],
+        "platformEvidenceUrl": "https://www.metacritic.com/game/desktop-explorer/",
+        "platformEvidenceReference": "turn307search0"
+      }
+    },
+    {
+      "recordId": "mc-user:reviewed:293760:PC:2026-10-09:research361",
+      "gameId": "steam-293760",
+      "steamAppId": 293760,
+      "metacriticId": "automation",
+      "metacriticNumericId": null,
+      "metric": "user-score",
+      "platform": "PC",
+      "score": 8.2,
+      "userRatings": 5,
+      "sourceUrl": "https://www.metacritic.com/game/automation/",
+      "retrievedAt": "2026-10-09T17:48:10.772813Z",
+      "snapshotDate": "2026-10-09",
+      "scoreDate": null,
+      "provenance": {
+        "method": "public-primary-cache",
+        "metricLabel": "User score",
+        "platformLabel": "PC",
+        "sourceCrawlLabel": "last month",
+        "retrievalReference": "turn216view0",
+        "originalResearchDate": "2026-10-08",
+        "liveScoreVerified": false,
+        "pageHeading": "Game overview",
+        "platformEvidenceKind": "single-platform",
+        "platformEvidencePlatforms": [
+          "PC"
+        ],
+        "platformEvidenceUrl": "https://www.metacritic.com/game/automation/",
+        "platformEvidenceReference": "turn79search0"
+      }
+    },
+    {
+      "recordId": "mc-user:reviewed:2552450:PC:2026-10-09:research361",
+      "gameId": "steam-2552450",
+      "steamAppId": 2552450,
+      "metacriticId": "kingdom-hearts-iii-plus-re-mind",
+      "metacriticNumericId": null,
+      "metric": "user-score",
+      "platform": "PC",
+      "score": 7.3,
+      "userRatings": 135,
+      "sourceUrl": "https://www.metacritic.com/game/kingdom-hearts-iii-plus-re-mind/user-reviews/?platform=pc",
+      "retrievedAt": "2026-10-09T17:48:10.772813Z",
+      "snapshotDate": "2026-10-09",
+      "scoreDate": null,
+      "provenance": {
+        "method": "public-primary-cache",
+        "metricLabel": "User score",
+        "platformLabel": "PC",
+        "sourceCrawlLabel": "last month",
+        "retrievalReference": "turn282view3",
+        "originalResearchDate": "2026-10-08",
+        "liveScoreVerified": false,
+        "pageHeading": "PC User Reviews"
+      }
+    },
+    {
+      "recordId": "mc-user:reviewed:3061570:PC:2026-10-09:research361",
+      "gameId": "steam-3061570",
+      "steamAppId": 3061570,
+      "metacriticId": "persona-5-the-phantom-x",
+      "metacriticNumericId": null,
+      "metric": "user-score",
+      "platform": "PC",
+      "score": 6.1,
+      "userRatings": 77,
+      "sourceUrl": "https://www.metacritic.com/game/persona-5-the-phantom-x/user-reviews/",
+      "retrievedAt": "2026-10-09T17:48:10.772813Z",
+      "snapshotDate": "2026-10-09",
+      "scoreDate": null,
+      "provenance": {
+        "method": "public-primary-cache",
+        "metricLabel": "User score",
+        "platformLabel": "PC",
+        "sourceCrawlLabel": "last month",
+        "retrievalReference": "turn286view0",
+        "originalResearchDate": "2026-10-08",
+        "liveScoreVerified": false,
+        "pageHeading": "PC User Reviews"
+      }
+    },
+    {
+      "recordId": "mc-user:reviewed:3326230:PC:2026-10-09:research361",
+      "gameId": "steam-3326230",
+      "steamAppId": 3326230,
+      "metacriticId": "hozy",
+      "metacriticNumericId": null,
+      "metric": "user-score",
+      "platform": "PC",
+      "score": 6.8,
+      "userRatings": 17,
+      "sourceUrl": "https://www.metacritic.com/game/hozy/",
+      "retrievedAt": "2026-10-09T17:48:10.772813Z",
+      "snapshotDate": "2026-10-09",
+      "scoreDate": null,
+      "provenance": {
+        "method": "public-primary-cache",
+        "metricLabel": "User score",
+        "platformLabel": "PC",
+        "sourceCrawlLabel": "last month",
+        "retrievalReference": "turn222view2",
+        "originalResearchDate": "2026-10-08",
+        "liveScoreVerified": false,
+        "pageHeading": "Game overview",
+        "platformEvidenceKind": "single-platform",
+        "platformEvidencePlatforms": [
+          "PC"
+        ],
+        "platformEvidenceUrl": "https://www.metacritic.com/game/hozy/",
+        "platformEvidenceReference": "turn83search1"
+      }
+    },
+    {
+      "recordId": "mc-user:reviewed:2004680:unknown:2026-10-09:research361",
+      "gameId": "steam-2004680",
+      "steamAppId": 2004680,
+      "metacriticId": "voidling-bound",
+      "metacriticNumericId": null,
+      "metric": "user-score",
+      "platform": null,
+      "score": 8.4,
+      "userRatings": 7,
+      "sourceUrl": "https://www.metacritic.com/game/voidling-bound/",
+      "retrievedAt": "2026-10-09T17:48:10.772813Z",
+      "snapshotDate": "2026-10-09",
+      "scoreDate": null,
+      "provenance": {
+        "method": "public-primary-cache",
+        "metricLabel": "User score",
+        "platformLabel": null,
+        "sourceCrawlLabel": "last month",
+        "retrievalReference": "turn219view0",
+        "originalResearchDate": "2026-10-08",
+        "liveScoreVerified": false,
+        "pageHeading": "Game overview",
+        "platformUnverified": true
+      }
+    },
+    {
+      "recordId": "mc-user:reviewed:2893570:PlayStation5:2026-10-09:research361",
+      "gameId": "steam-2893570",
+      "steamAppId": 2893570,
+      "metacriticId": "dragon-quest-i-and-ii-hd-2d-remake",
+      "metacriticNumericId": null,
+      "metric": "user-score",
+      "platform": "PlayStation 5",
+      "score": 7.1,
+      "userRatings": 99,
+      "sourceUrl": "https://www.metacritic.com/game/dragon-quest-i-and-ii-hd-2d-remake/user-reviews/",
+      "retrievedAt": "2026-10-09T17:48:10.772813Z",
+      "snapshotDate": "2026-10-09",
+      "scoreDate": null,
+      "provenance": {
+        "method": "public-primary-cache",
+        "metricLabel": "User score",
+        "platformLabel": "PlayStation 5",
+        "sourceCrawlLabel": "last month",
+        "retrievalReference": "turn286view1",
+        "originalResearchDate": "2026-10-08",
+        "liveScoreVerified": false,
+        "pageHeading": "PlayStation 5 User Reviews"
+      }
+    }
+  ],
+  "identityReviews": [
+    {
+      "steamAppId": 2569760,
+      "status": "approved",
+      "metacriticId": "the-mound-omen-of-cthulhu",
+      "numericId": "1300674575",
+      "reviewedAt": "2026-10-09T17:48:10.772813Z",
+      "evidenceURLs": [
+        "https://store.steampowered.com/app/2569760/",
+        "https://www.metacritic.com/game/the-mound-omen-of-cthulhu/",
+        "https://store.steampowered.com/api/appdetails?appids=2569760&l=english"
+      ],
+      "rationale": "Sayısal kullanıcı puanı var; seçilen platform doğrulanamadı. Kalıcı Steam uygulama ID’si; geliştirici, çıkış dönemi ve temel eser kapsamı incelendi. Yama/port ayrı oyun sayılmadı; farklı pazarlanan remake/remasterlar birleştirilmedi.",
+      "reviewedMetadata": {
+        "catalogName": "The Mound: Omen of Cthulhu",
+        "steamAppId": 2569760,
+        "storeDevelopers": [
+          "ACE Team"
+        ],
+        "storeRelease": {
+          "coming_soon": false,
+          "date": "15 Jul, 2026"
+        },
+        "metacriticResourceId": "the-mound-omen-of-cthulhu",
+        "primaryMetadata": {
+          "url": "https://www.metacritic.com/game/the-mound-omen-of-cthulhu/",
+          "ref": "turn313search0",
+          "developer": "ACE Team",
+          "release": "Jul 15, 2026",
+          "platforms": "* PlayStation 5\n  * Xbox Series X\n  * PC"
+        },
+        "priorIdentity": {
+          "resourceId": "the-mound-omen-of-cthulhu",
+          "numericId": "1300674575",
+          "url": "https://www.metacritic.com/game/the-mound-omen-of-cthulhu/",
+          "editionScope": "Reviewed store product / Metacritic work relationship",
+          "evidence": [
+            {
+              "kind": "wikidata-external-ids",
+              "qid": "Q133100756",
+              "steamAppId": 2569760,
+              "metacriticId": "the-mound-omen-of-cthulhu",
+              "numericId": "1300674575",
+              "url": "http://www.wikidata.org/entity/Q133100756",
+              "retrievedAt": "2026-10-06T11:25:20.847Z"
+            }
+          ]
+        },
+        "researchDate": "2026-10-08"
+      }
+    },
+    {
+      "steamAppId": 2209900,
+      "status": "approved",
+      "metacriticId": "moonlight-peaks",
+      "numericId": null,
+      "reviewedAt": "2026-10-09T17:48:10.772813Z",
+      "evidenceURLs": [
+        "https://store.steampowered.com/app/2209900/",
+        "https://www.metacritic.com/game/moonlight-peaks/",
+        "https://store.steampowered.com/api/appdetails?appids=2209900&l=english"
+      ],
+      "rationale": "Sayısal kullanıcı puanı var; seçilen platform doğrulanamadı. Kalıcı Steam uygulama ID’si; geliştirici, çıkış dönemi ve temel eser kapsamı incelendi. Yama/port ayrı oyun sayılmadı; farklı pazarlanan remake/remasterlar birleştirilmedi.",
+      "reviewedMetadata": {
+        "catalogName": "Moonlight Peaks",
+        "steamAppId": 2209900,
+        "storeDevelopers": [
+          "Little Chicken"
+        ],
+        "storeRelease": {
+          "coming_soon": false,
+          "date": "Jul 6, 2026"
+        },
+        "metacriticResourceId": "moonlight-peaks",
+        "primaryMetadata": {
+          "url": "https://www.metacritic.com/game/moonlight-peaks/",
+          "ref": "turn313search3",
+          "developer": "Little Chicken",
+          "release": "Jul 7, 2026"
+        },
+        "priorIdentity": null,
+        "researchDate": "2026-10-08"
+      }
+    },
+    {
+      "steamAppId": 339340,
+      "status": "approved",
+      "metacriticId": "resident-evil-0-hd-remaster",
+      "numericId": null,
+      "reviewedAt": "2026-10-09T17:48:10.772813Z",
+      "evidenceURLs": [
+        "https://store.steampowered.com/app/339340/",
+        "https://www.metacritic.com/game/resident-evil-0-hd-remaster/",
+        "https://store.steampowered.com/api/appdetails?appids=339340&l=english"
+      ],
+      "rationale": "Steam 339340/2016, HD Remaster kaydıyla eşleşiyor. 2002 GameCube puanı dışlandı. Kalıcı Steam uygulama ID’si; geliştirici, çıkış dönemi ve temel eser kapsamı incelendi. Yama/port ayrı oyun sayılmadı; farklı pazarlanan remake/remasterlar birleştirilmedi.",
+      "reviewedMetadata": {
+        "catalogName": "Resident Evil 0",
+        "steamAppId": 339340,
+        "storeDevelopers": [
+          "CAPCOM Co., Ltd."
+        ],
+        "storeRelease": {
+          "coming_soon": false,
+          "date": "Jan 19, 2016"
+        },
+        "metacriticResourceId": "resident-evil-0-hd-remaster",
+        "primaryMetadata": {
+          "url": "https://www.metacritic.com/game/resident-evil-0-hd-remaster/",
+          "ref": "turn304view0",
+          "developer": "Capcom",
+          "release": "Jan 19, 2016",
+          "platforms": "* Nintendo Switch\n  * PlayStation 3\n  * PlayStation 4\n  * PC\n  * Xbox 360\n  * Xbox One"
+        },
+        "priorIdentity": null,
+        "researchDate": "2026-10-08"
+      }
+    },
+    {
+      "steamAppId": 2527160,
+      "status": "approved",
+      "metacriticId": "desktop-explorer",
+      "numericId": null,
+      "reviewedAt": "2026-10-09T17:48:10.772813Z",
+      "evidenceURLs": [
+        "https://store.steampowered.com/app/2527160/",
+        "https://www.metacritic.com/game/desktop-explorer/",
+        "https://store.steampowered.com/api/appdetails?appids=2527160&l=english"
+      ],
+      "rationale": "PC puanı bulgusu. Kalıcı Steam uygulama ID’si; geliştirici, çıkış dönemi ve temel eser kapsamı incelendi. Yama/port ayrı oyun sayılmadı; farklı pazarlanan remake/remasterlar birleştirilmedi.",
+      "reviewedMetadata": {
+        "catalogName": "Desktop Explorer",
+        "steamAppId": 2527160,
+        "storeDevelopers": [
+          "Recurring Dream"
+        ],
+        "storeRelease": {
+          "coming_soon": false,
+          "date": "Jul 17, 2026"
+        },
+        "metacriticResourceId": "desktop-explorer",
+        "primaryMetadata": {
+          "url": "https://www.metacritic.com/game/desktop-explorer/",
+          "ref": "turn307search0",
+          "developer": "Recurring Dream",
+          "release": "Jul 17, 2026",
+          "platforms": "* PC"
+        },
+        "priorIdentity": {
+          "resourceId": "desktop-explorer",
+          "numericId": null,
+          "url": "https://www.metacritic.com/game/desktop-explorer/",
+          "editionScope": "Reviewed store product / Metacritic work relationship",
+          "evidence": [
+            {
+              "kind": "store-app-id-crosslink",
+              "steamAppId": 2527160,
+              "url": "https://store.steampowered.com/api/appdetails?appids=2527160&l=english",
+              "referenceUrl": "https://www.metacritic.com/game/pc/desktop-explorer?ftag=MCD-06-10aaa1f",
+              "retrievedAt": "2026-10-06T11:25:17.948Z"
+            }
+          ]
+        },
+        "researchDate": "2026-10-08"
+      }
+    },
+    {
+      "steamAppId": 293760,
+      "status": "approved",
+      "metacriticId": "automation",
+      "numericId": null,
+      "reviewedAt": "2026-10-09T17:48:10.772813Z",
+      "evidenceURLs": [
+        "https://store.steampowered.com/app/293760/",
+        "https://www.metacritic.com/game/automation/",
+        "https://store.steampowered.com/api/appdetails?appids=293760&l=english"
+      ],
+      "rationale": "PC puanı bulgusu. Kalıcı Steam uygulama ID’si; geliştirici, çıkış dönemi ve temel eser kapsamı incelendi. Yama/port ayrı oyun sayılmadı; farklı pazarlanan remake/remasterlar birleştirilmedi.",
+      "reviewedMetadata": {
+        "catalogName": "Automation - The Car Company Tycoon Game",
+        "steamAppId": 293760,
+        "storeDevelopers": [
+          "Camshaft Software Ltd"
+        ],
+        "storeRelease": {
+          "coming_soon": false,
+          "date": "Mar 12, 2015"
+        },
+        "metacriticResourceId": "automation",
+        "primaryMetadata": {
+          "url": "https://www.metacritic.com/game/automation/",
+          "ref": "turn304view2",
+          "developer": "Camshaft Software",
+          "release": "Mar 12, 2015",
+          "platforms": "* PC"
+        },
+        "priorIdentity": null,
+        "researchDate": "2026-10-08"
+      }
+    },
+    {
+      "steamAppId": 2552450,
+      "status": "approved",
+      "metacriticId": "kingdom-hearts-iii-plus-re-mind",
+      "numericId": null,
+      "reviewedAt": "2026-10-09T17:48:10.772813Z",
+      "evidenceURLs": [
+        "https://store.steampowered.com/app/2552450/",
+        "https://www.metacritic.com/game/kingdom-hearts-iii-plus-re-mind/",
+        "https://store.steampowered.com/api/appdetails?appids=2552450&l=english"
+      ],
+      "rationale": "PC + Re Mind puanı seçildi; temel KHIII PS4 puanı seçilmedi. Kalıcı Steam uygulama ID’si; geliştirici, çıkış dönemi ve temel eser kapsamı incelendi. Yama/port ayrı oyun sayılmadı; farklı pazarlanan remake/remasterlar birleştirilmedi.",
+      "reviewedMetadata": {
+        "catalogName": "KINGDOM HEARTS III + Re Mind (DLC)",
+        "steamAppId": 2552450,
+        "storeDevelopers": [
+          "Square Enix"
+        ],
+        "storeRelease": {
+          "coming_soon": false,
+          "date": "13 Jun, 2024"
+        },
+        "metacriticResourceId": "kingdom-hearts-iii-plus-re-mind",
+        "primaryMetadata": null,
+        "priorIdentity": {
+          "resourceId": "kingdom-hearts-iii",
+          "numericId": "1300185807",
+          "url": "https://www.metacritic.com/game/kingdom-hearts-iii/",
+          "editionScope": "Reviewed store product / Metacritic work relationship",
+          "evidence": [
+            {
+              "kind": "wikidata-external-ids",
+              "qid": "Q3265748",
+              "steamAppId": 2552450,
+              "metacriticId": "kingdom-hearts-iii",
+              "numericId": "1300185807",
+              "url": "http://www.wikidata.org/entity/Q3265748",
+              "retrievedAt": "2026-10-06T11:25:22.498Z"
+            }
+          ]
+        },
+        "researchDate": "2026-10-08"
+      }
+    },
+    {
+      "steamAppId": 3061570,
+      "status": "approved",
+      "metacriticId": "persona-5-the-phantom-x",
+      "numericId": null,
+      "reviewedAt": "2026-10-09T17:48:10.772813Z",
+      "evidenceURLs": [
+        "https://store.steampowered.com/app/3061570/",
+        "https://www.metacritic.com/game/persona-5-the-phantom-x/",
+        "https://store.steampowered.com/api/appdetails?appids=3061570&l=english"
+      ],
+      "rationale": "PC puanı bulgusu. Kalıcı Steam uygulama ID’si; geliştirici, çıkış dönemi ve temel eser kapsamı incelendi. Yama/port ayrı oyun sayılmadı; farklı pazarlanan remake/remasterlar birleştirilmedi.",
+      "reviewedMetadata": {
+        "catalogName": "Persona5: The Phantom X",
+        "steamAppId": 3061570,
+        "storeDevelopers": [
+          "ATLUS",
+          "SEGA",
+          "Perfect World"
+        ],
+        "storeRelease": {
+          "coming_soon": false,
+          "date": "Jun 25, 2025"
+        },
+        "metacriticResourceId": "persona-5-the-phantom-x",
+        "primaryMetadata": {
+          "url": "https://www.metacritic.com/game/persona-5-the-phantom-x/",
+          "ref": "turn312search4",
+          "developer": "Atlus",
+          "release": "Jun 25, 2025"
+        },
+        "priorIdentity": null,
+        "researchDate": "2026-10-08"
+      }
+    },
+    {
+      "steamAppId": 3326230,
+      "status": "approved",
+      "metacriticId": "hozy",
+      "numericId": null,
+      "reviewedAt": "2026-10-09T17:48:10.772813Z",
+      "evidenceURLs": [
+        "https://store.steampowered.com/app/3326230/",
+        "https://www.metacritic.com/game/hozy/",
+        "https://store.steampowered.com/api/appdetails?appids=3326230&l=english"
+      ],
+      "rationale": "PC puanı bulgusu. Kalıcı Steam uygulama ID’si; geliştirici, çıkış dönemi ve temel eser kapsamı incelendi. Yama/port ayrı oyun sayılmadı; farklı pazarlanan remake/remasterlar birleştirilmedi.",
+      "reviewedMetadata": {
+        "catalogName": "Hozy",
+        "steamAppId": 3326230,
+        "storeDevelopers": [
+          "Come On Studio"
+        ],
+        "storeRelease": {
+          "coming_soon": false,
+          "date": "Mar 30, 2026"
+        },
+        "metacriticResourceId": "hozy",
+        "primaryMetadata": {
+          "url": "https://www.metacritic.com/game/hozy/",
+          "ref": "turn312search2",
+          "developer": "Come On Studio",
+          "release": "Mar 30, 2026"
+        },
+        "priorIdentity": null,
+        "researchDate": "2026-10-08"
+      }
+    },
+    {
+      "steamAppId": 2004680,
+      "status": "approved",
+      "metacriticId": "voidling-bound",
+      "numericId": null,
+      "reviewedAt": "2026-10-09T17:48:10.772813Z",
+      "evidenceURLs": [
+        "https://store.steampowered.com/app/2004680/",
+        "https://www.metacritic.com/game/voidling-bound/",
+        "https://store.steampowered.com/api/appdetails?appids=2004680&l=english"
+      ],
+      "rationale": "Sayısal kullanıcı puanı var; seçilen platform doğrulanamadı. Kalıcı Steam uygulama ID’si; geliştirici, çıkış dönemi ve temel eser kapsamı incelendi. Yama/port ayrı oyun sayılmadı; farklı pazarlanan remake/remasterlar birleştirilmedi.",
+      "reviewedMetadata": {
+        "catalogName": "Voidling Bound",
+        "steamAppId": 2004680,
+        "storeDevelopers": [
+          "Hatchery Games"
+        ],
+        "storeRelease": {
+          "coming_soon": false,
+          "date": "Jun 9, 2026"
+        },
+        "metacriticResourceId": "voidling-bound",
+        "primaryMetadata": {
+          "url": "https://www.metacritic.com/game/voidling-bound/",
+          "ref": "turn312search3",
+          "developer": "Hatchery Games",
+          "release": "Jun 9, 2026",
+          "platforms": "* PC\n  * Nintendo Switch 2\n  * PlayStation 5\n  * Xbox Series X"
+        },
+        "priorIdentity": null,
+        "researchDate": "2026-10-08"
+      }
+    },
+    {
+      "steamAppId": 2893570,
+      "status": "approved",
+      "metacriticId": "dragon-quest-i-and-ii-hd-2d-remake",
+      "numericId": null,
+      "reviewedAt": "2026-10-09T17:48:10.772813Z",
+      "evidenceURLs": [
+        "https://store.steampowered.com/app/2893570/",
+        "https://www.metacritic.com/game/dragon-quest-i-and-ii-hd-2d-remake/",
+        "https://store.steampowered.com/api/appdetails?appids=2893570&l=english"
+      ],
+      "rationale": "Başka platform puanı var; güncel PC puanının yokluğu kesinleşmedi. Kalıcı Steam uygulama ID’si; geliştirici, çıkış dönemi ve temel eser kapsamı incelendi. Yama/port ayrı oyun sayılmadı; farklı pazarlanan remake/remasterlar birleştirilmedi.",
+      "reviewedMetadata": {
+        "catalogName": "DRAGON QUEST I & II HD-2D Remake",
+        "steamAppId": 2893570,
+        "storeDevelopers": [
+          "Square Enix",
+          "ARTDINK"
+        ],
+        "storeRelease": {
+          "coming_soon": false,
+          "date": "30 Oct, 2025"
+        },
+        "metacriticResourceId": "dragon-quest-i-and-ii-hd-2d-remake",
+        "primaryMetadata": {
+          "url": "https://www.metacritic.com/game/dragon-quest-i-and-ii-hd-2d-remake/",
+          "ref": "turn312search0",
+          "developer": "Artdink",
+          "release": "Oct 30, 2025",
+          "platforms": "* Nintendo Switch\n  * PC\n  * PlayStation 5\n  * Nintendo Switch 2\n  * Xbox Series X"
+        },
+        "priorIdentity": null,
+        "researchDate": "2026-10-08"
+      }
+    }
+  ],
+  "investigations": [
+    {
+      "gameId": "steam-2569760",
+      "status": "score_accepted",
+      "sourceUrl": "https://www.metacritic.com/game/the-mound-omen-of-cthulhu/",
+      "summary": "Sayısal kullanıcı puanı var; seçilen platform doğrulanamadı.",
+      "platform": null,
+      "liveScoreVerified": false
+    },
+    {
+      "gameId": "steam-2209900",
+      "status": "score_accepted",
+      "sourceUrl": "https://www.metacritic.com/game/moonlight-peaks/",
+      "summary": "Sayısal kullanıcı puanı var; seçilen platform doğrulanamadı.",
+      "platform": null,
+      "liveScoreVerified": false
+    },
+    {
+      "gameId": "steam-339340",
+      "status": "score_accepted",
+      "sourceUrl": "https://www.metacritic.com/game/resident-evil-0-hd-remaster/user-reviews/?platform=pc",
+      "summary": "Steam 339340/2016, HD Remaster kaydıyla eşleşiyor. 2002 GameCube puanı dışlandı.",
+      "platform": "PC",
+      "liveScoreVerified": false
+    },
+    {
+      "gameId": "steam-2527160",
+      "status": "score_accepted",
+      "sourceUrl": "https://www.metacritic.com/game/desktop-explorer/",
+      "summary": "PC puanı bulgusu.",
+      "platform": "PC",
+      "liveScoreVerified": false
+    },
+    {
+      "gameId": "steam-293760",
+      "status": "score_accepted",
+      "sourceUrl": "https://www.metacritic.com/game/automation/",
+      "summary": "PC puanı bulgusu.",
+      "platform": "PC",
+      "liveScoreVerified": false
+    },
+    {
+      "gameId": "steam-2552450",
+      "status": "score_accepted",
+      "sourceUrl": "https://www.metacritic.com/game/kingdom-hearts-iii-plus-re-mind/user-reviews/?platform=pc",
+      "summary": "PC + Re Mind puanı seçildi; temel KHIII PS4 puanı seçilmedi.",
+      "platform": "PC",
+      "liveScoreVerified": false
+    },
+    {
+      "gameId": "steam-3061570",
+      "status": "score_accepted",
+      "sourceUrl": "https://www.metacritic.com/game/persona-5-the-phantom-x/user-reviews/",
+      "summary": "PC puanı bulgusu.",
+      "platform": "PC",
+      "liveScoreVerified": false
+    },
+    {
+      "gameId": "steam-3326230",
+      "status": "score_accepted",
+      "sourceUrl": "https://www.metacritic.com/game/hozy/",
+      "summary": "PC puanı bulgusu.",
+      "platform": "PC",
+      "liveScoreVerified": false
+    },
+    {
+      "gameId": "steam-2004680",
+      "status": "score_accepted",
+      "sourceUrl": "https://www.metacritic.com/game/voidling-bound/",
+      "summary": "Sayısal kullanıcı puanı var; seçilen platform doğrulanamadı.",
+      "platform": null,
+      "liveScoreVerified": false
+    },
+    {
+      "gameId": "steam-2893570",
+      "status": "score_accepted",
+      "sourceUrl": "https://www.metacritic.com/game/dragon-quest-i-and-ii-hd-2d-remake/user-reviews/",
+      "summary": "Başka platform puanı var; güncel PC puanının yokluğu kesinleşmedi.",
+      "platform": "PlayStation 5",
+      "liveScoreVerified": false
+    }
+  ]
+}

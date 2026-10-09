@@ -210,11 +210,632 @@
           "freshness": "Erişilen kaynak önbelleği veya kullanıcı görüntüsü; canlı puan ölçümü değil."
         }
       ]
+    },
+    {
+      "batchId": "direct-2026-10-09-02",
+      "checkedAt": "2026-10-09T17:48:10.772813Z",
+      "inputPath": "data/metacritic-direct-batches/2026-10-09-02.json",
+      "added": [
+        {
+          "gameId": "steam-4705510",
+          "recordId": "mc-user:reviewed:4705510:iOS:2026-10-09:research361",
+          "score": 6.9,
+          "platform": "iOS",
+          "userRatings": 48
+        },
+        {
+          "gameId": "steam-1962663",
+          "recordId": "mc-user:reviewed:1962663:PC:2026-10-09:research361",
+          "score": 2.6,
+          "platform": "PC",
+          "userRatings": null
+        },
+        {
+          "gameId": "steam-2057760",
+          "recordId": "mc-user:reviewed:2057760:unknown:2026-10-09:research361",
+          "score": 8.1,
+          "platform": null,
+          "userRatings": 80
+        },
+        {
+          "gameId": "steam-3079210",
+          "recordId": "mc-user:reviewed:3079210:unknown:2026-10-09:research361",
+          "score": 5.4,
+          "platform": null,
+          "userRatings": 21
+        },
+        {
+          "gameId": "steam-1384160",
+          "recordId": "mc-user:reviewed:1384160:PC:2026-10-09:research361",
+          "score": 7.4,
+          "platform": "PC",
+          "userRatings": null
+        },
+        {
+          "gameId": "steam-1665460",
+          "recordId": "mc-user:reviewed:1665460:XboxSeriesX:2026-10-09:research361",
+          "score": 4.3,
+          "platform": "Xbox Series X",
+          "userRatings": 66
+        },
+        {
+          "gameId": "steam-2863680",
+          "recordId": "mc-user:reviewed:2863680:PC:2026-10-09:research361",
+          "score": 6.3,
+          "platform": "PC",
+          "userRatings": 82
+        },
+        {
+          "gameId": "steam-2964090",
+          "recordId": "mc-user:reviewed:2964090:unknown:2026-10-09:research361",
+          "score": 6.4,
+          "platform": null,
+          "userRatings": 96
+        },
+        {
+          "gameId": "steam-2244210",
+          "recordId": "mc-user:reviewed:2244210:unknown:2026-10-09:research361",
+          "score": 5.7,
+          "platform": null,
+          "userRatings": 83
+        },
+        {
+          "gameId": "steam-1805110",
+          "recordId": "mc-user:reviewed:1805110:unknown:2026-10-09:research361",
+          "score": 5.2,
+          "platform": null,
+          "userRatings": 9
+        }
+      ],
+      "investigations": [
+        {
+          "gameId": "steam-4705510",
+          "status": "score_accepted",
+          "sourceUrl": "https://www.metacritic.com/game/happy-wheels/user-reviews/",
+          "summary": "Jim Bonacci/Fancy Force aynı temel oyunun Steam portunu tanımlıyor; puan iOS kaydından. PC puanının yokluğu kesinleşmedi.",
+          "platform": "iOS",
+          "liveScoreVerified": false
+        },
+        {
+          "gameId": "steam-1962663",
+          "status": "score_accepted",
+          "sourceUrl": "https://www.metacritic.com/game/call-of-duty-warzone/",
+          "summary": "MC kökü 2022 Warzone 2.0’ı kapsıyor. PC için 2025-10-07 tarihî 2,6 kaydı ayrıldı; kök sayfanın 4,2 puanının platformu doğrulanamadı.",
+          "platform": "PC",
+          "liveScoreVerified": false
+        },
+        {
+          "gameId": "steam-2057760",
+          "status": "score_accepted",
+          "sourceUrl": "https://www.metacritic.com/game/esoteric-ebb/",
+          "summary": "Sayısal kullanıcı puanı var; seçilen platform doğrulanamadı.",
+          "platform": null,
+          "liveScoreVerified": false
+        },
+        {
+          "gameId": "steam-3079210",
+          "status": "score_accepted",
+          "sourceUrl": "https://www.metacritic.com/game/hell-let-loose-vietnam/",
+          "summary": "Sayısal kullanıcı puanı var; seçilen platform doğrulanamadı.",
+          "platform": null,
+          "liveScoreVerified": false
+        },
+        {
+          "gameId": "steam-1384160",
+          "status": "score_accepted",
+          "sourceUrl": "https://www.metacritic.com/game/guilty-gear--strive-/",
+          "summary": "Raw veri kümesinde PC 7,4; Arc System Works/2021 eşleşiyor. Bugünkü PC puanı olarak doğrulanmadı.",
+          "platform": "PC",
+          "liveScoreVerified": false
+        },
+        {
+          "gameId": "steam-1665460",
+          "status": "score_accepted",
+          "sourceUrl": "https://www.metacritic.com/game/efootball-2026/user-reviews/",
+          "summary": "Konami arşivi 2026/v5.0’ın aynı oyunun sezon güncellemesi olduğunu doğruluyor. Bulgu 2026 dönemine ait; yeni sezonun güncel puanı diye sunulamaz.",
+          "platform": "Xbox Series X",
+          "liveScoreVerified": false
+        },
+        {
+          "gameId": "steam-2863680",
+          "status": "score_accepted",
+          "sourceUrl": "https://www.metacritic.com/game/zero-parades-for-dead-spies/user-reviews/?platform=pc",
+          "summary": "Steam açıklaması Director’s Cut’ın mevcut sahipler için ücretsiz güncelleme olduğunu doğruluyor.",
+          "platform": "PC",
+          "liveScoreVerified": false
+        },
+        {
+          "gameId": "steam-2964090",
+          "status": "score_accepted",
+          "sourceUrl": "https://www.metacritic.com/game/world-of-warships-legends/",
+          "summary": "Sayısal kullanıcı puanı var; seçilen platform doğrulanamadı.",
+          "platform": null,
+          "liveScoreVerified": false
+        },
+        {
+          "gameId": "steam-2244210",
+          "status": "score_accepted",
+          "sourceUrl": "https://www.metacritic.com/game/echoes-of-aincrad/",
+          "summary": "Sayısal kullanıcı puanı var; seçilen platform doğrulanamadı.",
+          "platform": null,
+          "liveScoreVerified": false
+        },
+        {
+          "gameId": "steam-1805110",
+          "status": "score_accepted",
+          "sourceUrl": "https://www.metacritic.com/game/solarpunk/",
+          "summary": "Sayısal kullanıcı puanı var; seçilen platform doğrulanamadı.",
+          "platform": null,
+          "liveScoreVerified": false
+        }
+      ]
+    },
+    {
+      "batchId": "direct-2026-10-09-03",
+      "checkedAt": "2026-10-09T17:48:10.772813Z",
+      "inputPath": "data/metacritic-direct-batches/2026-10-09-03.json",
+      "added": [
+        {
+          "gameId": "steam-2569760",
+          "recordId": "mc-user:reviewed:2569760:unknown:2026-10-09:research361",
+          "score": 7.3,
+          "platform": null,
+          "userRatings": 8
+        },
+        {
+          "gameId": "steam-2209900",
+          "recordId": "mc-user:reviewed:2209900:unknown:2026-10-09:research361",
+          "score": 8,
+          "platform": null,
+          "userRatings": 18
+        },
+        {
+          "gameId": "steam-339340",
+          "recordId": "mc-user:reviewed:339340:PC:2026-10-09:research361",
+          "score": 7.5,
+          "platform": "PC",
+          "userRatings": 253
+        },
+        {
+          "gameId": "steam-2527160",
+          "recordId": "mc-user:reviewed:2527160:PC:2026-10-09:research361",
+          "score": 7.3,
+          "platform": "PC",
+          "userRatings": 7
+        },
+        {
+          "gameId": "steam-293760",
+          "recordId": "mc-user:reviewed:293760:PC:2026-10-09:research361",
+          "score": 8.2,
+          "platform": "PC",
+          "userRatings": 5
+        },
+        {
+          "gameId": "steam-2552450",
+          "recordId": "mc-user:reviewed:2552450:PC:2026-10-09:research361",
+          "score": 7.3,
+          "platform": "PC",
+          "userRatings": 135
+        },
+        {
+          "gameId": "steam-3061570",
+          "recordId": "mc-user:reviewed:3061570:PC:2026-10-09:research361",
+          "score": 6.1,
+          "platform": "PC",
+          "userRatings": 77
+        },
+        {
+          "gameId": "steam-3326230",
+          "recordId": "mc-user:reviewed:3326230:PC:2026-10-09:research361",
+          "score": 6.8,
+          "platform": "PC",
+          "userRatings": 17
+        },
+        {
+          "gameId": "steam-2004680",
+          "recordId": "mc-user:reviewed:2004680:unknown:2026-10-09:research361",
+          "score": 8.4,
+          "platform": null,
+          "userRatings": 7
+        },
+        {
+          "gameId": "steam-2893570",
+          "recordId": "mc-user:reviewed:2893570:PlayStation5:2026-10-09:research361",
+          "score": 7.1,
+          "platform": "PlayStation 5",
+          "userRatings": 99
+        }
+      ],
+      "investigations": [
+        {
+          "gameId": "steam-2569760",
+          "status": "score_accepted",
+          "sourceUrl": "https://www.metacritic.com/game/the-mound-omen-of-cthulhu/",
+          "summary": "Sayısal kullanıcı puanı var; seçilen platform doğrulanamadı.",
+          "platform": null,
+          "liveScoreVerified": false
+        },
+        {
+          "gameId": "steam-2209900",
+          "status": "score_accepted",
+          "sourceUrl": "https://www.metacritic.com/game/moonlight-peaks/",
+          "summary": "Sayısal kullanıcı puanı var; seçilen platform doğrulanamadı.",
+          "platform": null,
+          "liveScoreVerified": false
+        },
+        {
+          "gameId": "steam-339340",
+          "status": "score_accepted",
+          "sourceUrl": "https://www.metacritic.com/game/resident-evil-0-hd-remaster/user-reviews/?platform=pc",
+          "summary": "Steam 339340/2016, HD Remaster kaydıyla eşleşiyor. 2002 GameCube puanı dışlandı.",
+          "platform": "PC",
+          "liveScoreVerified": false
+        },
+        {
+          "gameId": "steam-2527160",
+          "status": "score_accepted",
+          "sourceUrl": "https://www.metacritic.com/game/desktop-explorer/",
+          "summary": "PC puanı bulgusu.",
+          "platform": "PC",
+          "liveScoreVerified": false
+        },
+        {
+          "gameId": "steam-293760",
+          "status": "score_accepted",
+          "sourceUrl": "https://www.metacritic.com/game/automation/",
+          "summary": "PC puanı bulgusu.",
+          "platform": "PC",
+          "liveScoreVerified": false
+        },
+        {
+          "gameId": "steam-2552450",
+          "status": "score_accepted",
+          "sourceUrl": "https://www.metacritic.com/game/kingdom-hearts-iii-plus-re-mind/user-reviews/?platform=pc",
+          "summary": "PC + Re Mind puanı seçildi; temel KHIII PS4 puanı seçilmedi.",
+          "platform": "PC",
+          "liveScoreVerified": false
+        },
+        {
+          "gameId": "steam-3061570",
+          "status": "score_accepted",
+          "sourceUrl": "https://www.metacritic.com/game/persona-5-the-phantom-x/user-reviews/",
+          "summary": "PC puanı bulgusu.",
+          "platform": "PC",
+          "liveScoreVerified": false
+        },
+        {
+          "gameId": "steam-3326230",
+          "status": "score_accepted",
+          "sourceUrl": "https://www.metacritic.com/game/hozy/",
+          "summary": "PC puanı bulgusu.",
+          "platform": "PC",
+          "liveScoreVerified": false
+        },
+        {
+          "gameId": "steam-2004680",
+          "status": "score_accepted",
+          "sourceUrl": "https://www.metacritic.com/game/voidling-bound/",
+          "summary": "Sayısal kullanıcı puanı var; seçilen platform doğrulanamadı.",
+          "platform": null,
+          "liveScoreVerified": false
+        },
+        {
+          "gameId": "steam-2893570",
+          "status": "score_accepted",
+          "sourceUrl": "https://www.metacritic.com/game/dragon-quest-i-and-ii-hd-2d-remake/user-reviews/",
+          "summary": "Başka platform puanı var; güncel PC puanının yokluğu kesinleşmedi.",
+          "platform": "PlayStation 5",
+          "liveScoreVerified": false
+        }
+      ]
+    },
+    {
+      "batchId": "direct-2026-10-09-04",
+      "checkedAt": "2026-10-09T17:48:10.772813Z",
+      "inputPath": "data/metacritic-direct-batches/2026-10-09-04.json",
+      "added": [
+        {
+          "gameId": "steam-2928600",
+          "recordId": "mc-user:reviewed:2928600:PlayStation5:2026-10-09:research361",
+          "score": 7,
+          "platform": "PlayStation 5",
+          "userRatings": 69
+        },
+        {
+          "gameId": "steam-3124340",
+          "recordId": "mc-user:reviewed:3124340:PC:2026-10-09:research361",
+          "score": 7.9,
+          "platform": "PC",
+          "userRatings": 14
+        },
+        {
+          "gameId": "steam-611790",
+          "recordId": "mc-user:reviewed:611790:PC:2026-10-09:research361",
+          "score": 5.2,
+          "platform": "PC",
+          "userRatings": 23
+        },
+        {
+          "gameId": "steam-4125930",
+          "recordId": "mc-user:reviewed:4125930:iOS:2026-10-09:research361",
+          "score": 7.2,
+          "platform": "iOS",
+          "userRatings": 44
+        },
+        {
+          "gameId": "steam-2162800",
+          "recordId": "mc-user:reviewed:2162800:PC:2026-10-09:research361",
+          "score": 8.6,
+          "platform": "PC",
+          "userRatings": 7
+        },
+        {
+          "gameId": "steam-3556750",
+          "recordId": "mc-user:reviewed:3556750:PC:2026-10-09:research361",
+          "score": 7.4,
+          "platform": "PC",
+          "userRatings": 17
+        },
+        {
+          "gameId": "steam-1761390",
+          "recordId": "mc-user:reviewed:1761390:PC:2026-10-09:research361",
+          "score": 8.3,
+          "platform": "PC",
+          "userRatings": 38
+        },
+        {
+          "gameId": "steam-2634890",
+          "recordId": "mc-user:reviewed:2634890:PlayStation4:2026-10-09:research361",
+          "score": 8.6,
+          "platform": "PlayStation 4",
+          "userRatings": 67
+        },
+        {
+          "gameId": "steam-1845250",
+          "recordId": "mc-user:reviewed:1845250:PC:2026-10-09:research361",
+          "score": 9.2,
+          "platform": "PC",
+          "userRatings": 9
+        },
+        {
+          "gameId": "steam-2396980",
+          "recordId": "mc-user:reviewed:2396980:PC:2026-10-09:research361",
+          "score": 8.2,
+          "platform": "PC",
+          "userRatings": 47
+        }
+      ],
+      "investigations": [
+        {
+          "gameId": "steam-2928600",
+          "status": "score_accepted",
+          "sourceUrl": "https://www.metacritic.com/game/demon-slayer-kimetsu-no-yaiba-the-hinokami-2/user-reviews/",
+          "summary": "Başka platform puanı var; güncel PC puanının yokluğu kesinleşmedi.",
+          "platform": "PlayStation 5",
+          "liveScoreVerified": false
+        },
+        {
+          "gameId": "steam-3124340",
+          "status": "score_accepted",
+          "sourceUrl": "https://www.metacritic.com/game/demeo-x-dungeons-and-dragons-battlemarked/user-reviews/?platform=pc",
+          "summary": "PC puanı bulgusu.",
+          "platform": "PC",
+          "liveScoreVerified": false
+        },
+        {
+          "gameId": "steam-611790",
+          "status": "score_accepted",
+          "sourceUrl": "https://www.metacritic.com/game/house-party-2017/",
+          "summary": "House Party (2017) adı, Eek! Games aynı oyun. Erken erişim/tam çıkış tarih farkı ayrı oyun sayılmadı.",
+          "platform": "PC",
+          "liveScoreVerified": false
+        },
+        {
+          "gameId": "steam-4125930",
+          "status": "score_accepted",
+          "sourceUrl": "https://www.metacritic.com/game/punishing-gray-raven/user-reviews/",
+          "summary": "Başka platform puanı var; güncel PC puanının yokluğu kesinleşmedi.",
+          "platform": "iOS",
+          "liveScoreVerified": false
+        },
+        {
+          "gameId": "steam-2162800",
+          "status": "score_accepted",
+          "sourceUrl": "https://www.metacritic.com/game/shapez-2-factory/",
+          "summary": "PC puanı bulgusu.",
+          "platform": "PC",
+          "liveScoreVerified": false
+        },
+        {
+          "gameId": "steam-3556750",
+          "status": "score_accepted",
+          "sourceUrl": "https://www.metacritic.com/game/warhammer-40000-dawn-of-war-definitive-edition/",
+          "summary": "PC puanı bulgusu.",
+          "platform": "PC",
+          "liveScoreVerified": false
+        },
+        {
+          "gameId": "steam-1761390",
+          "status": "score_accepted",
+          "sourceUrl": "https://www.metacritic.com/game/hatsune-miku-project-diva-megamix-plus/",
+          "summary": "PC puanı bulgusu.",
+          "platform": "PC",
+          "liveScoreVerified": false
+        },
+        {
+          "gameId": "steam-2634890",
+          "status": "score_accepted",
+          "sourceUrl": "https://www.metacritic.com/game/marvel-vs-capcom-fighting-collection-arcade/user-reviews/",
+          "summary": "Başka platform puanı var; güncel PC puanının yokluğu kesinleşmedi.",
+          "platform": "PlayStation 4",
+          "liveScoreVerified": false
+        },
+        {
+          "gameId": "steam-1845250",
+          "status": "score_accepted",
+          "sourceUrl": "https://www.metacritic.com/game/rubinite/",
+          "summary": "PC puanı bulgusu.",
+          "platform": "PC",
+          "liveScoreVerified": false
+        },
+        {
+          "gameId": "steam-2396980",
+          "status": "score_accepted",
+          "sourceUrl": "https://www.metacritic.com/game/fate-stay-night-remastered/user-reviews/?platform=pc",
+          "summary": "PC puanı bulgusu.",
+          "platform": "PC",
+          "liveScoreVerified": false
+        }
+      ]
+    },
+    {
+      "batchId": "direct-2026-10-09-05",
+      "checkedAt": "2026-10-09T17:48:10.772813Z",
+      "inputPath": "data/metacritic-direct-batches/2026-10-09-05.json",
+      "added": [
+        {
+          "gameId": "steam-3097300",
+          "recordId": "mc-user:reviewed:3097300:PC:2026-10-09:research361",
+          "score": 8.6,
+          "platform": "PC",
+          "userRatings": 7
+        },
+        {
+          "gameId": "steam-1663850",
+          "recordId": "mc-user:reviewed:1663850:PC:2026-10-09:research361",
+          "score": 7.2,
+          "platform": "PC",
+          "userRatings": 277
+        },
+        {
+          "gameId": "steam-1230140",
+          "recordId": "mc-user:reviewed:1230140:unknown:2026-10-09:research361",
+          "score": 8.4,
+          "platform": null,
+          "userRatings": 9
+        },
+        {
+          "gameId": "steam-3370870",
+          "recordId": "mc-user:reviewed:3370870:PC:2026-10-09:research361",
+          "score": 7.5,
+          "platform": "PC",
+          "userRatings": 12
+        },
+        {
+          "gameId": "steam-577480",
+          "recordId": "mc-user:reviewed:577480:PC:2026-10-09:research361",
+          "score": 8.6,
+          "platform": "PC",
+          "userRatings": 13
+        },
+        {
+          "gameId": "steam-668350",
+          "recordId": "mc-user:reviewed:668350:PC:2026-10-09:research361",
+          "score": 8.6,
+          "platform": "PC",
+          "userRatings": 5
+        },
+        {
+          "gameId": "steam-1657740",
+          "recordId": "mc-user:reviewed:1657740:unknown:2026-10-09:research361",
+          "score": 8.2,
+          "platform": null,
+          "userRatings": 10
+        },
+        {
+          "gameId": "steam-250320",
+          "recordId": "mc-user:reviewed:250320:PC:2026-10-09:research361",
+          "score": 8.6,
+          "platform": "PC",
+          "userRatings": null
+        },
+        {
+          "gameId": "steam-312990",
+          "recordId": "mc-user:reviewed:312990:PC:2026-10-09:research361",
+          "score": 7.2,
+          "platform": "PC",
+          "userRatings": 63
+        }
+      ],
+      "investigations": [
+        {
+          "gameId": "steam-3097300",
+          "status": "score_accepted",
+          "sourceUrl": "https://www.metacritic.com/game/creature-kitchen/user-reviews/?platform=pc",
+          "summary": "PC puanı bulgusu.",
+          "platform": "PC",
+          "liveScoreVerified": false
+        },
+        {
+          "gameId": "steam-1663850",
+          "status": "score_accepted",
+          "sourceUrl": "https://www.metacritic.com/game/replaced/user-reviews/?platform=pc",
+          "summary": "PC puanı bulgusu.",
+          "platform": "PC",
+          "liveScoreVerified": false
+        },
+        {
+          "gameId": "steam-1230140",
+          "status": "score_accepted",
+          "sourceUrl": "https://www.metacritic.com/game/atri-my-dear-moments-/",
+          "summary": "Sayısal kullanıcı puanı var; seçilen platform doğrulanamadı.",
+          "platform": null,
+          "liveScoreVerified": false
+        },
+        {
+          "gameId": "steam-3370870",
+          "status": "score_accepted",
+          "sourceUrl": "https://www.metacritic.com/game/berry-bury-berry/",
+          "summary": "PC puanı bulgusu.",
+          "platform": "PC",
+          "liveScoreVerified": false
+        },
+        {
+          "gameId": "steam-577480",
+          "status": "score_accepted",
+          "sourceUrl": "https://www.metacritic.com/game/higurashi-when-they-cry-kai-chapter-5-meakashi/user-reviews/",
+          "summary": "Chapter 5/2017/07th Expansion; Steam 577480 ile bölüm ve çıkış tarihi eşleşiyor.",
+          "platform": "PC",
+          "liveScoreVerified": false
+        },
+        {
+          "gameId": "steam-668350",
+          "status": "score_accepted",
+          "sourceUrl": "https://www.metacritic.com/game/higurashi-when-they-cry-hou-chapter-6/",
+          "summary": "Chapter 6/2018/07th Expansion; Steam 668350 ile bölüm ve çıkış tarihi eşleşiyor.",
+          "platform": "PC",
+          "liveScoreVerified": false
+        },
+        {
+          "gameId": "steam-1657740",
+          "status": "score_accepted",
+          "sourceUrl": "https://www.metacritic.com/game/mr-sleepy-man/",
+          "summary": "Sayısal kullanıcı puanı var; seçilen platform doğrulanamadı.",
+          "platform": null,
+          "liveScoreVerified": false
+        },
+        {
+          "gameId": "steam-250320",
+          "status": "score_accepted",
+          "sourceUrl": "https://www.metacritic.com/game/the-wolf-among-us/user-reviews/?platform=pc",
+          "summary": "Telltale’in beş bölümlük tam oyunu. Episode 3 dışlandı. Yuvarlatılmış 1,3k bilgisi kesin oy sayısına çevrilmedi.",
+          "platform": "PC",
+          "liveScoreVerified": false
+        },
+        {
+          "gameId": "steam-312990",
+          "status": "score_accepted",
+          "sourceUrl": "https://www.metacritic.com/game/the-expendabros-broforce-the-expendables-missions/",
+          "summary": "Broforce: The Expendables Missions uzun başlığı aynı Free Lives/2014 oyununu kapsıyor.",
+          "platform": "PC",
+          "liveScoreVerified": false
+        }
+      ]
     }
   ],
-  "scores": 962,
-  "remainingMissing": 361,
-  "verifiedPcScores": 708,
-  "verifiedOtherPlatformScores": 2,
-  "platformUnknown": 252
+  "scores": 1001,
+  "remainingMissing": 322,
+  "verifiedPcScores": 731,
+  "verifiedOtherPlatformScores": 8,
+  "platformUnknown": 262
 }

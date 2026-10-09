@@ -2,27 +2,27 @@
   "schemaVersion": 2,
   "catalogGames": 1323,
   "previousUserScores": 777,
-  "userScores": 962,
-  "distinctScoreRecords": 962,
+  "userScores": 1001,
+  "distinctScoreRecords": 1001,
   "initiallyMissing": 546,
   "initiallyMissingAudited": 546,
-  "recoveredUserScores": 185,
+  "recoveredUserScores": 224,
   "removedInvalidMappings": 0,
-  "remainingMissing": 361,
-  "numericIdMappings": 681,
+  "remainingMissing": 322,
+  "numericIdMappings": 678,
   "sourceSnapshotDate": "2026-10-05",
-  "reviewedPrimaryScores": 708,
+  "reviewedPrimaryScores": 747,
   "sourceCoverage": {
     "secondaryDatasetScores": 252,
     "historicalWikidataScores": 2,
-    "reviewedPrimaryScores": 708,
+    "reviewedPrimaryScores": 747,
     "missingByStatus": {
-      "unverified_identity": 289,
-      "missing_score": 65,
-      "identity_conflict": 7
+      "unverified_identity": 265,
+      "missing_score": 52,
+      "identity_conflict": 5
     },
-    "missingWithoutSecondaryFact": 352,
-    "missingWithUnusableSecondaryFact": 9,
+    "missingWithoutSecondaryFact": 317,
+    "missingWithUnusableSecondaryFact": 5,
     "notice": "Missing from imported sources does not establish absence of a Metacritic user score. Primary cached observations retain their crawl-age labels; retrieval is not a live measurement."
   },
   "recovered": [
@@ -186,6 +186,13 @@
       "name": "HITMAN World of Assassination",
       "metacriticId": "hitman-world-of-assassination",
       "score": 8.3
+    },
+    {
+      "gameId": "steam-4705510",
+      "steamAppId": 4705510,
+      "name": "Happy Wheels",
+      "metacriticId": "happy-wheels",
+      "score": 6.9
     },
     {
       "gameId": "steam-594650",
@@ -370,6 +377,13 @@
       "score": 5.3
     },
     {
+      "gameId": "steam-1962663",
+      "steamAppId": 1962663,
+      "name": "Call of Duty®: Warzone™",
+      "metacriticId": "call-of-duty-warzone",
+      "score": 2.6
+    },
+    {
       "gameId": "steam-3065800",
       "steamAppId": 3065800,
       "name": "Marathon",
@@ -433,6 +447,13 @@
       "score": 7.1
     },
     {
+      "gameId": "steam-2057760",
+      "steamAppId": 2057760,
+      "name": "Esoteric Ebb",
+      "metacriticId": "esoteric-ebb",
+      "score": 8.1
+    },
+    {
       "gameId": "steam-2968420",
       "steamAppId": 2968420,
       "name": "PowerWash Simulator 2",
@@ -452,6 +473,20 @@
       "name": "Age of Empires IV: Anniversary Edition",
       "metacriticId": "age-of-empires-iv",
       "score": 7.7
+    },
+    {
+      "gameId": "steam-3079210",
+      "steamAppId": 3079210,
+      "name": "Hell Let Loose: Vietnam",
+      "metacriticId": "hell-let-loose-vietnam",
+      "score": 5.4
+    },
+    {
+      "gameId": "steam-1384160",
+      "steamAppId": 1384160,
+      "name": "GUILTY GEAR -STRIVE-",
+      "metacriticId": "guilty-gear--strive-",
+      "score": 7.4
     },
     {
       "gameId": "steam-1233570",
@@ -538,6 +573,13 @@
       "score": 5.2
     },
     {
+      "gameId": "steam-1665460",
+      "steamAppId": 1665460,
+      "name": "eFootball™",
+      "metacriticId": "efootball-2026",
+      "score": 4.3
+    },
+    {
       "gameId": "steam-1895880",
       "steamAppId": 1895880,
       "name": "Ratchet & Clank: Rift Apart",
@@ -566,6 +608,13 @@
       "score": 5.6
     },
     {
+      "gameId": "steam-2863680",
+      "steamAppId": 2863680,
+      "name": "ZERO PARADES: Director's Cut",
+      "metacriticId": "zero-parades-for-dead-spies",
+      "score": 6.3
+    },
+    {
       "gameId": "steam-3028330",
       "steamAppId": 3028330,
       "name": "Battlefield™ REDSEC",
@@ -578,6 +627,13 @@
       "name": "Quarantine Zone: The Last Check",
       "metacriticId": "quarantine-zone-the-last-check",
       "score": 5.8
+    },
+    {
+      "gameId": "steam-2964090",
+      "steamAppId": 2964090,
+      "name": "World of Warships: Legends",
+      "metacriticId": "world-of-warships-legends",
+      "score": 6.4
     },
     {
       "gameId": "steam-12210",
@@ -613,6 +669,20 @@
       "name": "Divinity: Original Sin 2 - Definitive Edition",
       "metacriticId": "divinity-original-sin-ii",
       "score": 8.8
+    },
+    {
+      "gameId": "steam-2244210",
+      "steamAppId": 2244210,
+      "name": "Echoes of Aincrad",
+      "metacriticId": "echoes-of-aincrad",
+      "score": 5.7
+    },
+    {
+      "gameId": "steam-1805110",
+      "steamAppId": 1805110,
+      "name": "Solarpunk™",
+      "metacriticId": "solarpunk",
+      "score": 5.2
     },
     {
       "gameId": "steam-239140",
@@ -664,6 +734,13 @@
       "score": 8.2
     },
     {
+      "gameId": "steam-2569760",
+      "steamAppId": 2569760,
+      "name": "The Mound: Omen of Cthulhu",
+      "metacriticId": "the-mound-omen-of-cthulhu",
+      "score": 7.3
+    },
+    {
       "gameId": "steam-2524850",
       "steamAppId": 2524850,
       "name": "Denshattack!",
@@ -678,6 +755,13 @@
       "score": 8.6
     },
     {
+      "gameId": "steam-2209900",
+      "steamAppId": 2209900,
+      "name": "Moonlight Peaks",
+      "metacriticId": "moonlight-peaks",
+      "score": 8
+    },
+    {
       "gameId": "disco-elysium",
       "steamAppId": 632470,
       "name": "Disco Elysium - The Final Cut",
@@ -690,6 +774,13 @@
       "name": "LEGO® Star Wars™: The Skywalker Saga",
       "metacriticId": "lego-star-wars-the-skywalker-saga",
       "score": 7.4
+    },
+    {
+      "gameId": "steam-339340",
+      "steamAppId": 339340,
+      "name": "Resident Evil 0",
+      "metacriticId": "resident-evil-0-hd-remaster",
+      "score": 7.5
     },
     {
       "gameId": "steam-2627260",
@@ -710,6 +801,13 @@
       "steamAppId": 3274580,
       "name": "Anno 117: Pax Romana",
       "metacriticId": "anno-117-pax-romana",
+      "score": 7.3
+    },
+    {
+      "gameId": "steam-2527160",
+      "steamAppId": 2527160,
+      "name": "Desktop Explorer",
+      "metacriticId": "desktop-explorer",
       "score": 7.3
     },
     {
@@ -776,6 +874,13 @@
       "score": 6.6
     },
     {
+      "gameId": "steam-293760",
+      "steamAppId": 293760,
+      "name": "Automation - The Car Company Tycoon Game",
+      "metacriticId": "automation",
+      "score": 8.2
+    },
+    {
       "gameId": "steam-22370",
       "steamAppId": 22370,
       "name": "Fallout 3: Game of the Year Edition",
@@ -804,11 +909,25 @@
       "score": 7.8
     },
     {
+      "gameId": "steam-2552450",
+      "steamAppId": 2552450,
+      "name": "KINGDOM HEARTS III + Re Mind (DLC)",
+      "metacriticId": "kingdom-hearts-iii-plus-re-mind",
+      "score": 7.3
+    },
+    {
       "gameId": "steam-1328670",
       "steamAppId": 1328670,
       "name": "Mass Effect™ Legendary Edition",
       "metacriticId": "mass-effect-legendary-edition",
       "score": 7.8
+    },
+    {
+      "gameId": "steam-3061570",
+      "steamAppId": 3061570,
+      "name": "Persona5: The Phantom X",
+      "metacriticId": "persona-5-the-phantom-x",
+      "score": 6.1
     },
     {
       "gameId": "steam-1588550",
@@ -830,6 +949,20 @@
       "name": "STAR WARS™ Battlefront™ II",
       "metacriticId": "star-wars-battlefront-ii",
       "score": 2
+    },
+    {
+      "gameId": "steam-3326230",
+      "steamAppId": 3326230,
+      "name": "Hozy",
+      "metacriticId": "hozy",
+      "score": 6.8
+    },
+    {
+      "gameId": "steam-2004680",
+      "steamAppId": 2004680,
+      "name": "Voidling Bound",
+      "metacriticId": "voidling-bound",
+      "score": 8.4
     },
     {
       "gameId": "steam-2513280",
@@ -860,6 +993,20 @@
       "score": 8.1
     },
     {
+      "gameId": "steam-2893570",
+      "steamAppId": 2893570,
+      "name": "DRAGON QUEST I & II HD-2D Remake",
+      "metacriticId": "dragon-quest-i-and-ii-hd-2d-remake",
+      "score": 7.1
+    },
+    {
+      "gameId": "steam-2928600",
+      "steamAppId": 2928600,
+      "name": "Demon Slayer -Kimetsu no Yaiba- The Hinokami Chronicles 2",
+      "metacriticId": "demon-slayer-kimetsu-no-yaiba-the-hinokami-2",
+      "score": 7
+    },
+    {
       "gameId": "steam-24200",
       "steamAppId": 24200,
       "name": "DC Universe™ Online",
@@ -888,6 +1035,13 @@
       "score": 4.6
     },
     {
+      "gameId": "steam-3124340",
+      "steamAppId": 3124340,
+      "name": "Demeo x Dungeons & Dragons: Battlemarked",
+      "metacriticId": "demeo-x-dungeons-and-dragons-battlemarked",
+      "score": 7.9
+    },
+    {
       "gameId": "steam-1904480",
       "steamAppId": 1904480,
       "name": "Absolum",
@@ -900,6 +1054,13 @@
       "name": "Diablo II: Resurrected – Infernal Edition",
       "metacriticId": "diablo-ii-resurrected",
       "score": 3.7
+    },
+    {
+      "gameId": "steam-611790",
+      "steamAppId": 611790,
+      "name": "House Party",
+      "metacriticId": "house-party-2017",
+      "score": 5.2
     },
     {
       "gameId": "steam-359870",
@@ -930,6 +1091,13 @@
       "score": 8.1
     },
     {
+      "gameId": "steam-4125930",
+      "steamAppId": 4125930,
+      "name": "Punishing: Gray Raven",
+      "metacriticId": "punishing-gray-raven",
+      "score": 7.2
+    },
+    {
       "gameId": "steam-2624870",
       "steamAppId": 2624870,
       "name": "Life is Strange: Reunion",
@@ -951,11 +1119,39 @@
       "score": 7.5
     },
     {
+      "gameId": "steam-2162800",
+      "steamAppId": 2162800,
+      "name": "shapez 2 - Factory",
+      "metacriticId": "shapez-2-factory",
+      "score": 8.6
+    },
+    {
+      "gameId": "steam-3556750",
+      "steamAppId": 3556750,
+      "name": "Warhammer 40,000: Dawn of War - Definitive Edition",
+      "metacriticId": "warhammer-40000-dawn-of-war-definitive-edition",
+      "score": 7.4
+    },
+    {
       "gameId": "steam-784150",
       "steamAppId": 784150,
       "name": "Workers & Resources: Soviet Republic",
       "metacriticId": "workers-and-resources-soviet-republic",
       "score": 8.2
+    },
+    {
+      "gameId": "steam-1761390",
+      "steamAppId": 1761390,
+      "name": "Hatsune Miku: Project DIVA Mega Mix+",
+      "metacriticId": "hatsune-miku-project-diva-megamix-plus",
+      "score": 8.3
+    },
+    {
+      "gameId": "steam-2634890",
+      "steamAppId": 2634890,
+      "name": "MARVEL vs. CAPCOM Fighting Collection: Arcade Classics",
+      "metacriticId": "marvel-vs-capcom-fighting-collection-arcade",
+      "score": 8.6
     },
     {
       "gameId": "steam-29720",
@@ -1042,6 +1238,13 @@
       "score": 5.7
     },
     {
+      "gameId": "steam-1845250",
+      "steamAppId": 1845250,
+      "name": "Rubinite",
+      "metacriticId": "rubinite",
+      "score": 9.2
+    },
+    {
       "gameId": "steam-243470",
       "steamAppId": 243470,
       "name": "Watch_Dogs™",
@@ -1054,6 +1257,13 @@
       "name": "Spyro™ Reignited Trilogy",
       "metacriticId": "spyro-reignited-trilogy",
       "score": 8.4
+    },
+    {
+      "gameId": "steam-2396980",
+      "steamAppId": 2396980,
+      "name": "Fate/stay night REMASTERED",
+      "metacriticId": "fate-stay-night-remastered",
+      "score": 8.2
     },
     {
       "gameId": "steam-10180",
@@ -1105,6 +1315,13 @@
       "score": 6
     },
     {
+      "gameId": "steam-3097300",
+      "steamAppId": 3097300,
+      "name": "Creature Kitchen",
+      "metacriticId": "creature-kitchen",
+      "score": 8.6
+    },
+    {
       "gameId": "steam-17390",
       "steamAppId": 17390,
       "name": "SPORE™",
@@ -1117,6 +1334,13 @@
       "name": "Five Hearts Under One Roof season2",
       "metacriticId": "five-hearts-under-one-roof-season-2",
       "score": 8.4
+    },
+    {
+      "gameId": "steam-1663850",
+      "steamAppId": 1663850,
+      "name": "REPLACED",
+      "metacriticId": "replaced",
+      "score": 7.2
     },
     {
       "gameId": "steam-3265700",
@@ -1189,6 +1413,13 @@
       "score": 7.6
     },
     {
+      "gameId": "steam-1230140",
+      "steamAppId": 1230140,
+      "name": "ATRI -My Dear Moments-",
+      "metacriticId": "atri-my-dear-moments-",
+      "score": 8.4
+    },
+    {
       "gameId": "steam-2313250",
       "steamAppId": 2313250,
       "name": "Travellin Cats in Paris",
@@ -1201,6 +1432,13 @@
       "name": "Our Life: Beginnings & Always",
       "metacriticId": "our-life-beginnings-and-always",
       "score": 7.9
+    },
+    {
+      "gameId": "steam-3370870",
+      "steamAppId": 3370870,
+      "name": "Berry Bury Berry",
+      "metacriticId": "berry-bury-berry",
+      "score": 7.5
     },
     {
       "gameId": "steam-1407420",
@@ -1217,11 +1455,32 @@
       "score": 9.8
     },
     {
+      "gameId": "steam-577480",
+      "steamAppId": 577480,
+      "name": "Higurashi When They Cry Hou - Ch.5 Meakashi",
+      "metacriticId": "higurashi-when-they-cry-kai-chapter-5-meakashi",
+      "score": 8.6
+    },
+    {
+      "gameId": "steam-668350",
+      "steamAppId": 668350,
+      "name": "Higurashi When They Cry Hou - Ch.6 Tsumihoroboshi",
+      "metacriticId": "higurashi-when-they-cry-hou-chapter-6",
+      "score": 8.6
+    },
+    {
       "gameId": "steam-1361230",
       "steamAppId": 1361230,
       "name": "Cleo - a pirate's tale",
       "metacriticId": "cleo-a-pirates-tale",
       "score": 6.9
+    },
+    {
+      "gameId": "steam-1657740",
+      "steamAppId": 1657740,
+      "name": "Mr. Sleepy Man",
+      "metacriticId": "mr-sleepy-man",
+      "score": 8.2
     },
     {
       "gameId": "steam-3590",
@@ -1245,11 +1504,25 @@
       "score": 7.5
     },
     {
+      "gameId": "steam-250320",
+      "steamAppId": 250320,
+      "name": "The Wolf Among Us",
+      "metacriticId": "the-wolf-among-us",
+      "score": 8.6
+    },
+    {
       "gameId": "steam-1388880",
       "steamAppId": 1388880,
       "name": "Doki Doki Literature Club Plus!",
       "metacriticId": "doki-doki-literature-club-plus",
       "score": 8.4
+    },
+    {
+      "gameId": "steam-312990",
+      "steamAppId": 312990,
+      "name": "The Expendabros",
+      "metacriticId": "the-expendabros-broforce-the-expendables-missions",
+      "score": 7.2
     },
     {
       "gameId": "steam-40970",
@@ -1479,17 +1752,6 @@
       "metacriticScoreAvailability": "not_established"
     },
     {
-      "gameId": "steam-4705510",
-      "steamAppId": 4705510,
-      "name": "Happy Wheels",
-      "status": "unverified_identity",
-      "metacriticId": null,
-      "reason": "No approved ID crosslink available",
-      "sourceHadScore": false,
-      "sourceGap": "identity_and_score_fact_unavailable",
-      "metacriticScoreAvailability": "not_established"
-    },
-    {
       "gameId": "steam-3797340",
       "steamAppId": 3797340,
       "name": "Anomalous Coffee Machine 2",
@@ -1655,17 +1917,6 @@
       "metacriticScoreAvailability": "not_established"
     },
     {
-      "gameId": "steam-1962663",
-      "steamAppId": 1962663,
-      "name": "Call of Duty®: Warzone™",
-      "status": "missing_score",
-      "metacriticId": "call-of-duty-warzone-20",
-      "reason": "No verified user-score fact for the approved Metacritic resource",
-      "sourceHadScore": false,
-      "sourceGap": "approved_identity_without_score_fact",
-      "metacriticScoreAvailability": "not_established"
-    },
-    {
       "gameId": "steam-1913120",
       "steamAppId": 1913120,
       "name": "Tears of Metal",
@@ -1740,39 +1991,6 @@
       "reason": "No approved ID crosslink available",
       "sourceHadScore": false,
       "sourceGap": "identity_and_score_fact_unavailable",
-      "metacriticScoreAvailability": "not_established"
-    },
-    {
-      "gameId": "steam-2057760",
-      "steamAppId": 2057760,
-      "name": "Esoteric Ebb",
-      "status": "unverified_identity",
-      "metacriticId": null,
-      "reason": "No approved ID crosslink available",
-      "sourceHadScore": false,
-      "sourceGap": "identity_and_score_fact_unavailable",
-      "metacriticScoreAvailability": "not_established"
-    },
-    {
-      "gameId": "steam-3079210",
-      "steamAppId": 3079210,
-      "name": "Hell Let Loose: Vietnam",
-      "status": "unverified_identity",
-      "metacriticId": null,
-      "reason": "No approved ID crosslink available",
-      "sourceHadScore": false,
-      "sourceGap": "identity_and_score_fact_unavailable",
-      "metacriticScoreAvailability": "not_established"
-    },
-    {
-      "gameId": "steam-1384160",
-      "steamAppId": 1384160,
-      "name": "GUILTY GEAR -STRIVE-",
-      "status": "missing_score",
-      "metacriticId": "guilty-gear--strive-",
-      "reason": "No verified user-score fact for the approved Metacritic resource",
-      "sourceHadScore": false,
-      "sourceGap": "approved_identity_without_score_fact",
       "metacriticScoreAvailability": "not_established"
     },
     {
@@ -1930,17 +2148,6 @@
       "metacriticScoreAvailability": "not_established"
     },
     {
-      "gameId": "steam-1665460",
-      "steamAppId": 1665460,
-      "name": "eFootball™",
-      "status": "identity_conflict",
-      "metacriticId": null,
-      "reason": "Current continuously updated eFootball product versus annual 2023 resource. Do not describe a yearly edition score as the current game score without explicit metric scope.",
-      "sourceHadScore": true,
-      "sourceGap": "unusable_source_association",
-      "metacriticScoreAvailability": "not_established"
-    },
-    {
       "gameId": "steam-3808690",
       "steamAppId": 3808690,
       "name": "Pathogenic",
@@ -1974,17 +2181,6 @@
       "metacriticScoreAvailability": "not_established"
     },
     {
-      "gameId": "steam-2863680",
-      "steamAppId": 2863680,
-      "name": "ZERO PARADES: Director's Cut",
-      "status": "unverified_identity",
-      "metacriticId": null,
-      "reason": "No approved ID crosslink available",
-      "sourceHadScore": false,
-      "sourceGap": "identity_and_score_fact_unavailable",
-      "metacriticScoreAvailability": "not_established"
-    },
-    {
       "gameId": "steam-3293260",
       "steamAppId": 3293260,
       "name": "Waterpark Simulator",
@@ -2010,17 +2206,6 @@
       "gameId": "steam-1706510",
       "steamAppId": 1706510,
       "name": "Songs of Glimmerwick",
-      "status": "unverified_identity",
-      "metacriticId": null,
-      "reason": "No approved ID crosslink available",
-      "sourceHadScore": false,
-      "sourceGap": "identity_and_score_fact_unavailable",
-      "metacriticScoreAvailability": "not_established"
-    },
-    {
-      "gameId": "steam-2964090",
-      "steamAppId": 2964090,
-      "name": "World of Warships: Legends",
       "status": "unverified_identity",
       "metacriticId": null,
       "reason": "No approved ID crosslink available",
@@ -2065,28 +2250,6 @@
       "gameId": "steam-2692440",
       "steamAppId": 2692440,
       "name": "LoveCraft",
-      "status": "unverified_identity",
-      "metacriticId": null,
-      "reason": "No approved ID crosslink available",
-      "sourceHadScore": false,
-      "sourceGap": "identity_and_score_fact_unavailable",
-      "metacriticScoreAvailability": "not_established"
-    },
-    {
-      "gameId": "steam-2244210",
-      "steamAppId": 2244210,
-      "name": "Echoes of Aincrad",
-      "status": "unverified_identity",
-      "metacriticId": null,
-      "reason": "No approved ID crosslink available",
-      "sourceHadScore": false,
-      "sourceGap": "identity_and_score_fact_unavailable",
-      "metacriticScoreAvailability": "not_established"
-    },
-    {
-      "gameId": "steam-1805110",
-      "steamAppId": 1805110,
-      "name": "Solarpunk™",
       "status": "unverified_identity",
       "metacriticId": null,
       "reason": "No approved ID crosslink available",
@@ -2169,17 +2332,6 @@
       "reason": "Steam product is the Call of Duty hub supporting multiple current games and Warzone. One Modern Warfare II game score is not a score for this multi-game launcher.",
       "sourceHadScore": true,
       "sourceGap": "unusable_source_association",
-      "metacriticScoreAvailability": "not_established"
-    },
-    {
-      "gameId": "steam-2569760",
-      "steamAppId": 2569760,
-      "name": "The Mound: Omen of Cthulhu",
-      "status": "missing_score",
-      "metacriticId": "the-mound-omen-of-cthulhu",
-      "reason": "No verified user-score fact for the approved Metacritic resource",
-      "sourceHadScore": false,
-      "sourceGap": "approved_identity_without_score_fact",
       "metacriticScoreAvailability": "not_established"
     },
     {
@@ -2271,17 +2423,6 @@
       "metacriticScoreAvailability": "not_established"
     },
     {
-      "gameId": "steam-2209900",
-      "steamAppId": 2209900,
-      "name": "Moonlight Peaks",
-      "status": "unverified_identity",
-      "metacriticId": null,
-      "reason": "No approved ID crosslink available",
-      "sourceHadScore": false,
-      "sourceGap": "identity_and_score_fact_unavailable",
-      "metacriticScoreAvailability": "not_established"
-    },
-    {
       "gameId": "steam-1757300",
       "steamAppId": 1757300,
       "name": "Jump Space",
@@ -2329,17 +2470,6 @@
       "gameId": "steam-4072240",
       "steamAppId": 4072240,
       "name": "Woman Simulator",
-      "status": "unverified_identity",
-      "metacriticId": null,
-      "reason": "No approved ID crosslink available",
-      "sourceHadScore": false,
-      "sourceGap": "identity_and_score_fact_unavailable",
-      "metacriticScoreAvailability": "not_established"
-    },
-    {
-      "gameId": "steam-339340",
-      "steamAppId": 339340,
-      "name": "Resident Evil 0",
       "status": "unverified_identity",
       "metacriticId": null,
       "reason": "No approved ID crosslink available",
@@ -2430,17 +2560,6 @@
       "name": "Moonlighter 2: The Endless Vault",
       "status": "missing_score",
       "metacriticId": "moonlighter-2-the-endless-vault",
-      "reason": "No verified user-score fact for the approved Metacritic resource",
-      "sourceHadScore": false,
-      "sourceGap": "approved_identity_without_score_fact",
-      "metacriticScoreAvailability": "not_established"
-    },
-    {
-      "gameId": "steam-2527160",
-      "steamAppId": 2527160,
-      "name": "Desktop Explorer",
-      "status": "missing_score",
-      "metacriticId": "desktop-explorer",
       "reason": "No verified user-score fact for the approved Metacritic resource",
       "sourceHadScore": false,
       "sourceGap": "approved_identity_without_score_fact",
@@ -2612,17 +2731,6 @@
       "metacriticScoreAvailability": "not_established"
     },
     {
-      "gameId": "steam-293760",
-      "steamAppId": 293760,
-      "name": "Automation - The Car Company Tycoon Game",
-      "status": "unverified_identity",
-      "metacriticId": null,
-      "reason": "No approved ID crosslink available",
-      "sourceHadScore": false,
-      "sourceGap": "identity_and_score_fact_unavailable",
-      "metacriticScoreAvailability": "not_established"
-    },
-    {
       "gameId": "steam-4294490",
       "steamAppId": 4294490,
       "name": "KOTAMON: My Sis Found A Super-Rare Card In Her Cereal Box, So I Became A Garbage Man To Find The Entire Collection And Earn $1,000,000",
@@ -2700,28 +2808,6 @@
       "metacriticScoreAvailability": "not_established"
     },
     {
-      "gameId": "steam-2552450",
-      "steamAppId": 2552450,
-      "name": "KINGDOM HEARTS III + Re Mind (DLC)",
-      "status": "missing_score",
-      "metacriticId": "kingdom-hearts-iii",
-      "reason": "No verified user-score fact for the approved Metacritic resource",
-      "sourceHadScore": true,
-      "sourceGap": "unusable_source_association",
-      "metacriticScoreAvailability": "not_established"
-    },
-    {
-      "gameId": "steam-3061570",
-      "steamAppId": 3061570,
-      "name": "Persona5: The Phantom X",
-      "status": "unverified_identity",
-      "metacriticId": null,
-      "reason": "No approved ID crosslink available",
-      "sourceHadScore": false,
-      "sourceGap": "identity_and_score_fact_unavailable",
-      "metacriticScoreAvailability": "not_established"
-    },
-    {
       "gameId": "steam-1495320",
       "steamAppId": 1495320,
       "name": "Carnal Instinct",
@@ -2788,31 +2874,9 @@
       "metacriticScoreAvailability": "not_established"
     },
     {
-      "gameId": "steam-3326230",
-      "steamAppId": 3326230,
-      "name": "Hozy",
-      "status": "unverified_identity",
-      "metacriticId": null,
-      "reason": "No approved ID crosslink available",
-      "sourceHadScore": false,
-      "sourceGap": "identity_and_score_fact_unavailable",
-      "metacriticScoreAvailability": "not_established"
-    },
-    {
       "gameId": "steam-2819520",
       "steamAppId": 2819520,
       "name": "Viking Rise",
-      "status": "unverified_identity",
-      "metacriticId": null,
-      "reason": "No approved ID crosslink available",
-      "sourceHadScore": false,
-      "sourceGap": "identity_and_score_fact_unavailable",
-      "metacriticScoreAvailability": "not_established"
-    },
-    {
-      "gameId": "steam-2004680",
-      "steamAppId": 2004680,
-      "name": "Voidling Bound",
       "status": "unverified_identity",
       "metacriticId": null,
       "reason": "No approved ID crosslink available",
@@ -2873,28 +2937,6 @@
       "reason": "No approved ID crosslink available",
       "sourceHadScore": false,
       "sourceGap": "identity_and_score_fact_unavailable",
-      "metacriticScoreAvailability": "not_established"
-    },
-    {
-      "gameId": "steam-2893570",
-      "steamAppId": 2893570,
-      "name": "DRAGON QUEST I & II HD-2D Remake",
-      "status": "unverified_identity",
-      "metacriticId": null,
-      "reason": "No approved ID crosslink available",
-      "sourceHadScore": false,
-      "sourceGap": "identity_and_score_fact_unavailable",
-      "metacriticScoreAvailability": "not_established"
-    },
-    {
-      "gameId": "steam-2928600",
-      "steamAppId": 2928600,
-      "name": "Demon Slayer -Kimetsu no Yaiba- The Hinokami Chronicles 2",
-      "status": "missing_score",
-      "metacriticId": "demon-slayer-kimetsu-no-yaiba-the-hinokami-2",
-      "reason": "No verified user-score fact for the approved Metacritic resource",
-      "sourceHadScore": false,
-      "sourceGap": "approved_identity_without_score_fact",
       "metacriticScoreAvailability": "not_established"
     },
     {
@@ -2986,17 +3028,6 @@
       "metacriticScoreAvailability": "not_established"
     },
     {
-      "gameId": "steam-3124340",
-      "steamAppId": 3124340,
-      "name": "Demeo x Dungeons & Dragons: Battlemarked",
-      "status": "missing_score",
-      "metacriticId": "demeo-x-dungeons-dragons-battlemarked",
-      "reason": "No verified user-score fact for the approved Metacritic resource",
-      "sourceHadScore": false,
-      "sourceGap": "approved_identity_without_score_fact",
-      "metacriticScoreAvailability": "not_established"
-    },
-    {
       "gameId": "steam-3279780",
       "steamAppId": 3279780,
       "name": "Horizon Walker",
@@ -3038,17 +3069,6 @@
       "reason": "No approved ID crosslink available",
       "sourceHadScore": false,
       "sourceGap": "identity_and_score_fact_unavailable",
-      "metacriticScoreAvailability": "not_established"
-    },
-    {
-      "gameId": "steam-611790",
-      "steamAppId": 611790,
-      "name": "House Party",
-      "status": "missing_score",
-      "metacriticId": "house-party",
-      "reason": "No verified user-score fact for the approved Metacritic resource",
-      "sourceHadScore": false,
-      "sourceGap": "approved_identity_without_score_fact",
       "metacriticScoreAvailability": "not_established"
     },
     {
@@ -3099,17 +3119,6 @@
       "gameId": "steam-2784470",
       "steamAppId": 2784470,
       "name": "9 Kings",
-      "status": "unverified_identity",
-      "metacriticId": null,
-      "reason": "No approved ID crosslink available",
-      "sourceHadScore": false,
-      "sourceGap": "identity_and_score_fact_unavailable",
-      "metacriticScoreAvailability": "not_established"
-    },
-    {
-      "gameId": "steam-4125930",
-      "steamAppId": 4125930,
-      "name": "Punishing: Gray Raven",
       "status": "unverified_identity",
       "metacriticId": null,
       "reason": "No approved ID crosslink available",
@@ -3173,28 +3182,6 @@
       "metacriticScoreAvailability": "not_established"
     },
     {
-      "gameId": "steam-2162800",
-      "steamAppId": 2162800,
-      "name": "shapez 2 - Factory",
-      "status": "missing_score",
-      "metacriticId": "shapez-2---factory",
-      "reason": "No verified user-score fact for the approved Metacritic resource",
-      "sourceHadScore": false,
-      "sourceGap": "approved_identity_without_score_fact",
-      "metacriticScoreAvailability": "not_established"
-    },
-    {
-      "gameId": "steam-3556750",
-      "steamAppId": 3556750,
-      "name": "Warhammer 40,000: Dawn of War - Definitive Edition",
-      "status": "unverified_identity",
-      "metacriticId": null,
-      "reason": "No approved ID crosslink available",
-      "sourceHadScore": false,
-      "sourceGap": "identity_and_score_fact_unavailable",
-      "metacriticScoreAvailability": "not_established"
-    },
-    {
       "gameId": "steam-4285110",
       "steamAppId": 4285110,
       "name": "Tunnel Escape Fates Entwined",
@@ -3214,28 +3201,6 @@
       "reason": "No approved ID crosslink available",
       "sourceHadScore": false,
       "sourceGap": "identity_and_score_fact_unavailable",
-      "metacriticScoreAvailability": "not_established"
-    },
-    {
-      "gameId": "steam-1761390",
-      "steamAppId": 1761390,
-      "name": "Hatsune Miku: Project DIVA Mega Mix+",
-      "status": "missing_score",
-      "metacriticId": "hatsune-miku-project-diva-megamix-plus",
-      "reason": "No verified user-score fact for the approved Metacritic resource",
-      "sourceHadScore": false,
-      "sourceGap": "approved_identity_without_score_fact",
-      "metacriticScoreAvailability": "not_established"
-    },
-    {
-      "gameId": "steam-2634890",
-      "steamAppId": 2634890,
-      "name": "MARVEL vs. CAPCOM Fighting Collection: Arcade Classics",
-      "status": "missing_score",
-      "metacriticId": "marvel-vs-capcom-fighting-collection-arcade-classics",
-      "reason": "No verified user-score fact for the approved Metacritic resource",
-      "sourceHadScore": false,
-      "sourceGap": "approved_identity_without_score_fact",
       "metacriticScoreAvailability": "not_established"
     },
     {
@@ -3437,17 +3402,6 @@
       "metacriticScoreAvailability": "not_established"
     },
     {
-      "gameId": "steam-1845250",
-      "steamAppId": 1845250,
-      "name": "Rubinite",
-      "status": "unverified_identity",
-      "metacriticId": null,
-      "reason": "No approved ID crosslink available",
-      "sourceHadScore": false,
-      "sourceGap": "identity_and_score_fact_unavailable",
-      "metacriticScoreAvailability": "not_established"
-    },
-    {
       "gameId": "steam-4369130",
       "steamAppId": 4369130,
       "name": "Chop Chop Inc.",
@@ -3456,17 +3410,6 @@
       "reason": "No approved ID crosslink available",
       "sourceHadScore": false,
       "sourceGap": "identity_and_score_fact_unavailable",
-      "metacriticScoreAvailability": "not_established"
-    },
-    {
-      "gameId": "steam-2396980",
-      "steamAppId": 2396980,
-      "name": "Fate/stay night REMASTERED",
-      "status": "missing_score",
-      "metacriticId": "fatestay-night-remastered",
-      "reason": "No verified user-score fact for the approved Metacritic resource",
-      "sourceHadScore": false,
-      "sourceGap": "approved_identity_without_score_fact",
       "metacriticScoreAvailability": "not_established"
     },
     {
@@ -3572,17 +3515,6 @@
       "gameId": "steam-2904000",
       "steamAppId": 2904000,
       "name": "The Spell Brigade",
-      "status": "unverified_identity",
-      "metacriticId": null,
-      "reason": "No approved ID crosslink available",
-      "sourceHadScore": false,
-      "sourceGap": "identity_and_score_fact_unavailable",
-      "metacriticScoreAvailability": "not_established"
-    },
-    {
-      "gameId": "steam-3097300",
-      "steamAppId": 3097300,
-      "name": "Creature Kitchen",
       "status": "unverified_identity",
       "metacriticId": null,
       "reason": "No approved ID crosslink available",
@@ -3715,17 +3647,6 @@
       "gameId": "steam-3438850",
       "steamAppId": 3438850,
       "name": "Sledding Game",
-      "status": "unverified_identity",
-      "metacriticId": null,
-      "reason": "No approved ID crosslink available",
-      "sourceHadScore": false,
-      "sourceGap": "identity_and_score_fact_unavailable",
-      "metacriticScoreAvailability": "not_established"
-    },
-    {
-      "gameId": "steam-1663850",
-      "steamAppId": 1663850,
-      "name": "REPLACED",
       "status": "unverified_identity",
       "metacriticId": null,
       "reason": "No approved ID crosslink available",
@@ -4130,17 +4051,6 @@
       "metacriticScoreAvailability": "not_established"
     },
     {
-      "gameId": "steam-1230140",
-      "steamAppId": 1230140,
-      "name": "ATRI -My Dear Moments-",
-      "status": "missing_score",
-      "metacriticId": "atri-my-dear-moments-",
-      "reason": "No verified user-score fact for the approved Metacritic resource",
-      "sourceHadScore": false,
-      "sourceGap": "approved_identity_without_score_fact",
-      "metacriticScoreAvailability": "not_established"
-    },
-    {
       "gameId": "steam-667970",
       "steamAppId": 667970,
       "name": "VTOL VR",
@@ -4160,17 +4070,6 @@
       "reason": "No verified user-score fact for the approved Metacritic resource",
       "sourceHadScore": false,
       "sourceGap": "approved_identity_without_score_fact",
-      "metacriticScoreAvailability": "not_established"
-    },
-    {
-      "gameId": "steam-3370870",
-      "steamAppId": 3370870,
-      "name": "Berry Bury Berry",
-      "status": "unverified_identity",
-      "metacriticId": null,
-      "reason": "No approved ID crosslink available",
-      "sourceHadScore": false,
-      "sourceGap": "identity_and_score_fact_unavailable",
       "metacriticScoreAvailability": "not_established"
     },
     {
@@ -4570,17 +4469,6 @@
       "metacriticScoreAvailability": "not_established"
     },
     {
-      "gameId": "steam-577480",
-      "steamAppId": 577480,
-      "name": "Higurashi When They Cry Hou - Ch.5 Meakashi",
-      "status": "unverified_identity",
-      "metacriticId": null,
-      "reason": "No approved ID crosslink available",
-      "sourceHadScore": false,
-      "sourceGap": "identity_and_score_fact_unavailable",
-      "metacriticScoreAvailability": "not_established"
-    },
-    {
       "gameId": "steam-2629230",
       "steamAppId": 2629230,
       "name": "The Adventures of Sir Kicksalot",
@@ -4617,17 +4505,6 @@
       "gameId": "steam-3547270",
       "steamAppId": 3547270,
       "name": "Worming from Home",
-      "status": "unverified_identity",
-      "metacriticId": null,
-      "reason": "No approved ID crosslink available",
-      "sourceHadScore": false,
-      "sourceGap": "identity_and_score_fact_unavailable",
-      "metacriticScoreAvailability": "not_established"
-    },
-    {
-      "gameId": "steam-668350",
-      "steamAppId": 668350,
-      "name": "Higurashi When They Cry Hou - Ch.6 Tsumihoroboshi",
       "status": "unverified_identity",
       "metacriticId": null,
       "reason": "No approved ID crosslink available",
@@ -4837,17 +4714,6 @@
       "gameId": "steam-1998530",
       "steamAppId": 1998530,
       "name": "Yoiyami Dancers: Twilight Danmaku Dancers",
-      "status": "unverified_identity",
-      "metacriticId": null,
-      "reason": "No approved ID crosslink available",
-      "sourceHadScore": false,
-      "sourceGap": "identity_and_score_fact_unavailable",
-      "metacriticScoreAvailability": "not_established"
-    },
-    {
-      "gameId": "steam-1657740",
-      "steamAppId": 1657740,
-      "name": "Mr. Sleepy Man",
       "status": "unverified_identity",
       "metacriticId": null,
       "reason": "No approved ID crosslink available",
@@ -5098,17 +4964,6 @@
       "metacriticScoreAvailability": "not_established"
     },
     {
-      "gameId": "steam-250320",
-      "steamAppId": 250320,
-      "name": "The Wolf Among Us",
-      "status": "identity_conflict",
-      "metacriticId": null,
-      "reason": "Steam primary description explicitly lists all five episodes as one season; one episode resource is not the whole season score.",
-      "sourceHadScore": true,
-      "sourceGap": "unusable_source_association",
-      "metacriticScoreAvailability": "not_established"
-    },
-    {
       "gameId": "steam-541570",
       "steamAppId": 541570,
       "name": "Sally Face - Episode One",
@@ -5128,17 +4983,6 @@
       "reason": "No approved ID crosslink available",
       "sourceHadScore": false,
       "sourceGap": "identity_and_score_fact_unavailable",
-      "metacriticScoreAvailability": "not_established"
-    },
-    {
-      "gameId": "steam-312990",
-      "steamAppId": 312990,
-      "name": "The Expendabros",
-      "status": "unverified_identity",
-      "metacriticId": null,
-      "reason": "No approved ID crosslink available",
-      "sourceHadScore": true,
-      "sourceGap": "unusable_source_association",
       "metacriticScoreAvailability": "not_established"
     },
     {

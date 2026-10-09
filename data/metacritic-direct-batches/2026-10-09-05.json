@@ -1,0 +1,639 @@
+{
+  "schemaVersion": 1,
+  "batchId": "direct-2026-10-09-05",
+  "checkedAt": "2026-10-09T17:48:10.772813Z",
+  "facts": [
+    {
+      "recordId": "mc-user:reviewed:3097300:PC:2026-10-09:research361",
+      "gameId": "steam-3097300",
+      "steamAppId": 3097300,
+      "metacriticId": "creature-kitchen",
+      "metacriticNumericId": null,
+      "metric": "user-score",
+      "platform": "PC",
+      "score": 8.6,
+      "userRatings": 7,
+      "sourceUrl": "https://www.metacritic.com/game/creature-kitchen/user-reviews/?platform=pc",
+      "retrievedAt": "2026-10-09T17:48:10.772813Z",
+      "snapshotDate": "2026-10-09",
+      "scoreDate": null,
+      "provenance": {
+        "method": "public-primary-cache",
+        "metricLabel": "User score",
+        "platformLabel": "PC",
+        "sourceCrawlLabel": "last month",
+        "retrievalReference": "turn286view3",
+        "originalResearchDate": "2026-10-08",
+        "liveScoreVerified": false,
+        "pageHeading": "PC User Reviews"
+      }
+    },
+    {
+      "recordId": "mc-user:reviewed:1663850:PC:2026-10-09:research361",
+      "gameId": "steam-1663850",
+      "steamAppId": 1663850,
+      "metacriticId": "replaced",
+      "metacriticNumericId": null,
+      "metric": "user-score",
+      "platform": "PC",
+      "score": 7.2,
+      "userRatings": 277,
+      "sourceUrl": "https://www.metacritic.com/game/replaced/user-reviews/?platform=pc",
+      "retrievedAt": "2026-10-09T17:48:10.772813Z",
+      "snapshotDate": "2026-10-09",
+      "scoreDate": null,
+      "provenance": {
+        "method": "public-primary-cache",
+        "metricLabel": "User score",
+        "platformLabel": "PC",
+        "sourceCrawlLabel": "last month",
+        "retrievalReference": "turn277search7",
+        "originalResearchDate": "2026-10-08",
+        "liveScoreVerified": false,
+        "pageHeading": "PC User Reviews"
+      }
+    },
+    {
+      "recordId": "mc-user:reviewed:1230140:unknown:2026-10-09:research361",
+      "gameId": "steam-1230140",
+      "steamAppId": 1230140,
+      "metacriticId": "atri-my-dear-moments-",
+      "metacriticNumericId": "1300513401",
+      "metric": "user-score",
+      "platform": null,
+      "score": 8.4,
+      "userRatings": 9,
+      "sourceUrl": "https://www.metacritic.com/game/atri-my-dear-moments-/",
+      "retrievedAt": "2026-10-09T17:48:10.772813Z",
+      "snapshotDate": "2026-10-09",
+      "scoreDate": null,
+      "provenance": {
+        "method": "public-primary-cache",
+        "metricLabel": "User score",
+        "platformLabel": null,
+        "sourceCrawlLabel": "last month",
+        "retrievalReference": "turn239view1",
+        "originalResearchDate": "2026-10-08",
+        "liveScoreVerified": false,
+        "pageHeading": "Game overview",
+        "platformUnverified": true
+      }
+    },
+    {
+      "recordId": "mc-user:reviewed:3370870:PC:2026-10-09:research361",
+      "gameId": "steam-3370870",
+      "steamAppId": 3370870,
+      "metacriticId": "berry-bury-berry",
+      "metacriticNumericId": null,
+      "metric": "user-score",
+      "platform": "PC",
+      "score": 7.5,
+      "userRatings": 12,
+      "sourceUrl": "https://www.metacritic.com/game/berry-bury-berry/",
+      "retrievedAt": "2026-10-09T17:48:10.772813Z",
+      "snapshotDate": "2026-10-09",
+      "scoreDate": null,
+      "provenance": {
+        "method": "public-primary-cache",
+        "metricLabel": "User score",
+        "platformLabel": "PC",
+        "sourceCrawlLabel": "2 months ago",
+        "retrievalReference": "turn274search1",
+        "originalResearchDate": "2026-10-08",
+        "liveScoreVerified": false,
+        "pageHeading": "Game overview",
+        "platformEvidenceKind": "single-platform",
+        "platformEvidencePlatforms": [
+          "PC"
+        ],
+        "platformEvidenceUrl": "https://www.metacritic.com/game/berry-bury-berry/",
+        "platformEvidenceReference": "turn274search1"
+      }
+    },
+    {
+      "recordId": "mc-user:reviewed:577480:PC:2026-10-09:research361",
+      "gameId": "steam-577480",
+      "steamAppId": 577480,
+      "metacriticId": "higurashi-when-they-cry-kai-chapter-5-meakashi",
+      "metacriticNumericId": null,
+      "metric": "user-score",
+      "platform": "PC",
+      "score": 8.6,
+      "userRatings": 13,
+      "sourceUrl": "https://www.metacritic.com/game/higurashi-when-they-cry-kai-chapter-5-meakashi/user-reviews/",
+      "retrievedAt": "2026-10-09T17:48:10.772813Z",
+      "snapshotDate": "2026-10-09",
+      "scoreDate": null,
+      "provenance": {
+        "method": "public-primary-cache",
+        "metricLabel": "User score",
+        "platformLabel": "PC",
+        "sourceCrawlLabel": "5 months ago",
+        "retrievalReference": "turn283view3",
+        "originalResearchDate": "2026-10-08",
+        "liveScoreVerified": false,
+        "pageHeading": "PC User Reviews"
+      }
+    },
+    {
+      "recordId": "mc-user:reviewed:668350:PC:2026-10-09:research361",
+      "gameId": "steam-668350",
+      "steamAppId": 668350,
+      "metacriticId": "higurashi-when-they-cry-hou-chapter-6",
+      "metacriticNumericId": null,
+      "metric": "user-score",
+      "platform": "PC",
+      "score": 8.6,
+      "userRatings": 5,
+      "sourceUrl": "https://www.metacritic.com/game/higurashi-when-they-cry-hou-chapter-6/",
+      "retrievedAt": "2026-10-09T17:48:10.772813Z",
+      "snapshotDate": "2026-10-09",
+      "scoreDate": null,
+      "provenance": {
+        "method": "public-primary-cache",
+        "metricLabel": "User score",
+        "platformLabel": "PC",
+        "sourceCrawlLabel": "2 months ago",
+        "retrievalReference": "turn267search3",
+        "originalResearchDate": "2026-10-08",
+        "liveScoreVerified": false,
+        "pageHeading": "Game overview",
+        "platformEvidenceKind": "single-platform",
+        "platformEvidencePlatforms": [
+          "PC"
+        ],
+        "platformEvidenceUrl": "https://www.metacritic.com/game/higurashi-when-they-cry-hou-chapter-6/",
+        "platformEvidenceReference": "turn276search5"
+      }
+    },
+    {
+      "recordId": "mc-user:reviewed:1657740:unknown:2026-10-09:research361",
+      "gameId": "steam-1657740",
+      "steamAppId": 1657740,
+      "metacriticId": "mr-sleepy-man",
+      "metacriticNumericId": null,
+      "metric": "user-score",
+      "platform": null,
+      "score": 8.2,
+      "userRatings": 10,
+      "sourceUrl": "https://www.metacritic.com/game/mr-sleepy-man/",
+      "retrievedAt": "2026-10-09T17:48:10.772813Z",
+      "snapshotDate": "2026-10-09",
+      "scoreDate": null,
+      "provenance": {
+        "method": "public-primary-cache",
+        "metricLabel": "User score",
+        "platformLabel": null,
+        "sourceCrawlLabel": "last month",
+        "retrievalReference": "turn251view3",
+        "originalResearchDate": "2026-10-08",
+        "liveScoreVerified": false,
+        "pageHeading": "Game overview",
+        "platformUnverified": true
+      }
+    },
+    {
+      "recordId": "mc-user:reviewed:250320:PC:2026-10-09:research361",
+      "gameId": "steam-250320",
+      "steamAppId": 250320,
+      "metacriticId": "the-wolf-among-us",
+      "metacriticNumericId": null,
+      "metric": "user-score",
+      "platform": "PC",
+      "score": 8.6,
+      "userRatings": null,
+      "sourceUrl": "https://www.metacritic.com/game/the-wolf-among-us/user-reviews/?platform=pc",
+      "retrievedAt": "2026-10-09T17:48:10.772813Z",
+      "snapshotDate": "2026-10-09",
+      "scoreDate": null,
+      "provenance": {
+        "method": "public-primary-cache",
+        "metricLabel": "User score",
+        "platformLabel": "PC",
+        "sourceCrawlLabel": "last month",
+        "retrievalReference": "turn284view1",
+        "originalResearchDate": "2026-10-08",
+        "liveScoreVerified": false,
+        "pageHeading": "PC User Reviews"
+      }
+    },
+    {
+      "recordId": "mc-user:reviewed:312990:PC:2026-10-09:research361",
+      "gameId": "steam-312990",
+      "steamAppId": 312990,
+      "metacriticId": "the-expendabros-broforce-the-expendables-missions",
+      "metacriticNumericId": null,
+      "metric": "user-score",
+      "platform": "PC",
+      "score": 7.2,
+      "userRatings": 63,
+      "sourceUrl": "https://www.metacritic.com/game/the-expendabros-broforce-the-expendables-missions/",
+      "retrievedAt": "2026-10-09T17:48:10.772813Z",
+      "snapshotDate": "2026-10-09",
+      "scoreDate": null,
+      "provenance": {
+        "method": "public-primary-cache",
+        "metricLabel": "User score",
+        "platformLabel": "PC",
+        "sourceCrawlLabel": "3 months ago",
+        "retrievalReference": "turn276search1",
+        "originalResearchDate": "2026-10-08",
+        "liveScoreVerified": false,
+        "pageHeading": "Game overview",
+        "platformEvidenceKind": "single-platform",
+        "platformEvidencePlatforms": [
+          "PC"
+        ],
+        "platformEvidenceUrl": "https://www.metacritic.com/game/the-expendabros-broforce-the-expendables-missions/",
+        "platformEvidenceReference": "turn276search1"
+      }
+    }
+  ],
+  "identityReviews": [
+    {
+      "steamAppId": 3097300,
+      "status": "approved",
+      "metacriticId": "creature-kitchen",
+      "numericId": null,
+      "reviewedAt": "2026-10-09T17:48:10.772813Z",
+      "evidenceURLs": [
+        "https://store.steampowered.com/app/3097300/",
+        "https://www.metacritic.com/game/creature-kitchen/",
+        "https://store.steampowered.com/api/appdetails?appids=3097300&l=english"
+      ],
+      "rationale": "PC puanı bulgusu. Kalıcı Steam uygulama ID’si; geliştirici, çıkış dönemi ve temel eser kapsamı incelendi. Yama/port ayrı oyun sayılmadı; farklı pazarlanan remake/remasterlar birleştirilmedi.",
+      "reviewedMetadata": {
+        "catalogName": "Creature Kitchen",
+        "steamAppId": 3097300,
+        "storeDevelopers": [
+          "The Rat Zone"
+        ],
+        "storeRelease": {
+          "coming_soon": false,
+          "date": "Feb 6, 2026"
+        },
+        "metacriticResourceId": "creature-kitchen",
+        "primaryMetadata": {
+          "url": "https://www.metacritic.com/game/creature-kitchen/",
+          "ref": "turn306search3",
+          "developer": "The Rat Zone",
+          "release": "Feb 6, 2026",
+          "platforms": "* PC"
+        },
+        "priorIdentity": null,
+        "researchDate": "2026-10-08"
+      }
+    },
+    {
+      "steamAppId": 1663850,
+      "status": "approved",
+      "metacriticId": "replaced",
+      "numericId": null,
+      "reviewedAt": "2026-10-09T17:48:10.772813Z",
+      "evidenceURLs": [
+        "https://store.steampowered.com/app/1663850/",
+        "https://www.metacritic.com/game/replaced/",
+        "https://store.steampowered.com/api/appdetails?appids=1663850&l=english"
+      ],
+      "rationale": "PC puanı bulgusu. Kalıcı Steam uygulama ID’si; geliştirici, çıkış dönemi ve temel eser kapsamı incelendi. Yama/port ayrı oyun sayılmadı; farklı pazarlanan remake/remasterlar birleştirilmedi.",
+      "reviewedMetadata": {
+        "catalogName": "REPLACED",
+        "steamAppId": 1663850,
+        "storeDevelopers": [
+          "Sad Cat Studios"
+        ],
+        "storeRelease": {
+          "coming_soon": false,
+          "date": "Apr 14, 2026"
+        },
+        "metacriticResourceId": "replaced",
+        "primaryMetadata": {
+          "url": "https://www.metacritic.com/game/replaced/",
+          "ref": "turn306search1",
+          "developer": "Sad Cat Studios",
+          "release": "Apr 14, 2026",
+          "platforms": "* Xbox Series X\n  * PC"
+        },
+        "priorIdentity": null,
+        "researchDate": "2026-10-08"
+      }
+    },
+    {
+      "steamAppId": 1230140,
+      "status": "approved",
+      "metacriticId": "atri-my-dear-moments-",
+      "numericId": "1300513401",
+      "reviewedAt": "2026-10-09T17:48:10.772813Z",
+      "evidenceURLs": [
+        "https://store.steampowered.com/app/1230140/",
+        "https://www.metacritic.com/game/atri-my-dear-moments-/",
+        "https://store.steampowered.com/api/appdetails?appids=1230140&l=english"
+      ],
+      "rationale": "Sayısal kullanıcı puanı var; seçilen platform doğrulanamadı. Kalıcı Steam uygulama ID’si; geliştirici, çıkış dönemi ve temel eser kapsamı incelendi. Yama/port ayrı oyun sayılmadı; farklı pazarlanan remake/remasterlar birleştirilmedi.",
+      "reviewedMetadata": {
+        "catalogName": "ATRI -My Dear Moments-",
+        "steamAppId": 1230140,
+        "storeDevelopers": [
+          "Frontwing",
+          "枕"
+        ],
+        "storeRelease": {
+          "coming_soon": false,
+          "date": "Jun 18, 2020"
+        },
+        "metacriticResourceId": "atri-my-dear-moments-",
+        "primaryMetadata": {
+          "url": "https://www.metacritic.com/game/atri-my-dear-moments-/",
+          "ref": "turn309search5",
+          "developer": "Front Wing",
+          "release": "Jun 18, 2020",
+          "platforms": "* PC\n  * Nintendo Switch\n  * iOS (iPhone/iPad)"
+        },
+        "priorIdentity": {
+          "resourceId": "atri-my-dear-moments-",
+          "numericId": "1300513401",
+          "url": "https://www.metacritic.com/game/atri-my-dear-moments-/",
+          "editionScope": "Reviewed store product / Metacritic work relationship",
+          "evidence": [
+            {
+              "kind": "wikidata-external-ids",
+              "qid": "Q97275837",
+              "steamAppId": 1230140,
+              "metacriticId": "atri-my-dear-moments-",
+              "numericId": "1300513401",
+              "url": "http://www.wikidata.org/entity/Q97275837",
+              "retrievedAt": "2026-10-06T11:26:01.062Z"
+            }
+          ]
+        },
+        "researchDate": "2026-10-08"
+      }
+    },
+    {
+      "steamAppId": 3370870,
+      "status": "approved",
+      "metacriticId": "berry-bury-berry",
+      "numericId": null,
+      "reviewedAt": "2026-10-09T17:48:10.772813Z",
+      "evidenceURLs": [
+        "https://store.steampowered.com/app/3370870/",
+        "https://www.metacritic.com/game/berry-bury-berry/",
+        "https://store.steampowered.com/api/appdetails?appids=3370870&l=english"
+      ],
+      "rationale": "PC puanı bulgusu. Kalıcı Steam uygulama ID’si; geliştirici, çıkış dönemi ve temel eser kapsamı incelendi. Yama/port ayrı oyun sayılmadı; farklı pazarlanan remake/remasterlar birleştirilmedi.",
+      "reviewedMetadata": {
+        "catalogName": "Berry Bury Berry",
+        "steamAppId": 3370870,
+        "storeDevelopers": [
+          "Get(Color) Games"
+        ],
+        "storeRelease": {
+          "coming_soon": false,
+          "date": "Jan 29, 2026"
+        },
+        "metacriticResourceId": "berry-bury-berry",
+        "primaryMetadata": {
+          "url": "https://www.metacritic.com/game/berry-bury-berry/",
+          "ref": "turn309search2",
+          "developer": "Get(Color) Games",
+          "release": "Jan 29, 2026",
+          "platforms": "* PC"
+        },
+        "priorIdentity": null,
+        "researchDate": "2026-10-08"
+      }
+    },
+    {
+      "steamAppId": 577480,
+      "status": "approved",
+      "metacriticId": "higurashi-when-they-cry-kai-chapter-5-meakashi",
+      "numericId": null,
+      "reviewedAt": "2026-10-09T17:48:10.772813Z",
+      "evidenceURLs": [
+        "https://store.steampowered.com/app/577480/",
+        "https://www.metacritic.com/game/higurashi-when-they-cry-kai-chapter-5-meakashi/",
+        "https://store.steampowered.com/api/appdetails?appids=577480&l=english"
+      ],
+      "rationale": "Chapter 5/2017/07th Expansion; Steam 577480 ile bölüm ve çıkış tarihi eşleşiyor. Kalıcı Steam uygulama ID’si; geliştirici, çıkış dönemi ve temel eser kapsamı incelendi. Yama/port ayrı oyun sayılmadı; farklı pazarlanan remake/remasterlar birleştirilmedi.",
+      "reviewedMetadata": {
+        "catalogName": "Higurashi When They Cry Hou - Ch.5 Meakashi",
+        "steamAppId": 577480,
+        "storeDevelopers": [
+          "07th Expansion"
+        ],
+        "storeRelease": {
+          "coming_soon": false,
+          "date": "Apr 28, 2017"
+        },
+        "metacriticResourceId": "higurashi-when-they-cry-kai-chapter-5-meakashi",
+        "primaryMetadata": {
+          "url": "https://www.metacritic.com/game/higurashi-when-they-cry-kai-chapter-5-meakashi/",
+          "ref": "turn309search0",
+          "developer": "07th Expansion",
+          "release": "Apr 28, 2017",
+          "platforms": "* iOS (iPhone/iPad)\n  * PC"
+        },
+        "priorIdentity": null,
+        "researchDate": "2026-10-08"
+      }
+    },
+    {
+      "steamAppId": 668350,
+      "status": "approved",
+      "metacriticId": "higurashi-when-they-cry-hou-chapter-6",
+      "numericId": null,
+      "reviewedAt": "2026-10-09T17:48:10.772813Z",
+      "evidenceURLs": [
+        "https://store.steampowered.com/app/668350/",
+        "https://www.metacritic.com/game/higurashi-when-they-cry-hou-chapter-6/",
+        "https://store.steampowered.com/api/appdetails?appids=668350&l=english"
+      ],
+      "rationale": "Chapter 6/2018/07th Expansion; Steam 668350 ile bölüm ve çıkış tarihi eşleşiyor. Kalıcı Steam uygulama ID’si; geliştirici, çıkış dönemi ve temel eser kapsamı incelendi. Yama/port ayrı oyun sayılmadı; farklı pazarlanan remake/remasterlar birleştirilmedi.",
+      "reviewedMetadata": {
+        "catalogName": "Higurashi When They Cry Hou - Ch.6 Tsumihoroboshi",
+        "steamAppId": 668350,
+        "storeDevelopers": [
+          "07th Expansion"
+        ],
+        "storeRelease": {
+          "coming_soon": false,
+          "date": "Jun 14, 2018"
+        },
+        "metacriticResourceId": "higurashi-when-they-cry-hou-chapter-6",
+        "primaryMetadata": {
+          "url": "https://www.metacritic.com/game/higurashi-when-they-cry-hou-chapter-6/",
+          "ref": "turn309search3",
+          "developer": "07th Expansion",
+          "release": "Jun 14, 2018",
+          "platforms": "* PC"
+        },
+        "priorIdentity": null,
+        "researchDate": "2026-10-08"
+      }
+    },
+    {
+      "steamAppId": 1657740,
+      "status": "approved",
+      "metacriticId": "mr-sleepy-man",
+      "numericId": null,
+      "reviewedAt": "2026-10-09T17:48:10.772813Z",
+      "evidenceURLs": [
+        "https://store.steampowered.com/app/1657740/",
+        "https://www.metacritic.com/game/mr-sleepy-man/",
+        "https://store.steampowered.com/api/appdetails?appids=1657740&l=english"
+      ],
+      "rationale": "Sayısal kullanıcı puanı var; seçilen platform doğrulanamadı. Kalıcı Steam uygulama ID’si; geliştirici, çıkış dönemi ve temel eser kapsamı incelendi. Yama/port ayrı oyun sayılmadı; farklı pazarlanan remake/remasterlar birleştirilmedi.",
+      "reviewedMetadata": {
+        "catalogName": "Mr. Sleepy Man",
+        "steamAppId": 1657740,
+        "storeDevelopers": [
+          "Devin Santi"
+        ],
+        "storeRelease": {
+          "coming_soon": false,
+          "date": "Mar 10, 2026"
+        },
+        "metacriticResourceId": "mr-sleepy-man",
+        "primaryMetadata": null,
+        "priorIdentity": null,
+        "researchDate": "2026-10-08"
+      }
+    },
+    {
+      "steamAppId": 250320,
+      "status": "approved",
+      "metacriticId": "the-wolf-among-us",
+      "numericId": null,
+      "reviewedAt": "2026-10-09T17:48:10.772813Z",
+      "evidenceURLs": [
+        "https://store.steampowered.com/app/250320/",
+        "https://www.metacritic.com/game/the-wolf-among-us/",
+        "https://store.steampowered.com/api/appdetails?appids=250320&l=english"
+      ],
+      "rationale": "Telltale’in beş bölümlük tam oyunu. Episode 3 dışlandı. Yuvarlatılmış 1,3k bilgisi kesin oy sayısına çevrilmedi. Kalıcı Steam uygulama ID’si; geliştirici, çıkış dönemi ve temel eser kapsamı incelendi. Yama/port ayrı oyun sayılmadı; farklı pazarlanan remake/remasterlar birleştirilmedi.",
+      "reviewedMetadata": {
+        "catalogName": "The Wolf Among Us",
+        "steamAppId": 250320,
+        "storeDevelopers": [
+          "Telltale"
+        ],
+        "storeRelease": {
+          "coming_soon": false,
+          "date": "Oct 11, 2013"
+        },
+        "metacriticResourceId": "the-wolf-among-us",
+        "primaryMetadata": {
+          "url": "https://www.metacritic.com/game/the-wolf-among-us/",
+          "ref": "turn314search0",
+          "developer": "Telltale Games",
+          "release": "Oct 11, 2013",
+          "platforms": "* PC\n  * PlayStation 3\n  * Xbox 360\n  * Xbox One\n  * PlayStation 4\n  * PlayStation Vita"
+        },
+        "priorIdentity": null,
+        "researchDate": "2026-10-08"
+      }
+    },
+    {
+      "steamAppId": 312990,
+      "status": "approved",
+      "metacriticId": "the-expendabros-broforce-the-expendables-missions",
+      "numericId": null,
+      "reviewedAt": "2026-10-09T17:48:10.772813Z",
+      "evidenceURLs": [
+        "https://store.steampowered.com/app/312990/",
+        "https://www.metacritic.com/game/the-expendabros-broforce-the-expendables-missions/",
+        "https://store.steampowered.com/api/appdetails?appids=312990&l=english"
+      ],
+      "rationale": "Broforce: The Expendables Missions uzun başlığı aynı Free Lives/2014 oyununu kapsıyor. Kalıcı Steam uygulama ID’si; geliştirici, çıkış dönemi ve temel eser kapsamı incelendi. Yama/port ayrı oyun sayılmadı; farklı pazarlanan remake/remasterlar birleştirilmedi.",
+      "reviewedMetadata": {
+        "catalogName": "The Expendabros",
+        "steamAppId": 312990,
+        "storeDevelopers": [
+          "Free Lives"
+        ],
+        "storeRelease": {
+          "coming_soon": false,
+          "date": "Aug 5, 2014"
+        },
+        "metacriticResourceId": "the-expendabros-broforce-the-expendables-missions",
+        "primaryMetadata": null,
+        "priorIdentity": null,
+        "researchDate": "2026-10-08"
+      }
+    }
+  ],
+  "investigations": [
+    {
+      "gameId": "steam-3097300",
+      "status": "score_accepted",
+      "sourceUrl": "https://www.metacritic.com/game/creature-kitchen/user-reviews/?platform=pc",
+      "summary": "PC puanı bulgusu.",
+      "platform": "PC",
+      "liveScoreVerified": false
+    },
+    {
+      "gameId": "steam-1663850",
+      "status": "score_accepted",
+      "sourceUrl": "https://www.metacritic.com/game/replaced/user-reviews/?platform=pc",
+      "summary": "PC puanı bulgusu.",
+      "platform": "PC",
+      "liveScoreVerified": false
+    },
+    {
+      "gameId": "steam-1230140",
+      "status": "score_accepted",
+      "sourceUrl": "https://www.metacritic.com/game/atri-my-dear-moments-/",
+      "summary": "Sayısal kullanıcı puanı var; seçilen platform doğrulanamadı.",
+      "platform": null,
+      "liveScoreVerified": false
+    },
+    {
+      "gameId": "steam-3370870",
+      "status": "score_accepted",
+      "sourceUrl": "https://www.metacritic.com/game/berry-bury-berry/",
+      "summary": "PC puanı bulgusu.",
+      "platform": "PC",
+      "liveScoreVerified": false
+    },
+    {
+      "gameId": "steam-577480",
+      "status": "score_accepted",
+      "sourceUrl": "https://www.metacritic.com/game/higurashi-when-they-cry-kai-chapter-5-meakashi/user-reviews/",
+      "summary": "Chapter 5/2017/07th Expansion; Steam 577480 ile bölüm ve çıkış tarihi eşleşiyor.",
+      "platform": "PC",
+      "liveScoreVerified": false
+    },
+    {
+      "gameId": "steam-668350",
+      "status": "score_accepted",
+      "sourceUrl": "https://www.metacritic.com/game/higurashi-when-they-cry-hou-chapter-6/",
+      "summary": "Chapter 6/2018/07th Expansion; Steam 668350 ile bölüm ve çıkış tarihi eşleşiyor.",
+      "platform": "PC",
+      "liveScoreVerified": false
+    },
+    {
+      "gameId": "steam-1657740",
+      "status": "score_accepted",
+      "sourceUrl": "https://www.metacritic.com/game/mr-sleepy-man/",
+      "summary": "Sayısal kullanıcı puanı var; seçilen platform doğrulanamadı.",
+      "platform": null,
+      "liveScoreVerified": false
+    },
+    {
+      "gameId": "steam-250320",
+      "status": "score_accepted",
+      "sourceUrl": "https://www.metacritic.com/game/the-wolf-among-us/user-reviews/?platform=pc",
+      "summary": "Telltale’in beş bölümlük tam oyunu. Episode 3 dışlandı. Yuvarlatılmış 1,3k bilgisi kesin oy sayısına çevrilmedi.",
+      "platform": "PC",
+      "liveScoreVerified": false
+    },
+    {
+      "gameId": "steam-312990",
+      "status": "score_accepted",
+      "sourceUrl": "https://www.metacritic.com/game/the-expendabros-broforce-the-expendables-missions/",
+      "summary": "Broforce: The Expendables Missions uzun başlığı aynı Free Lives/2014 oyununu kapsıyor.",
+      "platform": "PC",
+      "liveScoreVerified": false
+    }
+  ]
+}

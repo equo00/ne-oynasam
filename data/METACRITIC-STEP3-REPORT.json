@@ -1,15 +1,15 @@
 {
   "schemaVersion": 1,
-  "checkedAt": "2026-10-08T12:11:20.564544Z",
+  "checkedAt": "2026-10-09T17:48:10.772813Z",
   "catalogGames": 1323,
   "baselineScores": 901,
-  "scores": 962,
+  "scores": 1001,
   "previouslyMissing": 422,
-  "recoveredMissing": 61,
+  "recoveredMissing": 100,
   "verifiedUnknownPlatform": 629,
-  "verifiedPcScores": 708,
-  "platformUnknown": 252,
-  "remainingMissing": 361,
+  "verifiedPcScores": 731,
+  "platformUnknown": 262,
+  "remainingMissing": 322,
   "checkedGames": 1303,
   "attemptCount": 473,
   "sourceLimitation": "Metacritic birincil sayfaları bağımsız aranır. Erişilebilir önbellek yaşı ve kullanıcı görüntüsü kanıtı korunur; tbd, erişim engeli ve kimlik belirsizliği ayrı raporlanır. Bu kayıtlar canlı ölçüm değildir.",
@@ -6266,42 +6266,6 @@
       }
     },
     {
-      "gameId": "steam-4705510",
-      "steamAppId": 4705510,
-      "name": "Happy Wheels",
-      "status": "unverified_identity",
-      "metacritic": null,
-      "investigation": "Erişilebilir kaynaklarda bu oyun/PC sürümü için kabul edilebilir kimlik ve sayısal puan birlikte doğrulanamadı. Metacritic puanı olmadığı sonucuna varılmaz.",
-      "attempts": [
-        {
-          "engine": "system2",
-          "games": [
-            "steam-4705510",
-            "steam-3797340",
-            "steam-2543830",
-            "steam-3841510"
-          ],
-          "kind": "identity-discovery",
-          "found": [
-            "way-of-the-hunter",
-            "learn-to-fly-3",
-            "laika-aged-through-blood",
-            "laika-aged-through-blood",
-            "thehunter-call-of-the-wild",
-            "operencia-the-stolen-sun",
-            "the-incredible-adventures-of-van-helsing",
-            "last-dream",
-            "evolve"
-          ]
-        }
-      ],
-      "metacriticId": null,
-      "reason": "No approved ID crosslink available",
-      "sourceHadScore": false,
-      "sourceGap": "identity_and_score_fact_unavailable",
-      "metacriticScoreAvailability": "not_established"
-    },
-    {
       "gameId": "steam-3797340",
       "steamAppId": 3797340,
       "name": "Anomalous Coffee Machine 2",
@@ -7121,80 +7085,6 @@
       "metacriticScoreAvailability": "not_established"
     },
     {
-      "gameId": "steam-1962663",
-      "steamAppId": 1962663,
-      "name": "Call of Duty®: Warzone™",
-      "status": "missing_score",
-      "metacritic": {
-        "resourceId": "call-of-duty-warzone-20",
-        "numericId": "1300578554",
-        "url": "https://www.metacritic.com/game/call-of-duty-warzone-20/",
-        "editionScope": "Reviewed store product / Metacritic work relationship",
-        "evidence": [
-          {
-            "kind": "wikidata-external-ids",
-            "qid": "Q113991290",
-            "steamAppId": 1962663,
-            "metacriticId": "call-of-duty-warzone-20",
-            "numericId": "1300578554",
-            "url": "http://www.wikidata.org/entity/Q113991290",
-            "retrievedAt": "2026-10-06T11:25:17.745Z"
-          }
-        ]
-      },
-      "investigation": "Erişilebilir kaynaklarda bu oyun/PC sürümü için kabul edilebilir kimlik ve sayısal puan birlikte doğrulanamadı. Metacritic puanı olmadığı sonucuna varılmaz.",
-      "attempts": [
-        {
-          "engine": "system2",
-          "resources": [
-            "repo",
-            "gray-zone-warfare",
-            "silent-hill-townfall",
-            "call-of-duty-warzone-20"
-          ],
-          "found": [
-            "call-of-duty-warzone",
-            "call-of-duty",
-            "relooted",
-            "papers-please"
-          ]
-        },
-        {
-          "engine": "system1",
-          "games": [
-            "steam-3241660",
-            "steam-2479810",
-            "steam-1636440",
-            "steam-1962663"
-          ],
-          "resources": [
-            "repo",
-            "gray-zone-warfare",
-            "silent-hill-townfall",
-            "call-of-duty-warzone-20"
-          ],
-          "kind": "coverage-verification",
-          "found": []
-        },
-        {
-          "engine": "open",
-          "resources": [
-            "gray-zone-warfare",
-            "silent-hill-townfall",
-            "call-of-duty-warzone-20",
-            "inzoi"
-          ],
-          "kind": "explicit-pc-page",
-          "found": []
-        }
-      ],
-      "metacriticId": "call-of-duty-warzone-20",
-      "reason": "No verified user-score fact for the approved Metacritic resource",
-      "sourceHadScore": false,
-      "sourceGap": "approved_identity_without_score_fact",
-      "metacriticScoreAvailability": "not_established"
-    },
-    {
       "gameId": "steam-1913120",
       "steamAppId": 1913120,
       "name": "Tears of Metal",
@@ -7537,134 +7427,6 @@
       "reason": "No approved ID crosslink available",
       "sourceHadScore": false,
       "sourceGap": "identity_and_score_fact_unavailable",
-      "metacriticScoreAvailability": "not_established"
-    },
-    {
-      "gameId": "steam-2057760",
-      "steamAppId": 2057760,
-      "name": "Esoteric Ebb",
-      "status": "unverified_identity",
-      "metacritic": null,
-      "investigation": "Erişilebilir kaynaklarda bu oyun/PC sürümü için kabul edilebilir kimlik ve sayısal puan birlikte doğrulanamadı. Metacritic puanı olmadığı sonucuna varılmaz.",
-      "attempts": [
-        {
-          "engine": "system2",
-          "games": [
-            "steam-3105440",
-            "steam-4108000",
-            "steam-3850550",
-            "steam-2057760"
-          ],
-          "kind": "identity-discovery",
-          "found": [
-            "might-and-magic-heroes-vii"
-          ]
-        }
-      ],
-      "metacriticId": null,
-      "reason": "No approved ID crosslink available",
-      "sourceHadScore": false,
-      "sourceGap": "identity_and_score_fact_unavailable",
-      "metacriticScoreAvailability": "not_established"
-    },
-    {
-      "gameId": "steam-3079210",
-      "steamAppId": 3079210,
-      "name": "Hell Let Loose: Vietnam",
-      "status": "unverified_identity",
-      "metacritic": null,
-      "investigation": "Erişilebilir kaynaklarda bu oyun/PC sürümü için kabul edilebilir kimlik ve sayısal puan birlikte doğrulanamadı. Metacritic puanı olmadığı sonucuna varılmaz.",
-      "attempts": [
-        {
-          "engine": "system2",
-          "games": [
-            "steam-2968420",
-            "steam-3079210",
-            "steam-3917700",
-            "steam-2059170"
-          ],
-          "kind": "identity-discovery",
-          "found": [
-            "powerwash-simulator-2",
-            "powerwash-simulator"
-          ]
-        }
-      ],
-      "metacriticId": null,
-      "reason": "No approved ID crosslink available",
-      "sourceHadScore": false,
-      "sourceGap": "identity_and_score_fact_unavailable",
-      "metacriticScoreAvailability": "not_established"
-    },
-    {
-      "gameId": "steam-1384160",
-      "steamAppId": 1384160,
-      "name": "GUILTY GEAR -STRIVE-",
-      "status": "missing_score",
-      "metacritic": {
-        "resourceId": "guilty-gear--strive-",
-        "numericId": null,
-        "url": "https://www.metacritic.com/game/guilty-gear--strive-/",
-        "editionScope": "Reviewed store product / Metacritic work relationship",
-        "evidence": [
-          {
-            "kind": "store-app-id-crosslink",
-            "steamAppId": 1384160,
-            "url": "https://store.steampowered.com/api/appdetails?appids=1384160&l=english",
-            "referenceUrl": "https://www.metacritic.com/game/pc/guilty-gear--strive-?ftag=MCD-06-10aaa1f",
-            "retrievedAt": "2026-10-06T11:24:55.736Z"
-          }
-        ]
-      },
-      "investigation": "Erişilebilir kaynaklarda bu oyun/PC sürümü için kabul edilebilir kimlik ve sayısal puan birlikte doğrulanamadı. Metacritic puanı olmadığı sonucuna varılmaz.",
-      "attempts": [
-        {
-          "engine": "system2",
-          "resources": [
-            "guilty-gear--strive-",
-            "escape-simulator-2",
-            "manor-lords",
-            "no-rest-for-the-wicked"
-          ],
-          "found": [
-            "escape-simulator-2",
-            "escape-simulator",
-            "the-seance-of-blake-manor"
-          ]
-        },
-        {
-          "engine": "system1",
-          "games": [
-            "steam-1790600",
-            "steam-1384160",
-            "steam-1363080",
-            "steam-1371980"
-          ],
-          "resources": [
-            "dragon-ball-sparking!-zero",
-            "guilty-gear--strive-",
-            "manor-lords",
-            "no-rest-for-the-wicked"
-          ],
-          "kind": "coverage-verification",
-          "found": []
-        },
-        {
-          "engine": "open",
-          "resources": [
-            "guilty-gear--strive-",
-            "manor-lords",
-            "no-rest-for-the-wicked",
-            "windrose"
-          ],
-          "kind": "explicit-pc-page",
-          "found": []
-        }
-      ],
-      "metacriticId": "guilty-gear--strive-",
-      "reason": "No verified user-score fact for the approved Metacritic resource",
-      "sourceHadScore": false,
-      "sourceGap": "approved_identity_without_score_fact",
       "metacriticScoreAvailability": "not_established"
     },
     {
@@ -8241,40 +8003,6 @@
       "metacriticScoreAvailability": "not_established"
     },
     {
-      "gameId": "steam-1665460",
-      "steamAppId": 1665460,
-      "name": "eFootball™",
-      "status": "identity_conflict",
-      "metacritic": null,
-      "investigation": "Erişilebilir kaynaklarda bu oyun/PC sürümü için kabul edilebilir kimlik ve sayısal puan birlikte doğrulanamadı. Metacritic puanı olmadığı sonucuna varılmaz.",
-      "attempts": [
-        {
-          "engine": "system2",
-          "games": [
-            "steam-1913370",
-            "steam-1665460",
-            "steam-3808690",
-            "steam-3844970"
-          ],
-          "kind": "identity-discovery",
-          "found": [
-            "the-operator",
-            "112-operator",
-            "efootball-2022",
-            "911-operator",
-            "efootball-pes-2021",
-            "efootball-pes-2020",
-            "her-story"
-          ]
-        }
-      ],
-      "metacriticId": null,
-      "reason": "Current continuously updated eFootball product versus annual 2023 resource. Do not describe a yearly edition score as the current game score without explicit metric scope.",
-      "sourceHadScore": true,
-      "sourceGap": "unusable_source_association",
-      "metacriticScoreAvailability": "not_established"
-    },
-    {
       "gameId": "steam-3808690",
       "steamAppId": 3808690,
       "name": "Pathogenic",
@@ -8346,42 +8074,6 @@
       "gameId": "steam-1857950",
       "steamAppId": 1857950,
       "name": "VEIN",
-      "status": "unverified_identity",
-      "metacritic": null,
-      "investigation": "Erişilebilir kaynaklarda bu oyun/PC sürümü için kabul edilebilir kimlik ve sayısal puan birlikte doğrulanamadı. Metacritic puanı olmadığı sonucuna varılmaz.",
-      "attempts": [
-        {
-          "engine": "system2",
-          "games": [
-            "steam-1857950",
-            "steam-2863680",
-            "steam-3293260",
-            "steam-2764460"
-          ],
-          "kind": "identity-discovery",
-          "found": [
-            "code-vein",
-            "code-vein-ii",
-            "predator-hunting-grounds",
-            "kingdom-come-deliverance-ii",
-            "code-vein",
-            "war-the-game",
-            "machiavillain",
-            "rogue-waters",
-            "rise-of-nations-2003"
-          ]
-        }
-      ],
-      "metacriticId": null,
-      "reason": "No approved ID crosslink available",
-      "sourceHadScore": false,
-      "sourceGap": "identity_and_score_fact_unavailable",
-      "metacriticScoreAvailability": "not_established"
-    },
-    {
-      "gameId": "steam-2863680",
-      "steamAppId": 2863680,
-      "name": "ZERO PARADES: Director's Cut",
       "status": "unverified_identity",
       "metacritic": null,
       "investigation": "Erişilebilir kaynaklarda bu oyun/PC sürümü için kabul edilebilir kimlik ve sayısal puan birlikte doğrulanamadı. Metacritic puanı olmadığı sonucuna varılmaz.",
@@ -8513,32 +8205,6 @@
       "metacriticScoreAvailability": "not_established"
     },
     {
-      "gameId": "steam-2964090",
-      "steamAppId": 2964090,
-      "name": "World of Warships: Legends",
-      "status": "unverified_identity",
-      "metacritic": null,
-      "investigation": "Erişilebilir kaynaklarda bu oyun/PC sürümü için kabul edilebilir kimlik ve sayısal puan birlikte doğrulanamadı. Metacritic puanı olmadığı sonucuna varılmaz.",
-      "attempts": [
-        {
-          "engine": "system2",
-          "games": [
-            "steam-1706510",
-            "steam-2964090",
-            "steam-3156770",
-            "steam-2679100"
-          ],
-          "kind": "identity-discovery",
-          "found": []
-        }
-      ],
-      "metacriticId": null,
-      "reason": "No approved ID crosslink available",
-      "sourceHadScore": false,
-      "sourceGap": "identity_and_score_fact_unavailable",
-      "metacriticScoreAvailability": "not_established"
-    },
-    {
       "gameId": "steam-3156770",
       "steamAppId": 3156770,
       "name": "Witchfire",
@@ -8630,78 +8296,6 @@
       "gameId": "steam-2692440",
       "steamAppId": 2692440,
       "name": "LoveCraft",
-      "status": "unverified_identity",
-      "metacritic": null,
-      "investigation": "Erişilebilir kaynaklarda bu oyun/PC sürümü için kabul edilebilir kimlik ve sayısal puan birlikte doğrulanamadı. Metacritic puanı olmadığı sonucuna varılmaz.",
-      "attempts": [
-        {
-          "engine": "system2",
-          "games": [
-            "steam-2825860",
-            "steam-2692440",
-            "steam-2244210",
-            "steam-1805110"
-          ],
-          "kind": "identity-discovery",
-          "found": [
-            "lovecrafts-untold-stories",
-            "dagon-by-h-p-lovecraft",
-            "lust-for-darkness",
-            "static-dread-15-nights-at-the-old-lighthouse",
-            "the-sinking-city",
-            "the-alien-cube",
-            "conarium",
-            "the-last-case-of-benedict-fox",
-            "moons-of-madness"
-          ]
-        }
-      ],
-      "metacriticId": null,
-      "reason": "No approved ID crosslink available",
-      "sourceHadScore": false,
-      "sourceGap": "identity_and_score_fact_unavailable",
-      "metacriticScoreAvailability": "not_established"
-    },
-    {
-      "gameId": "steam-2244210",
-      "steamAppId": 2244210,
-      "name": "Echoes of Aincrad",
-      "status": "unverified_identity",
-      "metacritic": null,
-      "investigation": "Erişilebilir kaynaklarda bu oyun/PC sürümü için kabul edilebilir kimlik ve sayısal puan birlikte doğrulanamadı. Metacritic puanı olmadığı sonucuna varılmaz.",
-      "attempts": [
-        {
-          "engine": "system2",
-          "games": [
-            "steam-2825860",
-            "steam-2692440",
-            "steam-2244210",
-            "steam-1805110"
-          ],
-          "kind": "identity-discovery",
-          "found": [
-            "lovecrafts-untold-stories",
-            "dagon-by-h-p-lovecraft",
-            "lust-for-darkness",
-            "static-dread-15-nights-at-the-old-lighthouse",
-            "the-sinking-city",
-            "the-alien-cube",
-            "conarium",
-            "the-last-case-of-benedict-fox",
-            "moons-of-madness"
-          ]
-        }
-      ],
-      "metacriticId": null,
-      "reason": "No approved ID crosslink available",
-      "sourceHadScore": false,
-      "sourceGap": "identity_and_score_fact_unavailable",
-      "metacriticScoreAvailability": "not_established"
-    },
-    {
-      "gameId": "steam-1805110",
-      "steamAppId": 1805110,
-      "name": "Solarpunk™",
       "status": "unverified_identity",
       "metacritic": null,
       "investigation": "Erişilebilir kaynaklarda bu oyun/PC sürümü için kabul edilebilir kimlik ve sayısal puan birlikte doğrulanamadı. Metacritic puanı olmadığı sonucuna varılmaz.",
@@ -8998,77 +8592,6 @@
       "reason": "Steam product is the Call of Duty hub supporting multiple current games and Warzone. One Modern Warfare II game score is not a score for this multi-game launcher.",
       "sourceHadScore": true,
       "sourceGap": "unusable_source_association",
-      "metacriticScoreAvailability": "not_established"
-    },
-    {
-      "gameId": "steam-2569760",
-      "steamAppId": 2569760,
-      "name": "The Mound: Omen of Cthulhu",
-      "status": "missing_score",
-      "metacritic": {
-        "resourceId": "the-mound-omen-of-cthulhu",
-        "numericId": "1300674575",
-        "url": "https://www.metacritic.com/game/the-mound-omen-of-cthulhu/",
-        "editionScope": "Reviewed store product / Metacritic work relationship",
-        "evidence": [
-          {
-            "kind": "wikidata-external-ids",
-            "qid": "Q133100756",
-            "steamAppId": 2569760,
-            "metacriticId": "the-mound-omen-of-cthulhu",
-            "numericId": "1300674575",
-            "url": "http://www.wikidata.org/entity/Q133100756",
-            "retrievedAt": "2026-10-06T11:25:20.847Z"
-          }
-        ]
-      },
-      "investigation": "Erişilebilir kaynaklarda bu oyun/PC sürümü için kabul edilebilir kimlik ve sayısal puan birlikte doğrulanamadı. Metacritic puanı olmadığı sonucuna varılmaz.",
-      "attempts": [
-        {
-          "engine": "system2",
-          "resources": [
-            "project-wingman",
-            "the-mound-omen-of-cthulhu",
-            "lethal-company",
-            "denshattack!"
-          ],
-          "found": [
-            "denshattack"
-          ]
-        },
-        {
-          "engine": "system1",
-          "games": [
-            "steam-895870",
-            "steam-2569760",
-            "steam-1966720",
-            "steam-2524850"
-          ],
-          "resources": [
-            "project-wingman",
-            "the-mound-omen-of-cthulhu",
-            "lethal-company",
-            "denshattack!"
-          ],
-          "kind": "coverage-verification",
-          "found": []
-        },
-        {
-          "engine": "open",
-          "resources": [
-            "the-mound-omen-of-cthulhu",
-            "lethal-company",
-            "denshattack!",
-            "menace"
-          ],
-          "kind": "explicit-pc-page",
-          "found": []
-        }
-      ],
-      "metacriticId": "the-mound-omen-of-cthulhu",
-      "reason": "No verified user-score fact for the approved Metacritic resource",
-      "sourceHadScore": false,
-      "sourceGap": "approved_identity_without_score_fact",
       "metacriticScoreAvailability": "not_established"
     },
     {
@@ -9404,32 +8927,6 @@
       "metacriticScoreAvailability": "not_established"
     },
     {
-      "gameId": "steam-2209900",
-      "steamAppId": 2209900,
-      "name": "Moonlight Peaks",
-      "status": "unverified_identity",
-      "metacritic": null,
-      "investigation": "Erişilebilir kaynaklarda bu oyun/PC sürümü için kabul edilebilir kimlik ve sayısal puan birlikte doğrulanamadı. Metacritic puanı olmadığı sonucuna varılmaz.",
-      "attempts": [
-        {
-          "engine": "system2",
-          "games": [
-            "steam-2141730",
-            "steam-2209900",
-            "steam-4584110",
-            "steam-2402680"
-          ],
-          "kind": "identity-discovery",
-          "found": []
-        }
-      ],
-      "metacriticId": null,
-      "reason": "No approved ID crosslink available",
-      "sourceHadScore": false,
-      "sourceGap": "identity_and_score_fact_unavailable",
-      "metacriticScoreAvailability": "not_established"
-    },
-    {
       "gameId": "steam-1757300",
       "steamAppId": 1757300,
       "name": "Jump Space",
@@ -9589,35 +9086,6 @@
       "gameId": "steam-4072240",
       "steamAppId": 4072240,
       "name": "Woman Simulator",
-      "status": "unverified_identity",
-      "metacritic": null,
-      "investigation": "Erişilebilir kaynaklarda bu oyun/PC sürümü için kabul edilebilir kimlik ve sayısal puan birlikte doğrulanamadı. Metacritic puanı olmadığı sonucuna varılmaz.",
-      "attempts": [
-        {
-          "engine": "system2",
-          "games": [
-            "steam-1783560",
-            "steam-4072240",
-            "steam-339340",
-            "steam-3634190"
-          ],
-          "kind": "identity-discovery",
-          "found": [
-            "resident-evil-0-hd-remaster",
-            "resident-evil-2"
-          ]
-        }
-      ],
-      "metacriticId": null,
-      "reason": "No approved ID crosslink available",
-      "sourceHadScore": false,
-      "sourceGap": "identity_and_score_fact_unavailable",
-      "metacriticScoreAvailability": "not_established"
-    },
-    {
-      "gameId": "steam-339340",
-      "steamAppId": 339340,
-      "name": "Resident Evil 0",
       "status": "unverified_identity",
       "metacritic": null,
       "investigation": "Erişilebilir kaynaklarda bu oyun/PC sürümü için kabul edilebilir kimlik ve sayısal puan birlikte doğrulanamadı. Metacritic puanı olmadığı sonucuna varılmaz.",
@@ -9946,78 +9414,6 @@
         }
       ],
       "metacriticId": "moonlighter-2-the-endless-vault",
-      "reason": "No verified user-score fact for the approved Metacritic resource",
-      "sourceHadScore": false,
-      "sourceGap": "approved_identity_without_score_fact",
-      "metacriticScoreAvailability": "not_established"
-    },
-    {
-      "gameId": "steam-2527160",
-      "steamAppId": 2527160,
-      "name": "Desktop Explorer",
-      "status": "missing_score",
-      "metacritic": {
-        "resourceId": "desktop-explorer",
-        "numericId": null,
-        "url": "https://www.metacritic.com/game/desktop-explorer/",
-        "editionScope": "Reviewed store product / Metacritic work relationship",
-        "evidence": [
-          {
-            "kind": "store-app-id-crosslink",
-            "steamAppId": 2527160,
-            "url": "https://store.steampowered.com/api/appdetails?appids=2527160&l=english",
-            "referenceUrl": "https://www.metacritic.com/game/pc/desktop-explorer?ftag=MCD-06-10aaa1f",
-            "retrievedAt": "2026-10-06T11:25:17.948Z"
-          }
-        ]
-      },
-      "investigation": "Erişilebilir kaynaklarda bu oyun/PC sürümü için kabul edilebilir kimlik ve sayısal puan birlikte doğrulanamadı. Metacritic puanı olmadığı sonucuna varılmaz.",
-      "attempts": [
-        {
-          "engine": "system2",
-          "resources": [
-            "ninja-gaiden-4",
-            "moonlighter-2-the-endless-vault",
-            "anno-117-pax-romana",
-            "desktop-explorer"
-          ],
-          "found": [
-            "ninja-gaiden-4",
-            "anno-117-pax-romana",
-            "anno-117-pax-romana",
-            "pax-romana"
-          ]
-        },
-        {
-          "engine": "system1",
-          "games": [
-            "steam-2527160",
-            "steam-3195790",
-            "steam-3969080",
-            "steam-4294490"
-          ],
-          "resources": [
-            "desktop-explorer",
-            "white-knuckle",
-            "maplestory-m",
-            "kotamon-my-sis-found-a-super-rare-card-in-her"
-          ],
-          "kind": "coverage-verification",
-          "found": []
-        },
-        {
-          "engine": "open",
-          "resources": [
-            "jump-space",
-            "big-ambitions",
-            "moonlighter-2-the-endless-vault",
-            "desktop-explorer"
-          ],
-          "kind": "explicit-pc-page",
-          "found": []
-        }
-      ],
-      "metacriticId": "desktop-explorer",
       "reason": "No verified user-score fact for the approved Metacritic resource",
       "sourceHadScore": false,
       "sourceGap": "approved_identity_without_score_fact",
@@ -10548,32 +9944,6 @@
       "metacriticScoreAvailability": "not_established"
     },
     {
-      "gameId": "steam-293760",
-      "steamAppId": 293760,
-      "name": "Automation - The Car Company Tycoon Game",
-      "status": "unverified_identity",
-      "metacritic": null,
-      "investigation": "Erişilebilir kaynaklarda bu oyun/PC sürümü için kabul edilebilir kimlik ve sayısal puan birlikte doğrulanamadı. Metacritic puanı olmadığı sonucuna varılmaz.",
-      "attempts": [
-        {
-          "engine": "system2",
-          "games": [
-            "steam-2421750",
-            "steam-4678800",
-            "steam-293760",
-            "steam-2412960"
-          ],
-          "kind": "identity-discovery",
-          "found": []
-        }
-      ],
-      "metacriticId": null,
-      "reason": "No approved ID crosslink available",
-      "sourceHadScore": false,
-      "sourceGap": "identity_and_score_fact_unavailable",
-      "metacriticScoreAvailability": "not_established"
-    },
-    {
       "gameId": "steam-4294490",
       "steamAppId": 4294490,
       "name": "KOTAMON: My Sis Found A Super-Rare Card In Her Cereal Box, So I Became A Garbage Man To Find The Entire Collection And Earn $1,000,000",
@@ -10779,104 +10149,6 @@
       "gameId": "steam-1133870",
       "steamAppId": 1133870,
       "name": "Space Engineers 2",
-      "status": "unverified_identity",
-      "metacritic": null,
-      "investigation": "Erişilebilir kaynaklarda bu oyun/PC sürümü için kabul edilebilir kimlik ve sayısal puan birlikte doğrulanamadı. Metacritic puanı olmadığı sonucuna varılmaz.",
-      "attempts": [
-        {
-          "engine": "system2",
-          "games": [
-            "steam-1133870",
-            "steam-3061570",
-            "steam-1495320",
-            "steam-4981570"
-          ],
-          "kind": "identity-discovery",
-          "found": []
-        }
-      ],
-      "metacriticId": null,
-      "reason": "No approved ID crosslink available",
-      "sourceHadScore": false,
-      "sourceGap": "identity_and_score_fact_unavailable",
-      "metacriticScoreAvailability": "not_established"
-    },
-    {
-      "gameId": "steam-2552450",
-      "steamAppId": 2552450,
-      "name": "KINGDOM HEARTS III + Re Mind (DLC)",
-      "status": "missing_score",
-      "metacritic": {
-        "resourceId": "kingdom-hearts-iii",
-        "numericId": "1300185807",
-        "url": "https://www.metacritic.com/game/kingdom-hearts-iii/",
-        "editionScope": "Reviewed store product / Metacritic work relationship",
-        "evidence": [
-          {
-            "kind": "wikidata-external-ids",
-            "qid": "Q3265748",
-            "steamAppId": 2552450,
-            "metacriticId": "kingdom-hearts-iii",
-            "numericId": "1300185807",
-            "url": "http://www.wikidata.org/entity/Q3265748",
-            "retrievedAt": "2026-10-06T11:25:22.498Z"
-          }
-        ]
-      },
-      "investigation": "Erişilebilir kaynaklarda bu oyun/PC sürümü için kabul edilebilir kimlik ve sayısal puan birlikte doğrulanamadı. Metacritic puanı olmadığı sonucuna varılmaz.",
-      "attempts": [
-        {
-          "engine": "system2",
-          "resources": [
-            "kingdom-hearts-iii",
-            "songs-of-syx",
-            "star-trek-voyager-across-the-unknown",
-            "demon-slayer-kimetsu-no-yaiba-the-hinokami-2"
-          ],
-          "found": [
-            "star-trek-voyager-across-the-unknown",
-            "demon-slayer-kimetsu-no-yaiba-the-hinokami"
-          ]
-        },
-        {
-          "engine": "system1",
-          "games": [
-            "steam-2552450",
-            "steam-1162750",
-            "steam-2928600",
-            "steam-3124340"
-          ],
-          "resources": [
-            "kingdom-hearts-iii",
-            "songs-of-syx",
-            "demon-slayer-kimetsu-no-yaiba-the-hinokami-2",
-            "demeo-x-dungeons-dragons-battlemarked"
-          ],
-          "kind": "coverage-verification",
-          "found": []
-        },
-        {
-          "engine": "open",
-          "resources": [
-            "white-knuckle",
-            "maplestory-m",
-            "kotamon-my-sis-found-a-super-rare-card-in-her",
-            "kingdom-hearts-iii"
-          ],
-          "kind": "explicit-pc-page",
-          "found": []
-        }
-      ],
-      "metacriticId": "kingdom-hearts-iii",
-      "reason": "No verified user-score fact for the approved Metacritic resource",
-      "sourceHadScore": true,
-      "sourceGap": "unusable_source_association",
-      "metacriticScoreAvailability": "not_established"
-    },
-    {
-      "gameId": "steam-3061570",
-      "steamAppId": 3061570,
-      "name": "Persona5: The Phantom X",
       "status": "unverified_identity",
       "metacritic": null,
       "investigation": "Erişilebilir kaynaklarda bu oyun/PC sürümü için kabul edilebilir kimlik ve sayısal puan birlikte doğrulanamadı. Metacritic puanı olmadığı sonucuna varılmaz.",
@@ -11111,67 +10383,9 @@
       "metacriticScoreAvailability": "not_established"
     },
     {
-      "gameId": "steam-3326230",
-      "steamAppId": 3326230,
-      "name": "Hozy",
-      "status": "unverified_identity",
-      "metacritic": null,
-      "investigation": "Erişilebilir kaynaklarda bu oyun/PC sürümü için kabul edilebilir kimlik ve sayısal puan birlikte doğrulanamadı. Metacritic puanı olmadığı sonucuna varılmaz.",
-      "attempts": [
-        {
-          "engine": "system2",
-          "games": [
-            "steam-3326230",
-            "steam-2819520",
-            "steam-2004680",
-            "steam-3014320"
-          ],
-          "kind": "identity-discovery",
-          "found": [
-            "octopath-traveler-0",
-            "the-adventures-of-elliot-the-millennium-tales"
-          ]
-        }
-      ],
-      "metacriticId": null,
-      "reason": "No approved ID crosslink available",
-      "sourceHadScore": false,
-      "sourceGap": "identity_and_score_fact_unavailable",
-      "metacriticScoreAvailability": "not_established"
-    },
-    {
       "gameId": "steam-2819520",
       "steamAppId": 2819520,
       "name": "Viking Rise",
-      "status": "unverified_identity",
-      "metacritic": null,
-      "investigation": "Erişilebilir kaynaklarda bu oyun/PC sürümü için kabul edilebilir kimlik ve sayısal puan birlikte doğrulanamadı. Metacritic puanı olmadığı sonucuna varılmaz.",
-      "attempts": [
-        {
-          "engine": "system2",
-          "games": [
-            "steam-3326230",
-            "steam-2819520",
-            "steam-2004680",
-            "steam-3014320"
-          ],
-          "kind": "identity-discovery",
-          "found": [
-            "octopath-traveler-0",
-            "the-adventures-of-elliot-the-millennium-tales"
-          ]
-        }
-      ],
-      "metacriticId": null,
-      "reason": "No approved ID crosslink available",
-      "sourceHadScore": false,
-      "sourceGap": "identity_and_score_fact_unavailable",
-      "metacriticScoreAvailability": "not_established"
-    },
-    {
-      "gameId": "steam-2004680",
-      "steamAppId": 2004680,
-      "name": "Voidling Bound",
       "status": "unverified_identity",
       "metacritic": null,
       "investigation": "Erişilebilir kaynaklarda bu oyun/PC sürümü için kabul edilebilir kimlik ve sayısal puan birlikte doğrulanamadı. Metacritic puanı olmadığı sonucuna varılmaz.",
@@ -11325,104 +10539,6 @@
       "reason": "No approved ID crosslink available",
       "sourceHadScore": false,
       "sourceGap": "identity_and_score_fact_unavailable",
-      "metacriticScoreAvailability": "not_established"
-    },
-    {
-      "gameId": "steam-2893570",
-      "steamAppId": 2893570,
-      "name": "DRAGON QUEST I & II HD-2D Remake",
-      "status": "unverified_identity",
-      "metacritic": null,
-      "investigation": "Erişilebilir kaynaklarda bu oyun/PC sürümü için kabul edilebilir kimlik ve sayısal puan birlikte doğrulanamadı. Metacritic puanı olmadığı sonucuna varılmaz.",
-      "attempts": [
-        {
-          "engine": "system2",
-          "games": [
-            "steam-3624140",
-            "steam-2893570",
-            "steam-2747330",
-            "steam-3831210"
-          ],
-          "kind": "identity-discovery",
-          "found": []
-        }
-      ],
-      "metacriticId": null,
-      "reason": "No approved ID crosslink available",
-      "sourceHadScore": false,
-      "sourceGap": "identity_and_score_fact_unavailable",
-      "metacriticScoreAvailability": "not_established"
-    },
-    {
-      "gameId": "steam-2928600",
-      "steamAppId": 2928600,
-      "name": "Demon Slayer -Kimetsu no Yaiba- The Hinokami Chronicles 2",
-      "status": "missing_score",
-      "metacritic": {
-        "resourceId": "demon-slayer-kimetsu-no-yaiba-the-hinokami-2",
-        "numericId": "1300661468",
-        "url": "https://www.metacritic.com/game/demon-slayer-kimetsu-no-yaiba-the-hinokami-2/",
-        "editionScope": "Reviewed store product / Metacritic work relationship",
-        "evidence": [
-          {
-            "kind": "wikidata-external-ids",
-            "qid": "Q131391938",
-            "steamAppId": 2928600,
-            "metacriticId": "demon-slayer-kimetsu-no-yaiba-the-hinokami-2",
-            "numericId": "1300661468",
-            "url": "http://www.wikidata.org/entity/Q131391938",
-            "retrievedAt": "2026-10-06T11:25:23.541Z"
-          }
-        ]
-      },
-      "investigation": "Erişilebilir kaynaklarda bu oyun/PC sürümü için kabul edilebilir kimlik ve sayısal puan birlikte doğrulanamadı. Metacritic puanı olmadığı sonucuna varılmaz.",
-      "attempts": [
-        {
-          "engine": "system2",
-          "resources": [
-            "kingdom-hearts-iii",
-            "songs-of-syx",
-            "star-trek-voyager-across-the-unknown",
-            "demon-slayer-kimetsu-no-yaiba-the-hinokami-2"
-          ],
-          "found": [
-            "star-trek-voyager-across-the-unknown",
-            "demon-slayer-kimetsu-no-yaiba-the-hinokami"
-          ]
-        },
-        {
-          "engine": "system1",
-          "games": [
-            "steam-2552450",
-            "steam-1162750",
-            "steam-2928600",
-            "steam-3124340"
-          ],
-          "resources": [
-            "kingdom-hearts-iii",
-            "songs-of-syx",
-            "demon-slayer-kimetsu-no-yaiba-the-hinokami-2",
-            "demeo-x-dungeons-dragons-battlemarked"
-          ],
-          "kind": "coverage-verification",
-          "found": []
-        },
-        {
-          "engine": "open",
-          "resources": [
-            "songs-of-syx",
-            "demon-slayer-kimetsu-no-yaiba-the-hinokami-2",
-            "demeo-x-dungeons-dragons-battlemarked",
-            "toem-2"
-          ],
-          "kind": "explicit-pc-page",
-          "found": []
-        }
-      ],
-      "metacriticId": "demon-slayer-kimetsu-no-yaiba-the-hinokami-2",
-      "reason": "No verified user-score fact for the approved Metacritic resource",
-      "sourceHadScore": false,
-      "sourceGap": "approved_identity_without_score_fact",
       "metacriticScoreAvailability": "not_established"
     },
     {
@@ -11660,80 +10776,6 @@
       "metacriticScoreAvailability": "not_established"
     },
     {
-      "gameId": "steam-3124340",
-      "steamAppId": 3124340,
-      "name": "Demeo x Dungeons & Dragons: Battlemarked",
-      "status": "missing_score",
-      "metacritic": {
-        "resourceId": "demeo-x-dungeons-dragons-battlemarked",
-        "numericId": null,
-        "url": "https://www.metacritic.com/game/demeo-x-dungeons-dragons-battlemarked/",
-        "editionScope": "Reviewed store product / Metacritic work relationship",
-        "evidence": [
-          {
-            "kind": "store-app-id-crosslink",
-            "steamAppId": 3124340,
-            "url": "https://store.steampowered.com/api/appdetails?appids=3124340&l=english",
-            "referenceUrl": "https://www.metacritic.com/game/pc/demeo-x-dungeons-dragons-battlemarked?ftag=MCD-06-10aaa1f",
-            "retrievedAt": "2026-10-06T11:30:31.689Z"
-          }
-        ]
-      },
-      "investigation": "Erişilebilir kaynaklarda bu oyun/PC sürümü için kabul edilebilir kimlik ve sayısal puan birlikte doğrulanamadı. Metacritic puanı olmadığı sonucuna varılmaz.",
-      "attempts": [
-        {
-          "engine": "system2",
-          "resources": [
-            "code-vein-ii",
-            "demeo-x-dungeons-dragons-battlemarked",
-            "absolum",
-            "diablo-ii-resurrected"
-          ],
-          "found": [
-            "code-vein-ii",
-            "demeo-x-dungeons-and-dragons-battlemarked",
-            "absolum",
-            "diablo-ii-resurrected",
-            "diablo-ii-resurrected",
-            "code-vein"
-          ]
-        },
-        {
-          "engine": "system1",
-          "games": [
-            "steam-2552450",
-            "steam-1162750",
-            "steam-2928600",
-            "steam-3124340"
-          ],
-          "resources": [
-            "kingdom-hearts-iii",
-            "songs-of-syx",
-            "demon-slayer-kimetsu-no-yaiba-the-hinokami-2",
-            "demeo-x-dungeons-dragons-battlemarked"
-          ],
-          "kind": "coverage-verification",
-          "found": []
-        },
-        {
-          "engine": "open",
-          "resources": [
-            "songs-of-syx",
-            "demon-slayer-kimetsu-no-yaiba-the-hinokami-2",
-            "demeo-x-dungeons-dragons-battlemarked",
-            "toem-2"
-          ],
-          "kind": "explicit-pc-page",
-          "found": []
-        }
-      ],
-      "metacriticId": "demeo-x-dungeons-dragons-battlemarked",
-      "reason": "No verified user-score fact for the approved Metacritic resource",
-      "sourceHadScore": false,
-      "sourceGap": "approved_identity_without_score_fact",
-      "metacriticScoreAvailability": "not_established"
-    },
-    {
       "gameId": "steam-3279780",
       "steamAppId": 3279780,
       "name": "Horizon Walker",
@@ -11919,82 +10961,6 @@
       "metacriticScoreAvailability": "not_established"
     },
     {
-      "gameId": "steam-611790",
-      "steamAppId": 611790,
-      "name": "House Party",
-      "status": "missing_score",
-      "metacritic": {
-        "resourceId": "house-party",
-        "numericId": "1300694872",
-        "url": "https://www.metacritic.com/game/house-party/",
-        "editionScope": "Reviewed store product / Metacritic work relationship",
-        "evidence": [
-          {
-            "kind": "wikidata-external-ids",
-            "qid": "Q60565953",
-            "steamAppId": 611790,
-            "metacriticId": "house-party",
-            "numericId": "1300694872",
-            "url": "http://www.wikidata.org/entity/Q60565953",
-            "retrievedAt": "2026-10-06T11:25:25.527Z"
-          }
-        ]
-      },
-      "investigation": "Erişilebilir kaynaklarda bu oyun/PC sürümü için kabul edilebilir kimlik ve sayısal puan birlikte doğrulanamadı. Metacritic puanı olmadığı sonucuna varılmaz.",
-      "attempts": [
-        {
-          "engine": "system2",
-          "resources": [
-            "toem-2",
-            "house-party",
-            "unbeatable",
-            "shapez-2---factory"
-          ],
-          "found": [
-            "house-party-2017",
-            "shapez",
-            "toem",
-            "house-2020"
-          ]
-        },
-        {
-          "engine": "system1",
-          "games": [
-            "steam-2900640",
-            "steam-611790",
-            "steam-2240620",
-            "steam-2162800"
-          ],
-          "resources": [
-            "toem-2",
-            "house-party",
-            "unbeatable",
-            "shapez-2---factory"
-          ],
-          "kind": "coverage-verification",
-          "found": []
-        },
-        {
-          "engine": "open",
-          "resources": [
-            "house-party",
-            "unbeatable",
-            "shapez-2---factory",
-            "hatsune-miku-project-diva-megamix-plus"
-          ],
-          "kind": "explicit-pc-page",
-          "found": [
-            "unbeatable"
-          ]
-        }
-      ],
-      "metacriticId": "house-party",
-      "reason": "No verified user-score fact for the approved Metacritic resource",
-      "sourceHadScore": false,
-      "sourceGap": "approved_identity_without_score_fact",
-      "metacriticScoreAvailability": "not_established"
-    },
-    {
       "gameId": "steam-314650",
       "steamAppId": 314650,
       "name": "SpaceEngine",
@@ -12105,35 +11071,6 @@
       "gameId": "steam-2784470",
       "steamAppId": 2784470,
       "name": "9 Kings",
-      "status": "unverified_identity",
-      "metacritic": null,
-      "investigation": "Erişilebilir kaynaklarda bu oyun/PC sürümü için kabul edilebilir kimlik ve sayısal puan birlikte doğrulanamadı. Metacritic puanı olmadığı sonucuna varılmaz.",
-      "attempts": [
-        {
-          "engine": "system2",
-          "games": [
-            "steam-2124120",
-            "steam-2784470",
-            "steam-4125930",
-            "steam-2624870"
-          ],
-          "kind": "identity-discovery",
-          "found": [
-            "life-is-strange-reunion",
-            "minecraft"
-          ]
-        }
-      ],
-      "metacriticId": null,
-      "reason": "No approved ID crosslink available",
-      "sourceHadScore": false,
-      "sourceGap": "identity_and_score_fact_unavailable",
-      "metacriticScoreAvailability": "not_established"
-    },
-    {
-      "gameId": "steam-4125930",
-      "steamAppId": 4125930,
-      "name": "Punishing: Gray Raven",
       "status": "unverified_identity",
       "metacritic": null,
       "investigation": "Erişilebilir kaynaklarda bu oyun/PC sürümü için kabul edilebilir kimlik ve sayısal puan birlikte doğrulanamadı. Metacritic puanı olmadığı sonucuna varılmaz.",
@@ -12300,108 +11237,6 @@
       "metacriticScoreAvailability": "not_established"
     },
     {
-      "gameId": "steam-2162800",
-      "steamAppId": 2162800,
-      "name": "shapez 2 - Factory",
-      "status": "missing_score",
-      "metacritic": {
-        "resourceId": "shapez-2---factory",
-        "numericId": null,
-        "url": "https://www.metacritic.com/game/shapez-2---factory/",
-        "editionScope": "Reviewed store product / Metacritic work relationship",
-        "evidence": [
-          {
-            "kind": "store-app-id-crosslink",
-            "steamAppId": 2162800,
-            "url": "https://store.steampowered.com/api/appdetails?appids=2162800&l=english",
-            "referenceUrl": "https://www.metacritic.com/game/pc/shapez-2---factory?ftag=MCD-06-10aaa1f",
-            "retrievedAt": "2026-10-06T11:31:02.354Z"
-          }
-        ]
-      },
-      "investigation": "Erişilebilir kaynaklarda bu oyun/PC sürümü için kabul edilebilir kimlik ve sayısal puan birlikte doğrulanamadı. Metacritic puanı olmadığı sonucuna varılmaz.",
-      "attempts": [
-        {
-          "engine": "system2",
-          "resources": [
-            "toem-2",
-            "house-party",
-            "unbeatable",
-            "shapez-2---factory"
-          ],
-          "found": [
-            "house-party-2017",
-            "shapez",
-            "toem",
-            "house-2020"
-          ]
-        },
-        {
-          "engine": "system1",
-          "games": [
-            "steam-2900640",
-            "steam-611790",
-            "steam-2240620",
-            "steam-2162800"
-          ],
-          "resources": [
-            "toem-2",
-            "house-party",
-            "unbeatable",
-            "shapez-2---factory"
-          ],
-          "kind": "coverage-verification",
-          "found": []
-        },
-        {
-          "engine": "open",
-          "resources": [
-            "house-party",
-            "unbeatable",
-            "shapez-2---factory",
-            "hatsune-miku-project-diva-megamix-plus"
-          ],
-          "kind": "explicit-pc-page",
-          "found": [
-            "unbeatable"
-          ]
-        }
-      ],
-      "metacriticId": "shapez-2---factory",
-      "reason": "No verified user-score fact for the approved Metacritic resource",
-      "sourceHadScore": false,
-      "sourceGap": "approved_identity_without_score_fact",
-      "metacriticScoreAvailability": "not_established"
-    },
-    {
-      "gameId": "steam-3556750",
-      "steamAppId": 3556750,
-      "name": "Warhammer 40,000: Dawn of War - Definitive Edition",
-      "status": "unverified_identity",
-      "metacritic": null,
-      "investigation": "Erişilebilir kaynaklarda bu oyun/PC sürümü için kabul edilebilir kimlik ve sayısal puan birlikte doğrulanamadı. Metacritic puanı olmadığı sonucuna varılmaz.",
-      "attempts": [
-        {
-          "engine": "system2",
-          "games": [
-            "steam-3393280",
-            "steam-1605850",
-            "steam-2157830",
-            "steam-3556750"
-          ],
-          "kind": "identity-discovery",
-          "found": [
-            "john-carpenters-toxic-commando"
-          ]
-        }
-      ],
-      "metacriticId": null,
-      "reason": "No approved ID crosslink available",
-      "sourceHadScore": false,
-      "sourceGap": "identity_and_score_fact_unavailable",
-      "metacriticScoreAvailability": "not_established"
-    },
-    {
       "gameId": "steam-4285110",
       "steamAppId": 4285110,
       "name": "Tunnel Escape Fates Entwined",
@@ -12451,152 +11286,6 @@
       "reason": "No approved ID crosslink available",
       "sourceHadScore": false,
       "sourceGap": "identity_and_score_fact_unavailable",
-      "metacriticScoreAvailability": "not_established"
-    },
-    {
-      "gameId": "steam-1761390",
-      "steamAppId": 1761390,
-      "name": "Hatsune Miku: Project DIVA Mega Mix+",
-      "status": "missing_score",
-      "metacritic": {
-        "resourceId": "hatsune-miku-project-diva-megamix-plus",
-        "numericId": "1300623103",
-        "url": "https://www.metacritic.com/game/hatsune-miku-project-diva-megamix-plus/",
-        "editionScope": "Reviewed store product / Metacritic work relationship",
-        "evidence": [
-          {
-            "kind": "wikidata-external-ids",
-            "qid": "Q112135602",
-            "steamAppId": 1761390,
-            "metacriticId": "hatsune-miku-project-diva-megamix-plus",
-            "numericId": "1300623103",
-            "url": "http://www.wikidata.org/entity/Q112135602",
-            "retrievedAt": "2026-10-06T11:25:26.482Z"
-          }
-        ]
-      },
-      "investigation": "Erişilebilir kaynaklarda bu oyun/PC sürümü için kabul edilebilir kimlik ve sayısal puan birlikte doğrulanamadı. Metacritic puanı olmadığı sonucuna varılmaz.",
-      "attempts": [
-        {
-          "engine": "system2",
-          "resources": [
-            "hatsune-miku-project-diva-megamix-plus",
-            "marvel-vs-capcom-fighting-collection-arcade-classics",
-            "guild-wars",
-            "obenseuer"
-          ],
-          "found": [
-            "guild-wars",
-            "guild-wars",
-            "guild-wars-2"
-          ]
-        },
-        {
-          "engine": "system1",
-          "games": [
-            "steam-1761390",
-            "steam-2634890",
-            "steam-951240",
-            "steam-2307350"
-          ],
-          "resources": [
-            "hatsune-miku-project-diva-megamix-plus",
-            "marvel-vs-capcom-fighting-collection-arcade-classics",
-            "obenseuer",
-            "into-the-radius-2"
-          ],
-          "kind": "coverage-verification",
-          "found": []
-        },
-        {
-          "engine": "open",
-          "resources": [
-            "house-party",
-            "unbeatable",
-            "shapez-2---factory",
-            "hatsune-miku-project-diva-megamix-plus"
-          ],
-          "kind": "explicit-pc-page",
-          "found": [
-            "unbeatable"
-          ]
-        }
-      ],
-      "metacriticId": "hatsune-miku-project-diva-megamix-plus",
-      "reason": "No verified user-score fact for the approved Metacritic resource",
-      "sourceHadScore": false,
-      "sourceGap": "approved_identity_without_score_fact",
-      "metacriticScoreAvailability": "not_established"
-    },
-    {
-      "gameId": "steam-2634890",
-      "steamAppId": 2634890,
-      "name": "MARVEL vs. CAPCOM Fighting Collection: Arcade Classics",
-      "status": "missing_score",
-      "metacritic": {
-        "resourceId": "marvel-vs-capcom-fighting-collection-arcade-classics",
-        "numericId": null,
-        "url": "https://www.metacritic.com/game/marvel-vs-capcom-fighting-collection-arcade-classics/",
-        "editionScope": "Reviewed store product / Metacritic work relationship",
-        "evidence": [
-          {
-            "kind": "store-app-id-crosslink",
-            "steamAppId": 2634890,
-            "url": "https://store.steampowered.com/api/appdetails?appids=2634890&l=english",
-            "referenceUrl": "https://www.metacritic.com/game/pc/marvel-vs-capcom-fighting-collection-arcade-classics?ftag=MCD-06-10aaa1f",
-            "retrievedAt": "2026-10-06T11:31:09.560Z"
-          }
-        ]
-      },
-      "investigation": "Erişilebilir kaynaklarda bu oyun/PC sürümü için kabul edilebilir kimlik ve sayısal puan birlikte doğrulanamadı. Metacritic puanı olmadığı sonucuna varılmaz.",
-      "attempts": [
-        {
-          "engine": "system2",
-          "resources": [
-            "hatsune-miku-project-diva-megamix-plus",
-            "marvel-vs-capcom-fighting-collection-arcade-classics",
-            "guild-wars",
-            "obenseuer"
-          ],
-          "found": [
-            "guild-wars",
-            "guild-wars",
-            "guild-wars-2"
-          ]
-        },
-        {
-          "engine": "system1",
-          "games": [
-            "steam-1761390",
-            "steam-2634890",
-            "steam-951240",
-            "steam-2307350"
-          ],
-          "resources": [
-            "hatsune-miku-project-diva-megamix-plus",
-            "marvel-vs-capcom-fighting-collection-arcade-classics",
-            "obenseuer",
-            "into-the-radius-2"
-          ],
-          "kind": "coverage-verification",
-          "found": []
-        },
-        {
-          "engine": "open",
-          "resources": [
-            "marvel-vs-capcom-fighting-collection-arcade-classics",
-            "obenseuer",
-            "into-the-radius-2",
-            "fatestay-night-remastered"
-          ],
-          "kind": "explicit-pc-page",
-          "found": []
-        }
-      ],
-      "metacriticId": "marvel-vs-capcom-fighting-collection-arcade-classics",
-      "reason": "No verified user-score fact for the approved Metacritic resource",
-      "sourceHadScore": false,
-      "sourceGap": "approved_identity_without_score_fact",
       "metacriticScoreAvailability": "not_established"
     },
     {
@@ -13255,34 +11944,6 @@
       "metacriticScoreAvailability": "not_established"
     },
     {
-      "gameId": "steam-1845250",
-      "steamAppId": 1845250,
-      "name": "Rubinite",
-      "status": "unverified_identity",
-      "metacritic": null,
-      "investigation": "Erişilebilir kaynaklarda bu oyun/PC sürümü için kabul edilebilir kimlik ve sayısal puan birlikte doğrulanamadı. Metacritic puanı olmadığı sonucuna varılmaz.",
-      "attempts": [
-        {
-          "engine": "system2",
-          "games": [
-            "steam-1845250",
-            "steam-4369130",
-            "steam-2426530",
-            "steam-3618030"
-          ],
-          "kind": "identity-discovery",
-          "found": [
-            "space-run-2014"
-          ]
-        }
-      ],
-      "metacriticId": null,
-      "reason": "No approved ID crosslink available",
-      "sourceHadScore": false,
-      "sourceGap": "identity_and_score_fact_unavailable",
-      "metacriticScoreAvailability": "not_established"
-    },
-    {
       "gameId": "steam-4369130",
       "steamAppId": 4369130,
       "name": "Chop Chop Inc.",
@@ -13308,82 +11969,6 @@
       "reason": "No approved ID crosslink available",
       "sourceHadScore": false,
       "sourceGap": "identity_and_score_fact_unavailable",
-      "metacriticScoreAvailability": "not_established"
-    },
-    {
-      "gameId": "steam-2396980",
-      "steamAppId": 2396980,
-      "name": "Fate/stay night REMASTERED",
-      "status": "missing_score",
-      "metacritic": {
-        "resourceId": "fatestay-night-remastered",
-        "numericId": null,
-        "url": "https://www.metacritic.com/game/fatestay-night-remastered/",
-        "editionScope": "Reviewed store product / Metacritic work relationship",
-        "evidence": [
-          {
-            "kind": "store-app-id-crosslink",
-            "steamAppId": 2396980,
-            "url": "https://store.steampowered.com/api/appdetails?appids=2396980&l=english",
-            "referenceUrl": "https://www.metacritic.com/game/pc/fatestay-night-remastered?ftag=MCD-06-10aaa1f",
-            "retrievedAt": "2026-10-06T11:31:48.588Z"
-          }
-        ]
-      },
-      "investigation": "Erişilebilir kaynaklarda bu oyun/PC sürümü için kabul edilebilir kimlik ve sayısal puan birlikte doğrulanamadı. Metacritic puanı olmadığı sonucuna varılmaz.",
-      "attempts": [
-        {
-          "engine": "system2",
-          "resources": [
-            "into-the-radius-2",
-            "fatestay-night-remastered",
-            "lego-star-wars-the-complete-saga",
-            "high-on-life-2"
-          ],
-          "found": [
-            "into-the-radius",
-            "high-on-life-2",
-            "high-on-life-2",
-            "fate-stay-night-remastered",
-            "high-on-life"
-          ]
-        },
-        {
-          "engine": "system1",
-          "games": [
-            "steam-2396980",
-            "steam-32440",
-            "steam-3950130",
-            "steam-2780980"
-          ],
-          "resources": [
-            "fatestay-night-remastered",
-            "lego-star-wars-the-complete-saga",
-            "database-detective-minor-crimes-division",
-            "lockdown-protocol"
-          ],
-          "kind": "coverage-verification",
-          "found": [
-            "fate-stay-night-remastered",
-            "lego-star-wars-the-skywalker-saga"
-          ]
-        },
-        {
-          "engine": "open",
-          "resources": [
-            "marvel-vs-capcom-fighting-collection-arcade-classics",
-            "obenseuer",
-            "into-the-radius-2",
-            "fatestay-night-remastered"
-          ],
-          "kind": "explicit-pc-page",
-          "found": []
-        }
-      ],
-      "metacriticId": "fatestay-night-remastered",
-      "reason": "No verified user-score fact for the approved Metacritic resource",
-      "sourceHadScore": false,
-      "sourceGap": "approved_identity_without_score_fact",
       "metacriticScoreAvailability": "not_established"
     },
     {
@@ -13642,35 +12227,6 @@
           ],
           "kind": "identity-discovery",
           "found": []
-        }
-      ],
-      "metacriticId": null,
-      "reason": "No approved ID crosslink available",
-      "sourceHadScore": false,
-      "sourceGap": "identity_and_score_fact_unavailable",
-      "metacriticScoreAvailability": "not_established"
-    },
-    {
-      "gameId": "steam-3097300",
-      "steamAppId": 3097300,
-      "name": "Creature Kitchen",
-      "status": "unverified_identity",
-      "metacritic": null,
-      "investigation": "Erişilebilir kaynaklarda bu oyun/PC sürümü için kabul edilebilir kimlik ve sayısal puan birlikte doğrulanamadı. Metacritic puanı olmadığı sonucuna varılmaz.",
-      "attempts": [
-        {
-          "engine": "system2",
-          "games": [
-            "steam-3097300",
-            "steam-3578070",
-            "steam-590830",
-            "steam-3731020"
-          ],
-          "kind": "identity-discovery",
-          "found": [
-            "five-hearts-under-one-roof-season-2",
-            "five-hearts-under-one-roof"
-          ]
         }
       ],
       "metacriticId": null,
@@ -14194,35 +12750,6 @@
       "gameId": "steam-3438850",
       "steamAppId": 3438850,
       "name": "Sledding Game",
-      "status": "unverified_identity",
-      "metacritic": null,
-      "investigation": "Erişilebilir kaynaklarda bu oyun/PC sürümü için kabul edilebilir kimlik ve sayısal puan birlikte doğrulanamadı. Metacritic puanı olmadığı sonucuna varılmaz.",
-      "attempts": [
-        {
-          "engine": "system2",
-          "games": [
-            "steam-2489330",
-            "steam-4560660",
-            "steam-3438850",
-            "steam-1663850"
-          ],
-          "kind": "identity-discovery",
-          "found": [
-            "replaced",
-            "replaced"
-          ]
-        }
-      ],
-      "metacriticId": null,
-      "reason": "No approved ID crosslink available",
-      "sourceHadScore": false,
-      "sourceGap": "identity_and_score_fact_unavailable",
-      "metacriticScoreAvailability": "not_established"
-    },
-    {
-      "gameId": "steam-1663850",
-      "steamAppId": 1663850,
-      "name": "REPLACED",
       "status": "unverified_identity",
       "metacritic": null,
       "investigation": "Erişilebilir kaynaklarda bu oyun/PC sürümü için kabul edilebilir kimlik ve sayısal puan birlikte doğrulanamadı. Metacritic puanı olmadığı sonucuna varılmaz.",
@@ -15480,86 +14007,6 @@
       "metacriticScoreAvailability": "not_established"
     },
     {
-      "gameId": "steam-1230140",
-      "steamAppId": 1230140,
-      "name": "ATRI -My Dear Moments-",
-      "status": "missing_score",
-      "metacritic": {
-        "resourceId": "atri-my-dear-moments-",
-        "numericId": "1300513401",
-        "url": "https://www.metacritic.com/game/atri-my-dear-moments-/",
-        "editionScope": "Reviewed store product / Metacritic work relationship",
-        "evidence": [
-          {
-            "kind": "wikidata-external-ids",
-            "qid": "Q97275837",
-            "steamAppId": 1230140,
-            "metacriticId": "atri-my-dear-moments-",
-            "numericId": "1300513401",
-            "url": "http://www.wikidata.org/entity/Q97275837",
-            "retrievedAt": "2026-10-06T11:26:01.062Z"
-          }
-        ]
-      },
-      "investigation": "Erişilebilir kaynaklarda bu oyun/PC sürümü için kabul edilebilir kimlik ve sayısal puan birlikte doğrulanamadı. Metacritic puanı olmadığı sonucuna varılmaz.",
-      "attempts": [
-        {
-          "engine": "system2",
-          "resources": [
-            "atri-my-dear-moments-",
-            "wobbledogs",
-            "threefold-recital",
-            "cureocity"
-          ],
-          "found": [
-            "her-story",
-            "control",
-            "relooted",
-            "awaria",
-            "viewfinder",
-            "1300657124",
-            "viewfinder",
-            "crime-cities",
-            "not-for-broadcast",
-            "the-forgotten-city"
-          ]
-        },
-        {
-          "engine": "system1",
-          "games": [
-            "steam-1920960",
-            "steam-1230140",
-            "steam-1424330",
-            "steam-3084280"
-          ],
-          "resources": [
-            "vpet",
-            "atri-my-dear-moments-",
-            "wobbledogs",
-            "threefold-recital"
-          ],
-          "kind": "coverage-verification",
-          "found": []
-        },
-        {
-          "engine": "open",
-          "resources": [
-            "atri-my-dear-moments-",
-            "wobbledogs",
-            "threefold-recital",
-            "cureocity"
-          ],
-          "kind": "explicit-pc-page",
-          "found": []
-        }
-      ],
-      "metacriticId": "atri-my-dear-moments-",
-      "reason": "No verified user-score fact for the approved Metacritic resource",
-      "sourceHadScore": false,
-      "sourceGap": "approved_identity_without_score_fact",
-      "metacriticScoreAvailability": "not_established"
-    },
-    {
       "gameId": "steam-667970",
       "steamAppId": 667970,
       "name": "VTOL VR",
@@ -15678,35 +14125,6 @@
       "reason": "No verified user-score fact for the approved Metacritic resource",
       "sourceHadScore": false,
       "sourceGap": "approved_identity_without_score_fact",
-      "metacriticScoreAvailability": "not_established"
-    },
-    {
-      "gameId": "steam-3370870",
-      "steamAppId": 3370870,
-      "name": "Berry Bury Berry",
-      "status": "unverified_identity",
-      "metacritic": null,
-      "investigation": "Erişilebilir kaynaklarda bu oyun/PC sürümü için kabul edilebilir kimlik ve sayısal puan birlikte doğrulanamadı. Metacritic puanı olmadığı sonucuna varılmaz.",
-      "attempts": [
-        {
-          "engine": "system2",
-          "games": [
-            "steam-3370870",
-            "steam-623080",
-            "steam-1407420",
-            "steam-2128270"
-          ],
-          "kind": "identity-discovery",
-          "found": [
-            "milo-and-the-magpies",
-            "cloverpit"
-          ]
-        }
-      ],
-      "metacriticId": null,
-      "reason": "No approved ID crosslink available",
-      "sourceHadScore": false,
-      "sourceGap": "identity_and_score_fact_unavailable",
       "metacriticScoreAvailability": "not_established"
     },
     {
@@ -16930,32 +15348,6 @@
       "metacriticScoreAvailability": "not_established"
     },
     {
-      "gameId": "steam-577480",
-      "steamAppId": 577480,
-      "name": "Higurashi When They Cry Hou - Ch.5 Meakashi",
-      "status": "unverified_identity",
-      "metacritic": null,
-      "investigation": "Erişilebilir kaynaklarda bu oyun/PC sürümü için kabul edilebilir kimlik ve sayısal puan birlikte doğrulanamadı. Metacritic puanı olmadığı sonucuna varılmaz.",
-      "attempts": [
-        {
-          "engine": "system2",
-          "games": [
-            "steam-3464370",
-            "steam-577480",
-            "steam-2629230",
-            "steam-2608040"
-          ],
-          "kind": "identity-discovery",
-          "found": []
-        }
-      ],
-      "metacriticId": null,
-      "reason": "No approved ID crosslink available",
-      "sourceHadScore": false,
-      "sourceGap": "identity_and_score_fact_unavailable",
-      "metacriticScoreAvailability": "not_established"
-    },
-    {
       "gameId": "steam-2629230",
       "steamAppId": 2629230,
       "name": "The Adventures of Sir Kicksalot",
@@ -17037,32 +15429,6 @@
       "gameId": "steam-3547270",
       "steamAppId": 3547270,
       "name": "Worming from Home",
-      "status": "unverified_identity",
-      "metacritic": null,
-      "investigation": "Erişilebilir kaynaklarda bu oyun/PC sürümü için kabul edilebilir kimlik ve sayısal puan birlikte doğrulanamadı. Metacritic puanı olmadığı sonucuna varılmaz.",
-      "attempts": [
-        {
-          "engine": "system2",
-          "games": [
-            "steam-578540",
-            "steam-3547270",
-            "steam-668350",
-            "steam-2735620"
-          ],
-          "kind": "identity-discovery",
-          "found": []
-        }
-      ],
-      "metacriticId": null,
-      "reason": "No approved ID crosslink available",
-      "sourceHadScore": false,
-      "sourceGap": "identity_and_score_fact_unavailable",
-      "metacriticScoreAvailability": "not_established"
-    },
-    {
-      "gameId": "steam-668350",
-      "steamAppId": 668350,
-      "name": "Higurashi When They Cry Hou - Ch.6 Tsumihoroboshi",
       "status": "unverified_identity",
       "metacritic": null,
       "investigation": "Erişilebilir kaynaklarda bu oyun/PC sürümü için kabul edilebilir kimlik ve sayısal puan birlikte doğrulanamadı. Metacritic puanı olmadığı sonucuna varılmaz.",
@@ -17730,32 +16096,6 @@
       "gameId": "steam-1998530",
       "steamAppId": 1998530,
       "name": "Yoiyami Dancers: Twilight Danmaku Dancers",
-      "status": "unverified_identity",
-      "metacritic": null,
-      "investigation": "Erişilebilir kaynaklarda bu oyun/PC sürümü için kabul edilebilir kimlik ve sayısal puan birlikte doğrulanamadı. Metacritic puanı olmadığı sonucuna varılmaz.",
-      "attempts": [
-        {
-          "engine": "system2",
-          "games": [
-            "steam-1998530",
-            "steam-1657740",
-            "steam-3575980",
-            "steam-1292020"
-          ],
-          "kind": "identity-discovery",
-          "found": []
-        }
-      ],
-      "metacriticId": null,
-      "reason": "No approved ID crosslink available",
-      "sourceHadScore": false,
-      "sourceGap": "identity_and_score_fact_unavailable",
-      "metacriticScoreAvailability": "not_established"
-    },
-    {
-      "gameId": "steam-1657740",
-      "steamAppId": 1657740,
-      "name": "Mr. Sleepy Man",
       "status": "unverified_identity",
       "metacritic": null,
       "investigation": "Erişilebilir kaynaklarda bu oyun/PC sürümü için kabul edilebilir kimlik ve sayısal puan birlikte doğrulanamadı. Metacritic puanı olmadığı sonucuna varılmaz.",
@@ -18527,37 +16867,6 @@
       "metacriticScoreAvailability": "not_established"
     },
     {
-      "gameId": "steam-250320",
-      "steamAppId": 250320,
-      "name": "The Wolf Among Us",
-      "status": "identity_conflict",
-      "metacritic": null,
-      "investigation": "Erişilebilir kaynaklarda bu oyun/PC sürümü için kabul edilebilir kimlik ve sayısal puan birlikte doğrulanamadı. Metacritic puanı olmadığı sonucuna varılmaz.",
-      "attempts": [
-        {
-          "engine": "system2",
-          "games": [
-            "steam-1321120",
-            "steam-250320",
-            "steam-541570",
-            "steam-774801"
-          ],
-          "kind": "identity-discovery",
-          "found": [
-            "the-wolf-among-us",
-            "the-wolf-among-us",
-            "the-wolf-among-us-episode-1-faith",
-            "the-wolf-among-us-episode-4-in-sheeps-clothing"
-          ]
-        }
-      ],
-      "metacriticId": null,
-      "reason": "Steam primary description explicitly lists all five episodes as one season; one episode resource is not the whole season score.",
-      "sourceHadScore": true,
-      "sourceGap": "unusable_source_association",
-      "metacriticScoreAvailability": "not_established"
-    },
-    {
       "gameId": "steam-541570",
       "steamAppId": 541570,
       "name": "Sally Face - Episode One",
@@ -18617,32 +16926,6 @@
       "reason": "No approved ID crosslink available",
       "sourceHadScore": false,
       "sourceGap": "identity_and_score_fact_unavailable",
-      "metacriticScoreAvailability": "not_established"
-    },
-    {
-      "gameId": "steam-312990",
-      "steamAppId": 312990,
-      "name": "The Expendabros",
-      "status": "unverified_identity",
-      "metacritic": null,
-      "investigation": "Erişilebilir kaynaklarda bu oyun/PC sürümü için kabul edilebilir kimlik ve sayısal puan birlikte doğrulanamadı. Metacritic puanı olmadığı sonucuna varılmaz.",
-      "attempts": [
-        {
-          "engine": "system2",
-          "games": [
-            "steam-312990",
-            "steam-2171440",
-            "steam-2458860",
-            "steam-1740100"
-          ],
-          "kind": "identity-discovery",
-          "found": []
-        }
-      ],
-      "metacriticId": null,
-      "reason": "No approved ID crosslink available",
-      "sourceHadScore": true,
-      "sourceGap": "unusable_source_association",
       "metacriticScoreAvailability": "not_established"
     },
     {
@@ -19124,7 +17407,7 @@
     }
   ],
   "policy": "metacritic-primary-pc-preferred-platform-fallback",
-  "verifiedOtherPlatformScores": 2,
-  "directAdded": 4,
+  "verifiedOtherPlatformScores": 8,
+  "directAdded": 43,
   "platformUnknownBlocksScoreDisplay": false
 }

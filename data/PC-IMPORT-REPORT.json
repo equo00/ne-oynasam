@@ -3,7 +3,7 @@
   "games": 1323,
   "verifiedCovers": 905,
   "sourceProvidedCovers": 1323,
-  "userScores": 962,
+  "userScores": 1001,
   "verifiedHistoricalPcScores": 2,
   "excludedScoreMappings": [
     {
@@ -18,34 +18,12 @@
       "metacriticScoreAvailability": "not_established"
     },
     {
-      "gameId": "steam-1665460",
-      "steamAppId": 1665460,
-      "name": "eFootball™",
-      "status": "identity_conflict",
-      "metacriticId": null,
-      "reason": "Current continuously updated eFootball product versus annual 2023 resource. Do not describe a yearly edition score as the current game score without explicit metric scope.",
-      "sourceHadScore": true,
-      "sourceGap": "unusable_source_association",
-      "metacriticScoreAvailability": "not_established"
-    },
-    {
       "gameId": "steam-1938090",
       "steamAppId": 1938090,
       "name": "Call of Duty®",
       "status": "identity_conflict",
       "metacriticId": null,
       "reason": "Steam product is the Call of Duty hub supporting multiple current games and Warzone. One Modern Warfare II game score is not a score for this multi-game launcher.",
-      "sourceHadScore": true,
-      "sourceGap": "unusable_source_association",
-      "metacriticScoreAvailability": "not_established"
-    },
-    {
-      "gameId": "steam-2552450",
-      "steamAppId": 2552450,
-      "name": "KINGDOM HEARTS III + Re Mind (DLC)",
-      "status": "missing_score",
-      "metacriticId": "kingdom-hearts-iii",
-      "reason": "No verified user-score fact for the approved Metacritic resource",
       "sourceHadScore": true,
       "sourceGap": "unusable_source_association",
       "metacriticScoreAvailability": "not_established"
@@ -73,34 +51,12 @@
       "metacriticScoreAvailability": "not_established"
     },
     {
-      "gameId": "steam-250320",
-      "steamAppId": 250320,
-      "name": "The Wolf Among Us",
-      "status": "identity_conflict",
-      "metacriticId": null,
-      "reason": "Steam primary description explicitly lists all five episodes as one season; one episode resource is not the whole season score.",
-      "sourceHadScore": true,
-      "sourceGap": "unusable_source_association",
-      "metacriticScoreAvailability": "not_established"
-    },
-    {
       "gameId": "steam-541570",
       "steamAppId": 541570,
       "name": "Sally Face - Episode One",
       "status": "identity_conflict",
       "metacriticId": null,
       "reason": "Steam individual product is Episode One. COMPLETE GAME is a separate bundle of Episode One plus Season Pass. Generic Sally Face score may represent the whole game; need episode-specific evidence before assignment.",
-      "sourceHadScore": true,
-      "sourceGap": "unusable_source_association",
-      "metacriticScoreAvailability": "not_established"
-    },
-    {
-      "gameId": "steam-312990",
-      "steamAppId": 312990,
-      "name": "The Expendabros",
-      "status": "unverified_identity",
-      "metacriticId": null,
-      "reason": "No approved ID crosslink available",
       "sourceHadScore": true,
       "sourceGap": "unusable_source_association",
       "metacriticScoreAvailability": "not_established"
@@ -122,5 +78,5 @@
   ],
   "developers": 1216,
   "scoreIdentityReport": "METACRITIC-REPORT.json",
-  "reviewedPrimaryPcScores": 706
+  "reviewedPrimaryPcScores": 729
 }

@@ -1,0 +1,731 @@
+{
+  "schemaVersion": 1,
+  "batchId": "direct-2026-10-09-02",
+  "checkedAt": "2026-10-09T17:48:10.772813Z",
+  "facts": [
+    {
+      "recordId": "mc-user:reviewed:4705510:iOS:2026-10-09:research361",
+      "gameId": "steam-4705510",
+      "steamAppId": 4705510,
+      "metacriticId": "happy-wheels",
+      "metacriticNumericId": null,
+      "metric": "user-score",
+      "platform": "iOS",
+      "score": 6.9,
+      "userRatings": 48,
+      "sourceUrl": "https://www.metacritic.com/game/happy-wheels/user-reviews/",
+      "retrievedAt": "2026-10-09T17:48:10.772813Z",
+      "snapshotDate": "2026-10-09",
+      "scoreDate": null,
+      "provenance": {
+        "method": "public-primary-cache",
+        "metricLabel": "User score",
+        "platformLabel": "iOS",
+        "sourceCrawlLabel": "3 months ago",
+        "retrievalReference": "turn274search3",
+        "originalResearchDate": "2026-10-08",
+        "liveScoreVerified": false,
+        "pageHeading": "iOS User Reviews",
+        "platformHeadingOriginal": "iOS (iPhone/iPad) User Reviews"
+      }
+    },
+    {
+      "recordId": "mc-user:reviewed:1962663:PC:2026-10-09:research361",
+      "gameId": "steam-1962663",
+      "steamAppId": 1962663,
+      "metacriticId": "call-of-duty-warzone",
+      "metacriticNumericId": null,
+      "metric": "user-score",
+      "platform": "PC",
+      "score": 2.6,
+      "userRatings": null,
+      "sourceUrl": "https://www.metacritic.com/game/call-of-duty-warzone/",
+      "retrievedAt": "2026-10-09T17:48:10.772813Z",
+      "snapshotDate": "2026-10-09",
+      "scoreDate": null,
+      "provenance": {
+        "method": "public-historical-dataset",
+        "metricLabel": "User score",
+        "platformLabel": "PC",
+        "sourceCrawlLabel": null,
+        "retrievalReference": null,
+        "originalResearchDate": "2026-10-08",
+        "liveScoreVerified": false,
+        "datasetCollectedAt": "2025-10-07",
+        "datasetBlobSha": "13385d1faf43adddc792ec771595763396261378",
+        "datasetUrl": "https://github.com/StadynR/metacritic-reviews-dataset/blob/13385d1faf43adddc792ec771595763396261378/metacritic_dataset_raw.csv",
+        "datasetRow": {
+          "name": "Call of Duty: Warzone",
+          "platform": "PC",
+          "release_date": "2022-11-14",
+          "metascore": "80",
+          "user_score": "2.6",
+          "developer": "Infinity Ward",
+          "publisher": "['Activision']",
+          "genre": "Tactical FPS"
+        }
+      }
+    },
+    {
+      "recordId": "mc-user:reviewed:2057760:unknown:2026-10-09:research361",
+      "gameId": "steam-2057760",
+      "steamAppId": 2057760,
+      "metacriticId": "esoteric-ebb",
+      "metacriticNumericId": null,
+      "metric": "user-score",
+      "platform": null,
+      "score": 8.1,
+      "userRatings": 80,
+      "sourceUrl": "https://www.metacritic.com/game/esoteric-ebb/",
+      "retrievedAt": "2026-10-09T17:48:10.772813Z",
+      "snapshotDate": "2026-10-09",
+      "scoreDate": null,
+      "provenance": {
+        "method": "public-primary-cache",
+        "metricLabel": "User score",
+        "platformLabel": null,
+        "sourceCrawlLabel": "last month",
+        "retrievalReference": "turn56search4",
+        "originalResearchDate": "2026-10-08",
+        "liveScoreVerified": false,
+        "pageHeading": "Game overview",
+        "platformUnverified": true
+      }
+    },
+    {
+      "recordId": "mc-user:reviewed:3079210:unknown:2026-10-09:research361",
+      "gameId": "steam-3079210",
+      "steamAppId": 3079210,
+      "metacriticId": "hell-let-loose-vietnam",
+      "metacriticNumericId": null,
+      "metric": "user-score",
+      "platform": null,
+      "score": 5.4,
+      "userRatings": 21,
+      "sourceUrl": "https://www.metacritic.com/game/hell-let-loose-vietnam/",
+      "retrievedAt": "2026-10-09T17:48:10.772813Z",
+      "snapshotDate": "2026-10-09",
+      "scoreDate": null,
+      "provenance": {
+        "method": "public-primary-cache",
+        "metricLabel": "User score",
+        "platformLabel": null,
+        "sourceCrawlLabel": "last month",
+        "retrievalReference": "turn201view3",
+        "originalResearchDate": "2026-10-08",
+        "liveScoreVerified": false,
+        "pageHeading": "Game overview",
+        "platformUnverified": true
+      }
+    },
+    {
+      "recordId": "mc-user:reviewed:1384160:PC:2026-10-09:research361",
+      "gameId": "steam-1384160",
+      "steamAppId": 1384160,
+      "metacriticId": "guilty-gear--strive-",
+      "metacriticNumericId": null,
+      "metric": "user-score",
+      "platform": "PC",
+      "score": 7.4,
+      "userRatings": null,
+      "sourceUrl": "https://www.metacritic.com/game/guilty-gear--strive-/",
+      "retrievedAt": "2026-10-09T17:48:10.772813Z",
+      "snapshotDate": "2026-10-09",
+      "scoreDate": null,
+      "provenance": {
+        "method": "public-historical-dataset",
+        "metricLabel": "User score",
+        "platformLabel": "PC",
+        "sourceCrawlLabel": null,
+        "retrievalReference": null,
+        "originalResearchDate": "2026-10-08",
+        "liveScoreVerified": false,
+        "datasetCollectedAt": "2025-10-07",
+        "datasetBlobSha": "13385d1faf43adddc792ec771595763396261378",
+        "datasetUrl": "https://github.com/StadynR/metacritic-reviews-dataset/blob/13385d1faf43adddc792ec771595763396261378/metacritic_dataset_raw.csv",
+        "datasetRow": {
+          "name": "Guilty Gear -Strive-",
+          "platform": "PC",
+          "release_date": "2021-06-08",
+          "metascore": "85",
+          "user_score": "7.4",
+          "developer": "Arc System Works",
+          "publisher": "['Arc System Works', 'Bandai Namco Games']",
+          "genre": "2D Fighting"
+        }
+      }
+    },
+    {
+      "recordId": "mc-user:reviewed:1665460:XboxSeriesX:2026-10-09:research361",
+      "gameId": "steam-1665460",
+      "steamAppId": 1665460,
+      "metacriticId": "efootball-2026",
+      "metacriticNumericId": null,
+      "metric": "user-score",
+      "platform": "Xbox Series X",
+      "score": 4.3,
+      "userRatings": 66,
+      "sourceUrl": "https://www.metacritic.com/game/efootball-2026/user-reviews/",
+      "retrievedAt": "2026-10-09T17:48:10.772813Z",
+      "snapshotDate": "2026-10-09",
+      "scoreDate": null,
+      "provenance": {
+        "method": "public-primary-cache",
+        "metricLabel": "User score",
+        "platformLabel": "Xbox Series X",
+        "sourceCrawlLabel": "last month",
+        "retrievalReference": "turn285view0",
+        "originalResearchDate": "2026-10-08",
+        "liveScoreVerified": false,
+        "pageHeading": "Xbox Series X User Reviews"
+      }
+    },
+    {
+      "recordId": "mc-user:reviewed:2863680:PC:2026-10-09:research361",
+      "gameId": "steam-2863680",
+      "steamAppId": 2863680,
+      "metacriticId": "zero-parades-for-dead-spies",
+      "metacriticNumericId": null,
+      "metric": "user-score",
+      "platform": "PC",
+      "score": 6.3,
+      "userRatings": 82,
+      "sourceUrl": "https://www.metacritic.com/game/zero-parades-for-dead-spies/user-reviews/?platform=pc",
+      "retrievedAt": "2026-10-09T17:48:10.772813Z",
+      "snapshotDate": "2026-10-09",
+      "scoreDate": null,
+      "provenance": {
+        "method": "public-primary-cache",
+        "metricLabel": "User score",
+        "platformLabel": "PC",
+        "sourceCrawlLabel": "last month",
+        "retrievalReference": "turn285view2",
+        "originalResearchDate": "2026-10-08",
+        "liveScoreVerified": false,
+        "pageHeading": "PC User Reviews"
+      }
+    },
+    {
+      "recordId": "mc-user:reviewed:2964090:unknown:2026-10-09:research361",
+      "gameId": "steam-2964090",
+      "steamAppId": 2964090,
+      "metacriticId": "world-of-warships-legends",
+      "metacriticNumericId": null,
+      "metric": "user-score",
+      "platform": null,
+      "score": 6.4,
+      "userRatings": 96,
+      "sourceUrl": "https://www.metacritic.com/game/world-of-warships-legends/",
+      "retrievedAt": "2026-10-09T17:48:10.772813Z",
+      "snapshotDate": "2026-10-09",
+      "scoreDate": null,
+      "provenance": {
+        "method": "public-primary-cache",
+        "metricLabel": "User score",
+        "platformLabel": null,
+        "sourceCrawlLabel": "last month",
+        "retrievalReference": "turn206view2",
+        "originalResearchDate": "2026-10-08",
+        "liveScoreVerified": false,
+        "pageHeading": "Game overview",
+        "platformUnverified": true
+      }
+    },
+    {
+      "recordId": "mc-user:reviewed:2244210:unknown:2026-10-09:research361",
+      "gameId": "steam-2244210",
+      "steamAppId": 2244210,
+      "metacriticId": "echoes-of-aincrad",
+      "metacriticNumericId": null,
+      "metric": "user-score",
+      "platform": null,
+      "score": 5.7,
+      "userRatings": 83,
+      "sourceUrl": "https://www.metacritic.com/game/echoes-of-aincrad/",
+      "retrievedAt": "2026-10-09T17:48:10.772813Z",
+      "snapshotDate": "2026-10-09",
+      "scoreDate": null,
+      "provenance": {
+        "method": "public-primary-cache",
+        "metricLabel": "User score",
+        "platformLabel": null,
+        "sourceCrawlLabel": "last month",
+        "retrievalReference": "turn208view3",
+        "originalResearchDate": "2026-10-08",
+        "liveScoreVerified": false,
+        "pageHeading": "Game overview",
+        "platformUnverified": true
+      }
+    },
+    {
+      "recordId": "mc-user:reviewed:1805110:unknown:2026-10-09:research361",
+      "gameId": "steam-1805110",
+      "steamAppId": 1805110,
+      "metacriticId": "solarpunk",
+      "metacriticNumericId": null,
+      "metric": "user-score",
+      "platform": null,
+      "score": 5.2,
+      "userRatings": 9,
+      "sourceUrl": "https://www.metacritic.com/game/solarpunk/",
+      "retrievedAt": "2026-10-09T17:48:10.772813Z",
+      "snapshotDate": "2026-10-09",
+      "scoreDate": null,
+      "provenance": {
+        "method": "public-primary-cache",
+        "metricLabel": "User score",
+        "platformLabel": null,
+        "sourceCrawlLabel": "last month",
+        "retrievalReference": "turn189search0",
+        "originalResearchDate": "2026-10-08",
+        "liveScoreVerified": false,
+        "pageHeading": "Game overview",
+        "platformUnverified": true
+      }
+    }
+  ],
+  "identityReviews": [
+    {
+      "steamAppId": 4705510,
+      "status": "approved",
+      "metacriticId": "happy-wheels",
+      "numericId": null,
+      "reviewedAt": "2026-10-09T17:48:10.772813Z",
+      "evidenceURLs": [
+        "https://store.steampowered.com/app/4705510/",
+        "https://www.metacritic.com/game/happy-wheels/",
+        "https://store.steampowered.com/api/appdetails?appids=4705510&l=english"
+      ],
+      "rationale": "Jim Bonacci/Fancy Force aynı temel oyunun Steam portunu tanımlıyor; puan iOS kaydından. PC puanının yokluğu kesinleşmedi. Kalıcı Steam uygulama ID’si; geliştirici, çıkış dönemi ve temel eser kapsamı incelendi. Yama/port ayrı oyun sayılmadı; farklı pazarlanan remake/remasterlar birleştirilmedi.",
+      "reviewedMetadata": {
+        "catalogName": "Happy Wheels",
+        "steamAppId": 4705510,
+        "storeDevelopers": [
+          "Jim Bonacci"
+        ],
+        "storeRelease": {
+          "coming_soon": false,
+          "date": "Sep 21, 2026"
+        },
+        "metacriticResourceId": "happy-wheels",
+        "primaryMetadata": null,
+        "priorIdentity": null,
+        "researchDate": "2026-10-08"
+      }
+    },
+    {
+      "steamAppId": 1962663,
+      "status": "approved",
+      "metacriticId": "call-of-duty-warzone",
+      "numericId": null,
+      "reviewedAt": "2026-10-09T17:48:10.772813Z",
+      "evidenceURLs": [
+        "https://store.steampowered.com/app/1962663/",
+        "https://www.metacritic.com/game/call-of-duty-warzone/",
+        "https://store.steampowered.com/api/appdetails?appids=1962663&l=english"
+      ],
+      "rationale": "MC kökü 2022 Warzone 2.0’ı kapsıyor. PC için 2025-10-07 tarihî 2,6 kaydı ayrıldı; kök sayfanın 4,2 puanının platformu doğrulanamadı. Kalıcı Steam uygulama ID’si; geliştirici, çıkış dönemi ve temel eser kapsamı incelendi. Yama/port ayrı oyun sayılmadı; farklı pazarlanan remake/remasterlar birleştirilmedi.",
+      "reviewedMetadata": {
+        "catalogName": "Call of Duty®: Warzone™",
+        "steamAppId": 1962663,
+        "storeDevelopers": [
+          "Infinity Ward",
+          "Raven Software",
+          "Beenox",
+          "Treyarch",
+          "High Moon Studios",
+          "Sledgehammer Games",
+          "Activision Shanghai",
+          "Demonware",
+          "Toys for Bob"
+        ],
+        "storeRelease": {
+          "coming_soon": false,
+          "date": "Nov 16, 2022"
+        },
+        "metacriticResourceId": "call-of-duty-warzone",
+        "primaryMetadata": {
+          "url": "https://www.metacritic.com/game/call-of-duty-warzone/",
+          "ref": "turn303view1",
+          "developer": "Infinity Ward",
+          "release": "Nov 14, 2022"
+        },
+        "priorIdentity": {
+          "resourceId": "call-of-duty-warzone-20",
+          "numericId": "1300578554",
+          "url": "https://www.metacritic.com/game/call-of-duty-warzone-20/",
+          "editionScope": "Reviewed store product / Metacritic work relationship",
+          "evidence": [
+            {
+              "kind": "wikidata-external-ids",
+              "qid": "Q113991290",
+              "steamAppId": 1962663,
+              "metacriticId": "call-of-duty-warzone-20",
+              "numericId": "1300578554",
+              "url": "http://www.wikidata.org/entity/Q113991290",
+              "retrievedAt": "2026-10-06T11:25:17.745Z"
+            }
+          ]
+        },
+        "researchDate": "2026-10-08"
+      }
+    },
+    {
+      "steamAppId": 2057760,
+      "status": "approved",
+      "metacriticId": "esoteric-ebb",
+      "numericId": null,
+      "reviewedAt": "2026-10-09T17:48:10.772813Z",
+      "evidenceURLs": [
+        "https://store.steampowered.com/app/2057760/",
+        "https://www.metacritic.com/game/esoteric-ebb/",
+        "https://store.steampowered.com/api/appdetails?appids=2057760&l=english"
+      ],
+      "rationale": "Sayısal kullanıcı puanı var; seçilen platform doğrulanamadı. Kalıcı Steam uygulama ID’si; geliştirici, çıkış dönemi ve temel eser kapsamı incelendi. Yama/port ayrı oyun sayılmadı; farklı pazarlanan remake/remasterlar birleştirilmedi.",
+      "reviewedMetadata": {
+        "catalogName": "Esoteric Ebb",
+        "steamAppId": 2057760,
+        "storeDevelopers": [
+          "Christoffer Bodegård"
+        ],
+        "storeRelease": {
+          "coming_soon": false,
+          "date": "Mar 3, 2026"
+        },
+        "metacriticResourceId": "esoteric-ebb",
+        "primaryMetadata": {
+          "url": "https://www.metacritic.com/game/esoteric-ebb/?ftag=MCD-06-10aaa1c",
+          "ref": "turn305search6",
+          "developer": "Christoffer Bodegard"
+        },
+        "priorIdentity": null,
+        "researchDate": "2026-10-08"
+      }
+    },
+    {
+      "steamAppId": 3079210,
+      "status": "approved",
+      "metacriticId": "hell-let-loose-vietnam",
+      "numericId": null,
+      "reviewedAt": "2026-10-09T17:48:10.772813Z",
+      "evidenceURLs": [
+        "https://store.steampowered.com/app/3079210/",
+        "https://www.metacritic.com/game/hell-let-loose-vietnam/",
+        "https://store.steampowered.com/api/appdetails?appids=3079210&l=english"
+      ],
+      "rationale": "Sayısal kullanıcı puanı var; seçilen platform doğrulanamadı. Kalıcı Steam uygulama ID’si; geliştirici, çıkış dönemi ve temel eser kapsamı incelendi. Yama/port ayrı oyun sayılmadı; farklı pazarlanan remake/remasterlar birleştirilmedi.",
+      "reviewedMetadata": {
+        "catalogName": "Hell Let Loose: Vietnam",
+        "steamAppId": 3079210,
+        "storeDevelopers": [
+          "Expression Games"
+        ],
+        "storeRelease": {
+          "coming_soon": false,
+          "date": "13 Aug, 2026"
+        },
+        "metacriticResourceId": "hell-let-loose-vietnam",
+        "primaryMetadata": {
+          "url": "https://www.metacritic.com/game/hell-let-loose-vietnam/",
+          "ref": "turn303view3",
+          "developer": "Expression Games",
+          "release": "Aug 13, 2026"
+        },
+        "priorIdentity": null,
+        "researchDate": "2026-10-08"
+      }
+    },
+    {
+      "steamAppId": 1384160,
+      "status": "approved",
+      "metacriticId": "guilty-gear--strive-",
+      "numericId": null,
+      "reviewedAt": "2026-10-09T17:48:10.772813Z",
+      "evidenceURLs": [
+        "https://store.steampowered.com/app/1384160/",
+        "https://www.metacritic.com/game/guilty-gear--strive-/",
+        "https://store.steampowered.com/api/appdetails?appids=1384160&l=english"
+      ],
+      "rationale": "Raw veri kümesinde PC 7,4; Arc System Works/2021 eşleşiyor. Bugünkü PC puanı olarak doğrulanmadı. Kalıcı Steam uygulama ID’si; geliştirici, çıkış dönemi ve temel eser kapsamı incelendi. Yama/port ayrı oyun sayılmadı; farklı pazarlanan remake/remasterlar birleştirilmedi.",
+      "reviewedMetadata": {
+        "catalogName": "GUILTY GEAR -STRIVE-",
+        "steamAppId": 1384160,
+        "storeDevelopers": [
+          "Arc System Works"
+        ],
+        "storeRelease": {
+          "coming_soon": false,
+          "date": "Jun 11, 2021"
+        },
+        "metacriticResourceId": "guilty-gear--strive-",
+        "primaryMetadata": null,
+        "priorIdentity": {
+          "resourceId": "guilty-gear--strive-",
+          "numericId": null,
+          "url": "https://www.metacritic.com/game/guilty-gear--strive-/",
+          "editionScope": "Reviewed store product / Metacritic work relationship",
+          "evidence": [
+            {
+              "kind": "store-app-id-crosslink",
+              "steamAppId": 1384160,
+              "url": "https://store.steampowered.com/api/appdetails?appids=1384160&l=english",
+              "referenceUrl": "https://www.metacritic.com/game/pc/guilty-gear--strive-?ftag=MCD-06-10aaa1f",
+              "retrievedAt": "2026-10-06T11:24:55.736Z"
+            }
+          ]
+        },
+        "researchDate": "2026-10-08"
+      }
+    },
+    {
+      "steamAppId": 1665460,
+      "status": "approved",
+      "metacriticId": "efootball-2026",
+      "numericId": null,
+      "reviewedAt": "2026-10-09T17:48:10.772813Z",
+      "evidenceURLs": [
+        "https://store.steampowered.com/app/1665460/",
+        "https://www.metacritic.com/game/efootball-2026/",
+        "https://store.steampowered.com/api/appdetails?appids=1665460&l=english"
+      ],
+      "rationale": "Konami arşivi 2026/v5.0’ın aynı oyunun sezon güncellemesi olduğunu doğruluyor. Bulgu 2026 dönemine ait; yeni sezonun güncel puanı diye sunulamaz. Kalıcı Steam uygulama ID’si; geliştirici, çıkış dönemi ve temel eser kapsamı incelendi. Yama/port ayrı oyun sayılmadı; farklı pazarlanan remake/remasterlar birleştirilmedi.",
+      "reviewedMetadata": {
+        "catalogName": "eFootball™",
+        "steamAppId": 1665460,
+        "storeDevelopers": [
+          "KONAMI"
+        ],
+        "storeRelease": {
+          "coming_soon": false,
+          "date": "Sep 29, 2021"
+        },
+        "metacriticResourceId": "efootball-2026",
+        "primaryMetadata": {
+          "url": "https://www.metacritic.com/game/efootball-2026/",
+          "ref": "turn310search6",
+          "developer": "Konami",
+          "release": "Aug 13, 2025"
+        },
+        "priorIdentity": null,
+        "researchDate": "2026-10-08"
+      }
+    },
+    {
+      "steamAppId": 2863680,
+      "status": "approved",
+      "metacriticId": "zero-parades-for-dead-spies",
+      "numericId": null,
+      "reviewedAt": "2026-10-09T17:48:10.772813Z",
+      "evidenceURLs": [
+        "https://store.steampowered.com/app/2863680/",
+        "https://www.metacritic.com/game/zero-parades-for-dead-spies/",
+        "https://store.steampowered.com/api/appdetails?appids=2863680&l=english"
+      ],
+      "rationale": "Steam açıklaması Director’s Cut’ın mevcut sahipler için ücretsiz güncelleme olduğunu doğruluyor. Kalıcı Steam uygulama ID’si; geliştirici, çıkış dönemi ve temel eser kapsamı incelendi. Yama/port ayrı oyun sayılmadı; farklı pazarlanan remake/remasterlar birleştirilmedi.",
+      "reviewedMetadata": {
+        "catalogName": "ZERO PARADES: Director's Cut",
+        "steamAppId": 2863680,
+        "storeDevelopers": [
+          "ZA/UM"
+        ],
+        "storeRelease": {
+          "coming_soon": false,
+          "date": "May 21, 2026"
+        },
+        "metacriticResourceId": "zero-parades-for-dead-spies",
+        "primaryMetadata": {
+          "url": "https://www.metacritic.com/game/zero-parades-for-dead-spies/",
+          "ref": "turn302view2",
+          "developer": "ZA/UM",
+          "release": "May 21, 2026",
+          "platforms": "* PC\n  * PlayStation 5"
+        },
+        "priorIdentity": null,
+        "researchDate": "2026-10-08"
+      }
+    },
+    {
+      "steamAppId": 2964090,
+      "status": "approved",
+      "metacriticId": "world-of-warships-legends",
+      "numericId": null,
+      "reviewedAt": "2026-10-09T17:48:10.772813Z",
+      "evidenceURLs": [
+        "https://store.steampowered.com/app/2964090/",
+        "https://www.metacritic.com/game/world-of-warships-legends/",
+        "https://store.steampowered.com/api/appdetails?appids=2964090&l=english"
+      ],
+      "rationale": "Sayısal kullanıcı puanı var; seçilen platform doğrulanamadı. Kalıcı Steam uygulama ID’si; geliştirici, çıkış dönemi ve temel eser kapsamı incelendi. Yama/port ayrı oyun sayılmadı; farklı pazarlanan remake/remasterlar birleştirilmedi.",
+      "reviewedMetadata": {
+        "catalogName": "World of Warships: Legends",
+        "steamAppId": 2964090,
+        "storeDevelopers": [
+          "Wargaming Group Limited"
+        ],
+        "storeRelease": {
+          "coming_soon": false,
+          "date": "May 4, 2026"
+        },
+        "metacriticResourceId": "world-of-warships-legends",
+        "primaryMetadata": {
+          "url": "https://www.metacritic.com/game/world-of-warships-legends/",
+          "ref": "turn310search2",
+          "developer": "Wargaming.net",
+          "release": "Apr 16, 2019"
+        },
+        "priorIdentity": null,
+        "researchDate": "2026-10-08"
+      }
+    },
+    {
+      "steamAppId": 2244210,
+      "status": "approved",
+      "metacriticId": "echoes-of-aincrad",
+      "numericId": null,
+      "reviewedAt": "2026-10-09T17:48:10.772813Z",
+      "evidenceURLs": [
+        "https://store.steampowered.com/app/2244210/",
+        "https://www.metacritic.com/game/echoes-of-aincrad/",
+        "https://store.steampowered.com/api/appdetails?appids=2244210&l=english"
+      ],
+      "rationale": "Sayısal kullanıcı puanı var; seçilen platform doğrulanamadı. Kalıcı Steam uygulama ID’si; geliştirici, çıkış dönemi ve temel eser kapsamı incelendi. Yama/port ayrı oyun sayılmadı; farklı pazarlanan remake/remasterlar birleştirilmedi.",
+      "reviewedMetadata": {
+        "catalogName": "Echoes of Aincrad",
+        "steamAppId": 2244210,
+        "storeDevelopers": [
+          "Game Studio Inc."
+        ],
+        "storeRelease": {
+          "coming_soon": false,
+          "date": "Jul 9, 2026"
+        },
+        "metacriticResourceId": "echoes-of-aincrad",
+        "primaryMetadata": {
+          "url": "https://www.metacritic.com/game/echoes-of-aincrad/",
+          "ref": "turn313search2",
+          "developer": "Game Studio Inc.",
+          "release": "Jul 10, 2026",
+          "platforms": "* PlayStation 5\n  * PC\n  * Xbox Series X"
+        },
+        "priorIdentity": null,
+        "researchDate": "2026-10-08"
+      }
+    },
+    {
+      "steamAppId": 1805110,
+      "status": "approved",
+      "metacriticId": "solarpunk",
+      "numericId": null,
+      "reviewedAt": "2026-10-09T17:48:10.772813Z",
+      "evidenceURLs": [
+        "https://store.steampowered.com/app/1805110/",
+        "https://www.metacritic.com/game/solarpunk/",
+        "https://store.steampowered.com/api/appdetails?appids=1805110&l=english"
+      ],
+      "rationale": "Sayısal kullanıcı puanı var; seçilen platform doğrulanamadı. Kalıcı Steam uygulama ID’si; geliştirici, çıkış dönemi ve temel eser kapsamı incelendi. Yama/port ayrı oyun sayılmadı; farklı pazarlanan remake/remasterlar birleştirilmedi.",
+      "reviewedMetadata": {
+        "catalogName": "Solarpunk™",
+        "steamAppId": 1805110,
+        "storeDevelopers": [
+          "Cyberwave"
+        ],
+        "storeRelease": {
+          "coming_soon": false,
+          "date": "8 Jun, 2026"
+        },
+        "metacriticResourceId": "solarpunk",
+        "primaryMetadata": {
+          "url": "https://www.metacritic.com/game/solarpunk/",
+          "ref": "turn313search1",
+          "developer": "Cyberwave",
+          "release": "Jun 8, 2026",
+          "platforms": "* PC\n  * Nintendo Switch 2\n  * Xbox Series X\n  * PlayStation 5"
+        },
+        "priorIdentity": null,
+        "researchDate": "2026-10-08"
+      }
+    }
+  ],
+  "investigations": [
+    {
+      "gameId": "steam-4705510",
+      "status": "score_accepted",
+      "sourceUrl": "https://www.metacritic.com/game/happy-wheels/user-reviews/",
+      "summary": "Jim Bonacci/Fancy Force aynı temel oyunun Steam portunu tanımlıyor; puan iOS kaydından. PC puanının yokluğu kesinleşmedi.",
+      "platform": "iOS",
+      "liveScoreVerified": false
+    },
+    {
+      "gameId": "steam-1962663",
+      "status": "score_accepted",
+      "sourceUrl": "https://www.metacritic.com/game/call-of-duty-warzone/",
+      "summary": "MC kökü 2022 Warzone 2.0’ı kapsıyor. PC için 2025-10-07 tarihî 2,6 kaydı ayrıldı; kök sayfanın 4,2 puanının platformu doğrulanamadı.",
+      "platform": "PC",
+      "liveScoreVerified": false
+    },
+    {
+      "gameId": "steam-2057760",
+      "status": "score_accepted",
+      "sourceUrl": "https://www.metacritic.com/game/esoteric-ebb/",
+      "summary": "Sayısal kullanıcı puanı var; seçilen platform doğrulanamadı.",
+      "platform": null,
+      "liveScoreVerified": false
+    },
+    {
+      "gameId": "steam-3079210",
+      "status": "score_accepted",
+      "sourceUrl": "https://www.metacritic.com/game/hell-let-loose-vietnam/",
+      "summary": "Sayısal kullanıcı puanı var; seçilen platform doğrulanamadı.",
+      "platform": null,
+      "liveScoreVerified": false
+    },
+    {
+      "gameId": "steam-1384160",
+      "status": "score_accepted",
+      "sourceUrl": "https://www.metacritic.com/game/guilty-gear--strive-/",
+      "summary": "Raw veri kümesinde PC 7,4; Arc System Works/2021 eşleşiyor. Bugünkü PC puanı olarak doğrulanmadı.",
+      "platform": "PC",
+      "liveScoreVerified": false
+    },
+    {
+      "gameId": "steam-1665460",
+      "status": "score_accepted",
+      "sourceUrl": "https://www.metacritic.com/game/efootball-2026/user-reviews/",
+      "summary": "Konami arşivi 2026/v5.0’ın aynı oyunun sezon güncellemesi olduğunu doğruluyor. Bulgu 2026 dönemine ait; yeni sezonun güncel puanı diye sunulamaz.",
+      "platform": "Xbox Series X",
+      "liveScoreVerified": false
+    },
+    {
+      "gameId": "steam-2863680",
+      "status": "score_accepted",
+      "sourceUrl": "https://www.metacritic.com/game/zero-parades-for-dead-spies/user-reviews/?platform=pc",
+      "summary": "Steam açıklaması Director’s Cut’ın mevcut sahipler için ücretsiz güncelleme olduğunu doğruluyor.",
+      "platform": "PC",
+      "liveScoreVerified": false
+    },
+    {
+      "gameId": "steam-2964090",
+      "status": "score_accepted",
+      "sourceUrl": "https://www.metacritic.com/game/world-of-warships-legends/",
+      "summary": "Sayısal kullanıcı puanı var; seçilen platform doğrulanamadı.",
+      "platform": null,
+      "liveScoreVerified": false
+    },
+    {
+      "gameId": "steam-2244210",
+      "status": "score_accepted",
+      "sourceUrl": "https://www.metacritic.com/game/echoes-of-aincrad/",
+      "summary": "Sayısal kullanıcı puanı var; seçilen platform doğrulanamadı.",
+      "platform": null,
+      "liveScoreVerified": false
+    },
+    {
+      "gameId": "steam-1805110",
+      "status": "score_accepted",
+      "sourceUrl": "https://www.metacritic.com/game/solarpunk/",
+      "summary": "Sayısal kullanıcı puanı var; seçilen platform doğrulanamadı.",
+      "platform": null,
+      "liveScoreVerified": false
+    }
+  ]
+}

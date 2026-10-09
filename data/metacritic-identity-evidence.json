@@ -31738,6 +31738,1494 @@
         },
         "retrievalReference": "turn24view1"
       }
+    },
+    {
+      "steamAppId": 4705510,
+      "status": "approved",
+      "metacriticId": "happy-wheels",
+      "numericId": null,
+      "reviewedAt": "2026-10-09T17:48:10.772813Z",
+      "evidenceURLs": [
+        "https://store.steampowered.com/app/4705510/",
+        "https://www.metacritic.com/game/happy-wheels/",
+        "https://store.steampowered.com/api/appdetails?appids=4705510&l=english"
+      ],
+      "rationale": "Jim Bonacci/Fancy Force aynı temel oyunun Steam portunu tanımlıyor; puan iOS kaydından. PC puanının yokluğu kesinleşmedi. Kalıcı Steam uygulama ID’si; geliştirici, çıkış dönemi ve temel eser kapsamı incelendi. Yama/port ayrı oyun sayılmadı; farklı pazarlanan remake/remasterlar birleştirilmedi.",
+      "reviewedMetadata": {
+        "catalogName": "Happy Wheels",
+        "steamAppId": 4705510,
+        "storeDevelopers": [
+          "Jim Bonacci"
+        ],
+        "storeRelease": {
+          "coming_soon": false,
+          "date": "Sep 21, 2026"
+        },
+        "metacriticResourceId": "happy-wheels",
+        "primaryMetadata": null,
+        "priorIdentity": null,
+        "researchDate": "2026-10-08"
+      }
+    },
+    {
+      "steamAppId": 1962663,
+      "status": "approved",
+      "metacriticId": "call-of-duty-warzone",
+      "numericId": null,
+      "reviewedAt": "2026-10-09T17:48:10.772813Z",
+      "evidenceURLs": [
+        "https://store.steampowered.com/app/1962663/",
+        "https://www.metacritic.com/game/call-of-duty-warzone/",
+        "https://store.steampowered.com/api/appdetails?appids=1962663&l=english"
+      ],
+      "rationale": "MC kökü 2022 Warzone 2.0’ı kapsıyor. PC için 2025-10-07 tarihî 2,6 kaydı ayrıldı; kök sayfanın 4,2 puanının platformu doğrulanamadı. Kalıcı Steam uygulama ID’si; geliştirici, çıkış dönemi ve temel eser kapsamı incelendi. Yama/port ayrı oyun sayılmadı; farklı pazarlanan remake/remasterlar birleştirilmedi.",
+      "reviewedMetadata": {
+        "catalogName": "Call of Duty®: Warzone™",
+        "steamAppId": 1962663,
+        "storeDevelopers": [
+          "Infinity Ward",
+          "Raven Software",
+          "Beenox",
+          "Treyarch",
+          "High Moon Studios",
+          "Sledgehammer Games",
+          "Activision Shanghai",
+          "Demonware",
+          "Toys for Bob"
+        ],
+        "storeRelease": {
+          "coming_soon": false,
+          "date": "Nov 16, 2022"
+        },
+        "metacriticResourceId": "call-of-duty-warzone",
+        "primaryMetadata": {
+          "url": "https://www.metacritic.com/game/call-of-duty-warzone/",
+          "ref": "turn303view1",
+          "developer": "Infinity Ward",
+          "release": "Nov 14, 2022"
+        },
+        "priorIdentity": {
+          "resourceId": "call-of-duty-warzone-20",
+          "numericId": "1300578554",
+          "url": "https://www.metacritic.com/game/call-of-duty-warzone-20/",
+          "editionScope": "Reviewed store product / Metacritic work relationship",
+          "evidence": [
+            {
+              "kind": "wikidata-external-ids",
+              "qid": "Q113991290",
+              "steamAppId": 1962663,
+              "metacriticId": "call-of-duty-warzone-20",
+              "numericId": "1300578554",
+              "url": "http://www.wikidata.org/entity/Q113991290",
+              "retrievedAt": "2026-10-06T11:25:17.745Z"
+            }
+          ]
+        },
+        "researchDate": "2026-10-08"
+      }
+    },
+    {
+      "steamAppId": 2057760,
+      "status": "approved",
+      "metacriticId": "esoteric-ebb",
+      "numericId": null,
+      "reviewedAt": "2026-10-09T17:48:10.772813Z",
+      "evidenceURLs": [
+        "https://store.steampowered.com/app/2057760/",
+        "https://www.metacritic.com/game/esoteric-ebb/",
+        "https://store.steampowered.com/api/appdetails?appids=2057760&l=english"
+      ],
+      "rationale": "Sayısal kullanıcı puanı var; seçilen platform doğrulanamadı. Kalıcı Steam uygulama ID’si; geliştirici, çıkış dönemi ve temel eser kapsamı incelendi. Yama/port ayrı oyun sayılmadı; farklı pazarlanan remake/remasterlar birleştirilmedi.",
+      "reviewedMetadata": {
+        "catalogName": "Esoteric Ebb",
+        "steamAppId": 2057760,
+        "storeDevelopers": [
+          "Christoffer Bodegård"
+        ],
+        "storeRelease": {
+          "coming_soon": false,
+          "date": "Mar 3, 2026"
+        },
+        "metacriticResourceId": "esoteric-ebb",
+        "primaryMetadata": {
+          "url": "https://www.metacritic.com/game/esoteric-ebb/?ftag=MCD-06-10aaa1c",
+          "ref": "turn305search6",
+          "developer": "Christoffer Bodegard"
+        },
+        "priorIdentity": null,
+        "researchDate": "2026-10-08"
+      }
+    },
+    {
+      "steamAppId": 3079210,
+      "status": "approved",
+      "metacriticId": "hell-let-loose-vietnam",
+      "numericId": null,
+      "reviewedAt": "2026-10-09T17:48:10.772813Z",
+      "evidenceURLs": [
+        "https://store.steampowered.com/app/3079210/",
+        "https://www.metacritic.com/game/hell-let-loose-vietnam/",
+        "https://store.steampowered.com/api/appdetails?appids=3079210&l=english"
+      ],
+      "rationale": "Sayısal kullanıcı puanı var; seçilen platform doğrulanamadı. Kalıcı Steam uygulama ID’si; geliştirici, çıkış dönemi ve temel eser kapsamı incelendi. Yama/port ayrı oyun sayılmadı; farklı pazarlanan remake/remasterlar birleştirilmedi.",
+      "reviewedMetadata": {
+        "catalogName": "Hell Let Loose: Vietnam",
+        "steamAppId": 3079210,
+        "storeDevelopers": [
+          "Expression Games"
+        ],
+        "storeRelease": {
+          "coming_soon": false,
+          "date": "13 Aug, 2026"
+        },
+        "metacriticResourceId": "hell-let-loose-vietnam",
+        "primaryMetadata": {
+          "url": "https://www.metacritic.com/game/hell-let-loose-vietnam/",
+          "ref": "turn303view3",
+          "developer": "Expression Games",
+          "release": "Aug 13, 2026"
+        },
+        "priorIdentity": null,
+        "researchDate": "2026-10-08"
+      }
+    },
+    {
+      "steamAppId": 1384160,
+      "status": "approved",
+      "metacriticId": "guilty-gear--strive-",
+      "numericId": null,
+      "reviewedAt": "2026-10-09T17:48:10.772813Z",
+      "evidenceURLs": [
+        "https://store.steampowered.com/app/1384160/",
+        "https://www.metacritic.com/game/guilty-gear--strive-/",
+        "https://store.steampowered.com/api/appdetails?appids=1384160&l=english"
+      ],
+      "rationale": "Raw veri kümesinde PC 7,4; Arc System Works/2021 eşleşiyor. Bugünkü PC puanı olarak doğrulanmadı. Kalıcı Steam uygulama ID’si; geliştirici, çıkış dönemi ve temel eser kapsamı incelendi. Yama/port ayrı oyun sayılmadı; farklı pazarlanan remake/remasterlar birleştirilmedi.",
+      "reviewedMetadata": {
+        "catalogName": "GUILTY GEAR -STRIVE-",
+        "steamAppId": 1384160,
+        "storeDevelopers": [
+          "Arc System Works"
+        ],
+        "storeRelease": {
+          "coming_soon": false,
+          "date": "Jun 11, 2021"
+        },
+        "metacriticResourceId": "guilty-gear--strive-",
+        "primaryMetadata": null,
+        "priorIdentity": {
+          "resourceId": "guilty-gear--strive-",
+          "numericId": null,
+          "url": "https://www.metacritic.com/game/guilty-gear--strive-/",
+          "editionScope": "Reviewed store product / Metacritic work relationship",
+          "evidence": [
+            {
+              "kind": "store-app-id-crosslink",
+              "steamAppId": 1384160,
+              "url": "https://store.steampowered.com/api/appdetails?appids=1384160&l=english",
+              "referenceUrl": "https://www.metacritic.com/game/pc/guilty-gear--strive-?ftag=MCD-06-10aaa1f",
+              "retrievedAt": "2026-10-06T11:24:55.736Z"
+            }
+          ]
+        },
+        "researchDate": "2026-10-08"
+      }
+    },
+    {
+      "steamAppId": 1665460,
+      "status": "approved",
+      "metacriticId": "efootball-2026",
+      "numericId": null,
+      "reviewedAt": "2026-10-09T17:48:10.772813Z",
+      "evidenceURLs": [
+        "https://store.steampowered.com/app/1665460/",
+        "https://www.metacritic.com/game/efootball-2026/",
+        "https://store.steampowered.com/api/appdetails?appids=1665460&l=english"
+      ],
+      "rationale": "Konami arşivi 2026/v5.0’ın aynı oyunun sezon güncellemesi olduğunu doğruluyor. Bulgu 2026 dönemine ait; yeni sezonun güncel puanı diye sunulamaz. Kalıcı Steam uygulama ID’si; geliştirici, çıkış dönemi ve temel eser kapsamı incelendi. Yama/port ayrı oyun sayılmadı; farklı pazarlanan remake/remasterlar birleştirilmedi.",
+      "reviewedMetadata": {
+        "catalogName": "eFootball™",
+        "steamAppId": 1665460,
+        "storeDevelopers": [
+          "KONAMI"
+        ],
+        "storeRelease": {
+          "coming_soon": false,
+          "date": "Sep 29, 2021"
+        },
+        "metacriticResourceId": "efootball-2026",
+        "primaryMetadata": {
+          "url": "https://www.metacritic.com/game/efootball-2026/",
+          "ref": "turn310search6",
+          "developer": "Konami",
+          "release": "Aug 13, 2025"
+        },
+        "priorIdentity": null,
+        "researchDate": "2026-10-08"
+      }
+    },
+    {
+      "steamAppId": 2863680,
+      "status": "approved",
+      "metacriticId": "zero-parades-for-dead-spies",
+      "numericId": null,
+      "reviewedAt": "2026-10-09T17:48:10.772813Z",
+      "evidenceURLs": [
+        "https://store.steampowered.com/app/2863680/",
+        "https://www.metacritic.com/game/zero-parades-for-dead-spies/",
+        "https://store.steampowered.com/api/appdetails?appids=2863680&l=english"
+      ],
+      "rationale": "Steam açıklaması Director’s Cut’ın mevcut sahipler için ücretsiz güncelleme olduğunu doğruluyor. Kalıcı Steam uygulama ID’si; geliştirici, çıkış dönemi ve temel eser kapsamı incelendi. Yama/port ayrı oyun sayılmadı; farklı pazarlanan remake/remasterlar birleştirilmedi.",
+      "reviewedMetadata": {
+        "catalogName": "ZERO PARADES: Director's Cut",
+        "steamAppId": 2863680,
+        "storeDevelopers": [
+          "ZA/UM"
+        ],
+        "storeRelease": {
+          "coming_soon": false,
+          "date": "May 21, 2026"
+        },
+        "metacriticResourceId": "zero-parades-for-dead-spies",
+        "primaryMetadata": {
+          "url": "https://www.metacritic.com/game/zero-parades-for-dead-spies/",
+          "ref": "turn302view2",
+          "developer": "ZA/UM",
+          "release": "May 21, 2026",
+          "platforms": "* PC\n  * PlayStation 5"
+        },
+        "priorIdentity": null,
+        "researchDate": "2026-10-08"
+      }
+    },
+    {
+      "steamAppId": 2964090,
+      "status": "approved",
+      "metacriticId": "world-of-warships-legends",
+      "numericId": null,
+      "reviewedAt": "2026-10-09T17:48:10.772813Z",
+      "evidenceURLs": [
+        "https://store.steampowered.com/app/2964090/",
+        "https://www.metacritic.com/game/world-of-warships-legends/",
+        "https://store.steampowered.com/api/appdetails?appids=2964090&l=english"
+      ],
+      "rationale": "Sayısal kullanıcı puanı var; seçilen platform doğrulanamadı. Kalıcı Steam uygulama ID’si; geliştirici, çıkış dönemi ve temel eser kapsamı incelendi. Yama/port ayrı oyun sayılmadı; farklı pazarlanan remake/remasterlar birleştirilmedi.",
+      "reviewedMetadata": {
+        "catalogName": "World of Warships: Legends",
+        "steamAppId": 2964090,
+        "storeDevelopers": [
+          "Wargaming Group Limited"
+        ],
+        "storeRelease": {
+          "coming_soon": false,
+          "date": "May 4, 2026"
+        },
+        "metacriticResourceId": "world-of-warships-legends",
+        "primaryMetadata": {
+          "url": "https://www.metacritic.com/game/world-of-warships-legends/",
+          "ref": "turn310search2",
+          "developer": "Wargaming.net",
+          "release": "Apr 16, 2019"
+        },
+        "priorIdentity": null,
+        "researchDate": "2026-10-08"
+      }
+    },
+    {
+      "steamAppId": 2244210,
+      "status": "approved",
+      "metacriticId": "echoes-of-aincrad",
+      "numericId": null,
+      "reviewedAt": "2026-10-09T17:48:10.772813Z",
+      "evidenceURLs": [
+        "https://store.steampowered.com/app/2244210/",
+        "https://www.metacritic.com/game/echoes-of-aincrad/",
+        "https://store.steampowered.com/api/appdetails?appids=2244210&l=english"
+      ],
+      "rationale": "Sayısal kullanıcı puanı var; seçilen platform doğrulanamadı. Kalıcı Steam uygulama ID’si; geliştirici, çıkış dönemi ve temel eser kapsamı incelendi. Yama/port ayrı oyun sayılmadı; farklı pazarlanan remake/remasterlar birleştirilmedi.",
+      "reviewedMetadata": {
+        "catalogName": "Echoes of Aincrad",
+        "steamAppId": 2244210,
+        "storeDevelopers": [
+          "Game Studio Inc."
+        ],
+        "storeRelease": {
+          "coming_soon": false,
+          "date": "Jul 9, 2026"
+        },
+        "metacriticResourceId": "echoes-of-aincrad",
+        "primaryMetadata": {
+          "url": "https://www.metacritic.com/game/echoes-of-aincrad/",
+          "ref": "turn313search2",
+          "developer": "Game Studio Inc.",
+          "release": "Jul 10, 2026",
+          "platforms": "* PlayStation 5\n  * PC\n  * Xbox Series X"
+        },
+        "priorIdentity": null,
+        "researchDate": "2026-10-08"
+      }
+    },
+    {
+      "steamAppId": 1805110,
+      "status": "approved",
+      "metacriticId": "solarpunk",
+      "numericId": null,
+      "reviewedAt": "2026-10-09T17:48:10.772813Z",
+      "evidenceURLs": [
+        "https://store.steampowered.com/app/1805110/",
+        "https://www.metacritic.com/game/solarpunk/",
+        "https://store.steampowered.com/api/appdetails?appids=1805110&l=english"
+      ],
+      "rationale": "Sayısal kullanıcı puanı var; seçilen platform doğrulanamadı. Kalıcı Steam uygulama ID’si; geliştirici, çıkış dönemi ve temel eser kapsamı incelendi. Yama/port ayrı oyun sayılmadı; farklı pazarlanan remake/remasterlar birleştirilmedi.",
+      "reviewedMetadata": {
+        "catalogName": "Solarpunk™",
+        "steamAppId": 1805110,
+        "storeDevelopers": [
+          "Cyberwave"
+        ],
+        "storeRelease": {
+          "coming_soon": false,
+          "date": "8 Jun, 2026"
+        },
+        "metacriticResourceId": "solarpunk",
+        "primaryMetadata": {
+          "url": "https://www.metacritic.com/game/solarpunk/",
+          "ref": "turn313search1",
+          "developer": "Cyberwave",
+          "release": "Jun 8, 2026",
+          "platforms": "* PC\n  * Nintendo Switch 2\n  * Xbox Series X\n  * PlayStation 5"
+        },
+        "priorIdentity": null,
+        "researchDate": "2026-10-08"
+      }
+    },
+    {
+      "steamAppId": 2569760,
+      "status": "approved",
+      "metacriticId": "the-mound-omen-of-cthulhu",
+      "numericId": "1300674575",
+      "reviewedAt": "2026-10-09T17:48:10.772813Z",
+      "evidenceURLs": [
+        "https://store.steampowered.com/app/2569760/",
+        "https://www.metacritic.com/game/the-mound-omen-of-cthulhu/",
+        "https://store.steampowered.com/api/appdetails?appids=2569760&l=english"
+      ],
+      "rationale": "Sayısal kullanıcı puanı var; seçilen platform doğrulanamadı. Kalıcı Steam uygulama ID’si; geliştirici, çıkış dönemi ve temel eser kapsamı incelendi. Yama/port ayrı oyun sayılmadı; farklı pazarlanan remake/remasterlar birleştirilmedi.",
+      "reviewedMetadata": {
+        "catalogName": "The Mound: Omen of Cthulhu",
+        "steamAppId": 2569760,
+        "storeDevelopers": [
+          "ACE Team"
+        ],
+        "storeRelease": {
+          "coming_soon": false,
+          "date": "15 Jul, 2026"
+        },
+        "metacriticResourceId": "the-mound-omen-of-cthulhu",
+        "primaryMetadata": {
+          "url": "https://www.metacritic.com/game/the-mound-omen-of-cthulhu/",
+          "ref": "turn313search0",
+          "developer": "ACE Team",
+          "release": "Jul 15, 2026",
+          "platforms": "* PlayStation 5\n  * Xbox Series X\n  * PC"
+        },
+        "priorIdentity": {
+          "resourceId": "the-mound-omen-of-cthulhu",
+          "numericId": "1300674575",
+          "url": "https://www.metacritic.com/game/the-mound-omen-of-cthulhu/",
+          "editionScope": "Reviewed store product / Metacritic work relationship",
+          "evidence": [
+            {
+              "kind": "wikidata-external-ids",
+              "qid": "Q133100756",
+              "steamAppId": 2569760,
+              "metacriticId": "the-mound-omen-of-cthulhu",
+              "numericId": "1300674575",
+              "url": "http://www.wikidata.org/entity/Q133100756",
+              "retrievedAt": "2026-10-06T11:25:20.847Z"
+            }
+          ]
+        },
+        "researchDate": "2026-10-08"
+      }
+    },
+    {
+      "steamAppId": 2209900,
+      "status": "approved",
+      "metacriticId": "moonlight-peaks",
+      "numericId": null,
+      "reviewedAt": "2026-10-09T17:48:10.772813Z",
+      "evidenceURLs": [
+        "https://store.steampowered.com/app/2209900/",
+        "https://www.metacritic.com/game/moonlight-peaks/",
+        "https://store.steampowered.com/api/appdetails?appids=2209900&l=english"
+      ],
+      "rationale": "Sayısal kullanıcı puanı var; seçilen platform doğrulanamadı. Kalıcı Steam uygulama ID’si; geliştirici, çıkış dönemi ve temel eser kapsamı incelendi. Yama/port ayrı oyun sayılmadı; farklı pazarlanan remake/remasterlar birleştirilmedi.",
+      "reviewedMetadata": {
+        "catalogName": "Moonlight Peaks",
+        "steamAppId": 2209900,
+        "storeDevelopers": [
+          "Little Chicken"
+        ],
+        "storeRelease": {
+          "coming_soon": false,
+          "date": "Jul 6, 2026"
+        },
+        "metacriticResourceId": "moonlight-peaks",
+        "primaryMetadata": {
+          "url": "https://www.metacritic.com/game/moonlight-peaks/",
+          "ref": "turn313search3",
+          "developer": "Little Chicken",
+          "release": "Jul 7, 2026"
+        },
+        "priorIdentity": null,
+        "researchDate": "2026-10-08"
+      }
+    },
+    {
+      "steamAppId": 339340,
+      "status": "approved",
+      "metacriticId": "resident-evil-0-hd-remaster",
+      "numericId": null,
+      "reviewedAt": "2026-10-09T17:48:10.772813Z",
+      "evidenceURLs": [
+        "https://store.steampowered.com/app/339340/",
+        "https://www.metacritic.com/game/resident-evil-0-hd-remaster/",
+        "https://store.steampowered.com/api/appdetails?appids=339340&l=english"
+      ],
+      "rationale": "Steam 339340/2016, HD Remaster kaydıyla eşleşiyor. 2002 GameCube puanı dışlandı. Kalıcı Steam uygulama ID’si; geliştirici, çıkış dönemi ve temel eser kapsamı incelendi. Yama/port ayrı oyun sayılmadı; farklı pazarlanan remake/remasterlar birleştirilmedi.",
+      "reviewedMetadata": {
+        "catalogName": "Resident Evil 0",
+        "steamAppId": 339340,
+        "storeDevelopers": [
+          "CAPCOM Co., Ltd."
+        ],
+        "storeRelease": {
+          "coming_soon": false,
+          "date": "Jan 19, 2016"
+        },
+        "metacriticResourceId": "resident-evil-0-hd-remaster",
+        "primaryMetadata": {
+          "url": "https://www.metacritic.com/game/resident-evil-0-hd-remaster/",
+          "ref": "turn304view0",
+          "developer": "Capcom",
+          "release": "Jan 19, 2016",
+          "platforms": "* Nintendo Switch\n  * PlayStation 3\n  * PlayStation 4\n  * PC\n  * Xbox 360\n  * Xbox One"
+        },
+        "priorIdentity": null,
+        "researchDate": "2026-10-08"
+      }
+    },
+    {
+      "steamAppId": 2527160,
+      "status": "approved",
+      "metacriticId": "desktop-explorer",
+      "numericId": null,
+      "reviewedAt": "2026-10-09T17:48:10.772813Z",
+      "evidenceURLs": [
+        "https://store.steampowered.com/app/2527160/",
+        "https://www.metacritic.com/game/desktop-explorer/",
+        "https://store.steampowered.com/api/appdetails?appids=2527160&l=english"
+      ],
+      "rationale": "PC puanı bulgusu. Kalıcı Steam uygulama ID’si; geliştirici, çıkış dönemi ve temel eser kapsamı incelendi. Yama/port ayrı oyun sayılmadı; farklı pazarlanan remake/remasterlar birleştirilmedi.",
+      "reviewedMetadata": {
+        "catalogName": "Desktop Explorer",
+        "steamAppId": 2527160,
+        "storeDevelopers": [
+          "Recurring Dream"
+        ],
+        "storeRelease": {
+          "coming_soon": false,
+          "date": "Jul 17, 2026"
+        },
+        "metacriticResourceId": "desktop-explorer",
+        "primaryMetadata": {
+          "url": "https://www.metacritic.com/game/desktop-explorer/",
+          "ref": "turn307search0",
+          "developer": "Recurring Dream",
+          "release": "Jul 17, 2026",
+          "platforms": "* PC"
+        },
+        "priorIdentity": {
+          "resourceId": "desktop-explorer",
+          "numericId": null,
+          "url": "https://www.metacritic.com/game/desktop-explorer/",
+          "editionScope": "Reviewed store product / Metacritic work relationship",
+          "evidence": [
+            {
+              "kind": "store-app-id-crosslink",
+              "steamAppId": 2527160,
+              "url": "https://store.steampowered.com/api/appdetails?appids=2527160&l=english",
+              "referenceUrl": "https://www.metacritic.com/game/pc/desktop-explorer?ftag=MCD-06-10aaa1f",
+              "retrievedAt": "2026-10-06T11:25:17.948Z"
+            }
+          ]
+        },
+        "researchDate": "2026-10-08"
+      }
+    },
+    {
+      "steamAppId": 293760,
+      "status": "approved",
+      "metacriticId": "automation",
+      "numericId": null,
+      "reviewedAt": "2026-10-09T17:48:10.772813Z",
+      "evidenceURLs": [
+        "https://store.steampowered.com/app/293760/",
+        "https://www.metacritic.com/game/automation/",
+        "https://store.steampowered.com/api/appdetails?appids=293760&l=english"
+      ],
+      "rationale": "PC puanı bulgusu. Kalıcı Steam uygulama ID’si; geliştirici, çıkış dönemi ve temel eser kapsamı incelendi. Yama/port ayrı oyun sayılmadı; farklı pazarlanan remake/remasterlar birleştirilmedi.",
+      "reviewedMetadata": {
+        "catalogName": "Automation - The Car Company Tycoon Game",
+        "steamAppId": 293760,
+        "storeDevelopers": [
+          "Camshaft Software Ltd"
+        ],
+        "storeRelease": {
+          "coming_soon": false,
+          "date": "Mar 12, 2015"
+        },
+        "metacriticResourceId": "automation",
+        "primaryMetadata": {
+          "url": "https://www.metacritic.com/game/automation/",
+          "ref": "turn304view2",
+          "developer": "Camshaft Software",
+          "release": "Mar 12, 2015",
+          "platforms": "* PC"
+        },
+        "priorIdentity": null,
+        "researchDate": "2026-10-08"
+      }
+    },
+    {
+      "steamAppId": 2552450,
+      "status": "approved",
+      "metacriticId": "kingdom-hearts-iii-plus-re-mind",
+      "numericId": null,
+      "reviewedAt": "2026-10-09T17:48:10.772813Z",
+      "evidenceURLs": [
+        "https://store.steampowered.com/app/2552450/",
+        "https://www.metacritic.com/game/kingdom-hearts-iii-plus-re-mind/",
+        "https://store.steampowered.com/api/appdetails?appids=2552450&l=english"
+      ],
+      "rationale": "PC + Re Mind puanı seçildi; temel KHIII PS4 puanı seçilmedi. Kalıcı Steam uygulama ID’si; geliştirici, çıkış dönemi ve temel eser kapsamı incelendi. Yama/port ayrı oyun sayılmadı; farklı pazarlanan remake/remasterlar birleştirilmedi.",
+      "reviewedMetadata": {
+        "catalogName": "KINGDOM HEARTS III + Re Mind (DLC)",
+        "steamAppId": 2552450,
+        "storeDevelopers": [
+          "Square Enix"
+        ],
+        "storeRelease": {
+          "coming_soon": false,
+          "date": "13 Jun, 2024"
+        },
+        "metacriticResourceId": "kingdom-hearts-iii-plus-re-mind",
+        "primaryMetadata": null,
+        "priorIdentity": {
+          "resourceId": "kingdom-hearts-iii",
+          "numericId": "1300185807",
+          "url": "https://www.metacritic.com/game/kingdom-hearts-iii/",
+          "editionScope": "Reviewed store product / Metacritic work relationship",
+          "evidence": [
+            {
+              "kind": "wikidata-external-ids",
+              "qid": "Q3265748",
+              "steamAppId": 2552450,
+              "metacriticId": "kingdom-hearts-iii",
+              "numericId": "1300185807",
+              "url": "http://www.wikidata.org/entity/Q3265748",
+              "retrievedAt": "2026-10-06T11:25:22.498Z"
+            }
+          ]
+        },
+        "researchDate": "2026-10-08"
+      }
+    },
+    {
+      "steamAppId": 3061570,
+      "status": "approved",
+      "metacriticId": "persona-5-the-phantom-x",
+      "numericId": null,
+      "reviewedAt": "2026-10-09T17:48:10.772813Z",
+      "evidenceURLs": [
+        "https://store.steampowered.com/app/3061570/",
+        "https://www.metacritic.com/game/persona-5-the-phantom-x/",
+        "https://store.steampowered.com/api/appdetails?appids=3061570&l=english"
+      ],
+      "rationale": "PC puanı bulgusu. Kalıcı Steam uygulama ID’si; geliştirici, çıkış dönemi ve temel eser kapsamı incelendi. Yama/port ayrı oyun sayılmadı; farklı pazarlanan remake/remasterlar birleştirilmedi.",
+      "reviewedMetadata": {
+        "catalogName": "Persona5: The Phantom X",
+        "steamAppId": 3061570,
+        "storeDevelopers": [
+          "ATLUS",
+          "SEGA",
+          "Perfect World"
+        ],
+        "storeRelease": {
+          "coming_soon": false,
+          "date": "Jun 25, 2025"
+        },
+        "metacriticResourceId": "persona-5-the-phantom-x",
+        "primaryMetadata": {
+          "url": "https://www.metacritic.com/game/persona-5-the-phantom-x/",
+          "ref": "turn312search4",
+          "developer": "Atlus",
+          "release": "Jun 25, 2025"
+        },
+        "priorIdentity": null,
+        "researchDate": "2026-10-08"
+      }
+    },
+    {
+      "steamAppId": 3326230,
+      "status": "approved",
+      "metacriticId": "hozy",
+      "numericId": null,
+      "reviewedAt": "2026-10-09T17:48:10.772813Z",
+      "evidenceURLs": [
+        "https://store.steampowered.com/app/3326230/",
+        "https://www.metacritic.com/game/hozy/",
+        "https://store.steampowered.com/api/appdetails?appids=3326230&l=english"
+      ],
+      "rationale": "PC puanı bulgusu. Kalıcı Steam uygulama ID’si; geliştirici, çıkış dönemi ve temel eser kapsamı incelendi. Yama/port ayrı oyun sayılmadı; farklı pazarlanan remake/remasterlar birleştirilmedi.",
+      "reviewedMetadata": {
+        "catalogName": "Hozy",
+        "steamAppId": 3326230,
+        "storeDevelopers": [
+          "Come On Studio"
+        ],
+        "storeRelease": {
+          "coming_soon": false,
+          "date": "Mar 30, 2026"
+        },
+        "metacriticResourceId": "hozy",
+        "primaryMetadata": {
+          "url": "https://www.metacritic.com/game/hozy/",
+          "ref": "turn312search2",
+          "developer": "Come On Studio",
+          "release": "Mar 30, 2026"
+        },
+        "priorIdentity": null,
+        "researchDate": "2026-10-08"
+      }
+    },
+    {
+      "steamAppId": 2004680,
+      "status": "approved",
+      "metacriticId": "voidling-bound",
+      "numericId": null,
+      "reviewedAt": "2026-10-09T17:48:10.772813Z",
+      "evidenceURLs": [
+        "https://store.steampowered.com/app/2004680/",
+        "https://www.metacritic.com/game/voidling-bound/",
+        "https://store.steampowered.com/api/appdetails?appids=2004680&l=english"
+      ],
+      "rationale": "Sayısal kullanıcı puanı var; seçilen platform doğrulanamadı. Kalıcı Steam uygulama ID’si; geliştirici, çıkış dönemi ve temel eser kapsamı incelendi. Yama/port ayrı oyun sayılmadı; farklı pazarlanan remake/remasterlar birleştirilmedi.",
+      "reviewedMetadata": {
+        "catalogName": "Voidling Bound",
+        "steamAppId": 2004680,
+        "storeDevelopers": [
+          "Hatchery Games"
+        ],
+        "storeRelease": {
+          "coming_soon": false,
+          "date": "Jun 9, 2026"
+        },
+        "metacriticResourceId": "voidling-bound",
+        "primaryMetadata": {
+          "url": "https://www.metacritic.com/game/voidling-bound/",
+          "ref": "turn312search3",
+          "developer": "Hatchery Games",
+          "release": "Jun 9, 2026",
+          "platforms": "* PC\n  * Nintendo Switch 2\n  * PlayStation 5\n  * Xbox Series X"
+        },
+        "priorIdentity": null,
+        "researchDate": "2026-10-08"
+      }
+    },
+    {
+      "steamAppId": 2893570,
+      "status": "approved",
+      "metacriticId": "dragon-quest-i-and-ii-hd-2d-remake",
+      "numericId": null,
+      "reviewedAt": "2026-10-09T17:48:10.772813Z",
+      "evidenceURLs": [
+        "https://store.steampowered.com/app/2893570/",
+        "https://www.metacritic.com/game/dragon-quest-i-and-ii-hd-2d-remake/",
+        "https://store.steampowered.com/api/appdetails?appids=2893570&l=english"
+      ],
+      "rationale": "Başka platform puanı var; güncel PC puanının yokluğu kesinleşmedi. Kalıcı Steam uygulama ID’si; geliştirici, çıkış dönemi ve temel eser kapsamı incelendi. Yama/port ayrı oyun sayılmadı; farklı pazarlanan remake/remasterlar birleştirilmedi.",
+      "reviewedMetadata": {
+        "catalogName": "DRAGON QUEST I & II HD-2D Remake",
+        "steamAppId": 2893570,
+        "storeDevelopers": [
+          "Square Enix",
+          "ARTDINK"
+        ],
+        "storeRelease": {
+          "coming_soon": false,
+          "date": "30 Oct, 2025"
+        },
+        "metacriticResourceId": "dragon-quest-i-and-ii-hd-2d-remake",
+        "primaryMetadata": {
+          "url": "https://www.metacritic.com/game/dragon-quest-i-and-ii-hd-2d-remake/",
+          "ref": "turn312search0",
+          "developer": "Artdink",
+          "release": "Oct 30, 2025",
+          "platforms": "* Nintendo Switch\n  * PC\n  * PlayStation 5\n  * Nintendo Switch 2\n  * Xbox Series X"
+        },
+        "priorIdentity": null,
+        "researchDate": "2026-10-08"
+      }
+    },
+    {
+      "steamAppId": 2928600,
+      "status": "approved",
+      "metacriticId": "demon-slayer-kimetsu-no-yaiba-the-hinokami-2",
+      "numericId": "1300661468",
+      "reviewedAt": "2026-10-09T17:48:10.772813Z",
+      "evidenceURLs": [
+        "https://store.steampowered.com/app/2928600/",
+        "https://www.metacritic.com/game/demon-slayer-kimetsu-no-yaiba-the-hinokami-2/",
+        "https://store.steampowered.com/api/appdetails?appids=2928600&l=english"
+      ],
+      "rationale": "Başka platform puanı var; güncel PC puanının yokluğu kesinleşmedi. Kalıcı Steam uygulama ID’si; geliştirici, çıkış dönemi ve temel eser kapsamı incelendi. Yama/port ayrı oyun sayılmadı; farklı pazarlanan remake/remasterlar birleştirilmedi.",
+      "reviewedMetadata": {
+        "catalogName": "Demon Slayer -Kimetsu no Yaiba- The Hinokami Chronicles 2",
+        "steamAppId": 2928600,
+        "storeDevelopers": [
+          "CyberConnect2"
+        ],
+        "storeRelease": {
+          "coming_soon": false,
+          "date": "Aug 5, 2025"
+        },
+        "metacriticResourceId": "demon-slayer-kimetsu-no-yaiba-the-hinokami-2",
+        "primaryMetadata": {
+          "url": "https://www.metacritic.com/game/demon-slayer-kimetsu-no-yaiba-the-hinokami-2/?pubDate=20250804",
+          "ref": "turn308search12",
+          "developer": "CyberConnect2"
+        },
+        "priorIdentity": {
+          "resourceId": "demon-slayer-kimetsu-no-yaiba-the-hinokami-2",
+          "numericId": "1300661468",
+          "url": "https://www.metacritic.com/game/demon-slayer-kimetsu-no-yaiba-the-hinokami-2/",
+          "editionScope": "Reviewed store product / Metacritic work relationship",
+          "evidence": [
+            {
+              "kind": "wikidata-external-ids",
+              "qid": "Q131391938",
+              "steamAppId": 2928600,
+              "metacriticId": "demon-slayer-kimetsu-no-yaiba-the-hinokami-2",
+              "numericId": "1300661468",
+              "url": "http://www.wikidata.org/entity/Q131391938",
+              "retrievedAt": "2026-10-06T11:25:23.541Z"
+            }
+          ]
+        },
+        "researchDate": "2026-10-08"
+      }
+    },
+    {
+      "steamAppId": 3124340,
+      "status": "approved",
+      "metacriticId": "demeo-x-dungeons-and-dragons-battlemarked",
+      "numericId": null,
+      "reviewedAt": "2026-10-09T17:48:10.772813Z",
+      "evidenceURLs": [
+        "https://store.steampowered.com/app/3124340/",
+        "https://www.metacritic.com/game/demeo-x-dungeons-and-dragons-battlemarked/",
+        "https://store.steampowered.com/api/appdetails?appids=3124340&l=english"
+      ],
+      "rationale": "PC puanı bulgusu. Kalıcı Steam uygulama ID’si; geliştirici, çıkış dönemi ve temel eser kapsamı incelendi. Yama/port ayrı oyun sayılmadı; farklı pazarlanan remake/remasterlar birleştirilmedi.",
+      "reviewedMetadata": {
+        "catalogName": "Demeo x Dungeons & Dragons: Battlemarked",
+        "steamAppId": 3124340,
+        "storeDevelopers": [
+          "Resolution Games"
+        ],
+        "storeRelease": {
+          "coming_soon": false,
+          "date": "Nov 20, 2025"
+        },
+        "metacriticResourceId": "demeo-x-dungeons-and-dragons-battlemarked",
+        "primaryMetadata": {
+          "url": "https://www.metacritic.com/game/demeo-x-dungeons-and-dragons-battlemarked/",
+          "ref": "turn308search1",
+          "developer": "Resolution Games",
+          "release": "Nov 20, 2025"
+        },
+        "priorIdentity": {
+          "resourceId": "demeo-x-dungeons-dragons-battlemarked",
+          "numericId": null,
+          "url": "https://www.metacritic.com/game/demeo-x-dungeons-dragons-battlemarked/",
+          "editionScope": "Reviewed store product / Metacritic work relationship",
+          "evidence": [
+            {
+              "kind": "store-app-id-crosslink",
+              "steamAppId": 3124340,
+              "url": "https://store.steampowered.com/api/appdetails?appids=3124340&l=english",
+              "referenceUrl": "https://www.metacritic.com/game/pc/demeo-x-dungeons-dragons-battlemarked?ftag=MCD-06-10aaa1f",
+              "retrievedAt": "2026-10-06T11:30:31.689Z"
+            }
+          ]
+        },
+        "researchDate": "2026-10-08"
+      }
+    },
+    {
+      "steamAppId": 611790,
+      "status": "approved",
+      "metacriticId": "house-party-2017",
+      "numericId": null,
+      "reviewedAt": "2026-10-09T17:48:10.772813Z",
+      "evidenceURLs": [
+        "https://store.steampowered.com/app/611790/",
+        "https://www.metacritic.com/game/house-party-2017/",
+        "https://store.steampowered.com/api/appdetails?appids=611790&l=english"
+      ],
+      "rationale": "House Party (2017) adı, Eek! Games aynı oyun. Erken erişim/tam çıkış tarih farkı ayrı oyun sayılmadı. Kalıcı Steam uygulama ID’si; geliştirici, çıkış dönemi ve temel eser kapsamı incelendi. Yama/port ayrı oyun sayılmadı; farklı pazarlanan remake/remasterlar birleştirilmedi.",
+      "reviewedMetadata": {
+        "catalogName": "House Party",
+        "steamAppId": 611790,
+        "storeDevelopers": [
+          "Eek! Games, LLC"
+        ],
+        "storeRelease": {
+          "coming_soon": false,
+          "date": "Jul 15, 2022"
+        },
+        "metacriticResourceId": "house-party-2017",
+        "primaryMetadata": {
+          "url": "https://www.metacritic.com/game/house-party-2017/",
+          "ref": "turn308search2",
+          "developer": "Eek!",
+          "release": "May 27, 2022",
+          "platforms": "* PC"
+        },
+        "priorIdentity": {
+          "resourceId": "house-party",
+          "numericId": "1300694872",
+          "url": "https://www.metacritic.com/game/house-party/",
+          "editionScope": "Reviewed store product / Metacritic work relationship",
+          "evidence": [
+            {
+              "kind": "wikidata-external-ids",
+              "qid": "Q60565953",
+              "steamAppId": 611790,
+              "metacriticId": "house-party",
+              "numericId": "1300694872",
+              "url": "http://www.wikidata.org/entity/Q60565953",
+              "retrievedAt": "2026-10-06T11:25:25.527Z"
+            }
+          ]
+        },
+        "researchDate": "2026-10-08"
+      }
+    },
+    {
+      "steamAppId": 4125930,
+      "status": "approved",
+      "metacriticId": "punishing-gray-raven",
+      "numericId": null,
+      "reviewedAt": "2026-10-09T17:48:10.772813Z",
+      "evidenceURLs": [
+        "https://store.steampowered.com/app/4125930/",
+        "https://www.metacritic.com/game/punishing-gray-raven/",
+        "https://store.steampowered.com/api/appdetails?appids=4125930&l=english"
+      ],
+      "rationale": "Başka platform puanı var; güncel PC puanının yokluğu kesinleşmedi. Kalıcı Steam uygulama ID’si; geliştirici, çıkış dönemi ve temel eser kapsamı incelendi. Yama/port ayrı oyun sayılmadı; farklı pazarlanan remake/remasterlar birleştirilmedi.",
+      "reviewedMetadata": {
+        "catalogName": "Punishing: Gray Raven",
+        "steamAppId": 4125930,
+        "storeDevelopers": [
+          "KURO GAMES"
+        ],
+        "storeRelease": {
+          "coming_soon": false,
+          "date": "Feb 2, 2026"
+        },
+        "metacriticResourceId": "punishing-gray-raven",
+        "primaryMetadata": {
+          "url": "https://www.metacritic.com/game/punishing-gray-raven/",
+          "ref": "turn308search3",
+          "developer": "Hero Entertainment Co., Ltd.",
+          "release": "Jul 15, 2021"
+        },
+        "priorIdentity": null,
+        "researchDate": "2026-10-08"
+      }
+    },
+    {
+      "steamAppId": 2162800,
+      "status": "approved",
+      "metacriticId": "shapez-2-factory",
+      "numericId": null,
+      "reviewedAt": "2026-10-09T17:48:10.772813Z",
+      "evidenceURLs": [
+        "https://store.steampowered.com/app/2162800/",
+        "https://www.metacritic.com/game/shapez-2-factory/",
+        "https://store.steampowered.com/api/appdetails?appids=2162800&l=english"
+      ],
+      "rationale": "PC puanı bulgusu. Kalıcı Steam uygulama ID’si; geliştirici, çıkış dönemi ve temel eser kapsamı incelendi. Yama/port ayrı oyun sayılmadı; farklı pazarlanan remake/remasterlar birleştirilmedi.",
+      "reviewedMetadata": {
+        "catalogName": "shapez 2 - Factory",
+        "steamAppId": 2162800,
+        "storeDevelopers": [
+          "tobspr Games"
+        ],
+        "storeRelease": {
+          "coming_soon": false,
+          "date": "Apr 23, 2026"
+        },
+        "metacriticResourceId": "shapez-2-factory",
+        "primaryMetadata": {
+          "url": "https://www.metacritic.com/game/shapez-2-factory/",
+          "ref": "turn311search0",
+          "developer": "tobspr Games",
+          "release": "Apr 23, 2026"
+        },
+        "priorIdentity": {
+          "resourceId": "shapez-2---factory",
+          "numericId": null,
+          "url": "https://www.metacritic.com/game/shapez-2---factory/",
+          "editionScope": "Reviewed store product / Metacritic work relationship",
+          "evidence": [
+            {
+              "kind": "store-app-id-crosslink",
+              "steamAppId": 2162800,
+              "url": "https://store.steampowered.com/api/appdetails?appids=2162800&l=english",
+              "referenceUrl": "https://www.metacritic.com/game/pc/shapez-2---factory?ftag=MCD-06-10aaa1f",
+              "retrievedAt": "2026-10-06T11:31:02.354Z"
+            }
+          ]
+        },
+        "researchDate": "2026-10-08"
+      }
+    },
+    {
+      "steamAppId": 3556750,
+      "status": "approved",
+      "metacriticId": "warhammer-40000-dawn-of-war-definitive-edition",
+      "numericId": null,
+      "reviewedAt": "2026-10-09T17:48:10.772813Z",
+      "evidenceURLs": [
+        "https://store.steampowered.com/app/3556750/",
+        "https://www.metacritic.com/game/warhammer-40000-dawn-of-war-definitive-edition/",
+        "https://store.steampowered.com/api/appdetails?appids=3556750&l=english"
+      ],
+      "rationale": "PC puanı bulgusu. Kalıcı Steam uygulama ID’si; geliştirici, çıkış dönemi ve temel eser kapsamı incelendi. Yama/port ayrı oyun sayılmadı; farklı pazarlanan remake/remasterlar birleştirilmedi.",
+      "reviewedMetadata": {
+        "catalogName": "Warhammer 40,000: Dawn of War - Definitive Edition",
+        "steamAppId": 3556750,
+        "storeDevelopers": [
+          "Relic Entertainment"
+        ],
+        "storeRelease": {
+          "coming_soon": false,
+          "date": "Aug 14, 2025"
+        },
+        "metacriticResourceId": "warhammer-40000-dawn-of-war-definitive-edition",
+        "primaryMetadata": {
+          "url": "https://www.metacritic.com/game/warhammer-40000-dawn-of-war-definitive-edition/",
+          "ref": "turn311search3",
+          "developer": "Relic Entertainment",
+          "release": "Aug 14, 2025"
+        },
+        "priorIdentity": null,
+        "researchDate": "2026-10-08"
+      }
+    },
+    {
+      "steamAppId": 1761390,
+      "status": "approved",
+      "metacriticId": "hatsune-miku-project-diva-megamix-plus",
+      "numericId": "1300623103",
+      "reviewedAt": "2026-10-09T17:48:10.772813Z",
+      "evidenceURLs": [
+        "https://store.steampowered.com/app/1761390/",
+        "https://www.metacritic.com/game/hatsune-miku-project-diva-megamix-plus/",
+        "https://store.steampowered.com/api/appdetails?appids=1761390&l=english"
+      ],
+      "rationale": "PC puanı bulgusu. Kalıcı Steam uygulama ID’si; geliştirici, çıkış dönemi ve temel eser kapsamı incelendi. Yama/port ayrı oyun sayılmadı; farklı pazarlanan remake/remasterlar birleştirilmedi.",
+      "reviewedMetadata": {
+        "catalogName": "Hatsune Miku: Project DIVA Mega Mix+",
+        "steamAppId": 1761390,
+        "storeDevelopers": [
+          "SEGA"
+        ],
+        "storeRelease": {
+          "coming_soon": false,
+          "date": "May 26, 2022"
+        },
+        "metacriticResourceId": "hatsune-miku-project-diva-megamix-plus",
+        "primaryMetadata": {
+          "url": "https://www.metacritic.com/game/hatsune-miku-project-diva-megamix-plus/",
+          "ref": "turn311search2",
+          "developer": "Sega AM2",
+          "release": "May 26, 2022"
+        },
+        "priorIdentity": {
+          "resourceId": "hatsune-miku-project-diva-megamix-plus",
+          "numericId": "1300623103",
+          "url": "https://www.metacritic.com/game/hatsune-miku-project-diva-megamix-plus/",
+          "editionScope": "Reviewed store product / Metacritic work relationship",
+          "evidence": [
+            {
+              "kind": "wikidata-external-ids",
+              "qid": "Q112135602",
+              "steamAppId": 1761390,
+              "metacriticId": "hatsune-miku-project-diva-megamix-plus",
+              "numericId": "1300623103",
+              "url": "http://www.wikidata.org/entity/Q112135602",
+              "retrievedAt": "2026-10-06T11:25:26.482Z"
+            }
+          ]
+        },
+        "researchDate": "2026-10-08"
+      }
+    },
+    {
+      "steamAppId": 2634890,
+      "status": "approved",
+      "metacriticId": "marvel-vs-capcom-fighting-collection-arcade",
+      "numericId": null,
+      "reviewedAt": "2026-10-09T17:48:10.772813Z",
+      "evidenceURLs": [
+        "https://store.steampowered.com/app/2634890/",
+        "https://www.metacritic.com/game/marvel-vs-capcom-fighting-collection-arcade/",
+        "https://store.steampowered.com/api/appdetails?appids=2634890&l=english"
+      ],
+      "rationale": "Başka platform puanı var; güncel PC puanının yokluğu kesinleşmedi. Kalıcı Steam uygulama ID’si; geliştirici, çıkış dönemi ve temel eser kapsamı incelendi. Yama/port ayrı oyun sayılmadı; farklı pazarlanan remake/remasterlar birleştirilmedi.",
+      "reviewedMetadata": {
+        "catalogName": "MARVEL vs. CAPCOM Fighting Collection: Arcade Classics",
+        "steamAppId": 2634890,
+        "storeDevelopers": [
+          "CAPCOM Co., Ltd."
+        ],
+        "storeRelease": {
+          "coming_soon": false,
+          "date": "Sep 11, 2024"
+        },
+        "metacriticResourceId": "marvel-vs-capcom-fighting-collection-arcade",
+        "primaryMetadata": {
+          "url": "https://www.metacritic.com/game/marvel-vs-capcom-fighting-collection-arcade/?platform=nintendo-switch",
+          "ref": "turn311search7",
+          "developer": "Capcom"
+        },
+        "priorIdentity": {
+          "resourceId": "marvel-vs-capcom-fighting-collection-arcade-classics",
+          "numericId": null,
+          "url": "https://www.metacritic.com/game/marvel-vs-capcom-fighting-collection-arcade-classics/",
+          "editionScope": "Reviewed store product / Metacritic work relationship",
+          "evidence": [
+            {
+              "kind": "store-app-id-crosslink",
+              "steamAppId": 2634890,
+              "url": "https://store.steampowered.com/api/appdetails?appids=2634890&l=english",
+              "referenceUrl": "https://www.metacritic.com/game/pc/marvel-vs-capcom-fighting-collection-arcade-classics?ftag=MCD-06-10aaa1f",
+              "retrievedAt": "2026-10-06T11:31:09.560Z"
+            }
+          ]
+        },
+        "researchDate": "2026-10-08"
+      }
+    },
+    {
+      "steamAppId": 1845250,
+      "status": "approved",
+      "metacriticId": "rubinite",
+      "numericId": null,
+      "reviewedAt": "2026-10-09T17:48:10.772813Z",
+      "evidenceURLs": [
+        "https://store.steampowered.com/app/1845250/",
+        "https://www.metacritic.com/game/rubinite/",
+        "https://store.steampowered.com/api/appdetails?appids=1845250&l=english"
+      ],
+      "rationale": "PC puanı bulgusu. Kalıcı Steam uygulama ID’si; geliştirici, çıkış dönemi ve temel eser kapsamı incelendi. Yama/port ayrı oyun sayılmadı; farklı pazarlanan remake/remasterlar birleştirilmedi.",
+      "reviewedMetadata": {
+        "catalogName": "Rubinite",
+        "steamAppId": 1845250,
+        "storeDevelopers": [
+          "Cup Dog Games",
+          "GameWorks Ventures"
+        ],
+        "storeRelease": {
+          "coming_soon": false,
+          "date": "Jul 22, 2026"
+        },
+        "metacriticResourceId": "rubinite",
+        "primaryMetadata": {
+          "url": "https://www.metacritic.com/game/rubinite/",
+          "ref": "turn306search0",
+          "developer": "Cup Dog Games",
+          "release": "Jul 22, 2026",
+          "platforms": "* PC"
+        },
+        "priorIdentity": null,
+        "researchDate": "2026-10-08"
+      }
+    },
+    {
+      "steamAppId": 2396980,
+      "status": "approved",
+      "metacriticId": "fate-stay-night-remastered",
+      "numericId": null,
+      "reviewedAt": "2026-10-09T17:48:10.772813Z",
+      "evidenceURLs": [
+        "https://store.steampowered.com/app/2396980/",
+        "https://www.metacritic.com/game/fate-stay-night-remastered/",
+        "https://store.steampowered.com/api/appdetails?appids=2396980&l=english"
+      ],
+      "rationale": "PC puanı bulgusu. Kalıcı Steam uygulama ID’si; geliştirici, çıkış dönemi ve temel eser kapsamı incelendi. Yama/port ayrı oyun sayılmadı; farklı pazarlanan remake/remasterlar birleştirilmedi.",
+      "reviewedMetadata": {
+        "catalogName": "Fate/stay night REMASTERED",
+        "steamAppId": 2396980,
+        "storeDevelopers": [
+          "TYPE-MOON",
+          "fuzz Inc."
+        ],
+        "storeRelease": {
+          "coming_soon": false,
+          "date": "Aug 7, 2024"
+        },
+        "metacriticResourceId": "fate-stay-night-remastered",
+        "primaryMetadata": {
+          "url": "https://www.metacritic.com/game/fate-stay-night-remastered/",
+          "ref": "turn306search2",
+          "developer": "Type-Moon",
+          "release": "Aug 7, 2024",
+          "platforms": "* Nintendo Switch\n  * PC"
+        },
+        "priorIdentity": {
+          "resourceId": "fatestay-night-remastered",
+          "numericId": null,
+          "url": "https://www.metacritic.com/game/fatestay-night-remastered/",
+          "editionScope": "Reviewed store product / Metacritic work relationship",
+          "evidence": [
+            {
+              "kind": "store-app-id-crosslink",
+              "steamAppId": 2396980,
+              "url": "https://store.steampowered.com/api/appdetails?appids=2396980&l=english",
+              "referenceUrl": "https://www.metacritic.com/game/pc/fatestay-night-remastered?ftag=MCD-06-10aaa1f",
+              "retrievedAt": "2026-10-06T11:31:48.588Z"
+            }
+          ]
+        },
+        "researchDate": "2026-10-08"
+      }
+    },
+    {
+      "steamAppId": 3097300,
+      "status": "approved",
+      "metacriticId": "creature-kitchen",
+      "numericId": null,
+      "reviewedAt": "2026-10-09T17:48:10.772813Z",
+      "evidenceURLs": [
+        "https://store.steampowered.com/app/3097300/",
+        "https://www.metacritic.com/game/creature-kitchen/",
+        "https://store.steampowered.com/api/appdetails?appids=3097300&l=english"
+      ],
+      "rationale": "PC puanı bulgusu. Kalıcı Steam uygulama ID’si; geliştirici, çıkış dönemi ve temel eser kapsamı incelendi. Yama/port ayrı oyun sayılmadı; farklı pazarlanan remake/remasterlar birleştirilmedi.",
+      "reviewedMetadata": {
+        "catalogName": "Creature Kitchen",
+        "steamAppId": 3097300,
+        "storeDevelopers": [
+          "The Rat Zone"
+        ],
+        "storeRelease": {
+          "coming_soon": false,
+          "date": "Feb 6, 2026"
+        },
+        "metacriticResourceId": "creature-kitchen",
+        "primaryMetadata": {
+          "url": "https://www.metacritic.com/game/creature-kitchen/",
+          "ref": "turn306search3",
+          "developer": "The Rat Zone",
+          "release": "Feb 6, 2026",
+          "platforms": "* PC"
+        },
+        "priorIdentity": null,
+        "researchDate": "2026-10-08"
+      }
+    },
+    {
+      "steamAppId": 1663850,
+      "status": "approved",
+      "metacriticId": "replaced",
+      "numericId": null,
+      "reviewedAt": "2026-10-09T17:48:10.772813Z",
+      "evidenceURLs": [
+        "https://store.steampowered.com/app/1663850/",
+        "https://www.metacritic.com/game/replaced/",
+        "https://store.steampowered.com/api/appdetails?appids=1663850&l=english"
+      ],
+      "rationale": "PC puanı bulgusu. Kalıcı Steam uygulama ID’si; geliştirici, çıkış dönemi ve temel eser kapsamı incelendi. Yama/port ayrı oyun sayılmadı; farklı pazarlanan remake/remasterlar birleştirilmedi.",
+      "reviewedMetadata": {
+        "catalogName": "REPLACED",
+        "steamAppId": 1663850,
+        "storeDevelopers": [
+          "Sad Cat Studios"
+        ],
+        "storeRelease": {
+          "coming_soon": false,
+          "date": "Apr 14, 2026"
+        },
+        "metacriticResourceId": "replaced",
+        "primaryMetadata": {
+          "url": "https://www.metacritic.com/game/replaced/",
+          "ref": "turn306search1",
+          "developer": "Sad Cat Studios",
+          "release": "Apr 14, 2026",
+          "platforms": "* Xbox Series X\n  * PC"
+        },
+        "priorIdentity": null,
+        "researchDate": "2026-10-08"
+      }
+    },
+    {
+      "steamAppId": 1230140,
+      "status": "approved",
+      "metacriticId": "atri-my-dear-moments-",
+      "numericId": "1300513401",
+      "reviewedAt": "2026-10-09T17:48:10.772813Z",
+      "evidenceURLs": [
+        "https://store.steampowered.com/app/1230140/",
+        "https://www.metacritic.com/game/atri-my-dear-moments-/",
+        "https://store.steampowered.com/api/appdetails?appids=1230140&l=english"
+      ],
+      "rationale": "Sayısal kullanıcı puanı var; seçilen platform doğrulanamadı. Kalıcı Steam uygulama ID’si; geliştirici, çıkış dönemi ve temel eser kapsamı incelendi. Yama/port ayrı oyun sayılmadı; farklı pazarlanan remake/remasterlar birleştirilmedi.",
+      "reviewedMetadata": {
+        "catalogName": "ATRI -My Dear Moments-",
+        "steamAppId": 1230140,
+        "storeDevelopers": [
+          "Frontwing",
+          "枕"
+        ],
+        "storeRelease": {
+          "coming_soon": false,
+          "date": "Jun 18, 2020"
+        },
+        "metacriticResourceId": "atri-my-dear-moments-",
+        "primaryMetadata": {
+          "url": "https://www.metacritic.com/game/atri-my-dear-moments-/",
+          "ref": "turn309search5",
+          "developer": "Front Wing",
+          "release": "Jun 18, 2020",
+          "platforms": "* PC\n  * Nintendo Switch\n  * iOS (iPhone/iPad)"
+        },
+        "priorIdentity": {
+          "resourceId": "atri-my-dear-moments-",
+          "numericId": "1300513401",
+          "url": "https://www.metacritic.com/game/atri-my-dear-moments-/",
+          "editionScope": "Reviewed store product / Metacritic work relationship",
+          "evidence": [
+            {
+              "kind": "wikidata-external-ids",
+              "qid": "Q97275837",
+              "steamAppId": 1230140,
+              "metacriticId": "atri-my-dear-moments-",
+              "numericId": "1300513401",
+              "url": "http://www.wikidata.org/entity/Q97275837",
+              "retrievedAt": "2026-10-06T11:26:01.062Z"
+            }
+          ]
+        },
+        "researchDate": "2026-10-08"
+      }
+    },
+    {
+      "steamAppId": 3370870,
+      "status": "approved",
+      "metacriticId": "berry-bury-berry",
+      "numericId": null,
+      "reviewedAt": "2026-10-09T17:48:10.772813Z",
+      "evidenceURLs": [
+        "https://store.steampowered.com/app/3370870/",
+        "https://www.metacritic.com/game/berry-bury-berry/",
+        "https://store.steampowered.com/api/appdetails?appids=3370870&l=english"
+      ],
+      "rationale": "PC puanı bulgusu. Kalıcı Steam uygulama ID’si; geliştirici, çıkış dönemi ve temel eser kapsamı incelendi. Yama/port ayrı oyun sayılmadı; farklı pazarlanan remake/remasterlar birleştirilmedi.",
+      "reviewedMetadata": {
+        "catalogName": "Berry Bury Berry",
+        "steamAppId": 3370870,
+        "storeDevelopers": [
+          "Get(Color) Games"
+        ],
+        "storeRelease": {
+          "coming_soon": false,
+          "date": "Jan 29, 2026"
+        },
+        "metacriticResourceId": "berry-bury-berry",
+        "primaryMetadata": {
+          "url": "https://www.metacritic.com/game/berry-bury-berry/",
+          "ref": "turn309search2",
+          "developer": "Get(Color) Games",
+          "release": "Jan 29, 2026",
+          "platforms": "* PC"
+        },
+        "priorIdentity": null,
+        "researchDate": "2026-10-08"
+      }
+    },
+    {
+      "steamAppId": 577480,
+      "status": "approved",
+      "metacriticId": "higurashi-when-they-cry-kai-chapter-5-meakashi",
+      "numericId": null,
+      "reviewedAt": "2026-10-09T17:48:10.772813Z",
+      "evidenceURLs": [
+        "https://store.steampowered.com/app/577480/",
+        "https://www.metacritic.com/game/higurashi-when-they-cry-kai-chapter-5-meakashi/",
+        "https://store.steampowered.com/api/appdetails?appids=577480&l=english"
+      ],
+      "rationale": "Chapter 5/2017/07th Expansion; Steam 577480 ile bölüm ve çıkış tarihi eşleşiyor. Kalıcı Steam uygulama ID’si; geliştirici, çıkış dönemi ve temel eser kapsamı incelendi. Yama/port ayrı oyun sayılmadı; farklı pazarlanan remake/remasterlar birleştirilmedi.",
+      "reviewedMetadata": {
+        "catalogName": "Higurashi When They Cry Hou - Ch.5 Meakashi",
+        "steamAppId": 577480,
+        "storeDevelopers": [
+          "07th Expansion"
+        ],
+        "storeRelease": {
+          "coming_soon": false,
+          "date": "Apr 28, 2017"
+        },
+        "metacriticResourceId": "higurashi-when-they-cry-kai-chapter-5-meakashi",
+        "primaryMetadata": {
+          "url": "https://www.metacritic.com/game/higurashi-when-they-cry-kai-chapter-5-meakashi/",
+          "ref": "turn309search0",
+          "developer": "07th Expansion",
+          "release": "Apr 28, 2017",
+          "platforms": "* iOS (iPhone/iPad)\n  * PC"
+        },
+        "priorIdentity": null,
+        "researchDate": "2026-10-08"
+      }
+    },
+    {
+      "steamAppId": 668350,
+      "status": "approved",
+      "metacriticId": "higurashi-when-they-cry-hou-chapter-6",
+      "numericId": null,
+      "reviewedAt": "2026-10-09T17:48:10.772813Z",
+      "evidenceURLs": [
+        "https://store.steampowered.com/app/668350/",
+        "https://www.metacritic.com/game/higurashi-when-they-cry-hou-chapter-6/",
+        "https://store.steampowered.com/api/appdetails?appids=668350&l=english"
+      ],
+      "rationale": "Chapter 6/2018/07th Expansion; Steam 668350 ile bölüm ve çıkış tarihi eşleşiyor. Kalıcı Steam uygulama ID’si; geliştirici, çıkış dönemi ve temel eser kapsamı incelendi. Yama/port ayrı oyun sayılmadı; farklı pazarlanan remake/remasterlar birleştirilmedi.",
+      "reviewedMetadata": {
+        "catalogName": "Higurashi When They Cry Hou - Ch.6 Tsumihoroboshi",
+        "steamAppId": 668350,
+        "storeDevelopers": [
+          "07th Expansion"
+        ],
+        "storeRelease": {
+          "coming_soon": false,
+          "date": "Jun 14, 2018"
+        },
+        "metacriticResourceId": "higurashi-when-they-cry-hou-chapter-6",
+        "primaryMetadata": {
+          "url": "https://www.metacritic.com/game/higurashi-when-they-cry-hou-chapter-6/",
+          "ref": "turn309search3",
+          "developer": "07th Expansion",
+          "release": "Jun 14, 2018",
+          "platforms": "* PC"
+        },
+        "priorIdentity": null,
+        "researchDate": "2026-10-08"
+      }
+    },
+    {
+      "steamAppId": 1657740,
+      "status": "approved",
+      "metacriticId": "mr-sleepy-man",
+      "numericId": null,
+      "reviewedAt": "2026-10-09T17:48:10.772813Z",
+      "evidenceURLs": [
+        "https://store.steampowered.com/app/1657740/",
+        "https://www.metacritic.com/game/mr-sleepy-man/",
+        "https://store.steampowered.com/api/appdetails?appids=1657740&l=english"
+      ],
+      "rationale": "Sayısal kullanıcı puanı var; seçilen platform doğrulanamadı. Kalıcı Steam uygulama ID’si; geliştirici, çıkış dönemi ve temel eser kapsamı incelendi. Yama/port ayrı oyun sayılmadı; farklı pazarlanan remake/remasterlar birleştirilmedi.",
+      "reviewedMetadata": {
+        "catalogName": "Mr. Sleepy Man",
+        "steamAppId": 1657740,
+        "storeDevelopers": [
+          "Devin Santi"
+        ],
+        "storeRelease": {
+          "coming_soon": false,
+          "date": "Mar 10, 2026"
+        },
+        "metacriticResourceId": "mr-sleepy-man",
+        "primaryMetadata": null,
+        "priorIdentity": null,
+        "researchDate": "2026-10-08"
+      }
+    },
+    {
+      "steamAppId": 250320,
+      "status": "approved",
+      "metacriticId": "the-wolf-among-us",
+      "numericId": null,
+      "reviewedAt": "2026-10-09T17:48:10.772813Z",
+      "evidenceURLs": [
+        "https://store.steampowered.com/app/250320/",
+        "https://www.metacritic.com/game/the-wolf-among-us/",
+        "https://store.steampowered.com/api/appdetails?appids=250320&l=english"
+      ],
+      "rationale": "Telltale’in beş bölümlük tam oyunu. Episode 3 dışlandı. Yuvarlatılmış 1,3k bilgisi kesin oy sayısına çevrilmedi. Kalıcı Steam uygulama ID’si; geliştirici, çıkış dönemi ve temel eser kapsamı incelendi. Yama/port ayrı oyun sayılmadı; farklı pazarlanan remake/remasterlar birleştirilmedi.",
+      "reviewedMetadata": {
+        "catalogName": "The Wolf Among Us",
+        "steamAppId": 250320,
+        "storeDevelopers": [
+          "Telltale"
+        ],
+        "storeRelease": {
+          "coming_soon": false,
+          "date": "Oct 11, 2013"
+        },
+        "metacriticResourceId": "the-wolf-among-us",
+        "primaryMetadata": {
+          "url": "https://www.metacritic.com/game/the-wolf-among-us/",
+          "ref": "turn314search0",
+          "developer": "Telltale Games",
+          "release": "Oct 11, 2013",
+          "platforms": "* PC\n  * PlayStation 3\n  * Xbox 360\n  * Xbox One\n  * PlayStation 4\n  * PlayStation Vita"
+        },
+        "priorIdentity": null,
+        "researchDate": "2026-10-08"
+      }
+    },
+    {
+      "steamAppId": 312990,
+      "status": "approved",
+      "metacriticId": "the-expendabros-broforce-the-expendables-missions",
+      "numericId": null,
+      "reviewedAt": "2026-10-09T17:48:10.772813Z",
+      "evidenceURLs": [
+        "https://store.steampowered.com/app/312990/",
+        "https://www.metacritic.com/game/the-expendabros-broforce-the-expendables-missions/",
+        "https://store.steampowered.com/api/appdetails?appids=312990&l=english"
+      ],
+      "rationale": "Broforce: The Expendables Missions uzun başlığı aynı Free Lives/2014 oyununu kapsıyor. Kalıcı Steam uygulama ID’si; geliştirici, çıkış dönemi ve temel eser kapsamı incelendi. Yama/port ayrı oyun sayılmadı; farklı pazarlanan remake/remasterlar birleştirilmedi.",
+      "reviewedMetadata": {
+        "catalogName": "The Expendabros",
+        "steamAppId": 312990,
+        "storeDevelopers": [
+          "Free Lives"
+        ],
+        "storeRelease": {
+          "coming_soon": false,
+          "date": "Aug 5, 2014"
+        },
+        "metacriticResourceId": "the-expendabros-broforce-the-expendables-missions",
+        "primaryMetadata": null,
+        "priorIdentity": null,
+        "researchDate": "2026-10-08"
+      }
     }
   ],
   "editionAudit": [

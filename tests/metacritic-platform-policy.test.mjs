@@ -18,6 +18,22 @@ for(const facts of [[ps5,pc],[pc,ps5]]){result=buildScoreCatalog([game],empty,ev
 for(const patch of [{sourceUrl:ps5.sourceUrl.replace('playstation-5','pc')},{platform:'PC'},{metric:'critic-score'},{score:84},{userRatings:123,provenance:{...ps5.provenance,metricLabel:'Metascore'}}])assert.throws(()=>validatePrimaryScoreFact({...ps5,...patch}));
 const overview={...ps5,sourceUrl:'https://www.metacritic.com/game/policy-fixture/',provenance:{...ps5.provenance,pageHeading:'Game overview',platformEvidenceUrl:ps5.sourceUrl,platformEvidenceReference:'turn23view0'}};
 validatePrimaryScoreFact(overview);
+const unspecified={...ps5,platform:null,sourceUrl:'https://www.metacritic.com/game/policy-fixture/',provenance:{...ps5.provenance,platformLabel:null,pageHeading:'Game overview',platformUnverified:true}};
+validatePrimaryScoreFact(unspecified);
+const unspecifiedResult=buildScoreCatalog([game],empty,evidence,{schemaVersion:1,facts:[unspecified]});
+assert.equal(metacriticScoreForGame(game,unspecifiedResult.identities,unspecifiedResult.records).score,8.4);
+assert.equal(new URL(metacriticScoreForGame(game,unspecifiedResult.identities,unspecifiedResult.records).url).searchParams.has('platform'),false);
+assert.throws(()=>validatePrimaryScoreFact({...unspecified,provenance:{...unspecified.provenance,metricLabel:'Metascore'}}));
+assert.throws(()=>validatePrimaryScoreFact({...unspecified,sourceUrl:ps5.sourceUrl}));
+const single={...pc,sourceUrl:unspecified.sourceUrl,provenance:{...pc.provenance,pageHeading:'Game overview',platformEvidenceKind:'single-platform',platformEvidencePlatforms:['PC'],platformEvidenceUrl:unspecified.sourceUrl,platformEvidenceReference:'turn23view0'}};
+validatePrimaryScoreFact(single);
+assert.throws(()=>validatePrimaryScoreFact({...single,provenance:{...single.provenance,platformEvidencePlatforms:['PC','PlayStation 5']}}));
+const historical={...pc,userRatings:null,provenance:{method:'public-historical-dataset',metricLabel:'User score',platformLabel:'PC',datasetCollectedAt:'2025-10-07',datasetBlobSha:'13385d1faf43adddc792ec771595763396261378',datasetUrl:'https://github.com/StadynR/metacritic-reviews-dataset/blob/13385d1faf43adddc792ec771595763396261378/metacritic_dataset_raw.csv',datasetRow:{name:'Policy Fixture',platform:'PC',user_score:'7.5',developer:'Fixture Studio',release_date:'2025-01-01'}}};
+validatePrimaryScoreFact(historical);
+const historyResult=buildScoreCatalog([game],empty,evidence,{schemaVersion:1,facts:[historical]});
+assert.equal(metacriticScoreForGame(game,historyResult.identities,historyResult.records).provenance.datasetCollectedAt,'2025-10-07');
+assert.equal(metacriticScoreForGame(game,historyResult.identities,historyResult.records).scoreDate,null);
+for(const patch of [{score:7.6},{userRatings:1},{provenance:{...historical.provenance,datasetCollectedAt:'2027-01-01'}},{provenance:{...historical.provenance,datasetRow:{...historical.provenance.datasetRow,platform:'PlayStation 5'}}},{provenance:{...historical.provenance,datasetUrl:'https://example.com/dataset.csv'}}])assert.throws(()=>validatePrimaryScoreFact({...historical,...patch}));
 assert.throws(()=>validatePrimaryScoreFact({...overview,provenance:{...overview.provenance,platformEvidenceUrl:'https://evil.example/game/policy-fixture/user-reviews/?platform=playstation-5'}}));
 assert.throws(()=>validatePrimaryScoreFact({...overview,provenance:{...overview.provenance,platformEvidenceUrl:ps5.sourceUrl.replace('/policy-fixture/','/other-edition/')}}));
 
