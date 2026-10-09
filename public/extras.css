@@ -7,3 +7,29 @@
 .detail-info small.field-source{font-size:8px;letter-spacing:0;margin-top:7px;line-height:1.6;opacity:.75}
 
 .score-date-note{display:block;margin-top:3px;font-size:8px;color:var(--muted);opacity:.8}.page-jump{font-size:11px;color:var(--muted);display:flex;gap:6px;align-items:center}.pagination{flex-wrap:wrap}
+
+/* İki puan kaynağı, sitenin ortak renk paletinde. */
+.score-pair{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:12px;margin-top:18px;color:var(--ink)}
+.source-score{min-width:0;display:flex;flex-direction:column;align-items:flex-start}
+.source-score+.source-score{border-left:1px solid var(--line);padding-left:12px}
+.score-brand{display:inline-flex;gap:5px;align-items:center;color:var(--ink);font-size:11px;font-weight:700;line-height:20px;text-decoration:none;opacity:1}
+.score-brand-icon{display:block;flex:none;width:19px;height:19px;color:var(--ink)}
+.score-value{display:flex;align-items:center;gap:5px;min-height:38px;margin:7px 0 5px;flex-wrap:wrap}
+.score-value .score{font-size:22px;padding:5px 7px;font-weight:700;letter-spacing:-.5px}
+.score-value .score small{font-size:11px;letter-spacing:0}
+.score-value .score.missing{font-size:22px;background:transparent;padding-left:0}
+.score-positive{font-size:10px;color:var(--ink)}
+.score-count{font-size:10px;line-height:1.5;color:var(--muted);min-height:30px;overflow-wrap:anywhere}
+.score-context{font-size:9px;line-height:1.5;color:var(--muted);margin-top:3px}
+.rating-panel{display:block;padding-top:0}
+.rating-panel .score-pair{margin-top:18px;gap:22px}
+.rating-panel .source-score+.source-score{padding-left:22px}
+.rating-panel .score-brand{text-decoration:none;font-size:13px;color:var(--ink)}
+.rating-panel .score-brand-icon{width:23px;height:23px}
+.rating-panel .score-value .score{font-size:28px}
+.rating-panel .score-count{font-size:11px;min-height:0}
+.detail-body .score-source-note{font-size:10px;line-height:1.7;margin:10px 0 0;color:var(--muted);overflow-wrap:anywhere}
+@media(max-width:640px){.card .score-pair{gap:8px}.card .source-score+.source-score{padding-left:8px}.card .score-brand{font-size:10px;gap:4px}.card .score-brand-icon{width:17px;height:17px}.card .score-value .score{font-size:19px;padding:4px 5px}.card .score-value .score small{font-size:9px}.card .score-positive{font-size:9px}.card .score-count{font-size:9px}.card .score-context{font-size:8px}}
+
+.card{container-type:inline-size}
+@container(max-width:190px){.card .score-brand{flex-direction:column;align-items:flex-start;gap:3px;font-size:10px;line-height:14px}.card .score-brand-icon{width:19px;height:19px}.card .score-value{min-height:38px}.card .score-value .score{font-size:18px}.card .score-positive{font-size:8px}.card .score-count{min-height:42px}}
