@@ -29,7 +29,7 @@ Taşıma devam noktalarıyla sürer; eski kaynak ve kişisel tablolar silinmez. 
 - Mevcut Metacritic kullanıcı puanına göre eşik ve sıralama; mağazadaki olumlu değerlendirmelere göre ayrı sıralama. Doğrulanmış puanı olmayan kayıtlar boş bırakılır.
 - Üç oyunu karşılaştırma. Puanın kaynağı, tarihi, platformu, PC işletim sistemleri, dil ve birlikte oynama bilgileri ayrı gösterilir.
 - Gerçek kapaklar, ihtiyaca göre görsel yükleme, farklı ekranlara uyumlu kartlar, krem/yeşil tasarım, karanlık mod, sayfalama ve doğrudan oyun bağlantıları.
-- Ayrıntılı oyun etiketlerine göre 20 benzer oyun; video ve ekran görüntüsü galerisi; günlük öne çıkan keşif oyunları.
+- Ayrıntılı oyun etiketlerine göre 20 benzer oyun; video ve ekran görüntüsü galerisi; günlük öne çıkan keşif oyunları. Büyük slider kart kapağından ayrı yüksek çözünürlüklü resmî tanıtım görseli kullanır; boyut/kimlik kontrolü, aynı oyunun ekran görüntüsü alternatifi ve sınırlı önbellek bulunur.
 - ChatGPT ile giriş; D1 veritabanında kişisel oyunlar, durumlar, notlar, puanlar ve adlandırılmış koleksiyonlar.
 - Ayrı keşfet (`/`) ve koleksiyon (`/koleksiyonum`) sayfaları. Giriş sonrası koleksiyon sayfasına dönülür. Eski `/?tab=library` bağlantıları oyun ve koleksiyon parametreleri korunarak yönlendirilir.
 - JSON ile dışa ve içe aktarma. Kayıtlar kullanıcı yetkisi kontrol edilerek gruplar halinde işlenir. Aynı adla mevcut koleksiyon varsa tekrar kullanılır; tekrar aktarım kayıtları çoğaltmaz.
