@@ -109,6 +109,29 @@ fixture.sqlite.prepare('UPDATE catalog_games SET score_value=0,score_count=0,ste
 assert.deepEqual((await queryCatalog({rating:0,ratingMax:0,steamMin:0,steamMax:0,mcCountMin:0,mcCountMax:0,steamCountMin:0,steamCountMax:0})).games.map(g=>g.id),[mortal.id]);
 fixture.sqlite.prepare('UPDATE catalog_games SET score_value=?,score_count=?,steam_positive_percent=?,payload=? WHERE id=?').run(original.score_value,original.score_count,original.steam_positive_percent,original.payload,mortal.id);
 
+// Aynı filtreli sunucu seçimi: mevcut oyun, kısa oturum geçmişi ve havuz sınırları.
+const surpriseIds=seed.slice(0,3).map(g=>g.id);
+const surpriseList='surprise-three';
+fixture.sqlite.prepare('INSERT INTO lists(id,user_id,name,created_at) VALUES(?,?,?,?)').run(surpriseList,'surprise-user','Test','now');
+for(const id of surpriseIds)fixture.sqlite.prepare('INSERT INTO list_games(list_id,game_id) VALUES(?,?)').run(surpriseList,id);
+const randomScope={collection:surpriseList,random:true,current:surpriseIds[0]};
+let pick=await queryCatalog({...randomScope,exclude:[surpriseIds[1]]},'surprise-user');
+assert.deepEqual(pick.games.map(g=>g.id),[surpriseIds[2]]);assert.equal(pick.randomStatus,'selected');assert.equal(pick.pageSize,1);
+pick=await queryCatalog({...randomScope,exclude:surpriseIds},'surprise-user');
+assert.equal(pick.randomStatus,'restarted');assert(pick.games[0].id!==surpriseIds[0]);
+pick=await queryCatalog({random:true,q:'kenshi',current:kenshi.id});
+assert.equal(pick.randomStatus,'only-current');assert.equal(pick.games.length,0);
+pick=await queryCatalog({random:true,q:'qzxnotarealgame',current:kenshi.id,exclude:[kenshi.id]});
+assert.equal(pick.randomStatus,'empty');assert.equal(pick.games.length,0);
+pick=await queryCatalog({...randomScope,exclude:surpriseIds},'other-user');
+assert.equal(pick.randomStatus,'empty');assert.equal(pick.games.length,0,'Collection scope cannot be relaxed');
+assert.throws(()=>parseCatalogQuery(new URLSearchParams('random=1&exclude=invalid/id')));
+assert.throws(()=>parseCatalogQuery(new URLSearchParams('random=1&current=invalid/id')));
+assert.throws(()=>parseCatalogQuery(new URLSearchParams('exclude=kenshi')));
+await assert.rejects(()=>queryCatalog({random:true,exclude:Array(31).fill('kenshi')}));
+assert.equal(parseCatalogQuery(new URLSearchParams('random=1&exclude=kenshi&exclude=kenshi')).exclude.length,1);
+console.log('Passed: filtered random exclusion, bounded identities, pool restart, current-only/empty states and collection isolation.');
+
 fixture.clearQueries();
 await queryCatalog({page:2});
 await gamesByIds([kenshi.id]);
