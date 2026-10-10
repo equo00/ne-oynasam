@@ -14,7 +14,7 @@ Elle değiştirilen alanlar ayrı öncelikli kayıt olarak tutulur. Sonraki kayn
 
 ## Sınırlı API ve tarayıcı belleği
 
-`GET /api/catalog` arama, filtre ve sıralamayı sunucuda uygular; varsayılan sayfa 24 oyundur. Yanıt toplam sonuç sayısını, sayfa bilgisini ve katalog özetlerini içerir. Tür ve detaylı etiket koşulları sunucu sözleşmesinde VE mantığıyla birleşir; çoklu seçim arayüzü 5. adımda yapılacaktır.
+`GET /api/catalog` arama, filtre ve sıralamayı sunucuda uygular; varsayılan sayfa 24 oyundur. Yanıt toplam sonuç sayısını, sayfa bilgisini ve katalog özetlerini içerir. Tür, detaylı etiket ve oynanış koşulları sunucuda VE mantığıyla birleşir; çoklu seçim ve aranabilir etiket arayüzü mevcuttur. Tekrarlanan `genre`, `tag` ve `play` parametreleri kullanılır. Doğrulanmış oynanış özellikleri `catalog_game_features` tablosunda indekslenir; bilinmeyen destek tahmin edilmez.
 
 `GET /api/games?ids=...` belirli oyunları getirir. Ayrıntı, sayfa dışındaki karşılaştırma kayıtları ve günlük seçki tüm kataloğu yüklemez. Kişisel koleksiyon sorgusu sunucuda oturum sahibiyle sınırlandırılır. Arşiv kayıtları keşifte gösterilmez, eski kişisel listeler ve doğrudan bağlantılardan erişilebilir kalır.
 

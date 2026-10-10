@@ -36,7 +36,7 @@ export async function moduleFor(file,{auth=false}={}) {
 export async function readyCatalog(repository,{maxAttempts=200}={}) {
  for(let attempt=0;attempt<maxAttempts;attempt++){
   const result=await repository.ensureCatalogReady(globalThis.testDb);
-  if(result===true||result?.ready===true)return result;
+  if(result===true||result?.ready===true){const gameplay=await moduleFor('lib/gameplay-sync.ts');for(let n=0;n<maxAttempts;n++){const state=await gameplay.ensureGameplay(globalThis.testDb);if(state.ready)return result;}throw new Error('Gameplay bootstrap did not finish');}
  }
  throw new Error('Catalog bootstrap did not finish within bounded test attempts.');
 }

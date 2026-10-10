@@ -43,6 +43,13 @@
       "when": 1791402653195,
       "tag": "0005_dusty_surge",
       "breakpoints": true
+    },
+    {
+      "idx": 6,
+      "version": "6",
+      "when": 1791667089331,
+      "tag": "0006_gameplay_features",
+      "breakpoints": true
     }
   ]
 }
