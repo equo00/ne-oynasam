@@ -88,3 +88,18 @@ body.dark .multi-panel,body.dark .multi-filter>summary,body.dark .multi-search i
 .detail-body .detail-surprise-status{font-size:11px;line-height:1.5;color:var(--muted);margin:0 0 14px}
 .detail-surprise-status:empty{display:none}
 @media(max-width:540px){.detail-heading{flex-direction:column;gap:8px;margin-bottom:15px}.detail-heading h2{margin-bottom:0}.detail-surprise{align-self:flex-start}}
+
+.preview-preferences{display:flex;align-items:center;flex-wrap:wrap;gap:8px 16px;margin:0 0 16px;color:var(--muted);font-size:12px}
+.preview-preferences label{display:inline-flex;align-items:center;gap:7px;cursor:pointer}
+.preview-preferences input{width:16px;height:16px;accent-color:var(--ink);margin:0}
+.preview-preferences small{font-size:11px}
+.card .open-card{position:relative}
+.card-preview-video{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;background:#151b20;pointer-events:none;opacity:0}
+.preview-playing .card-preview-video{opacity:1}
+.card-preview-toggle{position:absolute;right:10px;bottom:10px;min-height:36px;display:inline-flex;align-items:center;gap:5px;padding:7px 10px;border:1px solid #ffffff70;border-radius:6px;background:#101711e6;color:#fff;font-size:11px}
+.card-preview-toggle .ui-icon{width:16px;height:16px}
+.card-preview-toggle:hover{background:#26352a}
+.card-preview-toggle:focus-visible{outline:3px solid #d9f36a;outline-offset:3px}
+.card-preview-toggle[aria-pressed="true"]{border-color:#d9f36a}
+@media(hover:none),(pointer:coarse){.card-preview-toggle{min-height:44px;padding:10px 12px}}
+@media(max-width:540px){.card-preview-toggle{width:44px;min-height:44px;justify-content:center;padding:10px;right:8px;bottom:8px}.card-preview-toggle span{display:none}.card .status-badge{max-width:calc(100% - 70px);overflow:hidden;white-space:nowrap;text-overflow:ellipsis}}
