@@ -39,20 +39,21 @@ export async function cardPreviewForGame(id:string):Promise<CardPreview>{
  const ttl=cached?.preview?86400000:3600000;
  if(cached&&Date.now()-Date.parse(cached.fetchedAt)<ttl)return cached;
  if(activeLoads>=8)throw Error('Önizleme kaynağı meşgul.');
- activeLoads++;
+ activeLoads++;let stage='store-items',sourceStatus:number|null=null;
  try{
   const input={ids:[{appid}],context:{language:'english',country_code:'US'},data_request:{include_trailers:true}};
   const url='https://api.steampowered.com/IStoreBrowseService/GetItems/v1/?input_json='+encodeURIComponent(JSON.stringify(input));
-  const response=await fetch(url,{signal:AbortSignal.timeout(10000)});
+  const response=await fetch(url,{headers:{'User-Agent':'NeOynasam/3.0 game discovery'},signal:AbortSignal.timeout(10000)});sourceStatus=response.status;
   if(!response.ok)throw Error('Önizleme kaynağı yanıt vermedi.');
-  const candidates=previewCandidates(await response.json(),appid,game.name);let preview:Clip|null=null;
+  stage='identity';const candidates=previewCandidates(await response.json(),appid,game.name);let preview:Clip|null=null;
+  stage='cdn';
   for(const clip of candidates){
-   try{const head=await fetch(clip.src,{method:'HEAD',redirect:'error',signal:AbortSignal.timeout(4000)});const type=head.headers.get('content-type')?.split(';')[0];const size=Number(head.headers.get('content-length')||0);if(head.ok&&type==='video/'+clip.format&&size<=10000000){preview=clip;break;}}catch{}
+   try{const head=await fetch(clip.src,{method:'HEAD',redirect:'manual',signal:AbortSignal.timeout(4000)});sourceStatus=head.status;const type=head.headers.get('content-type')?.split(';')[0];const size=Number(head.headers.get('content-length')||0);if(head.ok&&type==='video/'+clip.format&&size<=10000000){preview=clip;break;}}catch{sourceStatus=null;}
   }
   // Kaynakta kısa video var ama CDN yanıt vermiyorsa yokmuş gibi kalıcı kaydetme.
   if(candidates.length&&!preview)throw Error('Kısa video şu an erişilebilir değil.');
   const result:CardPreview={gameId:id,steamAppId:appid,name:game.name,preview,fetchedAt:new Date().toISOString()};
-  await db().prepare('INSERT INTO catalog_cache(id,payload,fetched_at) VALUES(?,?,?) ON CONFLICT(id) DO UPDATE SET payload=excluded.payload,fetched_at=excluded.fetched_at').bind(key,JSON.stringify(result),result.fetchedAt).run();
+  stage='cache';await db().prepare('INSERT INTO catalog_cache(id,payload,fetched_at) VALUES(?,?,?) ON CONFLICT(id) DO UPDATE SET payload=excluded.payload,fetched_at=excluded.fetched_at').bind(key,JSON.stringify(result),result.fetchedAt).run();
   return result;
- }catch(error){if(cached?.preview)return {...cached,stale:true};throw error;}finally{activeLoads--;}
+ }catch(error){console.warn('card-preview-source-failure',JSON.stringify({appid,stage,status:sourceStatus}));if(cached?.preview)return {...cached,stale:true};throw error;}finally{activeLoads--;}
 }

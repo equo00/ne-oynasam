@@ -21,7 +21,7 @@ const before=fixture.sqlite.prepare('SELECT * FROM catalog_media ORDER BY game_i
 fixture.sqlite.prepare('INSERT INTO library(user_id,game_id,status,note,rating,updated_at) VALUES(?,?,?,?,?,?)').run('preview-user','kenshi','playing','Notum',5,'now');
 let reads=0,heads=0,mode='ok';
 globalThis.fetch=async(url,options={})=>{
- if(options.method==='HEAD'){heads++;assert.equal(url,candidates[0].src);assert.equal(options.redirect,'error');if(mode==='cdn-fail')return new Response(null,{status:404});return new Response(null,{headers:{'content-type':'video/mp4','content-length':'2848931'}});}
+ if(options.method==='HEAD'){heads++;assert.equal(url,candidates[0].src);assert.equal(options.redirect,'manual');if(mode==='cdn-fail')return new Response(null,{status:404});return new Response(null,{headers:{'content-type':'video/mp4','content-length':'2848931'}});}
  reads++;const request=JSON.parse(new URL(url).searchParams.get('input_json'));assert.deepEqual(request.ids,[{appid:233860}]);
  if(mode==='offline')throw Error('Offline');
  if(mode==='none')return Response.json(none);
