@@ -43,6 +43,8 @@ assert.equal(parseSteamMedia({name:'Kenshi',movies:[{name:'Legacy',thumbnail:hos
 let calls=0;globalThis.fetch=async url=>{assert.equal(new URL(url).searchParams.get('appids'),'233860');calls++;return Response.json({'233860':{success:true,data}});};
 const coverRows=sqlite.prepare("SELECT media_id,url,payload FROM catalog_media WHERE game_id=? AND kind='cover' ORDER BY media_id").all('kenshi');
 sqlite.prepare('INSERT INTO catalog_media(game_id,media_id,kind,url,position,source,retrieved_at,payload) VALUES(?,?,?,?,?,?,?,?)').run('kenshi','manual-gallery','image',host+'/manual.jpg',50,'admin','2026-10-07','{"verified":true}');
+// Initialize this bundled module's schema before concurrent SQLite fixture transactions.
+await assert.rejects(()=>mediaForGame('made-up-game'));
 const [a,b]=await Promise.all([mediaForGame('kenshi'),mediaForGame('kenshi')]);assert.equal(a.items.length,2);assert.deepEqual(a,b);assert.equal(calls,1);await mediaForGame('kenshi');assert.equal(calls,1,'D1 cache must prevent a second upstream request');assert.equal(sqlite.prepare('SELECT count(*) AS n FROM catalog_cache').get().n,1);await assert.rejects(()=>mediaForGame('made-up-game'));await assert.rejects(()=>mediaForGame('https://evil.example/'));
 assert.equal(sqlite.prepare("SELECT COUNT(*) AS n FROM catalog_media WHERE game_id=? AND source='steam-store-media'").get('kenshi').n,2);
 assert.deepEqual(sqlite.prepare("SELECT media_id,url,payload FROM catalog_media WHERE game_id=? AND kind='cover' ORDER BY media_id").all('kenshi'),coverRows,'Source gallery refresh cannot remove covers');
