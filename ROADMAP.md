@@ -203,3 +203,9 @@ Canlı doğrulama: oynanış aktarımı 1.323/1.323 `done`; tüm katalogda mevcu
 ### 10. adım uygulama kaydı
 
 11 Ekim 2026: `/yonetim` sayfası ve tüm yönetim uçları sunucuda aynı yetki kontrolünü kullanır; normal hesaplar ortak kataloğu yenileyemez veya kaynakta oyun ekleyemez. Yönetici, yalnızca sunucuda tanımlanan Site kimliği veya açıkça tanımlanmış sahibin ilk girişinde eşlenen kalıcı Site kimliğidir. Açıklama, tür/etiket, kapak, galeri ve görünürlük kaynak verisinden ayrı saklanır. Kimlik/puan inceleme notları özel tutulur; gerçek puanlar ve kalıcı kimlikler bu formdan değişmez. Tek oyun düzenlemeleri, gerekçe/geçmiş ve eşzamanlı değişiklik kontrolüyle atomiktir. Son işlemin geri alınması yeni kayıt oluşturur; daha yeni kaynak/düzenleme varsa reddedilir, eklenen oyunun geri alınması kimliği silmeden arşivler. Kaynak yenilemeleri en fazla dört oyunla, eklemeler tek kayıtla işlenir; görev sonuçları/hataları saklanır. SQL ve arayüz davranış testleri vardır; bu ortamda tarayıcı görsel kontrolü ve yöneticiyle canlı giriş doğrulanamaz. 11. adım başlatılmadı.
+
+## 11. adım — aktarım motoru, canlı Delta doğrulaması açık
+
+11 Ekim 2026: Ortak Steam kaynak aktarımı, ayrı Full/Delta imleçleri, küçük deneme, ekleme/güncelleme ayrımı, atomik devam noktaları, tek yazıcı kilidi, durdurma/devam, sınırlı tekrar deneme, bekleyen adaylar ve yönetici içerik onayı uygulandı. Mevcut kimlikler, manuel alanlar, puan geçmişi ve kişisel veriler korunur; benzerlikte yalnızca ilgili oyun/etiket indeksleri güncellenir. İlk Full başlangıç zamanı T0 saklanır; ilk Delta bu başlangıçtan bir saat örtüşmeyle ilerler.
+
+Resmî Steam Full/Delta uç noktası API anahtarsız 403 döndürür; anahtar henüz tanımlı değildir. Bu yüzden gerçek Delta kaynağı doğrulanmış veya 11. adım bütünüyle bitmiş sayılmaz. Haftalık otomasyon, ilk Full veri kalitesi/performans doğrulaması ve kaynak erişimi sonrasında kurulacak; şu anda kapalıdır. 12. adım ve büyük katalog doldurma başlatılmadı.

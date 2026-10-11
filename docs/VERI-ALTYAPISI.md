@@ -67,3 +67,7 @@ node scripts/catalog-restore.mjs --database /guvenli-yol/veritabani.sqlite --bac
 ```
 
 Yedek manifesti dosya özeti ve tablo adetlerini içerir. Araç mevcut yedeğin üzerine yazmaz; `--apply` öncesinde hedefin ayrı bir tam yedeğini alır. Bu komutlar Sites'in canlı D1 veritabanına uzaktan yazmaz. Yedek kişisel notları içerebilir; GitHub deposuna veya genel site varlıklarına koyma. Geri yükleme sırasında hedefi kullanan uygulama durdurulmalıdır.
+
+11 Ekim 2026 — 11. adım: `catalog_transfer_sources`, `catalog_transfer_runs` ve indeksli `catalog_transfer_items` ortak aktarımın kalıcı durumudur. Full ve Delta sayfalaması ayrıdır. Sayfa+imleç ve kaynak yazımı+önceki durum+sonuç D1 işlemlerinde birlikte kaydedilir; süresi dolan/durdurulan kilit yazamaz. Mevcut manuel alanların değerleri, düzenleyen kişi ve tarih korunur. Yeni kayıt geri alınırsa ID silinmeden arşivlenir. Sonuçlar yalnızca ilgili görevden sayılır; bütün katalog yeniden sayılmaz.
+
+Servis çağrıları ayrı gizli `CATALOG_WORKER_TOKEN` ile yetkilidir; ziyaretçi kimliği taklit edilmez. Gelecekteki zamanlayıcı bu sırrı güvenli ortamından sağlamalıdır; görev yalnızca ilk Full doğrulaması ve gerçek Delta kaynak erişimi sonrasında etkinleştirilir. Steam Web API anahtarı henüz yoktur. Delta sağlamayan puan kaynakları için ayrı, daha seyrek ve açık kimliklerle sınırlı tutarlılık grupları gerekir.
