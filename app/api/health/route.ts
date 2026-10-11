@@ -1,3 +1,5 @@
+import {requireCatalogAdmin} from '../../../lib/admin-auth';
+import {adminFailure} from '../../../lib/admin-http';
 import {db} from '../../../lib/db';
 import {ensureCatalogReady} from '../../../lib/catalog-bootstrap';
 import {ensureMetacriticScores} from '../../../lib/metacritic-sync';
@@ -6,6 +8,7 @@ import {steamGame} from '../../../lib/steam';
 import {json} from '../../../lib/security';
 export const dynamic='force-dynamic';
 export async function GET(req:Request){
+ if(new URL(req.url).searchParams.has('source'))try{await requireCatalogAdmin();}catch(e){return adminFailure(e);}
  try{
   const database=db();await database.prepare('SELECT id FROM catalog_cache LIMIT 1').first();
   const migration=await ensureCatalogReady(database),scoreImport=migration.ready?await ensureMetacriticScores(database):null,count=await database.prepare("SELECT COUNT(*) AS n FROM catalog_games WHERE status='published'").first<{n:number}>();

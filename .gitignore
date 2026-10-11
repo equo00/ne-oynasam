@@ -30,6 +30,7 @@ yarn-error.log*
 
 # ortam dosyaları (gerektiğinde açıkça dahil edilebilir)
 .env*
+!.env.example
 
 # Vercel
 .vercel

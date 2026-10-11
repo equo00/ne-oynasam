@@ -28,7 +28,7 @@ let sequence=0;
 export async function moduleFor(file,{auth=false}={}) {
  if(!build){const pkg=fs.readdirSync('node_modules/.pnpm').find(x=>x.startsWith('esbuild@'));({build}=await import(pathToFileURL(path.resolve('node_modules/.pnpm',pkg,'node_modules/esbuild/lib/main.js'))));}
  const dest=path.join(temporary,sequence+++'-'+file.replaceAll('/','-')+'.mjs');
- const plugin={name:'actual-sqlite-d1',setup(b){b.onResolve({filter:/cloudflare:workers/},()=>({path:'env',namespace:'mock'}));b.onLoad({filter:/.*/,namespace:'mock'},()=>({contents:'export const env={DB:globalThis.testDb};',loader:'js'}));if(auth){b.onResolve({filter:/chatgpt-auth$/},()=>({path:'auth',namespace:'mock-auth'}));b.onLoad({filter:/.*/,namespace:'mock-auth'},()=>({contents:'export async function getChatGPTUser(){return globalThis.testUser||null;}',loader:'js'}));}}};
+ const plugin={name:'actual-sqlite-d1',setup(b){b.onResolve({filter:/cloudflare:workers/},()=>({path:'env',namespace:'mock'}));b.onLoad({filter:/.*/,namespace:'mock'},()=>({contents:'export const env=new Proxy({}, {get:(_,key)=>key==="DB"?globalThis.testDb:globalThis.testEnv?.[key]});',loader:'js'}));if(auth){b.onResolve({filter:/chatgpt-auth$/},()=>({path:'auth',namespace:'mock-auth'}));b.onLoad({filter:/.*/,namespace:'mock-auth'},()=>({contents:'export async function getChatGPTUser(){return globalThis.testUser||null;} export const chatGPTSignInPath=p=>"/signin-with-chatgpt?return_to="+encodeURIComponent(p); export const chatGPTSignOutPath=p=>"/signout-with-chatgpt?return_to="+encodeURIComponent(p);',loader:'js'}));}}};
  await build({entryPoints:[file],outfile:dest,bundle:true,platform:'node',format:'esm',plugins:[plugin]});
  return import(pathToFileURL(dest));
 }

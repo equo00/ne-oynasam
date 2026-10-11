@@ -1,4 +1,8 @@
-import {pendingCatalogResponse} from '../../../lib/catalog-repository';
-import {sourceSearch,addSourceGame} from '../../../lib/catalog';import {json,checkOrigin,readBody} from '../../../lib/security';import {getChatGPTUser} from '../../chatgpt-auth';export const dynamic='force-dynamic';
-export async function GET(req:Request){const q=new URL(req.url).searchParams.get('q')?.trim()||'';if(q.length<3||q.length>80)return json({error:'En az 3, en fazla 80 karakter gir.'},400);if(!await getChatGPTUser())return json({error:'Kaynakta aramak için giriş yap.'},401);try{return json({games:await sourceSearch(q)});}catch{return json({error:'Oyun araması şu an tamamlanamıyor. Katalogdaki oyunlar kullanılabilir; kaynak aramasını daha sonra deneyebilirsin.'},503);}}
-export async function POST(req:Request){if(!checkOrigin(req))return json({error:'İstek reddedildi.'},403);if(!await getChatGPTUser())return json({error:'Giriş yapmalısın.'},401);try{const b=await readBody(req);if(typeof b.qid!=='string'||!/^Q\d{1,12}$/.test(b.qid))return json({error:'Geçersiz kaynak kaydı.'},400);return json({game:await addSourceGame(b.qid)});}catch(e){return pendingCatalogResponse(e)||json({error:'Oyun kaynaktan eklenemedi. Daha sonra yeniden dene.'},503);}}
+import {sourceSearch} from '../../../lib/catalog';
+import {addAdminSourceGame} from '../../../lib/admin-catalog';
+import {requireCatalogAdmin,AdminError} from '../../../lib/admin-auth';
+import {adminFailure,adminBody} from '../../../lib/admin-http';
+import {json,checkOrigin} from '../../../lib/security';
+export const dynamic='force-dynamic';
+export async function GET(req:Request){try{await requireCatalogAdmin();const q=new URL(req.url).searchParams.get('q')?.trim()||'';if(q.length<3||q.length>80)throw new AdminError('En az 3, en fazla 80 karakter gir.');return json({games:await sourceSearch(q)});}catch(e){return adminFailure(e);}}
+export async function POST(req:Request){if(!checkOrigin(req))return json({error:'İstek reddedildi.'},403);try{const u=await requireCatalogAdmin(),b=await adminBody(req);return json(await addAdminSourceGame(b.qid,u.userId));}catch(e){return adminFailure(e);}}

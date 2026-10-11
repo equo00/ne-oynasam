@@ -2,6 +2,7 @@ import fs from 'node:fs';
 import {strict as assert} from 'node:assert';
 import {createCatalogFixture,moduleFor,readyCatalog} from './catalog-fixture.mjs';
 const fixture=createCatalogFixture(),sqlite=fixture.sqlite;
+globalThis.testEnv={ADMIN_USER_IDS:'user-a,user-b'};
 globalThis.testUser={userId:'user-a',email:'a@example.test',displayName:'A'};
 const routeNames=['library','lists','views','library/import','catalog','games'];
 const modules={};for(const name of routeNames)modules[name]=await moduleFor('app/api/'+name+'/route.ts',{auth:true});

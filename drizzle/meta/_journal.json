@@ -50,6 +50,13 @@
       "when": 1791667089331,
       "tag": "0006_gameplay_features",
       "breakpoints": true
+    },
+    {
+      "idx": 7,
+      "version": "6",
+      "when": 1791741206594,
+      "tag": "0007_catalog_admin",
+      "breakpoints": true
     }
   ]
 }

@@ -1,4 +1,5 @@
-import { sqliteTable,text,integer,real,primaryKey,index,uniqueIndex } from 'drizzle-orm/sqlite-core';
+import {sql} from 'drizzle-orm';
+import { sqliteTable,text,integer,real,primaryKey,index,uniqueIndex,check } from 'drizzle-orm/sqlite-core';
 export const library=sqliteTable('library',{userId:text('user_id').notNull(),gameId:text('game_id').notNull(),status:text('status').notNull().default('planned'),note:text('note').notNull().default(''),rating:integer('rating'),updatedAt:text('updated_at').notNull()},t=>[primaryKey({columns:[t.userId,t.gameId]}),index('library_user_idx').on(t.userId)]);
 export const lists=sqliteTable('lists',{id:text('id').primaryKey(),userId:text('user_id').notNull(),name:text('name').notNull(),createdAt:text('created_at').notNull()},t=>[index('lists_user_idx').on(t.userId)]);
 export const listGames=sqliteTable('list_games',{listId:text('list_id').notNull(),gameId:text('game_id').notNull()},t=>[primaryKey({columns:[t.listId,t.gameId]})]);
@@ -27,3 +28,10 @@ export const catalogBootstrap=sqliteTable('catalog_bootstrap',{id:text('id').pri
 export const catalogMeta=sqliteTable('catalog_meta',{id:text('id').primaryKey(),value:text('value').notNull(),updatedAt:text('updated_at').notNull()});
 
 export const catalogGameFeatures=sqliteTable('catalog_game_features',{gameId:text('game_id').notNull().references(()=>catalogGames.id,{onDelete:'cascade'}),feature:text('feature').notNull(),source:text('source'),retrievedAt:text('retrieved_at')},t=>[primaryKey({columns:[t.gameId,t.feature]}),index('catalog_game_features_filter_idx').on(t.feature,t.gameId)]);
+
+export const catalogAdmins=sqliteTable('catalog_admins',{id:text('id').primaryKey(),userId:text('user_id').notNull().unique(),createdAt:text('created_at').notNull()});
+export const catalogAdminVersions=sqliteTable('catalog_admin_versions',{gameId:text('game_id').primaryKey(),revision:integer('revision').notNull().default(0)});
+export const catalogAdminReviews=sqliteTable('catalog_admin_reviews',{gameId:text('game_id').notNull(),source:text('source').notNull(),verdict:text('verdict').notNull(),note:text('note').notNull(),updatedBy:text('updated_by').notNull(),updatedAt:text('updated_at').notNull()},t=>[primaryKey({columns:[t.gameId,t.source]})]);
+export const catalogAdminAudit=sqliteTable('catalog_admin_audit',{id:text('id').primaryKey(),gameId:text('game_id').notNull(),actor:text('actor').notNull(),action:text('action').notNull(),reason:text('reason').notNull(),beforeState:text('before_state').notNull(),afterState:text('after_state').notNull(),afterHash:text('after_hash'),afterRevision:integer('after_revision').notNull(),createdAt:text('created_at').notNull()},t=>[index('catalog_admin_audit_game_idx').on(t.gameId,sql`${t.createdAt} DESC`,t.id)]);
+export const catalogAdminJobs=sqliteTable('catalog_admin_jobs',{id:text('id').primaryKey(),kind:text('kind').notNull(),actor:text('actor').notNull(),status:text('status').notNull(),requested:text('requested').notNull(),processed:integer('processed').notNull().default(0),result:text('result'),error:text('error'),startedAt:text('started_at').notNull(),finishedAt:text('finished_at')},t=>[index('catalog_admin_jobs_time_idx').on(sql`${t.startedAt} DESC`,t.id)]);
+export const catalogAdminGuard=sqliteTable('catalog_admin_guard',{id:text('id').primaryKey(),valid:integer('valid').notNull()},t=>[check('catalog_admin_guard_valid',sql`${t.valid}=1`)]);

@@ -40,6 +40,8 @@ export async function mediaForGame(id:string):Promise<GameMedia>{
  if(!validId(id))throw new Error('INVALID_GAME');
  const game=await gameById(id);
  if(!game||!Number.isSafeInteger(game.steamAppId)||!game.platforms?.includes('PC'))throw new Error('INVALID_GAME');
+ const manual=await db().prepare("SELECT value,updated_at FROM catalog_overrides WHERE game_id=? AND field='media'").bind(id).first<{value:string;updated_at:string}>();
+ if(manual)return {steamAppId:Number(game.steamAppId),name:game.name,items:JSON.parse(manual.value).items,sourceUrl:'https://store.steampowered.com/app/'+game.steamAppId+'/',fetchedAt:manual.updated_at};
  const appid=Number(game.steamAppId);const key='steam-media-v1:'+appid;let cached:GameMedia|null=null;
  try{const row=await db().prepare('SELECT payload FROM catalog_cache WHERE id=?').bind(key).first<{payload:string}>();if(row){const value=JSON.parse(row.payload);if(value.steamAppId===game.steamAppId&&identity(value.name)===identity(game.name)&&Array.isArray(value.items))cached=value;}}catch{}
  if(cached&&Date.now()-Date.parse(cached.fetchedAt)<86400000){await persistMedia(id,cached);return cached;}

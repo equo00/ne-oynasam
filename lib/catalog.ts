@@ -1,5 +1,6 @@
 import {steamGame} from './steam';import {db} from './db';import {safeUrl} from './security';
 import {queryCatalog,gamesByIds,baseGamesByIds,gameBySourceId,catalogDatabase,invalidateCatalogMetadata,type CatalogQuery} from './catalog-repository';
+import {normalizeSearch} from './catalog-normalize';
 import {ingestGames} from './catalog-ingest';
 export type Game={id:string;qid?:string;steamAppId?:number|null;name:string;year:number|null;genres:string[];platforms:string[];studio?:string;url?:string;sourceUrl:string;sourceRetrievedAt:string;[key:string]:any};
 const cachedId='wikidata-v1';
@@ -26,12 +27,16 @@ export async function refreshSelected(ids:string[]){
 }
 export async function metadataForQids(qids:string[]){const entities=await api(qids,'claims|labels');const accepted=qids.filter(qid=>entityIds(entities[qid],'P31').includes('Q7889'));const ids=unique(accepted.flatMap(qid=>['P400','P136','P178','P404'].flatMap(p=>entityIds(entities[qid],p))));const labels:any={};for(let i=0;i<ids.length;i+=50)Object.assign(labels,await api(ids.slice(i,i+50),'labels'));return accepted.map(qid=>{const e=entities[qid];const dates=value(e,'P577').filter((v:any)=>v.precision>=9&&/^\+\d{4}-/.test(v.time)).map((v:any)=>Number(v.time.slice(1,5))).filter((y:number)=>y>=1970&&y<=new Date().getUTCFullYear());const genresRaw=entityIds(e,'P136').map(id=>english(labels[id])).filter(Boolean);const platformsRaw=entityIds(e,'P400').map(id=>english(labels[id])).filter(Boolean);return {id:'game-'+qid.toLowerCase(),qid,steamAppId:Number(value(e,'P1733').find((v:any)=>/^\d+$/.test(v)))||null,name:english(e),year:dates.length?Math.min(...dates):null,genres:unique(genresRaw.map(genreName).filter(Boolean)) as string[],platforms:unique(platformsRaw.map(platformName).filter(Boolean)) as string[],studio:entityIds(e,'P178').map(id=>english(labels[id])).filter(Boolean).join(', '),url:value(e,'P856').map(safeUrl).find(Boolean)||'',genresRaw,platformsRaw,modeRaw:entityIds(e,'P404').map(id=>english(labels[id])).filter(Boolean),sourceUrl:`https://www.wikidata.org/wiki/${qid}`,sourceRetrievedAt:new Date().toISOString().slice(0,10),yearSource:'Earliest non-deprecated publication year; can include early access'} as Game;}).filter(g=>g.name);}
 export async function sourceSearch(query:string){const url=new URL('https://www.wikidata.org/w/api.php');url.search=new URLSearchParams({action:'wbsearchentities',search:query,language:'en',uselang:'en',type:'item',limit:'10',format:'json'}).toString();const response=await fetch(url,{headers:{'User-Agent':'NeOynasam/1.0 (CC0 game discovery)'},signal:AbortSignal.timeout(12000)});if(!response.ok)throw new Error('Kaynağa ulaşılamadı.');const result:any=await response.json();const ids=(result.search||[]).map((r:any)=>r.id).filter((id:string)=>/^Q\d+$/.test(id));if(!ids.length)return [];return (await metadataForQids(ids)).filter(g=>g.platforms.includes('PC'));}
-export async function addSourceGame(qid:string){
- const database=await catalogDatabase(),existing=await gameBySourceId('wikidata',qid,database);if(existing)return existing;
+export async function prepareSourceGame(qid:string){
+ const database=await catalogDatabase(),existing=await gameBySourceId('wikidata',qid,database);if(existing)return {game:existing,existing:true};
  const records=await metadataForQids([qid]);if(!records.length||!records[0].platforms.includes('PC'))throw new Error('Yayımlanmış bir PC oyunu doğrulanamadı.');
  let game=records[0];
- if(game.steamAppId){const same=await gameBySourceId('steam',String(game.steamAppId),database);if(same)return same;const patch=await steamGame(Number(game.steamAppId));game={...game,...patch,id:game.id,qid,platforms:game.platforms,url:patch.steamUrl} as Game;}
+ if(game.steamAppId){const same=await gameBySourceId('steam',String(game.steamAppId),database);if(same)return {game:same,existing:true};const patch=await steamGame(Number(game.steamAppId));if(normalizeSearch(patch.name)!==normalizeSearch(game.name))throw new Error('Kaynak oyun/sürüm eşleşmesi incelenmeli.');game={...game,...patch,id:game.id,qid,platforms:game.platforms,url:patch.steamUrl} as Game;}
  const stamp=new Date().toISOString();game={...game,catalogAddedAt:stamp};
+ return {game,existing:false};
+}
+export async function addSourceGame(qid:string){
+ const {game,existing}=await prepareSourceGame(qid);if(existing)return game;const database=await catalogDatabase();
  const last=await database.prepare("SELECT COALESCE(MAX(sort_order),-1)+1 AS next FROM catalog_games WHERE status='published'").first<{next:number}>();
  await ingestGames(database,[game],{priority:30,sortOrder:last?.next||0,writeLegacy:true});invalidateCatalogMetadata();return (await gamesByIds([game.id],database))[0];
 }

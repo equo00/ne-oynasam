@@ -1,0 +1,7 @@
+import {requireCatalogAdmin,AdminError} from '../../../lib/admin-auth';
+import {adminFailure,adminBody} from '../../../lib/admin-http';
+import {listAdminGames,getAdminGame,listAdminTags,listAdminJobs,editAdminGame,reviewAdminGame,rollbackAdminGame,refreshAdminGames,addAdminSourceGame} from '../../../lib/admin-catalog';
+import {json,checkOrigin} from '../../../lib/security';
+export const dynamic='force-dynamic';
+export async function GET(req:Request){try{await requireCatalogAdmin();const p=new URL(req.url).searchParams;switch(p.get('action')||'games'){case 'games':return json(await listAdminGames(p));case 'game':return json(await getAdminGame(p.get('id')||''));case 'tags':return json(await listAdminTags(p.get('q')||''));case 'jobs':return json(await listAdminJobs());default:throw new AdminError('Geçersiz yönetim işlemi.');}}catch(e){return adminFailure(e);}}
+export async function POST(req:Request){if(!checkOrigin(req))return json({error:'İstek reddedildi.'},403);try{const u=await requireCatalogAdmin(),b=await adminBody(req);switch(b.action){case 'edit':return json(await editAdminGame(b,u.userId));case 'review':return json(await reviewAdminGame(b,u.userId));case 'rollback':return json(await rollbackAdminGame(b,u.userId));case 'refresh':return json(await refreshAdminGames(b.ids,u.userId));case 'add':return json(await addAdminSourceGame(b.qid,u.userId));default:throw new AdminError('Geçersiz yönetim işlemi.');}}catch(e){return adminFailure(e);}}

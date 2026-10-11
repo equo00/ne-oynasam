@@ -33,9 +33,13 @@ Taşıma devam noktalarıyla sürer; eski kaynak ve kişisel tablolar silinmez. 
 - ChatGPT ile giriş; D1 veritabanında kişisel oyunlar, durumlar, notlar, puanlar ve adlandırılmış koleksiyonlar.
 - Ayrı keşfet (`/`) ve koleksiyon (`/koleksiyonum`) sayfaları. Giriş sonrası koleksiyon sayfasına dönülür. Eski `/?tab=library` bağlantıları oyun ve koleksiyon parametreleri korunarak yönlendirilir.
 - JSON ile dışa ve içe aktarma. Kayıtlar kullanıcı yetkisi kontrol edilerek gruplar halinde işlenir. Aynı adla mevcut koleksiyon varsa tekrar kullanılır; tekrar aktarım kayıtları çoğaltmaz.
-- Seçili sayfadaki kaynak bilgilerinin dörderli gruplarla yenilenmesi. Başarısız kayıtların mevcut verisi korunur; tarihsel Metacritic puanı bu işlemle değiştirilmez.
-- Wikidata üzerinden yalnızca PC oyunlarının aranması ve eklenmesi. Kaynak oyun kimliği aynı oyunun tekrar eklenmesini önler.
+- Yalnızca yöneticinin seçili sayfadaki kaynak bilgilerini dörderli gruplarla yenilemesi. Başarısız kayıtların mevcut verisi korunur; tarihsel Metacritic puanı bu işlemle değiştirilmez.
+- Yalnızca yöneticinin Wikidata üzerinden PC oyunlarını araması ve eklemesi. Kaynak oyun kimliği aynı oyunun tekrar eklenmesini önler.
 - Gerçek oyun ayrıntısı görüntüleme sayıları. Aynı hesap/oyun/UTC günü için tekrarlar tek sayılır.
+
+## Yönetim
+
+`/yonetim` yalnızca sunucuda doğrulanan yöneticiye açıktır. Sites ortamında `ADMIN_BOOTSTRAP_EMAIL` açıkça Site sahibinin doğrulanmış e-postasına tanımlanır; ilk normal ChatGPT girişi kalıcı Site kullanıcı kimliğini bağlar. Ek yöneticiler `ADMIN_USER_IDS` ile açıkça tanımlanabilir. Tarayıcıda rol seçimi veya ilk rastgele giriş yetki vermez. Açıklama, tür/etiket, kapak/galeri ve görünürlük manuel alanlarda korunur; kimlik/puan incelemesi, gerekçeli değişiklik geçmişi, güvenli son işlem geri alma ve kaynak görevleri panelde yer alır. Kod geri alma, canlı veritabanını geri almaz.
 
 ## Geliştirme planı
 
