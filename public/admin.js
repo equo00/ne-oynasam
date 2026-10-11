@@ -52,7 +52,7 @@ $('sourceForm').onsubmit=async e=>{e.preventDefault();if(state.busy)return;setBu
 $('sourceResults').onclick=async e=>{const b=e.target.closest('[data-add]');if(!b||state.busy)return;setBusy(true);try{const r=await request('/api/admin',{action:'add',qid:b.dataset.add});renderRecord(await api('game',{id:r.game.id}));message(r.updated?'Oyun ve kaynak görevi kaydedildi.':'Oyun zaten katalogda. Mevcut kaydı açıldı.');}catch(err){message(err.message,true);}finally{setBusy(false);}};
 for(const b of document.querySelectorAll('[data-view]'))b.onclick=()=>switchView(b.dataset.view);
 function section(name){$('gamesPanel').hidden=name!=='games';$('jobsPanel').hidden=name!=='jobs';$('gamesTab').setAttribute('aria-pressed',String(name==='games'));$('jobsTab').setAttribute('aria-pressed',String(name==='jobs'));if(name==='jobs')jobs();}
-$('gamesTab').onclick=()=>section('games');$('jobsTab').onclick=()=>section('jobs');$('reloadJobs').onclick=jobs;
+$('gamesTab').onclick=()=>section('games');$('jobsTab').onclick=()=>section('jobs');$('reloadJobs').onclick=()=>{transfer.id=null;return jobs();};
 try{if(localStorage.getItem('neoynasam-theme')==='dark')document.body.classList.add('dark');}catch{}$('theme').onclick=()=>{document.body.classList.toggle('dark');try{localStorage.setItem('neoynasam-theme',document.body.classList.contains('dark')?'dark':'light');}catch{}};
 games();
 })();

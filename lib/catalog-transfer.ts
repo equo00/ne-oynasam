@@ -12,7 +12,12 @@ function appId(id:any){if(!Number.isSafeInteger(id)||id<1||id>99999999)throw new
 async function run(d:D1Database,id:string){const r=await d.prepare('SELECT * FROM catalog_transfer_runs WHERE id=?').bind(runId(id)).first<any>();if(!r)throw new AdminError('Aktarım bulunamadı.',404);return r;}
 function guard(d:D1Database,id:string,token:string){const key=crypto.randomUUID();return {before:[d.prepare("INSERT INTO catalog_admin_guard(id,valid) VALUES(?,CASE WHEN EXISTS(SELECT 1 FROM catalog_transfer_runs WHERE id=? AND status='running' AND lease_token=? AND lease_until>?) THEN 1 ELSE 0 END)").bind(key,id,token,now())],tail:[d.prepare('DELETE FROM catalog_admin_guard WHERE id=?').bind(key)]};}
 async function fenced(d:D1Database,id:string,token:string,statements:D1PreparedStatement[]){const g=guard(d,id,token);await d.batch([...g.before,...statements,...g.tail]);}
-async function candidates(d:D1Database,id:string,apps:SteamCandidate[]){return Promise.all(apps.map(async a=>{const s=await d.prepare("SELECT game_id FROM catalog_source_ids WHERE source='steam' AND external_id=?").bind(String(a.appid)).first<{game_id:string}>();return d.prepare("INSERT INTO catalog_transfer_items(run_id,app_id,source_name,source_modified,lane,game_id,updated_at) VALUES(?,?,?,?,?,?,?) ON CONFLICT(run_id,app_id) DO NOTHING").bind(id,a.appid,a.name,a.last_modified,s?'update':'add',s?.game_id||null,stamp());}));}
+async function candidates(d:D1Database,id:string,apps:SteamCandidate[]){
+ if(!apps.length)return [];
+ const matched=(await d.prepare("SELECT s.external_id,s.game_id,g.name FROM catalog_source_ids s JOIN json_each(?) a ON s.source='steam' AND s.external_id=CAST(json_extract(a.value,'$.appid') AS TEXT) JOIN catalog_games g ON g.id=s.game_id").bind(JSON.stringify(apps)).all<{external_id:string;game_id:string;name:string}>()).results;
+ const owners=new Map(matched.map(s=>[Number(s.external_id),s])),rows=apps.map(a=>{const s=owners.get(a.appid);return {...a,name:s?.name||a.name,lane:s?'update':'add',game_id:s?.game_id||null};});
+ return [d.prepare("INSERT INTO catalog_transfer_items(run_id,app_id,source_name,source_modified,lane,game_id,updated_at) SELECT ?,json_extract(value,'$.appid'),json_extract(value,'$.name'),json_extract(value,'$.last_modified'),json_extract(value,'$.lane'),json_extract(value,'$.game_id'),? FROM json_each(?) WHERE 1 ON CONFLICT(run_id,app_id) DO NOTHING").bind(id,stamp(),JSON.stringify(rows))];
+}
 export async function startTransfer(body:any,actor:string){
  const mode=body.mode;if(!['trial','full','delta'].includes(mode))throw new AdminError('Aktarım biçimi geçersiz.');
  const d=await database(),s=await d.prepare("SELECT * FROM catalog_transfer_sources WHERE source='steam'").first<any>();
@@ -22,7 +27,7 @@ export async function startTransfer(body:any,actor:string){
  const id=crypto.randomUUID(),t=now(),since=mode==='delta'?Math.max(0,(s.last_success_at??s.full_started_at)-overlap):0;
  const statements=[d.prepare("INSERT INTO catalog_transfer_runs(id,source,mode,actor,status,window_start,window_end,scan_done,started_at,updated_at) VALUES(?,'steam',?,?,'running',?,?,?,?,?)").bind(id,mode,actor,since,t,mode==='trial'?1:0,stamp(),stamp())];
  if(mode==='delta'){
-  const due=(await d.prepare("SELECT i.* FROM catalog_transfer_items i JOIN catalog_transfer_runs r ON r.id=i.run_id WHERE r.source='steam' AND r.status IN ('partial','succeeded') AND i.status IN ('pending','error') AND i.next_retry_at<=? AND i.attempts<6 ORDER BY i.next_retry_at,i.run_id,i.app_id LIMIT 20").bind(t).all<any>()).results;
+  const due=(await d.prepare("SELECT i.* FROM catalog_transfer_items i JOIN catalog_transfer_runs r ON r.id=i.run_id WHERE r.source='steam' AND r.status IN ('partial','succeeded') AND i.status IN ('pending','error') AND i.next_retry_at<=? AND (i.status='pending' OR i.attempts<6) ORDER BY i.next_retry_at,i.run_id,i.app_id LIMIT 20").bind(t).all<any>()).results;
   const selected=new Set<number>();for(const a of due){if(selected.has(a.app_id))continue;selected.add(a.app_id);statements.push(d.prepare("INSERT INTO catalog_transfer_items(run_id,app_id,source_name,source_modified,lane,game_id,attempts,approval,updated_at) VALUES(?,?,?,?,?,?,?,?,?) ON CONFLICT DO NOTHING").bind(id,a.app_id,a.source_name,a.source_modified,a.lane,a.game_id,a.attempts,a.approval,stamp()),d.prepare("UPDATE catalog_transfer_items SET status='superseded',updated_at=? WHERE run_id=? AND app_id=? AND status IN ('pending','error')").bind(stamp(),a.run_id,a.app_id));}
  }
  if(mode==='full')statements.push(d.prepare("UPDATE catalog_transfer_sources SET full_started_at=COALESCE(full_started_at,?),updated_at=? WHERE source='steam'").bind(t,stamp()));
@@ -34,7 +39,7 @@ function facts(value:any):any{if(Array.isArray(value))return value.map(facts);if
 function merge(base:CatalogGame,patch:any){const next={...base};for(const [key,value]of Object.entries(patch)){if(['sourceRetrievedAt','languageSource','modeSource'].includes(key))continue;if(JSON.stringify(facts(base[key]))!==JSON.stringify(facts(value)))next[key]=value;}
  if(JSON.stringify(next)!==JSON.stringify(base))for(const key of ['sourceRetrievedAt','languageSource','modeSource'])next[key]=patch[key];return next;
 }
-function outcome(d:D1Database,id:string,a:any,status:string,error:string|null,prepared:any=null,auditId:string|null=null){return d.prepare('UPDATE catalog_transfer_items SET status=?,attempts=attempts+1,next_retry_at=?,error=?,prepared=?,audit_id=?,updated_at=? WHERE run_id=? AND app_id=?').bind(status,['error','pending'].includes(status)?now()+Math.min(7*86400,300*2**Math.min(a.attempts,10)):0,error,prepared?JSON.stringify(prepared):null,auditId,stamp(),id,a.app_id);}
+function outcome(d:D1Database,id:string,a:any,status:string,error:string|null,prepared:any=null,auditId:string|null=null){return d.prepare('UPDATE catalog_transfer_items SET status=?,attempts=attempts+1,next_retry_at=?,error=?,prepared=?,audit_id=?,updated_at=? WHERE run_id=? AND app_id=?').bind(status,['error','pending'].includes(status)?now()+(status==='pending'?7*86400:Math.min(7*86400,300*2**Math.min(a.attempts,10))):0,error,prepared?JSON.stringify(prepared):null,auditId,stamp(),id,a.app_id);}
 async function processItem(d:D1Database,r:any,token:string,a:any){
  // Requests are reserved before network access, so interrupted attempts remain visible.
  await fenced(d,r.id,token,[d.prepare('UPDATE catalog_transfer_runs SET api_calls=api_calls+3,updated_at=? WHERE id=?').bind(stamp(),r.id)]);
@@ -90,7 +95,7 @@ export async function controlTransfer(body:any){
   if(body.command==='resume'&&r.status!=='paused')throw new AdminError('Bu aktarım duraklatılmış değil.',409);
   if(body.command==='retry'&&!['partial','succeeded'].includes(r.status))throw new AdminError('Önce mevcut aktarımı tamamla.',409);
   const sql=[d.prepare("UPDATE catalog_transfer_runs SET status='running',finished_at=NULL,updated_at=? WHERE id=?").bind(stamp(),r.id)];
-  if(body.command==='retry')sql.push(d.prepare("UPDATE catalog_transfer_items SET status='queued' WHERE run_id=? AND status IN ('error','pending') AND next_retry_at<=? AND attempts<6").bind(r.id,now()));
+  if(body.command==='retry')sql.push(d.prepare("UPDATE catalog_transfer_items SET status='queued' WHERE run_id=? AND status IN ('error','pending') AND next_retry_at<=? AND (status='pending' OR attempts<6)").bind(r.id,now()));
   try{await d.batch(sql);}catch{throw new AdminError('Başka bir aktarım açık. Önce onu tamamla.',409);}
  }else throw new AdminError('Aktarım komutu geçersiz.');return transferStatus(r.id);
 }
