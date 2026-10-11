@@ -43,7 +43,7 @@ Site yalnızca PC oyunlarının keşfine odaklanır. İş planının 1. adımı 
 
 İşler bağımlılık sırasıyla yürütülecektir: PC kapsamı ve kalıcı veri/sunucu sorgusu altyapısı tamamlandı; sırada eksik Metacritic kullanıcı puanları ve arayüz geliştirmeleri var. Gündem taraması, kademeli katalog büyümesi ve yeni oyun aktarımı [iş listesinde](ROADMAP.md) planlanmıştır; zamanlanmış görevler henüz kurulmamıştır.
 
-Oyun kartlarında kısa video önizlemesi de planlanmıştır: kısa beklemeden sonra sessiz oynatma, karttan ayrılınca durdurma, yalnızca ihtiyaç halinde medya yükleme ve kullanıcıya kapatma seçeneği. Bu özellik henüz uygulanmamıştır.
+Oyun kartlarında kısa beklemeden sonra sessiz video önizlemesi, karttan ayrılınca durdurma, ihtiyaç halinde medya yükleme ve kapatma tercihi uygulanmıştır. Geçmiş menüsü kart gösterimi, başlayan önizleme ve ayrıntı açılışlarını ayrı tutar; son 200 oyun en fazla 90 gün yalnızca bu tarayıcıda saklanır ve temizlenebilir. Hesapla otomatik birleştirme yapılmaz.
 
 Uzun vadeli hedef, kaynak kapsamı ve doğrulamalar elverirse 140 bin benzersiz PC oyunudur. Önerilen büyüme basamakları 5 bin, 10 bin, 25 bin, 50 bin, 100 bin ve mümkünse 140 bindir; her basamağa küçük, devam ettirilebilir aktarım gruplarıyla ulaşılır. İlk katalog doldurma ile haftalık delta aktarımı ayrı süreçlerdir. Bu bir hedef olup mevcut kapasite veya ulaşılabilir oyun sayısı garantisi değildir.
 
@@ -74,6 +74,10 @@ Aktarım betikleri `scripts/` klasöründedir. `data/wikidata-seed.json` ilk kim
 Bu GitHub deposu kaynak kodunu, şemayı, katalog veri kopyalarını ve değişiklik geçmişini içerir. Canlı D1 veritabanının veya kişisel koleksiyonların yedeği değildir. Yerel tam yedek/geri yükleme araçları bulunur; canlı tam dışa aktarma, saklama ve geri yükleme erişimi barındırma sağlayıcısında ayrıca doğrulanmalıdır.
 
 ## Doğrulama
+
+Kontroller değişikliğin etkilediği davranışlarla sınırlanır. Katalog veya puan verisini etkilemeyen adımlarda canlı oyun/puan sayımı tekrarlanmaz.
+
+- `node tests/visit-history.test.cjs`: Hesapsız geçmiş, görünür kartlar, ayrı olaylar, sınırlı saklama, temizleme, sekmeler, güvenli metin ve depolama hataları.
 
 - `node tests/catalog-ingest.test.mjs`: Devam noktası/atomik taşıma, tüm eski ID ve puanlar, kaynak/sürüm çakışmaları, ham kaynak ve manuel düzenleme önceliği, tekrar deneme, eski kod uyumu ve tam yedek geri yükleme.
 - `node tests/catalog-query.test.mjs`: Gerçek SQLite üzerinde API v2 sayfalaması, indeksli arama, VE filtreleri, puan/değerlendirme sayısı, arşiv ve koleksiyon yalıtımı.

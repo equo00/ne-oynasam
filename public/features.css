@@ -103,3 +103,22 @@ body.dark .multi-panel,body.dark .multi-filter>summary,body.dark .multi-search i
 .card-preview-toggle[aria-pressed="true"]{border-color:#d9f36a}
 @media(hover:none),(pointer:coarse){.card-preview-toggle{min-height:44px;padding:10px 12px}}
 @media(max-width:540px){.card-preview-toggle{width:44px;min-height:44px;justify-content:center;padding:10px;right:8px;bottom:8px}.card-preview-toggle span{display:none}.card .status-badge{max-width:calc(100% - 70px);overflow:hidden;white-space:nowrap;text-overflow:ellipsis}}
+
+#historyDialog{width:min(650px,calc(100vw - 24px))}
+.history-filters{display:flex;flex-wrap:wrap;gap:8px;margin:20px 0 12px}
+.history-filters button,.history-actions button{min-height:44px;border:1px solid var(--line);border-radius:6px;background:var(--paper);color:var(--ink);padding:10px 13px;font-size:12px}
+.history-filters button[aria-pressed="true"]{background:var(--ink);border-color:var(--ink);color:var(--paper)}
+.history-help,#historyStatus{font-size:12px;line-height:1.6;color:var(--muted)}
+.history-items{list-style:none;padding:0;margin:20px 0}
+.history-items li{border-bottom:1px solid var(--line)}
+.history-items button{display:block;width:100%;background:none;border:0;color:var(--ink);text-align:left;padding:15px 4px;min-height:60px}
+.history-items strong{display:block;font-size:14px;overflow-wrap:anywhere}
+.history-items button>span{display:flex;justify-content:space-between;flex-wrap:wrap;gap:6px 12px;margin-top:7px;font-size:11px;color:var(--muted)}
+.history-items button:hover strong{text-decoration:underline}
+.history-empty{padding:25px 0;font-size:13px;color:var(--muted)}
+.history-actions{display:flex;flex-wrap:wrap;align-items:center;gap:12px;justify-content:space-between}
+.history-actions button:disabled{opacity:.5;cursor:default}
+@media(min-width:1001px){header{gap:32px}header nav{gap:18px}}
+#visitHistory{min-height:44px}
+@media(min-width:741px) and (max-width:940px){header{height:auto;flex-wrap:wrap;padding-top:15px;padding-bottom:12px;gap:10px 15px}header nav{order:3;width:100%;gap:25px}.header-actions{margin-left:auto}}
+@media(max-width:540px){header nav{flex-wrap:wrap;gap:4px 18px}}

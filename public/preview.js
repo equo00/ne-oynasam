@@ -67,7 +67,7 @@ async function playCardPreview(job){
   video.addEventListener('loadedmetadata',()=>{if(previewRelevant(job)&&(!Number.isFinite(video.duration)||video.duration<1||video.duration>15))previewFailed(job);});
   video.addEventListener('timeupdate',()=>{if(previewRelevant(job)&&video.currentTime>=6)video.currentTime=0;});
   video.addEventListener('volumechange',()=>{if(video.volume!==0)video.volume=0;if(!video.muted)video.muted=true;});
-  video.addEventListener('playing',()=>{if(!previewRelevant(job)){if(previewJob===job)stopCardPreview();return;}clearTimeout(job.timeout);job.card.classList.add('preview-playing');previewButtonState(job,false,true);});
+  video.addEventListener('playing',()=>{if(!previewRelevant(job)){if(previewJob===job)stopCardPreview();return;}clearTimeout(job.timeout);if(!job.historyRecorded){recordVisitEvent(nameGame(job.id),'preview');job.historyRecorded=true;}job.card.classList.add('preview-playing');previewButtonState(job,false,true);});
   video.addEventListener('error',()=>previewFailed(job));
   job.card.querySelector('.open-card').appendChild(video);video.src=data.preview.src;
   await video.play();if(!previewRelevant(job)&&previewJob===job)stopCardPreview();

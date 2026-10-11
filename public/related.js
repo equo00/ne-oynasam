@@ -36,7 +36,7 @@ function relatedScore(g){
 }
 function relatedCard(g,target,match={}){
   const shared=(match.shared||sharedSteamTags(g,target)).map(steamTagLabel);
-  return `<button type="button" class="related-card" data-open="${esc(g.id)}" aria-label="${esc(g.name)} detaylarını aç · Metacritic kullanıcı: ${esc(scoreText(g))}"><span class="related-cover">${cover(g)}${relatedScore(g)}${isNewCatalogGame(g)?'<span class="related-new">Yeni eklendi</span>':''}</span><span class="related-card-body"><strong class="related-name">${esc(g.name)}</strong><span class="related-genres" title="Ortak etiketler: ${esc(shared.join(' · '))}">${esc(shared.slice(0,2).join(' · ')||'Keşfetmeye değer başka bir dünya')}</span></span></button>`;
+  return `<button type="button" class="related-card" data-history-game="${esc(g.id)}" data-open="${esc(g.id)}" aria-label="${esc(g.name)} detaylarını aç · Metacritic kullanıcı: ${esc(scoreText(g))}"><span class="related-cover">${cover(g)}${relatedScore(g)}${isNewCatalogGame(g)?'<span class="related-new">Yeni eklendi</span>':''}</span><span class="related-card-body"><strong class="related-name">${esc(g.name)}</strong><span class="related-genres" title="Ortak etiketler: ${esc(shared.join(' · '))}">${esc(shared.slice(0,2).join(' · ')||'Keşfetmeye değer başka bir dünya')}</span></span></button>`;
 }
 function relatedMarkup(){
   return '<section class="related" aria-labelledby="relatedTitle"><div class="related-heading"><h3 id="relatedTitle">Ortak türlerden başka dünyalar</h3><div class="related-controls"><button type="button" data-related-page="-1" aria-label="Önceki benzer oyunlar" aria-controls="relatedCards">'+icon('left')+'</button><button type="button" data-related-page="1" aria-label="Sonraki benzer oyunlar" aria-controls="relatedCards">'+icon('right')+'</button></div></div><p class="related-range" id="relatedRange" role="status" aria-live="polite"></p><div class="related-cards" id="relatedCards"></div><details class="related-tag-profile"><summary>Oyunun dünyası ve oynanışı</summary><div id="relatedTagProfile"></div></details></section>';
@@ -52,7 +52,7 @@ function renderRelated(g=state.current,reset=false){
   const source=g.steamTags;$('relatedTagProfile').innerHTML=source?`<div class="tags">${steamTagsFor(g).map(t=>`<span>${esc(steamTagLabel(t))}</span>`).join('')}</div>${source.complete===false?'<p>Bu oyunda şimdilik daha az etiket bulunuyor.</p>':''}`:'<p>Bu oyun için henüz ayrıntılı etiket yok.</p>';
   $('relatedRange').title='Benzer dünyalar, oynanış biçimleri ve ortak ilgi alanları';
   $('relatedRange').textContent=games.length?`${start+1}–${Math.min(start+relatedPageSize,games.length)} / ${games.length} oyun`:'Katalog genişledikçe uygun eşleşmeler burada görünecek.';
-  document.querySelectorAll('[data-related-page]').forEach(button=>{button.disabled=button.dataset.relatedPage==='-1'?relatedPage===0:relatedPage>=pages-1;});
+  refreshVisitCards();document.querySelectorAll('[data-related-page]').forEach(button=>{button.disabled=button.dataset.relatedPage==='-1'?relatedPage===0:relatedPage>=pages-1;});
 }
 document.addEventListener('click',e=>{
   const button=e.target.closest('[data-related-page]');if(!button||button.disabled||!state.current)return;
